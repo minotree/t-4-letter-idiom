@@ -27,8 +27,18 @@ test('통합 JSON은 기존 ID·분류를 보존하고 중복 없이 다른 종�
   assert.deepEqual(merged.slice(0, original.length), original);
   assert.equal(merged.filter(item => item.hanja === '夫唱婦隨').length, 1);
   assert.equal(merged.find(item => item.hanja === '夫唱婦隨').category, 'idiom');
-  const eligible = candidatesFor(merged, '家', new Set(['家家戶戶']), new Set());
+  const eligible = candidatesFor(merged, '가', new Set(['家家戶戶']), new Set());
   assert.ok(eligible.some(item => item.category === 'idiom'));
   assert.ok(eligible.some(item => item.category === 'cheonjamun'));
   assert.ok(!eligible.some(item => item.id === '家家戶戶'));
+});
+
+test('기감훼상은 감불생심을 사용한 뒤에도 한글 독음으로 이어진다', () => {
+  const merged = JSON.parse(read('apps/web/src/data/idioms.json'));
+  const used = new Set(['豈敢毁傷', '敢不生心']);
+  for (const ch of '기감훼상') {
+    const expected = merged.filter(item => item.reading.includes(ch) && !used.has(item.id));
+    assert.deepEqual(candidatesFor(merged, ch, used, new Set()), expected);
+  }
+  assert.ok(candidatesFor(merged, '상', used, new Set()).some(item => item.reading === '설상가상'));
 });

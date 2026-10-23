@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { candidatesFor, matchingAnswers, readingHint, migrateIdiomHistory, SESSION_LIMIT, type Idiom } from '@idioms/shared';
 import data from './data/idioms.json';
+import englishSource from '../../../data/english/source.json';
 import { applyUpdate } from './register-pwa';
 import IdiomBook from './IdiomBook';
 import ContentSource from './ContentSource';
@@ -27,7 +28,7 @@ function readHistory(key = HISTORY_KEY): { ids: string[]; warning: string } {
 }
 
 function pickStart(history: Set<string>): Idiom {
-  const available = idioms.filter(item => [...item.hanja].some(ch =>
+  const available = idioms.filter(item => [...item.reading].some(ch =>
     candidatesFor(idioms, ch, new Set([item.id]), history).length > 0));
   const unseen = available.filter(item => !history.has(item.id));
   const pool = unseen.length ? unseen : available;
@@ -67,7 +68,7 @@ export default function App() {
   const used = new Set([start.id, ...chain.map(item => item.id)]);
   const candidates = candidatesFor(idioms, character, used, history);
   const selected = candidates.find(item => item.id === selectedId);
-  const hasNext = [...current.hanja].some(ch => candidatesFor(idioms, ch, used, history).length > 0);
+  const hasNext = [...current.reading].some(ch => candidatesFor(idioms, ch, used, history).length > 0);
   const finished = chain.length >= SESSION_LIMIT || !hasNext;
 
   useEffect(() => {
@@ -165,6 +166,11 @@ export default function App() {
         <a className="brand" href="#main">글자잇기 <span>{page === 'english' ? '영어 학습' : '한자 학습'}</span></a>
         <span className="edition">하루 한 번, 즐거운 배움</span>
       </header>
+      <section className="intro learning-intro" aria-label="학습 소개">
+        <span className="eyebrow">{page === 'english' ? '한 알파벳에서 시작하는 발견' : '한 글자에서 시작하는 발견'}</span>
+        <h1>{page === 'english' ? '아는 단어가 이어지면,' : '아는 말이 이어지면,'}<br />배움이 되는 순간.</h1>
+        <p>{page === 'english' ? '알파벳을 고르고, 뜻을 읽고, 아는 영어 단어를 적어 보세요.' : '글자를 고르고, 뜻을 읽고, 아는 한자성어를 적어 보세요.'}<br />정답이 다음 배움의 시작이 됩니다.</p>
+      </section>
       <section className="learning-shell panel" hidden={page === 'english'} aria-label="한자 학습">
       <div className="book-heading"><h1>한자 글자잇기</h1><span>{idioms.length}개 한자어</span></div>
       <nav className="learning-tabs" aria-label="한자 학습 메뉴">
@@ -172,7 +178,7 @@ export default function App() {
         <a href="#idioms" aria-current={page === 'book' ? 'page' : undefined}>나의 단어장</a>
       </nav>
       <div hidden={page !== 'quiz'}>
-      <p className="book-description">한자 선택 → 후보 선택 → 한글 독음 입력</p>
+      <p className="book-description">한글 글자 선택 → 후보 선택 → 한글 독음 입력</p>
       <div className="workspace">
         <section className="game" id="main" aria-label="한자성어 연결 퀴즈">
           <p className="learning-count">{chain.length} / {SESSION_LIMIT} 문제</p>
@@ -185,7 +191,7 @@ export default function App() {
                 <span className="link-step">{index + 1}번째 연결</span>
                 <div className="link-pair">
                   <div className="link-idiom"><strong lang="zh">{previous.hanja}</strong><span>{previous.reading}</span><p>{previous.meaning}</p><ContentSource item={previous} /></div>
-                  <div className="link-bridge"><span lang="zh">{connections[index]}</span><span aria-hidden="true">→</span><small>연결 글자</small></div>
+                  <div className="link-bridge"><span>{connections[index]}</span><span aria-hidden="true">→</span><small>연결 글자</small></div>
                   <div className="link-idiom"><strong lang="zh">{item.hanja}</strong><span>{item.reading}</span><p>{item.meaning}</p><ContentSource item={item} /></div>
                 </div>
               </li>;
@@ -204,15 +210,15 @@ export default function App() {
             <button className="primary" onClick={restart}>새 세션 시작하기 <span aria-hidden="true">↗</span></button>
           </div> : <>
             <div className="instruction"><h3>01 <span>이어갈 한 글자를 골라 주세요</span></h3><span>후보가 없는 글자는 쉬어 가요</span></div>
-            <div className="characters">{[...current.hanja].map((ch, index) => {
+            <div className="characters">{[...current.reading].map((ch, index) => {
               const count = candidatesFor(idioms, ch, used, history).length;
               return <button key={`${current.id}-${index}`} aria-label={`${ch}, 후보 ${count}개`} aria-pressed={character === ch}
-                disabled={!count} onClick={() => choose(ch)}><strong lang="zh">{ch}</strong><span>{count ? `후보 ${count}개` : '후보 없음'}</span></button>;
+                disabled={!count} onClick={() => choose(ch)}><strong>{ch}</strong><span>{count ? `후보 ${count}개` : '후보 없음'}</span></button>;
             })}</div>
             <section className="hints" aria-label="정답 후보 힌트">
               <div className="hint-heading"><h3>02 <span>풀고 싶은 한자성어를 선택해 주세요</span></h3>{character && <span className="pill">{candidates.length}개 후보</span>}</div>
               {!character ? <p className="empty">위에서 한 글자를 고르면<br />그 글자가 들어간 한자성어의 힌트가 나타나요.</p> : <>
-                <p className="hint-description">‘<b lang="zh">{character}</b>’가 들어가는 후보를 하나 선택한 뒤, 그 후보의 한글 독음을 입력하세요.</p>
+                <p className="hint-description">‘<b>{character}</b>’가 들어가는 후보를 하나 선택한 뒤, 그 후보의 한글 독음을 입력하세요.</p>
                 <ol className="candidate-list">{candidates.map((item, index) => <li key={item.id} className={selectedId === item.id ? 'selected-candidate' : ''}>
                   <label className="candidate-choice"><input type="radio" name="candidate" value={item.id} checked={selectedId === item.id} onChange={() => { setSelectedId(item.id); setAnswer(''); setMessage('선택한 후보의 한글 독음을 입력해 주세요.'); }} /><span>후보 {index + 1} 선택</span></label>
                   <div><span className="candidate-number">{String(index + 1).padStart(2, '0')}</span><strong lang="zh">{item.hanja}</strong></div>
@@ -232,7 +238,7 @@ export default function App() {
           <p id="feedback" className="feedback" role="status">{finished ? `${chain.length}개의 한자성어를 정답으로 연결했어요.` : message}</p>
         </section>
         <aside className="sidebar">
-          <section className="guide"><span className="eyebrow">이렇게 이어가요</span><p>선택한 한자가 들어간 한자성어를<br />한글로 입력하면 정답!</p><ul><li>한 세션은 최대 20문제예요.</li><li>같은 세션의 한자성어는 다시 나오지 않아요.</li><li>처음 만나는 한자성어를 먼저 보여드려요.</li><li>오답이면 독음 힌트가 하나씩 열려요.</li></ul></section>
+          <section className="guide"><span className="eyebrow">이렇게 이어가요</span><p>선택한 한글 글자가 독음에 들어간 후보를 고르고<br />전체 독음을 입력하면 정답!</p><ul><li>한자는 달라도 같은 한글이면 이어져요.</li><li>한 세션은 최대 20문제예요.</li><li>같은 세션의 한자성어는 다시 나오지 않아요.</li><li>처음 만나는 한자성어를 먼저 보여드려요.</li><li>오답이면 독음 힌트가 하나씩 열려요.</li></ul></section>
           <div className="session-actions">{confirmRestart ? <div className="restart-confirm"><p>지금 연결을 마치고 새로 시작할까요?</p><button onClick={restart}>새로 시작</button><button onClick={() => setConfirmRestart(false)}>계속 풀기</button></div> : <button className="text-button" onClick={() => setConfirmRestart(true)}>새 세션으로 시작하기 ↻</button>}</div>
         </aside>
       </div>
@@ -245,7 +251,7 @@ export default function App() {
       {warning && <p className="notice" role="alert">{warning}</p>}
       {offline && <p className="notice" role="status">오프라인이에요. 저장된 학습 자료로 계속할 수 있어요.</p>}
       {update && <div className="notice">새 버전이 준비됐어요. 적용하면 현재 세션이 종료됩니다. <button onClick={() => applyUpdate(update)}>지금 업데이트</button></div>}
-      <footer><span>{page === 'english' ? '글자잇기 · 영어 단어 학습' : `글자잇기 · 한자 학습 ${idioms.length}개`}</span><span>이전 학습 이력은 이 브라우저에 저장돼요. 진행 중인 연결은 새로고침하면 초기화돼요.</span></footer>
+      <footer><span>{page === 'english' ? `글자잇기 · 영어 학습 ${englishSource.rows}개` : `글자잇기 · 한자 학습 ${idioms.length}개`}</span><span>이전 학습 이력은 이 브라우저에 저장돼요. 진행 중인 연결은 새로고침하면 초기화돼요.</span></footer>
       <nav className="bottom-nav" aria-label="학습 선택"><a href={hanjaPage === 'book' ? '#idioms' : '#main'} aria-current={page !== 'english' ? 'page' : undefined}><span aria-hidden="true">字</span>한자 학습</a><a href="#english" aria-current={page === 'english' ? 'page' : undefined}><span aria-hidden="true">Aa</span>영어 학습</a></nav>
     </main>
   );

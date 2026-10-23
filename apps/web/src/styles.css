@@ -7,6 +7,7 @@
   line-height:1.65;
   font-size:15px}
 .learning-shell { max-width: 760px; margin: 32px auto; padding: 28px; }
+.intro.learning-intro { max-width: 760px; margin: 0 auto; padding: 32px 0 4px; }
 .learning-shell .workspace { display: block; }
 .learning-shell .game { padding: 0; }
 .learning-shell .idiom-book { margin: 0; padding: 0; border: 0; box-shadow: none; }

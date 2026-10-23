@@ -89,8 +89,8 @@ try {
     const used = await evaluate(`[document.querySelector('.chain-links .link-idiom > strong').textContent, ...Array.from(document.querySelectorAll('.chain-links .link-idiom:last-child > strong')).map(el => el.textContent)]`);
     const current = dataset.find(item => item.hanja === used.at(-1));
     const history = new Set(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:history:v1')`)));
-    const choices = [...current.hanja].flatMap(ch => candidatesFor(dataset, ch, new Set(used), history).map(item => ({ ch, item })));
-    const next = choices.find(({ item }) => [...item.hanja].some(ch => candidatesFor(dataset, ch, new Set([...used, item.id]), history).length)) ?? choices[0];
+    const choices = [...current.reading].flatMap(ch => candidatesFor(dataset, ch, new Set(used), history).map(item => ({ ch, item })));
+    const next = choices.find(({ item }) => [...item.reading].some(ch => candidatesFor(dataset, ch, new Set([...used, item.id]), history).length)) ?? choices[0];
     assert.ok(next, `연결 후보 필요: ${count}`);
     await evaluate(`Array.from(document.querySelectorAll('.characters button')).find(button => button.querySelector('strong').textContent === ${JSON.stringify(next.ch)}).click()`);
     await selectCandidate(next.item.hanja);
@@ -245,13 +245,13 @@ try {
   assert.deepEqual(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:mistakes:v1')`)), ['大言壯語']);
   checks.push('대언장어에서 대기만성 선택·오답 대상 정확성·후보별 힌트 격리·이전 기록 보존/제외');
   assert.deepEqual(pageErrors, []);
-  const cheonStart = dataset.find(item => item.category === 'cheonjamun' && [...item.hanja].some(ch => candidatesFor(dataset, ch, new Set([item.id]), new Set()).some(candidate => candidate.category === 'cheonjamun')));
+  const cheonStart = dataset.find(item => item.category === 'cheonjamun' && [...item.reading].some(ch => candidatesFor(dataset, ch, new Set([item.id]), new Set()).some(candidate => candidate.category === 'cheonjamun')));
   const seenExceptCheon = dataset.filter(item => item.id !== cheonStart.id).map(item => item.id);
   await evaluate(`localStorage.setItem('idioms:web:history:v1', ${JSON.stringify(JSON.stringify(seenExceptCheon))}); location.hash = '#main'`);
   await cdp('Page.reload');
   await until(`document.querySelector('.idiom-card h2')?.textContent === ${JSON.stringify(cheonStart.hanja)}`);
   assert.equal(await evaluate(`document.querySelector('.idiom-card .content-source').textContent`), '출처: 천자문');
-  const connection = [...cheonStart.hanja].find(ch => candidatesFor(dataset, ch, new Set([cheonStart.id]), new Set(seenExceptCheon)).some(item => item.category === 'cheonjamun'));
+  const connection = [...cheonStart.reading].find(ch => candidatesFor(dataset, ch, new Set([cheonStart.id]), new Set(seenExceptCheon)).some(item => item.category === 'cheonjamun'));
   await evaluate(`Array.from(document.querySelectorAll('.characters button')).find(button => button.querySelector('strong').textContent === ${JSON.stringify(connection)}).click()`);
   await until(`!!document.querySelector('.candidate-list .content-source')`);
   const cheonAnswer = candidatesFor(dataset, connection, new Set([cheonStart.id]), new Set(seenExceptCheon)).find(item => item.category === 'cheonjamun');

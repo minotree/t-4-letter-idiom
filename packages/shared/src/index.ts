@@ -74,8 +74,9 @@ export function candidatesFor(
   idioms: readonly Idiom[], character: string, sessionIds: ReadonlySet<string>, historyIds: ReadonlySet<string>,
 ): Idiom[] {
   if (!character) return [];
-  const key = normalizeHanjaForSearch(character);
-  const eligible = idioms.filter(item => normalizeHanjaForSearch(item.hanja).includes(key) && !sessionIds.has(item.id));
+  const key = normalizeAnswer(character);
+  if (!/^[가-힣]$/u.test(key)) return [];
+  const eligible = idioms.filter(item => normalizeAnswer(item.reading).includes(key) && !sessionIds.has(item.id));
   const unseen = eligible.filter(item => !historyIds.has(item.id));
   return unseen.length ? unseen : eligible;
 }
