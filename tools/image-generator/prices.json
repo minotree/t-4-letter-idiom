@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-20",
+  "max_age_days": 30,
+  "models": {
+    "gpt-4.1-mini": {
+      "type": "script",
+      "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+      "input_per_million": "0.40",
+      "cached_input_per_million": "0.10",
+      "output_per_million": "1.60",
+      "reservation_input_tokens": 4000,
+      "reservation_output_tokens": 2200
+    },
+    "gpt-image-2.5-flare-2026-09-08": {
+      "type": "image",
+      "source": "https://developers.openai.com/api/docs/models/gpt-image-2.5-flare",
+      "input_per_million": "5.00",
+      "image_input_per_million": "8.00",
+      "output_per_million": "30.00",
+      "reservation_input_tokens": 4000,
+      "profiles": {
+        "1024x1536/medium": {
+          "reservation_output_tokens": 8000,
+          "basis": "operator_estimate_not_api_output_limit"
+        }
+      }
+    }
+  }
+}

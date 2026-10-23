@@ -1,0 +1,68 @@
+{
+  "source_sha256": "88b8e3dfd461da7f4da253fe9288b41609530c43e000b64928913310b63681f6",
+  "retrieved_at_utc": "2026-10-23T09:28:45.403136+00:00",
+  "provider": "국립국어원 우리말샘 공개 검색",
+  "automatic_meaning_approval": false,
+  "rows": [
+    {
+      "hanja": "家家戶戶",
+      "reading": "가가호호",
+      "current_meaning": "집집마다 모든 집.",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EA%B0%80%EA%B0%80%ED%98%B8%ED%98%B8&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "5ed5dcf0ebd4308671b9a5f5c2cd11b174d3aa52fe71853e00fcde64a72e0d44",
+      "hanja_match": true,
+      "entries": [
+        {
+          "reading": "가가호호",
+          "hanja": "家家戶戶",
+          "definition": "한 집 한 집.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=72886&viewType=confirm"
+        },
+        {
+          "reading": "가가호호",
+          "hanja": "家家戶戶",
+          "definition": "한 집 한 집마다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=72887&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "家給人足",
+      "reading": "가급인족",
+      "current_meaning": "집집마다 살림이 넉넉하고 사람마다 생활이 풍족함.",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EA%B0%80%EA%B8%89%EC%9D%B8%EC%A1%B1&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "a96fef12a77bfa156541d623633d37fce95f72dfde9a484d1a54543130719d4c",
+      "hanja_match": true,
+      "entries": [
+        {
+          "reading": "가급인족",
+          "hanja": "家給人足",
+          "definition": "집집마다 먹고사는 것에 부족함이 없이 넉넉함.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=338692&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "街談巷說",
+      "reading": "가담항설",
+      "current_meaning": "거리나 골목에 떠도는 이야기나 소문.",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EA%B0%80%EB%8B%B4%ED%95%AD%EC%84%A4&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "903d03ff76c7848ab267dab15385def8eff5c8f90aa02b1e0bf70b05f5e1698d",
+      "hanja_match": true,
+      "entries": [
+        {
+          "reading": "가담항설",
+          "hanja": "街談巷說",
+          "definition": "거리나 항간에 떠도는 소문.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=73618&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    }
+  ]
+}

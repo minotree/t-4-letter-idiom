@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-237",
+    "sequence": "237",
+    "hanja": "年矢每催",
+    "reading": "연시매최",
+    "meaning": "흐르는 세월은 쏘아놓은 화살처럼 덧없이 빨라 매양 사람의 늙음을 재촉합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-238",
+    "hanja": "羲暉朗曜",
+    "meaning": "태양신 희화의 찬란한 햇빛은 온 세상을 밝고 환하게 비추어줍니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "年(ᄒᆡ 년) °矢(살 시) °每(ᄆᆡ양 ᄆᆡ) 催(뵈알 최)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [年矢每催] 및 16세기 훈음, 사성 방점(年°矢°每催) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "年(ᄒᆡ 년) 矢(살 시) 每(니으 ᄆᆡ) 催(뵈알 최)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [年矢每催] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 年矢每催 | 독음: 연시매최 | 번역: 세월은 살같이 언제나 제촉하나 햇빛 달빛은 밝게 빛나",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-056",
+    "sequence": "56",
+    "hanja": "虛堂習聽",
+    "reading": "허당습청",
+    "meaning": "텅 빈 방 안에서는 작은 소리도 똑똑히 들려 모두가 귀담아듣게 됩니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-055",
+    "hanja": "空谷傳聲",
+    "meaning": "텅 빈 골짜기에서 소리를 내면 메아리가 그대로 멀리 울려 퍼집니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "虛(뷜 허) 堂(집 당) 習(니길 습) 聽°(드를 텽)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [虛堂習聽] 및 16세기 훈음, 사성 방점(虛堂習聽°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "虛(뷜 허) 堂(집 당) 習(ᄇᆡ홀 습) 聽(드를 텽)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [虛堂習聽] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 虛堂習聽 | 독음: 허당습청 | 번역: 빈 골짜기에 울리는 소리처럼 또한 빈집에서 들리는 소리처럼",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

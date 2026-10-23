@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-038",
+    "sequence": "38",
+    "hanja": "四大五常",
+    "reading": "사대오상",
+    "meaning": "몸을 이루는 지수화풍 네 물질과 사람이 지켜야 할 인의예지신 다섯 도리입니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-037",
+    "hanja": "蓋此身髮",
+    "meaning": "대저 사람의 몸과 털과 피부는 모두 부모에게서 물려받은 것입니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "四°(넉 ᄉᆞ) 大°(큰 대) °五(다ᄉᆞᆺ 오) 常(샹녯 샹)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [四大五常] 및 16세기 훈음, 사성 방점(四°大°°五常) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "四(넉 ᄉᆞ) 大(큰 대) 五(다ᄉᆞᆺ 오) 常(샹녜 샹)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [四大五常] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 四大五常 | 독음: 사대오상 | 번역: 몸에 털이 덮힌 것과 같이 4대5상을 지키고<ref>4대는 하늘, 땅, 도(道), 임금. 5상은 인(仁), 의(義), 예(禮), 지(智), 신(",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

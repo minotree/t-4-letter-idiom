@@ -1,0 +1,49 @@
+{
+  "row": {
+    "id": "cheonjamun-246",
+    "sequence": "246",
+    "hanja": "徘徊瞻眺",
+    "reading": "배회첨조",
+    "meaning": "주변을 조용히 거닐며 멀고 가까운 곳을 신중하게 굽어보고 멀리 내다봅니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-245",
+    "hanja": "束帶矜莊",
+    "meaning": "의관의 띠를 단정하게 동여매고 몸과 마음을 긍지 있고 장엄하게 가다듬습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "徘(머믈 ᄇᆡ) 徊(머믈 회) 瞻(볼 쳠) 眺°(볼 됴)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [徘徊瞻眺] 및 16세기 훈음, 사성 방점(徘徊瞻眺°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "徘(머믈 ᄇᆡ) 佪(머믈 회) 瞻(볼 쳠) 眺(볼 도)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [徘佪瞻眺] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 徘徊瞻眺 | 독음: 배회첨조 | 번역: 허리띠를 단단히 묶어 긍지를 갖고 여러 곳을 두루 살펴라",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": [
+    "판본 차이: 석봉본 [徘徊瞻眺] vs 광주본 [徘佪瞻眺]. 기준 판본 유지 승인 필요."
+  ]
+}

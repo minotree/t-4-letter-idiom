@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-093",
+    "sequence": "93",
+    "hanja": "仁慈隱惻",
+    "reading": "인자은측",
+    "meaning": "남을 아끼는 어진 자애심과 남의 불행을 가엾게 여기는 측은지심을 늘 품어야 합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-094",
+    "hanja": "造次弗離",
+    "meaning": "급작스럽고 어수선한 위급한 순간이라도 이 어진 마음에서 결코 벗어나지 말아야 합니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "仁(클 인) 慈(ᄌᆞ빋 ᄌᆞ) °隱(수믈 은) 惻(슬흘 측)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [仁慈隱惻] 및 16세기 훈음, 사성 방점(仁慈°隱惻) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "仁(클 인) 慈(ᄌᆞ비 ᄌᆞ) 隱(그을 은) 惻(슬흘 측)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [仁慈隱惻] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 仁慈隱惻 | 독음: 인자은측 | 번역: 어질고 자비로운 마음으로 대하여 떠나지 말아야 하고",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

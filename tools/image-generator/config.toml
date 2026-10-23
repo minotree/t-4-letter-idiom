@@ -1,0 +1,21 @@
+# Real API execution requires BOTH this switch and explicit CLI --live.
+allow_live = false
+script_model = "gpt-4.1-mini"
+# Pin the documented snapshot; no lifetime guarantee is implied.
+image_model = "gpt-image-2.5-flare-2026-09-08"
+image_quality = "medium"
+image_size = "1024x1536"
+timeout_seconds = 120
+max_attempts = 3
+retry_base_seconds = 2
+minimum_quality = 82
+target_min_bytes = 102400
+target_max_bytes = 204800
+
+[korean_font]
+path = "C:/Windows/Fonts/malgun.ttf"
+index = 0
+
+[hanja_font]
+path = "C:/Windows/Fonts/batang.ttc"
+index = 0

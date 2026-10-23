@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-094",
+    "sequence": "94",
+    "hanja": "造次弗離",
+    "reading": "조차불리",
+    "meaning": "급작스럽고 어수선한 위급한 순간이라도 이 어진 마음에서 결코 벗어나지 말아야 합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-093",
+    "hanja": "仁慈隱惻",
+    "meaning": "남을 아끼는 어진 자애심과 남의 불행을 가엾게 여기는 측은지심을 늘 품어야 합니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "°造(지을 조) 次°(ᄀᆞᄋᆞᆷ ᄎᆞ) 弗(말 블) 離(여흴 리)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [造次弗離] 및 16세기 훈음, 사성 방점(°造次°弗離) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "造(지을 조) 次(ᄀᆞᅀᆞᆷ ᄎᆞ) 弗(덜 블) 離(여흴 리)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [造次弗離] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 造次弗離 | 독음: 조차불리 | 번역: 어질고 자비로운 마음으로 대하여 떠나지 말아야 하고",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-138",
+    "sequence": "138",
+    "hanja": "濟弱扶傾",
+    "reading": "제약부경",
+    "meaning": "약한 나라를 구원하여 건져주고 쓰러져가는 작은 나라들을 붙들어 일으켜 세웠습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-137",
+    "hanja": "桓公匡合",
+    "meaning": "제나라 환공은 천하의 어지러움을 바로잡고 제후들을 한자리에 규합하였습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "°濟(건널 졔) 弱(약ᄒᆞᆯ 약) 扶(븓들 부) 傾(기울 경)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [濟弱扶傾] 및 16세기 훈음, 사성 방점(°濟弱扶傾) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "濟(거닐 졔) 弱(바ᄃᆞ라올 약) 扶(더위자ᄇᆞᆯ 부) 傾(기울 경)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [濟弱扶傾] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 濟弱扶傾 | 독음: 제약부경 | 번역: 환공은 제후를 널리 합쳐 기울어져가는 나라를 구했지",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

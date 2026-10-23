@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-087",
+    "sequence": "87",
+    "hanja": "諸姑伯叔",
+    "reading": "제고백숙",
+    "meaning": "고모들과 큰아버지, 작은아버지 등 집안의 모든 친척 어른들입니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-088",
+    "hanja": "猶子比兒",
+    "meaning": "조카를 대할 때도 마치 친자식과 다름없이 아끼고 똑같이 사랑으로 대합니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "諸(모ᄃᆞᆯ 졔) 姑(할미 고) 伯(ᄆᆞᆮ ᄇᆡᆨ) 叔(아자비 슉)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [諸姑伯叔] 및 16세기 훈음, 사성 방점(諸姑伯叔) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "諸(모ᄃᆞᆯ 졔) 姑(할미 고) 伯(ᄆᆞᆮ ᄇᆡᆨ) 叔(아자비 슉)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [諸姑伯叔] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 諸姑伯叔 | 독음: 제고백숙 | 번역: 모든 고모 삼촌의 아이를 내 아이라 여기고",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

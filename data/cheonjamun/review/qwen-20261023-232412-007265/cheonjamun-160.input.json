@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-160",
+    "sequence": "160",
+    "hanja": "鉅野洞庭",
+    "reading": "거야동정",
+    "meaning": "태산 서쪽의 끝없이 광활한 거야 땅의 늪과 남방의 끝없는 동정호 호수입니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-159",
+    "hanja": "昆池碣石",
+    "meaning": "한 무제가 수전을 훈련하던 곤명지와 시황제가 바다를 바라보던 갈석산입니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "°鉅(톱 거) °野(드ᄅᆞ 야) 洞°(골 동) 庭(ᄠᅳᆯ 뎡)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [鉅野洞庭] 및 16세기 훈음, 사성 방점(°鉅°野洞°庭) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "鉅(톱 거) 野(뫼 야) 洞(골 동) 庭(ᄠᅳᆯ 뎡)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [鉅野洞庭] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 鉅野洞庭 | 독음: 거야동정 | 번역: 운남의 곤지와 부평의 갈석, 거야의 넓은 들판과 동정의 큰 호수",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "template_version": "1.0",
+  "layout_version": 2,
+  "mode": "settings_only",
+  "canvas": {"width": 512, "height": 1536},
+  "grid": {"columns": 1, "rows": 4, "panel_width": 512, "panel_height": 384},
+  "artwork": {"max_width": 508, "max_height": 380, "fit": "contain"},
+  "dialogue": {"minimum_font_size": 20, "maximum_font_size": 23},
+  "bubble": {"padding_x": 12, "padding_y": 10, "width_candidates": [230, 260, 300, 350], "position_candidates": [[12, 12], [126, 12], [240, 12]]},
+  "number": {"labels": ["①", "②", "③", "④"], "position_candidates": [[10, 10], [462, 10]]},
+  "answer": {"measurement": "font_bbox", "padding_x": 12, "alignment": "center", "minimum_font_size": 28, "maximum_font_size": 32},
+  "notice": {"text": "AI가 제작한 이미지입니다", "font_size": 17},
+  "output": {"format": "WEBP", "minimum_quality": 82, "target_min_bytes": 102400, "target_max_bytes": 204800, "readability_first": true},
+  "safety": {"auto_approve": false, "on_collision": "needs_review"},
+  "features": {"automatic_width_selection": false, "automatic_number_placement": false, "speaker_tracking": false, "directional_tails": false},
+  "panels": {
+    "1": {"protected_regions": [], "speaker": null, "tail_direction": "fixed_down_left", "bubble": {"width": 260, "candidates": [[240, 12]]}, "number_position": [10, 10]},
+    "2": {"protected_regions": [], "speaker": null, "tail_direction": "fixed_down_left", "bubble": {"width": 260, "candidates": [[240, 12]]}, "number_position": [10, 10]},
+    "3": {"protected_regions": [], "speaker": null, "tail_direction": "fixed_down_left", "bubble": {"width": 260, "candidates": [[240, 12]]}, "number_position": [10, 10]},
+    "4": {"protected_regions": [], "speaker": null, "tail_direction": "fixed_down_left", "bubble": {"width": 350, "candidates": [[100, 10]]}, "number_position": [40, 10], "answer_box": [150, 100, 370, 150], "notice_box": [65, 354, 455, 381]}
+  }
+}

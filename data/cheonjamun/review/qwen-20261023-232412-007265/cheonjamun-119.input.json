@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-119",
+    "sequence": "119",
+    "hanja": "旣集墳典",
+    "reading": "기집분전",
+    "meaning": "이미 삼황오제의 위대한 삼분오전 등 천하의 소중한 고전들을 모두 모았습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-120",
+    "hanja": "亦聚群英",
+    "meaning": "또한 천하에서 학문과 덕망이 가장 뛰어난 뭇 인재들을 한자리에 모았습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "旣°(이믜 긔) 集(모ᄃᆞᆯ 집) 墳(무덤 분) °典(법 뎐)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [旣集墳典] 및 16세기 훈음, 사성 방점(旣°集墳°典) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "旣(이믜 긔) 集(모ᄃᆞᆯ 집) 墳(무덤 분) 典(법 뎐)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [旣集墳典] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 既集墳典 | 독음: 기집분전 | 번역: 이미 분전<ref>삼황오제 시절의 법률과 의전을 뜻한다.</ref> 을 모은 곳에 영웅들이 모였도다.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

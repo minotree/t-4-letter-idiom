@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-106",
+    "sequence": "106",
+    "hanja": "浮渭據涇",
+    "reading": "부위거경",
+    "meaning": "장안은 위수 강물에 배를 띄우고 경수 줄기를 웅거하여 자리 잡았습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-105",
+    "hanja": "背邙面洛",
+    "meaning": "낙양은 뒤로는 북망산을 등지고 앞으로는 낙수를 굽어보는 명당입니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "浮(ᄠᅳᆯ 부) 渭°(위슈 위) 據°(루를 거) 涇(경슈 경)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [浮渭據涇] 및 16세기 훈음, 사성 방점(浮渭°據°涇) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "浮(ᄠᅳᆯ 부) 渭(믓ᄀᆞᆺ 위) 據(누를 거) 涇(믓ᄀᆞᆺ 경)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [浮渭據涇] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 浮渭據涇 | 독음: 부위거경 | 번역: 낙양은 북망산을 등지고 낙수를 마주하고 장안에는 위수와 경수가 흐르는 구나.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

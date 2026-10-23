@@ -1,0 +1,56 @@
+{
+  "row": {
+    "id": "cheonjamun-010",
+    "sequence": "10",
+    "hanja": "露結爲霜",
+    "reading": "노결위상",
+    "meaning": "이슬이 찬 기운을 만나 엉기어 하얀 서리가 됩니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-009",
+    "hanja": "雲騰致雨",
+    "meaning": "수증기가 위로 올라 구름이 되고 뭉쳐서 비를 내립니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "露°(이ᄉᆞᆯ 로) 結(ᄆᆡᆯ 결) 爲(ᄒᆞᆯ 위) 霜(서리 상)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [露結爲霜] 및 16세기 훈음, 사성 방점(露°結爲霜) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "露(이슬 로) 結(ᄆᆡᆯ 결) 爲(ᄒᆞᆯ 위) 霜(셔리 상)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [露結爲霜] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 露結為霜 | 독음: 노결위상 | 번역: 구름은 올라가 비가 되고 이슬은 얼어 서리가 된다.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-korean-std-dict",
+      "supports": [
+        "reading"
+      ],
+      "excerpt": "제12항: 한자음 '라, 로, 루, 르'가 단어 첫머리에 올 적에는, 두음 법칙에 따라 '나, 노, 누, 느'로 적는다. (보기: 露 -> 노)",
+      "comparison_note": "구절 첫머리 '露'가 두음법칙에 따라 '노'로 실현됨을 증명함.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,133 @@
+{
+  "compression": {
+    "bytes": 186206,
+    "quality": 100,
+    "size_note": "within_target",
+    "within_target": true
+  },
+  "context_sha256": "255a86586d7a32ccbead901c848eab80ba1586368d4ff0cbb6cedb2deb505362",
+  "dimensions": [
+    512,
+    1536
+  ],
+  "filename": "0001_가가호호.webp",
+  "format": "WEBP",
+  "hanja": "家家戶戶",
+  "human_review_required": true,
+  "id": "1",
+  "mode": "manual-chatgpt",
+  "output_sha256": "12de86eaa188df42ceb9443be2144581303d11e76e6eb7ac9592acf29012acf5",
+  "overlays": [
+    {
+      "box": [
+        10,
+        24,
+        53,
+        65
+      ],
+      "font_size": 32,
+      "line_count": 1,
+      "text": "①"
+    },
+    {
+      "box": [
+        76,
+        23,
+        482,
+        99
+      ],
+      "font_size": 23,
+      "line_count": 1,
+      "text": "와! 마을에 축제가 열리나 봐!"
+    },
+    {
+      "box": [
+        10,
+        408,
+        53,
+        449
+      ],
+      "font_size": 32,
+      "line_count": 1,
+      "text": "②"
+    },
+    {
+      "box": [
+        76,
+        407,
+        482,
+        483
+      ],
+      "font_size": 23,
+      "line_count": 1,
+      "text": "모든 집이 예쁘게 꾸며져 있네?"
+    },
+    {
+      "box": [
+        10,
+        792,
+        53,
+        833
+      ],
+      "font_size": 32,
+      "line_count": 1,
+      "text": "③"
+    },
+    {
+      "box": [
+        76,
+        791,
+        482,
+        867
+      ],
+      "font_size": 23,
+      "line_count": 1,
+      "text": "응! 집집마다 축제를 준비했대!"
+    },
+    {
+      "box": [
+        10,
+        1176,
+        53,
+        1217
+      ],
+      "font_size": 32,
+      "line_count": 1,
+      "text": "④"
+    },
+    {
+      "box": [
+        76,
+        1175,
+        482,
+        1251
+      ],
+      "font_size": 23,
+      "line_count": 1,
+      "text": "정말 온 마을이 축제 분위기야!"
+    },
+    {
+      "box": [
+        172.0,
+        1464,
+        340.0,
+        1508
+      ],
+      "font_size": 42,
+      "role": "answer",
+      "text": "家家戶戶"
+    },
+    {
+      "box": [
+        115,
+        1514,
+        500,
+        1534
+      ],
+      "font_size": 17,
+      "line_count": 1,
+      "text": "AI가 제작한 이미지입니다"
+    }
+  ],
+  "reading": "가가호호"
+}

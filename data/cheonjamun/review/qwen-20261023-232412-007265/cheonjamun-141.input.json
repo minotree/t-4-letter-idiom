@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-141",
+    "sequence": "141",
+    "hanja": "俊乂密勿",
+    "reading": "준예밀물",
+    "meaning": "천하의 걸출한 인재들이 조정에 가득하여 은밀하고 정성스럽게 국사를 힘써 도왔습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-142",
+    "hanja": "多士寔寧",
+    "meaning": "많은 훌륭한 선비들이 힘을 합치니 온 나라와 왕실이 진실로 편안해졌습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "俊°(ᄆᆡ올 쥰) 乂°(어딜 예) 密(븩븩ᄒᆞᆯ 밀) 勿(말 믈)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [俊乂密勿] 및 16세기 훈음, 사성 방점(俊°乂°密勿) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "俊(어딜 쥰) 乂(어딜 예) 密(볼 밀) 勿(말 믈)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [俊乂密勿] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 俊乂密勿 | 독음: 준예밀물 | 번역: 준걸과 예사가 모이니 참으로 평안하구나.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

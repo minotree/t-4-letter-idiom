@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-146",
+    "sequence": "146",
+    "hanja": "踐土會盟",
+    "reading": "천토회맹",
+    "meaning": "진나라 문공은 천토 땅에서 제후들을 모아 회맹을 맺고 천자를 받들었습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-145",
+    "hanja": "假途滅虢",
+    "meaning": "진나라는 우나라에 길을 빌려 괵나라를 치고 돌아오는 길에 우나라마저 멸망시켰습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "°踐(ᄇᆞᆯ올 쳔) °土(ᄒᆞᆰ 토) 會°(모ᄃᆞᆯ 회) 盟(ᄆᆡᆼ셔 ᄆᆡᆼ)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [踐土會盟] 및 16세기 훈음, 사성 방점(°踐°土會°盟) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "踐(ᄇᆞᆯ올 쳔) 土(ᄒᆞᆰ 토) 會(모ᄃᆞᆯ 회) 盟(ᄆᆡᆼ솃 ᄆᆡᆼ)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [踐土會盟] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 踐土會盟 | 독음: 천토회맹 | 번역: 진은 위계를 써 괵을 멸하고 천토에서 회맹하였고",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

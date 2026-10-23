@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-033",
+    "sequence": "33",
+    "hanja": "鳴鳳在樹",
+    "reading": "명봉재수",
+    "meaning": "태평성대를 맞아 상서로운 봉황이 숲의 오동나무에 깃들어 노래합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-034",
+    "hanja": "白駒食場",
+    "meaning": "어진 선비가 탄 흰 망아지가 마당의 풀을 여유롭게 뜯어 먹습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "鳴(울 명) 鳳°(봉황 봉) °在(이실 ᄌᆡ) 樹°(나모 슈)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [鳴鳳在樹] 및 16세기 훈음, 사성 방점(鳴鳳°°在樹°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "鳴(울 명) 鳳(새 봉) 在(이실 ᄌᆡ) 樹(나모 슈)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [鳴鳳在樹] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 鳴鳳在樹 | 독음: 명봉재수 | 번역: 봉황은 나무에 내려 울고 흰망아지 풀을 뜯으니<ref>성군이 나면 봉황이 찾아와 울고 흰망아지가 나타난다는 전설에 빗대어 태평성대를 말함</re",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

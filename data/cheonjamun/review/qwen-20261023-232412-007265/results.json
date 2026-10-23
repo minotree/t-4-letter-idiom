@@ -1,0 +1,3767 @@
+{
+  "model": "qwen3:14b",
+  "input_sha256": "f9f25006421f28385bf9f4b52fc89dd93709ae47817054f5949095fd649017d6",
+  "evidence_sha256": "b144f88cc36b71945e06bbcc46184582da36a06b57bccf1f9f0658c2499b1164",
+  "semantic_approved": false,
+  "requested": 250,
+  "completed": 250,
+  "results": [
+    {
+      "id": "cheonjamun-001",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [天地玄黃]에 해당하는 뜻 평가",
+      "unresolved": [],
+      "seconds": 2.3,
+      "prompt_tokens": 951,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-002",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "우주는 끝없이 넓고 아득히 멀고 거칩니다.",
+          "proposed_value": "하늘은 검고 땅은 누르며 우주는 넓고도 크다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 비교하여 의미가 다릅니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 [宇宙洪荒]의 의미 평가",
+      "unresolved": [],
+      "seconds": 6.33,
+      "prompt_tokens": 940,
+      "output_tokens": 173
+    },
+    {
+      "id": "cheonjamun-003",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "日月盈昃 네 한자의 한자, 독음, 의미에 대한 검토",
+      "unresolved": [],
+      "seconds": 2.69,
+      "prompt_tokens": 955,
+      "output_tokens": 63
+    },
+    {
+      "id": "cheonjamun-004",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교 검증 완료",
+      "unresolved": [
+        "독음 선택: 천문 별자리(28수) 전통 독음 '진수열장' vs 일반 대중음 '진숙열장' 서비스 방침 결정 필요."
+      ],
+      "seconds": 3.73,
+      "prompt_tokens": 1126,
+      "output_tokens": 108
+    },
+    {
+      "id": "cheonjamun-005",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.53,
+      "prompt_tokens": 961,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-006",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "秋收冬藏의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.69,
+      "prompt_tokens": 970,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-007",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "閏餘成歲 네 한자의 뜻과 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.86,
+      "prompt_tokens": 982,
+      "output_tokens": 69
+    },
+    {
+      "id": "cheonjamun-008",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "육률과 육려의 음악 음률로 음양의 조화를 고르게 맞춥니다.",
+          "proposed_value": "윤달을 더하여 한해를 이루고 가락을 맞추어 양기를 돋운다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다릅니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 뜻 평가",
+      "unresolved": [],
+      "seconds": 6.75,
+      "prompt_tokens": 985,
+      "output_tokens": 183
+    },
+    {
+      "id": "cheonjamun-009",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "문장의 네 한자에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미 모두 기준 원문과 일치함.",
+      "unresolved": [],
+      "seconds": 3.25,
+      "prompt_tokens": 952,
+      "output_tokens": 81
+    },
+    {
+      "id": "cheonjamun-010",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.64,
+      "prompt_tokens": 1086,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-011",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미를 기준 원문(src-seokbong-1583)과 비교하여 확인함.",
+      "unresolved": [],
+      "seconds": 3.69,
+      "prompt_tokens": 947,
+      "output_tokens": 94
+    },
+    {
+      "id": "cheonjamun-012",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻만 평가함. '玉出崑岡'의 한자, 독음, 의미를 기준 원문(src-seokbong-1583)과 비교하여 일관됨.",
+      "unresolved": [],
+      "seconds": 3.95,
+      "prompt_tokens": 954,
+      "output_tokens": 102
+    },
+    {
+      "id": "cheonjamun-013",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "劒號巨闕의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.75,
+      "prompt_tokens": 957,
+      "output_tokens": 66
+    },
+    {
+      "id": "cheonjamun-014",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [珠稱夜光]에 해당하는 뜻 평가",
+      "unresolved": [],
+      "seconds": 2.75,
+      "prompt_tokens": 965,
+      "output_tokens": 66
+    },
+    {
+      "id": "cheonjamun-015",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.5,
+      "prompt_tokens": 957,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-016",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.53,
+      "prompt_tokens": 980,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-017",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "해함하담(海鹹河淡)의 한자, 독음, 의미에 대한 3개 원문 출처 대조 검증 완료",
+      "unresolved": [],
+      "seconds": 3.27,
+      "prompt_tokens": 1021,
+      "output_tokens": 80
+    },
+    {
+      "id": "cheonjamun-018",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "鱗潛羽翔의 한자, 독음, 의미에 대한 원문과 비교 검증",
+      "unresolved": [],
+      "seconds": 2.77,
+      "prompt_tokens": 1020,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-019",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "龍師火帝 네 한자의 뜻에 대한 해설",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 1017,
+      "output_tokens": 58
+    },
+    {
+      "id": "cheonjamun-020",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "문장의 네 한자 [鳥官人皇]에 해당하는 뜻만 확인함. 원문 한자, 독음, 의미 모두 기준 원문과 일치함.",
+      "unresolved": [],
+      "seconds": 3.42,
+      "prompt_tokens": 1000,
+      "output_tokens": 85
+    },
+    {
+      "id": "cheonjamun-021",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "始制文字 네 한자의 뜻과 독음, 번역에 대한 비교 검토",
+      "unresolved": [],
+      "seconds": 2.72,
+      "prompt_tokens": 942,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-022",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.53,
+      "prompt_tokens": 934,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-023",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "번역 발췌에 해당하는 네 한자 [推位讓國]의 한자, 독음, 의미에 대한 검토 수행. 원문 자료(src-seokbong-1583, src-gwangju-1575, src-wikisource-translation)와 비교하여 일관성 확인.",
+      "unresolved": [],
+      "seconds": 4.42,
+      "prompt_tokens": 978,
+      "output_tokens": 115
+    },
+    {
+      "id": "cheonjamun-024",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "번역 발췌에 해당하는 네 한자 [有虞陶唐]의 뜻 평가",
+      "unresolved": [],
+      "seconds": 2.8,
+      "prompt_tokens": 976,
+      "output_tokens": 67
+    },
+    {
+      "id": "cheonjamun-025",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 998,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-026",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "주나라 무왕 희발과 은나라를 세운 탕왕에 대한 설명",
+      "unresolved": [],
+      "seconds": 2.81,
+      "prompt_tokens": 994,
+      "output_tokens": 66
+    },
+    {
+      "id": "cheonjamun-027",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "坐朝問道 네 한자의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.8,
+      "prompt_tokens": 980,
+      "output_tokens": 67
+    },
+    {
+      "id": "cheonjamun-028",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "垂拱平章 네 한자의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.84,
+      "prompt_tokens": 981,
+      "output_tokens": 67
+    },
+    {
+      "id": "cheonjamun-029",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "愛育黎首 네 한자의 독음과 의미",
+      "unresolved": [],
+      "seconds": 2.47,
+      "prompt_tokens": 1008,
+      "output_tokens": 56
+    },
+    {
+      "id": "cheonjamun-030",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "사방의 먼 변방 민족들도 덕화에 감복하여 신하로서 복종합니다.",
+          "proposed_value": "백성을 아끼고 오랑캐가 신하로 복종하게 하소서.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 비교하여 의미가 다릅니다. 원문의 '臣伏戎羌'은 '백성을 아끼고 오랑캐가 신하로 복종하게 하소서'로 해석되는 것으로 보입니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "원문 '臣伏戎羌'의 의미 평가",
+      "unresolved": [],
+      "seconds": 7.64,
+      "prompt_tokens": 983,
+      "output_tokens": 213
+    },
+    {
+      "id": "cheonjamun-031",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "遐邇壹體 네 한자의 독음과 의미",
+      "unresolved": [],
+      "seconds": 2.47,
+      "prompt_tokens": 968,
+      "output_tokens": 57
+    },
+    {
+      "id": "cheonjamun-032",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "모든 신하와 백성이 기꺼이 손님처럼 공경하며 어진 임금에게 귀의합니다.",
+          "proposed_value": "멀고 가까운 곳이 하나가 되어 임금께 이끌려 따를 것입니다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 기존 의미가 다릅니다. '멀고 가까운 곳이 하나가 되어 임금께 이끌려 따를 것입니다.'라는 해석이 원문의 의미에 더 부합합니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미 평가",
+      "unresolved": [],
+      "seconds": 7.91,
+      "prompt_tokens": 968,
+      "output_tokens": 221
+    },
+    {
+      "id": "cheonjamun-033",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "鳴鳳在樹의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.83,
+      "prompt_tokens": 1042,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-034",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "어진 선비가 탄 흰 망아지가 마당의 풀을 여유롭게 뜯어 먹습니다.",
+          "proposed_value": "봉황은 나무에 내려 울고 흰망아지 풀을 뜯으니",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 해설과 명확히 다름. '어진 선비가 탄 흰 망아지'라는 설명은 원문에 명시된 내용이 아니며, '봉황은 나무에 내려 울고 흰망아지 풀을 뜯으니'라는 해설이 원문과 더 부합함.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "해설(의미)에 한함",
+      "unresolved": [],
+      "seconds": 9.17,
+      "prompt_tokens": 1044,
+      "output_tokens": 254
+    },
+    {
+      "id": "cheonjamun-035",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "화피초목(化被草木)의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.89,
+      "prompt_tokens": 954,
+      "output_tokens": 70
+    },
+    {
+      "id": "cheonjamun-036",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "賴及萬方 네 한자의 한자, 독음, 의미에 대한 검토",
+      "unresolved": [],
+      "seconds": 2.64,
+      "prompt_tokens": 961,
+      "output_tokens": 63
+    },
+    {
+      "id": "cheonjamun-037",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [蓋此身髮]에 해당하는 뜻 평가",
+      "unresolved": [],
+      "seconds": 2.8,
+      "prompt_tokens": 1001,
+      "output_tokens": 66
+    },
+    {
+      "id": "cheonjamun-038",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "四大五常의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.72,
+      "prompt_tokens": 1007,
+      "output_tokens": 63
+    },
+    {
+      "id": "cheonjamun-039",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "恭惟鞠養 네 한자의 해설과 독음, 의미",
+      "unresolved": [],
+      "seconds": 2.5,
+      "prompt_tokens": 954,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-040",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+      "unresolved": [],
+      "seconds": 3.14,
+      "prompt_tokens": 972,
+      "output_tokens": 76
+    },
+    {
+      "id": "cheonjamun-041",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "女慕貞烈",
+          "proposed_value": "女慕貞潔",
+          "reason": "광주본(1575년)에서 '烈'이 '潔'으로 기록되어 있으며, 이는 '贞洁'이라는 더 일반적인 표현과 일치한다. 석봉본(1583년)의 '烈'은 '정렬'로 해석되지만, '潔'은 '贞洁'으로 해석되어 문맥상 더 자연스럽다.",
+          "source_ids": [
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "여자는 곧고 맑은 정절과 절개를 사모하여 지켜야 합니다.",
+          "proposed_value": "여자는 정절과 맑은 절개를 지켜야 합니다.",
+          "reason": "광주본의 '潔'은 '맑은 절개'를 의미하며, '烈'보다는 '潔'이 '贞洁'이라는 표현과 더 잘 어울린다. 따라서 '정절과 절개'보다는 '정절과 맑은 절개'로 해석하는 것이 더 적절하다.",
+          "source_ids": [
+            "src-gwangju-1575"
+          ]
+        }
+      ],
+      "checked_scope": "女慕貞烈의 한자, 독음, 의미에 대한 비교 검토",
+      "unresolved": [
+        "판본 차이: 석봉본 [女慕貞烈] vs 광주본 [女慕貞潔]. 기준 판본 유지 승인 필요."
+      ],
+      "seconds": 14.3,
+      "prompt_tokens": 1144,
+      "output_tokens": 407
+    },
+    {
+      "id": "cheonjamun-042",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "男效才良의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.72,
+      "prompt_tokens": 961,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-043",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.49,
+      "prompt_tokens": 957,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-044",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "좋은 능력을 터득하고 배우면 결코 잊거나 소홀히 하지 말아야 합니다.",
+          "proposed_value": "잘못이 있으면 반드시 고치고 배운 것은 잊지 말아야 한다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다릅니다. '잘못이 있으면 반드시 고치고'라는 문맥이 더 부합합니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 [得能莫忘] 네 한자의 뜻 평가",
+      "unresolved": [],
+      "seconds": 7.39,
+      "prompt_tokens": 957,
+      "output_tokens": 205
+    },
+    {
+      "id": "cheonjamun-045",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [罔談彼短]에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미 모두 기준 원문과 일치함.",
+      "unresolved": [],
+      "seconds": 3.52,
+      "prompt_tokens": 964,
+      "output_tokens": 88
+    },
+    {
+      "id": "cheonjamun-046",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "문장의 네 한자에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미 모두 기준 원문과 일치함.",
+      "unresolved": [],
+      "seconds": 3.2,
+      "prompt_tokens": 958,
+      "output_tokens": 81
+    },
+    {
+      "id": "cheonjamun-047",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "약속한 말은 마땅히 다시 거듭 확인하여도 미더울 수 있도록 지켜야 합니다.",
+          "proposed_value": "믿었던 장점이 뒤집힐 수 있고 다른 사람 기량은 헤아리기 어렵기 때문이다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 해설과 원문의 의미가 명확히 다르며, 이는 해설의 오류로 판단됨.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "문장의 의미 및 해설",
+      "unresolved": [],
+      "seconds": 6.78,
+      "prompt_tokens": 976,
+      "output_tokens": 188
+    },
+    {
+      "id": "cheonjamun-048",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "사람의 도량과 그릇은 깊고 넓어서 쉽게 헤아릴 수 없을 만큼 커야 합니다.",
+          "proposed_value": "믿었던 장점이 뒤집힐 수 있고 다른 사람 기량은 헤아리기 어렵기 때문이다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 기존 의미가 다릅니다. 원문의 의미를 더 정확하게 반영한 것으로 보입니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 뜻 평가",
+      "unresolved": [],
+      "seconds": 7.39,
+      "prompt_tokens": 985,
+      "output_tokens": 205
+    },
+    {
+      "id": "cheonjamun-049",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.53,
+      "prompt_tokens": 1006,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-050",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "詩讚羔羊 네 한자의 해설과 원문 대조 확인",
+      "unresolved": [],
+      "seconds": 2.59,
+      "prompt_tokens": 991,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-051",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.52,
+      "prompt_tokens": 962,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-052",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "剋念作聖의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.7,
+      "prompt_tokens": 970,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-053",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.52,
+      "prompt_tokens": 975,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-054",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "몸가짐의 모양새가 단정하면 밖으로 드러나는 겉모습도 덩달아 바르게 됩니다.",
+          "proposed_value": "덕을 쌓아 이름을 세우면 바른 모양이 겉으로 드러난다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면 '형단표정'의 의미는 '덕을 쌓아 이름을 세우면 바른 모양이 겉으로 드러난다'로 기록되어 있으며, 이는 기존의 의미와 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "구절의 의미",
+      "unresolved": [],
+      "seconds": 7.92,
+      "prompt_tokens": 975,
+      "output_tokens": 222
+    },
+    {
+      "id": "cheonjamun-055",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻만 평가",
+      "unresolved": [],
+      "seconds": 2.59,
+      "prompt_tokens": 975,
+      "output_tokens": 61
+    },
+    {
+      "id": "cheonjamun-056",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.56,
+      "prompt_tokens": 978,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-057",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "禍因惡積의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.75,
+      "prompt_tokens": 986,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-058",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.51,
+      "prompt_tokens": 977,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-059",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.59,
+      "prompt_tokens": 1010,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-060",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미 모두 기준 원문과 일치함.",
+      "unresolved": [],
+      "seconds": 3.34,
+      "prompt_tokens": 1018,
+      "output_tokens": 82
+    },
+    {
+      "id": "cheonjamun-061",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "자부사군의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.72,
+      "prompt_tokens": 982,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-062",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "그 섬김의 핵심은 엄숙한 마음가짐과 지극한 공경심에 있습니다.",
+          "proposed_value": "부모를 모시고 임금을 섬기는 것은 엄정하면서도 정성스러워야 하는 것이니",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다릅니다. 원문의 맥락상 '엄정하면서도 정성스러워야 한다'는 해석이 더 적절해 보입니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미",
+      "unresolved": [],
+      "seconds": 7.42,
+      "prompt_tokens": 978,
+      "output_tokens": 208
+    },
+    {
+      "id": "cheonjamun-063",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.56,
+      "prompt_tokens": 977,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-064",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.53,
+      "prompt_tokens": 976,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-065",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "『臨深履薄』의 한자, 독음, 의미에 대한 3개 원문 출처 비교 검증 완료",
+      "unresolved": [],
+      "seconds": 3.08,
+      "prompt_tokens": 1009,
+      "output_tokens": 74
+    },
+    {
+      "id": "cheonjamun-066",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "夙興溫淸",
+          "proposed_value": null,
+          "reason": "석봉본과 광주본 모두 '夙興溫淸'로 기록되어 있으나, '淸'과 '凊'의 차이로 인해 '溫淸'과 '溫凊'의 해석 차이가 존재함.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "숙흥온정",
+          "proposed_value": "숙흥온청",
+          "reason": "위키문헌 해설에서 '凊'을 '서늘할 청'으로 해석하며, '淸'은 '맑을 청'으로 해석할 수 있어 '온정'과 '온청'의 독음 차이가 존재함.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "아침 일찍 일어나 부모님 안부를 살피고 겨울에는 따뜻하게 여름에는 시원하게 해 드립니다.",
+          "proposed_value": null,
+          "reason": "해설에서 '깊은 곳을 만나도 살얼음 지나듯 조심하고 일찍 일어나 덥고 차가운지 살피는 것'으로 해석되어, 원문의 의미 해석에 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "夙興溫淸의 한자, 독음, 의미에 대한 비교 검토",
+      "unresolved": [
+        "독음 및 판본: 목판본 한자는 溫淸(맑을 청)이나 문맥상 凊(서늘할 청)의 통용자로 '숙흥온청' 또는 '숙흥온정' 이견 존재."
+      ],
+      "seconds": 17.03,
+      "prompt_tokens": 1069,
+      "output_tokens": 492
+    },
+    {
+      "id": "cheonjamun-067",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.61,
+      "prompt_tokens": 995,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-068",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "사계절 내내 푸른 소나무처럼 변함없이 무성하고 곧은 기개를 지닙니다.",
+          "proposed_value": "난초와 같이 향기롭고 소나무처럼 굳센 것(이 충성하는 마음가짐이다.)",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 해설과 기존 의미가 다릅니다. 기존 의미는 '소나무의 푸름과 곧음'에 초점을 맞추고 있으나, 위키문헌 해설은 '난초의 향기'와 '소나무의 굳센 기개'를 함께 언급하며, 충성의 마음가짐을 암시하고 있습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미 평가",
+      "unresolved": [],
+      "seconds": 9.34,
+      "prompt_tokens": 982,
+      "output_tokens": 265
+    },
+    {
+      "id": "cheonjamun-069",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "원문 한자, 독음, 의미에 대한 비교 검토 완료. 광주본과 석봉본의 한자 및 훈음은 일치하며, 위키문헌의 독음과 의미도 원문과 부합함.",
+      "unresolved": [],
+      "seconds": 3.97,
+      "prompt_tokens": 982,
+      "output_tokens": 102
+    },
+    {
+      "id": "cheonjamun-070",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "淵澄取映의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.75,
+      "prompt_tokens": 1004,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-071",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 965,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-072",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입으로 내는 말씨와 언어는 조용하고 침착하여 흔들림이 없어야 합니다.",
+      "unresolved": [],
+      "seconds": 2.88,
+      "prompt_tokens": 964,
+      "output_tokens": 69
+    },
+    {
+      "id": "cheonjamun-073",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "篤初誠美의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.75,
+      "prompt_tokens": 989,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-074",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "愼終宜令의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.72,
+      "prompt_tokens": 991,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-075",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 972,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-076",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "그로 인해 쌓인 훌륭한 명성과 명예는 끝없이 널리 퍼져 사라지지 않습니다.",
+          "proposed_value": "이를 바탕으로 이루는 업적이 끝없으리라.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '籍甚無竟'의 의미는 '이를 바탕으로 이루는 업적이 끝없으리라'로 해석되어 있다. 이는 기존의 의미와 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "문장의 의미",
+      "unresolved": [],
+      "seconds": 7.56,
+      "prompt_tokens": 989,
+      "output_tokens": 211
+    },
+    {
+      "id": "cheonjamun-077",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "학문을 깊이 닦아 여유가 생기면 벼슬길에 나아가 세상에 도리를 펼칩니다.",
+      "unresolved": [],
+      "seconds": 3.11,
+      "prompt_tokens": 987,
+      "output_tokens": 75
+    },
+    {
+      "id": "cheonjamun-078",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "임무와 직책을 맡아 정사에 참여하여 백성을 바르게 다스립니다.",
+          "proposed_value": "학문이 뛰어나 벼슬에 올라 직무를 맞고 정사를 돌볼 때에",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다릅니다. 원문의 의미는 '학문이 뛰어나 벼슬에 올라 직무를 맞고 정사를 돌볼 때에'로 해석될 수 있습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "의미",
+      "unresolved": [],
+      "seconds": 7.5,
+      "prompt_tokens": 982,
+      "output_tokens": 208
+    },
+    {
+      "id": "cheonjamun-079",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.61,
+      "prompt_tokens": 1012,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-080",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.58,
+      "prompt_tokens": 1017,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-081",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.64,
+      "prompt_tokens": 1007,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-082",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [禮別尊卑]에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미 모두 기준 원문과 일치함.",
+      "unresolved": [],
+      "seconds": 3.59,
+      "prompt_tokens": 986,
+      "output_tokens": 88
+    },
+    {
+      "id": "cheonjamun-083",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "상和下睦의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.75,
+      "prompt_tokens": 982,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-084",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 비교 검토 수행. 광주본과 석봉본의 한자 및 독음은 일치하며, 위키문헌의 독음과 의미도 원문과 부합함.",
+      "unresolved": [],
+      "seconds": 3.91,
+      "prompt_tokens": 994,
+      "output_tokens": 100
+    },
+    {
+      "id": "cheonjamun-085",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "外受傅訓의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.73,
+      "prompt_tokens": 992,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-086",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입봉모의(入奉母儀)의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.92,
+      "prompt_tokens": 977,
+      "output_tokens": 70
+    },
+    {
+      "id": "cheonjamun-087",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "諸姑伯叔 네 한자의 뜻과 독음, 의미에 대한 확인",
+      "unresolved": [],
+      "seconds": 2.69,
+      "prompt_tokens": 966,
+      "output_tokens": 63
+    },
+    {
+      "id": "cheonjamun-088",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "조카를 대할 때도 마치 친자식과 다름없이 아끼고 똑같이 사랑으로 대합니다.",
+          "proposed_value": "모든 고모 삼촌의 아이를 내 아이라 여기고",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 원문의 의미가 명확히 다릅니다. 원문은 '고모와 삼촌의 아이'를 가리키는 것으로 보이며, 기존 해설은 '조카'에 초점을 맞추고 있어 의미가 달라집니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 7.97,
+      "prompt_tokens": 972,
+      "output_tokens": 223
+    },
+    {
+      "id": "cheonjamun-089",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "孔懷兄弟 네 한자의 독음과 의미",
+      "unresolved": [],
+      "seconds": 2.42,
+      "prompt_tokens": 970,
+      "output_tokens": 55
+    },
+    {
+      "id": "cheonjamun-090",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.52,
+      "prompt_tokens": 976,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-091",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.51,
+      "prompt_tokens": 969,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-092",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "옥을 갈고닦듯 학문을 탁마하며 잘못이 있으면 서로 경계하고 올바른 규칙으로 인도합니다.",
+          "proposed_value": "벗을 사귈 때는 가려서 사귀고 규범을 염두에 두어 절제하여",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 원문의 의미가 다르게 해석될 수 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "해당 행의 네 한자에 해당하는 뜻",
+      "unresolved": [],
+      "seconds": 7.11,
+      "prompt_tokens": 990,
+      "output_tokens": 196
+    },
+    {
+      "id": "cheonjamun-093",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [仁慈隱惻]에 해당하는 뜻 평가",
+      "unresolved": [],
+      "seconds": 2.83,
+      "prompt_tokens": 987,
+      "output_tokens": 67
+    },
+    {
+      "id": "cheonjamun-094",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "급작스럽고 어수선한 위급한 순간이라도 이 어진 마음에서 결코 벗어나지 말아야 합니다.",
+          "proposed_value": "어질고 자비로운 마음으로 대하여 떠나지 말아야 하고",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면 '造次弗離'의 의미는 '어질고 자비로운 마음으로 대하여 떠나지 말아야 하고'로 기록되어 있으며, 이는 기존의 의미와 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 7.8,
+      "prompt_tokens": 988,
+      "output_tokens": 218
+    },
+    {
+      "id": "cheonjamun-095",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 1001,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-096",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "넘어지고 쓰러지는 극심한 곤경에 부딪히더라도 도리를 이지러뜨리거나 훼손하지 않습니다.",
+          "proposed_value": "절의를 지키고 청렴히 물러나 이러한 (예의가) 이지러지지 않게 하여야 한다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 해설과 비교하여 의미가 다릅니다. 원문의 맥락에 따라 '절의를 지키고 청렴히 물러나'라는 해석이 더 적절해 보입니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미 평가",
+      "unresolved": [],
+      "seconds": 8.2,
+      "prompt_tokens": 1011,
+      "output_tokens": 229
+    },
+    {
+      "id": "cheonjamun-097",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "성정정일의 독음과 '타고난 본성이 고요하고 맑으면 밖으로 드러나는 감정 또한 편안하고 한가롭습니다.'의 의미가 제공된 근거와 일치함을 확인함.",
+      "unresolved": [],
+      "seconds": 3.91,
+      "prompt_tokens": 992,
+      "output_tokens": 100
+    },
+    {
+      "id": "cheonjamun-098",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미를 기준 원문(src-seokbong-1583)과 비교하여 일관성 확인.",
+      "unresolved": [],
+      "seconds": 3.77,
+      "prompt_tokens": 991,
+      "output_tokens": 96
+    },
+    {
+      "id": "cheonjamun-099",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [守眞志滿]에 해당하는 뜻 평가",
+      "unresolved": [],
+      "seconds": 2.81,
+      "prompt_tokens": 986,
+      "output_tokens": 67
+    },
+    {
+      "id": "cheonjamun-100",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "바깥 사물의 욕망을 좇아가다 보면 자신의 본래 뜻이 이리저리 흔들려 변질됩니다.",
+          "proposed_value": "참 뜻이 가득하도록 지키고 물욕을 멀리하라.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 원문의 의미가 명확히 다릅니다. 원문의 의미는 '욕망을 좇아 본래의 뜻이 흔들리다'가 아니라 '참 뜻을 지키고 물욕을 멀리하라'로 해석되어야 합니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "의미 해석",
+      "unresolved": [],
+      "seconds": 8.28,
+      "prompt_tokens": 984,
+      "output_tokens": 232
+    },
+    {
+      "id": "cheonjamun-101",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 972,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-102",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "好爵自縻의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.73,
+      "prompt_tokens": 977,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-103",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [都邑華夏]에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미 모두 기준 원문과 일치함.",
+      "unresolved": [],
+      "seconds": 3.47,
+      "prompt_tokens": 965,
+      "output_tokens": 88
+    },
+    {
+      "id": "cheonjamun-104",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "東西二京 네 한자의 뜻과 독음, 번역에 대한 검토",
+      "unresolved": [],
+      "seconds": 2.67,
+      "prompt_tokens": 948,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-105",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "背邙面洛 네 한자의 독음과 의미",
+      "unresolved": [],
+      "seconds": 2.45,
+      "prompt_tokens": 993,
+      "output_tokens": 56
+    },
+    {
+      "id": "cheonjamun-106",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "장안은 위수 강물에 배를 띄우고 경수 줄기를 웅거하여 자리 잡았습니다.",
+          "proposed_value": "장안에는 위수와 경수가 흐르는 구나.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '浮渭據涇'의 의미는 '장안에는 위수와 경수가 흐르는 구나.'로 해석되어야 하며, 이는 기존의 의미와 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "문장의 의미",
+      "unresolved": [],
+      "seconds": 7.33,
+      "prompt_tokens": 990,
+      "output_tokens": 204
+    },
+    {
+      "id": "cheonjamun-107",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "宮殿盤鬱",
+          "proposed_value": "宮殿盤鬱",
+          "reason": "원문 한자 '宮殿盤鬱'은 src-seokbong-1583, src-gwangju-1575, src-wikisource-translation에서 모두 동일하게 기재되어 있으므로 변경 필요 없음.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575",
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "궁전반울",
+          "proposed_value": "궁전반울",
+          "reason": "src-wikisource-translation에서 '궁전반울'로 독음이 기재되어 있으므로 변경 필요 없음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "웅장한 대궐의 궁전들은 서까래와 전각이 빽빽하게 서리어 웅장합니다.",
+          "proposed_value": "궁전은 울창한 숲에 쌓였고 누각에 올라 놀라운 경치를 보며",
+          "reason": "src-wikisource-translation에서 '궁전은 울창한 숲에 쌓였고 누각에 올라 놀라운 경치를 보며'로 해석되어 있으므로 원문 의미와 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻만 평가",
+      "unresolved": [],
+      "seconds": 15.28,
+      "prompt_tokens": 997,
+      "output_tokens": 441
+    },
+    {
+      "id": "cheonjamun-108",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "문장의 네 한자에 해당하는 뜻만 확인",
+      "unresolved": [],
+      "seconds": 2.5,
+      "prompt_tokens": 982,
+      "output_tokens": 58
+    },
+    {
+      "id": "cheonjamun-109",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "圖寫禽獸 네 한자의 뜻과 관련된 해설",
+      "unresolved": [],
+      "seconds": 2.53,
+      "prompt_tokens": 968,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-110",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "오색 빛깔 고운 채색으로 신선과 신령스러운 존재들의 모습을 장식하였습니다.",
+          "proposed_value": "날짐승 들짐승을 그리니 신선 사는 그림이로구나.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '畵綵仙靈'의 의미는 '날짐승 들짐승을 그리니 신선 사는 그림이로구나'로 해석되어 원래 의미와 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "畵綵仙靈의 의미",
+      "unresolved": [],
+      "seconds": 7.56,
+      "prompt_tokens": 999,
+      "output_tokens": 210
+    },
+    {
+      "id": "cheonjamun-111",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "『丙舍傍啓』의 한자, 독음, 의미에 대한 원문과 해설 비교 검증",
+      "unresolved": [],
+      "seconds": 2.92,
+      "prompt_tokens": 1012,
+      "output_tokens": 69
+    },
+    {
+      "id": "cheonjamun-112",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.58,
+      "prompt_tokens": 1019,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-113",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "너른 대청마루에 화려한 대자리를 펴고 잔칫상을 정성껏 베풀어 놓았습니다.",
+          "proposed_value": "자리를 마련해 연회를 열고 비파를 뜯고 생황을 부니",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 비교하여 원문의 의미가 더 구체적이고 문맥상 적절하다고 판단됨.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 7.27,
+      "prompt_tokens": 994,
+      "output_tokens": 200
+    },
+    {
+      "id": "cheonjamun-114",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "비파와 거문고를 타며 맑은 생황 피리를 불어 아름다운 음악을 연주합니다.",
+          "proposed_value": "자리를 마련해 연회를 열고 비파를 뜯고 생황을 부니",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '번역' 부분에서 제공된 의미는 '자리를 마련해 연회를 열고 비파를 뜯고 생황을 부니'로 기록되어 있으며, 이는 기존의 의미와 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 7.97,
+      "prompt_tokens": 979,
+      "output_tokens": 223
+    },
+    {
+      "id": "cheonjamun-115",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "陞階納陛 네 한자의 한자, 독음, 의미에 대한 검토",
+      "unresolved": [],
+      "seconds": 2.66,
+      "prompt_tokens": 985,
+      "output_tokens": 63
+    },
+    {
+      "id": "cheonjamun-116",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "늘어선 고관들의 고깔관에 박힌 옥구슬이 번뜩여 마치 밤하늘의 별들이 구르는 듯합니다.",
+          "proposed_value": "계단을 올라 납폐하는 신료들은 별인듯 번쩍이고",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '弁轉疑星'의 의미는 '계단을 올라 납폐하는 신료들은 별인듯 번쩍이고'로 해석되어 원래 의미와 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 7.97,
+      "prompt_tokens": 983,
+      "output_tokens": 223
+    },
+    {
+      "id": "cheonjamun-117",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "右通廣內 네 한자의 뜻과 독음, 의미에 대한 확인",
+      "unresolved": [],
+      "seconds": 2.74,
+      "prompt_tokens": 1013,
+      "output_tokens": 63
+    },
+    {
+      "id": "cheonjamun-118",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻",
+      "unresolved": [],
+      "seconds": 2.51,
+      "prompt_tokens": 1015,
+      "output_tokens": 57
+    },
+    {
+      "id": "cheonjamun-119",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "이미 삼황오제의 위대한 삼분오전 등 천하의 소중한 고전들을 모두 모았습니다.",
+          "proposed_value": "이미 분전(법률과 의전)을 모은 곳에 영웅들이 모였도다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면 '분전'은 '삼황오제 시절의 법률과 의전'을 의미하며, '모았습니다'는 원문에 명시된 내용이 아니며, '영웅들이 모였도다'라는 표현이 더 정확한 해석에 부합한다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "旣集墳典의 의미",
+      "unresolved": [],
+      "seconds": 8.33,
+      "prompt_tokens": 1009,
+      "output_tokens": 233
+    },
+    {
+      "id": "cheonjamun-120",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "亦聚群英의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.73,
+      "prompt_tokens": 1007,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-121",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "杜藁鍾隷",
+          "proposed_value": "杜稾鍾隸",
+          "reason": "석봉천자문 1583년 목판본 해서체 원문에서 '藁'이 '稾'로 표기된 것을 확인함. '藁'과 '稾'은 의미와 사용 문맥에서 차이가 있으므로 수정이 필요함.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "두고종례",
+          "proposed_value": "두고종례",
+          "reason": "기존 독음 '두고종례'는 '杜稾鍾隸'에 해당하는 것으로, 수정된 한자에 따라 독음은 유지됨.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "두도의 초서 초고와 종요의 뛰어난 예서 글씨 등 천하의 명필들이 소장되어 있습니다.",
+          "proposed_value": "두고(초서의 시초)와 종례(예서의 대표)의 글씨로, 천하의 명필들이 소장하고 있는 것입니다.",
+          "reason": "원문 '杜稾鍾隸'에 해당하는 의미로, '두고'는 초서의 시초를, '종례'는 예서의 대표를 의미함. 기존 해설은 '두도'와 '종요'로 오해되었으므로 수정이 필요함.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻",
+      "unresolved": [],
+      "seconds": 16.03,
+      "prompt_tokens": 1025,
+      "output_tokens": 464
+    },
+    {
+      "id": "cheonjamun-122",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "漆書壁經의 한자, 독음, 의미에 대한 원문과 해설 비교 검증",
+      "unresolved": [],
+      "seconds": 2.8,
+      "prompt_tokens": 1020,
+      "output_tokens": 66
+    },
+    {
+      "id": "cheonjamun-123",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [府羅將相]에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미 모두 기준 원문(src-seokbong-1583)과 일치함.",
+      "unresolved": [],
+      "seconds": 3.88,
+      "prompt_tokens": 974,
+      "output_tokens": 99
+    },
+    {
+      "id": "cheonjamun-124",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "거리에는 삼공을 상징하는 회화나무와 구경의 고관대작들이 길을 메우고 있습니다.",
+          "proposed_value": "각 부에 장군과 재상이 있어 고관이 즐비하여 길이 좁다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '路俠槐卿'의 의미는 '각 부에 장군과 재상이 있어 고관이 즐비하여 길이 좁다'로 해석되어야 하며, 이는 기존의 의미와 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "구절의 의미",
+      "unresolved": [],
+      "seconds": 7.97,
+      "prompt_tokens": 1105,
+      "output_tokens": 220
+    },
+    {
+      "id": "cheonjamun-125",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "문장의 네 한자에 해당하는 뜻만 확인",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 1007,
+      "output_tokens": 58
+    },
+    {
+      "id": "cheonjamun-126",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "그의 가문에는 호위를 위해 천 명의 군사와 사졸을 내려주어 호위하게 하였습니다.",
+          "proposed_value": "여덟 고을을 봉지로 주고 천명의 군사로 지키게 하니",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 비교하여 의미가 다릅니다. 원문의 의미는 '천 명의 군사로 지키게 하니'에 더 가깝습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 7.52,
+      "prompt_tokens": 992,
+      "output_tokens": 210
+    },
+    {
+      "id": "cheonjamun-127",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력된 구절의 한자, 독음, 의미에 대한 원문과 비교 검토",
+      "unresolved": [],
+      "seconds": 2.76,
+      "prompt_tokens": 997,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-128",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "수레바퀴를 빠르게 몰며 갓끈의 비단 술을 펄럭이며 위풍당당하게 달립니다.",
+          "proposed_value": "높은 관을 쓰고 수레에 올라 바퀴를 구르며 갓끈을 떨치는 구나.",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다릅니다. 원문의 맥락에 따라 '수레바퀴를 빠르게 몰며'보다는 '수레에 올라 바퀴를 구르며'가 더 적절해 보입니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 8.59,
+      "prompt_tokens": 1007,
+      "output_tokens": 242
+    },
+    {
+      "id": "cheonjamun-129",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 990,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-130",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "살찐 준마가 끄는 수레를 타고 가벼운 비단옷을 입은 채 호화롭게 다닙니다.",
+          "proposed_value": "대대로 받는 녹으로 부귀를 누리며 수레는 (제물로) 무겁고 가마는 가벼우니",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 원문의 의미가 다르게 해석될 수 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 뜻",
+      "unresolved": [],
+      "seconds": 7.36,
+      "prompt_tokens": 995,
+      "output_tokens": 203
+    },
+    {
+      "id": "cheonjamun-131",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "나라에 세운 큰 공훈을 문서에 기록하고 그 풍성하고 알찬 결실을 포상합니다.",
+          "proposed_value": "끝없이 쌓은 공적 비석에 세기는 구나.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 원문의 의미가 명확히 다릅니다. '끝없이 쌓은 공적 비석에 세기는 구나'는 원문의 의미를 더 정확하게 반영합니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "meaning",
+      "unresolved": [],
+      "seconds": 7.11,
+      "prompt_tokens": 971,
+      "output_tokens": 197
+    },
+    {
+      "id": "cheonjamun-132",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 '勒碑刻銘'에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미를 제공된 근거와 대조하여 검토함.",
+      "unresolved": [],
+      "seconds": 3.75,
+      "prompt_tokens": 1103,
+      "output_tokens": 93
+    },
+    {
+      "id": "cheonjamun-133",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "磻溪伊尹의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.7,
+      "prompt_tokens": 979,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-134",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "佐時阿衡",
+          "proposed_value": "佐時阿衡",
+          "reason": "원문 한자 '佐時阿衡'은 src-seokbong-1583과 src-gwangju-1575에서 동일하게 확인됨.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "좌시아형",
+          "proposed_value": "좌시아형",
+          "reason": "src-wikisource-translation에서 '佐時阿衡'의 독음이 '좌시아형'으로 표기됨.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "어지러운 시대를 도와 나라를 바로잡고 천하의 저울추인 재상이 되었습니다.",
+          "proposed_value": "반계의 (태공망)과 (탕왕을 도운) 이윤은 때가 도와 아형의 벼슬에 올랐고",
+          "reason": "src-wikisource-translation에서 '佐時阿衡'의 의미가 '반계의 (태공망)과 (탕왕을 도운) 이윤은 때가 도와 아형의 벼슬에 올랐고'로 표기됨. 이는 원문의 의미와 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미",
+      "unresolved": [],
+      "seconds": 14.53,
+      "prompt_tokens": 987,
+      "output_tokens": 419
+    },
+    {
+      "id": "cheonjamun-135",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.59,
+      "prompt_tokens": 1002,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-136",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "微旦孰營",
+          "proposed_value": "微旦孰營",
+          "reason": "원문 한자 '微旦孰營'은 src-seokbong-1583, src-gwangju-1575, src-wikisource-translation에서 모두 동일하게 기록되어 있으므로 변경 필요 없음.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575",
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "미단숙영",
+          "proposed_value": "미단숙영",
+          "reason": "src-wikisource-translation에서 '미단숙영'으로 독음되어 있으나, '旦'의 훈음은 '단'이 아닌 '아ᄎᆞᆷ'으로 기록되어 있으므로 독음이 '미단숙영'이 아닌 '미아ᄎᆞᆷ숙영'일 수 있음.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "주공 단이 아니었다면 그 누가 그처럼 훌륭한 주나라의 예악 문물을 세웠겠습니까.",
+          "proposed_value": "곡부에 궁전을 지은 것은 주공 단이 아니면 누가할 것인가",
+          "reason": "src-wikisource-translation에서 '곡부에 궁전을 지은 것은 주공 단이 아니면 누가할 것인가'로 해석되어 있으나, 원문의 '營'은 '지을'이 아닌 '영'으로 해석될 수 있음. 따라서 의미 해석이 다를 수 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미",
+      "unresolved": [],
+      "seconds": 17.01,
+      "prompt_tokens": 995,
+      "output_tokens": 493
+    },
+    {
+      "id": "cheonjamun-137",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "桓公匡合 네 한자의 독음과 의미",
+      "unresolved": [],
+      "seconds": 2.45,
+      "prompt_tokens": 979,
+      "output_tokens": 56
+    },
+    {
+      "id": "cheonjamun-138",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "약한 나라를 구원하여 건져주고 쓰러져가는 작은 나라들을 붙들어 일으켜 세웠습니다.",
+          "proposed_value": "환공은 제후를 널리 합쳐 기울어져가는 나라를 구했지",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 비교하여 원문의 의미가 다릅니다. 원문은 '제약부경'의 의미가 '약한 나라를 구원하여 건져주고 쓰러져가는 작은 나라들을 붙들어 일으켜 세웠습니다.'로 해석되었으나, 위키문헌의 번역은 '환공은 제후를 널리 합쳐 기울어져가는 나라를 구했지'로 해석되어 있습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 9.7,
+      "prompt_tokens": 982,
+      "output_tokens": 274
+    },
+    {
+      "id": "cheonjamun-139",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "綺廻漢惠의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.81,
+      "prompt_tokens": 1039,
+      "output_tokens": 66
+    },
+    {
+      "id": "cheonjamun-140",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "說感武丁",
+          "proposed_value": null,
+          "reason": "원문 한자 '說感武丁'은 src-seokbong-1583, src-gwangju-1575, src-wikisource-translation 등에서 동일하게 확인됨. 다만, src-shiji-eun에서는 '傅說'과 관련된 인물로 해석됨. 이는 '說感武丁'이 '傅說'의 별칭 또는 관련된 인물로 해석될 수 있음을 시사함.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575",
+            "src-wikisource-translation",
+            "src-shiji-eun"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "열감무정",
+          "proposed_value": "설감무정",
+          "reason": "src-wikisource-translation에서는 '설감무정'으로 독음되어 있으나, src-shiji-eun에서는 '傅說'에 해당하는 전통 고전음 '열감무정'이 사용됨. 이는 독음 선택에 있어 '열감무정'과 '설감무정' 간의 차이가 존재함.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-shiji-eun"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "담벼락을 쌓던 어진 현인 부열은 은나라 임금 무정의 꿈에 나타나 감동을 주었습니다.",
+          "proposed_value": null,
+          "reason": "src-wikisource-translation에서는 '기리계'와 관련된 인물로 해석되나, src-shiji-eun에서는 '傅說'에 해당하는 인물로 해석됨. 이는 의미 해석에 있어 '부열'과 '기리계'의 구분이 필요함.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-shiji-eun"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [
+        "독음 선택: 은나라 재상 부열(傅說) 인명 고사에 따른 전통 고전음 '열감무정' vs 일반 자음 '설감무정' 선택 결정 필요."
+      ],
+      "seconds": 20.41,
+      "prompt_tokens": 1236,
+      "output_tokens": 587
+    },
+    {
+      "id": "cheonjamun-141",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 984,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-142",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "많은 훌륭한 선비들이 힘을 합치니 온 나라와 왕실이 진실로 편안해졌습니다.",
+          "proposed_value": "준걸과 예사가 모이니 참으로 평안하구나.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면 '준걸과 예사가 모이니 참으로 평안하구나'로 해석되어 기존 의미와 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "문맥 및 해설 비교",
+      "unresolved": [],
+      "seconds": 7.2,
+      "prompt_tokens": 986,
+      "output_tokens": 200
+    },
+    {
+      "id": "cheonjamun-143",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "晉楚更覇의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [
+        "판본 차이: 석봉본 [晉楚更覇] vs 광주본 [晋楚更覇]. 기준 판본 유지 승인 필요.",
+        "독음 및 판본: 更(다시/번갈아 갱)에 따른 '진초갱패' vs '진초경패' 및 석봉본 晉 vs 광주본 晋 차이 확인."
+      ],
+      "seconds": 6.14,
+      "prompt_tokens": 1093,
+      "output_tokens": 165
+    },
+    {
+      "id": "cheonjamun-144",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "전국시대 조나라와 위나라는 진나라 장의의 연횡책에 말려들어 큰 곤경에 빠졌습니다.",
+          "proposed_value": "진과 초가 다시 패자가 되고 조와 위는 연횡으로 곤궁에 빠져",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '진과 초가 다시 패자가 되고 조와 위는 연횡으로 곤궁에 빠져'라는 해설이 제공되어 기존의 의미와 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 뜻에 대한 평가",
+      "unresolved": [],
+      "seconds": 8.3,
+      "prompt_tokens": 1001,
+      "output_tokens": 232
+    },
+    {
+      "id": "cheonjamun-145",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.53,
+      "prompt_tokens": 987,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-146",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "진나라 문공은 천토 땅에서 제후들을 모아 회맹을 맺고 천자를 받들었습니다.",
+          "proposed_value": "진은 위계를 써 괵를 멸하고 천토에서 회맹하였고",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면 '踐土會盟'의 번역은 '진은 위계를 써 괵를 멸하고 천토에서 회맹하였고'로 기록되어 있으며, 이는 원문의 의미와 부합하지 않습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 8.12,
+      "prompt_tokens": 1018,
+      "output_tokens": 227
+    },
+    {
+      "id": "cheonjamun-147",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "한나라의 승상 소하는 유방이 백성과 약속한 간소한 법 삼장(약법삼장)을 잘 준수하였습니다.",
+          "proposed_value": "어찌 (한고조의) 약법을 두고 한비자의 낡고 번잡한 형벌을 따를 것인가",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '何遵約法'의 의미는 '어찌 (한고조의) 약법을 두고 한비자의 낡고 번잡한 형벌을 따를 것인가'로 해석되어, 기존의 의미와 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 8.8,
+      "prompt_tokens": 993,
+      "output_tokens": 248
+    },
+    {
+      "id": "cheonjamun-148",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "한비자는 가혹하고 번잡한 형벌을 주장하다가 결국 그 형벌에 자신이 걸려 죽고 말았습니다.",
+          "proposed_value": "어찌 (한고조의) 약법을 두고 한비자의 낡고 번잡한 형벌을 따를 것인가",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 해설과 비교하여 원문의 의미가 달라 보입니다. 원문은 한비자의 형벌을 비판하는 의미로 해석될 수 있습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미",
+      "unresolved": [],
+      "seconds": 7.58,
+      "prompt_tokens": 1001,
+      "output_tokens": 211
+    },
+    {
+      "id": "cheonjamun-149",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "起翦頗牧 네 한자의 해설과 독음, 의미에 대한 비교 검토",
+      "unresolved": [],
+      "seconds": 2.73,
+      "prompt_tokens": 976,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-150",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "용군최정(用軍最精)의 한자, 독음, 의미에 대한 3개 원문 출처 비교 검증",
+      "unresolved": [],
+      "seconds": 3.06,
+      "prompt_tokens": 975,
+      "output_tokens": 75
+    },
+    {
+      "id": "cheonjamun-151",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [宣威沙漠]에 해당하는 뜻 평가",
+      "unresolved": [],
+      "seconds": 2.73,
+      "prompt_tokens": 987,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-152",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "기린각과 운대 등 공신각의 단청 벽화에 초상이 그려져 그 명성을 영원히 떨쳤습니다.",
+          "proposed_value": "위엄을 사막에까지 떨치니 단청에 넣어 기리는 구나.",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 원문의 의미가 다르게 해석될 수 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "馳譽丹靑의 의미",
+      "unresolved": [],
+      "seconds": 6.86,
+      "prompt_tokens": 999,
+      "output_tokens": 188
+    },
+    {
+      "id": "cheonjamun-153",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "九州禹跡의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.66,
+      "prompt_tokens": 976,
+      "output_tokens": 63
+    },
+    {
+      "id": "cheonjamun-154",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "百郡秦幷의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.75,
+      "prompt_tokens": 985,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-155",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "嶽宗恒岱의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.75,
+      "prompt_tokens": 1007,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-156",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "천자가 하늘과 땅에 제사 지내는 봉선의 의식은 운운산과 정정산에서 주관하였습니다.",
+          "proposed_value": "산중 으뜸은 항산과 태산이라 임금을 정하는 운정이 그곳에 있으며",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '산중 으뜸은 항산과 태산이라 임금을 정하는 운정이 그곳에 있으며'라는 해설이 제공되어 기존의 의미와 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "문장의 의미에 대한 해설",
+      "unresolved": [],
+      "seconds": 7.94,
+      "prompt_tokens": 1000,
+      "output_tokens": 221
+    },
+    {
+      "id": "cheonjamun-157",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "雁門紫塞",
+          "proposed_value": "鴈門紫塞",
+          "reason": "석봉본과 광주본에서 雁 vs 鴈의 차이가 존재하며, 이는 한자 사용에 대한 판본 차이로 해석될 수 있음.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "안문자새",
+          "proposed_value": null,
+          "reason": "석봉본과 광주본의 雁 vs 鴈 차이로 인해 독음에 영향을 줄 수 있으나, '새'에 대한 훈음은 '요새'를 가리키는 것으로 보임.",
+          "source_ids": [
+            "src-korean-std-dict"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "기러기가 날아 넘는 험준한 안문관 요새와 붉은 흙탕으로 쌓은 만리장성 자새입니다.",
+          "proposed_value": null,
+          "reason": "번역 발췌에서 '안문관과 만리장성, 계전과 적성'으로 해석되나, 원문 해설과의 정확한 대응 여부는 불확실함.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [
+        "판본 차이: 석봉본 [雁門紫塞] vs 광주본 [鴈門紫塞]. 기준 판본 유지 승인 필요.",
+        "독음 및 판본: 塞(요새 새)에 따른 '안문자새' vs 석봉본 雁門 vs 광주본 鴈門 차이 확인."
+      ],
+      "seconds": 17.3,
+      "prompt_tokens": 1180,
+      "output_tokens": 496
+    },
+    {
+      "id": "cheonjamun-158",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "鷄田赤城의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.78,
+      "prompt_tokens": 987,
+      "output_tokens": 66
+    },
+    {
+      "id": "cheonjamun-159",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "한 무제가 수전을 훈련하던 곤명지와 시황제가 바다를 바라보던 갈석산입니다.",
+          "proposed_value": "운남의 곤지와 부평의 갈석, 거야의 넓은 들판과 동정의 큰 호수",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '곤지갈석'은 '운남의 곤지와 부평의 갈석'을 가리키며, 이는 원문의 의미와 일치하지 않는다. 원문의 의미는 역사적 인물과 장소를 언급하는 반면, 위키문헌의 해설은 지리적 지역을 설명하고 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미",
+      "unresolved": [],
+      "seconds": 9.11,
+      "prompt_tokens": 994,
+      "output_tokens": 258
+    },
+    {
+      "id": "cheonjamun-160",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "태산 서쪽의 끝없이 광활한 거야 땅의 늪과 남방의 끝없는 동정호 호수입니다.",
+          "proposed_value": "운남의 곤지와 부평의 갈석, 거야의 넓은 들판과 동정의 큰 호수",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 비교하여 의미가 다릅니다. 원문의 의미는 '광활한 들판과 큰 호수'에 더 가깝습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 7.94,
+      "prompt_tokens": 1002,
+      "output_tokens": 222
+    },
+    {
+      "id": "cheonjamun-161",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "曠遠綿邈의 한자, 독음, 의미에 대한 3개 원문 출처 비교 검증",
+      "unresolved": [],
+      "seconds": 2.95,
+      "prompt_tokens": 996,
+      "output_tokens": 71
+    },
+    {
+      "id": "cheonjamun-162",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "巖岫杳冥의 한자, 독음, 의미에 대한 3개 원문 출처 비교 검증",
+      "unresolved": [],
+      "seconds": 2.95,
+      "prompt_tokens": 1009,
+      "output_tokens": 70
+    },
+    {
+      "id": "cheonjamun-163",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "治本於農 (4자 구절)의 한자, 독음, 의미에 대한 검증",
+      "unresolved": [],
+      "seconds": 2.78,
+      "prompt_tokens": 989,
+      "output_tokens": 66
+    },
+    {
+      "id": "cheonjamun-164",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "務玆稼穡 네 한자의 한자, 독음, 의미에 대한 검증",
+      "unresolved": [],
+      "seconds": 2.78,
+      "prompt_tokens": 1017,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-165",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "俶載南畝 네 한자의 독음과 의미",
+      "unresolved": [],
+      "seconds": 2.48,
+      "prompt_tokens": 983,
+      "output_tokens": 57
+    },
+    {
+      "id": "cheonjamun-166",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "우리 백성들은 기장과 메조 등 귀한 오곡을 정성스럽게 심고 가꿉니다.",
+          "proposed_value": "이제 남쪽 이랑을 일궈 나는 기장과 피를 가꾸어",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '이제 남쪽 이랑을 일궈 나는 기장과 피를 가꾸어'라는 해석이 제공되며, 이는 원문의 문맥과 더 부합한다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 뜻 평가",
+      "unresolved": [],
+      "seconds": 7.66,
+      "prompt_tokens": 964,
+      "output_tokens": 214
+    },
+    {
+      "id": "cheonjamun-167",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "가을에 익은 곡식으로 나라에 세금을 내고 햇곡식을 사당에 먼저 바칩니다.",
+          "proposed_value": "익으면 세를 내고 햇곡식으로 제사를 지내 상을 권하고 (못된 자는) 내쫓으리라.",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 해설과 비교하여 의미가 다릅니다. 원문의 의미는 '세금을 내고 햇곡식을 바치는 것'에서 '세를 내고 햇곡식으로 제사를 지내며 못된 자는 내쫓는 것'으로 해석이 달라졌습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "meaning",
+      "unresolved": [],
+      "seconds": 8.42,
+      "prompt_tokens": 988,
+      "output_tokens": 236
+    },
+    {
+      "id": "cheonjamun-168",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "부지런한 자는 권장하여 상을 주고 게으른 자는 내치고 유능한 자는 올립니다.",
+          "proposed_value": "익으면 세를 내고 햇곡식으로 제사를 지내 상을 권하고 (못된 자는) 내쫓으리라.",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 해설과 비교하여 의미가 다릅니다. 원문의 의미는 '권장, 상 주기, 내치기, 올리기'에 초점이 맞춰져 있지만, 위키문헌의 해설은 '세금 내기, 제사 지내기, 상 주기, 못된 자 내쫓기'로 해석되어 있습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "의미 해석",
+      "unresolved": [],
+      "seconds": 8.88,
+      "prompt_tokens": 1005,
+      "output_tokens": 249
+    },
+    {
+      "id": "cheonjamun-169",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "孟軻敦素의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.75,
+      "prompt_tokens": 980,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-170",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.5,
+      "prompt_tokens": 972,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-171",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 974,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-172",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교 검증",
+      "unresolved": [],
+      "seconds": 2.73,
+      "prompt_tokens": 1129,
+      "output_tokens": 61
+    },
+    {
+      "id": "cheonjamun-173",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "聆音察理의 한자, 독음, 의미에 대한 원문과 해설 비교 검증",
+      "unresolved": [],
+      "seconds": 2.94,
+      "prompt_tokens": 1133,
+      "output_tokens": 66
+    },
+    {
+      "id": "cheonjamun-174",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "사람의 겉모습을 잘 살피고 안색의 미묘한 변화를 분별하여 참마음을 헤아립니다.",
+          "proposed_value": "들리는 소리 자세히 살피고 거울에 비치는 모양 꼼꼼히 구별하고",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 원문의 의미가 명확히 다릅니다. 원문의 의미는 '사람의 겉모습과 안색을 살피는 것'에 초점이 맞춰져 있지만, 위키문헌의 번역은 '들리는 소리'와 '거울에 비치는 모양'에 초점이 맞춰져 있어 의미가 달라졌습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미 평가",
+      "unresolved": [],
+      "seconds": 9.45,
+      "prompt_tokens": 1005,
+      "output_tokens": 267
+    },
+    {
+      "id": "cheonjamun-175",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "貽厥嘉猷의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.73,
+      "prompt_tokens": 992,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-176",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "문장의 네 한자에 해당하는 뜻만 확인",
+      "unresolved": [],
+      "seconds": 2.5,
+      "prompt_tokens": 987,
+      "output_tokens": 58
+    },
+    {
+      "id": "cheonjamun-177",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.58,
+      "prompt_tokens": 1012,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-178",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "임금의 총애가 더해질수록 교만해져서 분에 넘치는 극단에 이르지 말아야 합니다.",
+          "proposed_value": "몸을 살펴 나무라고 탓할 일은 없는지 반성하고 총애가 늘면 더욱 조심하여야 한다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다르므로 수정이 필요합니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "문장의 의미",
+      "unresolved": [],
+      "seconds": 6.78,
+      "prompt_tokens": 994,
+      "output_tokens": 187
+    },
+    {
+      "id": "cheonjamun-179",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "분수를 모르고 지나치면 위태로운 치욕을 부르고 부끄러운 일에 가까워집니다.",
+          "proposed_value": "위태로운 치욕은 부끄러운 일에 의한 것이니 수풀과 언덕에 있는 것이 도리어 다행이다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다릅니다. 원문의 의미는 '위태로운 치욕'에 대한 설명이지만, 기존 해설은 '분수를 모르고 지나치면'이라는 추가적인 해석이 포함되어 있어 원문과 일치하지 않습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "문장의 의미 및 해설",
+      "unresolved": [],
+      "seconds": 8.58,
+      "prompt_tokens": 1018,
+      "output_tokens": 240
+    },
+    {
+      "id": "cheonjamun-180",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "林睾幸卽",
+          "proposed_value": "林皋幸即",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 '皋'이 '睾'보다 더 적절한 한자로 보이며, '皋'은 '수풀과 언덕'을 의미하는 것으로, 원문의 의미와 더 부합한다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "다행히 숲과 언덕이 있는 자연의 품으로 나아가 은퇴하여 평안을 누립니다.",
+          "proposed_value": "위태로운 치욕은 부끄러운 일에 의한 것이니 수풀과 언덕에 있는 것이 도리어 다행이다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역이 원문의 의미를 더 정확하게 반영하고 있으며, '皋'의 의미와도 일치한다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미",
+      "unresolved": [],
+      "seconds": 11.31,
+      "prompt_tokens": 1000,
+      "output_tokens": 320
+    },
+    {
+      "id": "cheonjamun-181",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "두 한자 한글 독음과 의미, 원문 한자 및 훈음, 번역 발췌에 해당하는 네 한자에 해당하는 뜻",
+      "unresolved": [],
+      "seconds": 3.36,
+      "prompt_tokens": 1010,
+      "output_tokens": 81
+    },
+    {
+      "id": "cheonjamun-182",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "관직의 인끈을 스스로 풀고 훌훌 떠나니 그 누가 그들을 위협하거나 핍박할 수 있겠습니까.",
+          "proposed_value": "양소<ref>한나라의 소광과 소수</ref>는 기회를 보아 관복을 벗으니 누가 핍박하였으랴",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 비교하여 의미가 다릅니다. 원문의 맥락에 따라 '양소'와 '기회를 보아 관복을 벗으니'라는 표현이 더 적절해 보입니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "해당 행의 네 한자에 해당하는 뜻",
+      "unresolved": [],
+      "seconds": 8.77,
+      "prompt_tokens": 1017,
+      "output_tokens": 243
+    },
+    {
+      "id": "cheonjamun-183",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "문장의 네 한자 [索居閑處]에 해당하는 뜻과 독음, 해설을 기준 원문(src-seokbong-1583)과 비교하여 검토함. 광주본과 위키문헌, 표준국어대사전 등 다른 출처의 정보도 검토함.",
+      "unresolved": [
+        "독음 선택: 표준어 등재형 '색거한처(索居)' vs 관습음 '삭거한처' 확인."
+      ],
+      "seconds": 5.78,
+      "prompt_tokens": 1119,
+      "output_tokens": 153
+    },
+    {
+      "id": "cheonjamun-184",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "沈黙寂寥의 한자, 독음, 의미에 대한 원문과 비교 검토",
+      "unresolved": [],
+      "seconds": 2.75,
+      "prompt_tokens": 984,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-185",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.56,
+      "prompt_tokens": 985,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-186",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "온갖 세상의 번뇌와 근심을 훌훌 털어버리고 자연 속에서 자유롭게 거닙니다.",
+          "proposed_value": "옛일을 두고 논장을 찾고 염려를 잊고 소요하니",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다릅니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 뜻",
+      "unresolved": [],
+      "seconds": 6.66,
+      "prompt_tokens": 1001,
+      "output_tokens": 183
+    },
+    {
+      "id": "cheonjamun-187",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "마음속에 참된 기쁨이 차례로 모여들고 세상사의 번거로운 얽매임은 멀리 떠나보냅니다.",
+          "proposed_value": "기쁜 일은 알리고 누추한 것은 보내며 슬픈 일은 마다하고 기쁜 일을 환영하리",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 비교하여 의미가 다르며, 원문의 한자에 대한 해설과도 부합하지 않습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 7.67,
+      "prompt_tokens": 1010,
+      "output_tokens": 212
+    },
+    {
+      "id": "cheonjamun-188",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "모든 슬픔과 시름은 저절로 사라져 물러가고 유쾌한 즐거움만이 새롭게 찾아옵니다.",
+          "proposed_value": "기쁜 일은 알리고 누추한 것은 보내며 슬픈 일은 마다하고 기쁜 일을 환영하리",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다름.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 뜻 평가",
+      "unresolved": [
+        "글자 중복: 주흥사 원문 및 석봉본·광주본 모두 戚(슬플 쳑)을 사용하여 Seq 205와 중복됨. 후대본의 慼(근심할 척) 치환 수용 여부 결정 필요."
+      ],
+      "seconds": 9.33,
+      "prompt_tokens": 1068,
+      "output_tokens": 261
+    },
+    {
+      "id": "cheonjamun-189",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "문장의 네 한자에 해당하는 뜻만 평가",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 964,
+      "output_tokens": 60
+    },
+    {
+      "id": "cheonjamun-190",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "동산의 무성한 풀과 나무들은 싱그러운 새 가지를 힘차게 뻗어 올립니다.",
+          "proposed_value": "도랑에 핀 연꽃의 이력, 동산에 자란 풀 가지",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '원망추조'의 의미는 '도랑에 핀 연꽃의 이력, 동산에 자란 풀 가지'로 기록되어 있으며, 이는 기존의 의미와 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "원문 한자, 독음, 의미에 대한 비교 검토 수행",
+      "unresolved": [],
+      "seconds": 8.12,
+      "prompt_tokens": 974,
+      "output_tokens": 228
+    },
+    {
+      "id": "cheonjamun-191",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "枇杷晩翠 네 한자의 한자, 독음, 의미에 대한 확인",
+      "unresolved": [],
+      "seconds": 2.67,
+      "prompt_tokens": 990,
+      "output_tokens": 63
+    },
+    {
+      "id": "cheonjamun-192",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "梧桐早彫의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.72,
+      "prompt_tokens": 990,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-193",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.53,
+      "prompt_tokens": 981,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-194",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미를 여러 판본과 대조하여 확인함.",
+      "unresolved": [],
+      "seconds": 3.44,
+      "prompt_tokens": 1118,
+      "output_tokens": 83
+    },
+    {
+      "id": "cheonjamun-195",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "遊鵾獨運",
+          "proposed_value": "遊鵾獨運",
+          "reason": "원문 한자 '遊鵾獨運'은 src-seokbong-1583과 src-gwangju-1575에서 동일하게 확인됨.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "유곤독운",
+          "proposed_value": "유곤독운",
+          "reason": "src-wikisource-translation에서 '유곤독운'으로 독음이 확인됨.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "바다의 거대한 물고기 곤이 변한 큰 새 붕은 홀로 날개를 치며 높이 솟구쳐 오릅니다.",
+          "proposed_value": "댓닭 한 마리 홀로 해엄치며 노을진 하늘을 업수이 여기고",
+          "reason": "src-wikisource-translation에서 '댓닭 한 마리 홀로 해엄치며 노을진 하늘을 업수이 여기고'로 해석되어 기존 의미와 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "遊鵾獨運의 한자, 독음, 의미에 대한 확인",
+      "unresolved": [],
+      "seconds": 14.11,
+      "prompt_tokens": 1003,
+      "output_tokens": 407
+    },
+    {
+      "id": "cheonjamun-196",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "凌摩絳霄",
+          "proposed_value": "凌摩絳霄",
+          "reason": "원문 한자 '凌摩絳霄'은 src-seokbong-1583, src-gwangju-1575, src-wikisource-translation 등에서 동일하게 확인됨.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575",
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "능마강소",
+          "proposed_value": "능마강소",
+          "reason": "src-korean-std-dict에 따르면 '凌'은 '능'으로 읽히며, src-wikisource-translation에서도 '凌摩絳霄'의 독음이 '능마강소'로 기록됨.",
+          "source_ids": [
+            "src-korean-std-dict",
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "구만리 붉은 노을 깃든 아득한 하늘을 가로지르고 어루만지며 거침없이 날아갑니다.",
+          "proposed_value": "댓닭 한 마리 홀로 해엄치며 노을진 하늘을 업수이 여기고",
+          "reason": "src-wikisource-translation에서 '凌摩絳霄'의 번역이 '댓닭 한 마리 홀로 해엄치며 노을진 하늘을 업수이 여기고'로 기록되어, 기존 의미와 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 '凌摩絳霄' 네 한자의 뜻 평가",
+      "unresolved": [],
+      "seconds": 16.61,
+      "prompt_tokens": 1153,
+      "output_tokens": 477
+    },
+    {
+      "id": "cheonjamun-197",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "耽讀翫市 네 한자의 뜻과 해설",
+      "unresolved": [],
+      "seconds": 2.56,
+      "prompt_tokens": 999,
+      "output_tokens": 58
+    },
+    {
+      "id": "cheonjamun-198",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.56,
+      "prompt_tokens": 997,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-199",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "易輶攸畏",
+          "proposed_value": null,
+          "reason": "석봉본과 광주본 모두 '易輶攸畏'로 표기되어 일관성이 있음.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "역유유외",
+          "proposed_value": null,
+          "reason": "독음 '역유유외'는 위키문헌의 해설과 일치하지만, '易'의 훈음 '경솔할 역'에 대한 어학적 근거가 명확하지 않음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "행동을 경솔하게 하거나 말을 가볍게 하는 것을 가장 두려워하고 삼가야 합니다.",
+          "proposed_value": null,
+          "reason": "의미 해설은 위키문헌의 '가벼이 경솔하게 구는 것을 두려워하는 까닭은 담장에도 귀가 있다 하기 때문'과 유사하지만, 원문 한자에 대한 해석 차이가 존재함.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻만 평가",
+      "unresolved": [
+        "독음 확인: 易(경솔할 역)에 따른 '역유유외'의 어학적 근거 보완 필요."
+      ],
+      "seconds": 14.47,
+      "prompt_tokens": 1014,
+      "output_tokens": 417
+    },
+    {
+      "id": "cheonjamun-200",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "담벼락에도 귀가 붙어 있다는 속담처럼 보이지 않는 곳에서도 늘 조심해야 합니다.",
+          "proposed_value": "가벼이 경솔하게 구는 것을 두려워하는 까닭은 담장에도 귀가 있다 하기 때문",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 해설과 원문의 의미가 명확히 다르다. 원문의 의미는 '담장에도 귀가 있다'는 속담을 바탕으로 경솔한 행동을 경계해야 한다는 뜻으로 해석되어야 하며, 기존 해설은 이에 부합하지 않는다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미 평가",
+      "unresolved": [],
+      "seconds": 8.75,
+      "prompt_tokens": 977,
+      "output_tokens": 247
+    },
+    {
+      "id": "cheonjamun-201",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "具膳飡飯",
+          "proposed_value": null,
+          "reason": "다른 판본에서 '飡'의 훈음이 '손' 또는 '찬'으로 표기되어 있어, '飡'의 정확한 독음에 대한 일관된 근거가 부족합니다.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575",
+            "src-wikisource-translation",
+            "src-daum-handic"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "구선손반",
+          "proposed_value": null,
+          "reason": "전통 천자문 관습음 '구선손반'과 현대 일반 한자음 '구선찬반'이 존재하며, 이에 대한 명확한 선택 근거가 부족합니다.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-daum-handic"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "정갈하게 반찬을 갖추고 때에 맞추어 따뜻한 밥을 먹습니다.",
+          "proposed_value": null,
+          "reason": "위키문헌의 해설 '반찬이나 저녁밥이야 먹고 배를 채우면 그만인 것'과 비교하여, 원문의 의미 해석에 차이가 있어 명확한 일관성 부족.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "구절의 한자, 독음, 의미에 대한 판본 간 비교 및 해설 검토",
+      "unresolved": [
+        "독음 선택: 전통 천자문 관습음 '구선손반'(飡=저녁밥 손 飧) vs 현대 일반 한자음 '구선찬반' 선택 결정 필요."
+      ],
+      "seconds": 16.56,
+      "prompt_tokens": 1141,
+      "output_tokens": 476
+    },
+    {
+      "id": "cheonjamun-202",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "입맛에 알맞게 먹어 시장기를 면하고 뱃속을 든든하게 채웁니다.",
+          "proposed_value": "반찬이나 저녁밥이야 먹고 배를 채우면 그만인 것",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '적구충장'의 의미는 '반찬이나 저녁밥이야 먹고 배를 채우면 그만인 것'으로 기록되어 있다. 이는 기존의 의미와 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "문장의 의미",
+      "unresolved": [],
+      "seconds": 7.69,
+      "prompt_tokens": 976,
+      "output_tokens": 215
+    },
+    {
+      "id": "cheonjamun-203",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "배가 부르면 아무리 기름진 고기 요리라도 더는 먹기 싫어 물립니다.",
+          "proposed_value": "배부르면 재상의 요리도 물리게 되고 배 고프면 겨 지게미로도 족하니",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면 '번역'은 '배부르면 재상의 요리도 물리게 되고 배 고프면 겨 지게미로도 족하니'로 되어 있으며, 이는 원문의 의미와 더 부합한다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 뜻 평가",
+      "unresolved": [],
+      "seconds": 8.58,
+      "prompt_tokens": 1020,
+      "output_tokens": 239
+    },
+    {
+      "id": "cheonjamun-204",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "飢厭糟糠의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.75,
+      "prompt_tokens": 996,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-205",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "親戚故舊",
+          "proposed_value": "親戚故舊",
+          "reason": "원문 한자 '親戚故舊'는 두 판본(src-seokbong-1583, src-gwangju-1575)에서 동일하게 기록되어 있으므로 변경 필요 없음.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "친척고구",
+          "proposed_value": "친척고구",
+          "reason": "한글 독음 '친척고구'는 위키문헌 주흥사 사언고시 대조표에서 기록된 독음과 일치하므로 변경 필요 없음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "가까운 피붙이 친척들과 오랜 세월 정을 나눈 오랜 친구들입니다.",
+          "proposed_value": "친척이나 옛친구 노소에 따라 음식도 다를 밖에",
+          "reason": "원문의 의미는 '친척이나 옛친구'로 해석되어야 하며, '노소에 따라 음식도 다를 밖에'는 다음 구절(老少異糧)의 의미와 혼동될 수 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자 '親戚故舊'에 대한 뜻 평가",
+      "unresolved": [
+        "글자 중복: Seq 188의 戚과 중복되는 원문 표기 확인."
+      ],
+      "seconds": 15.78,
+      "prompt_tokens": 1007,
+      "output_tokens": 454
+    },
+    {
+      "id": "cheonjamun-206",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.67,
+      "prompt_tokens": 1113,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-207",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "집안의 여인들은 길쌈하고 길쌈실을 잣는 부지런한 일을 맡아 합니다.",
+          "proposed_value": "아내가 길쌈하여 어른 방에 수건을 받들고",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다릅니다. 원문의 '妾御績紡'은 '아내가 길쌈하여 어른 방에 수건을 받들고'로 해석하는 것이 더 적절해 보입니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "문장의 의미 및 원문 해석",
+      "unresolved": [
+        "판본 차이: 석봉본 [妾御績紡] vs 광주본 [妾御紡績]. 기준 판본 유지 승인 필요."
+      ],
+      "seconds": 8.89,
+      "prompt_tokens": 1011,
+      "output_tokens": 250
+    },
+    {
+      "id": "cheonjamun-208",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "안방에서 수건을 받들고 안살림을 도우며 정성껏 집안일을 돌봅니다.",
+          "proposed_value": "아내가 길쌈하여 어른 방에 수건을 받들고",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 원문의 의미가 더 구체적이고 정확하다고 판단됨.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 뜻에 대한 평가",
+      "unresolved": [],
+      "seconds": 6.91,
+      "prompt_tokens": 953,
+      "output_tokens": 189
+    },
+    {
+      "id": "cheonjamun-209",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "紈扇圓潔의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.8,
+      "prompt_tokens": 995,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-210",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "銀燭煒煌의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.77,
+      "prompt_tokens": 998,
+      "output_tokens": 66
+    },
+    {
+      "id": "cheonjamun-211",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "晝眠夕寐의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.78,
+      "prompt_tokens": 1012,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-212",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "푸른 대나무 껍질로 엮은 여름 삿자리와 상아로 정교하게 장식한 평상 침상입니다.",
+          "proposed_value": "낮에 자고 저녁에 또 자려 푸른 대로 코끼리 침상을 만들지",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 원문의 의미가 명확히 다릅니다. 원문의 의미는 '푸른 대나무 껍질로 엮은 여름 삿자리와 상아로 정교하게 장식한 평상 침상'이지만, 위키문헌의 해석은 '낮에 자고 저녁에 또 자려 푸른 대로 코끼리 침상을 만들지'로, 이는 원문의 의미와 상당히 다릅니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 10.38,
+      "prompt_tokens": 1124,
+      "output_tokens": 291
+    },
+    {
+      "id": "cheonjamun-213",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [絃歌酒讌]에 해당하는 뜻 평가",
+      "unresolved": [],
+      "seconds": 2.86,
+      "prompt_tokens": 996,
+      "output_tokens": 68
+    },
+    {
+      "id": "cheonjamun-214",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미를 제공된 근거와 비교함.",
+      "unresolved": [],
+      "seconds": 3.3,
+      "prompt_tokens": 995,
+      "output_tokens": 82
+    },
+    {
+      "id": "cheonjamun-215",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 989,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-216",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "悅豫且康 네 한자의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.84,
+      "prompt_tokens": 982,
+      "output_tokens": 67
+    },
+    {
+      "id": "cheonjamun-217",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "嫡後嗣續 네 한자의 뜻과 독음, 번역 발췌에 해당하는 의미",
+      "unresolved": [],
+      "seconds": 2.83,
+      "prompt_tokens": 976,
+      "output_tokens": 67
+    },
+    {
+      "id": "cheonjamun-218",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "祭祀蒸嘗의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.72,
+      "prompt_tokens": 989,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-219",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.56,
+      "prompt_tokens": 992,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-220",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "혹시라도 예법에 허물이나 불경이 있을까 두려워하며 송구한 마음을 품습니다.",
+          "proposed_value": "이마를 조아려 두 번 절하여 송구하고 두려운 마음을 보여야 한다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다르며, 원문의 맥락에 더 부합하는 것으로 보인다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 7.08,
+      "prompt_tokens": 985,
+      "output_tokens": 196
+    },
+    {
+      "id": "cheonjamun-221",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.55,
+      "prompt_tokens": 981,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-222",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미",
+      "unresolved": [],
+      "seconds": 2.26,
+      "prompt_tokens": 984,
+      "output_tokens": 51
+    },
+    {
+      "id": "cheonjamun-223",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻만 평가함. 원문 한자, 독음, 의미 모두 기준 원문과 일치함.",
+      "unresolved": [],
+      "seconds": 3.3,
+      "prompt_tokens": 982,
+      "output_tokens": 82
+    },
+    {
+      "id": "cheonjamun-224",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "뜨거운 물건을 쥐고 있으면 누구나 시원한 바람과 찬 기운을 간절히 바랍니다.",
+          "proposed_value": "몸에 때가 끼면 목욕할 생각이 나고 열이 차면 서늘하기를 원하게 되는 것",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면 '執熱願凉'의 의미는 '몸에 때가 끼면 목욕할 생각이 나고 열이 차면 서늘하기를 원하게 되는 것'으로 기록되어 있으며, 이는 기존의 의미와 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 8.38,
+      "prompt_tokens": 978,
+      "output_tokens": 235
+    },
+    {
+      "id": "cheonjamun-225",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "驢騾犢特",
+          "proposed_value": "驢騾犢特",
+          "reason": "원문 한자 '驢騾犢特'은 src-seokbong-1583, src-gwangju-1575, src-wikisource-translation에서 모두 동일하게 기재되어 있음.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575",
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "여라독특",
+          "proposed_value": "여라독특",
+          "reason": "src-korean-std-dict에 따르면 '驢'는 두음법칙에 따라 '여'로 읽혀야 하며, '騾'는 '라', '犢'는 '독', '特'는 '특'으로 읽혀야 함. 이는 '여라독특'과 일치함.",
+          "source_ids": [
+            "src-korean-std-dict"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "나귀와 노새, 그리고 어린 송아지와 특별한 수소를 가축으로 기릅니다.",
+          "proposed_value": "노새며 망아지, 숫송아지가 놀라뛰며 내달리듯",
+          "reason": "src-wikisource-translation에 따르면 '驢騾犢特'의 의미는 '노새며 망아지, 숫송아지가 놀라뛰며 내달리듯'으로 해석되어 있음. 이는 원문의 의미와 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미",
+      "unresolved": [],
+      "seconds": 16.84,
+      "prompt_tokens": 1141,
+      "output_tokens": 482
+    },
+    {
+      "id": "cheonjamun-226",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "駭躍超驤",
+          "proposed_value": "駭躍超驤",
+          "reason": "원문 한자 '駭躍超驤'는 src-seokbong-1583, src-gwangju-1575, src-wikisource-translation에서 모두 동일하게 기재되어 있음.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575",
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "해약초양",
+          "proposed_value": "해약초양",
+          "reason": "src-wikisource-translation에서 '해약초양'이라는 독음이 기재되어 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "가축들이 기운차게 놀라 뛰놀고 언덕을 훌쩍 뛰어넘으며 힘차게 달립니다.",
+          "proposed_value": "노새며 망아지, 숫송아지가 놀라뛰며 내달리듯",
+          "reason": "src-wikisource-translation에서 '노새며 망아지, 숫송아지가 놀라뛰며 내달리듯'이라는 해설이 기재되어 있음. 이는 기존 해설과 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미",
+      "unresolved": [],
+      "seconds": 14.78,
+      "prompt_tokens": 1017,
+      "output_tokens": 428
+    },
+    {
+      "id": "cheonjamun-227",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.58,
+      "prompt_tokens": 999,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-228",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "捕獲叛亡의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.69,
+      "prompt_tokens": 988,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-229",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "여포의 백발백중 신묘한 활쏘기 솜씨와 웅의료가 공중에서 방울을 농락하던 놀라운 재주입니다.",
+          "proposed_value": "여포는 활 잘 쏘았고 의료는 돌 잘 던졌으며",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '포사료환'의 의미는 '여포는 활 잘 쏘았고 의료는 돌 잘 던졌으며'로 해석되어야 하며, 기존 해설은 이에 부합하지 않습니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 8.3,
+      "prompt_tokens": 1026,
+      "output_tokens": 233
+    },
+    {
+      "id": "cheonjamun-230",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "嵇琴阮嘯",
+          "proposed_value": "嵆琴阮嘯",
+          "reason": "광주본 [嵆琴阮嘯]과 비교하여 '嵇'이 '嵆'으로 표기된 것으로 확인됨. 이는 16세기 훈음과 원문 해서체에서 확인된 차이로, 기준 판본과의 차이로 인해 수정이 필요함.",
+          "source_ids": [
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "혜강의 탁월한 거문고 연주 솜씨와 완적이 높이 불던 청아한 휘파람 소리입니다.",
+          "proposed_value": "혜강은 거문고를 잘 켜고 완적은 휘파람을 잘 불렀습니다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 비교하여 원문의 의미가 더 간결하고 정확하게 표현되어 있음. 기존 해설은 과도하게 확장된 것으로 보임.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "嵇琴阮嘯의 한자, 독음, 의미에 대한 비교 검토 완료.",
+      "unresolved": [
+        "판본 차이: 석봉본 [嵇琴阮嘯] vs 광주본 [嵆琴阮嘯]. 기준 판본 유지 승인 필요."
+      ],
+      "seconds": 13.92,
+      "prompt_tokens": 1081,
+      "output_tokens": 400
+    },
+    {
+      "id": "cheonjamun-231",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "恬筆倫紙",
+          "proposed_value": "恬筆倫紙",
+          "reason": "원문 한자 '恬筆倫紙'는 src-seokbong-1583과 src-gwangju-1575에서 동일하게 확인됨.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "염필윤지",
+          "proposed_value": "염필륜지",
+          "reason": "src-wikisource-translation에서 '윤'이 아닌 '륜'이 적절한 독음으로 보임. '倫'의 옛 훈음은 '륜'에 가까움.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "진나라 몽염이 개량한 편리한 토끼털 붓과 한나라 채륜이 발명한 질 좋은 종이입니다.",
+          "proposed_value": "진나라 몽염이 개량한 편리한 토끼털 붓과 한나라 채륜이 발명한 질 좋은 종이입니다.",
+          "reason": "원문 의미는 src-wikisource-translation과 일치. 다만 '염'이 아닌 '륜'이 올바른 독음임을 고려해 수정 필요.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "恬筆倫紙의 한자, 독음, 의미에 대한 검증",
+      "unresolved": [],
+      "seconds": 14.97,
+      "prompt_tokens": 1035,
+      "output_tokens": 430
+    },
+    {
+      "id": "cheonjamun-232",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "위나라 마균의 정교한 기계 지남차 제작 솜씨와 임공자가 거대한 낚싯바늘로 대어를 낚던 솜씨입니다.",
+          "proposed_value": "마륜의 교묘한 솜씨와 임공자의 낚시대",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '마륜은 지남차를 만들었다고 한다'고 명시되어 있으며, '임공자의 낚시대'라는 표현이 기존 해설보다 더 정확한 것으로 보인다. 기존 해설은 '위나라 마균'이라는 인물과 '대어를 낚던 솜씨'라는 표현을 사용하여 원문과 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "meaning",
+      "unresolved": [],
+      "seconds": 9.27,
+      "prompt_tokens": 1064,
+      "output_tokens": 256
+    },
+    {
+      "id": "cheonjamun-233",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "釋紛利俗 네 한자의 뜻과 독음, 번역에 대한 비교 검토",
+      "unresolved": [],
+      "seconds": 2.81,
+      "prompt_tokens": 986,
+      "output_tokens": 67
+    },
+    {
+      "id": "cheonjamun-234",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.53,
+      "prompt_tokens": 991,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-235",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "모시숙자(毛施淑姿)의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.89,
+      "prompt_tokens": 995,
+      "output_tokens": 70
+    },
+    {
+      "id": "cheonjamun-236",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "工嚬姸笑",
+          "proposed_value": "工顰妍笑",
+          "reason": "src-wikisource-translation에서 '工顰妍笑'로 표기되어 있으며, 이는 '嚬' 대신 '顰'을 사용하고 있다. '顰'은 '嚬'와 유사한 의미를 가지지만, 문맥상 더 적절한 한자로 보인다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "공빈연소",
+          "proposed_value": "공빈연소",
+          "reason": "src-wikisource-translation에서 '공빈연소'로 독음이 일치하므로 변경이 필요하지 않다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "눈살을 찌푸려도 여전히 아름답고 살포시 짓는 고운 미소는 더욱더 매혹적입니다.",
+          "proposed_value": "오나라 모타와 월나라 서시의 자태는 찡그린 모습도 아름다워라",
+          "reason": "src-wikisource-translation에서 제공된 번역은 원문의 의미와 다름으로 보이며, 이는 문맥상 더 적절한 해석일 수 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "입력 행의 네 한자에 해당하는 뜻",
+      "unresolved": [],
+      "seconds": 14.2,
+      "prompt_tokens": 1002,
+      "output_tokens": 412
+    },
+    {
+      "id": "cheonjamun-237",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "흐르는 세월은 쏘아놓은 화살처럼 덧없이 빨라 매양 사람의 늙음을 재촉합니다.",
+          "proposed_value": "세월은 살같이 언제나 제촉하나",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '년矢每催'의 의미는 '세월은 살같이 언제나 제촉하나'로 기록되어 있으며, 이는 기존의 의미와 차이가 있다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "년矢每催의 의미",
+      "unresolved": [],
+      "seconds": 7.23,
+      "prompt_tokens": 984,
+      "output_tokens": 201
+    },
+    {
+      "id": "cheonjamun-238",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "羲暉朗曜 네 한자의 한자, 독음, 의미에 대한 확인",
+      "unresolved": [],
+      "seconds": 2.7,
+      "prompt_tokens": 1012,
+      "output_tokens": 63
+    },
+    {
+      "id": "cheonjamun-239",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "璇璣懸斡",
+          "proposed_value": "璇璣懸幹",
+          "reason": "광주본에서는 '斡'가 '幹'으로 표기되어 있으며, 이는 판본 차이로 확인됨. 다만, 기준 원문은 src-seokbong-1583으로 설정되어 있어, 이에 따라 '璇璣懸斡'를 유지해야 함.",
+          "source_ids": [
+            "src-gwangju-1575",
+            "src-seokbong-1583"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "선기현알",
+          "proposed_value": "선기현간",
+          "reason": "광주본에서는 '斡'가 '幹'으로 표기되어 있으며, '간'의 독음은 '간'으로 추정됨. 다만, 기준 원문은 '斡'로 표기되어 있어, '현알'을 유지해야 함.",
+          "source_ids": [
+            "src-gwangju-1575",
+            "src-seokbong-1583"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "하늘의 북두칠성과 혼천의 천체는 허공에 매달린 채 쉼 없이 빙빙 돌아갑니다.",
+          "proposed_value": null,
+          "reason": "원문의 의미는 '璇璣'와 '斡'의 관계에 따라 해석될 수 있으며, 판본 차이로 인해 의미 해석에 불확실성이 존재함.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-korean-std-dict"
+          ]
+        }
+      ],
+      "checked_scope": "璇璣懸斡의 한자, 독음, 의미에 대한 판본 차이 및 해석 검토",
+      "unresolved": [
+        "판본 차이: 석봉본 [璇璣懸斡] vs 광주본 [璇璣懸幹]. 기준 판본 유지 승인 필요.",
+        "판본 및 독음: 斡(돌 알)에 따른 '선기현알' vs 광주본 璇璣懸幹(간) 판본 차이 결정 필요."
+      ],
+      "seconds": 19.55,
+      "prompt_tokens": 1201,
+      "output_tokens": 561
+    },
+    {
+      "id": "cheonjamun-240",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "晦魄環照 네 한자의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.83,
+      "prompt_tokens": 999,
+      "output_tokens": 67
+    },
+    {
+      "id": "cheonjamun-241",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.53,
+      "prompt_tokens": 995,
+      "output_tokens": 59
+    },
+    {
+      "id": "cheonjamun-242",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "永綏吉邵",
+          "proposed_value": "永綏吉劭",
+          "reason": "석봉천자문 1583년 목판본 해서체 원문에서 '邵'은 '劭'로 표기되어 있으며, 이는 '邵'과는 의미가 다르다. '劭'는 '길하다', '아름다운' 등의 뜻을 지닌다. 반면 '邵'는 '노략하다' 등의 뜻을 지닌다. 따라서 '邵' 대신 '劭'가 적절하다.",
+          "source_ids": [
+            "src-seokbong-1583"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "영원토록 편안하여 상서롭고 굳건하며 아름다운 복락을 길이 누립니다.",
+          "proposed_value": "손가락에 섶불을 단 듯 수양에 전념하면 영원토록 평안하고 길하리라.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역은 '영원토록 편안하여 상서롭고 굳건하며 아름다운 복락을 길이 누립니다.'와 차이가 있으며, '손가락에 섶불을 단 듯 수양에 전념하면 영원토록 평안하고 길하리라.'라는 해석이 더 구절의 의미와 부합한다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미",
+      "unresolved": [],
+      "seconds": 14.66,
+      "prompt_tokens": 1004,
+      "output_tokens": 425
+    },
+    {
+      "id": "cheonjamun-243",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "법도에 맞게 걸음걸이를 반듯하게 걷고 목을 곧게 세워 단정한 자세를 유지합니다.",
+          "proposed_value": "반듯하게 걸으며 옷길을 끌고 사당에 엎드려 예의를 다하고",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 의미가 다릅니다. 원문의 '矩步引領'은 '반듯하게 걸으며 옷길을 끌고 사당에 엎드려 예의를 다하고'로 해석되어야 합니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미",
+      "unresolved": [],
+      "seconds": 8.12,
+      "prompt_tokens": 981,
+      "output_tokens": 228
+    },
+    {
+      "id": "cheonjamun-244",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "조정의 엄숙한 대궐 묘당에 나아가 몸을 굽히고 우러러보며 신하의 예를 다합니다.",
+          "proposed_value": "반듯하게 걸으며 옷길을 끌고 사당에 엎드려 예의를 다하고",
+          "reason": "위키문헌 주흥사 사언고시 대조표의 번역과 비교하여 원문의 의미가 다르게 해석될 수 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미 평가",
+      "unresolved": [],
+      "seconds": 7.14,
+      "prompt_tokens": 990,
+      "output_tokens": 199
+    },
+    {
+      "id": "cheonjamun-245",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+      "unresolved": [],
+      "seconds": 3.09,
+      "prompt_tokens": 998,
+      "output_tokens": 76
+    },
+    {
+      "id": "cheonjamun-246",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "주변을 조용히 거닐며 멀고 가까운 곳을 신중하게 굽어보고 멀리 내다봅니다.",
+          "proposed_value": "허리띠를 단단히 묶어 긍지를 갖고 여러 곳을 두루 살펴라",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 번역과 의미가 원문의 해설과 명확히 다릅니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "번역 발췌에 해당하는 네 한자의 의미 평가",
+      "unresolved": [
+        "판본 차이: 석봉본 [徘徊瞻眺] vs 광주본 [徘佪瞻眺]. 기준 판본 유지 승인 필요."
+      ],
+      "seconds": 8.27,
+      "prompt_tokens": 1016,
+      "output_tokens": 232
+    },
+    {
+      "id": "cheonjamun-247",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "孤陋寡聞의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.7,
+      "prompt_tokens": 990,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-248",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "문장의 네 한자 '愚蒙等誚'에 해당하는 뜻과 독음, 훈음, 해설을 기준 원문(src-seokbong-1583)과 비교하여 확인함. 광주본과 위키문헌 번역도 동일한 내용을 보여줌.",
+      "unresolved": [],
+      "seconds": 4.5,
+      "prompt_tokens": 997,
+      "output_tokens": 118
+    },
+    {
+      "id": "cheonjamun-249",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "謂語助者의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.7,
+      "prompt_tokens": 975,
+      "output_tokens": 64
+    },
+    {
+      "id": "cheonjamun-250",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "焉哉乎也의 한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [],
+      "seconds": 2.69,
+      "prompt_tokens": 964,
+      "output_tokens": 64
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-097",
+    "sequence": "97",
+    "hanja": "性靜情逸",
+    "reading": "성정정일",
+    "meaning": "타고난 본성이 고요하고 맑으면 밖으로 드러나는 감정 또한 편안하고 한가롭습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-098",
+    "hanja": "心動神疲",
+    "meaning": "헛된 욕망에 마음이 함부로 요동치면 타고난 정신과 기운이 피폐해집니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "性°(셩 셩) °靜(고요ᄒᆞᆯ 졍) 情(ᄠᅳᆮ 졍) 逸(편안ᄒᆞᆯ 일)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [性靜情逸] 및 16세기 훈음, 사성 방점(性°°靜情逸) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "性(셩 셩) 靜(괴오 졍) 情(ᄠᅳᆮ 졍) 逸(안일 일)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [性靜情逸] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 性靜情逸 | 독음: 성정정일 | 번역: 성정이 고요하면 심정이 편안하고 마음이 동요하면 정신이 피로하니",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

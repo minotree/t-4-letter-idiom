@@ -1,0 +1,15 @@
+{
+  "evidence": {
+    "input_sha256": "5168bc9a4dc4198cae3d9b005ea9a12742c127c42825d5fbd69ec68a0ad3492d",
+    "layout_sha256": "36a4a212cd4c3741a6d76af5c0c1f49381a42362ea7df681c5c75eeebeb0de9a",
+    "layout_version": 2,
+    "output_sha256": "d7db83fee675b6660660fb0a235e4d3826976a03b13f0cbd8c96df66c0ca0bfd",
+    "packet_sha256": "7bddd41b2fa36b777cf0d57fde84912fe8802d273cd0eeba030fdfa688fa84df",
+    "render_revision": 3,
+    "report_sha256": "3cd5344185b82727e1ec551099e93d8855d8cd0baef163b746899618c82627b9"
+  },
+  "id": "1",
+  "reviewed_on": "2026-10-21",
+  "reviewer": "사용자",
+  "workflow": "manual-v2"
+}

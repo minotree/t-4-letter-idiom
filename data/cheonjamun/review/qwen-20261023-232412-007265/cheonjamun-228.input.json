@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-228",
+    "sequence": "228",
+    "hanja": "捕獲叛亡",
+    "reading": "포획반망",
+    "meaning": "국가를 배반하고 달아난 반역자와 탈옥한 도망자들을 샅샅이 뒤쫓아 잡아들입니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-227",
+    "hanja": "誅斬賊盜",
+    "meaning": "남을 해치는 흉악한 역적과 재물을 훔치는 도적 떼를 엄하게 베어 처벌합니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "捕°(자블 포) 獲(어들 획) 叛°(ᄇᆡ반 반) 亡(업슬 망)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [捕獲叛亡] 및 16세기 훈음, 사성 방점(捕°獲叛°亡) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "捕(자ᄇᆞᆯ 보) 獲(시를 획) 叛(ᄇᆡ반 반) 亡(주글 망)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [捕獲叛亡] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 捕獲叛亡 | 독음: 포획반망 | 번역: 적도는 잡아 죽이고 배역자는 잡아들이리",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

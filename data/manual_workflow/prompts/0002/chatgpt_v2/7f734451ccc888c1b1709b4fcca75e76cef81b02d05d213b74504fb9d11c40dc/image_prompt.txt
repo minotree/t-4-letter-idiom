@@ -1,0 +1,16 @@
+Create one TEXT-FREE comic sheet: exactly four equal horizontal panels stacked top to bottom, one column, not a 2x2 grid. Each panel independently contains a full scene AND characters. Cute bright pastel educational art, traditional Korean village, SD children wearing hanbok. Same recurring characters throughout. Child-safe, no violence or scary imagery. No writing, no letters, no Korean or Chinese glyphs, no panel numbers, no captions, no speech bubbles, no watermarks. Fill every panel with a complete story scene. All text and speech bubbles will be composited INSIDE the artwork later using Pillow V2; leave natural open background space, but draw no bubbles or placeholder boxes.
+Panel 1: A child in hanbok admires golden rice fields in a village blessed with a plentiful harvest.
+Panel 2: The child stands beside a village granary filled with grain.
+Panel 3: Neighbors in hanbok smile as they share food in the village.
+Panel 4: A wide view of a prosperous, peaceful village, with happy villagers and the child in hanbok.
+Keep all important characters inside their own panel. Do not render any text.
+Additional art direction:
+Use a cute, gently comic Korean fairy-tale style, warm bright pastel colors, Joseon-inspired hanok houses and villagers in hanbok. Keep the recurring child identical in face, hair and clothing in all four panels.
+Separate the four full-width scenes with clear straight horizontal divider lines. Keep faces, hands and important objects entirely within their own panels.
+Reserve quiet background space near the top of each panel for later dialogue bubbles. Place faces, hands, ripe rice, grain piles and shared food outside those intended overlay spaces. Do not leave large blank borders or shrink the scenes.
+Panel 1: Show the child visibly delighted while looking at ripe golden rice in a plentiful harvest.
+Panel 2: Show abundant stacked grain and the delighted child inside the village granary.
+Panel 3: Include the recurring child among smiling neighbors sharing plentiful food in the hanok village.
+Panel 4: Show a prosperous, peaceful hanok village and happy residents, including the recurring child. Keep a quiet area near the upper center for a later compact answer label, and a narrow quiet area at the bottom for a later disclosure. Do not draw either label.
+The final comic will be fitted proportionally into four 512 x 384 panels on a 512 x 1536 canvas. Avoid essential details at panel edges.
+Do not render dialogue, writing, letters, Chinese characters, Korean characters, reading labels, panel numerals, speech bubbles, captions, disclosure text or watermarks. All lettering and bubbles are added locally after human review.

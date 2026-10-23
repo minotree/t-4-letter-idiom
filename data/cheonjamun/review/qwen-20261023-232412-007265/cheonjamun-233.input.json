@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-233",
+    "sequence": "233",
+    "hanja": "釋紛利俗",
+    "reading": "석분리속",
+    "meaning": "어지러운 분쟁을 명쾌하게 풀어주고 세상 사람들의 실생활을 이롭게 하였습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-234",
+    "hanja": "竝皆佳妙",
+    "meaning": "앞서 말한 모든 이들의 재주와 기술은 다 함께 아름답고 절묘하기 이를 데 없습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "釋(그ᄅᆞᆯ 셕) 紛(어즈러울 분) 利°(니ᄒᆞᆯ 리) 俗(풍쇽 쇽)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [釋紛利俗] 및 16세기 훈음, 사성 방점(釋紛利°俗) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "釋(그를 셕) 紛(어즈러울 분) 利(ᄂᆞᆯ카올 리) 俗(풍쇽 쇽)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [釋紛利俗] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 釋紛利俗 | 독음: 석분리속 | 번역: 이러한 재주를 세상에 푸니 모두다 뛰어나고 신기하였다.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

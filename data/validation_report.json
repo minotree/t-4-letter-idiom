@@ -1,0 +1,538 @@
+{
+  "source_sha256": "c22d411e97bab37359c3eaeb7ab1005326345f4a0b7c5b8d83cb8010332e068d",
+  "total_count": 695,
+  "expected_count": 695,
+  "count_matches": true,
+  "duplicates": {
+    "hanja": {
+      "group_count": 14,
+      "record_count": 28,
+      "extra_record_count": 14,
+      "groups": [
+        {
+          "value": "結者解之",
+          "ids": [
+            48,
+            655
+          ]
+        },
+        {
+          "value": "群鷄一鶴",
+          "ids": [
+            98,
+            660
+          ]
+        },
+        {
+          "value": "大器晩成",
+          "ids": [
+            162,
+            661
+          ]
+        },
+        {
+          "value": "同床異夢",
+          "ids": [
+            177,
+            658
+          ]
+        },
+        {
+          "value": "有備無患",
+          "ids": [
+            413,
+            654
+          ]
+        },
+        {
+          "value": "鳥足之血",
+          "ids": [
+            498,
+            687
+          ]
+        },
+        {
+          "value": "左衝右突",
+          "ids": [
+            503,
+            688
+          ]
+        },
+        {
+          "value": "晝耕夜讀",
+          "ids": [
+            505,
+            689
+          ]
+        },
+        {
+          "value": "天高馬肥",
+          "ids": [
+            539,
+            692
+          ]
+        },
+        {
+          "value": "千載一遇",
+          "ids": [
+            547,
+            693
+          ]
+        },
+        {
+          "value": "徹頭徹尾",
+          "ids": [
+            549,
+            694
+          ]
+        },
+        {
+          "value": "他山之石",
+          "ids": [
+            573,
+            652
+          ]
+        },
+        {
+          "value": "適者生存",
+          "ids": [
+            659,
+            685
+          ]
+        },
+        {
+          "value": "一石二鳥",
+          "ids": [
+            672,
+            695
+          ]
+        }
+      ]
+    },
+    "reading": {
+      "group_count": 25,
+      "record_count": 50,
+      "extra_record_count": 25,
+      "groups": [
+        {
+          "value": "견문발검",
+          "ids": [
+            42,
+            676
+          ]
+        },
+        {
+          "value": "결자해지",
+          "ids": [
+            48,
+            655
+          ]
+        },
+        {
+          "value": "경천동지",
+          "ids": [
+            59,
+            677
+          ]
+        },
+        {
+          "value": "과유불급",
+          "ids": [
+            82,
+            663
+          ]
+        },
+        {
+          "value": "군계일학",
+          "ids": [
+            98,
+            660
+          ]
+        },
+        {
+          "value": "권토중래",
+          "ids": [
+            108,
+            656
+          ]
+        },
+        {
+          "value": "귤화위지",
+          "ids": [
+            109,
+            664
+          ]
+        },
+        {
+          "value": "대기만성",
+          "ids": [
+            162,
+            661
+          ]
+        },
+        {
+          "value": "동상이몽",
+          "ids": [
+            177,
+            658
+          ]
+        },
+        {
+          "value": "등하불명",
+          "ids": [
+            183,
+            668
+          ]
+        },
+        {
+          "value": "맥수지탄",
+          "ids": [
+            199,
+            657
+          ]
+        },
+        {
+          "value": "유비무환",
+          "ids": [
+            413,
+            654
+          ]
+        },
+        {
+          "value": "적반하장",
+          "ids": [
+            477,
+            684
+          ]
+        },
+        {
+          "value": "전대미문",
+          "ids": [
+            480,
+            686
+          ]
+        },
+        {
+          "value": "조족지혈",
+          "ids": [
+            498,
+            687
+          ]
+        },
+        {
+          "value": "좌충우돌",
+          "ids": [
+            503,
+            688
+          ]
+        },
+        {
+          "value": "주경야독",
+          "ids": [
+            505,
+            689
+          ]
+        },
+        {
+          "value": "지록위마",
+          "ids": [
+            521,
+            690
+          ]
+        },
+        {
+          "value": "진퇴양난",
+          "ids": [
+            532,
+            691
+          ]
+        },
+        {
+          "value": "천고마비",
+          "ids": [
+            539,
+            692
+          ]
+        },
+        {
+          "value": "천재일우",
+          "ids": [
+            547,
+            693
+          ]
+        },
+        {
+          "value": "철두철미",
+          "ids": [
+            549,
+            694
+          ]
+        },
+        {
+          "value": "타산지석",
+          "ids": [
+            573,
+            652
+          ]
+        },
+        {
+          "value": "적자생존",
+          "ids": [
+            659,
+            685
+          ]
+        },
+        {
+          "value": "일석이조",
+          "ids": [
+            672,
+            695
+          ]
+        }
+      ]
+    }
+  },
+  "whitespace_count": 1,
+  "whitespace": [
+    {
+      "id": 691,
+      "field": "hanja",
+      "value": "進退兩難 "
+    }
+  ],
+  "empty_value_count": 0,
+  "empty_values": [],
+  "non_four_character_count": 38,
+  "non_four_character_items": [
+    {
+      "id": 8,
+      "hanja": "苛政猛於虎",
+      "reading": "가정맹어호",
+      "length": 5
+    },
+    {
+      "id": 9,
+      "hanja": "家和萬事成",
+      "reading": "가화만사성",
+      "length": 5
+    },
+    {
+      "id": 62,
+      "hanja": "鷄肋",
+      "reading": "계륵",
+      "length": 2
+    },
+    {
+      "id": 79,
+      "hanja": "空手來工手去",
+      "reading": "공수래공수거",
+      "length": 6
+    },
+    {
+      "id": 89,
+      "hanja": "狗烹",
+      "reading": "교토사사구팽",
+      "length": 2
+    },
+    {
+      "id": 122,
+      "hanja": "金子塔",
+      "reading": "금자탑",
+      "length": 3
+    },
+    {
+      "id": 170,
+      "hanja": "東家食西家宿",
+      "reading": "동가식서가숙",
+      "length": 6
+    },
+    {
+      "id": 207,
+      "hanja": "矛盾",
+      "reading": "모순",
+      "length": 2
+    },
+    {
+      "id": 218,
+      "hanja": "墨守",
+      "reading": "묵수",
+      "length": 2
+    },
+    {
+      "id": 223,
+      "hanja": "未曾有",
+      "reading": "미증유",
+      "length": 3
+    },
+    {
+      "id": 246,
+      "hanja": "白眉",
+      "reading": "백미",
+      "length": 2
+    },
+    {
+      "id": 253,
+      "hanja": "病從口入禍從口出",
+      "reading": "병종구입입화구출",
+      "length": 8
+    },
+    {
+      "id": 263,
+      "hanja": "不共戴天之讐",
+      "reading": "불공대천지수",
+      "length": 6
+    },
+    {
+      "id": 273,
+      "hanja": "朋黨",
+      "reading": "붕당",
+      "length": 2
+    },
+    {
+      "id": 275,
+      "hanja": "非夢似夢間",
+      "reading": "비몽사",
+      "length": 5
+    },
+    {
+      "id": 279,
+      "hanja": "鼻祖",
+      "reading": "비조",
+      "length": 2
+    },
+    {
+      "id": 280,
+      "hanja": "氷炭不相容",
+      "reading": "빙탄불상용",
+      "length": 5
+    },
+    {
+      "id": 287,
+      "hanja": "蛇足",
+      "reading": "사족",
+      "length": 2
+    },
+    {
+      "id": 297,
+      "hanja": "三益友",
+      "reading": "삼익우",
+      "length": 3
+    },
+    {
+      "id": 325,
+      "hanja": "水深可知人心難知",
+      "reading": "수심가지인심난지",
+      "length": 8
+    },
+    {
+      "id": 370,
+      "hanja": "如反掌",
+      "reading": "여반장",
+      "length": 3
+    },
+    {
+      "id": 383,
+      "hanja": "五十步百步",
+      "reading": "오십보백보",
+      "length": 5
+    },
+    {
+      "id": 388,
+      "hanja": "溫故而知新",
+      "reading": "온고이지신",
+      "length": 5
+    },
+    {
+      "id": 422,
+      "hanja": "陰地轉陽地變",
+      "reading": "음지전양지변",
+      "length": 6
+    },
+    {
+      "id": 431,
+      "hanja": "李下不正冠",
+      "reading": "이하부정관",
+      "length": 5
+    },
+    {
+      "id": 432,
+      "hanja": "耳懸令鼻懸令",
+      "reading": "이현령비현령",
+      "length": 6
+    },
+    {
+      "id": 446,
+      "hanja": "日新又日新",
+      "reading": "일신우일신",
+      "length": 5
+    },
+    {
+      "id": 516,
+      "hanja": "中庸",
+      "reading": "중용",
+      "length": 2
+    },
+    {
+      "id": 530,
+      "hanja": "盡人事待天命",
+      "reading": "진인사대천명",
+      "length": 6
+    },
+    {
+      "id": 536,
+      "hanja": "創業易守成難",
+      "reading": "창업이수성난",
+      "length": 6
+    },
+    {
+      "id": 545,
+      "hanja": "斷崖",
+      "reading": "천인단애",
+      "length": 2
+    },
+    {
+      "id": 588,
+      "hanja": "破天荒",
+      "reading": "파천황",
+      "length": 3
+    },
+    {
+      "id": 590,
+      "hanja": "覇道",
+      "reading": "패도",
+      "length": 2
+    },
+    {
+      "id": 649,
+      "hanja": "嚆矢",
+      "reading": "효시",
+      "length": 2
+    },
+    {
+      "id": 669,
+      "hanja": "百聞不如一見",
+      "reading": "백문불여일견",
+      "length": 6
+    },
+    {
+      "id": 683,
+      "hanja": "再三地",
+      "reading": "재삼지",
+      "length": 3
+    },
+    {
+      "id": 684,
+      "hanja": "賊反荷杖)",
+      "reading": "적반하장",
+      "length": 5
+    },
+    {
+      "id": 691,
+      "hanja": "進退兩難 ",
+      "reading": "진퇴양난",
+      "length": 5
+    }
+  ],
+  "notes": "Source values and order are preserved. Duplicate comparison trims edge whitespace. Length counts Unicode code points, including whitespace. Non-four-character and duplicate items are retained.",
+  "existing_manifest_preserved": true
+}

@@ -1,0 +1,785 @@
+{
+  "date": "2026-10-23",
+  "base_source_sha256": "913d0ea44242ce821f3b361199b953bb8ede83c808a4ea35bc4b22e6310728a1",
+  "reviewer": "Codex",
+  "scope": "이전 직접 사전 정의 미확보 38개 한자·독음·대표 뜻 교차 대조",
+  "expert_approved": false,
+  "rows": [
+    {
+      "hanja": "家無擔石",
+      "reading": "가무담석",
+      "before_meaning": "집안에 조금의 식량이나 재산도 없을 만큼 가난함.",
+      "meaning": "집안에 조금의 식량이나 재산도 없을 만큼 가난함.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "가난하여 비축한 식량·재산이 거의 없다는 핵심 뜻과 한자·독음이 부합한다. 기존 뜻을 유지한다.",
+      "sources": [
+        {
+          "url": "https://www.joongdo.co.kr/web/view.php?key=20140506000001218",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.hiks.or.kr/attach/periodical/pdf/19.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "渴而穿井",
+      "reading": "갈이천정",
+      "before_meaning": "목이 마른 뒤에 우물을 판다는 뜻으로 미리 준비하지 않음.",
+      "meaning": "목이 마른 뒤에야 우물을 판다는 뜻으로, 미리 준비하지 않고 일이 닥친 뒤에야 서두름. 때를 놓친 뒤에는 서둘러도 소용없음을 이르기도 함.",
+      "decision": "뜻 보완",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "사전 준비 부족뿐 아니라 일이 닥친 뒤에야 서두르는 상황과 늦은 대처의 한계를 명시한다.",
+      "sources": [
+        {
+          "url": "https://www.eduwill.net/pds/Cop/PDS_Board/A/2018%EB%85%84%20%EA%B2%BD%EC%B0%B0%201%EC%B0%A8%20%EA%B5%AD%EC%96%B4%20%EC%B4%9D%ED%8F%89%20%EB%B0%8F%20%ED%95%B4%EC%84%A4_%EC%86%A1%EC%9A%B4%ED%95%99%20%EA%B5%90%EC%88%98%EB%8B%9820180328145117.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.sisunnews.co.kr/news/articleView.html?idxno=146288",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "改善匡正",
+      "reading": "개선광정",
+      "before_meaning": "잘못되거나 부족한 점을 개선하고 바르게 바로잡음.",
+      "meaning": "잘못되거나 부족한 점을 개선하고 바르게 바로잡음.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "改善과 匡正을 이어 잘못을 고쳐 바르게 한다는 풀이가 부합한다. 독립선언서 주석도 대조했다.",
+      "sources": [
+        {
+          "url": "https://www.jjan.kr/article/20110615400093",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.donga.com/news/List/article/all/20030223/7915700/1",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "居安思危",
+      "reading": "거안사위",
+      "before_meaning": "편안할 때에도 앞으로 닥칠 위험이나 어려움을 미리 생각하고 대비함.",
+      "meaning": "편안할 때에도 앞으로 닥칠 위험이나 어려움을 미리 생각하고 대비함.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "편안할 때 위험을 생각하고 대비한다는 풀이가 부합한다. 정부 기고와 고전 인용 해설을 대조했다.",
+      "sources": [
+        {
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148711961",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.gasnews.com/news/articleView.html?idxno=112165",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "見危授命",
+      "reading": "견위수명",
+      "before_meaning": "위태로운 일을 보면 목숨을 바칠 각오로 나아감.",
+      "meaning": "나라가 위태로울 때 자신의 목숨을 아끼지 않고 바침.",
+      "decision": "뜻 보완",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "단순히 위험한 일에 나선다는 표현보다 나라가 위태로울 때 목숨을 바친다는 관용적 의미를 명확히 한다.",
+      "sources": [
+        {
+          "url": "https://prn.hanja114.org/download?file=MjAyMeuFhOuPhCDtlZjrsJjquLAg7ZG466W064S3IO2VnOyekOyekOqyqeyLnO2XmCDsmKTtm4QxNeyLnCA06riJIOusuOygnCDrsI8g66qo67KU7KCV64u1LnBkZg%3D%3D&path=c3RvcmFnZS9leGFtUGRzLw%3D%3D",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://m.joongdo.co.kr/view.php?key=20070715000000266",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "過如不及",
+      "reading": "과여불급",
+      "before_meaning": "정도를 지나침은 미치지 못함과 같음을 이르는 말.",
+      "meaning": "정도를 지나침은 미치지 못함과 같음을 이르는 말.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "過如不及을 과유불급의 猶와 혼동해 고치지 않는다. 如를 쓴 별도 표현의 실례와 같은 뜻을 확인했다.",
+      "sources": [
+        {
+          "url": "https://www.knnews.co.kr/news/articleView.php?gubun=people&idxno=1335099",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://leeza.tistory.com/14380",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "狡兎死走狗烹",
+      "reading": "교토사주구팽",
+      "before_meaning": "필요할 때 이용하다가 쓸모가 없어지면 매정하게 버림.",
+      "meaning": "필요할 때 이용하다가 쓸모가 없어지면 매정하게 버림.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "狡兎死走狗烹 표기와 이용 가치가 없어지면 내친다는 비유가 부합한다. 良狗 변형으로 임의 교체하지 않는다.",
+      "sources": [
+        {
+          "url": "https://www.hankyung.com/article/2007053001067",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://gnmaeil.com/news/articleView.html?idxno=271042&replyAll=&reply_sc_order_by=C",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "屈而不信",
+      "reading": "굴이불신",
+      "before_meaning": "굽히고는 펴지 아니함.",
+      "meaning": "굽히고는 펴지 아니함.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "맹자 원문의 굽은 손가락 문맥에서 信은 펴다는 뜻이다. 不信을 불신·믿지 않음으로 오해하거나 伸으로 임의 교체하지 않는다.",
+      "sources": [
+        {
+          "url": "https://ctext.org/text.pl?if=gb&node=1765&show=parallel",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://hanjasajun.co.kr/sajagosa.php?cidx=&k=&p=396",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "今古一般",
+      "reading": "금고일반",
+      "before_meaning": "지금이나 옛날이나 다름이 없음을 이르는 말.",
+      "meaning": "지금이나 옛날이나 다름이 없음을 이르는 말.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "今古一般과 지금·옛날이 다르지 않다는 뜻이 부합한다.",
+      "sources": [
+        {
+          "url": "https://www.yna.co.kr/view/AKR20200424145700005",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.hanjasajun.co.kr/sajagosa.php?cidx=&k=&p=361",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "其利斷金",
+      "reading": "기리단금",
+      "before_meaning": "두 사람이 마음을 함께하면 단단한 쇠도 끊을 만큼 강함.",
+      "meaning": "두 사람이 마음을 함께하면 단단한 쇠도 끊을 만큼 강함.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "二人同心 다음 구절로 함께하는 마음의 힘을 쇠를 끊는 데 비유한 뜻이 부합한다.",
+      "sources": [
+        {
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20090903/2nd_han_hsj.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://m.baduk.or.kr/news/B01_view.asp?news_no=2220",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "其臭如蘭",
+      "reading": "기취여란",
+      "before_meaning": "친구 사이의 우정이 매우 깊고 향기로운 난초와 같음.",
+      "meaning": "마음을 같이하는 이들의 말이 난초처럼 향기롭다는 뜻으로, 서로 뜻이 통하는 깊은 우정을 비유함.",
+      "decision": "뜻 보완",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "其臭如蘭은 마음을 같이하는 말의 향기를 난초에 비유한다. 우정이라는 확장 뜻만 남기지 않고 원문에서 무엇을 비유하는지 명시한다.",
+      "sources": [
+        {
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20090903/2nd_han_hsj.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://m.baduk.or.kr/news/B01_view.asp?news_no=2220",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "論點逸脫",
+      "reading": "논점일탈",
+      "before_meaning": "의논하거나 주장하는 내용이 본래의 요점에서 벗어남.",
+      "meaning": "의논하거나 주장하는 내용이 본래의 요점에서 벗어남.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "論點·逸脫의 직접 사전 뜻을 조합하면 본래 논점에서 벗어남이라는 풀이가 부합한다. 복합 표현 전체의 사전 표제어 확인과는 구분한다.",
+      "sources": [
+        {
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=118012&viewType=confirm",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=20202&viewType=confirm",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "同心之言",
+      "reading": "동심지언",
+      "before_meaning": "마음이 같은 사람끼리 나누는, 뜻이 잘 통하고 정다운 말.",
+      "meaning": "마음이 같은 사람끼리 나누는, 뜻이 잘 통하고 정다운 말.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "마음을 같이하는 이들의 말이라는 고전 구절의 뜻이 부합한다. 童心과 혼동하지 않는다.",
+      "sources": [
+        {
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20090903/2nd_han_hsj.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://m.baduk.or.kr/news/B01_view.asp?news_no=2220",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "拔萃抄錄",
+      "reading": "발췌초록",
+      "before_meaning": "여러 글 가운데 필요한 부분을 골라 뽑아 적음.",
+      "meaning": "여러 글 가운데 필요한 부분을 골라 뽑아 적음.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "拔萃와 抄錄의 해당 사전 뜻 및 성어 해설을 대조했다. 필요한 부분을 골라 적는 현재 풀이를 유지한다. 草綠은 근거에서 제외한다.",
+      "sources": [
+        {
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=8917&viewType=confirm",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=289677&viewType=confirm",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://hanjasajun.co.kr/sajagosa.php?cidx=%E3%85%82&k=&p=25",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "百聞不如一見",
+      "reading": "백문불여일견",
+      "before_meaning": "백 번 듣는 것보다 한 번 직접 보는 것이 더 잘 알 수 있음.",
+      "meaning": "백 번 듣는 것보다 한 번 직접 보는 것이 더 잘 알 수 있음.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "직접 보는 것이 여러 번 듣기보다 확실하다는 뜻, 百聞不如一見의 한자·독음이 부합한다.",
+      "sources": [
+        {
+          "url": "https://www.jjan.kr/article/20010418032363",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=610906&viewType=confirm",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "病從口入禍從口出",
+      "reading": "병종구입화종구출",
+      "before_meaning": "병은 입으로 들어오고 화는 입에서 나온다는 뜻으로, 먹는 것과 말하는 것을 조심해야 함.",
+      "meaning": "병은 입으로 들어오고 화는 입에서 나온다는 뜻으로, 먹는 것과 말하는 것을 조심해야 함.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "두 절의 원문과 음식을 먹고 말을 하는 데 주의하라는 비유가 모두 부합한다.",
+      "sources": [
+        {
+          "url": "https://www.donga.com/news//article/all/20020418/7809779/1",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.imaeil.com/page/view/2009112307303969823",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "本末顚倒",
+      "reading": "본말전도",
+      "before_meaning": "중요한 것과 덜 중요한 것, 근본과 지엽의 순서가 뒤바뀜.",
+      "meaning": "중요한 것과 덜 중요한 것, 근본과 지엽의 순서가 뒤바뀜.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "本末과 顚倒의 사전 뜻 및 실제 설명을 대조했다. 중요도·근본과 지엽이 뒤바뀐다는 뜻이 부합한다. 前途와 구별한다.",
+      "sources": [
+        {
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=42202&viewType=confirm",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=53394&viewType=confirm",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.jjan.kr/article/20170406608129",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "不共戴天之讐",
+      "reading": "불공대천지수",
+      "before_meaning": "한 하늘 아래 함께 살 수 없다고 여길 만큼 깊은 원한을 가진 원수.",
+      "meaning": "한 하늘 아래 함께 살 수 없다고 여길 만큼 깊은 원한을 가진 원수.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "같은 하늘 아래 살 수 없을 정도로 원한이 깊은 원수라는 뜻과 戴·讐의 독음이 부합한다.",
+      "sources": [
+        {
+          "url": "https://www.jjan.kr/article/20010501033299",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://m.seoul.co.kr/news/editOpinion/weft-column/2015/05/27/20150527031023",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "不伐不德",
+      "reading": "불벌부덕",
+      "before_meaning": "자신의 공적이나 덕을 내세워 자랑하지 않음.",
+      "meaning": "자신의 공적이나 덕을 내세워 자랑하지 않음.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "자암역전의 不伐不德 문맥은 공로를 자랑하지 않는 겸손이다. 일부 웹 글의 무력 없이 적을 굴복시킨다는 해설은 채택하지 않는다.",
+      "sources": [
+        {
+          "url": "https://www.shidianguji.com/zh/mid-page/7370076345180848179",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://hanjasajun.co.kr/sajagosa.php?cidx=&k=&p=389",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "不肖之父",
+      "reading": "불초지부",
+      "before_meaning": "선대의 덕을 닮지 못한 어리석은 아버지를 이르는 말.",
+      "meaning": "선대의 덕을 닮지 못한 어리석은 아버지를 이르는 말.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "어리석은 아버지라는 기본 뜻과 선대의 덕망을 닮지 못했다는 설명이 모두 대조 자료에 있다. 불초지자로 자동 교체하거나 자녀의 겸칭으로 설명하지 않는다.",
+      "sources": [
+        {
+          "url": "https://hanjasajun.co.kr/sajagosa.php?cidx=&k=&p=335&slink=",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://leeza.tistory.com/22376?category=860910",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "水深可知人心難知",
+      "reading": "수심가지인심난지",
+      "before_meaning": "물의 깊이는 알 수 있어도 사람의 마음속은 알기 어려움.",
+      "meaning": "물의 깊이는 알 수 있어도 사람의 마음속은 알기 어려움.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "EBS 평가 해설에 한자·독음·뜻이 함께 제시되어 있다. 물의 깊이와 달리 속마음을 알기 어렵다는 현재 풀이가 부합한다.",
+      "sources": [
+        {
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20090903/2nd_han_hsj.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/201311142/2nd_han_hsj.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "食不二味",
+      "reading": "식불이미",
+      "before_meaning": "한 끼에 두 가지 반찬을 먹지 않을 만큼 검소하게 생활함.",
+      "meaning": "한 끼에 두 가지 반찬을 먹지 않을 만큼 검소하게 생활함.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "食不二味의 二味는 두 가지 반찬이다. 음식과 생활을 검소하게 한다는 뜻이 부합하며 맛이 없어 못 먹는다는 해석은 채택하지 않는다.",
+      "sources": [
+        {
+          "url": "https://www.zdic.net/hant/%E9%A3%9F%E4%B8%8D%E4%BA%8C%E5%91%B3",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://blogger.wordrow.kr/search?by-date=false&m=0&max-results=3&reverse-paginate=true&start=78&updated-max=2020-11-18T22%3A39%3A00%2B09%3A00",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "實利追求",
+      "reading": "실리추구",
+      "before_meaning": "실제적인 이익을 얻으려고 힘씀.",
+      "meaning": "실제적인 이익을 얻으려고 힘씀.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "實利追求는 현실적 이익을 구하는 일반 한자어 표현이다. 고사 출전을 억지로 붙이지 않고 현재 뜻을 유지한다.",
+      "sources": [
+        {
+          "url": "https://hanjasajun.co.kr/sajagosa.php?cidx=&k=&p=343",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.khan.co.kr/article/200011271716331",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "藥房甘草",
+      "reading": "약방감초",
+      "before_meaning": "한약에 두루 들어가는 감초처럼, 어떤 일에나 빠지지 않고 끼는 사람이나 요소.",
+      "meaning": "한약에 두루 들어가는 감초처럼, 어떤 일에나 빠지지 않고 끼는 사람이나 요소.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "藥房甘草와 빠짐없이 끼는 사람·꼭 필요한 대상이라는 비유가 교육 자료에서 부합한다. 모든 한약 처방에 예외 없이 들어간다는 의학적 단정은 하지 않는다.",
+      "sources": [
+        {
+          "url": "https://www.imaeil.com/page/view/2005062710494772410",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://wowpass.com/upload/board/%EC%96%B8%EC%96%B4%EB%8A%A5%EB%A0%A5_%EB%B9%88%EC%B6%9C%20%ED%95%9C%EC%9E%90%EC%96%B4%20%EB%B0%8F%20%ED%95%9C%EC%9E%90%EC%84%B1%EC%96%B4.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "飮水思源",
+      "reading": "음수사원",
+      "before_meaning": "물을 마시며 그 근원을 생각하듯, 도움이나 은혜를 받은 근본을 잊지 않음.",
+      "meaning": "물을 마시며 그 근원을 생각하듯, 도움이나 은혜를 받은 근본을 잊지 않음.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "물을 마실 때 근원을 생각하듯 받은 은혜와 근본을 잊지 않는다는 뜻이 부합한다.",
+      "sources": [
+        {
+          "url": "https://www.hankyung.com/article/2015112310267",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.chosun.com/site/data/html_dir/2016/09/06/2016090603367.html",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "陰地轉陽地變",
+      "reading": "음지전양지변",
+      "before_meaning": "음지가 양지로 바뀌듯, 운이 나쁜 사람도 때가 되면 좋은 운을 만날 수 있음.",
+      "meaning": "음지가 양지로 바뀌듯, 운이 나쁜 사람도 때가 되면 좋은 운을 만날 수 있음.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "불운한 처지도 바뀔 수 있다는 비유가 부합한다. 한국한자어사전 표제어 목록에서는 한자·독음만 확인되므로 뜻의 근거와 구분한다.",
+      "sources": [
+        {
+          "url": "https://hanjasajun.co.kr/sajagosa.php?cidx=%E3%85%87&k=&p=17",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://ch.catholic.or.kr/pundang/4/cb/1992_%ED%95%9C%EA%B5%AD%ED%95%9C%EC%9E%90%EC%96%B4%EC%82%AC%EC%A0%84/%ED%95%9C%EA%B5%AD%ED%95%9C%EC%9E%90%EC%96%B4%EC%82%AC%EC%A0%84%ED%91%9C%EC%A0%9C%EC%96%B4.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://maguchina.blogspot.com/1993/07/",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "二人同心",
+      "reading": "이인동심",
+      "before_meaning": "두 사람이 마음과 뜻을 하나로 모음.",
+      "meaning": "두 사람이 마음과 뜻을 하나로 모음.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "二人同心은 두 사람이 뜻을 함께한다는 말이며 다음 구절 其利斷金과 연결해 대조했다.",
+      "sources": [
+        {
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20090903/2nd_han_hsj.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://m.baduk.or.kr/news/B01_view.asp?news_no=2220",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "田園將蕪",
+      "reading": "전원장무",
+      "before_meaning": "전원이 장차 황폐해지려 한다는 뜻으로, 벼슬을 버리고 고향으로 돌아가려는 마음을 나타내는 말.",
+      "meaning": "전원이 장차 황폐해지려 한다는 뜻으로, 벼슬을 버리고 고향으로 돌아가려는 마음을 나타내는 말.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "田園將蕪는 장차 논밭이 거칠어짐이다. 귀거래사 문맥에서 벼슬을 떠나 고향으로 돌아가려는 심정이라는 설명이 부합한다.",
+      "sources": [
+        {
+          "url": "https://www.kookje.co.kr/news2011/asp/newsbody.asp?key=20171109.22030003736",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.hanjasajun.co.kr/sajagosa.php?cidx=%E3%85%88&k=&p=33",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "前程萬里",
+      "reading": "전정만리",
+      "before_meaning": "앞으로 갈 길이 만 리라는 뜻으로, 장래가 매우 유망함.",
+      "meaning": "앞으로 갈 길이 만 리라는 뜻으로, 장래가 매우 유망함.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "前程萬里와 장래가 유망하다는 뜻이 부합한다. 갈 길이 멀어 막막하다는 뜻과 구별한다.",
+      "sources": [
+        {
+          "url": "https://www.etoday.co.kr/news/view/2550002",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://blogger.wordrow.kr/search?by-date=false&max-results=3&reverse-paginate=true&start=735&updated-max=2020-07-18T03%3A30%3A00-07%3A00",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "至誠感天",
+      "reading": "지성감천",
+      "before_meaning": "지극한 정성을 다하면 하늘도 감동하여 뜻을 이룰 수 있음.",
+      "meaning": "지극한 정성을 다하면 하늘도 감동하여 뜻을 이룰 수 있음.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "至誠感天의 한자·독음과 지극한 정성이 좋은 결과로 이어진다는 뜻을 EBS 해설과 속담 사전으로 대조했다.",
+      "sources": [
+        {
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20201203/go3/2nd_han_hsj_4E1T221Y_1.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=606108&viewType=confirm",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "知足知富",
+      "reading": "지족지부",
+      "before_meaning": "만족할 줄 아는 것이 참된 부유함임을 앎.",
+      "meaning": "만족할 줄 아는 것이 참된 부유함임을 앎.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "知足知富 표현의 사용과 만족을 알면 참된 부자라는 풀이가 부합한다. 知足者富의 者로 임의 교정하지 않는다.",
+      "sources": [
+        {
+          "url": "https://www.knnews.co.kr/news/articleView.php?gubun=mphmvqnbhmmpoho&idxno=1139692",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://leeza.tistory.com/8512",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "盡人事待天命",
+      "reading": "진인사대천명",
+      "before_meaning": "사람으로서 할 수 있는 노력을 다한 뒤 결과는 하늘의 뜻에 맡김.",
+      "meaning": "사람으로서 할 수 있는 노력을 다한 뒤 결과는 하늘의 뜻에 맡김.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "盡人事待天命은 최선을 다한 뒤 하늘의 뜻을 기다리는 태도다. 현재 풀이가 부합하며 특정 소설의 출전으로 단정하지 않는다.",
+      "sources": [
+        {
+          "url": "https://www.ajou.ac.kr/isa/support/abinvesti.do?articleNo=132183&attachNo=108310&mode=download",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.newsis.com/view/NISX20260304_0003534692",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "塵積爲山",
+      "reading": "진적위산",
+      "before_meaning": "먼지가 쌓여 산을 이루듯, 작은 것도 모이면 큰 것이 됨.",
+      "meaning": "먼지가 쌓여 산을 이루듯, 작은 것도 모이면 큰 것이 됨.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "塵積爲山의 한자·독음과 작은 것이 쌓여 큰 것이 된다는 비유가 기관 자료와 한자 해설에 부합한다.",
+      "sources": [
+        {
+          "url": "https://www.kca.go.kr/home/sub.do?menukey=4009&mode=view&no=1000265110",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=2000&key=20161124.22027202216",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "嫉逐排斥",
+      "reading": "질축배척",
+      "before_meaning": "시기하여 몰아내거나 물리침.",
+      "meaning": "시기하여 몰아내거나 물리침.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "嫉逐排斥은 시기하여 쫓아내고 물리친다는 뜻으로 독립선언서 주석과 교육 자료에 부합한다.",
+      "sources": [
+        {
+          "url": "https://www.donga.com/news/List/article/all/20030223/7915700/1",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://wowpass.com/upload/board/%EC%96%B8%EC%96%B4%EB%8A%A5%EB%A0%A5_%EB%B9%88%EC%B6%9C%20%ED%95%9C%EC%9E%90%EC%96%B4%20%EB%B0%8F%20%ED%95%9C%EC%9E%90%EC%84%B1%EC%96%B4.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "草綠同色",
+      "reading": "초록동색",
+      "before_meaning": "풀빛과 녹색이 같은 빛이라는 뜻으로, 처지나 성향이 비슷한 사람끼리 어울림.",
+      "meaning": "풀빛과 녹색이 같은 빛이라는 뜻으로, 처지나 성향이 비슷한 사람끼리 어울림.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "草綠同色은 같은 처지끼리 어울리거나 한패가 된다는 뜻으로 부합한다. 국립국어원 게시판의 질문자 주장은 공식 답변 근거로 세지 않는다.",
+      "sources": [
+        {
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=615525&viewType=confirm",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.imaeil.com/page/view/2005062710494772410",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "弊風惡習",
+      "reading": "폐풍악습",
+      "before_meaning": "폐해를 끼치는 나쁜 풍속과 습관.",
+      "meaning": "폐해를 끼치는 나쁜 풍속과 습관.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "弊風惡習의 한자·독음과 폐해를 끼치는 나쁜 풍습이라는 뜻이 대조 자료에 부합한다. 이 항목의 弊를 옷이 해진다는 敝와 혼동해 바꾸지 않는다.",
+      "sources": [
+        {
+          "url": "https://hanjasajun.co.kr/sajagosa.php?cidx=%E3%85%8D&k=&p=9",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://leeza.tistory.com/24690",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "學如不及",
+      "reading": "학여불급",
+      "before_meaning": "배움이 미치지 못할까 걱정하듯, 부지런히 힘써 배움.",
+      "meaning": "배움이 미치지 못할까 걱정하듯, 부지런히 힘써 배움.",
+      "decision": "유지",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "學如不及은 배움이 미치지 못할까 염려하며 부지런히 배우라는 취지다. 어떤 공부도 불가능하다는 뜻으로 바꾸지 않는다.",
+      "sources": [
+        {
+          "url": "https://www.mju.ac.kr/ice1/7627/subview.do",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.artnstudy.com/365/Img/126/%EB%BD%91%EC%95%84%20%EC%9D%BD%EB%8A%94%20%EB%85%BC%EC%96%B4%20%EA%B0%95%EB%8F%85%20-%20%EB%B0%B0%EC%9B%80%EC%9D%B4%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "hanja": "膾炙人口",
+      "reading": "회자인구",
+      "before_meaning": "맛있는 음식처럼 사람들의 입에 자주 오르내리며 널리 알려짐.",
+      "meaning": "좋은 시나 글 등이 사람들의 입에 자주 오르내리며 칭찬을 받음.",
+      "decision": "뜻 보완",
+      "hanja_check": "유지",
+      "reading_check": "유지",
+      "note": "膾炙人口는 좋은 시문 등이 사람들의 입에 오르며 칭찬받는 긍정적 뉘앙스를 갖는다. 단순한 유명세라는 기존 풀이를 보완한다.",
+      "sources": [
+        {
+          "url": "https://www.kihasa.re.kr/api/kihasa/file/download?seq=19792",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.fnnews.com/news/201807231725189049",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.jejunews.com/news/articleView.html?idxno=2140238",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    }
+  ]
+}

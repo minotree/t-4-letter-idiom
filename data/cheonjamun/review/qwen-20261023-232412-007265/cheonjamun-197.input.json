@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-197",
+    "sequence": "197",
+    "hanja": "耽讀翫市",
+    "reading": "탐독완시",
+    "meaning": "왕충은 책 읽기를 너무 좋아하여 저잣거리 책방에 서서 온종일 책을 읽고 즐겼습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-198",
+    "hanja": "寓目囊箱",
+    "meaning": "한 번 눈길을 스치기만 하여도 모두 외워 마치 머릿속에 온 서고를 담아둔 듯하였습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "耽(즐길 탐) 讀(닐글 독) 翫°(구경 완) °市(져제 시)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [耽讀翫市] 및 16세기 훈음, 사성 방점(耽讀翫°°市) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "耽(귀울 탐) 讀(닐글 독) 翫(샹원 완) 市(져제 시)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [耽讀翫市] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 耽讀翫市 | 독음: 탐독완시 | 번역: (한나라 왕총은) 독서를 즐겨 한 번 보면 상자에 넣은 듯 (잊지 않았다지)",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "categories": {
+    "idiom": { "name": "한자성어", "display_source": null },
+    "cheonjamun": { "name": "천자문", "display_source": "출처: 천자문" },
+    "english": { "name": "영어 단어", "display_source": null }
+  },
+  "datasets": [
+    { "path": "sajaseongeo_image_working.csv", "category": "idiom", "role": "active_source", "legacy_category_default": "idiom" },
+    { "path": "data/sajaseongeo_final_quiz_v3.csv", "category": "idiom", "role": "legacy_reference" },
+    { "path": "data/content-audit/**", "category": "idiom", "role": "audit_and_history" },
+    { "path": "data/cheonjamun/draft/**", "category": "cheonjamun", "role": "unapproved_draft" },
+    { "path": "data/cheonjamun/evidence/**", "category": "cheonjamun", "role": "evidence" },
+    { "path": "data/cheonjamun/reviewed/cheonjamun.csv", "category": "cheonjamun", "role": "active_reviewed_source", "rows": 244 },
+    { "path": "data/cheonjamun/reviewed/review.json", "category": "cheonjamun", "role": "review_decisions_and_hashes" },
+    { "path": "data/cheonjamun/review/**", "category": "cheonjamun", "role": "review_not_approval" },
+    { "path": "data/english/words.json", "category": "english", "role": "active_source_snapshot" },
+    { "path": "data/english/source.json", "category": "english", "role": "import_provenance" }
+  ],
+  "notes": [
+    "기존 해시 검증 대상 파일은 변경하지 않는다. 분류 열이 없는 기존 CSV는 로딩 시 idiom으로 식별한다.",
+    "앱 JSON은 항목별 category가 필수다. 기존 666개와 천자문 검토본 244개에서 부창부수 중복 1개를 기존 항목으로 유지하여 통합 909개다. 천자문 보류 6개는 출제하지 않는다."
+  ]
+}

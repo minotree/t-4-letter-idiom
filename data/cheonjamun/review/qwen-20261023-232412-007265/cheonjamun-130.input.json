@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-130",
+    "sequence": "130",
+    "hanja": "車駕肥輕",
+    "reading": "거가비경",
+    "meaning": "살찐 준마가 끄는 수레를 타고 가벼운 비단옷을 입은 채 호화롭게 다닙니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-129",
+    "hanja": "世祿侈富",
+    "meaning": "대대로 국가의 녹봉을 물려받아 가문이 더없이 부유하고 영화롭습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "車(술위 거) 駕°(멍에 가) 肥(ᄉᆞᆯ질 비) 輕(가ᄇᆡ야올 경)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [車駕肥輕] 및 16세기 훈음, 사성 방점(車駕°肥輕) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "車(술위 챠) 駕(멍에 가) 肥(ᄉᆞᆯ질 비) 輕(가ᄇᆡ야올 경)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [車駕肥輕] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 車駕肥輕 | 독음: 거가비경 | 번역: 대대로 받는 녹으로 부귀를 누리며 수레는 (제물로) 무겁고 가마는 가벼우니",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

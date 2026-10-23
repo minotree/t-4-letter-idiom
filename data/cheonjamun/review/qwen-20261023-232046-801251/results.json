@@ -1,0 +1,202 @@
+{
+  "model": "qwen3:14b",
+  "input_sha256": "f9f25006421f28385bf9f4b52fc89dd93709ae47817054f5949095fd649017d6",
+  "evidence_sha256": "b144f88cc36b71945e06bbcc46184582da36a06b57bccf1f9f0658c2499b1164",
+  "semantic_approved": false,
+  "requested": 5,
+  "completed": 5,
+  "results": [
+    {
+      "id": "cheonjamun-001",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "하늘은 가물가물 아득하게 검고 땅은 누렇습니다.",
+          "proposed_value": "하늘은 검고 땅은 누르며 우주는 넓고도 크다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에 따르면, '하늘은 검고 땅은 누르며 우주는 넓고도 크다'로 해석되어 원래 의미와 차이가 있음.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "의미 해석",
+      "unresolved": [],
+      "seconds": 6.8,
+      "prompt_tokens": 801,
+      "output_tokens": 188
+    },
+    {
+      "id": "cheonjamun-004",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "辰宿列張",
+          "proposed_value": null,
+          "reason": "원문 한자 '辰宿列張'은 1583년과 1575년 목판본에서 동일하게 확인됨. 다만, '宿'의 독음에 대한 해석 차이가 존재함.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "진수열장",
+          "proposed_value": "진숙열장",
+          "reason": "국립국어원 한자음 규범에 따르면 '宿'은 '수'로 발음되나, 일반 대중음에서는 '숙'으로 발음되는 경우가 있음. 이로 인해 독음에 대한 불확실성이 존재함.",
+          "source_ids": [
+            "src-korean-std-dict"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "밤하늘의 수많은 별자리가 넓게 벌여져 늘어서 있습니다.",
+          "proposed_value": null,
+          "reason": "위키문헌의 번역은 '해와 달이 차고 기울며 별은 자리를 잡아 늘어서 있다.'로, 원문의 의미와는 약간 차이가 있음. 이로 인해 의미 해석에 대한 불확실성이 존재함.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 근거 자료 비교",
+      "unresolved": [
+        "독음 선택: 천문 별자리(28수) 전통 독음 '진수열장' vs 일반 대중음 '진숙열장' 서비스 방침 결정 필요."
+      ],
+      "seconds": 16.31,
+      "prompt_tokens": 976,
+      "output_tokens": 472
+    },
+    {
+      "id": "cheonjamun-140",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "說感武丁",
+          "proposed_value": null,
+          "reason": "원문 한자 [說感武丁]은 1583년 석봉천자문, 1575년 광주판천자문 등에서 확인되었으며, 훈음은 '설감무정' 또는 '열감무정'으로 다양하게 기록되어 있다. 이는 고전음과 현대 읽기의 차이로 보인다.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575",
+            "src-wikisource-translation",
+            "src-shiji-eun"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "열감무정",
+          "proposed_value": "설감무정",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서는 '설감무정'으로 독음이 기록되었으며, 고전 전통음 '부열'에 해당하는 '열감무정'과 일반 자음 '설감무정'의 선택에 대한 명확한 근거가 부족하다.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-shiji-eun"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "담벼락을 쌓던 어진 현인 부열은 은나라 임금 무정의 꿈에 나타나 감동을 주었습니다.",
+          "proposed_value": null,
+          "reason": "원문 의미는 '부열'이 무정의 꿈에 나타나 감동을 주었다는 내용으로, 고전 전통음 '부열'에 해당하는 '열감무정'과 일반 자음 '설감무정'의 선택에 따라 해석이 달라질 수 있다. 이에 대한 명확한 근거가 부족하다.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-shiji-eun"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미",
+      "unresolved": [
+        "독음 선택: 은나라 재상 부열(傅說) 인명 고사에 따른 전통 고전음 '열감무정' vs 일반 자음 '설감무정' 선택 결정 필요."
+      ],
+      "seconds": 19.88,
+      "prompt_tokens": 1064,
+      "output_tokens": 575
+    },
+    {
+      "id": "cheonjamun-201",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "具膳飡飯",
+          "proposed_value": null,
+          "reason": "원문 한자 '具膳飡飯'은 여러 판본에서 일관되게 확인됨. 다만 '飡'의 훈음에 대해 '손'과 '찬'의 두 가지 해석이 존재하여 독음에 영향을 줌.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575",
+            "src-wikisource-translation",
+            "src-daum-handic"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "구선손반",
+          "proposed_value": "구선찬반",
+          "reason": "전통 천자문 관습음 '구선손반'과 현대 일반 한자음 '구선찬반'의 차이가 존재. '飡'의 훈음에 따라 독음이 달라질 수 있음.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-daum-handic"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "정갈하게 반찬을 갖추고 때에 맞추어 따뜻한 밥을 먹습니다.",
+          "proposed_value": "반찬이나 저녁밥이야 먹고 배를 채우면 그만인 것",
+          "reason": "원문의 의미 해석에 차이가 있음. '정갈하게 반찬을 갖추고 때에 맞추어 따뜻한 밥을 먹습니다.'와 '반찬이나 저녁밥이야 먹고 배를 채우면 그만인 것'은 서로 다른 해석을 반영함.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미에 대한 여러 판본과 해설 간 비교",
+      "unresolved": [
+        "독음 선택: 전통 천자문 관습음 '구선손반'(飡=저녁밥 손 飧) vs 현대 일반 한자음 '구선찬반' 선택 결정 필요."
+      ],
+      "seconds": 18.42,
+      "prompt_tokens": 979,
+      "output_tokens": 534
+    },
+    {
+      "id": "cheonjamun-239",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "璇璣懸斡",
+          "proposed_value": "璇璣懸幹",
+          "reason": "광주판천자문 1575년 목판본 원문에서 '斡'가 '幹'으로 기록된 점 확인.",
+          "source_ids": [
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "선기현알",
+          "proposed_value": "선기현간",
+          "reason": "광주판천자문 1575년 목판본에서 '斡(돌 알)'가 '幹(읏듬 간)'으로 기록된 점 확인.",
+          "source_ids": [
+            "src-gwangju-1575"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "하늘의 북두칠성과 혼천의 천체는 허공에 매달린 채 쉼 없이 빙빙 돌아갑니다.",
+          "proposed_value": null,
+          "reason": "원문 해석은 '璇璣'와 '斡'의 의미에 따라 달라질 수 있으며, '幹'으로의 변경이 의미에 영향을 줄 수 있음.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-korean-std-dict"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미, 판본 차이",
+      "unresolved": [
+        "판본 차이: 석봉본 [璇璣懸斡] vs 광주본 [璇璣懸幹]. 기준 판본 유지 승인 필요.",
+        "판본 및 독음: 斡(돌 알)에 따른 '선기현알' vs 광주본 璇璣懸幹(간) 판본 차이 결정 필요."
+      ],
+      "seconds": 16.45,
+      "prompt_tokens": 1036,
+      "output_tokens": 473
+    }
+  ]
+}

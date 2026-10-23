@@ -1,0 +1,36 @@
+{
+  "filename": "0001_가가호호.webp",
+  "hanja": "家家戶戶",
+  "id": "1",
+  "image_prompt_sha256": "6f1edcd1e2d7203a56a6c148a9318cea07e8f50067759090a8eb1d70e4a2eb4c",
+  "meaning": "집집마다, 모든 집.",
+  "meaning_reviewed_on": "2026-10-20",
+  "meaning_reviewer": "사용자",
+  "meaning_sources": [
+    "사용자 제공 검증된 의미: 8단계 家家戶戶 의미·대본 검수 지시 (2026-10-20)"
+  ],
+  "reading": "가가호호",
+  "story": {
+    "meaning": "집집마다, 모든 집.",
+    "panels": [
+      {
+        "dialogue": "와! 마을에 축제가 열리나 봐!",
+        "scene": "A village festival is beginning. A child in hanbok sees festive decorations hanging on several traditional Korean houses."
+      },
+      {
+        "dialogue": "모든 집이 예쁘게 꾸며져 있네?",
+        "scene": "The child and a friend, both in hanbok, look together at the beautifully decorated houses throughout the village."
+      },
+      {
+        "dialogue": "응! 집집마다 축제를 준비했대!",
+        "scene": "The friend points toward the village houses, showing the child how every household has prepared festive decorations."
+      },
+      {
+        "dialogue": "정말 온 마을이 축제 분위기야!",
+        "scene": "A wide view shows the whole traditional Korean village filled with festival decorations. The child and friend stand smiling in the foreground, enjoying the festive atmosphere."
+      }
+    ]
+  },
+  "story_reviewed_on": "2026-10-20",
+  "story_reviewer": "사용자"
+}

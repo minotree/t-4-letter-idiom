@@ -1,0 +1,58 @@
+{
+  "row": {
+    "id": "cheonjamun-004",
+    "sequence": "4",
+    "hanja": "辰宿列張",
+    "reading": "진수열장",
+    "meaning": "밤하늘의 수많은 별자리가 넓게 벌여져 늘어서 있습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-003",
+    "hanja": "日月盈昃",
+    "meaning": "해와 달은 찼다가 기울며 규칙적으로 운행합니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "辰(별 진) 宿(잘 슉) 列(벌 렬) 張(베플 댱)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [辰宿列張] 및 16세기 훈음, 사성 방점(辰宿列張) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "辰(미르 진) 宿(잘 슉) 列(벌 렬) 張(베플 댱)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [辰宿列張] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 辰宿列張 | 독음: 진수열장 | 번역: 해와 달이 차고 기울며 별은 자리를 잡아 늘어서 있다.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-korean-std-dict",
+      "supports": [
+        "reading"
+      ],
+      "excerpt": "수(宿): '이십팔수(二十八宿)', '성수(星宿)' 등 동양 전통 천문 별자리 구역을 이를 때의 독음.",
+      "comparison_note": "천문 별자리(28수)를 나타낼 때 '수'로 발음하는 국립국어원 한자음 규범 확인. 일반 자음 '숙'과의 복수 독음 관계를 증명함.",
+      "access_level": "search_excerpt"
+    }
+  ],
+  "unresolved": [
+    "독음 선택: 천문 별자리(28수) 전통 독음 '진수열장' vs 일반 대중음 '진숙열장' 서비스 방침 결정 필요."
+  ]
+}

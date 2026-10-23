@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-149",
+    "sequence": "149",
+    "hanja": "起翦頗牧",
+    "reading": "기전파목",
+    "meaning": "전국시대의 명장 백기, 왕전, 염파, 이목 네 장군입니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-150",
+    "hanja": "用軍最精",
+    "meaning": "군사를 부리고 병법을 구사함에 있어 당대 천하에서 가장 정밀하고 뛰어났습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "°起(닐 긔) °翦(ᄀᆞᆯ길 젼) 頗(ᄌᆞ모 파) 牧(칠 목)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [起翦頗牧] 및 16세기 훈음, 사성 방점(°起°翦頗牧) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "起(닐 긔) 翦(ᄇᆞ릴 젼) 頗(ᄌᆞᄆᆞ 파) 牧(칠 믁)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [起翦頗牧] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 起翦頗牧 | 독음: 기전파목 | 번역: 백기 왕전 염파 이목은 군사를 가장 잘 다루었고",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

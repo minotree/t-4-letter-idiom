@@ -1,0 +1,11 @@
+{
+  "layout_version": 2,
+  "id": "1",
+  "protected_regions_human_verified": false,
+  "panels": [
+    {"protected_regions": [[25, 105, 240, 378]], "bubble_width": 230, "bubble_candidates": [[270, 20], [270, 45]], "number_position": [10, 10]},
+    {"protected_regions": [[10, 140, 285, 375]], "bubble_width": 245, "bubble_candidates": [[250, 20], [250, 45]], "number_position": [10, 10]},
+    {"protected_regions": [[10, 125, 310, 350], [275, 175, 355, 240]], "bubble_width": 240, "bubble_candidates": [[260, 35], [260, 55]], "number_position": [10, 30]},
+    {"protected_regions": [[60, 180, 445, 350]], "bubble_width": 350, "bubble_candidates": [[100, 10], [100, 25]], "number_position": [40, 10], "answer_box": [150, 100, 370, 150], "notice_box": [65, 354, 455, 381]}
+  ]
+}

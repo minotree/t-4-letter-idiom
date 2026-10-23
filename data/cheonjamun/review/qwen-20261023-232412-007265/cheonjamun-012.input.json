@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-012",
+    "sequence": "12",
+    "hanja": "玉出崑岡",
+    "reading": "옥출곤강",
+    "meaning": "아름다운 옥은 곤륜산 언덕에서 산출됩니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-011",
+    "hanja": "金生麗水",
+    "meaning": "진귀한 금은 여수라는 강에서 생산됩니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "玉(구슬 옥) 出(날 츌) 崑(뫼 곤) 岡(묏부리 강)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [玉出崑岡] 및 16세기 훈음, 사성 방점(玉出崑岡) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "玉(구슬 옥) 出(날 츌) 崑(묏브리 곤) 岡(묏브리 강)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [玉出崑岡] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 玉出昆岡 | 독음: 옥출곤강 | 번역: 금은 여수에서 나고 옥은 곤강에서 난다.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

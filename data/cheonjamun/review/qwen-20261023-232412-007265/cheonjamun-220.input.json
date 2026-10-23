@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-220",
+    "sequence": "220",
+    "hanja": "悚懼恐惶",
+    "reading": "송구공황",
+    "meaning": "혹시라도 예법에 허물이나 불경이 있을까 두려워하며 송구한 마음을 품습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-219",
+    "hanja": "稽顙再拜",
+    "meaning": "이마를 땅에 닿도록 숙여 지극한 공경을 표하고 두 번 절을 올립니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "°悚(두릴 숑) 懼°(두릴 구) °恐(저흘 공) 惶(저흘 황)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [悚懼恐惶] 및 16세기 훈음, 사성 방점(°悚懼°°恐惶) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "悚(저흘 속) 懼(저흘 구) 恐(저흘 공) 惶(저흘 황)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [悚懼恐惶] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 悚懼恐惶 | 독음: 송구공황 | 번역: 이마를 조아려 두 번 절하여 송구하고 두려운 마음을 보여야 한다.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-241",
+    "sequence": "241",
+    "hanja": "指薪脩祐",
+    "reading": "지신수우",
+    "meaning": "섶나무는 타서 재가 되어도 불씨는 이어지듯 수양을 닦아 참된 복을 이어받아야 합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-242",
+    "hanja": "永綏吉邵",
+    "meaning": "영원토록 편안하여 상서롭고 굳건하며 아름다운 복락을 길이 누립니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "°指(ᄀᆞᄅᆞ칠 지) 薪(섭 신) 脩(닷ᄭᆞᆯ 슈) 祐°(복 우)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [指薪脩祐] 및 16세기 훈음, 사성 방점(°指薪脩祐°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "指(손가락 지) 薪(섭 신) 脩(길 슈) 祐(도을 우)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [指薪脩祐] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 指薪修祜 | 독음: 지신수우 | 번역: 손가락에 섶불을 단 듯 수양에 전념하면 영원토록 평안하고 길하리라.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

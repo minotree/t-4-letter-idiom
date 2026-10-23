@@ -1,0 +1,53 @@
+{
+  "row": {
+    "id": "cheonjamun-201",
+    "sequence": "201",
+    "hanja": "具膳飡飯",
+    "reading": "구선손반",
+    "meaning": "정갈하게 반찬을 갖추고 때에 맞추어 따뜻한 밥을 먹습니다."
+  },
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "具(ᄀᆞ촐 구) 膳°(차반 션) 飡(밥 손) 飯°(밥 반)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [具膳飡飯] 및 16세기 훈음, 사성 방점(具膳°飡飯°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "具(ᄀᆞᄌᆞᆫ 구) 膳(션믈 션) 飡(반찬 찬) 飯(법 반)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [具膳飡飯] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 具膳飡飯 | 독음: 구선손반 | 번역: 반찬이나 저녁밥이야 먹고 배를 채우면 그만인 것",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-daum-handic",
+      "supports": [
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "具膳飡飯(구선손반): 반찬을 갖추고 밥을 먹음. 飡은 저녁밥 손(飧)의 이체자.",
+      "comparison_note": "전통 천자문 관습음 '손반'의 사전 등재형 확인. 표준음 '찬반'과의 병기 검토 근거.",
+      "access_level": "search_excerpt"
+    }
+  ],
+  "unresolved": [
+    "독음 선택: 전통 천자문 관습음 '구선손반'(飡=저녁밥 손 飧) vs 현대 일반 한자음 '구선찬반' 선택 결정 필요."
+  ]
+}

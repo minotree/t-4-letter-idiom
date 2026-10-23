@@ -1,0 +1,49 @@
+{
+  "row": {
+    "id": "cheonjamun-230",
+    "sequence": "230",
+    "hanja": "嵇琴阮嘯",
+    "reading": "혜금완소",
+    "meaning": "혜강의 탁월한 거문고 연주 솜씨와 완적이 높이 불던 청아한 휘파람 소리입니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-229",
+    "hanja": "布射遼丸",
+    "meaning": "여포의 백발백중 신묘한 활쏘기 솜씨와 웅의료가 공중에서 방울을 농락하던 놀라운 재주입니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "嵇(ᄒᆡ가 ᄒᆡ) 琴(거믄고 금) °阮(완가 완) 嘯°(ᄑᆞ람 쇼)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [嵇琴阮嘯] 및 16세기 훈음, 사성 방점(嵇琴°阮嘯°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "嵆(ᄒᆡ강 ᄒᆡ) 琴(거믄고 금) 阮(완젹 완) 嘯(ᄑᆞ람 쇼)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [嵆琴阮嘯] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 嵇琴阮嘯 | 독음: 혜금완소 | 번역: 여포는 활 잘 쏘았고 의료는 돌 잘 던졌으며 혜강은 금을 잘켰고 완적은 휘파람을 잘 불었지",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": [
+    "판본 차이: 석봉본 [嵇琴阮嘯] vs 광주본 [嵆琴阮嘯]. 기준 판본 유지 승인 필요."
+  ]
+}

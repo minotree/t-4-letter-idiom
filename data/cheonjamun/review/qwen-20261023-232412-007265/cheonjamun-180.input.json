@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-180",
+    "sequence": "180",
+    "hanja": "林睾幸卽",
+    "reading": "임고행즉",
+    "meaning": "다행히 숲과 언덕이 있는 자연의 품으로 나아가 은퇴하여 평안을 누립니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-179",
+    "hanja": "殆辱近恥",
+    "meaning": "분수를 모르고 지나치면 위태로운 치욕을 부르고 부끄러운 일에 가까워집니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "林(수플 림) 睾(두던 고) °幸(ᄒᆡᆼ혀 ᄒᆡᆼ) 卽(즉제 즉)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [林睾幸卽] 및 16세기 훈음, 사성 방점(林睾°幸卽) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "林(수플 림) 睾(두던 고) 幸(ᄒᆡᆼᄒᆞᆯ ᄒᆡᆼ) 卽(고 즉)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [林睾幸卽] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 林皋幸即 | 독음: 임고행즉 | 번역: 위태로운 치욕은 부끄러운 일에 의한 것이니 수풀과 언덕에 있는 것이 도리어 다행이다.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

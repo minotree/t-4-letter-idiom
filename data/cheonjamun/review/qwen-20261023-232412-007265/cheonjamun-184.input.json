@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-184",
+    "sequence": "184",
+    "hanja": "沈黙寂寥",
+    "reading": "침묵적요",
+    "meaning": "말수를 아끼고 조용히 침묵하며 고요하고 평온한 경지를 누립니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-183",
+    "hanja": "索居閑處",
+    "meaning": "번잡한 세상을 벗어나 홀로 조용히 머물며 한가로운 곳에서 유유자적합니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "沈(ᄃᆞᄆᆞᆯ 팀) 黙(ᄌᆞᆷᄌᆞᆷ 믁) 寂(괴오 젹) 寥(괴오 료)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [沈黙寂寥] 및 16세기 훈음, 사성 방점(沈黙寂寥) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "沈(ᄃᆞᄆᆞᆯ 팀) 黙(괴외 믁) 寂(괴외 젹) 寥(괴외 료)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [沈黙寂寥] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 沈默寂寥 | 독음: 침묵적요 | 번역: 한가한 곳을 찾아 살며 고요히 살며 침묵한 채",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

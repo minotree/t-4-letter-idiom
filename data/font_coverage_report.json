@@ -1,0 +1,14 @@
+{
+  "row_count": 695,
+  "unique_source_characters": 1066,
+  "korean_font": {
+    "path": "C:\\Windows\\Fonts\\malgun.ttf",
+    "index": 0
+  },
+  "hanja_font": {
+    "path": "C:\\Windows\\Fonts\\batang.ttc",
+    "index": 0
+  },
+  "missing_korean": [],
+  "missing_hanja": []
+}

@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-057",
+    "sequence": "57",
+    "hanja": "禍因惡積",
+    "reading": "화인악적",
+    "meaning": "인생의 재앙은 나쁜 짓과 악행을 조금씩 쌓아온 데서 비롯됩니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-058",
+    "hanja": "福緣善慶",
+    "meaning": "참된 행복은 착하고 선한 일을 꾸준히 쌓아온 경사로운 인연으로 찾아옵니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "°禍(ᄌᆡ화 화) 因(지ᄌᆞᆯ 인) 惡(모딜 악) 積(사ᄒᆞᆯ 젹)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [禍因惡積] 및 16세기 훈음, 사성 방점(°禍因惡積) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "禍(ᄌᆡ홧 화) 因(지즐 인) 惡(모딜 악) 積(물 젹)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [禍因惡積] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 禍因惡積 | 독음: 화인악적 | 번역: 화는 악행을 쌓은 것이 원인이요 복은 선행의 결과이다.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

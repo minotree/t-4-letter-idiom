@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-022",
+    "sequence": "22",
+    "hanja": "乃服衣裳",
+    "reading": "내복의상",
+    "meaning": "이에 비로소 위옷과 아래옷을 지어 입어 예의를 갖추었습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-021",
+    "hanja": "始制文字",
+    "meaning": "창힐이 새의 발자국을 보고 처음으로 문자를 만들었습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "°乃(사 내) 服(니블 복) 衣(옷 의) 裳(치마 샹)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [乃服衣裳] 및 16세기 훈음, 사성 방점(°乃服衣裳) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "乃(사 내) 服(옷 복) 衣(옷 의) 裳(고외 샤ㅇ)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [乃服衣裳] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 乃服衣裳 | 독음: 내복의상 | 번역: 문자를 처음 짓고 옷을 지어 입혔지.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

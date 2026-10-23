@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-029",
+    "sequence": "29",
+    "hanja": "愛育黎首",
+    "reading": "애육여수",
+    "meaning": "검은 머리의 평범한 백성들을 사랑으로 품고 따뜻하게 기릅니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-030",
+    "hanja": "臣伏戎羌",
+    "meaning": "사방의 먼 변방 민족들도 덕화에 감복하여 신하로서 복종합니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "愛°(ᄉᆞ랑 ᄋᆡ) 育(칠 육) 黎(가ᄆᆞᆯ 려) °首(머리 슈)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [愛育黎首] 및 16세기 훈음, 사성 방점(愛°育黎°首) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "愛(ᄃᆞᆺᄋᆞᆯ ᄋᆡ) 育(칠 휵) 黎(가ᄆᆞᆯ 려) 首(마리 슈)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [愛育黎首] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 愛育黎首 | 독음: 애육여수 | 번역: 백성을 아끼고<ref>여수(黎首)는 검은 머리, 즉 관직이 없는 백성을 말한다.</ref> 오랑캐가 신하로 복종하게 하소서.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

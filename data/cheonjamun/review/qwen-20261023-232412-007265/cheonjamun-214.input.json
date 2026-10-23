@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-214",
+    "sequence": "214",
+    "hanja": "接杯擧觴",
+    "reading": "접배거상",
+    "meaning": "서로 술잔을 주고받고 큰 잔을 높이 들어 서로의 건강과 행복을 축복합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-213",
+    "hanja": "絃歌酒讌",
+    "meaning": "거문고 줄을 뜯어 노래를 부르고 술잔을 기울이며 화기애애한 잔치를 엽니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "接(브틀 졉) 杯(잔 ᄇᆡ) °擧(들 거) 觴(잔 샹)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [接杯擧觴] 및 16세기 훈음, 사성 방점(接杯°擧觴) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "接(브틀 졉) 杯(잔 ᄇᆡ) 擧(들 거) 觴(잔 샹)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [接杯擧觴] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 接盃舉觴 | 독음: 접배거상 | 번역: 거문거를 뜯고 노래를 부르며 주연을 열고 술잔을 들어 부딛히고",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-109",
+    "sequence": "109",
+    "hanja": "圖寫禽獸",
+    "reading": "도사금수",
+    "meaning": "궁궐 벽에는 온갖 신비로운 날짐승과 들짐승의 모습을 생생하게 그렸습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-110",
+    "hanja": "畵綵仙靈",
+    "meaning": "오색 빛깔 고운 채색으로 신선과 신령스러운 존재들의 모습을 장식하였습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "圖(그림 도) °寫(슬 샤) 禽(새 금) 獸°(즘승 슈)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [圖寫禽獸] 및 16세기 훈음, 사성 방점(圖°寫禽獸°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "圖(그림 도) 寫(슬 샤) 禽(새 금) 獸(즘승 슈)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [圖寫禽獸] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 圖寫禽獸 | 독음: 도사금수 | 번역: 날짐승 들짐승을 그리니 신선 사는 그림이로구나.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,56 @@
+{
+  "row": {
+    "id": "cheonjamun-173",
+    "sequence": "173",
+    "hanja": "聆音察理",
+    "reading": "영음찰리",
+    "meaning": "남이 하는 말소리를 들으면 그 속에 담긴 참된 속뜻과 사리의 옳고 그름을 살핍니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-174",
+    "hanja": "鑑貌辨色",
+    "meaning": "사람의 겉모습을 잘 살피고 안색의 미묘한 변화를 분별하여 참마음을 헤아립니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "聆(드ᄅᆞᆯ 령) 音(소ᄅᆡ 음) 察(ᄉᆞᆯ필 찰) °理(다ᄉᆞ릴 리)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [聆音察理] 및 16세기 훈음, 사성 방점(聆音察°理) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "聆(드릉 령) 音(소ᄅᆡ 음) 察(ᄉᆞᆯ필 찰) 理(고틸 리)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [聆音察理] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 聆音察理 | 독음: 영음찰리 | 번역: 들리는 소리 자세히 살피고 거울에 비치는 모양 꼼꼼히 구별하고",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-korean-std-dict",
+      "supports": [
+        "reading"
+      ],
+      "excerpt": "제11항: 한자음 '랴, 려, 례, 료, 류, 리'가 단어 첫머리에 올 적에는, 두음 법칙에 따라 '야, 여, 예, 요, 유, 이'로 적는다. (보기: 聆 -> 영)",
+      "comparison_note": "구절 첫머리 '聆'이 두음법칙에 따라 '영'으로 실현됨을 증명함.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

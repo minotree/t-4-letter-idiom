@@ -1,0 +1,59 @@
+{
+  "row": {
+    "id": "cheonjamun-183",
+    "sequence": "183",
+    "hanja": "索居閑處",
+    "reading": "색거한처",
+    "meaning": "번잡한 세상을 벗어나 홀로 조용히 머물며 한가로운 곳에서 유유자적합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-184",
+    "hanja": "沈黙寂寥",
+    "meaning": "말수를 아끼고 조용히 침묵하며 고요하고 평온한 경지를 누립니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "索(노 삭) 居(살 거) 閑(겨ᄅᆞ 한) 處°(곧 쳐)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [索居閑處] 및 16세기 훈음, 사성 방점(索居閑處°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "索(노 삭) 居(살 거) 閑(겨늘 한) 處(바라 쳐)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [索居閑處] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 索居閒處 | 독음: 색거한처 | 번역: 한가한 곳을 찾아 살며 고요히 살며 침묵한 채",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-korean-std-dict",
+      "supports": [
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "색거(索居): 사람을 피하여 한적한 곳을 찾아서 삶. (索: 찾을 색, 居: 살 거)",
+      "comparison_note": "표준국어대사전 한자어 표제어 '색거(索居)'로 등재되어 있음을 증명함. '삭거'는 비등재형임.",
+      "access_level": "search_excerpt"
+    }
+  ],
+  "unresolved": [
+    "독음 선택: 표준어 등재형 '색거한처(索居)' vs 관습음 '삭거한처' 확인."
+  ]
+}

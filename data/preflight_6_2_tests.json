@@ -1,0 +1,63 @@
+{
+  "original_discovered": 40,
+  "additional_discovered": 17,
+  "discovered": 57,
+  "executed": 45,
+  "passed": 45,
+  "skipped_count": 12,
+  "failures": 0,
+  "errors": 0,
+  "skipped_tests": [
+    {
+      "id": "test_engine.EngineTests.test_blank_panel_and_invalid_webp_are_errors",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    },
+    {
+      "id": "test_engine.EngineTests.test_config_changed_checkpoint_fails_without_overwriting_output",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    },
+    {
+      "id": "test_engine.EngineTests.test_crash_after_publish_recovers_without_generation",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    },
+    {
+      "id": "test_engine.EngineTests.test_existing_untracked_file_is_not_overwritten",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    },
+    {
+      "id": "test_engine.EngineTests.test_failure_reason_is_redacted_and_retry_is_explicit",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    },
+    {
+      "id": "test_engine.EngineTests.test_interruption_and_resume_reuses_story_checkpoint",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    },
+    {
+      "id": "test_engine.EngineTests.test_mock_isolates_manifest_and_output_without_client",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    },
+    {
+      "id": "test_engine.EngineTests.test_mock_pipeline_composition_unicode_states_and_approval",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    },
+    {
+      "id": "test_engine.EngineTests.test_official_sdk_adapters_with_fake_client_only",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    },
+    {
+      "id": "test_engine.EngineTests.test_review_rejects_modified_output",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    },
+    {
+      "id": "test_engine.EngineTests.test_size_target_never_forces_unreadable_quality",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    },
+    {
+      "id": "test_engine.EngineTests.test_untracked_output_with_identity_prevents_paid_generation",
+      "reason": "User prohibited all image creation, including temporary mock images/fixtures"
+    }
+  ],
+  "forbidden_operation_attempts": [],
+  "all_40_passed": false,
+  "note": "No image generation, decoding or saving allowed; no API/network calls allowed. Skipped tests are not passes."
+}

@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-155",
+    "sequence": "155",
+    "hanja": "嶽宗恒岱",
+    "reading": "악종항대",
+    "meaning": "천하 오악 가운데 으뜸으로 높이 숭상되는 산은 북악 항산과 동악 태산입니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-156",
+    "hanja": "禪主云亭",
+    "meaning": "천자가 하늘과 땅에 제사 지내는 봉선의 의식은 운운산과 정정산에서 주관하였습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "嶽(묏부리 악) 宗(ᄆᆞᄅᆞ 종) 恒(샹녜 ᄒᆞᆼ) 岱°(뫼)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [嶽宗恒岱] 및 16세기 훈음, 사성 방점(嶽宗恒岱°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "嶽(묏부리 악) 宗(ᄆᆞᄅᆞ 종) 恒(ᄒᆞᆼ샹 ᄒᆞᆼ) 岱(뫼 ᄃᆡ)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [嶽宗恒岱] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 嶽宗恆岱 | 독음: 악종항대 | 번역: 산중 으뜸은 항산과 태산이라 임금을 정하는 운정이 그곳에 있으며",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

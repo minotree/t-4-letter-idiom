@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-187",
+    "sequence": "187",
+    "hanja": "欣奏累遣",
+    "reading": "흔주루견",
+    "meaning": "마음속에 참된 기쁨이 차례로 모여들고 세상사의 번거로운 얽매임은 멀리 떠나보냅니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-188",
+    "hanja": "戚謝歡招",
+    "meaning": "모든 슬픔과 시름은 저절로 사라져 물러가고 유쾌한 즐거움만이 새롭게 찾아옵니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "欣(깃ᄭᅳᆯ 흔) 奏°(ᄉᆞᆯ올 주) °累(더러일 류) °遣(보낼 견)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [欣奏累遣] 및 16세기 훈음, 사성 방점(欣奏°°累°遣) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "欣(깃글 흔) 奏(ᄉᆞ올 주) 累(ᄠᆡ 류) 遣(보낼 견)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [欣奏累遣] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 欣奏累遣 | 독음: 흔주루견 | 번역: 기쁜 일은 알리고 누추한 것은 보내며 슬픈 일은 마다하고 기쁜 일을 환영하리",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

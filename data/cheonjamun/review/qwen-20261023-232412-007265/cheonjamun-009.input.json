@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-009",
+    "sequence": "9",
+    "hanja": "雲騰致雨",
+    "reading": "운등치우",
+    "meaning": "수증기가 위로 올라 구름이 되고 뭉쳐서 비를 내립니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-010",
+    "hanja": "露結爲霜",
+    "meaning": "이슬이 찬 기운을 만나 엉기어 하얀 서리가 됩니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "雲(구룸 운) 騰(ᄂᆞᆯ 등) 致°(닐윌 티) °雨(비 우)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [雲騰致雨] 및 16세기 훈음, 사성 방점(雲騰致°°雨) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "雲(구룸 운) 騰(ᄂᆞᆯ 등) 致(니를 티) 雨(비 우)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [雲騰致雨] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 雲騰致雨 | 독음: 운등치우 | 번역: 구름은 올라가 비가 되고 이슬은 얼어 서리가 된다.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

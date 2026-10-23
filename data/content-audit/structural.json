@@ -1,0 +1,734 @@
+{
+  "source": "sajaseongeo_image_working.csv",
+  "source_sha256": "156dc218768679eae5213e618881370023f0205d91a4eb9b8eb98218b6f7914b",
+  "source_unchanged": true,
+  "rows": 666,
+  "unique_hanja": 666,
+  "character_reading_checks": 2672,
+  "length_distribution": {
+    "2": 10,
+    "3": 5,
+    "4": 632,
+    "5": 8,
+    "6": 9,
+    "8": 2
+  },
+  "unihan_version": "17.0.0",
+  "unihan_sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+  "limitations": [
+    "Character readings only; idiom meaning correctness is not automatically validated.",
+    "Initial sound variants are permissive screening rules, not contextual pronunciation validation.",
+    "No automatic edits or approval status changes."
+  ],
+  "findings": [
+    {
+      "csv_line": 110,
+      "hanja": "橘化為枳",
+      "reading": "귤화위지",
+      "meaning": "사람은 환경에 따라 성질이나 행동이 달라질 수 있음을 이르는 말.",
+      "reasons": [
+        {
+          "type": "unihan_missing",
+          "position": 3,
+          "character": "為"
+        }
+      ]
+    },
+    {
+      "csv_line": 159,
+      "hanja": "簞食瓢飮",
+      "reading": "단사표음",
+      "meaning": "청빈하고 소박한 생활을 이르는 말.",
+      "reasons": [
+        {
+          "type": "unihan_reading_candidate",
+          "position": 2,
+          "character": "食",
+          "actual": "사",
+          "reference": [
+            "식"
+          ]
+        }
+      ]
+    },
+    {
+      "csv_line": 378,
+      "hanja": "言則是也",
+      "reading": "언즉시야",
+      "meaning": "말 자체는 이치에 맞다는 뜻으로, 말과 실제 행동이 다를 때에도 쓰임.",
+      "reasons": [
+        {
+          "type": "unihan_reading_candidate",
+          "position": 2,
+          "character": "則",
+          "actual": "즉",
+          "reference": [
+            "칙"
+          ]
+        }
+      ]
+    },
+    {
+      "csv_line": 593,
+      "hanja": "太剛則折",
+      "reading": "태강즉절",
+      "meaning": "지나치게 굳세면 꺾인다는 뜻으로, 너무 강경하거나 고집스러우면 도리어 일을 그르칠 수 있음.",
+      "reasons": [
+        {
+          "type": "unihan_reading_candidate",
+          "position": 3,
+          "character": "則",
+          "actual": "즉",
+          "reference": [
+            "칙"
+          ]
+        }
+      ]
+    }
+  ],
+  "exact_duplicate_groups": [],
+  "normalized_duplicate_groups": [],
+  "same_reading_groups": [],
+  "compatibility_character_row_count": 96,
+  "compatibility_character_rows": [
+    {
+      "csv_line": 11,
+      "hanja": "刻鵠類鶩",
+      "reading": "각곡유목",
+      "meaning": "고니를 조각하다 실패해도 오리와 비슷해지듯, 높은 목표를 본받아 노력하면 작은 성과라도 얻음."
+    },
+    {
+      "csv_line": 18,
+      "hanja": "敢不生心",
+      "reading": "감불생심",
+      "meaning": "감히 생각조차 하지 못함."
+    },
+    {
+      "csv_line": 19,
+      "hanja": "甘言利說",
+      "reading": "감언이설",
+      "meaning": "달콤한 말로 남을 꾀어냄."
+    },
+    {
+      "csv_line": 33,
+      "hanja": "車載斗量",
+      "reading": "거재두량",
+      "meaning": "수레에 싣고 말로 잴 만큼 수량이 매우 많거나 흔함."
+    },
+    {
+      "csv_line": 45,
+      "hanja": "堅如金石",
+      "reading": "견여금석",
+      "meaning": "서로 맺은 약속이나 맹세가 쇠와 돌처럼 굳고 변함없음."
+    },
+    {
+      "csv_line": 47,
+      "hanja": "堅忍不拔",
+      "reading": "견인불발",
+      "meaning": "굳게 참고 견디어 어떤 어려움에도 뜻을 굽히지 않음."
+    },
+    {
+      "csv_line": 71,
+      "hanja": "孤城落日",
+      "reading": "고성낙일",
+      "meaning": "외로운 성에 해가 진다는 뜻으로, 세력이 다하여 의지할 곳 없이 외로운 처지를 이르는 말."
+    },
+    {
+      "csv_line": 82,
+      "hanja": "過如不及",
+      "reading": "과여불급",
+      "meaning": "정도를 지나침은 미치지 못함과 같음을 이르는 말."
+    },
+    {
+      "csv_line": 83,
+      "hanja": "過猶不及",
+      "reading": "과유불급",
+      "meaning": "정도를 지나침은 미치지 못함과 같음을 이르는 말."
+    },
+    {
+      "csv_line": 87,
+      "hanja": "巧言令色",
+      "reading": "교언영색",
+      "meaning": "남에게 잘 보이려고 듣기 좋게 꾸미는 말과 알랑거리는 얼굴빛을 이르는 말."
+    },
+    {
+      "csv_line": 105,
+      "hanja": "屈而不信",
+      "reading": "굴이불신",
+      "meaning": "굽히고는 펴지 아니함."
+    },
+    {
+      "csv_line": 120,
+      "hanja": "金烏玉兎",
+      "reading": "금오옥토",
+      "meaning": "해와 달을 아울러 이르는 말."
+    },
+    {
+      "csv_line": 125,
+      "hanja": "其利斷金",
+      "reading": "기리단금",
+      "meaning": "두 사람이 마음을 함께하면 단단한 쇠도 끊을 만큼 강함."
+    },
+    {
+      "csv_line": 130,
+      "hanja": "落膽喪魂",
+      "reading": "낙담상혼",
+      "meaning": "몹시 놀라거나 마음이 상하여 넋을 잃음."
+    },
+    {
+      "csv_line": 131,
+      "hanja": "落穽下石",
+      "reading": "낙정하석",
+      "meaning": "어려움에 빠진 이를 돕기는커녕 도리어 더 괴롭힘."
+    },
+    {
+      "csv_line": 132,
+      "hanja": "落花流水",
+      "reading": "낙화유수",
+      "meaning": "떨어지는 꽃과 흐르는 물이라는 뜻으로, 저무는 봄의 경치 또는 서로 그리워하고 사랑하는 남녀의 마음."
+    },
+    {
+      "csv_line": 133,
+      "hanja": "爛商公論",
+      "reading": "난상공론",
+      "meaning": "여러 사람이 모여 어떤 일에 대해 충분히 의견을 나누고 의논함."
+    },
+    {
+      "csv_line": 134,
+      "hanja": "爛商討議",
+      "reading": "난상토의",
+      "meaning": "여러 사람이 모여 충분히 의견을 나누며 자세히 의논함."
+    },
+    {
+      "csv_line": 137,
+      "hanja": "男負女戴",
+      "reading": "남부여대",
+      "meaning": "가난한 사람들이 살 곳을 찾아 가족을 거느리고 이리저리 떠돌아다님."
+    },
+    {
+      "csv_line": 143,
+      "hanja": "盧生之夢",
+      "reading": "노생지몽",
+      "meaning": "인생과 부귀영화가 꿈처럼 덧없음을 이르는 말."
+    },
+    {
+      "csv_line": 145,
+      "hanja": "綠衣紅裳",
+      "reading": "녹의홍상",
+      "meaning": "연두 저고리와 다홍치마로 곱게 차려입은 젊은 여인의 옷차림."
+    },
+    {
+      "csv_line": 146,
+      "hanja": "論功行賞",
+      "reading": "논공행상",
+      "meaning": "공적의 크고 작음을 따져 그에 알맞은 상을 줌."
+    },
+    {
+      "csv_line": 147,
+      "hanja": "論點逸脫",
+      "reading": "논점일탈",
+      "meaning": "의논하거나 주장하는 내용이 본래의 요점에서 벗어남."
+    },
+    {
+      "csv_line": 148,
+      "hanja": "弄瓦之慶",
+      "reading": "농와지경",
+      "meaning": "딸을 낳은 기쁨을 이르는 말."
+    },
+    {
+      "csv_line": 149,
+      "hanja": "弄璋之慶",
+      "reading": "농장지경",
+      "meaning": "아들을 낳은 기쁨을 이르는 말."
+    },
+    {
+      "csv_line": 150,
+      "hanja": "籠鳥戀雲",
+      "reading": "농조연운",
+      "meaning": "새장 속 새가 구름을 그리워하듯 속박된 몸이 자유를 그리워함."
+    },
+    {
+      "csv_line": 151,
+      "hanja": "累卵之危",
+      "reading": "누란지위",
+      "meaning": "몹시 아슬아슬하고 위태로운 형세."
+    },
+    {
+      "csv_line": 155,
+      "hanja": "斷金之交",
+      "reading": "단금지교",
+      "meaning": "쇠도 끊을 만큼 굳고 깊은 우정."
+    },
+    {
+      "csv_line": 181,
+      "hanja": "同苦同樂",
+      "reading": "동고동락",
+      "meaning": "괴로움과 즐거움을 함께 나눔."
+    },
+    {
+      "csv_line": 188,
+      "hanja": "杜門不出",
+      "reading": "두문불출",
+      "meaning": "집에만 머물면서 바깥출입을 하지 않음."
+    },
+    {
+      "csv_line": 192,
+      "hanja": "燈下不明",
+      "reading": "등하불명",
+      "meaning": "등잔 밑이 어둡듯, 가까이에 있는 일이나 사실을 오히려 잘 모름."
+    },
+    {
+      "csv_line": 217,
+      "hanja": "目不識丁",
+      "reading": "목불식정",
+      "meaning": "글자를 전혀 모를 만큼 무식함."
+    },
+    {
+      "csv_line": 218,
+      "hanja": "目不忍見",
+      "reading": "목불인견",
+      "meaning": "눈뜨고 차마 보기 어려울 만큼 참혹하거나 딱함."
+    },
+    {
+      "csv_line": 221,
+      "hanja": "無不干涉",
+      "reading": "무불간섭",
+      "meaning": "관계하지 않는 일이 없을 만큼 모든 일에 간섭함."
+    },
+    {
+      "csv_line": 222,
+      "hanja": "無不通知",
+      "reading": "무불통지",
+      "meaning": "모르는 것이 없을 만큼 온갖 일에 두루 밝음."
+    },
+    {
+      "csv_line": 224,
+      "hanja": "無所不爲",
+      "reading": "무소불위",
+      "meaning": "못 하는 일이 없을 만큼 권세나 힘이 막강함."
+    },
+    {
+      "csv_line": 237,
+      "hanja": "美風良俗",
+      "reading": "미풍양속",
+      "meaning": "아름답고 좋은 풍속과 습관."
+    },
+    {
+      "csv_line": 243,
+      "hanja": "拔本塞源",
+      "reading": "발본색원",
+      "meaning": "뿌리를 뽑고 근원을 막듯, 좋지 않은 일의 원인을 근본부터 없앰."
+    },
+    {
+      "csv_line": 253,
+      "hanja": "伯樂一顧",
+      "reading": "백낙일고",
+      "meaning": "인재를 알아보는 사람이 한 번 돌아보듯, 재능을 인정받아 대우가 달라짐."
+    },
+    {
+      "csv_line": 255,
+      "hanja": "百聞不如一見",
+      "reading": "백문불여일견",
+      "meaning": "백 번 듣는 것보다 한 번 직접 보는 것이 더 잘 알 수 있음."
+    },
+    {
+      "csv_line": 257,
+      "hanja": "百折不屈",
+      "reading": "백절불굴",
+      "meaning": "여러 번 꺾이고 실패해도 뜻을 굽히지 않음."
+    },
+    {
+      "csv_line": 258,
+      "hanja": "百折不撓",
+      "reading": "백절불요",
+      "meaning": "수많은 어려움과 좌절에도 굴하지 않음."
+    },
+    {
+      "csv_line": 262,
+      "hanja": "百花爛漫",
+      "reading": "백화난만",
+      "meaning": "여러 가지 꽃이 활짝 피어 아름답게 어우러짐."
+    },
+    {
+      "csv_line": 270,
+      "hanja": "附和雷同",
+      "reading": "부화뇌동",
+      "meaning": "자기 주관 없이 남의 주장이나 행동을 덩달아 따름."
+    },
+    {
+      "csv_line": 273,
+      "hanja": "不共戴天之讐",
+      "reading": "불공대천지수",
+      "meaning": "한 하늘 아래 함께 살 수 없다고 여길 만큼 깊은 원한을 가진 원수."
+    },
+    {
+      "csv_line": 274,
+      "hanja": "不立文字",
+      "reading": "불립문자",
+      "meaning": "불교에서 깨달음은 문자에만 매이지 않고 마음에서 마음으로 전해진다는 가르침."
+    },
+    {
+      "csv_line": 275,
+      "hanja": "不眠不休",
+      "reading": "불면불휴",
+      "meaning": "잠도 자지 않고 쉬지도 않으며 계속 힘씀."
+    },
+    {
+      "csv_line": 276,
+      "hanja": "不問可知",
+      "reading": "불문가지",
+      "meaning": "물어보지 않아도 알 수 있을 만큼 분명함."
+    },
+    {
+      "csv_line": 277,
+      "hanja": "不問曲直",
+      "reading": "불문곡직",
+      "meaning": "옳고 그름이나 사정을 따지지 않고 곧바로 행동함."
+    },
+    {
+      "csv_line": 278,
+      "hanja": "不伐不德",
+      "reading": "불벌부덕",
+      "meaning": "자신의 공적이나 덕을 내세워 자랑하지 않음."
+    },
+    {
+      "csv_line": 279,
+      "hanja": "不撓不屈",
+      "reading": "불요불굴",
+      "meaning": "어려움에도 흔들리거나 뜻을 굽히지 않음."
+    },
+    {
+      "csv_line": 280,
+      "hanja": "不撤晝夜",
+      "reading": "불철주야",
+      "meaning": "밤낮을 가리지 않고 쉬지 않음."
+    },
+    {
+      "csv_line": 281,
+      "hanja": "不肖之父",
+      "reading": "불초지부",
+      "meaning": "선대의 덕을 닮지 못한 어리석은 아버지를 이르는 말."
+    },
+    {
+      "csv_line": 282,
+      "hanja": "不恥下問",
+      "reading": "불치하문",
+      "meaning": "자기보다 지위나 나이가 낮은 사람에게 묻고 배우는 것을 부끄러워하지 않음."
+    },
+    {
+      "csv_line": 290,
+      "hanja": "氷炭不相容",
+      "reading": "빙탄불상용",
+      "meaning": "얼음과 숯불이 함께할 수 없듯, 성질이 정반대여서 서로 어울릴 수 없음."
+    },
+    {
+      "csv_line": 295,
+      "hanja": "四分五裂",
+      "reading": "사분오열",
+      "meaning": "이리저리 흩어지고 갈라져 통일되지 못함."
+    },
+    {
+      "csv_line": 296,
+      "hanja": "砂上樓閣",
+      "reading": "사상누각",
+      "meaning": "모래 위에 세운 누각처럼, 기초가 약하여 오래 유지될 수 없는 일이나 계획."
+    },
+    {
+      "csv_line": 314,
+      "hanja": "生口不網",
+      "reading": "생구불망",
+      "meaning": "산 사람의 입에 거미줄이 치지 않듯, 아무리 어려워도 어떻게든 먹고살 길이 생김."
+    },
+    {
+      "csv_line": 319,
+      "hanja": "先憂後樂",
+      "reading": "선우후락",
+      "meaning": "세상 사람보다 먼저 근심하고 나중에 즐긴다는 뜻으로, 공적인 일을 먼저 걱정함."
+    },
+    {
+      "csv_line": 344,
+      "hanja": "食不二味",
+      "reading": "식불이미",
+      "meaning": "한 끼에 두 가지 반찬을 먹지 않을 만큼 검소하게 생활함."
+    },
+    {
+      "csv_line": 362,
+      "hanja": "安貧樂道",
+      "reading": "안빈낙도",
+      "meaning": "가난한 생활 속에서도 편안한 마음으로 도를 즐김."
+    },
+    {
+      "csv_line": 367,
+      "hanja": "哀而不悲",
+      "reading": "애이불비",
+      "meaning": "슬프지만 겉으로 슬픔을 드러내지 않음. 또는 슬프기는 하나 비참하지 않음."
+    },
+    {
+      "csv_line": 372,
+      "hanja": "兩手兼將",
+      "reading": "양수겸장",
+      "meaning": "장기에서 두 말이 한꺼번에 장을 부름. 비유적으로 양쪽에서 동시에 하나의 대상을 노림."
+    },
+    {
+      "csv_line": 375,
+      "hanja": "語不成說",
+      "reading": "어불성설",
+      "meaning": "말이 이치에 맞지 않아 도무지 말이 되지 않음."
+    },
+    {
+      "csv_line": 383,
+      "hanja": "戀慕之情",
+      "reading": "연모지정",
+      "meaning": "사랑하고 그리워하는 마음."
+    },
+    {
+      "csv_line": 385,
+      "hanja": "連戰連勝",
+      "reading": "연전연승",
+      "meaning": "싸움이나 경기에서 싸울 때마다 잇따라 이김."
+    },
+    {
+      "csv_line": 389,
+      "hanja": "寤寐不忘",
+      "reading": "오매불망",
+      "meaning": "깨어 있을 때나 잠들어 있을 때나 잊지 못함."
+    },
+    {
+      "csv_line": 390,
+      "hanja": "吾不關焉",
+      "reading": "오불관언",
+      "meaning": "자기와 관계없는 일이라 여겨 관심을 두지 않음."
+    },
+    {
+      "csv_line": 391,
+      "hanja": "烏飛梨落",
+      "reading": "오비이락",
+      "meaning": "까마귀가 날자 배가 떨어지듯, 관계없는 일이 우연히 겹쳐 의심을 받음."
+    },
+    {
+      "csv_line": 395,
+      "hanja": "五臟六腑",
+      "reading": "오장육부",
+      "meaning": "심장·간장·비장·폐장·신장의 오장과 소장·대장·위·쓸개·방광·삼초의 육부를 아우르는 말."
+    },
+    {
+      "csv_line": 402,
+      "hanja": "樂山樂水",
+      "reading": "요산요수",
+      "meaning": "산과 물을 좋아하며 자연의 아름다움을 즐김."
+    },
+    {
+      "csv_line": 407,
+      "hanja": "龍蛇飛騰",
+      "reading": "용사비등",
+      "meaning": "용과 뱀이 날아오르듯, 붓놀림이 생동하고 힘찬 글씨."
+    },
+    {
+      "csv_line": 427,
+      "hanja": "類類相從",
+      "reading": "유유상종",
+      "meaning": "성향이나 처지가 비슷한 사람끼리 서로 어울림."
+    },
+    {
+      "csv_line": 434,
+      "hanja": "吟風弄月",
+      "reading": "음풍농월",
+      "meaning": "맑은 바람과 밝은 달을 즐기며 시를 읊고 자연을 벗함."
+    },
+    {
+      "csv_line": 439,
+      "hanja": "易如反掌",
+      "reading": "이여반장",
+      "meaning": "손바닥을 뒤집는 것과 같이 매우 쉬움."
+    },
+    {
+      "csv_line": 441,
+      "hanja": "二律背反",
+      "reading": "이율배반",
+      "meaning": "서로 모순되어 함께 성립할 수 없는 두 명제를 이름. 철학에서는 서로 반대되는 두 주장에 각각 타당한 논거가 제시되는 모순을 이름."
+    },
+    {
+      "csv_line": 443,
+      "hanja": "李下不整冠",
+      "reading": "이하부정관",
+      "meaning": "오얏나무 아래에서 갓을 고쳐 쓰지 말라는 뜻으로, 의심받을 만한 행동을 피해야 함."
+    },
+    {
+      "csv_line": 451,
+      "hanja": "一擧兩得",
+      "reading": "일거양득",
+      "meaning": "한 가지 일을 하여 두 가지 이익을 얻음."
+    },
+    {
+      "csv_line": 452,
+      "hanja": "一刀兩斷",
+      "reading": "일도양단",
+      "meaning": "칼로 한 번에 둘로 자르듯, 일을 망설이지 않고 단호하게 처리함."
+    },
+    {
+      "csv_line": 455,
+      "hanja": "一步不讓",
+      "reading": "일보불양",
+      "meaning": "한 걸음도 물러서거나 양보하지 않음."
+    },
+    {
+      "csv_line": 472,
+      "hanja": "一攫千金",
+      "reading": "일확천금",
+      "meaning": "한꺼번에 많은 재물이나 큰 이익을 얻음."
+    },
+    {
+      "csv_line": 473,
+      "hanja": "臨機應變",
+      "reading": "임기응변",
+      "meaning": "그때그때의 상황과 형편에 맞게 알맞게 대처함."
+    },
+    {
+      "csv_line": 474,
+      "hanja": "臨時方便",
+      "reading": "임시방편",
+      "meaning": "일시적으로 어려움을 넘기기 위해 쓰는 방법."
+    },
+    {
+      "csv_line": 475,
+      "hanja": "臨戰無退",
+      "reading": "임전무퇴",
+      "meaning": "싸움에 임하여 물러서지 않음."
+    },
+    {
+      "csv_line": 477,
+      "hanja": "自强不息",
+      "reading": "자강불식",
+      "meaning": "스스로 힘쓰며 쉬지 않고 계속 노력함."
+    },
+    {
+      "csv_line": 485,
+      "hanja": "自暴自棄",
+      "reading": "자포자기",
+      "meaning": "스스로 자신을 해치고 돌보지 않으며 희망을 버림."
+    },
+    {
+      "csv_line": 515,
+      "hanja": "坐不安席",
+      "reading": "좌불안석",
+      "meaning": "마음이 불안하고 초조하여 한자리에 편히 앉아 있지 못함."
+    },
+    {
+      "csv_line": 527,
+      "hanja": "衆寡不敵",
+      "reading": "중과부적",
+      "meaning": "수가 적은 쪽이 많은 쪽을 당해 내기 어려움."
+    },
+    {
+      "csv_line": 531,
+      "hanja": "重言復言",
+      "reading": "중언부언",
+      "meaning": "이미 한 말을 자꾸 되풀이함."
+    },
+    {
+      "csv_line": 540,
+      "hanja": "知足不辱",
+      "reading": "지족불욕",
+      "meaning": "자신의 분수를 알고 만족할 줄 알면 욕됨을 당하지 않음."
+    },
+    {
+      "csv_line": 548,
+      "hanja": "進退兩難",
+      "reading": "진퇴양난",
+      "meaning": "앞으로 나아가기도 뒤로 물러서기도 어려운 처지."
+    },
+    {
+      "csv_line": 552,
+      "hanja": "創業易守成難",
+      "reading": "창업이수성난",
+      "meaning": "일을 새로 시작하기는 쉽지만 이룬 것을 지키기는 어려움."
+    },
+    {
+      "csv_line": 615,
+      "hanja": "風餐露宿",
+      "reading": "풍찬노숙",
+      "meaning": "바람을 맞으며 먹고 이슬을 맞으며 자듯, 떠돌아다니며 고생스럽게 생활함."
+    },
+    {
+      "csv_line": 622,
+      "hanja": "學如不及",
+      "reading": "학여불급",
+      "meaning": "배움이 미치지 못할까 걱정하듯, 부지런히 힘써 배움."
+    },
+    {
+      "csv_line": 636,
+      "hanja": "賢母良妻",
+      "reading": "현모양처",
+      "meaning": "어진 어머니이면서 좋은 아내라는 뜻의 전통적 여성상."
+    },
+    {
+      "csv_line": 642,
+      "hanja": "虎死留皮",
+      "reading": "호사유피",
+      "meaning": "호랑이는 죽어서 가죽을 남기듯, 사람은 훌륭한 일을 하여 이름을 남겨야 함."
+    }
+  ],
+  "same_reading_variant_evidence": {
+    "卷": {
+      "kSimplifiedVariant": "U+5377",
+      "kTraditionalVariant": "U+5377 U+6372"
+    },
+    "捲": {
+      "kSimplifiedVariant": "U+5377"
+    },
+    "為": {
+      "kSemanticVariant": "U+7232<kHKGlyph",
+      "kSimplifiedVariant": "U+4E3A"
+    },
+    "爲": {
+      "kSemanticVariant": "U+70BA<kHKGlyph",
+      "kSimplifiedVariant": "U+4E3A"
+    },
+    "嘆": {
+      "kSemanticVariant": "U+6B4E<kHKGlyph,kLau,kMatthews,kMeyerWempe",
+      "kSimplifiedVariant": "U+53F9"
+    },
+    "歎": {
+      "kSemanticVariant": "U+5606<kHKGlyph,kLau,kMatthews,kMeyerWempe"
+    }
+  },
+  "matching_normalization_examples": [
+    {
+      "character": "不",
+      "normalized": "不",
+      "literal_candidate_count": 38,
+      "normalized_candidate_count": 45
+    },
+    {
+      "character": "不",
+      "normalized": "不",
+      "literal_candidate_count": 8,
+      "normalized_candidate_count": 45
+    },
+    {
+      "character": "金",
+      "normalized": "金",
+      "literal_candidate_count": 5,
+      "normalized_candidate_count": 10
+    },
+    {
+      "character": "金",
+      "normalized": "金",
+      "literal_candidate_count": 5,
+      "normalized_candidate_count": 10
+    },
+    {
+      "character": "利",
+      "normalized": "利",
+      "literal_candidate_count": 1,
+      "normalized_candidate_count": 7
+    },
+    {
+      "character": "利",
+      "normalized": "利",
+      "literal_candidate_count": 6,
+      "normalized_candidate_count": 7
+    }
+  ],
+  "semantic_dictionary_verified": false
+}

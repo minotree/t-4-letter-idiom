@@ -1,0 +1,22 @@
+{
+  "total": 695,
+  "approved_ids": [
+    "1"
+  ],
+  "meaning_pending": 694,
+  "other_694_unchanged": true,
+  "protected_file_hashes": {
+    "data/sajaseongeo_final_quiz_v3.csv": "c22d411e97bab37359c3eaeb7ab1005326345f4a0b7c5b8d83cb8010332e068d",
+    "data/image_manifest.csv": "2628bfb9f5ad53ae5124993f16f9795ed84bbbdc783f0e4cf37d0cec3aa526d7",
+    "data/manual_workflow/image_manifest.csv": "2628bfb9f5ad53ae5124993f16f9795ed84bbbdc783f0e4cf37d0cec3aa526d7",
+    "data/api_usage_ledger.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/image-generator/config.toml": "eb4aa149fc1ee776d3cc94b90a07700cc3296cdc31cac8a8f353c5686b92e545"
+  },
+  "assets_unchanged": true,
+  "allow_live": false,
+  "prompt_directory": "D:\\DEV\\t-4-letter-idiom\\data\\manual_workflow\\prompts\\0001\\7bddd41b2fa36b777cf0d57fde84912fe8802d273cd0eeba030fdfa688fa84df",
+  "exact_meaning_and_dialogues": true,
+  "text_free_art_prompt": true,
+  "api_calls": 0,
+  "images_generated": 0
+}

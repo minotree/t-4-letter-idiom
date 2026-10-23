@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-204",
+    "sequence": "204",
+    "hanja": "飢厭糟糠",
+    "reading": "기염조강",
+    "meaning": "몹시 굶주릴 때는 거친 술지게미와 쌀겨라도 달게 먹어 배를 채웁니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-203",
+    "hanja": "飽飫烹宰",
+    "meaning": "배가 부르면 아무리 기름진 고기 요리라도 더는 먹기 싫어 물립니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "飢(주릴 긔) 厭°(슬ᄒᆞᆯ 염) 糟(ᄌᆡ강 조) 糠(겨 강)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [飢厭糟糠] 및 16세기 훈음, 사성 방점(飢厭°糟糠) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "飢(주릴 긔) 厭(아쳘 염) 糟(ᄉᆞ라기 조) 糠(겨 걍)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [飢厭糟糠] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 飢厭糟糠 | 독음: 기염조강 | 번역: 배부르면 재상의 요리도 물리게 되고 배 고프면 겨 지게미로도 족하니",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

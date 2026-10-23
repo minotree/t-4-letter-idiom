@@ -1,0 +1,17 @@
+{
+  "id": "1",
+  "hanja": "家家戶戶",
+  "reading": "가가호호",
+  "identity_confirmed": true,
+  "reviewer": "사용자",
+  "image_prompt_sha256": "6f1edcd1e2d7203a56a6c148a9318cea07e8f50067759090a8eb1d70e4a2eb4c",
+  "artwork_sha256": "5168bc9a4dc4198cae3d9b005ea9a12742c127c42825d5fbd69ec68a0ad3492d",
+  "verified": true,
+  "cut_lines": [
+    0,
+    541,
+    1072,
+    1548,
+    2172
+  ]
+}

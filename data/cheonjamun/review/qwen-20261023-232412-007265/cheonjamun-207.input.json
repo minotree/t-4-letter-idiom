@@ -1,0 +1,49 @@
+{
+  "row": {
+    "id": "cheonjamun-207",
+    "sequence": "207",
+    "hanja": "妾御績紡",
+    "reading": "첩어적방",
+    "meaning": "집안의 여인들은 길쌈하고 길쌈실을 잣는 부지런한 일을 맡아 합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-208",
+    "hanja": "侍巾帷房",
+    "meaning": "안방에서 수건을 받들고 안살림을 도우며 정성껏 집안일을 돌봅니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "妾(쳡 쳡) 御°(뫼실 어) 績(질삼 젹) 紡(질삼 방)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [妾御績紡] 및 16세기 훈음, 사성 방점(妾御°績紡) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "妾(곳갓 쳡) 御(님금 어) 紡(ᄭᅮ리 방) 績(ᄭᅮ리 적)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [妾御紡績] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 妾御績紡 | 독음: 첩어적방 | 번역: 아내가 길쌈하여 어른 방에 수건을 받들고",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": [
+    "판본 차이: 석봉본 [妾御績紡] vs 광주본 [妾御紡績]. 기준 판본 유지 승인 필요."
+  ]
+}

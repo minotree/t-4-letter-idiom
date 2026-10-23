@@ -1,0 +1,30 @@
+{
+  "model": "qwen3:14b",
+  "input_sha256": "f9f25006421f28385bf9f4b52fc89dd93709ae47817054f5949095fd649017d6",
+  "evidence_sha256": "b144f88cc36b71945e06bbcc46184582da36a06b57bccf1f9f0658c2499b1164",
+  "semantic_approved": false,
+  "requested": 5,
+  "completed": 1,
+  "results": [
+    {
+      "id": "cheonjamun-001",
+      "decision": "change",
+      "field_findings": [
+        {
+          "field": "meaning",
+          "original_value": "하늘은 가물가물 아득하게 검고 땅은 누렇습니다.",
+          "proposed_value": "하늘은 검고 땅은 누르며 우주는 넓고도 크다.",
+          "reason": "위키문헌 주흥사 사언고시 대조표에서 제공된 해설과 원문의 의미가 다릅니다. 원문의 의미는 '하늘은 검고 땅은 누르며 우주는 넓고도 크다'로 해석되어야 합니다.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "meaning",
+      "unresolved": [],
+      "seconds": 15.94,
+      "prompt_tokens": 722,
+      "output_tokens": 193
+    }
+  ]
+}

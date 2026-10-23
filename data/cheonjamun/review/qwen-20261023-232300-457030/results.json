@@ -1,0 +1,165 @@
+{
+  "model": "qwen3:14b",
+  "input_sha256": "f9f25006421f28385bf9f4b52fc89dd93709ae47817054f5949095fd649017d6",
+  "evidence_sha256": "b144f88cc36b71945e06bbcc46184582da36a06b57bccf1f9f0658c2499b1164",
+  "semantic_approved": false,
+  "requested": 5,
+  "completed": 5,
+  "results": [
+    {
+      "id": "cheonjamun-001",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "입력 행의 네 한자 [天地玄黃]에 해당하는 뜻 평가",
+      "unresolved": [],
+      "seconds": 2.88,
+      "prompt_tokens": 951,
+      "output_tokens": 65
+    },
+    {
+      "id": "cheonjamun-004",
+      "decision": "keep",
+      "field_findings": [],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교 검증",
+      "unresolved": [
+        "독음 선택: 천문 별자리(28수) 전통 독음 '진수열장' vs 일반 대중음 '진숙열장' 서비스 방침 결정 필요."
+      ],
+      "seconds": 4.2,
+      "prompt_tokens": 1126,
+      "output_tokens": 105
+    },
+    {
+      "id": "cheonjamun-140",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "說感武丁",
+          "proposed_value": null,
+          "reason": "원문 한자 '說感武丁'은 src-seokbong-1583, src-gwangju-1575, src-wikisource-translation 등에서 동일하게 확인됨. 다만, src-shiji-eun에서는 '傅說'과 관련된 인물로 해석됨. 이는 '說感武丁'이 '傅說'의 별칭 또는 관련된 인물로 해석될 수 있음을 시사함.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575",
+            "src-wikisource-translation",
+            "src-shiji-eun"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "열감무정",
+          "proposed_value": "설감무정",
+          "reason": "src-wikisource-translation에서는 '설감무정'으로 독음되어 있으나, src-shiji-eun에서는 '傅說'에 해당하는 전통 고전음 '열감무정'이 사용됨. 이는 독음 선택에 있어 '열감무정'과 '설감무정' 간의 차이가 존재함.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-shiji-eun"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "담벼락을 쌓던 어진 현인 부열은 은나라 임금 무정의 꿈에 나타나 감동을 주었습니다.",
+          "proposed_value": null,
+          "reason": "src-wikisource-translation에서는 '기리계'와 관련된 인물로 해석되나, src-shiji-eun에서는 '傅說'에 해당하는 인물로 해석됨. 이는 의미 해석에 있어 '부열'과 '기리계'의 구분이 필요함.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-shiji-eun"
+          ]
+        }
+      ],
+      "checked_scope": "한자, 독음, 의미에 대한 원문과 해설 비교",
+      "unresolved": [
+        "독음 선택: 은나라 재상 부열(傅說) 인명 고사에 따른 전통 고전음 '열감무정' vs 일반 자음 '설감무정' 선택 결정 필요."
+      ],
+      "seconds": 20.53,
+      "prompt_tokens": 1236,
+      "output_tokens": 587
+    },
+    {
+      "id": "cheonjamun-201",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "具膳飡飯",
+          "proposed_value": null,
+          "reason": "다른 판본에서 '飡'의 훈음이 '손' 또는 '찬'으로 표기되어 있어, '飡'의 정확한 독음에 대한 일관된 근거가 부족합니다.",
+          "source_ids": [
+            "src-seokbong-1583",
+            "src-gwangju-1575",
+            "src-wikisource-translation",
+            "src-daum-handic"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "구선손반",
+          "proposed_value": null,
+          "reason": "전통 천자문 관습음 '구선손반'과 현대 일반 한자음 '구선찬반'이 존재하며, 이에 대한 명확한 선택 근거가 부족합니다.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-daum-handic"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "정갈하게 반찬을 갖추고 때에 맞추어 따뜻한 밥을 먹습니다.",
+          "proposed_value": null,
+          "reason": "위키문헌의 해설 '반찬이나 저녁밥이야 먹고 배를 채우면 그만인 것'과 비교하여, 원문의 의미 해석에 차이가 있어 명확한 일관성 부족.",
+          "source_ids": [
+            "src-wikisource-translation"
+          ]
+        }
+      ],
+      "checked_scope": "구절의 한자, 독음, 의미에 대한 판본 간 비교 및 해설 검토",
+      "unresolved": [
+        "독음 선택: 전통 천자문 관습음 '구선손반'(飡=저녁밥 손 飧) vs 현대 일반 한자음 '구선찬반' 선택 결정 필요."
+      ],
+      "seconds": 16.64,
+      "prompt_tokens": 1141,
+      "output_tokens": 476
+    },
+    {
+      "id": "cheonjamun-239",
+      "decision": "uncertain",
+      "field_findings": [
+        {
+          "field": "hanja",
+          "original_value": "璇璣懸斡",
+          "proposed_value": "璇璣懸幹",
+          "reason": "광주본에서는 '斡'가 '幹'으로 표기되어 있으며, 이는 판본 차이로 확인됨. 다만, 기준 원문은 src-seokbong-1583으로 설정되어 있어, 이에 따라 '璇璣懸斡'를 유지해야 함.",
+          "source_ids": [
+            "src-gwangju-1575",
+            "src-seokbong-1583"
+          ]
+        },
+        {
+          "field": "reading",
+          "original_value": "선기현알",
+          "proposed_value": "선기현간",
+          "reason": "광주본에서는 '斡'가 '幹'으로 표기되어 있으며, '간'의 독음은 '간'으로 추정됨. 다만, 기준 원문은 '斡'로 표기되어 있어, '현알'을 유지해야 함.",
+          "source_ids": [
+            "src-gwangju-1575",
+            "src-seokbong-1583"
+          ]
+        },
+        {
+          "field": "meaning",
+          "original_value": "하늘의 북두칠성과 혼천의 천체는 허공에 매달린 채 쉼 없이 빙빙 돌아갑니다.",
+          "proposed_value": null,
+          "reason": "원문의 의미는 '璇璣'와 '斡'의 관계에 따라 해석될 수 있으며, 판본 차이로 인해 의미 해석에 불확실성이 존재함.",
+          "source_ids": [
+            "src-wikisource-translation",
+            "src-korean-std-dict"
+          ]
+        }
+      ],
+      "checked_scope": "璇璣懸斡의 한자, 독음, 의미에 대한 판본 차이 및 해석 검토",
+      "unresolved": [
+        "판본 차이: 석봉본 [璇璣懸斡] vs 광주본 [璇璣懸幹]. 기준 판본 유지 승인 필요.",
+        "판본 및 독음: 斡(돌 알)에 따른 '선기현알' vs 광주본 璇璣懸幹(간) 판본 차이 결정 필요."
+      ],
+      "seconds": 19.62,
+      "prompt_tokens": 1201,
+      "output_tokens": 561
+    }
+  ]
+}

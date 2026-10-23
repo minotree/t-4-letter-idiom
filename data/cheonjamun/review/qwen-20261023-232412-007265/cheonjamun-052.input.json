@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-052",
+    "sequence": "52",
+    "hanja": "剋念作聖",
+    "reading": "극념작성",
+    "meaning": "사욕을 이겨내고 오직 올바른 생각만을 지극히 실천하면 성인이 됩니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-051",
+    "hanja": "景行維賢",
+    "meaning": "큰 길처럼 훌륭한 덕행을 사모하여 어진 이를 표준으로 삼습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "剋(이긜 극) 念°(념ᄒᆞᆯ 념) 作(지을 작) 聖°(셩인 셩)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [剋念作聖] 및 16세기 훈음, 사성 방점(剋念°作聖°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "剋(이긜 극) 念(념ᄒᆞᆯ 념) 作(지을 작) 聖(님금 셩)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [剋念作聖] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 克念作聖 | 독음: 극념작성 | 번역: 바르고 어진 것을 보고 행하여 지극히 생각하면 성인이 되고",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

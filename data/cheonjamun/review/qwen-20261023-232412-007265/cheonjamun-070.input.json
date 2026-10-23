@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-070",
+    "sequence": "70",
+    "hanja": "淵澄取映",
+    "reading": "연징취영",
+    "meaning": "깊은 못물이 맑아 사물의 참모습을 그대로 비추듯 마음을 맑고 고요하게 가꿉니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-069",
+    "hanja": "川流不息",
+    "meaning": "시냇물이 밤낮으로 쉬지 않고 흐르듯 학문과 덕행을 끊임없이 닦습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "淵(못 연) 澄(ᄆᆞᆯᄀᆞᆯ 딩) °取(아ᄋᆞᆯ ᄎᆔ) 映°(비칄 영)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [淵澄取映] 및 16세기 훈음, 사성 방점(淵澄°取映°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "淵(못 연) 澄(ᄆᆞᆯᄀᆞᆯ 딩) 取(아ᄋᆞᆯ ᄌᆔ) 映(ᄇᆞᄋᆡᆯ 영)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [淵澄取映] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 淵澄取映 | 독음: 연징취영 | 번역: 냇물을 쉬지 않고 흐르고 연못은 맑아 그림자를 비추듯",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

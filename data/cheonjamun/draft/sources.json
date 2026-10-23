@@ -1,0 +1,67 @@
+[
+  {
+    "id": "src-seokbong-1583",
+    "title": "석봉천자문 (石峯千字文)",
+    "institution_or_author": "한호(韓濩, 석봉), 조선 왕실(선조 16년 명 간행)",
+    "url": "https://ko.wikisource.org/wiki/%EC%84%9D%EB%B4%89_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+    "accessed_on": "2026-10-23",
+    "access_level": "full_text",
+    "role": "original",
+    "covered_sequences": "1-250",
+    "edition": "1583년(선조 16) 초간본 계열 목판본 전사본(국립중앙도서관 소장본 CNTS-00047980571 바탕)",
+    "locator": "페이지:CNTS-00047980571 千字文.pdf/8-93",
+    "rights_note": "Public Domain (퍼블릭 도메인, 저작권 소멸 고문헌)"
+  },
+  {
+    "id": "src-gwangju-1575",
+    "title": "광주판 천자문 (光州版千字文)",
+    "institution_or_author": "주흥사 찬, 전라도 광주목 간행",
+    "url": "https://ko.wikisource.org/wiki/%EA%B4%91%EC%A3%BC_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+    "accessed_on": "2026-10-23",
+    "access_level": "full_text",
+    "role": "cross_check",
+    "covered_sequences": "1-250",
+    "edition": "1575년(선조 8) 전라도 광주목 간행 목판본(일본 도쿄대학 오구라문고 소장본 영인 전사)",
+    "locator": "페이지:광주천자문.pdf/2-44",
+    "rights_note": "Public Domain (퍼블릭 도메인, 저작권 소멸 고문헌)"
+  },
+  {
+    "id": "src-wikisource-translation",
+    "title": "번역:천자문",
+    "institution_or_author": "주흥사(원저), 위키문헌 사용자 jjw 등(현대 번역/독음 전사)",
+    "url": "https://ko.wikisource.org/wiki/%EB%B2%88%EC%97%AD:%EC%B2%9C%EC%9E%90%EB%AC%B8",
+    "accessed_on": "2026-10-23",
+    "access_level": "full_text",
+    "role": "reading;cross_check",
+    "covered_sequences": "1-250",
+    "edition": "한국어 위키문헌 현대 독음 및 주해 대조본 (Daum 한자사전 및 두음법칙 준용)",
+    "locator": "전체 1-250구 표",
+    "rights_note": "CC-BY-SA 4.0 (현대 번역 텍스트는 참고 대조로만 사용하고, 본 초안의 풀이는 문맥에 맞게 직접 재작성함)"
+  },
+  {
+    "id": "src-zh-wikisource",
+    "title": "千字文 (중국어 위키문헌)",
+    "institution_or_author": "주흥사(周興嗣, 중국 남조 양나라)",
+    "url": "https://zh.wikisource.org/wiki/%E5%8D%83%E5%AD%97%E6%96%87",
+    "accessed_on": "2026-10-23",
+    "access_level": "full_text",
+    "role": "cross_check",
+    "covered_sequences": "1-250",
+    "edition": "중국 위키문헌 해서본 (피휘/이체자 템플릿 포함)",
+    "locator": "전체 250구",
+    "rights_note": "Public Domain (퍼블릭 도메인)"
+  },
+  {
+    "id": "src-korean-std-dict",
+    "title": "표준국어대사전 / 한국 고전 한자음 규범",
+    "institution_or_author": "국립국어원",
+    "url": "https://stdict.korean.go.kr",
+    "accessed_on": "2026-10-23",
+    "access_level": "search_excerpt",
+    "role": "reading",
+    "covered_sequences": "1-250",
+    "edition": "온라인 표준국어대사전 (두음법칙, 한자음 표기 표준 규범)",
+    "locator": "개별 한자 표제어 및 한자성어/구절",
+    "rights_note": "공공누리 제1유형(출처표시)"
+  }
+]

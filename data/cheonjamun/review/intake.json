@@ -1,0 +1,51 @@
+{
+  "draft_only": true,
+  "semantic_approved": false,
+  "rows": 250,
+  "characters": 1000,
+  "unique_characters": 999,
+  "duplicate_characters": {
+    "戚": 2
+  },
+  "statuses": {
+    "draft": 250
+  },
+  "structural_errors": [],
+  "hashes": {
+    "cheonjamun.csv": "f9f25006421f28385bf9f4b52fc89dd93709ae47817054f5949095fd649017d6",
+    "handoff.md": "8dd52f0582b9a70a7ef5f45a74d33d40aec41ad2c889a01db8c7ab7021b0a861",
+    "review-notes.json": "7167f5548f614e338e1df0b0f4173bdb43bcaf3bc0c4ad33508f934cee3e5ea6",
+    "sources.json": "22ce921e59a96909084803aed193d661a66b614d322494c7264df4dc9f59cb11"
+  },
+  "recorded_output_hash_checks": [
+    {
+      "path": "data/cheonjamun/draft/cheonjamun.csv",
+      "matches": true,
+      "recorded": "f9f25006421f28385bf9f4b52fc89dd93709ae47817054f5949095fd649017d6",
+      "actual": "f9f25006421f28385bf9f4b52fc89dd93709ae47817054f5949095fd649017d6"
+    }
+  ],
+  "recorded_input_checks": [
+    {
+      "path": "scratch\\gwangju.html",
+      "exists": false,
+      "matches": false
+    },
+    {
+      "path": "scratch\\seokbong.html",
+      "exists": false,
+      "matches": false
+    },
+    {
+      "path": "scratch\\wikisource_translation.txt",
+      "exists": false,
+      "matches": false
+    }
+  ],
+  "review_items": 55,
+  "evidence_gaps": [
+    "Dictionary reference uses a homepage and generic locator; item-specific evidence is needed.",
+    "No bounded evidence excerpts are provided for local Qwen comparison.",
+    "Handoff claims zero unconfirmed entries but lists pronunciation decisions for follow-up; not final approval."
+  ]
+}

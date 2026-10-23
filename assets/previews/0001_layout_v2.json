@@ -1,0 +1,288 @@
+{
+  "compression": {
+    "bytes": 201656,
+    "quality": 82,
+    "size_note": "within_target",
+    "within_target": true
+  },
+  "dimensions": [
+    512,
+    1536
+  ],
+  "id": "1",
+  "input_sha256": "5168bc9a4dc4198cae3d9b005ea9a12742c127c42825d5fbd69ec68a0ad3492d",
+  "layout_sha256": "36a4a212cd4c3741a6d76af5c0c1f49381a42362ea7df681c5c75eeebeb0de9a",
+  "layout_version": 2,
+  "output_sha256": "c57b6635ff7d65556316c07297f860cdd3661d67d3fd72aaa4bc1de7ed96919d",
+  "overlays": [
+    {
+      "box": [
+        282,
+        30,
+        488,
+        80
+      ],
+      "font_size": 23,
+      "panel": 0,
+      "role": "dialogue",
+      "surface": [
+        270,
+        20,
+        500,
+        90
+      ],
+      "tail_box": [
+        294,
+        90,
+        314,
+        100
+      ],
+      "text": "와! 마을에 축제가 열리나 봐!"
+    },
+    {
+      "box": [
+        14,
+        13,
+        46,
+        46
+      ],
+      "font_size": 28,
+      "panel": 0,
+      "role": "number",
+      "surface": [
+        10,
+        10,
+        50,
+        50
+      ],
+      "text": "①"
+    },
+    {
+      "box": [
+        262,
+        30,
+        483,
+        80
+      ],
+      "font_size": 23,
+      "panel": 1,
+      "role": "dialogue",
+      "surface": [
+        250,
+        20,
+        495,
+        90
+      ],
+      "tail_box": [
+        274,
+        90,
+        294,
+        100
+      ],
+      "text": "모든 집이 예쁘게 꾸며져 있네?"
+    },
+    {
+      "box": [
+        14,
+        13,
+        46,
+        46
+      ],
+      "font_size": 28,
+      "panel": 1,
+      "role": "number",
+      "surface": [
+        10,
+        10,
+        50,
+        50
+      ],
+      "text": "②"
+    },
+    {
+      "box": [
+        272,
+        45,
+        488,
+        95
+      ],
+      "font_size": 23,
+      "panel": 2,
+      "role": "dialogue",
+      "surface": [
+        260,
+        35,
+        500,
+        105
+      ],
+      "tail_box": [
+        284,
+        105,
+        304,
+        115
+      ],
+      "text": "응! 집집마다 축제를 준비했대!"
+    },
+    {
+      "box": [
+        14,
+        33,
+        46,
+        66
+      ],
+      "font_size": 28,
+      "panel": 2,
+      "role": "number",
+      "surface": [
+        10,
+        30,
+        50,
+        70
+      ],
+      "text": "③"
+    },
+    {
+      "box": [
+        112,
+        20,
+        438,
+        42
+      ],
+      "font_size": 23,
+      "panel": 3,
+      "role": "dialogue",
+      "surface": [
+        100,
+        10,
+        450,
+        52
+      ],
+      "tail_box": [
+        124,
+        52,
+        144,
+        62
+      ],
+      "text": "정말 온 마을이 축제 분위기야!"
+    },
+    {
+      "box": [
+        44,
+        13,
+        76,
+        46
+      ],
+      "font_size": 28,
+      "panel": 3,
+      "role": "number",
+      "surface": [
+        40,
+        10,
+        80,
+        50
+      ],
+      "text": "④"
+    },
+    {
+      "box": [
+        158,
+        104,
+        362,
+        146
+      ],
+      "font_size": 32,
+      "panel": 3,
+      "role": "answer",
+      "surface": [
+        150,
+        100,
+        370,
+        150
+      ],
+      "text": "家家戶戶"
+    },
+    {
+      "box": [
+        73,
+        358,
+        447,
+        377
+      ],
+      "font_size": 17,
+      "panel": 3,
+      "role": "notice",
+      "surface": [
+        65,
+        354,
+        455,
+        381
+      ],
+      "text": "AI가 제작한 이미지입니다"
+    }
+  ],
+  "packet_sha256": "7bddd41b2fa36b777cf0d57fde84912fe8802d273cd0eeba030fdfa688fa84df",
+  "placements": [
+    {
+      "art_box": [
+        2,
+        2,
+        510,
+        382
+      ],
+      "panel": 0,
+      "source_region": [
+        0,
+        0,
+        724,
+        541
+      ]
+    },
+    {
+      "art_box": [
+        2,
+        5,
+        510,
+        378
+      ],
+      "panel": 1,
+      "source_region": [
+        0,
+        541,
+        724,
+        1072
+      ]
+    },
+    {
+      "art_box": [
+        2,
+        25,
+        510,
+        359
+      ],
+      "panel": 2,
+      "source_region": [
+        0,
+        1072,
+        724,
+        1548
+      ]
+    },
+    {
+      "art_box": [
+        35,
+        2,
+        476,
+        382
+      ],
+      "panel": 3,
+      "source_region": [
+        0,
+        1548,
+        724,
+        2172
+      ]
+    }
+  ],
+  "protected_regions_human_verified": false,
+  "state": "needs_review"
+}

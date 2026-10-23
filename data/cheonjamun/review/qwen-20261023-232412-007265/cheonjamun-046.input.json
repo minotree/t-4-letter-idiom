@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-046",
+    "sequence": "46",
+    "hanja": "靡恃己長",
+    "reading": "미시기장",
+    "meaning": "자신이 지닌 장점이나 재주를 믿고 스스로 교만해지지 말아야 합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-045",
+    "hanja": "罔談彼短",
+    "meaning": "남의 모자란 점이나 단점을 함부로 입에 올려 말하지 말아야 합니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "°靡(아닐 미) °恃(미ᄃᆞᆯ 시) °己(몸 긔) 長(긴 댱)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [靡恃己長] 및 16세기 훈음, 사성 방점(°靡°恃°己長) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "靡(안등 미) 恃(미들 시) 己(몸 긔) 長(긴 댱)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [靡恃己長] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 靡恃己長 | 독음: 미시기장 | 번역: 다른이의 단점을 입에 담지 말고 자신의 장점을 너무 믿지 마라",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-026",
+    "sequence": "26",
+    "hanja": "周發殷湯",
+    "reading": "주발은탕",
+    "meaning": "주나라의 무왕 희발과 은나라를 세운 탕왕이 그러하였습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-025",
+    "hanja": "弔民伐罪",
+    "meaning": "고통받는 백성을 위로하고 폭군의 죄악을 정벌하였습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "周(두루 쥬) 發(베플 발) 殷(만ᄒᆞᆯ 은) 湯(ᄭᅳᆯ흘 탕)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [周發殷湯] 및 16세기 훈음, 사성 방점(周發殷湯) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "周(두ᄅᆞ 쥬) 發(베플 발) 殷(은국 은) 湯(더을 탕)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [周發殷湯] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 周發殷湯 | 독음: 주발은탕 | 번역: 백성을 돕고 죄를 벌하니 주나라 무왕<ref>발(發)은 주 무왕의 이름</ref> 과 은나라 탕왕이라.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

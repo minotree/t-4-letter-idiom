@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-113",
+    "sequence": "113",
+    "hanja": "肆筵設席",
+    "reading": "사연설석",
+    "meaning": "너른 대청마루에 화려한 대자리를 펴고 잔칫상을 정성껏 베풀어 놓았습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-114",
+    "hanja": "鼓瑟吹笙",
+    "meaning": "비파와 거문고를 타며 맑은 생황 피리를 불어 아름다운 음악을 연주합니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "肆°(베플 ᄉᆞ) 筵(디의 연) 設(베플 셜) 席(돗 셕)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [肆筵設席] 및 16세기 훈음, 사성 방점(肆°筵設席) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "肆(베플 ᄉᆞ) 筵(돗 연) 設(베플 셜) 席(돗 셕)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [肆筵設席] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 肆筵設席 | 독음: 사연설석 | 번역: 자리를 마련해 연회를 열고 비파를 뜯고 생황을 부니",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

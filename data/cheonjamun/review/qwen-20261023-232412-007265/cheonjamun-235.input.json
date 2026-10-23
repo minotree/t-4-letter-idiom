@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-235",
+    "sequence": "235",
+    "hanja": "毛施淑姿",
+    "reading": "모시숙자",
+    "meaning": "고대 천하제일의 미인 모장과 서시의 맑고 우아하며 아리따운 맵시입니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-236",
+    "hanja": "工嚬姸笑",
+    "meaning": "눈살을 찌푸려도 여전히 아름답고 살포시 짓는 고운 미소는 더욱더 매혹적입니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "毛(터럭 모) 施(베플 시) 淑(ᄆᆞᆯ글 슉) 姿(양ᄌᆞ ᄌᆞ)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [毛施淑姿] 및 16세기 훈음, 사성 방점(毛施淑姿) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "毛(터럭 모) 施(베플 시) 淑(ᄆᆞᆯᄀᆞᆯ 슉) 姿(고올 ᄌᆞ)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [毛施淑姿] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 毛施淑姿 | 독음: 모시숙자 | 번역: 오나라 모타와 월나라 서시의 자태는 찡그린 모습도 아름다워라",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

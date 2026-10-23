@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-084",
+    "sequence": "84",
+    "hanja": "夫唱婦隨",
+    "reading": "부창부수",
+    "meaning": "남편이 올바른 도리로 이끌면 아내가 믿음으로 순순히 따르며 부부가 화목합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-083",
+    "hanja": "上和下睦",
+    "meaning": "윗사람이 너그럽게 화합하면 아랫사람은 온화하고 친목하게 따릅니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "夫(짓아비 부) 唱°(브를 챵) °婦(며ᄂᆞ리 부) 隨(조ᄎᆞᆯ 슈)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [夫唱婦隨] 및 16세기 훈음, 사성 방점(夫唱°°婦隨) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "夫(샤옹 부) 唱(브를 챵) 婦(며ᄂᆞ리 부) 隨(조ᄎᆞᆯ 슈)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [夫唱婦隨] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 夫唱婦隨 | 독음: 부창부수 | 번역: 상하가 화목하고 부부가 원만하며<ref>사자성어 부창부수의 출전이다.</ref>",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

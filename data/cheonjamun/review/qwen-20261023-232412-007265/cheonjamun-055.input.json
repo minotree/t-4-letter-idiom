@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-055",
+    "sequence": "55",
+    "hanja": "空谷傳聲",
+    "reading": "공곡전성",
+    "meaning": "텅 빈 골짜기에서 소리를 내면 메아리가 그대로 멀리 울려 퍼집니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-056",
+    "hanja": "虛堂習聽",
+    "meaning": "텅 빈 방 안에서는 작은 소리도 똑똑히 들려 모두가 귀담아듣게 됩니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "空(뷜 공) 谷(골 곡) 傳(옴길 뎐) 聲(소ᄅᆡ 셩)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [空谷傳聲] 및 16세기 훈음, 사성 방점(空谷傳聲) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "空(뷜 공) 谷(골 곡) 傳(옴길 뎐) 聲(소ᄅᆡ 셩)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [空谷傳聲] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 空谷傳聲 | 독음: 공곡전성 | 번역: 빈 골짜기에 울리는 소리처럼 또한 빈집에서 들리는 소리처럼",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

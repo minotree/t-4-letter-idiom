@@ -1,0 +1,56 @@
+{
+  "row": {
+    "id": "cheonjamun-172",
+    "sequence": "172",
+    "hanja": "勞謙謹勅",
+    "reading": "노겸근칙",
+    "meaning": "공로가 있어도 스스로 겸손하며 매사에 매양 삼가고 신중하게 경계합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-171",
+    "hanja": "庶幾中庸",
+    "meaning": "어느 한쪽으로 치우치거나 지나침이 없는 중용의 도리에 이르기를 바라며 힘씁니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "勞(잇ᄲᅳᆯ 로) 謙(겸손 겸) °謹(삼갈 근) 勅(졍히ᄒᆞᆯ 틱)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [勞謙謹勅] 및 16세기 훈음, 사성 방점(勞謙°謹勅) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "勞(잇블 로) 謙(말ᄉᆞᆷ 겸) 謹(말ᄉᆞᆷ 근) 勅(저릴 틱)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [勞謙謹勅] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 勞謙謹敕 | 독음: 노겸근칙 | 번역: 중용을 으뜸으로 삼고 겸손에 힘쓰고 경계해야지",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-korean-std-dict",
+      "supports": [
+        "reading"
+      ],
+      "excerpt": "제12항: 한자음 '라, 로, 루, 르'가 단어 첫머리에 올 적에는, 두음 법칙에 따라 '나, 노, 누, 느'로 적는다. (보기: 勞 -> 노)",
+      "comparison_note": "구절 첫머리 '勞'가 두음법칙에 따라 '노'로 실현됨을 증명함.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

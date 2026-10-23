@@ -1,0 +1,3791 @@
+{
+  "input_sha256": "f9f25006421f28385bf9f4b52fc89dd93709ae47817054f5949095fd649017d6",
+  "evidence_sha256": "b144f88cc36b71945e06bbcc46184582da36a06b57bccf1f9f0658c2499b1164",
+  "qwen_result_sha256": "d4d236c613e61e45226f8d01e3d500a41a0e8dc731945c161f733481d2d7d2cd",
+  "reviewed_csv_sha256": "5ef1aebc575f053872b4be37527e296bb195065dfad8bcb73943160da35f62d9",
+  "review_scope": "85 flagged rows + 10 keep samples; remaining keeps have structural checks only",
+  "counts": {
+    "qwen_keep": 165,
+    "qwen_change": 79,
+    "qwen_uncertain": 6,
+    "accepted_qwen_changes": 1,
+    "codex_additional_meaning_corrections": 2,
+    "eligible_rows": 244,
+    "held_rows": 6
+  },
+  "edition_note": "기준은 위키문헌 석봉 천자문 전사본. 1691 어제서문 확인. 해당 전사본을 1583 간행본이라고 확정한 기존 조사 메타데이터는 채택하지 않음.",
+  "source_urls": [
+    "https://ko.wikisource.org/wiki/석봉_천자문",
+    "https://ko.wikisource.org/wiki/번역:천자문"
+  ],
+  "limitations": [
+    "전문가의 전체 의미 감수 아님",
+    "기존 근거의 supported 표시는 Codex 전수 확인을 뜻하지 않음",
+    "현대 번역문을 대량 복사하지 않고 초안 풀이를 유지·수정함"
+  ],
+  "items": [
+    {
+      "id": "cheonjamun-001",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "유지 표본: 제공 근거와 구절 범위 대조.",
+      "original": {
+        "hanja": "天地玄黃",
+        "reading": "천지현황",
+        "meaning": "하늘은 가물가물 아득하게 검고 땅은 누렇습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-001",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-002",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "宇宙洪荒",
+        "reading": "우주홍황",
+        "meaning": "우주는 끝없이 넓고 아득히 멀고 거칩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-002",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-003",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "유지 표본: 제공 근거와 구절 범위 대조.",
+      "original": {
+        "hanja": "日月盈昃",
+        "reading": "일월영측",
+        "meaning": "해와 달은 찼다가 기울며 규칙적으로 운행합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-003",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-004",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "辰宿列張",
+        "reading": "진수열장",
+        "meaning": "밤하늘의 수많은 별자리가 넓게 벌여져 늘어서 있습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-004",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-005",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "寒來暑往",
+        "reading": "한래서왕",
+        "meaning": "추위가 오면 더위가 가며 계절이 순환합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-005",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-006",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "秋收冬藏",
+        "reading": "추수동장",
+        "meaning": "가을에는 곡식을 거두어들이고 겨울에는 곳간에 갈무리합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-006",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-007",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "閏餘成歲",
+        "reading": "윤여성세",
+        "meaning": "한 해 동안 남는 날수를 모아 윤달을 만들어 해를 이룹니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-007",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-008",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "律呂調陽",
+        "reading": "율려조양",
+        "meaning": "육률과 육려의 음악 음률로 음양의 조화를 고르게 맞춥니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-008",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-009",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "雲騰致雨",
+        "reading": "운등치우",
+        "meaning": "수증기가 위로 올라 구름이 되고 뭉쳐서 비를 내립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-009",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-010",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "露結爲霜",
+        "reading": "노결위상",
+        "meaning": "이슬이 찬 기운을 만나 엉기어 하얀 서리가 됩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-010",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-011",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "金生麗水",
+        "reading": "금생여수",
+        "meaning": "진귀한 금은 여수라는 강에서 생산됩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-011",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-012",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "玉出崑岡",
+        "reading": "옥출곤강",
+        "meaning": "아름다운 옥은 곤륜산 언덕에서 산출됩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-012",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-013",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "劒號巨闕",
+        "reading": "검호거궐",
+        "meaning": "천하의 보검 가운데 으뜸은 거궐이라 일컫습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-013",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-014",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "珠稱夜光",
+        "reading": "주칭야광",
+        "meaning": "보배로운 구슬 가운데 으뜸은 어둠을 밝히는 야광주라 부릅니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-014",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-015",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "果珍李奈",
+        "reading": "과진이내",
+        "meaning": "과일 가운데 보배로운 진미는 자두와 능금입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-015",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-016",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "유지 표본: 제공 근거와 구절 범위 대조.",
+      "original": {
+        "hanja": "菜重芥薑",
+        "reading": "채중개강",
+        "meaning": "채소 가운데 중요하게 여기는 것은 겨자와 생강입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-016",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-017",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "海鹹河淡",
+        "reading": "해함하담",
+        "meaning": "바닷물은 짜고 민물인 강물은 담백하여 싱겁습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-017",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-018",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "鱗潛羽翔",
+        "reading": "인잠우상",
+        "meaning": "비늘 달린 물고기는 물속 깊이 헤엄치고 깃털 달린 새는 하늘 높이 날아다닙니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-018",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-019",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "龍師火帝",
+        "reading": "용사화제",
+        "meaning": "용으로 벼슬 이름을 삼은 복희씨와 불로 덕을 삼은 신농씨입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-019",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-020",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "鳥官人皇",
+        "reading": "조관인황",
+        "meaning": "새 이름으로 관직을 정한 소호씨와 백성을 다스린 황제헌원씨입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-020",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-021",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "始制文字",
+        "reading": "시제문자",
+        "meaning": "창힐이 새의 발자국을 보고 처음으로 문자를 만들었습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-021",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-022",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "乃服衣裳",
+        "reading": "내복의상",
+        "meaning": "이에 비로소 위옷과 아래옷을 지어 입어 예의를 갖추었습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-022",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-023",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "推位讓國",
+        "reading": "추위양국",
+        "meaning": "임금의 자리를 사양하고 나라를 어진 이에게 물려주었습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-023",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-024",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "有虞陶唐",
+        "reading": "유우도당",
+        "meaning": "선양의 본보기가 된 성군 순임금(유우씨)과 요임금(도당씨)입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-024",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-025",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "弔民伐罪",
+        "reading": "조민벌죄",
+        "meaning": "고통받는 백성을 위로하고 폭군의 죄악을 정벌하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-025",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-026",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "周發殷湯",
+        "reading": "주발은탕",
+        "meaning": "주나라의 무왕 희발과 은나라를 세운 탕왕이 그러하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-026",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-027",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "坐朝問道",
+        "reading": "좌조문도",
+        "meaning": "임금이 조정에 앉아 신하들과 올바른 정치의 도리를 논의합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-027",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-028",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "垂拱平章",
+        "reading": "수공평장",
+        "meaning": "옷소매를 늘어뜨리고 팔짱을 낄 만큼 나라가 태평하여 온갖 일이 밝게 다스려집니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-028",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-029",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "愛育黎首",
+        "reading": "애육여수",
+        "meaning": "검은 머리의 평범한 백성들을 사랑으로 품고 따뜻하게 기릅니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-029",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-030",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "臣伏戎羌",
+        "reading": "신복융강",
+        "meaning": "사방의 먼 변방 민족들도 덕화에 감복하여 신하로서 복종합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-030",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-031",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "遐邇壹體",
+        "reading": "하이일체",
+        "meaning": "멀고 가까운 온 세상이 한마음 한뜻으로 하나가 됩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-031",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-032",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "率賓歸王",
+        "reading": "솔빈귀왕",
+        "meaning": "모든 신하와 백성이 기꺼이 손님처럼 공경하며 어진 임금에게 귀의합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-032",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-033",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "鳴鳳在樹",
+        "reading": "명봉재수",
+        "meaning": "태평성대를 맞아 상서로운 봉황이 숲의 오동나무에 깃들어 노래합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-033",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-034",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "白駒食場",
+        "reading": "백구식장",
+        "meaning": "어진 선비가 탄 흰 망아지가 마당의 풀을 여유롭게 뜯어 먹습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-034",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-035",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "化被草木",
+        "reading": "화피초목",
+        "meaning": "임금의 어진 덕화가 사람뿐 아니라 풀과 나무에까지 널리 미칩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-035",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-036",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "賴及萬方",
+        "reading": "뇌급만방",
+        "meaning": "그 은혜와 혜택이 온 세상 모든 백성에게 골고루 미칩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-036",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-037",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "蓋此身髮",
+        "reading": "개차신발",
+        "meaning": "대저 사람의 몸과 털과 피부는 모두 부모에게서 물려받은 것입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-037",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-038",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "四大五常",
+        "reading": "사대오상",
+        "meaning": "몸을 이루는 지수화풍 네 물질과 사람이 지켜야 할 인의예지신 다섯 도리입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-038",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-039",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "恭惟鞠養",
+        "reading": "공유국양",
+        "meaning": "부모님께서 깊은 사랑으로 낳아 길러주신 은혜를 공경히 생각합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-039",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-040",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "豈敢毁傷",
+        "reading": "기감훼상",
+        "meaning": "어찌 감히 자신의 몸을 헐뜯거나 다치게 할 수 있겠습니까."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-040",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-041",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "女慕貞烈",
+        "reading": "여모정렬",
+        "meaning": "여자는 곧고 맑은 정절과 절개를 사모하여 지켜야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-041",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-042",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "男效才良",
+        "reading": "남효재량",
+        "meaning": "남자는 재주와 어짊을 본받아 훌륭한 인품을 닦아야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-042",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-043",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "知過必改",
+        "reading": "지과필개",
+        "meaning": "자신에게 잘못이 있음을 알면 지체 없이 반드시 고쳐야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-043",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-044",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "得能莫忘",
+        "reading": "득능막망",
+        "meaning": "좋은 능력을 터득하고 배우면 결코 잊거나 소홀히 하지 말아야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-044",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-045",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "罔談彼短",
+        "reading": "망담피단",
+        "meaning": "남의 모자란 점이나 단점을 함부로 입에 올려 말하지 말아야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-045",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-046",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "靡恃己長",
+        "reading": "미시기장",
+        "meaning": "자신이 지닌 장점이나 재주를 믿고 스스로 교만해지지 말아야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-046",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-047",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "信使可覆",
+        "reading": "신사가복",
+        "meaning": "약속한 말은 마땅히 다시 거듭 확인하여도 미더울 수 있도록 지켜야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-047",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-048",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "器欲難量",
+        "reading": "기욕난량",
+        "meaning": "사람의 도량과 그릇은 깊고 넓어서 쉽게 헤아릴 수 없을 만큼 커야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-048",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-049",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "墨悲絲染",
+        "reading": "묵비사염",
+        "meaning": "묵자는 하얀 실이 어떤 물감에 물드느냐에 따라 색이 변함을 보고 탄식하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-049",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-050",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "유지 표본: 제공 근거와 구절 범위 대조.",
+      "original": {
+        "hanja": "詩讚羔羊",
+        "reading": "시찬고양",
+        "meaning": "《시경》에서는 어린 양가죽 옷을 입은 대부의 검소하고 맑은 절조를 찬양하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-050",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-051",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "景行維賢",
+        "reading": "경행유현",
+        "meaning": "큰 길처럼 훌륭한 덕행을 사모하여 어진 이를 표준으로 삼습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-051",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-052",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "剋念作聖",
+        "reading": "극념작성",
+        "meaning": "사욕을 이겨내고 오직 올바른 생각만을 지극히 실천하면 성인이 됩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-052",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-053",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "德建名立",
+        "reading": "덕건명립",
+        "meaning": "스스로 훌륭한 덕을 튼튼히 세우면 그에 걸맞은 명성이 절로 바로 섭니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-053",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-054",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "形端表正",
+        "reading": "형단표정",
+        "meaning": "몸가짐의 모양새가 단정하면 밖으로 드러나는 겉모습도 덩달아 바르게 됩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-054",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-055",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "空谷傳聲",
+        "reading": "공곡전성",
+        "meaning": "텅 빈 골짜기에서 소리를 내면 메아리가 그대로 멀리 울려 퍼집니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-055",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-056",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "虛堂習聽",
+        "reading": "허당습청",
+        "meaning": "텅 빈 방 안에서는 작은 소리도 똑똑히 들려 모두가 귀담아듣게 됩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-056",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-057",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "禍因惡積",
+        "reading": "화인악적",
+        "meaning": "인생의 재앙은 나쁜 짓과 악행을 조금씩 쌓아온 데서 비롯됩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-057",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-058",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "福緣善慶",
+        "reading": "복연선경",
+        "meaning": "참된 행복은 착하고 선한 일을 꾸준히 쌓아온 경사로운 인연으로 찾아옵니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-058",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-059",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "尺璧非寶",
+        "reading": "척벽비보",
+        "meaning": "한 자 크기의 값비싼 구슬이라도 진정한 보배라고 할 수는 없습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-059",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-060",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "寸陰是競",
+        "reading": "촌음시경",
+        "meaning": "손가락 한 마디 그늘만큼의 아주 짧은 시간이라도 아끼고 다투어 부지런히 써야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-060",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-061",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "資父事君",
+        "reading": "자부사군",
+        "meaning": "아버지를 섬기던 정성과 공경의 도리를 바탕으로 삼아 임금을 섬깁니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-061",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-062",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "曰嚴與敬",
+        "reading": "왈엄여경",
+        "meaning": "그 섬김의 핵심은 엄숙한 마음가짐과 지극한 공경심에 있습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-062",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-063",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "孝當竭力",
+        "reading": "효당갈력",
+        "meaning": "부모님을 섬기는 효도는 마땅히 자신의 모든 정성과 힘을 다해야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-063",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-064",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "忠則盡命",
+        "reading": "충즉진명",
+        "meaning": "나라와 군주를 향한 충성은 목숨을 바칠 각오로 최선을 다해야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-064",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-065",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "臨深履薄",
+        "reading": "임심리박",
+        "meaning": "깊은 연못가에 다다른 듯 살얼음판을 밟는 듯 매사에 조심하고 경계합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-065",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-066",
+      "qwen_decision": "uncertain",
+      "action": "hold",
+      "codex_individually_reviewed": true,
+      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "original": {
+        "hanja": "夙興溫淸",
+        "reading": "숙흥온정",
+        "meaning": "아침 일찍 일어나 부모님 안부를 살피고 겨울에는 따뜻하게 여름에는 시원하게 해 드립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-066",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-067",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "似蘭斯馨",
+        "reading": "사란사형",
+        "meaning": "군자의 맑고 높은 인품은 그윽한 난초의 향기처럼 멀리 퍼집니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-067",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-068",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "如松之盛",
+        "reading": "여송지성",
+        "meaning": "사계절 내내 푸른 소나무처럼 변함없이 무성하고 곧은 기개를 지닙니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-068",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-069",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "川流不息",
+        "reading": "천류불식",
+        "meaning": "시냇물이 밤낮으로 쉬지 않고 흐르듯 학문과 덕행을 끊임없이 닦습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-069",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-070",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "淵澄取映",
+        "reading": "연징취영",
+        "meaning": "깊은 못물이 맑아 사물의 참모습을 그대로 비추듯 마음을 맑고 고요하게 가꿉니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-070",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-071",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "容止若思",
+        "reading": "용지약사",
+        "meaning": "몸가짐과 행동거지는 깊이 생각하고 조용히 분별하는 듯 차분해야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-071",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-072",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "言辭安定",
+        "reading": "언사안정",
+        "meaning": "입으로 내는 말씨와 언어는 조용하고 침착하여 흔들림이 없어야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-072",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-073",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "篤初誠美",
+        "reading": "독초성미",
+        "meaning": "처음 뜻을 세울 때 도타운 정성으로 착수하는 것은 참으로 아름다운 일입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-073",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-074",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "愼終宜令",
+        "reading": "신종의령",
+        "meaning": "마지막 끝맺음까지 삼가고 신중히 처리해야 마땅히 훌륭한 결실을 맺습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-074",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-075",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "榮業所基",
+        "reading": "영업소기",
+        "meaning": "영예롭고 빛나는 사업이나 공적은 이처럼 처음과 끝을 성실히 하는 데서 터를 닦습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-075",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-076",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "籍甚無竟",
+        "reading": "적심무경",
+        "meaning": "그로 인해 쌓인 훌륭한 명성과 명예는 끝없이 널리 퍼져 사라지지 않습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-076",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-077",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "學優登仕",
+        "reading": "학우등사",
+        "meaning": "학문을 깊이 닦아 여유가 생기면 벼슬길에 나아가 세상에 도리를 펼칩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-077",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-078",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "攝職從政",
+        "reading": "섭직종정",
+        "meaning": "임무와 직책을 맡아 정사에 참여하여 백성을 바르게 다스립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-078",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-079",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "存以甘棠",
+        "reading": "존이감당",
+        "meaning": "주나라 소공이 쉬어가던 팥배나무를 백성들이 아껴 베지 않고 보존하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-079",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-080",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "유지 표본: 제공 근거와 구절 범위 대조.",
+      "original": {
+        "hanja": "去而益詠",
+        "reading": "거이익영",
+        "meaning": "어진 관리가 세상을 떠난 뒤에도 백성들은 그 은덕을 더욱더 칭송하여 노래합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-080",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-081",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "樂殊貴賤",
+        "reading": "악수귀천",
+        "meaning": "예로부터 전해오는 풍악과 음악은 신분의 귀천에 따라 쓰임새와 규모가 달랐습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-081",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-082",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "禮別尊卑",
+        "reading": "예별존비",
+        "meaning": "사람이 지켜야 할 예법은 윗사람과 아랫사람의 존비 질서를 명확히 구별하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-082",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-083",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "上和下睦",
+        "reading": "상화하목",
+        "meaning": "윗사람이 너그럽게 화합하면 아랫사람은 온화하고 친목하게 따릅니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-083",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-084",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "夫唱婦隨",
+        "reading": "부창부수",
+        "meaning": "남편이 올바른 도리로 이끌면 아내가 믿음으로 순순히 따르며 부부가 화목합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-084",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-085",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "外受傅訓",
+        "reading": "외수부훈",
+        "meaning": "밖으로는 훌륭한 스승을 모시고 엄격한 가르침과 훈계를 받습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-085",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-086",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "入奉母儀",
+        "reading": "입봉모의",
+        "meaning": "집에 들어와서는 자애로운 어머니의 모범적인 가르침과 몸가짐을 받들어 모십니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-086",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-087",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "諸姑伯叔",
+        "reading": "제고백숙",
+        "meaning": "고모들과 큰아버지, 작은아버지 등 집안의 모든 친척 어른들입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-087",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-088",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "猶子比兒",
+        "reading": "유자비아",
+        "meaning": "조카를 대할 때도 마치 친자식과 다름없이 아끼고 똑같이 사랑으로 대합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-088",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-089",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "孔懷兄弟",
+        "reading": "공회형제",
+        "meaning": "한 부모에게서 태어난 형제간에는 심히 깊은 사랑과 그리움을 품어야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-089",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-090",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "同氣連枝",
+        "reading": "동기연지",
+        "meaning": "형제자매는 같은 부모의 기운을 나누어 받고 한 나무에서 뻗어 나온 나뭇가지와 같습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-090",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-091",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "交友投分",
+        "reading": "교우투분",
+        "meaning": "벗을 사귈 때는 서로의 마음과 분수를 온전히 나누어 두터운 신의로 사귀어야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-091",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-092",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "切磨箴規",
+        "reading": "절마잠규",
+        "meaning": "옥을 갈고닦듯 학문을 탁마하며 잘못이 있으면 서로 경계하고 올바른 규칙으로 인도합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-092",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-093",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "仁慈隱惻",
+        "reading": "인자은측",
+        "meaning": "남을 아끼는 어진 자애심과 남의 불행을 가엾게 여기는 측은지심을 늘 품어야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-093",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-094",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "造次弗離",
+        "reading": "조차불리",
+        "meaning": "급작스럽고 어수선한 위급한 순간이라도 이 어진 마음에서 결코 벗어나지 말아야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-094",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-095",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "節義廉退",
+        "reading": "절의염퇴",
+        "meaning": "굳은 절개와 의리를 지키며 청렴한 분수를 알아 물러날 때를 바르게 알아야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-095",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-096",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "顚沛匪虧",
+        "reading": "전패비휴",
+        "meaning": "넘어지고 쓰러지는 극심한 곤경에 부딪히더라도 도리를 이지러뜨리거나 훼손하지 않습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-096",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-097",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "性靜情逸",
+        "reading": "성정정일",
+        "meaning": "타고난 본성이 고요하고 맑으면 밖으로 드러나는 감정 또한 편안하고 한가롭습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-097",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-098",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "心動神疲",
+        "reading": "심동신피",
+        "meaning": "헛된 욕망에 마음이 함부로 요동치면 타고난 정신과 기운이 피폐해집니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-098",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-099",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "守眞志滿",
+        "reading": "수진지만",
+        "meaning": "타고난 참된 성품을 온전히 지키면 굳건한 뜻이 스스로 차올라 충만해집니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-099",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-100",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "逐物意移",
+        "reading": "축물의이",
+        "meaning": "바깥 사물의 욕망을 좇아가다 보면 자신의 본래 뜻이 이리저리 흔들려 변질됩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-100",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-101",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "堅持雅操",
+        "reading": "견지아조",
+        "meaning": "우아하고 고결한 지조와 절개를 굳세게 지켜 흔들리지 않습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-101",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-102",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "好爵自縻",
+        "reading": "호작자미",
+        "meaning": "아름다운 높은 벼슬과 영화가 절로 찾아와 자신을 얽어매게 됩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-102",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-103",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "都邑華夏",
+        "reading": "도읍화하",
+        "meaning": "문화가 찬란하게 번성한 중화 문명의 크고 번화한 도읍들입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-103",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-104",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "東西二京",
+        "reading": "동서이경",
+        "meaning": "동쪽의 도읍 낙양과 서쪽의 도읍 장안이라는 두 서울입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-104",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-105",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "背邙面洛",
+        "reading": "배망면락",
+        "meaning": "낙양은 뒤로는 북망산을 등지고 앞으로는 낙수를 굽어보는 명당입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-105",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-106",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "浮渭據涇",
+        "reading": "부위거경",
+        "meaning": "장안은 위수 강물에 배를 띄우고 경수 줄기를 웅거하여 자리 잡았습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-106",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-107",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "宮殿盤鬱",
+        "reading": "궁전반울",
+        "meaning": "웅장한 대궐의 궁전들은 서까래와 전각이 빽빽하게 서리어 웅장합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-107",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-108",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "樓觀飛驚",
+        "reading": "누관비경",
+        "meaning": "높이 솟은 누각과 망대는 마치 하늘을 날 듯 높아 보는 이를 놀라게 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-108",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-109",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "圖寫禽獸",
+        "reading": "도사금수",
+        "meaning": "궁궐 벽에는 온갖 신비로운 날짐승과 들짐승의 모습을 생생하게 그렸습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-109",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-110",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "畵綵仙靈",
+        "reading": "화채선령",
+        "meaning": "오색 빛깔 고운 채색으로 신선과 신령스러운 존재들의 모습을 장식하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-110",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-111",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "丙舍傍啓",
+        "reading": "병사방계",
+        "meaning": "궁궐 안의 별채와 행랑채는 좌우 곁으로 질서정연하게 문이 열려 있습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-111",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-112",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "甲帳對楹",
+        "reading": "갑장대영",
+        "meaning": "진귀하고 화려한 비단 장막은 굵고 붉은 궁궐 기둥을 마주 보며 드리워져 있습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-112",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-113",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "肆筵設席",
+        "reading": "사연설석",
+        "meaning": "너른 대청마루에 화려한 대자리를 펴고 잔칫상을 정성껏 베풀어 놓았습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-113",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-114",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "鼓瑟吹笙",
+        "reading": "고슬취생",
+        "meaning": "비파와 거문고를 타며 맑은 생황 피리를 불어 아름다운 음악을 연주합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-114",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-115",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "陞階納陛",
+        "reading": "승계납폐",
+        "meaning": "신하들이 섬돌 계단을 밟고 궁궐 뜰을 지나 임어하신 어전 계단으로 나아갑니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-115",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-116",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "弁轉疑星",
+        "reading": "변전의성",
+        "meaning": "늘어선 고관들의 고깔관에 박힌 옥구슬이 번뜩여 마치 밤하늘의 별들이 구르는 듯합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-116",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-117",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "右通廣內",
+        "reading": "우통광내",
+        "meaning": "오른편으로는 황실의 수많은 서적을 보관하는 광내전 서고로 통합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-117",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-118",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "左達丞明",
+        "reading": "좌달승명",
+        "meaning": "왼편으로는 당대의 뛰어난 문사들이 학문을 강론하는 승명서실로 이어집니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-118",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-119",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "旣集墳典",
+        "reading": "기집분전",
+        "meaning": "이미 삼황오제의 위대한 삼분오전 등 천하의 소중한 고전들을 모두 모았습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-119",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-120",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "亦聚群英",
+        "reading": "역취군영",
+        "meaning": "또한 천하에서 학문과 덕망이 가장 뛰어난 뭇 인재들을 한자리에 모았습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-120",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-121",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "杜藁鍾隷",
+        "reading": "두고종례",
+        "meaning": "두도의 초서 초고와 종요의 뛰어난 예서 글씨 등 천하의 명필들이 소장되어 있습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-121",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-122",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "漆書壁經",
+        "reading": "칠서벽경",
+        "meaning": "옻칠로 대나무 패에 쓴 옛 책과 공자의 옛집 벽 속에서 발견된 고문 경전들입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-122",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-123",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "府羅將相",
+        "reading": "부라장상",
+        "meaning": "관부에는 나라를 지키는 명장들과 국정을 이끄는 정승들이 줄지어 늘어서 있습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-123",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-124",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "路俠槐卿",
+        "reading": "노협괴경",
+        "meaning": "거리에는 삼공을 상징하는 회화나무와 구경의 고관대작들이 길을 메우고 있습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-124",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-125",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "유지 표본: 제공 근거와 구절 범위 대조.",
+      "original": {
+        "hanja": "戶封八縣",
+        "reading": "호봉팔현",
+        "meaning": "나라에 큰 공을 세운 공신에게는 여덟 개 현에 이르는 식읍의 호수를 봉해 주었습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-125",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-126",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "家給千兵",
+        "reading": "가급천병",
+        "meaning": "그의 가문에는 호위를 위해 천 명의 군사와 사졸을 내려주어 호위하게 하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-126",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-127",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "高冠陪輦",
+        "reading": "고관배련",
+        "meaning": "높은 관을 쓴 재상과 중신들이 임금의 가마 수레를 곁에서 호위하며 따릅니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-127",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-128",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "驅轂振纓",
+        "reading": "구곡진영",
+        "meaning": "수레바퀴를 빠르게 몰며 갓끈의 비단 술을 펄럭이며 위풍당당하게 달립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-128",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-129",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "世祿侈富",
+        "reading": "세록치부",
+        "meaning": "대대로 국가의 녹봉을 물려받아 가문이 더없이 부유하고 영화롭습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-129",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-130",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "車駕肥輕",
+        "reading": "거가비경",
+        "meaning": "살찐 준마가 끄는 수레를 타고 가벼운 비단옷을 입은 채 호화롭게 다닙니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-130",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-131",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "策功茂實",
+        "reading": "책공무실",
+        "meaning": "나라에 세운 큰 공훈을 문서에 기록하고 그 풍성하고 알찬 결실을 포상합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-131",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-132",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "勒碑刻銘",
+        "reading": "늑비각명",
+        "meaning": "돌비석을 깎아 세우고 그의 빛나는 공덕을 새겨 후세에 영원히 전합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-132",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-133",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "磻溪伊尹",
+        "reading": "반계이윤",
+        "meaning": "반계에서 낚시하며 때를 기다린 강태공과 유신씨의 들판에서 밭 갈던 이윤입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-133",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-134",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "佐時阿衡",
+        "reading": "좌시아형",
+        "meaning": "어지러운 시대를 도와 나라를 바로잡고 천하의 저울추인 재상이 되었습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-134",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-135",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "奄宅曲阜",
+        "reading": "엄택곡부",
+        "meaning": "주공 단은 곡부에 땅을 받아 노나라의 도읍으로 삼아 터전을 넓혔습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-135",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-136",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "微旦孰營",
+        "reading": "미단숙영",
+        "meaning": "주공 단이 아니었다면 그 누가 그처럼 훌륭한 주나라의 예악 문물을 세웠겠습니까."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-136",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-137",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "桓公匡合",
+        "reading": "환공광합",
+        "meaning": "제나라 환공은 천하의 어지러움을 바로잡고 제후들을 한자리에 규합하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-137",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-138",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "濟弱扶傾",
+        "reading": "제약부경",
+        "meaning": "약한 나라를 구원하여 건져주고 쓰러져가는 작은 나라들을 붙들어 일으켜 세웠습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-138",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-139",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "綺廻漢惠",
+        "reading": "기회한혜",
+        "meaning": "상산사호의 한 사람인 기리계는 흔들리던 한나라 혜제의 태자 자리를 되돌려 지켜주었습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-139",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-140",
+      "qwen_decision": "uncertain",
+      "action": "hold",
+      "codex_individually_reviewed": true,
+      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "original": {
+        "hanja": "說感武丁",
+        "reading": "열감무정",
+        "meaning": "담벼락을 쌓던 어진 현인 부열은 은나라 임금 무정의 꿈에 나타나 감동을 주었습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-140",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-141",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "俊乂密勿",
+        "reading": "준예밀물",
+        "meaning": "천하의 걸출한 인재들이 조정에 가득하여 은밀하고 정성스럽게 국사를 힘써 도왔습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-141",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-142",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "多士寔寧",
+        "reading": "다사식녕",
+        "meaning": "많은 훌륭한 선비들이 힘을 합치니 온 나라와 왕실이 진실로 편안해졌습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-142",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-143",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "晉楚更覇",
+        "reading": "진초갱패",
+        "meaning": "춘추시대에 진나라 문공과 초나라 장왕이 번갈아 천하의 패권을 쥐었습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-143",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-144",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "趙魏困橫",
+        "reading": "조위곤횡",
+        "meaning": "전국시대 조나라와 위나라는 진나라 장의의 연횡책에 말려들어 큰 곤경에 빠졌습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-144",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-145",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "假途滅虢",
+        "reading": "가도멸괵",
+        "meaning": "진나라는 우나라에 길을 빌려 괵나라를 치고 돌아오는 길에 우나라마저 멸망시켰습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-145",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-146",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "踐土會盟",
+        "reading": "천토회맹",
+        "meaning": "진나라 문공은 천토 땅에서 제후들을 모아 회맹을 맺고 천자를 받들었습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-146",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-147",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "何遵約法",
+        "reading": "하준약법",
+        "meaning": "한나라의 승상 소하는 유방이 백성과 약속한 간소한 법 삼장(약법삼장)을 잘 준수하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-147",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-148",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "韓弊煩刑",
+        "reading": "한폐번형",
+        "meaning": "한비자는 가혹하고 번잡한 형벌을 주장하다가 결국 그 형벌에 자신이 걸려 죽고 말았습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-148",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-149",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "起翦頗牧",
+        "reading": "기전파목",
+        "meaning": "전국시대의 명장 백기, 왕전, 염파, 이목 네 장군입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-149",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-150",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "유지 표본: 제공 근거와 구절 범위 대조.",
+      "original": {
+        "hanja": "用軍最精",
+        "reading": "용군최정",
+        "meaning": "군사를 부리고 병법을 구사함에 있어 당대 천하에서 가장 정밀하고 뛰어났습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-150",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-151",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "宣威沙漠",
+        "reading": "선위사막",
+        "meaning": "북방의 광막한 사막 지대에까지 나라의 위엄과 무용을 널리 떨쳤습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-151",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-152",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "馳譽丹靑",
+        "reading": "치예단청",
+        "meaning": "기린각과 운대 등 공신각의 단청 벽화에 초상이 그려져 그 명성을 영원히 떨쳤습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-152",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-153",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "九州禹跡",
+        "reading": "구주우적",
+        "meaning": "천하의 아홉 개 주는 우임금이 홍수를 다스려 길을 트고 개척한 발자취입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-153",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-154",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "百郡秦幷",
+        "reading": "백군진병",
+        "meaning": "수많은 고을과 백 개 군현은 진나라 시황제가 천하를 통일하여 하나로 병합하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-154",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-155",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "嶽宗恒岱",
+        "reading": "악종항대",
+        "meaning": "천하 오악 가운데 으뜸으로 높이 숭상되는 산은 북악 항산과 동악 태산입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-155",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-156",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "禪主云亭",
+        "reading": "선주운정",
+        "meaning": "천자가 하늘과 땅에 제사 지내는 봉선의 의식은 운운산과 정정산에서 주관하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-156",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-157",
+      "qwen_decision": "uncertain",
+      "action": "hold",
+      "codex_individually_reviewed": true,
+      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "original": {
+        "hanja": "雁門紫塞",
+        "reading": "안문자새",
+        "meaning": "기러기가 날아 넘는 험준한 안문관 요새와 붉은 흙탕으로 쌓은 만리장성 자새입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-157",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-158",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "鷄田赤城",
+        "reading": "계전적성",
+        "meaning": "북방의 이름난 닭 방목지 계전역과 신선이 산다는 붉은 바위산 적성산입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-158",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-159",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "昆池碣石",
+        "reading": "곤지갈석",
+        "meaning": "한 무제가 수전을 훈련하던 곤명지와 시황제가 바다를 바라보던 갈석산입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-159",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-160",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "鉅野洞庭",
+        "reading": "거야동정",
+        "meaning": "태산 서쪽의 끝없이 광활한 거야 땅의 늪과 남방의 끝없는 동정호 호수입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-160",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-161",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "曠遠綿邈",
+        "reading": "광원면막",
+        "meaning": "산과 강, 호수와 벌판의 지세가 아득히 넓고 아스라하게 멀고 멉니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-161",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-162",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "巖岫杳冥",
+        "reading": "암수묘명",
+        "meaning": "높고 험준한 바위봉우리와 깊은 산골짜기 동굴은 깊고 어둑하여 그윽합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-162",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-163",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "治本於農",
+        "reading": "치본어농",
+        "meaning": "나라를 안정되게 다스리는 근본은 오직 백성의 농사일에 달려 있습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-163",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-164",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "務玆稼穡",
+        "reading": "무자가색",
+        "meaning": "이에 힘써 씨 뿌리고 곡식을 거두는 농업의 일에 모든 정성을 쏟아야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-164",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-165",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "俶載南畝",
+        "reading": "숙재남묘",
+        "meaning": "봄철이 되면 비로소 따뜻한 남쪽 밭두둑에서 밭갈이를 시작합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-165",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-166",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "我藝黍稷",
+        "reading": "아예서직",
+        "meaning": "우리 백성들은 기장과 메조 등 귀한 오곡을 정성스럽게 심고 가꿉니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-166",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-167",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "稅熟貢新",
+        "reading": "세숙공신",
+        "meaning": "가을에 익은 곡식으로 나라에 세금을 내고 햇곡식을 사당에 먼저 바칩니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-167",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-168",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "勸賞黜陟",
+        "reading": "권상출척",
+        "meaning": "부지런한 자는 권장하여 상을 주고 게으른 자는 내치고 유능한 자는 올립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-168",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-169",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "孟軻敦素",
+        "reading": "맹가돈소",
+        "meaning": "아성 맹자는 평생 소박하고 순수한 덕성을 도탑게 지키며 실천하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-169",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-170",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "史魚秉直",
+        "reading": "사어병직",
+        "meaning": "위나라의 대부 사어는 살아서나 죽어서나 올곧은 강직함을 지켰습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-170",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-171",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "庶幾中庸",
+        "reading": "서기중용",
+        "meaning": "어느 한쪽으로 치우치거나 지나침이 없는 중용의 도리에 이르기를 바라며 힘씁니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-171",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-172",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "勞謙謹勅",
+        "reading": "노겸근칙",
+        "meaning": "공로가 있어도 스스로 겸손하며 매사에 매양 삼가고 신중하게 경계합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-172",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-173",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "聆音察理",
+        "reading": "영음찰리",
+        "meaning": "남이 하는 말소리를 들으면 그 속에 담긴 참된 속뜻과 사리의 옳고 그름을 살핍니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-173",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-174",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "鑑貌辨色",
+        "reading": "감모변색",
+        "meaning": "사람의 겉모습을 잘 살피고 안색의 미묘한 변화를 분별하여 참마음을 헤아립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-174",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-175",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "유지 표본: 제공 근거와 구절 범위 대조.",
+      "original": {
+        "hanja": "貽厥嘉猷",
+        "reading": "이궐가유",
+        "meaning": "후손들을 위하여 훌륭하고 아름다운 삶의 계획과 교훈을 물려줍니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-175",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-176",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "勉其祗植",
+        "reading": "면기지식",
+        "meaning": "후손들은 그 가르침을 공경히 지키고 실천하여 훌륭한 덕을 굳건히 심기에 힘써야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-176",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-177",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "省躬譏誡",
+        "reading": "성궁기계",
+        "meaning": "언제나 자신의 몸과 마음을 깊이 반성하여 세상 사람들의 비난과 경계를 돌아봅니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-177",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-178",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "寵增抗極",
+        "reading": "총증항극",
+        "meaning": "임금의 총애가 더해질수록 교만해져서 분에 넘치는 극단에 이르지 말아야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-178",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-179",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "殆辱近恥",
+        "reading": "태욕근치",
+        "meaning": "분수를 모르고 지나치면 위태로운 치욕을 부르고 부끄러운 일에 가까워집니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-179",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-180",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "林睾幸卽",
+        "reading": "임고행즉",
+        "meaning": "다행히 숲과 언덕이 있는 자연의 품으로 나아가 은퇴하여 평안을 누립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-180",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-181",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "兩疎見機",
+        "reading": "양소견기",
+        "meaning": "한나라의 소광과 소수 두 조카와 삼촌은 낌새를 미리 알아채고 벼슬에서 물러났습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-181",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-182",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "解組誰逼",
+        "reading": "해조수핍",
+        "meaning": "관직의 인끈을 스스로 풀고 훌훌 떠나니 그 누가 그들을 위협하거나 핍박할 수 있겠습니까."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-182",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-183",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "索居閑處",
+        "reading": "색거한처",
+        "meaning": "번잡한 세상을 벗어나 홀로 조용히 머물며 한가로운 곳에서 유유자적합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-183",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-184",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "沈黙寂寥",
+        "reading": "침묵적요",
+        "meaning": "말수를 아끼고 조용히 침묵하며 고요하고 평온한 경지를 누립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-184",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-185",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "求古尋論",
+        "reading": "구고심론",
+        "meaning": "옛 성현들의 뜻과 가르침을 깊이 탐구하고 사물의 이치를 찾아서 토론합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-185",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-186",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "散慮逍遙",
+        "reading": "산려소요",
+        "meaning": "온갖 세상의 번뇌와 근심을 훌훌 털어버리고 자연 속에서 자유롭게 거닙니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-186",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-187",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "欣奏累遣",
+        "reading": "흔주루견",
+        "meaning": "마음속에 참된 기쁨이 차례로 모여들고 세상사의 번거로운 얽매임은 멀리 떠나보냅니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-187",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-188",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "戚謝歡招",
+        "reading": "척사환초",
+        "meaning": "모든 슬픔과 시름은 저절로 사라져 물러가고 유쾌한 즐거움만이 새롭게 찾아옵니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-188",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-189",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "渠荷的歷",
+        "reading": "거하적력",
+        "meaning": "도랑물 위에 핀 맑은 연꽃들은 알알이 선명하고 아름답게 빛납니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-189",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-190",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "園莽抽條",
+        "reading": "원망추조",
+        "meaning": "동산의 무성한 풀과 나무들은 싱그러운 새 가지를 힘차게 뻗어 올립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-190",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-191",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "枇杷晩翠",
+        "reading": "비파만취",
+        "meaning": "비파나무는 찬바람이 부는 늦겨울에도 여전히 푸르름을 잃지 않고 빛납니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-191",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-192",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "梧桐早彫",
+        "reading": "오동조조",
+        "meaning": "오동나무는 가을바람이 불어오면 다른 나무보다 일찍 잎을 떨구고 시듭니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-192",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-193",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "陳根委翳",
+        "reading": "진근위예",
+        "meaning": "겨울이 되면 묵은 뿌리는 땅속에 버려져 시들고 마른 잎에 가려집니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-193",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-194",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "落葉飄颻",
+        "reading": "낙엽표요",
+        "meaning": "가을바람에 떨어진 마른 잎사귀들은 허공에 흩날리며 이리저리 나부낍니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-194",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-195",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "遊鵾獨運",
+        "reading": "유곤독운",
+        "meaning": "바다의 거대한 물고기 곤이 변한 큰 새 붕은 홀로 날개를 치며 높이 솟구쳐 오릅니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-195",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-196",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "凌摩絳霄",
+        "reading": "능마강소",
+        "meaning": "구만리 붉은 노을 깃든 아득한 하늘을 가로지르고 어루만지며 거침없이 날아갑니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-196",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-197",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "耽讀翫市",
+        "reading": "탐독완시",
+        "meaning": "왕충은 책 읽기를 너무 좋아하여 저잣거리 책방에 서서 온종일 책을 읽고 즐겼습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-197",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-198",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "寓目囊箱",
+        "reading": "우목낭상",
+        "meaning": "한 번 눈길을 스치기만 하여도 모두 외워 마치 머릿속에 온 서고를 담아둔 듯하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-198",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-199",
+      "qwen_decision": "uncertain",
+      "action": "hold",
+      "codex_individually_reviewed": true,
+      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "original": {
+        "hanja": "易輶攸畏",
+        "reading": "역유유외",
+        "meaning": "행동을 경솔하게 하거나 말을 가볍게 하는 것을 가장 두려워하고 삼가야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-199",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-200",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "屬耳垣墻",
+        "reading": "속이원장",
+        "meaning": "담벼락에도 귀가 붙어 있다는 속담처럼 보이지 않는 곳에서도 늘 조심해야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-200",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-201",
+      "qwen_decision": "uncertain",
+      "action": "hold",
+      "codex_individually_reviewed": true,
+      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "original": {
+        "hanja": "具膳飡飯",
+        "reading": "구선손반",
+        "meaning": "정갈하게 반찬을 갖추고 때에 맞추어 따뜻한 밥을 먹습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-201",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-202",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "適口充腸",
+        "reading": "적구충장",
+        "meaning": "입맛에 알맞게 먹어 시장기를 면하고 뱃속을 든든하게 채웁니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-202",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-203",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "飽飫烹宰",
+        "reading": "포어팽재",
+        "meaning": "배가 부르면 아무리 기름진 고기 요리라도 더는 먹기 싫어 물립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-203",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-204",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "飢厭糟糠",
+        "reading": "기염조강",
+        "meaning": "몹시 굶주릴 때는 거친 술지게미와 쌀겨라도 달게 먹어 배를 채웁니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-204",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-205",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "親戚故舊",
+        "reading": "친척고구",
+        "meaning": "가까운 피붙이 친척들과 오랜 세월 정을 나눈 오랜 친구들입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-205",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-206",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "老少異糧",
+        "reading": "노소이량",
+        "meaning": "나이 드신 어르신과 어린아이에게는 각각의 소화와 건강에 맞게 음식을 달리 대접합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-206",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-207",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "妾御績紡",
+        "reading": "첩어적방",
+        "meaning": "집안의 여인들은 길쌈하고 길쌈실을 잣는 부지런한 일을 맡아 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-207",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-208",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "侍巾帷房",
+        "reading": "시건유방",
+        "meaning": "안방에서 수건을 받들고 안살림을 도우며 정성껏 집안일을 돌봅니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-208",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-209",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "紈扇圓潔",
+        "reading": "환선원결",
+        "meaning": "하얀 비단으로 둥글게 만든 부채는 보름달처럼 둥글고 티 없이 깨끗합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-209",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-210",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "유지 표본: 제공 근거와 구절 범위 대조.",
+      "original": {
+        "hanja": "銀燭煒煌",
+        "reading": "은촉위황",
+        "meaning": "은촛대에 꽂힌 촛불은 밤하늘의 불꽃처럼 환하고 눈부시게 타오릅니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-210",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-211",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "晝眠夕寐",
+        "reading": "주면석매",
+        "meaning": "낮에는 잠깐 피로를 풀며 낮잠을 자고 밤이 깊어지면 편안히 잠자리에 듭니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-211",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-212",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "藍筍象床",
+        "reading": "남순상상",
+        "meaning": "푸른 대나무 껍질로 엮은 여름 삿자리와 상아로 정교하게 장식한 평상 침상입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-212",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-213",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "絃歌酒讌",
+        "reading": "현가주연",
+        "meaning": "거문고 줄을 뜯어 노래를 부르고 술잔을 기울이며 화기애애한 잔치를 엽니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-213",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-214",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "接杯擧觴",
+        "reading": "접배거상",
+        "meaning": "서로 술잔을 주고받고 큰 잔을 높이 들어 서로의 건강과 행복을 축복합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-214",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-215",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "矯手頓足",
+        "reading": "교수돈족",
+        "meaning": "흥겨움이 넘쳐나 손을 번쩍 들어 춤을 추고 발을 구르며 장단을 맞춥니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-215",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-216",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "悅豫且康",
+        "reading": "열예차강",
+        "meaning": "마음은 한없이 기쁘고 즐거우며 온 집안과 몸이 편안하고 건강합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-216",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-217",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "嫡後嗣續",
+        "reading": "적후사속",
+        "meaning": "적장자의 훌륭한 후손들이 대를 이어 가문의 혈통과 가업을 이어갑니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-217",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-218",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "祭祀蒸嘗",
+        "reading": "제사증상",
+        "meaning": "겨울 제사인 증제와 가을 제사인 상제를 정성스럽게 사당에 올립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-218",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-219",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "稽顙再拜",
+        "reading": "계상재배",
+        "meaning": "이마를 땅에 닿도록 숙여 지극한 공경을 표하고 두 번 절을 올립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-219",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-220",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "悚懼恐惶",
+        "reading": "송구공황",
+        "meaning": "혹시라도 예법에 허물이나 불경이 있을까 두려워하며 송구한 마음을 품습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-220",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-221",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "牋牒簡要",
+        "reading": "전첩간요",
+        "meaning": "남에게 보내는 편지와 공문서는 번잡하지 않고 요점만을 간결하게 적어야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-221",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-222",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "顧答審詳",
+        "reading": "고답심상",
+        "meaning": "남의 물음에 답하고 안부를 살필 때는 자세하고도 신중하게 살펴 대답해야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-222",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-223",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "骸垢想浴",
+        "reading": "해구상욕",
+        "meaning": "몸에 때가 끼면 시원하게 목욕하여 깨끗이 씻기를 생각합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-223",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-224",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "執熱願凉",
+        "reading": "집열원량",
+        "meaning": "뜨거운 물건을 쥐고 있으면 누구나 시원한 바람과 찬 기운을 간절히 바랍니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-224",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-225",
+      "qwen_decision": "change",
+      "action": "correct",
+      "codex_individually_reviewed": true,
+      "reason": "特을 특별한 것으로 풀이한 군더더기를 제거하고 가축 명칭만 설명.",
+      "original": {
+        "hanja": "驢騾犢特",
+        "reading": "여라독특",
+        "meaning": "나귀와 노새, 그리고 어린 송아지와 특별한 수소를 가축으로 기릅니다."
+      },
+      "changes": {
+        "meaning": "나귀와 노새, 송아지와 수소를 가리킵니다."
+      },
+      "evidence_item": "cheonjamun-225",
+      "correction_evidence": {
+        "url": "https://ko.wikisource.org/wiki/석봉_천자문",
+        "locator": "驢騾犢特 훈음 행",
+        "note": "특별하다는 형용 해석을 제거. 가축 나열."
+      }
+    },
+    {
+      "id": "cheonjamun-226",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "駭躍超驤",
+        "reading": "해약초양",
+        "meaning": "가축들이 기운차게 놀라 뛰놀고 언덕을 훌쩍 뛰어넘으며 힘차게 달립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-226",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-227",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "誅斬賊盜",
+        "reading": "주참적도",
+        "meaning": "남을 해치는 흉악한 역적과 재물을 훔치는 도적 떼를 엄하게 베어 처벌합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-227",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-228",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "捕獲叛亡",
+        "reading": "포획반망",
+        "meaning": "국가를 배반하고 달아난 반역자와 탈옥한 도망자들을 샅샅이 뒤쫓아 잡아들입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-228",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-229",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "布射遼丸",
+        "reading": "포사료환",
+        "meaning": "여포의 백발백중 신묘한 활쏘기 솜씨와 웅의료가 공중에서 방울을 농락하던 놀라운 재주입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-229",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-230",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "嵇琴阮嘯",
+        "reading": "혜금완소",
+        "meaning": "혜강의 탁월한 거문고 연주 솜씨와 완적이 높이 불던 청아한 휘파람 소리입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-230",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-231",
+      "qwen_decision": "change",
+      "action": "correct",
+      "codex_individually_reviewed": true,
+      "reason": "倫은 인명 채륜의 륜. 발명 단정 대신 구절의 인물·솜씨로 풀이.",
+      "original": {
+        "hanja": "恬筆倫紙",
+        "reading": "염필윤지",
+        "meaning": "진나라 몽염이 개량한 편리한 토끼털 붓과 한나라 채륜이 발명한 질 좋은 종이입니다."
+      },
+      "changes": {
+        "reading": "염필륜지",
+        "meaning": "몽염의 붓과 채륜의 종이 만드는 솜씨를 일컫습니다."
+      },
+      "evidence_item": "cheonjamun-231",
+      "correction_evidence": {
+        "url": "https://ko.wikisource.org/wiki/석봉_천자문",
+        "locator": "恬筆倫紙 훈음 행 倫(물 륜)",
+        "note": "채륜의 인명 독음; 번역:천자문 해당 대구의 인물 대응도 비교."
+      }
+    },
+    {
+      "id": "cheonjamun-232",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "鈞巧任釣",
+        "reading": "균교임조",
+        "meaning": "위나라 마균의 정교한 기계 지남차 제작 솜씨와 임공자가 거대한 낚싯바늘로 대어를 낚던 솜씨입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-232",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-233",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "釋紛利俗",
+        "reading": "석분리속",
+        "meaning": "어지러운 분쟁을 명쾌하게 풀어주고 세상 사람들의 실생활을 이롭게 하였습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-233",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-234",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "竝皆佳妙",
+        "reading": "병개가묘",
+        "meaning": "앞서 말한 모든 이들의 재주와 기술은 다 함께 아름답고 절묘하기 이를 데 없습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-234",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-235",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "毛施淑姿",
+        "reading": "모시숙자",
+        "meaning": "고대 천하제일의 미인 모장과 서시의 맑고 우아하며 아리따운 맵시입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-235",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-236",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "工嚬姸笑",
+        "reading": "공빈연소",
+        "meaning": "눈살을 찌푸려도 여전히 아름답고 살포시 짓는 고운 미소는 더욱더 매혹적입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-236",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-237",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "年矢每催",
+        "reading": "연시매최",
+        "meaning": "흐르는 세월은 쏘아놓은 화살처럼 덧없이 빨라 매양 사람의 늙음을 재촉합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-237",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-238",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "羲暉朗曜",
+        "reading": "희휘낭요",
+        "meaning": "태양신 희화의 찬란한 햇빛은 온 세상을 밝고 환하게 비추어줍니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-238",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-239",
+      "qwen_decision": "uncertain",
+      "action": "hold",
+      "codex_individually_reviewed": true,
+      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "original": {
+        "hanja": "璇璣懸斡",
+        "reading": "선기현알",
+        "meaning": "하늘의 북두칠성과 혼천의 천체는 허공에 매달린 채 쉼 없이 빙빙 돌아갑니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-239",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-240",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "晦魄環照",
+        "reading": "회백환조",
+        "meaning": "그믐달과 보름달이 차고 기울며 온 세상을 둥글게 비추어 세월을 이어갑니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-240",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-241",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "指薪脩祐",
+        "reading": "지신수우",
+        "meaning": "섶나무는 타서 재가 되어도 불씨는 이어지듯 수양을 닦아 참된 복을 이어받아야 합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-241",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-242",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "永綏吉邵",
+        "reading": "영수길소",
+        "meaning": "영원토록 편안하여 상서롭고 굳건하며 아름다운 복락을 길이 누립니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-242",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-243",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "矩步引領",
+        "reading": "구보인령",
+        "meaning": "법도에 맞게 걸음걸이를 반듯하게 걷고 목을 곧게 세워 단정한 자세를 유지합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-243",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-244",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "俯仰廊廟",
+        "reading": "부앙낭묘",
+        "meaning": "조정의 엄숙한 대궐 묘당에 나아가 몸을 굽히고 우러러보며 신하의 예를 다합니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-244",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-245",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "束帶矜莊",
+        "reading": "속대긍장",
+        "meaning": "의관의 띠를 단정하게 동여매고 몸과 마음을 긍지 있고 장엄하게 가다듬습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-245",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-246",
+      "qwen_decision": "change",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.",
+      "original": {
+        "hanja": "徘徊瞻眺",
+        "reading": "배회첨조",
+        "meaning": "주변을 조용히 거닐며 멀고 가까운 곳을 신중하게 굽어보고 멀리 내다봅니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-246",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-247",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "孤陋寡聞",
+        "reading": "고루과문",
+        "meaning": "배운 바가 외롭고 좁으며 보고 들은 지식이 얕아 부끄럽습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-247",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-248",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "愚蒙等誚",
+        "reading": "우몽등초",
+        "meaning": "어리석고 몽매하여 식견 있는 사람들에게 비웃음과 꾸짖음을 받게 될까 두렵습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-248",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-249",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": false,
+      "reason": "Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.",
+      "original": {
+        "hanja": "謂語助者",
+        "reading": "위어조자",
+        "meaning": "문장의 뜻을 돕고 말을 매끄럽게 이어주는 종결 어조사라 이르는 글자들입니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-249",
+      "correction_evidence": null
+    },
+    {
+      "id": "cheonjamun-250",
+      "qwen_decision": "keep",
+      "action": "retain",
+      "codex_individually_reviewed": true,
+      "reason": "유지 표본: 제공 근거와 구절 범위 대조.",
+      "original": {
+        "hanja": "焉哉乎也",
+        "reading": "언재호야",
+        "meaning": "바로 언(焉), 재(哉), 호(乎), 야(也)라는 네 글자로 글의 끝을 맺습니다."
+      },
+      "changes": {},
+      "evidence_item": "cheonjamun-250",
+      "correction_evidence": null
+    }
+  ]
+}

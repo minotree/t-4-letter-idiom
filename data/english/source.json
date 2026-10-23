@@ -1,0 +1,15 @@
+{
+  "category": "english",
+  "source_project": "t-crossword-app",
+  "source_csv": "words_completed.csv",
+  "csv_sha256": "669e1335e98f09cdb2abf88c31111203a7d1236bf1d194bc2866b6ee516012bd",
+  "source_json": "packages/core/src/assets/vocab.json",
+  "json_sha256": "c603882abe9de65e42fdfe0f0aad3235b3356eb52878d2730c70603d8dbcd2fa",
+  "rows": 3339,
+  "original_project_modified": false,
+  "fields_excluded": [
+    "isBookmarked",
+    "isQuizUsed"
+  ],
+  "imported_on": "2026-10-23"
+}

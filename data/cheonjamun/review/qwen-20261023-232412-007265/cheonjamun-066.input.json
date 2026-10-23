@@ -1,0 +1,49 @@
+{
+  "row": {
+    "id": "cheonjamun-066",
+    "sequence": "66",
+    "hanja": "夙興溫淸",
+    "reading": "숙흥온정",
+    "meaning": "아침 일찍 일어나 부모님 안부를 살피고 겨울에는 따뜻하게 여름에는 시원하게 해 드립니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-065",
+    "hanja": "臨深履薄",
+    "meaning": "깊은 연못가에 다다른 듯 살얼음판을 밟는 듯 매사에 조심하고 경계합니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "夙(이ᄅᆞᆯ 슉) 興(닐 흥) 溫(ᄃᆞᄉᆞᆯ 온) 淸°(시글 졍)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [夙興溫淸] 및 16세기 훈음, 사성 방점(夙興溫淸°) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "夙(녜 슈) 興(닐 흥) 溫(ᄃᆞᄉᆞᆯ 온) 淸(ᄎᆞᆯ 쳥)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [夙興溫淸] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 夙興溫凊 | 독음: 숙흥온정 | 번역: 깊은 곳을 만나도 살얼음 지나듯 조심하고 일찍 일어나 덥고 차가운지 살피는 것(이 효도하는 마음가짐이며)",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": [
+    "독음 및 판본: 목판본 한자는 溫淸(맑을 청)이나 문맥상 凊(서늘할 청)의 통용자로 '숙흥온청' 또는 '숙흥온정' 이견 존재."
+  ]
+}

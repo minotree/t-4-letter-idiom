@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-152",
+    "sequence": "152",
+    "hanja": "馳譽丹靑",
+    "reading": "치예단청",
+    "meaning": "기린각과 운대 등 공신각의 단청 벽화에 초상이 그려져 그 명성을 영원히 떨쳤습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-151",
+    "hanja": "宣威沙漠",
+    "meaning": "북방의 광막한 사막 지대에까지 나라의 위엄과 무용을 널리 떨쳤습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "馳(ᄃᆞᆯ일 티) 譽(기릴 예) 丹(블글 단) 靑(푸를 쳥)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [馳譽丹靑] 및 16세기 훈음, 사성 방점(馳譽丹靑) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "馳(ᄃᆞᆯ일 티) 譽(소ᄅᆡ 예) 丹(ᄇᆞᆯ글 단) 靑(ᄑᆞᄅᆞᆯ 쳥)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [馳譽丹靑] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 馳譽丹青 | 독음: 치예단청 | 번역: 위엄을 사막에까지 떨치니 단청에 넣어 기리는 구나.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

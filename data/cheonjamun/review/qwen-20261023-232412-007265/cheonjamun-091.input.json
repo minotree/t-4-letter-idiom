@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-091",
+    "sequence": "91",
+    "hanja": "交友投分",
+    "reading": "교우투분",
+    "meaning": "벗을 사귈 때는 서로의 마음과 분수를 온전히 나누어 두터운 신의로 사귀어야 합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-092",
+    "hanja": "切磨箴規",
+    "meaning": "옥을 갈고닦듯 학문을 탁마하며 잘못이 있으면 서로 경계하고 올바른 규칙으로 인도합니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "交(사괼 교) °友(벋 우) 投(더딜 투) 分(ᄂᆞᆫ홀 분)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [交友投分] 및 16세기 훈음, 사성 방점(交°友投分) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "交(사괼 교) 友(벋 우) 投(머드리 투) 分(ᄂᆞᆫ홀 분)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [交友投分] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 交友投分 | 독음: 교우투분 | 번역: 벗을 사귈 때는 가려서 사귀고 규범을 염두에 두어 절제하여",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

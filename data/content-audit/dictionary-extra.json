@@ -1,0 +1,728 @@
+{
+  "source_sha256": "913d0ea44242ce821f3b361199b953bb8ede83c808a4ea35bc4b22e6310728a1",
+  "retrieved_at_utc": "2026-10-23T09:43:03.364677+00:00",
+  "provider": "국립국어원 우리말샘 공개 검색",
+  "automatic_meaning_approval": false,
+  "rows": [
+    {
+      "hanja": "",
+      "reading": "전도양양하다",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%A0%84%EB%8F%84%EC%96%91%EC%96%91%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "57f61cf22ad68f26647c6fbdb2c62dc41fcfe2a419ef3ef11b7274dea583b887",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%A0%84%EB%8F%84%EC%96%91%EC%96%91%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100",
+          "sha256": "57f61cf22ad68f26647c6fbdb2c62dc41fcfe2a419ef3ef11b7274dea583b887"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "전도양양하다",
+          "hanja": "前途洋洋하다",
+          "definition": "앞날이 희망차고 전망이 밝다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=507357&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "금실지락",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EA%B8%88%EC%8B%A4%EC%A7%80%EB%9D%BD&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "00fe1505cc0c255268ef3fac5f150c55dce42350e9b5a4fe4e2e7aeda050dacb",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EA%B8%88%EC%8B%A4%EC%A7%80%EB%9D%BD&wordMatch=Y&rowsperPage=100",
+          "sha256": "00fe1505cc0c255268ef3fac5f150c55dce42350e9b5a4fe4e2e7aeda050dacb"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "금실지락",
+          "hanja": "琴瑟▽之樂",
+          "definition": "부부간의 사랑.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=104394&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "근근자자하다",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EA%B7%BC%EA%B7%BC%EC%9E%90%EC%9E%90%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "3ae6cc79db6fb5a12eb88f282fc3d23bcd268b600be39401f070f6973fe8f5ed",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EA%B7%BC%EA%B7%BC%EC%9E%90%EC%9E%90%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100",
+          "sha256": "3ae6cc79db6fb5a12eb88f282fc3d23bcd268b600be39401f070f6973fe8f5ed"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "근근자자하다",
+          "hanja": "勤勤孜孜하다",
+          "definition": "매우 부지런하고 꾸준하다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=342135&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "황당무계하다",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%ED%99%A9%EB%8B%B9%EB%AC%B4%EA%B3%84%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "6eba93da0ebafbfd5bc799cb9e0a23d2699ebfcb8471541c56891b7c24f5f204",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%ED%99%A9%EB%8B%B9%EB%AC%B4%EA%B3%84%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100",
+          "sha256": "6eba93da0ebafbfd5bc799cb9e0a23d2699ebfcb8471541c56891b7c24f5f204"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "황당무계하다",
+          "hanja": "荒唐無稽하다",
+          "definition": "말이나 행동 따위가 참되지 않고 터무니없다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=550636&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "허무맹랑하다",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%ED%97%88%EB%AC%B4%EB%A7%B9%EB%9E%91%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "78b9e4dbda90a07f1287892ef0a07fa286de6d903c853925c6a785c42f00c846",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%ED%97%88%EB%AC%B4%EB%A7%B9%EB%9E%91%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100",
+          "sha256": "78b9e4dbda90a07f1287892ef0a07fa286de6d903c853925c6a785c42f00c846"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "허무맹랑하다",
+          "hanja": "虛無孟浪하다",
+          "definition": "터무니없이 거짓되고 실속이 없다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=318040&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "논점",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EB%85%BC%EC%A0%90&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "d7b3fa90408c98851d0dfd880b4449a076544376acfef23cd43d46665b8a3692",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EB%85%BC%EC%A0%90&wordMatch=Y&rowsperPage=100",
+          "sha256": "d7b3fa90408c98851d0dfd880b4449a076544376acfef23cd43d46665b8a3692"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "논점",
+          "hanja": "論點",
+          "definition": "논의(論議)나 논쟁(論爭) 따위의 중심이 되는 문제점.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=118012&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "발췌",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EB%B0%9C%EC%B7%8C&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "3d5a8a3337d7109be95d5575fbc1d4c3c326c30cc6c08d1f19949de2c79b34e1",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EB%B0%9C%EC%B7%8C&wordMatch=Y&rowsperPage=100",
+          "sha256": "3d5a8a3337d7109be95d5575fbc1d4c3c326c30cc6c08d1f19949de2c79b34e1"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "발췌",
+          "hanja": "拔萃",
+          "definition": "책, 글 따위에서 필요하거나 중요한 부분을 가려 뽑아냄. 또는 그런 내용.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=8917&viewType=confirm"
+        },
+        {
+          "reading": "발췌",
+          "hanja": "拔萃",
+          "definition": "여럿 가운데에서 특별히 뛰어남.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=41619&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "일탈",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%9D%BC%ED%83%88&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "0851f1257a64ead5ce338f0a14c13f8b9949579cfe23dab13e509ce6f558fd05",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%9D%BC%ED%83%88&wordMatch=Y&rowsperPage=100",
+          "sha256": "0851f1257a64ead5ce338f0a14c13f8b9949579cfe23dab13e509ce6f558fd05"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "일탈",
+          "hanja": "逸脫",
+          "definition": "정하여진 영역 또는 본디의 목적이나 길, 사상, 규범, 조직 따위로부터 빠져 벗어남.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=20202&viewType=confirm"
+        },
+        {
+          "reading": "일탈",
+          "hanja": "逸脫",
+          "definition": "사회적인 규범으로부터 벗어나는 일.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=51222&viewType=confirm"
+        },
+        {
+          "reading": "일탈",
+          "hanja": "逸脫",
+          "definition": "김윤아 작사·작곡의 대중가요. 1997년에 발표된 자우림의 앨범에 수록되어 있다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=1459669&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "초록",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%B4%88%EB%A1%9D&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "537369cd2ae1b432d6e425e9eeb53108dd8fd6f5c4c7e948a4d4485c72c0306c",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%B4%88%EB%A1%9D&wordMatch=Y&rowsperPage=100",
+          "sha256": "537369cd2ae1b432d6e425e9eeb53108dd8fd6f5c4c7e948a4d4485c72c0306c"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "초록",
+          "hanja": "抄錄",
+          "definition": "필요한 부분만을 뽑아서 적음. 또는 그런 기록.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=289677&viewType=confirm"
+        },
+        {
+          "reading": "초록",
+          "hanja": "草綠",
+          "definition": "파랑과 노랑의 중간색. 또는 그런 색의 물감.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=443588&viewType=confirm"
+        },
+        {
+          "reading": "초록",
+          "hanja": "草綠",
+          "definition": "파랑과 노랑의 중간 빛.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=594957&viewType=confirm"
+        },
+        {
+          "reading": "초록",
+          "hanja": "草綠",
+          "definition": "기본색의 하나. 먼셀 표색계에서는 2.5G 4/10에 해당한다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=447099&viewType=confirm"
+        },
+        {
+          "reading": "초록",
+          "hanja": "草綠",
+          "definition": "충청남도 서산시 고북면에 있는 이. 고북면의 동부에 위치해 있으며, 동쪽으로 연암산에 걸쳐 있다. 기포천이 북서로 흐르며, 남북으로 서해안 고속 도로가 지난다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=1478458&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "본말",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EB%B3%B8%EB%A7%90&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "97997701a16d329f4ec8a07346ca75bdcc9dc5d4a86900dd698f3a190c5bf313",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EB%B3%B8%EB%A7%90&wordMatch=Y&rowsperPage=100",
+          "sha256": "97997701a16d329f4ec8a07346ca75bdcc9dc5d4a86900dd698f3a190c5bf313"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "본말",
+          "hanja": "本末",
+          "definition": "사물이나 일의 처음과 끝.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=11503&viewType=confirm"
+        },
+        {
+          "reading": "본말",
+          "hanja": "本末",
+          "definition": "사물이나 일의 중요한 부분과 중요하지 않은 부분.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=42202&viewType=confirm"
+        },
+        {
+          "reading": "본말",
+          "hanja": "本末",
+          "definition": "대구광역시 달성군 유가읍에 있는 이. 유가읍의 남동부에 위치해 있다. 서쪽은 달창 저수지의 일부를 포함하고 있으며, 남쪽에 안삼 저수지가 자리하고 있다. 동쪽과 북쪽은 높은 산악 지형으로 이루어져 있으며, 저수지 주변에 농경지와 주거지가 형성되어 있다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=1448103&viewType=confirm"
+        },
+        {
+          "reading": "본말",
+          "hanja": "本말",
+          "definition": "줄지 않은 본디 음절의 말.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=570597&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "감천",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EA%B0%90%EC%B2%9C&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "dc472e3ebc579670f9e73a18528e4f770fc3b484d6b419f471bf95b4bf09ca01",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EA%B0%90%EC%B2%9C&wordMatch=Y&rowsperPage=100",
+          "sha256": "dc472e3ebc579670f9e73a18528e4f770fc3b484d6b419f471bf95b4bf09ca01"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "감천",
+          "hanja": "甘泉",
+          "definition": "물맛이 좋은 샘.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=339275&viewType=confirm"
+        },
+        {
+          "reading": "감천",
+          "hanja": "感天",
+          "definition": "정성이 지극하여 하늘이 감동함.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=449616&viewType=confirm"
+        },
+        {
+          "reading": "감천",
+          "hanja": "甘川",
+          "definition": "경상북도 김천시에 있는 면. 남북으로 흐르는 감천(甘川)을 따라 평야 지대가 펼쳐져 있어, 논농사가 이루어진다. 쌀, 배추, 당근, 방울토마토 등의 농산물이 생산된다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=1431246&viewType=confirm"
+        },
+        {
+          "reading": "감천",
+          "hanja": "甘川",
+          "definition": "경상남도 밀양시 부북면에 있는 이. 부북면의 남동부에 위치해 있으며, 대부분이 평지이다. 마을의 동쪽 경계를 따라 제대천이 흐르며, 58번 국도와 1080번 지방도가 지난다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=1482995&viewType=confirm"
+        },
+        {
+          "reading": "감천",
+          "hanja": "甘川",
+          "definition": "경상북도 영양군 영양읍에 있는 이. 영양읍의 남서부에 위치해 있다. 북쪽에 표대산이 솟아 있으며, 동쪽에 곳대봉, 서쪽에 무이산이 걸쳐 있다. 중앙부에 반변천이 굽이쳐 흐르며, 하천 주변으로 주거지와 농경지가 형성되어 있다. 31번 국도가 지나며, 국가유산으로 ‘오일도 생가(吳一島生家)’가 있다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=1495188&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "전도",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%A0%84%EB%8F%84&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "b50c221f7286153b8b20ec3494ee7eb4cc219e044f2b5ea0f22afd097f80031a",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%A0%84%EB%8F%84&wordMatch=Y&rowsperPage=100",
+          "sha256": "b50c221f7286153b8b20ec3494ee7eb4cc219e044f2b5ea0f22afd097f80031a"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [
+        {
+          "reading": "전도",
+          "hanja": "田堵",
+          "definition": "논밭과 집을 아울러 이르는 말.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=266357&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "全島",
+          "definition": "한 섬 전체.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=544072&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "全都",
+          "definition": "서울 전체.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=21805&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "全都",
+          "definition": "도시 전체.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=53386&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "全道",
+          "definition": "한 도의 전체.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=21806&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "全道",
+          "definition": "모든 도.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=53387&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "全圖",
+          "definition": "전체를 그린 그림이나 지도.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=266358&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "前途",
+          "definition": "앞으로 나아갈 길.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=21807&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "前途",
+          "definition": "앞으로의 가능성이나 전망.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=53388&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "前途",
+          "definition": "앞에 나 있는 길.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=66552&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "前渡",
+          "definition": "돈이나 물품 따위를 정하여진 몫만큼 먼저 내어줌.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=507336&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "前導",
+          "definition": "앞길을 인도함. 또는 앞서서 이끎.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=266575&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "剪刀",
+          "definition": "옷감, 종이, 머리털 따위를 자르는 기구. 날이 있는 두 개의 쇠를 교차시켜 가운데 사북을 박고, 지레의 원리를 이용하여 다리를 벌렸다 오므렸다 하여 자른다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=266576&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "奠都",
+          "definition": "나라의 서울을 정함.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=266577&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "甎道",
+          "definition": "흙을 구워 만든 벽돌로 깐 길.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=360352&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "錢刀",
+          "definition": "칼 모양의 돈.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=266579&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "轉倒",
+          "definition": "사람이나 물체가 넘어짐.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=516905&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "轉倒",
+          "definition": "거꾸로 되거나 거꾸로 함.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=520419&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "戰圖",
+          "definition": "작전을 세우거나 수행하는 데에 필요한 여러 가지 사항을 표시한 지도. 작전 지역의 지형, 적과 아군의 배치, 군사 시설의 위치, 적의 예상 이동로(移動路) 따위가 표시된다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=266578&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "傳道",
+          "definition": "도리를 세상에 널리 알림.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=21808&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "傳道",
+          "definition": "기독교의 교리를 세상에 널리 전하여 믿지 아니하는 사람에게 신앙을 가지도록 인도함. 또는 그런 일.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=53389&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "傳道",
+          "definition": "예로부터 전하여 오는 도리.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=66553&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "顚倒",
+          "definition": "엎어져 넘어지거나 넘어뜨림.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=21813&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "顚倒",
+          "definition": "차례, 위치, 이치, 가치관 따위가 뒤바뀌어 원래와 달리 거꾸로 됨. 또는 그렇게 만듦.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=53394&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "顚倒",
+          "definition": "번뇌 때문에 잘못된 생각을 갖거나 현실을 잘못 이해하는 일.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=66556&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "傳導",
+          "definition": "전하여 인도함.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=406269&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "傳導",
+          "definition": "열 또는 전기가 물체 속을 이동하는 일. 또는 그런 현상. 열전도, 전기 전도 따위가 있다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=409807&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "傳導",
+          "definition": "흥분이 신경이나 근육 따위의 같은 종류의 세포를 따라 전해지는 일. 또는 그런 현상.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=411297&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "錢島",
+          "definition": "경상남도 하동군 고전면에 있는 이. 고전면의 서남단에 위치해 있으며, 북쪽은 구릉성 산지이고 대부분이 평지이다. 서쪽 경계를 따라서는 섬진강이, 남동쪽 경계를 따라서는 주교천이 흐른다. 서남단 경계의 섬진강에는 조개섬이 자리하고, 월진 저수지 등 크고 작은 저수지가 있다. 19번 국도가 마을을 북서에서 남동으로 지난다.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=1482454&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "躔度",
+          "definition": "천체 운행의 각도나 횟수 따위의 크기를 나타내는 수.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=433611&viewType=confirm"
+        },
+        {
+          "reading": "전도",
+          "hanja": "電鍍",
+          "definition": "전기 분해의 원리를 이용하여 금속의 표면에 다른 금속의 얇은 막을 입히는 일.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=360351&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "회자",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%ED%9A%8C%EC%9E%90&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "47a9f0ae9d2419b775dd8c550de1efa7784960c405459f4de4e5f63395b5d7f4",
+      "supplemental_lookup_url": null,
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%ED%9A%8C%EC%9E%90&wordMatch=Y&rowsperPage=100",
+          "sha256": "47a9f0ae9d2419b775dd8c550de1efa7784960c405459f4de4e5f63395b5d7f4"
+        }
+      ],
+      "hanja_match": true,
+      "entries": [
+        {
+          "reading": "회자",
+          "hanja": "",
+          "definition": "‘효자’의 방언(강원, 전라, 충남, 함경).",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=968421&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "초록은 동색",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%B4%88%EB%A1%9D%EC%9D%80+%EB%8F%99%EC%83%89&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "e8570712a746a0e7ce520ad761047527e37eb14452dbfa0ab80c3e680dff93dc",
+      "supplemental_lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%B4%88%EB%A1%9D%EC%9D%80+%EB%8F%99%EC%83%89&wordMatch=Y&rowsperPage=100&dicType=2",
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%B4%88%EB%A1%9D%EC%9D%80+%EB%8F%99%EC%83%89&wordMatch=Y&rowsperPage=100",
+          "sha256": "e8570712a746a0e7ce520ad761047527e37eb14452dbfa0ab80c3e680dff93dc"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%B4%88%EB%A1%9D%EC%9D%80+%EB%8F%99%EC%83%89&wordMatch=N&rowsperPage=100",
+          "sha256": "a5785290f2765ddcbf099e7bb3c93c8fbe5490babc346c783d87d3ba71c6ba83"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%B4%88%EB%A1%9D%EC%9D%80+%EB%8F%99%EC%83%89&wordMatch=Y&rowsperPage=100&dicType=2",
+          "sha256": "0faba2661094235c58b16a5b2689cad54ef20fc59fd1ba1b4ebd3b6b86e31f6c"
+        }
+      ],
+      "hanja_match": true,
+      "entries": [
+        {
+          "reading": "초록은 동색",
+          "hanja": "",
+          "definition": "명칭은 다르나 따져 보면 한가지임을 비유적으로 이르는 말. <동의 속담> ‘그 속옷이 그 속옷이다’",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=615526&viewType=confirm"
+        },
+        {
+          "reading": "초록은 동색",
+          "hanja": "",
+          "definition": "풀색과 녹색은 같은 색이라는 뜻으로, 처지가 같은 사람들끼리 한패가 되는 경우를 비유적으로 이르는 말. <동의 속담> ‘그 속옷이 그 속옷이다’",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=615525&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "약방의 감초",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%95%BD%EB%B0%A9%EC%9D%98+%EA%B0%90%EC%B4%88&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "49d9675c368ae3b1c9fd99c35782c78bb7cf86a63bd80ad784b9b683153ae28e",
+      "supplemental_lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%95%BD%EB%B0%A9%EC%9D%98+%EA%B0%90%EC%B4%88&wordMatch=Y&rowsperPage=100&dicType=2",
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%95%BD%EB%B0%A9%EC%9D%98+%EA%B0%90%EC%B4%88&wordMatch=Y&rowsperPage=100",
+          "sha256": "49d9675c368ae3b1c9fd99c35782c78bb7cf86a63bd80ad784b9b683153ae28e"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%95%BD%EB%B0%A9%EC%9D%98+%EA%B0%90%EC%B4%88&wordMatch=N&rowsperPage=100",
+          "sha256": "46e233fb0056fc9495fc6db4887774379ddf0ec28181ba6044db405a2ca75df2"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%95%BD%EB%B0%A9%EC%9D%98+%EA%B0%90%EC%B4%88&wordMatch=Y&rowsperPage=100&dicType=2",
+          "sha256": "fc7c6b3b9c29ce92bc6ec6b14da32f9563aac02ff790814dcd40d6d3e4841ef2"
+        }
+      ],
+      "hanja_match": false,
+      "entries": [],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "지성이면 감천",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%A7%80%EC%84%B1%EC%9D%B4%EB%A9%B4+%EA%B0%90%EC%B2%9C&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "b9407a20dcf94e82743c163051cb7ba6426a74243c39285c5b2557fb17f3a398",
+      "supplemental_lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%A7%80%EC%84%B1%EC%9D%B4%EB%A9%B4+%EA%B0%90%EC%B2%9C&wordMatch=Y&rowsperPage=100&dicType=2",
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%A7%80%EC%84%B1%EC%9D%B4%EB%A9%B4+%EA%B0%90%EC%B2%9C&wordMatch=Y&rowsperPage=100",
+          "sha256": "b9407a20dcf94e82743c163051cb7ba6426a74243c39285c5b2557fb17f3a398"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%A7%80%EC%84%B1%EC%9D%B4%EB%A9%B4+%EA%B0%90%EC%B2%9C&wordMatch=N&rowsperPage=100",
+          "sha256": "0f3260aebfa9baa4c9d436aef36546e3bfb89bb09b2177c654b3b37682b110e9"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EC%A7%80%EC%84%B1%EC%9D%B4%EB%A9%B4+%EA%B0%90%EC%B2%9C&wordMatch=Y&rowsperPage=100&dicType=2",
+          "sha256": "d431c3fc9e1d0acdfe9635dd3e91a2e38397c319fff457e52220616cb83034df"
+        }
+      ],
+      "hanja_match": true,
+      "entries": [
+        {
+          "reading": "지성이면 감천",
+          "hanja": "",
+          "definition": "정성이 지극하면 하늘도 감동하게 된다는 뜻으로, 무슨 일에든 정성을 다하면 아주 어려운 일도 순조롭게 풀리어 좋은 결과를 맺는다는 말.",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=606108&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    },
+    {
+      "hanja": "",
+      "reading": "백 번 듣는 것이 한 번 보는 것만 못하다",
+      "current_meaning": "",
+      "lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EB%B0%B1+%EB%B2%88+%EB%93%A3%EB%8A%94+%EA%B2%83%EC%9D%B4+%ED%95%9C+%EB%B2%88+%EB%B3%B4%EB%8A%94+%EA%B2%83%EB%A7%8C+%EB%AA%BB%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100",
+      "fetch_status": "ok",
+      "page_sha256": "bebee8a76165a83304b1794a3ae822f81bd0d2d00dc4d30a8d9b0935027f7454",
+      "supplemental_lookup_url": "https://opendict.korean.go.kr/search/searchResult?query=%EB%B0%B1+%EB%B2%88+%EB%93%A3%EB%8A%94+%EA%B2%83%EC%9D%B4+%ED%95%9C+%EB%B2%88+%EB%B3%B4%EB%8A%94+%EA%B2%83%EB%A7%8C+%EB%AA%BB%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100&dicType=2",
+      "reference_pages": [
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EB%B0%B1+%EB%B2%88+%EB%93%A3%EB%8A%94+%EA%B2%83%EC%9D%B4+%ED%95%9C+%EB%B2%88+%EB%B3%B4%EB%8A%94+%EA%B2%83%EB%A7%8C+%EB%AA%BB%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100",
+          "sha256": "bebee8a76165a83304b1794a3ae822f81bd0d2d00dc4d30a8d9b0935027f7454"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EB%B0%B1+%EB%B2%88+%EB%93%A3%EB%8A%94+%EA%B2%83%EC%9D%B4+%ED%95%9C+%EB%B2%88+%EB%B3%B4%EB%8A%94+%EA%B2%83%EB%A7%8C+%EB%AA%BB%ED%95%98%EB%8B%A4&wordMatch=N&rowsperPage=100",
+          "sha256": "e3eb209619e0aa4b10146e308aefa48765c3d81c2f0d4b3dad42acaded53a702"
+        },
+        {
+          "url": "https://opendict.korean.go.kr/search/searchResult?query=%EB%B0%B1+%EB%B2%88+%EB%93%A3%EB%8A%94+%EA%B2%83%EC%9D%B4+%ED%95%9C+%EB%B2%88+%EB%B3%B4%EB%8A%94+%EA%B2%83%EB%A7%8C+%EB%AA%BB%ED%95%98%EB%8B%A4&wordMatch=Y&rowsperPage=100&dicType=2",
+          "sha256": "b6dd312db9cf0477ee2485afa67da0ab5a0bd84d2bf64a4b6a321676c9c3de38"
+        }
+      ],
+      "hanja_match": true,
+      "entries": [
+        {
+          "reading": "백 번 듣는 것이 한 번 보는 것만 못하다",
+          "hanja": "",
+          "definition": "듣기만 하는 것보다는 직접 보는 것이 확실하다는 말. <동의 속담> ‘듣는 것이 보는 것만 못하다’ ‘백문이 불여일견(不如一見)’ ‘열 번 듣는 것이 한 번 보는 것만 못하다’",
+          "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=610906&viewType=confirm"
+        }
+      ],
+      "review_status": "pending_human_comparison"
+    }
+  ]
+}

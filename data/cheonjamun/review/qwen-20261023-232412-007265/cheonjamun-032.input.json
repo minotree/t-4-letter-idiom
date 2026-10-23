@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-032",
+    "sequence": "32",
+    "hanja": "率賓歸王",
+    "reading": "솔빈귀왕",
+    "meaning": "모든 신하와 백성이 기꺼이 손님처럼 공경하며 어진 임금에게 귀의합니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-031",
+    "hanja": "遐邇壹體",
+    "meaning": "멀고 가까운 온 세상이 한마음 한뜻으로 하나가 됩니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "率(ᄃᆞ릴 솔) 賓(손 빈) 歸(도라갈 귀) 王(님금 왕)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [率賓歸王] 및 16세기 훈음, 사성 방점(率賓歸王) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "率(ᄃᆞ닐 졸) 賓(손 빙) 歸(갈 귀) 王(긔ᄌᆞ 왕)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [率賓歸王] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 率賓歸王 | 독음: 솔빈귀왕 | 번역: 멀고 가까운 곳이 하나가 되어 임금께 이끌려 따를 것입니다.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

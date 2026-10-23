@@ -1,0 +1,47 @@
+{
+  "row": {
+    "id": "cheonjamun-147",
+    "sequence": "147",
+    "hanja": "何遵約法",
+    "reading": "하준약법",
+    "meaning": "한나라의 승상 소하는 유방이 백성과 약속한 간소한 법 삼장(약법삼장)을 잘 준수하였습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-148",
+    "hanja": "韓弊煩刑",
+    "meaning": "한비자는 가혹하고 번잡한 형벌을 주장하다가 결국 그 형벌에 자신이 걸려 죽고 말았습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "何(엇디 하) 遵(조ᄎᆞᆯ 준) 約(언약 약) 法(법 법)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [何遵約法] 및 16세기 훈음, 사성 방점(何遵約法) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "何(엇디 하) 遵(준ᄒᆞᆯ 준) 約(긔약 약) 法(법ᄒᆞᆯ 법)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [何遵約法] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 何遵約法 | 독음: 하준약법 | 번역: 어찌 (한고조의) 약법을 두고 한비자의 낡고 번잡한 형벌을 따를 것인가",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}

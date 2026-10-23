@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-23",
+  "source_before_sha256": "913d0ea44242ce821f3b361199b953bb8ede83c808a4ea35bc4b22e6310728a1",
+  "source_after_sha256": "156dc218768679eae5213e618881370023f0205d91a4eb9b8eb98218b6f7914b",
+  "compared_rows": 38,
+  "retained_rows": 34,
+  "changed_rows": 4,
+  "changes": [
+    {
+      "before": {
+        "hanja": "渴而穿井",
+        "reading": "갈이천정",
+        "image_filename": "0016_갈이천정.webp",
+        "meaning": "목이 마른 뒤에 우물을 판다는 뜻으로 미리 준비하지 않음.",
+        "confirm": "",
+        "confirm_result": "",
+        "review_status": "검수완료",
+        "review_note": "한자·독음·뜻의 대응과 표현 검토",
+        "image_work_status": "기존 상태 유지"
+      },
+      "after": {
+        "hanja": "渴而穿井",
+        "reading": "갈이천정",
+        "image_filename": "0016_갈이천정.webp",
+        "meaning": "목이 마른 뒤에야 우물을 판다는 뜻으로, 미리 준비하지 않고 일이 닥친 뒤에야 서두름. 때를 놓친 뒤에는 서둘러도 소용없음을 이르기도 함.",
+        "confirm": "",
+        "confirm_result": "",
+        "review_status": "검수완료",
+        "review_note": "한자·독음·뜻의 대응과 표현 검토",
+        "image_work_status": "기존 상태 유지"
+      },
+      "reason": "사전 준비 부족뿐 아니라 일이 닥친 뒤에야 서두르는 상황과 늦은 대처의 한계를 명시한다.",
+      "sources": [
+        {
+          "url": "https://www.eduwill.net/pds/Cop/PDS_Board/A/2018%EB%85%84%20%EA%B2%BD%EC%B0%B0%201%EC%B0%A8%20%EA%B5%AD%EC%96%B4%20%EC%B4%9D%ED%8F%89%20%EB%B0%8F%20%ED%95%B4%EC%84%A4_%EC%86%A1%EC%9A%B4%ED%95%99%20%EA%B5%90%EC%88%98%EB%8B%9820180328145117.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.sisunnews.co.kr/news/articleView.html?idxno=146288",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "before": {
+        "hanja": "見危授命",
+        "reading": "견위수명",
+        "image_filename": "0045_견위수명.webp",
+        "meaning": "위태로운 일을 보면 목숨을 바칠 각오로 나아감.",
+        "confirm": "",
+        "confirm_result": "",
+        "review_status": "검수완료",
+        "review_note": "나라의 위기만으로 한정된 뜻을 넓힘",
+        "image_work_status": "기존 상태 유지"
+      },
+      "after": {
+        "hanja": "見危授命",
+        "reading": "견위수명",
+        "image_filename": "0045_견위수명.webp",
+        "meaning": "나라가 위태로울 때 자신의 목숨을 아끼지 않고 바침.",
+        "confirm": "",
+        "confirm_result": "",
+        "review_status": "검수완료",
+        "review_note": "나라의 위기만으로 한정된 뜻을 넓힘",
+        "image_work_status": "기존 상태 유지"
+      },
+      "reason": "단순히 위험한 일에 나선다는 표현보다 나라가 위태로울 때 목숨을 바친다는 관용적 의미를 명확히 한다.",
+      "sources": [
+        {
+          "url": "https://prn.hanja114.org/download?file=MjAyMeuFhOuPhCDtlZjrsJjquLAg7ZG466W064S3IO2VnOyekOyekOqyqeyLnO2XmCDsmKTtm4QxNeyLnCA06riJIOusuOygnCDrsI8g66qo67KU7KCV64u1LnBkZg%3D%3D&path=c3RvcmFnZS9leGFtUGRzLw%3D%3D",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://m.joongdo.co.kr/view.php?key=20070715000000266",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "before": {
+        "hanja": "其臭如蘭",
+        "reading": "기취여란",
+        "image_filename": "0127_기취여란.webp",
+        "meaning": "친구 사이의 우정이 매우 깊고 향기로운 난초와 같음.",
+        "confirm": "",
+        "confirm_result": "",
+        "review_status": "검수완료",
+        "review_note": "한자·독음·뜻의 대응과 표현 검토",
+        "image_work_status": "기존 상태 유지"
+      },
+      "after": {
+        "hanja": "其臭如蘭",
+        "reading": "기취여란",
+        "image_filename": "0127_기취여란.webp",
+        "meaning": "마음을 같이하는 이들의 말이 난초처럼 향기롭다는 뜻으로, 서로 뜻이 통하는 깊은 우정을 비유함.",
+        "confirm": "",
+        "confirm_result": "",
+        "review_status": "검수완료",
+        "review_note": "한자·독음·뜻의 대응과 표현 검토",
+        "image_work_status": "기존 상태 유지"
+      },
+      "reason": "其臭如蘭은 마음을 같이하는 말의 향기를 난초에 비유한다. 우정이라는 확장 뜻만 남기지 않고 원문에서 무엇을 비유하는지 명시한다.",
+      "sources": [
+        {
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20090903/2nd_han_hsj.pdf",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://m.baduk.or.kr/news/B01_view.asp?news_no=2220",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    },
+    {
+      "before": {
+        "hanja": "膾炙人口",
+        "reading": "회자인구",
+        "image_filename": "",
+        "meaning": "맛있는 음식처럼 사람들의 입에 자주 오르내리며 널리 알려짐.",
+        "confirm": "",
+        "confirm_result": "",
+        "review_status": "검수완료",
+        "review_note": "뜻 보완; 이미지 신규 제작·수정 보류",
+        "image_work_status": "보류"
+      },
+      "after": {
+        "hanja": "膾炙人口",
+        "reading": "회자인구",
+        "image_filename": "",
+        "meaning": "좋은 시나 글 등이 사람들의 입에 자주 오르내리며 칭찬을 받음.",
+        "confirm": "",
+        "confirm_result": "",
+        "review_status": "검수완료",
+        "review_note": "뜻 보완; 이미지 신규 제작·수정 보류",
+        "image_work_status": "보류"
+      },
+      "reason": "膾炙人口는 좋은 시문 등이 사람들의 입에 오르며 칭찬받는 긍정적 뉘앙스를 갖는다. 단순한 유명세라는 기존 풀이를 보완한다.",
+      "sources": [
+        {
+          "url": "https://www.kihasa.re.kr/api/kihasa/file/download?seq=19792",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.fnnews.com/news/201807231725189049",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        },
+        {
+          "url": "https://www.jejunews.com/news/articleView.html?idxno=2140238",
+          "basis": "공개 본문·검색 노출 본문 또는 앞선 사전 수집 자료를 대조 (2026-10-23)"
+        }
+      ]
+    }
+  ]
+}

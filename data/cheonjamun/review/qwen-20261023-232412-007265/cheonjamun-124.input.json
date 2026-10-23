@@ -1,0 +1,56 @@
+{
+  "row": {
+    "id": "cheonjamun-124",
+    "sequence": "124",
+    "hanja": "路俠槐卿",
+    "reading": "노협괴경",
+    "meaning": "거리에는 삼공을 상징하는 회화나무와 구경의 고관대작들이 길을 메우고 있습니다."
+  },
+  "couplet_partner": {
+    "id": "cheonjamun-123",
+    "hanja": "府羅將相",
+    "meaning": "관부에는 나라를 지키는 명장들과 국정을 이끄는 정승들이 줄지어 늘어서 있습니다."
+  },
+  "scope_note": "번역 발췌에는 두 구절 전체가 있을 수 있다. 이 행의 네 한자에 해당하는 뜻만 평가하라.",
+  "evidence": [
+    {
+      "source_id": "src-seokbong-1583",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "路°(길 로) 俠(ᄢᅵᆯ 협) 槐(괴화 괴) 卿(벼슬 경)",
+      "comparison_note": "석봉천자문 1583년 목판본 해서체 원문 [路俠槐卿] 및 16세기 훈음, 사성 방점(路°俠槐卿) 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-gwangju-1575",
+      "supports": [
+        "hanja"
+      ],
+      "excerpt": "路(길 로) 俠(길 협) 槐(누튀 괴) 卿(벼슬 경)",
+      "comparison_note": "광주판천자문 1575년 선조 8년 목판본 원문 [路俠槐卿] 및 16세기 훈음 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-wikisource-translation",
+      "supports": [
+        "hanja",
+        "reading",
+        "meaning"
+      ],
+      "excerpt": "원문: 路俠槐卿 | 독음: 노협괴경 | 번역: 각 부에 장군과 재상이 있어 고관이 즐비하여 길이 좁다.",
+      "comparison_note": "위키문헌 주흥사 사언고시 대조표에서 해당 구절의 정자 한자, 한글 독음, 4자/8자 대구 풀이 대조 확인.",
+      "access_level": "full_text"
+    },
+    {
+      "source_id": "src-korean-std-dict",
+      "supports": [
+        "reading"
+      ],
+      "excerpt": "제12항: 한자음 '라, 로, 루, 르'가 단어 첫머리에 올 적에는, 두음 법칙에 따라 '나, 노, 누, 느'로 적는다. (보기: 路 -> 노)",
+      "comparison_note": "구절 첫머리 '路'가 두음법칙에 따라 '노'로 실현됨을 증명함.",
+      "access_level": "full_text"
+    }
+  ],
+  "unresolved": []
+}
