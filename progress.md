@@ -1,5 +1,41 @@
 # 사자성어 학습 구현 진행표
 
+## 전체 UI 세션 명칭을 이음으로 통일 (2026-10-24)
+
+- 요청/변경: 한자·영어 `App.tsx`·`EnglishLearning.tsx`의 새로 시작 버튼·도움말·업데이트 안내에 있는 ‘세션’을 ‘이음’으로 변경. ‘새 세션으로 시작하기’는 ‘새 이음 시작하기’로 정리. 내부 함수·상수·저장 키는 유지. 요구사항에 UI 명칭 확정 기록.
+- 검증: `pnpm.cmd build:vercel` 통과(TypeScript 포함, 기존 영어 청크 경고), `git diff --check` 통과(LF→CRLF 안내 경고). `rg -n '세션' apps/web/src apps/web/public apps/web/index.html` 결과 없음(종료 코드 1: 미일치). 문구 변경으로 단위·브라우저 검사 재실행하지 않음, lint 명령 미등록.
+- 적용/남은 작업: 루트 dist 갱신. Git·실제 배포 미실행, 실제 기기 확인 대기. 개발 문서·과거 기록의 기술 용어는 기존 유지.
+
+## 영어 알파벳 버튼 후보 수 생략 (2026-10-24)
+
+- 요청/변경: 많은 후보 수로 영어 글자 선택 버튼이 복잡해 보여 개수 제거. `EnglishLearning.tsx` 버튼에는 알파벳만 표시하고 후보 없는 글자의 disabled·접근성 안내 유지. 후보 목록 상단 총개수 및 한자 버튼은 기존 유지.
+- 검증: `pnpm.cmd build:vercel` 통과(TypeScript 포함, 기존 영어 청크 경고), `git diff --check` 통과(LF→CRLF 안내 경고). 표시 변경으로 단위·브라우저 검사 재실행하지 않음.
+- 적용/남은 작업: 로컬 및 루트 dist 갱신 완료. Git·실제 배포 미실행, iPhone 확인 대기.
+
+## 한자·영어 현재 카드 상하 여백 축소 (2026-10-24)
+
+- 요청/변경: 첨부한 현재 문제 카드 상하 여백 축소 및 영어 동일 적용. `apps/web/src/styles.css`의 공통 idiom-card 패딩을 상단 25→16px·하단 23→14px로 변경. 좌우 20px·글자 크기 유지.
+- 검증: `pnpm.cmd build:vercel` 통과(TypeScript 포함, 기존 영어 청크 경고), `git diff --check` 통과(LF→CRLF 안내 경고). 여백 변경으로 단위·브라우저 검사 재실행하지 않음.
+- 적용/남은 작업: 로컬 및 루트 dist 갱신. Git·실제 배포 미실행, iPhone 양쪽 카드 확인 대기.
+
+## 아이콘 고리 확대 (2026-10-24)
+
+- 요청/변경: `apps/web/public/icon.svg` 고리 그룹을 중심 기준 1.25배 확대. 흰 배경·파랑/금색 유지. 192px·512px PNG 재렌더링, ICON-NOTES 갱신.
+- 검증: `node tmp/render-app-icons.mjs` 완료, 192px 시각 확인. `pnpm.cmd build:vercel` 통과(TypeScript 포함, 기존 영어 청크 경고), `git diff --check` 통과(LF→CRLF 안내 경고). 이미지 변경으로 단위·브라우저 검사 재실행하지 않음.
+- 적용/남은 작업: 루트 dist 갱신. Git·실제 배포 미실행, 설치 홈 화면 아이콘 확인 대기.
+
+## 영어 글꼴·글자 크기 한자 기준 적용 (2026-10-24)
+
+- 요청/변경: 영어의 현재 단어 카드·단어장 제목에 있던 전용 sans-serif/작은 크기 override를 제거하여 한자와 같은 Batang/Songti/serif 및 카드 기본 44px·모바일 38px, 단어장 제목 27px 적용(`styles.css`). 영어 이음 기록도 한자와 같은 Batang/serif 20px 적용. `EnglishLearning.tsx` 단어장 품사에 한자 독음과 동일한 book-reading 스타일 적용. 긴 영어 단어 줄바꿈 유지.
+- 검증: `pnpm.cmd build`, `pnpm.cmd build:vercel` 통과(TypeScript 포함, 기존 영어 청크 경고), `node scripts/check-browser.mjs` 32개 통과(모바일 넘침·후보 입력·10문제 종료 포함), `git diff --check` 통과(LF→CRLF 안내 경고). 스타일 변경으로 단위 테스트 재실행하지 않음, lint 명령 미등록.
+- 적용/남은 작업: 로컬 및 루트 dist 갱신. Git·배포 미실행, 실제 iPhone 글꼴·긴 단어 줄바꿈 확인 대기.
+
+## 한자 기준 영어 학습 내용·UI 일치 (2026-10-24)
+
+- 요청/변경: 한자 학습을 기준으로 양쪽 화면 내용·UI 정렬. `EnglishLearning.tsx`의 단계 제목·알파벳 후보 수·후보 없음·hints 박스·개수 배지·후보 번호·완주 설명·도움말·새 세션 확인/취소 추가. 영어 단어장 제목/소개·필터별 안내·학습완료 라벨·검색 placeholder·빈 상태·더 보기 개수 추가. `styles.css`에 영어 단어장 단어 단위 줄바꿈 적용. 영어 예문·품사·동의어·철자 판정·검색 범위·후보 40개 점진 표시 유지. 공유 UI 패키지 추가 없음.
+- 검증: `pnpm.cmd build`, `pnpm.cmd build:vercel` 통과(TypeScript 포함, 기존 영어 청크 경고). 브라우저 최초 기존 단어장 첫 book-note 가정으로 실패, 복수 안내에서 해당 문장을 찾도록 검사 보정 후 31개 통과. 새 영어 제목/라벨/검색 안내·세션 확인 취소 검사 추가, 최종 `node scripts/check-browser.mjs` 32개 통과. `git diff --check` 통과(LF→CRLF 안내 경고). 도메인 변경 없어 단위 테스트 재실행하지 않음, lint 명령 미등록.
+- 적용/남은 작업: 로컬 및 루트 dist 갱신. Git·배포 미실행, iPhone 설치 PWA에서 영어 후보·단어장·키보드 확인 대기.
+
 ## 아이콘 흰 배경 변경 (2026-10-24)
 
 - 요청/변경: 파란 고리가 초록 배경에서 잘 보이지 않아 아이콘 바탕을 흰색으로 변경. `apps/web/public/icon.svg` 배경 `#ffffff`, 심볼 색·형태 유지. 192px·512px PNG 재렌더링, `apps/web/ICON-NOTES.md` 갱신.

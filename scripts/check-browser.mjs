@@ -311,7 +311,7 @@ try {
   await evaluate(`Array.from(document.querySelectorAll('.book-tabs button')).find(el => el.textContent === '오답노트').click()`);
   await until(`Array.from(document.querySelectorAll('.book-reading')).some(el => el.textContent === '대기만성')`);
   assert.ok(await evaluate(`!Array.from(document.querySelectorAll('.book-reading')).some(el => el.textContent === '대언장어')`));
-  assert.ok(await evaluate(`document.querySelector('.book-note').textContent.includes('이전 방식의 기록 1개')`));
+  assert.ok(await evaluate(`Array.from(document.querySelectorAll('.idiom-book .book-note')).some(el => el.textContent.includes('이전 방식의 기록 1개'))`));
   assert.deepEqual(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:mistakes:v1')`)), ['大言壯語']);
   checks.push('대언장어에서 대기만성 선택·오답 대상 정확성·후보별 힌트 격리·이전 기록 보존/제외');
   assert.deepEqual(pageErrors, []);
@@ -438,6 +438,9 @@ try {
   assert.equal(await evaluate(`document.querySelector('.english-learning .english-journey-heading > span').textContent`), '이번 이음 10 / 10');
   await evaluate(`Array.from(document.querySelectorAll('.english-learning > .learning-tabs button')).find(el => el.textContent === '나의 단어장').click()`);
   await until(`!!document.querySelector('.english-learning .book-list > li')`);
+  assert.equal(await evaluate(`document.querySelector('#english-book-title').textContent`), '나의 영어 단어장');
+  assert.ok(await evaluate(`!!document.querySelector('.english-book .book-badge')`));
+  assert.equal(await evaluate(`document.querySelector('#english-search').placeholder`), '영어 단어 또는 뜻 검색');
   await evaluate(`document.querySelector('.english-learning .favorite-button').click()`);
   assert.ok(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:english:v1')`)).favorites.length === 1);
   assert.ok(await evaluate(`document.documentElement.scrollWidth <= innerWidth`));
@@ -451,6 +454,12 @@ try {
   assert.deepEqual(pageErrors, []);
   checks.push('영어 후보 정답 숨김·선택 후보 오답/힌트·10개 무중복 사슬·단어장 저장·390px·오프라인 복구');
   checks.push('영어 후보 선택 시 플로팅 입력·포커스·목록 스크롤 시 닫힘·재선택 및 후보 전환');
+  await evaluate(`document.querySelector('.english-learning .session-actions .text-button').click()`);
+  await until(`!!document.querySelector('.english-learning .restart-confirm')`);
+  await evaluate(`Array.from(document.querySelectorAll('.english-learning .restart-confirm button')).find(el => el.textContent === '계속 풀기').click()`);
+  await until(`!document.querySelector('.english-learning .restart-confirm')`);
+  assert.equal(await evaluate(`document.querySelector('.english-learning progress').value`), 0);
+  checks.push('영어 한자 기준 단어장 제목·상태 라벨·검색 안내·새 세션 확인 취소');
   for (const total of [1, 9, 99, 100, 123, 1000]) {
     await evaluate(`localStorage.setItem('idioms:web:english:completed-sessions:v1', '${total}')`);
     await cdp('Page.reload');

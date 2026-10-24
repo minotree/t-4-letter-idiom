@@ -341,7 +341,7 @@ export default function App() {
             <span className="eyebrow">나만의 배움 한 줄</span>
             <h2>{chain.length >= SESSION_LIMIT ? '10개의 한자성어를 이었어요!' : '이번 이음은 여기까지예요.'}</h2>
             <p>{chain.length >= SESSION_LIMIT ? '오늘 알게 된 말들이 다음 도전에 힘이 될 거예요.' : '같은 한자성어를 반복하지 않고 이어갈 후보가 더 없어요.'}</p>
-            <button className="primary" onClick={restart}>새 세션 시작하기 <span aria-hidden="true">↗</span></button>
+            <button className="primary" onClick={restart}>새 이음 시작하기 <span aria-hidden="true">↗</span></button>
           </div> : <>
             <div className="instruction"><h3>01 <span>이어갈 한 글자를 골라 주세요</span></h3><span>후보가 없는 글자는 쉬어 가요</span></div>
             <div className="characters">{[...current.reading].map((ch, index) => {
@@ -372,8 +372,8 @@ export default function App() {
           <p id="feedback" className="feedback" role="status">{finished ? `${chain.length}개의 한자성어를 정답으로 이었어요.` : message}</p>
         </section>
         <aside className="sidebar">
-          <section className="guide"><span className="eyebrow">이렇게 이어가요</span><p>선택한 한글 글자가 독음에 들어간 후보를 고르고<br />전체 독음을 입력하면 정답!</p><ul><li>한자는 달라도 같은 한글이면 이어져요.</li><li>한 세션은 최대 10문제예요.</li><li>같은 세션의 한자성어는 다시 나오지 않아요.</li><li>처음 만나는 한자성어를 먼저 보여드려요.</li><li>오답이면 독음 힌트가 하나씩 열려요.</li></ul></section>
-          <div className="session-actions">{confirmRestart ? <div className="restart-confirm"><p>지금 이음을 마치고 새로 시작할까요?</p><button onClick={restart}>새로 시작</button><button onClick={() => setConfirmRestart(false)}>계속 풀기</button></div> : <button className="text-button" onClick={() => setConfirmRestart(true)}>새 세션으로 시작하기 ↻</button>}</div>
+          <section className="guide"><span className="eyebrow">이렇게 이어가요</span><p>선택한 한글 글자가 독음에 들어간 후보를 고르고<br />전체 독음을 입력하면 정답!</p><ul><li>한자는 달라도 같은 한글이면 이어져요.</li><li>한 이음은 최대 10문제예요.</li><li>같은 이음의 한자성어는 다시 나오지 않아요.</li><li>처음 만나는 한자성어를 먼저 보여드려요.</li><li>오답이면 독음 힌트가 하나씩 열려요.</li></ul></section>
+          <div className="session-actions">{confirmRestart ? <div className="restart-confirm"><p>지금 이음을 마치고 새로 시작할까요?</p><button onClick={restart}>새로 시작</button><button onClick={() => setConfirmRestart(false)}>계속 풀기</button></div> : <button className="text-button" onClick={() => setConfirmRestart(true)}>새 이음 시작하기 ↻</button>}</div>
         </aside>
       </div>
       </div>
@@ -385,7 +385,7 @@ export default function App() {
       {warning && <p className="notice" role="alert">{warning}</p>}
       {sessionWarning && <p className="notice" role="alert">{sessionWarning}</p>}
       {offline && <p className="notice" role="status">오프라인이에요. 저장된 학습 자료로 계속할 수 있어요.</p>}
-      {update && <div className="notice">새 버전이 준비됐어요. 적용하면 현재 세션이 종료됩니다. <button onClick={() => applyUpdate(update)}>지금 업데이트</button></div>}
+      {update && <div className="notice">새 버전이 준비됐어요. 적용하면 현재 이음이 종료됩니다. <button onClick={() => applyUpdate(update)}>지금 업데이트</button></div>}
       <footer><span>{page === 'home' ? '모두의 이음 · 한자와 영어 학습' : page === 'english' ? `모두의 이음 · 영어 학습 ${englishSource.rows}개` : `모두의 이음 · 한자 학습 ${idioms.length}개`}</span><span>이전 학습 이력은 이 브라우저에 저장돼요. 진행 중인 이음은 새로고침하면 초기화돼요.</span></footer>
       <nav className="bottom-nav" aria-label="학습 선택"><a href="#home" aria-current={page === 'home' ? 'page' : undefined}><span aria-hidden="true">⌂</span>홈</a><a href={hanjaPage === 'book' ? '#idioms' : '#main'} aria-current={page === 'quiz' || page === 'book' ? 'page' : undefined}><span aria-hidden="true">字</span>한자 학습</a><a href="#english" aria-current={page === 'english' ? 'page' : undefined}><span aria-hidden="true">Aa</span>영어 학습</a></nav>
     </main>

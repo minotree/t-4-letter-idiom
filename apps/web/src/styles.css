@@ -63,6 +63,10 @@
 .idiom-book .book-note,
 .idiom-book .book-list p,
 .idiom-book .book-empty { word-break: keep-all; overflow-wrap: anywhere; }
+.english-book .book-description,
+.english-book .book-note,
+.english-book .book-list p,
+.english-book .book-empty { word-break: keep-all; overflow-wrap: anywhere; }
 .learning-shell .learning-tabs a,
 .learning-shell .learning-tabs button { font-size: 15px; }
 .learning-shell .book-tabs button { font-size: 13px; }
@@ -86,7 +90,7 @@
   .learning-tabs, .book-tabs { gap: 6px; margin: 14px 0 12px; }
   .learning-count { margin-top: 10px; }
 }
-.english-learning .idiom-card h2 { letter-spacing: 1px; font-family: inherit; font-size: 32px; }
+.english-learning .idiom-card h2 { overflow-wrap: anywhere; }
 .english-step { margin: 22px 0 12px; }
 .word-example { margin-top: 18px; padding-top: 14px; border-top: 1px solid #ffffff40; text-align: left; overflow-wrap: anywhere; }
 .word-example > span { font-size: 11px; opacity: .8; }
@@ -124,7 +128,7 @@
 .bridge-right { width: 44px; right: 100%; top: 50%; transform: translateY(-50%); flex-direction: column; }
 .bridge-left { width: 44px; left: 100%; top: 50%; transform: translateY(-50%); flex-direction: column; }
 .bridge-down { height: 48px; bottom: 100%; left: 50%; transform: translateX(-50%); }
-.english-learning .book-item-heading h2 { font-family: inherit; font-size: 23px; }
+.english-learning .english-chain > li > strong { font-family: "Batang", serif; font-size: 20px; }
 .content-source { display: inline-block; margin-top: 8px; padding: 2px 7px; border: 1px solid currentColor; border-radius: 5px; font-size: 11px; font-weight: 400; }
 .candidate-choice { display: flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; font-size: 13px; color: #2d6050; font-weight: 700; }
 .candidate-choice input { width: 20px; height: 20px; accent-color: #2d6050; }
@@ -327,7 +331,7 @@
                                                                         background:#173e35;
                                                                         color:#fff;
                                                                         border-radius:13px;
-                                                                        padding:25px 20px 23px;
+                                                                        padding:16px 20px 14px;
                                                                         background-image:radial-gradient(ellipse at top right,#37634e 0%,transparent 70%)}
                                                                         .card-caption{
                                                                           font-size:10px;

@@ -46,6 +46,7 @@ export default function EnglishLearning() {
   const [attempts, setAttempts] = useState<Record<string, number>>({});
   const [message, setMessage] = useState('이어갈 알파벳을 골라 주세요.');
   const [book, setBook] = useState(false);
+  const [confirmRestart, setConfirmRestart] = useState(false);
   const [filter, setFilter] = useState<keyof Records | 'all'>('all');
   const [query, setQuery] = useState('');
   const [limit, setLimit] = useState(40);
@@ -174,6 +175,8 @@ export default function EnglishLearning() {
     }
   }
   function restart() {
+    closeFloating();
+    setConfirmRestart(false);
     if (chain.length && !finished && !window.confirm('진행 중인 이음을 마치고 새로 시작할까요?')) return;
     sessionAwarded.current = false;
     setMeaningOpen(false);
@@ -199,7 +202,7 @@ export default function EnglishLearning() {
             {index > 0 && <span className={`english-chain-bridge ${vertical ? 'bridge-down' : column === 2 ? 'bridge-right' : 'bridge-left'}`} aria-label={`${chain[index - 1].letter}로 이어짐`}><span>{chain[index - 1].letter}</span><span aria-hidden="true">{vertical ? '↓' : column === 2 ? '→' : '←'}</span></span>}
             <span className={`chain-word-step${index > 0 ? ' chain-step-badge' : ''}`} style={index > 0 ? { backgroundColor: STEP_COLORS[index - 1], color: index <= 2 || index === SESSION_LIMIT ? '#243a36' : '#fff' } : undefined}>{index === 0 ? '시작' : `${index} / ${SESSION_LIMIT}`}</span>
             {index === SESSION_LIMIT && <span className="chain-complete-label">10개 이음 완성</span>}
-            <strong>{item.word}</strong><p>{item.meaning}</p>
+            <strong lang="en">{item.word}</strong><p>{item.meaning}</p>
           </li>;
         })}</ol>
       </section>}
@@ -207,26 +210,40 @@ export default function EnglishLearning() {
         {current.synonym.trim() && <div className="word-example word-synonyms" aria-label="동의어"><span>동의어</span><p>{current.synonym}</p></div>}
         {(current.example || current.exampleMeaning) && <div className="word-example" aria-label="예문"><div className="example-heading"><span>예문</span>{current.exampleMeaning && <button type="button" className="meaning-toggle" aria-expanded={translationOpen} aria-controls="english-example-translation" onClick={() => setTranslationOpen(value => !value)}>{translationOpen ? '해석 접기' : '해석 보기'} <span aria-hidden="true">ⓘ</span></button>}</div>{current.example && <p lang="en">{current.example}</p>}{current.exampleMeaning && <p id="english-example-translation" hidden={!translationOpen}>{current.exampleMeaning}</p>}</div>}
       </div>
-      {finished ? <div className="summary"><h2>{chain.length === SESSION_LIMIT ? '10개 단어를 이었어요!' : '이어갈 후보가 더 없어요.'}</h2><button className="primary" onClick={restart}>새 세션 시작</button></div> : <>
-        <h3 className="english-step">01 알파벳을 골라 주세요</h3>
-        <div className="characters">{englishLetters(current).map((ch, index) => <button key={`${index}-${ch}`} aria-pressed={letter === ch} disabled={!englishCandidates(words, ch, used, history).length} onClick={() => choose(ch)}><strong>{ch}</strong></button>)}</div>
-        <h3 className="english-step">02 풀 후보를 선택하세요 {letter && `· ${candidates.length}개`}</h3>
-        {!letter && <p className="empty">알파벳을 고르면 후보가 나타나요.</p>}
+      {finished ? <div className="summary"><span className="eyebrow">나만의 배움 한 줄</span><h2>{chain.length === SESSION_LIMIT ? '10개 단어를 이었어요!' : '이번 이음은 여기까지예요.'}</h2><p>{chain.length === SESSION_LIMIT ? '오늘 알게 된 단어들이 다음 배움의 시작이 될 거예요.' : '같은 단어를 반복하지 않고 이어갈 후보가 더 없어요.'}</p><button className="primary" onClick={restart}>새 이음 시작하기 <span aria-hidden="true">↗</span></button></div> : <>
+        <div className="instruction"><h3>01 <span>이어갈 알파벳을 골라 주세요</span></h3><span>후보가 없는 글자는 쉬어 가요</span></div>
+        <div className="characters">{englishLetters(current).map((ch, index) => {
+          const count = englishCandidates(words, ch, used, history).length;
+          return <button key={`${index}-${ch}`} aria-label={count ? ch : `${ch}, 후보 없음`} aria-pressed={letter === ch} disabled={!count} onClick={() => choose(ch)}><strong>{ch}</strong></button>;
+        })}</div>
+        <section className="hints" aria-label="영어 정답 후보 힌트">
+        <div className="hint-heading"><h3>02 <span>풀고 싶은 영어 단어를 선택해 주세요</span></h3>{letter && <span className="pill">{candidates.length}개 후보</span>}</div>
+        {!letter && <p className="empty">위에서 알파벳을 고르면<br />그 글자가 들어간 영어 단어의 힌트가 나타나요.</p>}
+        {letter && <p className="hint-description">‘<b>{letter}</b>’가 들어가는 후보를 선택한 뒤, 그 후보의 영어 단어를 입력하세요.</p>}
         <ol className="candidate-list english-candidates" onWheel={closeFloating} onTouchMove={closeFloating} onScroll={() => { if (!opening.current) closeFloating(); }}>{candidates.slice(0, limit).map((item, index) => <li key={item.id} className={targetId === item.id ? 'selected-candidate' : ''} onClick={event => { if ((event.target as HTMLElement).tagName === 'LABEL') return; selectCandidate(item, event.currentTarget.querySelector('input')!); }}>
-          <label className="candidate-choice english-candidate-choice"><input type="radio" name="english-candidate" value={item.id} aria-label={`후보 ${index + 1} 선택`} checked={targetId === item.id} onChange={() => {}} /><span className="candidate-length">{englishLength(item)}글자</span>{item.synonym.trim() && <span className="candidate-synonym"><span>동의어: </span><span className="candidate-synonym-value">{item.synonym}</span></span>}</label>
+          <label className="candidate-choice english-candidate-choice"><input type="radio" name="english-candidate" value={item.id} aria-label={`후보 ${index + 1} 선택`} checked={targetId === item.id} onChange={() => {}} /><span className="candidate-number">{String(index + 1).padStart(2, '0')}</span><span className="candidate-length">{englishLength(item)}글자</span>{item.synonym.trim() && <span className="candidate-synonym"><span>동의어: </span><span className="candidate-synonym-value">{item.synonym}</span></span>}</label>
           <p>{item.meaning}</p>{targetId === item.id && !!attempts[item.id] && <span className="reading-hint">철자 힌트 · {englishHint(item, letter, attempts[item.id])}</span>}
         </li>)}</ol>
         {candidates.length > limit && <button className="book-more" onClick={() => setLimit(value => value + 40)}>후보 40개 더 보기</button>}
+        </section>
         <form onSubmit={submit} className={`answer-form${floating ? ' floating-answer' : ''}`} style={floating ? { top: floating.top, left: floating.left, width: floating.width, maxHeight: floating.maxHeight } : undefined} onKeyDown={event => { if (event.key === 'Escape') closeFloating(); }}><div className="floating-answer-heading"><label htmlFor="english-answer">03 {selected ? `후보 ${candidates.indexOf(selected) + 1}의 영어 단어` : '후보를 먼저 선택해 주세요'}</label>{floating && <button type="button" className="floating-close" onClick={closeFloating} aria-label="입력창 닫기">×</button>}</div><div className="input-row"><input ref={input} id="english-answer" value={answer} onChange={event => setAnswer(event.target.value)} disabled={!selected} autoComplete="off" autoCapitalize="none" spellCheck={false} aria-describedby={floating ? 'english-floating-feedback' : 'english-feedback'} placeholder="영어 단어 입력" /><button className="primary" disabled={!selected}>확인</button></div>{floating && <p id="english-floating-feedback" role="status">{selected && attempts[selected.id] ? `철자 힌트 · ${englishHint(selected, letter, attempts[selected.id])}` : '후보 목록을 스크롤하면 입력창이 닫혀요.'}</p>}</form>
       </>}
-      <p id="english-feedback" className="feedback" role="status">{message}</p><button className="text-button" onClick={restart}>새 세션 시작하기 ↻</button>
+      <p id="english-feedback" className="feedback" role="status">{finished ? `${chain.length}개의 영어 단어를 정답으로 이었어요.` : message}</p>
+      <aside className="sidebar">
+        <section className="guide"><span className="eyebrow">이렇게 이어가요</span><p>선택한 알파벳이 들어간 후보를 고르고<br />전체 영어 단어를 입력하면 정답!</p><ul><li>대소문자는 구분하지 않아요.</li><li>한 이음은 최대 {SESSION_LIMIT}문제예요.</li><li>같은 이음의 단어는 다시 나오지 않아요.</li><li>처음 만나는 단어를 먼저 보여드려요.</li><li>오답이면 철자 힌트가 하나씩 열려요.</li></ul></section>
+        <div className="session-actions">{confirmRestart ? <div className="restart-confirm"><p>지금 이음을 마치고 새로 시작할까요?</p><button onClick={restart}>새로 시작</button><button onClick={() => setConfirmRestart(false)}>계속 풀기</button></div> : <button className="text-button" onClick={() => { closeFloating(); setConfirmRestart(true); }}>새 이음 시작하기 ↻</button>}</div>
+      </aside>
     </div>
-    <div hidden={!book}>
-      <div className="book-tabs">{([['all', '전체'], ['favorites', '즐겨찾기'], ['completed', '학습완료'], ['mistakes', '오답노트']] as const).map(([value, label]) => <button key={value} aria-pressed={filter === value} onClick={() => { setFilter(value); setLimit(40); }}>{label}</button>)}</div>
-      <label htmlFor="english-search">단어 또는 뜻 검색</label><input className="book-search-input" id="english-search" type="search" value={query} onChange={event => { setQuery(event.target.value); setLimit(40); }} />
-      <p className="book-result">{listed.length}개 단어</p><ul className="book-list">{listed.slice(0, limit).map(item => <li key={item.id}><div className="book-item-heading"><h2>{item.word}</h2><button className="favorite-button" aria-label={`${item.word} 즐겨찾기`} aria-pressed={records.favorites.includes(item.id)} onClick={() => save({ ...records, favorites: records.favorites.includes(item.id) ? records.favorites.filter(id => id !== item.id) : [...records.favorites, item.id] })}>{records.favorites.includes(item.id) ? '★' : '☆'}</button></div><strong>{item.partOfSpeech}</strong><p>{item.meaning}</p>{item.synonym.trim() && <p className="book-synonyms">동의어 · {item.synonym}</p>}<p className="book-note">{item.example}<br />{item.exampleMeaning}</p>{records.mistakes.includes(item.id) && <span className="book-badge">오답 복습</span>}</li>)}</ul>
-      {!listed.length && <p className="book-empty">해당하는 단어가 없어요.</p>}{listed.length > limit && <button className="book-more" onClick={() => setLimit(value => value + 40)}>40개 더 보기</button>}
-    </div>
+    <section className="english-book" hidden={!book} aria-labelledby="english-book-title">
+      <div className="book-heading"><div><span className="eyebrow">한 글자씩 쌓이는 배움</span><h1 id="english-book-title">나의 영어 단어장</h1></div><span>전체 {words.length}개</span></div>
+      <p className="book-description">영어 단어와 뜻을 살펴보고, 다시 보고 싶은 단어를 모아 보세요.</p>
+      <div className="book-tabs" role="group" aria-label="영어 단어장 분류">{([['all', '전체'], ['favorites', '즐겨찾기'], ['completed', '학습완료'], ['mistakes', '오답노트']] as const).map(([value, label]) => <button key={value} aria-pressed={filter === value} onClick={() => { setFilter(value); setLimit(40); }}>{label}</button>)}</div>
+      <label className="book-search" htmlFor="english-search">영어 단어 검색</label><input className="book-search-input" id="english-search" type="search" placeholder="영어 단어 또는 뜻 검색" value={query} onChange={event => { setQuery(event.target.value); setLimit(40); }} />
+      {filter === 'completed' && <p className="book-note">퀴즈에서 직접 정답을 맞힌 영어 단어예요.</p>}
+      {filter === 'mistakes' && <p className="book-note">선택한 후보의 철자를 틀렸던 영어 단어예요. 정답을 맞힌 뒤에도 복습할 수 있도록 남겨 두어요.</p>}
+      <p className="book-result">{listed.length}개 단어</p><ul className="book-list">{listed.slice(0, limit).map(item => <li key={item.id}><div className="book-item-heading"><h2>{item.word}</h2><button className="favorite-button" aria-label={`${item.word} 즐겨찾기`} aria-pressed={records.favorites.includes(item.id)} onClick={() => save({ ...records, favorites: records.favorites.includes(item.id) ? records.favorites.filter(id => id !== item.id) : [...records.favorites, item.id] })}>{records.favorites.includes(item.id) ? '★' : '☆'}</button></div><strong className="book-reading">{item.partOfSpeech}</strong><p>{item.meaning}</p>{item.synonym.trim() && <p className="book-synonyms">동의어 · {item.synonym}</p>}<p className="book-note">{item.example}<br />{item.exampleMeaning}</p>{records.completed.includes(item.id) && <span className="book-badge">학습완료</span>}{records.mistakes.includes(item.id) && <span className="book-badge">오답 복습</span>}</li>)}</ul>
+      {!listed.length && <p className="book-empty">{query ? '검색 결과가 없어요. 다른 단어나 뜻으로 찾아보세요.' : filter === 'favorites' ? '별표를 눌러 다시 보고 싶은 영어 단어를 담아 보세요.' : filter === 'completed' ? '퀴즈에서 정답을 맞히면 여기에 쌓여요.' : '아직 기록된 오답이 없어요.'}</p>}{listed.length > limit && <button className="book-more" onClick={() => setLimit(value => value + 40)}>40개 더 보기 ({Math.min(limit, listed.length)} / {listed.length})</button>}
+    </section>
     {warning && <p className="notice" role="alert">{warning}</p>}
     {sessionWarning && <p className="notice" role="alert">{sessionWarning}</p>}
   </section>;
