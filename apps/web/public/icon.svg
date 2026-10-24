@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
   <title>모두의 이음</title>
-  <rect width="256" height="256" fill="#214e3d"/>
+  <rect width="256" height="256" fill="#ffffff"/>
   <g fill="none" stroke-width="17" stroke-linecap="round" stroke-linejoin="round">
     <path d="M137 77C127 75 118 82 109 91L88 112C76 124 78 141 90 149C101 157 113 154 123 145L145 123" stroke="#123566"/>
     <path d="M117 106L133 90C145 78 162 78 173 89C184 100 181 116 170 127L148 149C142 155 136 159 130 159" stroke="#f4ad3c"/>

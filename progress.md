@@ -1,5 +1,11 @@
 # 사자성어 학습 구현 진행표
 
+## 아이콘 흰 배경 변경 (2026-10-24)
+
+- 요청/변경: 파란 고리가 초록 배경에서 잘 보이지 않아 아이콘 바탕을 흰색으로 변경. `apps/web/public/icon.svg` 배경 `#ffffff`, 심볼 색·형태 유지. 192px·512px PNG 재렌더링, `apps/web/ICON-NOTES.md` 갱신.
+- 검증: `node tmp/render-app-icons.mjs` 완료, 192px 아이콘 시각 확인. `pnpm.cmd build:vercel` 통과(TypeScript 포함, 기존 영어 청크 경고), `git diff --check` 통과(LF→CRLF 안내 경고). 이미지 변경으로 단위·브라우저 검사 재실행하지 않음.
+- 적용/남은 작업: 루트 dist 갱신 완료. Git·배포 미실행, 실제 홈 화면 아이콘 갱신 확인 대기.
+
 ## 모두의 이음 이름 확정·아이콘 교체 (2026-10-24)
 
 - 요청/변경: 앱 이름 ‘모두의 이음’ 확정. 기존 manifest·화면 이름 일치 확인, AGENTS·요구사항 확정 표시 갱신. 사용자 첨부 파랑/금색 연결 심볼을 기존 `apps/web/public/icon.svg` 형식의 경로로 재현하고 초록 배경 `#214e3d` 적용. 원본 픽셀 추출이 아닌 벡터 재현이며 텍스트·워터마크 제외. `icon-192.png`·`icon-512.png`를 Chromium canvas로 렌더링. `apps/web/ICON-NOTES.md`에 제작 경위 기록. 생성형 이미지 API 사용 없음.
