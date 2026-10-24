@@ -13,6 +13,9 @@
 .meaning-toggle:focus-visible { outline: 2px solid #ffdc8b; outline-offset: 3px; }
 .home-screen { max-width: 760px; margin: 0 auto; }
 .intro.home-intro { padding: 42px 0 30px; }
+.home-intro > .eyebrow { font-size: 12px; }
+.intro.home-intro p { font-size: 15px; }
+.home-page .brand span { font-size: 13px; max-width: none; white-space: nowrap; }
 .home-courses { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .home-course { display: block; padding: 28px; color: inherit; border-radius: 20px; }
 .home-course:hover { border-color: #6d967e; }
@@ -20,31 +23,69 @@
 .home-symbol { display: grid; place-items: center; width: 58px; height: 58px; margin-bottom: 24px; border-radius: 16px; background: #eaf2e7; color: #2d6050; font-size: 30px; font-weight: 700; }
 .home-course-english .home-symbol { background: #f5eedc; color: #846329; }
 .home-course h2 { margin: 8px 0 10px; font-size: 25px; }
-.home-course p { color: #61736a; font-size: 14px; }
-.home-course-action { display: flex; justify-content: space-between; gap: 8px; margin-top: 28px; padding-top: 18px; border-top: 1px solid #e7ece4; color: #2d6050; font-weight: 700; font-size: 13px; }
+.home-course > .eyebrow { font-size: 13px; }
+.home-course p { color: #61736a; font-size: 15px; }
+.home-course-action { display: flex; justify-content: space-between; gap: 8px; margin-top: 28px; padding-top: 18px; border-top: 1px solid #e7ece4; color: #2d6050; font-weight: 700; font-size: 15px; }
 .home-guide { margin: 30px 0; padding: 0 4px; }
 .home-guide h2 { font-size: 18px; }
-.home-guide ol { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 0; list-style: none; font-size: 13px; margin: 16px 0; }
+.home-guide ol { display: flex; flex-wrap: wrap; gap: 6px 24px; padding: 0; list-style: none; font-size: 13px; margin: 10px 0; }
 .home-guide strong { color: #568667; margin-right: 6px; }
-.home-guide p { color: #61736a; font-size: 12px; }
+.home-guide p { color: #61736a; font-size: 13px; line-height: 1.55; }
+.home-page footer { font-size: 12px; line-height: 1.55; word-break: keep-all; overflow-wrap: anywhere; }
 @media (max-width: 540px) {
-  .home-courses { grid-template-columns: 1fr; gap: 14px; }
-  .home-course { padding: 22px; }
-  .home-symbol { float: right; margin: 0 0 12px 12px; }
+  .home-page .page-header { min-height: 56px; gap: 8px; }
+  .home-page .brand span { font-size: 12px; }
+  .home-page .edition { display: none; }
+  .intro.home-intro { padding: 12px 0 10px; }
+  .intro.home-intro h1 { font-size: 28px; line-height: 1.3; margin: 8px 0 10px; }
+  .intro.home-intro p { font-size: 13px; line-height: 1.6; }
+  .home-courses { grid-template-columns: 1fr; gap: 12px; }
+  .home-course { padding: 16px 18px; }
+  .home-course h2 { font-size: 22px; margin: 4px 0 6px; }
+  .home-course p { font-size: 15px; line-height: 1.55; }
+  .home-course-action { margin-top: 14px; padding-top: 10px; }
+  .home-symbol { float: right; width: 48px; height: 48px; font-size: 26px; border-radius: 13px; margin: 0 0 8px 12px; }
+  .home-guide { margin: 22px 0; }
   .home-guide ol { display: grid; }
   .brand span { max-width: 155px; }
 }
 .learning-shell { max-width: 760px; margin: 32px auto; padding: 28px; }
 .intro.learning-intro { max-width: 760px; margin: 0 auto; padding: 32px 0 4px; }
+.learning-intro > .eyebrow { font-size: 12px; }
+.intro.learning-intro p { font-size: 15px; }
+.app:not(.home-page) .brand span { font-size: 13px; }
+.app:not(.home-page) footer { font-size: 12px; line-height: 1.55; word-break: keep-all; overflow-wrap: anywhere; }
+.learning-shell .english-word-total,
+.learning-shell .session-rank-count,
+.learning-shell .session-rank-empty { font-size: 13px; }
+.learning-shell .book-description { font-size: 15px; }
+.idiom-book .book-description,
+.idiom-book .book-note,
+.idiom-book .book-list p,
+.idiom-book .book-empty { word-break: keep-all; overflow-wrap: anywhere; }
+.learning-shell .learning-tabs a,
+.learning-shell .learning-tabs button { font-size: 15px; }
+.learning-shell .book-tabs button { font-size: 13px; }
 .learning-shell .workspace { display: block; }
 .learning-shell .game { padding: 0; }
 .learning-shell .idiom-book { margin: 0; padding: 0; border: 0; box-shadow: none; }
 .learning-count { margin: 18px 0 0; font-weight: 700; }
 .learning-tabs { display: flex; gap: 8px; margin: 26px 0 22px; }
 .learning-tabs[hidden] { display: none; }
-.learning-tabs a, .learning-tabs button { flex: 1; border: 0; text-align: center; padding: 11px 4px; border-radius: 9px; background: #eef4ed; color: #426b52; font-size: 13px; font-weight: 700; min-height: 44px; }
-.learning-tabs a[aria-current="page"], .learning-tabs button[aria-pressed="true"] { color: white; background: #2d6050; }
+.learning-tabs a, .learning-tabs button { flex: 1; border: 0; text-align: center; padding: 11px 4px; border-radius: 9px; background: #eef4ed; color: #2d6050; font-size: 13px; font-weight: 700; min-height: 44px; }
+.learning-tabs a[aria-current="page"], .learning-tabs button[aria-pressed="true"] { color: white; background: #2d6050; font-weight: 800; }
 @media (max-width: 480px) { .learning-shell { padding: 20px 16px; margin: 20px auto; } }
+@media (max-width: 540px) {
+  .app .page-header { min-height: 56px; gap: 8px; }
+  .app .edition { display: none; }
+  .intro.learning-intro { padding: 12px 0 10px; }
+  .intro.learning-intro h1 { font-size: 28px; line-height: 1.3; margin: 8px 0 10px; }
+  .intro.learning-intro p { font-size: 13px; line-height: 1.6; }
+  .app:not(.home-page) .brand span { font-size: 12px; }
+  .learning-shell { margin: 0 auto 16px; padding: 16px 18px; }
+  .learning-tabs, .book-tabs { gap: 6px; margin: 14px 0 12px; }
+  .learning-count { margin-top: 10px; }
+}
 .english-learning .idiom-card h2 { letter-spacing: 1px; font-family: inherit; font-size: 32px; }
 .english-step { margin: 22px 0 12px; }
 .word-example { margin-top: 18px; padding-top: 14px; border-top: 1px solid #ffffff40; text-align: left; overflow-wrap: anywhere; }
@@ -110,8 +151,8 @@
 .book-heading > span { font-size: 12px; color: #748078; white-space: nowrap; }
 .book-description { margin-top: 12px; color: #748078; font-size: 13px; }
 .book-tabs { display: flex; gap: 8px; margin: 26px 0 22px; }
-.book-tabs button { flex: 1; border: 0; border-radius: 9px; background: #eef4ed; color: #426b52; padding: 11px 4px; font-size: 12px; font-weight: 700; }
-.book-tabs button[aria-pressed="true"] { color: white; background: #2d6050; }
+.book-tabs button { flex: 1; border: 0; border-radius: 9px; background: #eef4ed; color: #2d6050; padding: 11px 4px; font-size: 12px; font-weight: 700; }
+.book-tabs button[aria-pressed="true"] { color: white; background: #2d6050; font-weight: 800; }
 .book-search { display: block; font-size: 12px; font-weight: 700; margin-bottom: 7px; }
 .book-search-input { width: 100%; min-width: 0; border: 1px solid #dce6dc; background: #f8faf6; border-radius: 12px; padding: 14px; color: #243a36; }
 .book-note, .book-result { margin-top: 14px; color: #748078; font-size: 12px; }
@@ -126,7 +167,7 @@
 .book-empty { padding: 46px 10px; text-align: center; color: #748078; }
 .book-more { display: block; width: 100%; border: 1px solid #dce6dc; background: #f8faf6; border-radius: 10px; padding: 12px; margin-top: 20px; color: #426b52; }
 .bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: min(100%, 760px); display: flex; background: #fff; border: 1px solid #dce6dc; border-radius: 18px 18px 0 0; padding: 7px 12px calc(7px + env(safe-area-inset-bottom)); z-index: 10; box-shadow: 0 -4px 24px #1d3b2510; }
-.bottom-nav a { flex: 1; display: grid; justify-items: center; padding: 5px; border-radius: 10px; color: #748078; font-size: 12px; }
+.bottom-nav a { flex: 1; display: grid; justify-items: center; padding: 5px; border-radius: 10px; color: #53665c; font-size: 12px; font-weight: 600; }
 .bottom-nav a > span { font-size: 22px; line-height: 1.2; }
 .bottom-nav a[aria-current="page"] { background: #eef4ed; color: #2d6050; font-weight: 800; }
 @media (max-width: 480px) {

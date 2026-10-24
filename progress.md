@@ -1,4 +1,125 @@
 # 사자성어 학습 구현 진행표
+
+## Vercel 배포본 루트 dist 생성·인수인계 (2026-10-24)
+
+- 요청/승인 범위: 최신 수정본의 Vercel 배포 준비. Git 작업·실제 배포는 사용자 담당이며 에이전트가 수행하지 않음.
+- 변경: `package.json`에 `build:vercel` 추가, `vercel.json`의 Build Command 연결. `apps/web/vite.config.ts`의 vercel 모드에서 `../../dist`로 출력하여 저장소 루트 `dist`와 `outputDirectory:dist` 일치. 기존 로컬 build/preview 경로 `apps/web/dist` 유지. `docs/deploy-vercel.md`에 Root Directory `.`·명령·출력 경로와 새 빌드의 이전 산출물 정리 안내 반영. 앞선 화면·키보드·오답 라벨·줄바꿈 변경 포함.
+- 검증: Node v24.22.0 / pnpm10.34.7 확인. `pnpm.cmd build:vercel`, `pnpm.cmd typecheck`, `pnpm.cmd test` 17개 통과. Node assert로 루트 dist 필수 파일·Vercel 명령/출력 경로·CSV/env 제외·로컬 빌드와 9개 파일 바이트 일치 확인. `node scripts/check-browser.mjs` 27개 통과(기존 4173 로컬 preview 대상, 루트 dist와 바이트 동일 확인). 기존 영어 청크 크기 경고 유지. `git diff --check` 통과(LF→CRLF 안내 경고). lint 명령 미등록.
+- 산출물/적용: 루트 `dist/` 생성 완료(Git 제외 대상). Vercel은 사용자가 소스 push 후 `pnpm run build:vercel`로 재생성. 새 패키지 의존성·lockfile 변경 없음. 커밋·푸시·업로드·배포 미실행.
+- 남은 작업: 사용자가 기존 Vercel 프로젝트의 Root Directory가 저장소 루트인지 확인 후 Git 반영·배포. 실제 iPhone 키보드·PWA 갱신·설치/오프라인 검증 대기. 현재 브라우저 통과를 실제 iOS 검증으로 간주하지 않음.
+
+## 한자 단어장 문장 줄바꿈 개선 (2026-10-24)
+
+- 요청/변경: 첨부한 한자 단어장의 ‘보세요.’가 중간에서 끊어지는 현상 수정. `apps/web/src/styles.css`에서 한자 단어장 안내·뜻·추가 안내·빈 목록 문장에 `word-break:keep-all; overflow-wrap:anywhere` 적용. 단어 단위 줄바꿈을 우선하고 영역보다 긴 단일 문자열은 넘침 방지. 영어 확대 적용은 별도 확인 전 보류.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 경고), `git diff --check` 통과(LF→CRLF 안내 경고). CSS 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포·실제 iPhone 확인 대기.
+
+## 한자·영어 오답 복습 라벨 일치 (2026-10-24)
+
+- 요청/변경: 양쪽 오답 항목에 ‘오답 복습’ 라벨 표시. 한자는 `IdiomBook.tsx`에 기존 구현을 확인했고, `apps/web/src/EnglishLearning.tsx`에 오답 기록이 있는 단어의 라벨을 동일한 `book-badge`로 추가. 오답노트 외 목록에서도 오답 기록이 있으면 표시하며 정답 후에도 보존된 오답 기록 기준 유지.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 경고), `git diff --check` 통과(LF→CRLF 안내 경고). 표시 변경으로 단위 테스트 추가·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포·실제 기기 확인 대기.
+
+## 한자 정답 입력창 키보드 가림 보정 (2026-10-24)
+
+- 요청/문제: iPhone 홈 화면 실행에서 후보 선택 후 입력창이 키보드·입력 보조 바에 가려짐. 선택 후보는 키보드 위, 입력창은 후보 위에 배치 요청.
+- 변경: `apps/web/src/App.tsx`의 한자 입력 배치에서 후보 목록 내부 스크롤과 페이지 스크롤을 조정하고 입력창을 후보 위에 고정 배치. visualViewport 높이·offsetTop 및 resize/scroll에 재계산, 하단 56px 여유 확보. 자동 목록 이동은 닫기 처리에서 제외하고 위치 변경 때마다 입력을 다시 focus하던 동작 제거. 공간이 부족하면 입력창 내부 스크롤 유지. 영어 확대 적용은 사전 확인 규칙에 따라 미적용.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). 기존 브라우저 26개 통과 후 `scripts/check-browser.mjs`에 390×430 가시 높이 축소 회귀 검사 추가, 재실행 27개 통과: 후보 가시 영역·입력창이 후보 위·포커스 유지. 실제 iOS 키보드/입력 보조 바 동작과는 구분. `git diff --check` 통과(LF→CRLF 안내 경고). 업무 규칙 변경 없어 단위 테스트 재실행하지 않음, lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정. 배포·실제 iPhone 키보드 표시/숨김·후보 전환·긴 후보·회전 확인 대기. 실제 기기에서 키보드 높이·보조 바 여유 적합성 확인 필요.
+
+## 한자·영어 학습 화면 보조 글자 확대 (2026-10-24)
+
+- 요청/변경: 홈에서 조정한 글자 크기도 양쪽 학습 화면에 적용. `apps/web/src/styles.css`에서 소개 소제목 12px, 소개 본문 기본 15px/모바일 13px, 헤더 보조 문구 기본 13px/모바일 12px, 단어 수·완주 안내 13px, 학습 안내·주 탭 15px, 단어장 분류 탭 13px, 하단 저장 안내 12px 적용. 앞선 간격 축소 유지.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 경고), `node scripts/check-browser.mjs` 26개 통과(390px/1280px 넘침·양쪽 입력·오프라인·갱신 포함), `git diff --check` 통과(LF→CRLF 안내 경고). 업무 규칙 변경 없어 단위 테스트 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포·실제 iPhone 글자·줄바꿈·키보드 확인 대기.
+
+## 한자·영어 학습 화면 모바일 간격 축소 (2026-10-24)
+
+- 요청/변경: 앞선 진하기 조정에 이어 양쪽 학습 화면에도 홈의 간격 축소 적용. `apps/web/src/styles.css`의 540px 이하에서 헤더 56px·소개 패딩 12px/10px·제목 여백 8px/10px, 학습 패널 상단 margin 0·패딩 16px/18px, 탭 상하 여백 14px/12px·간격 6px, 문제 수 상단 여백 10px 적용. Safe Area 유지.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 경고), `node scripts/check-browser.mjs` 26개 통과(390px/1280px 넘침·양쪽 플로팅 입력·오프라인·갱신 포함), `git diff --check` 통과(LF→CRLF 안내 경고). 업무 규칙 변경 없어 단위 테스트 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포 및 실제 iPhone 간격·키보드·회전 확인 대기.
+
+## 한자·영어 학습 탭 진하기 조정 (2026-10-24)
+
+- 요청/변경: 양쪽 학습 화면의 탭에도 진하기 조정 적용. `apps/web/src/styles.css`에서 퀴즈 풀기/나의 단어장 및 단어장 분류 탭의 기본 색상 `#426b52→#2d6050`, 선택 탭 굵기 `800` 적용. 기본 굵기는 기존 `700` 유지. 공통 하단 메뉴의 앞선 변경은 이미 모든 화면에 적용됨.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). `git diff --check` 통과(LF→CRLF 안내 경고). CSS 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포·실제 기기 확인 대기.
+
+## 하단 메뉴 글자·아이콘 진하기 조정 (2026-10-24)
+
+- 요청/변경: 첨부한 하단 메뉴를 약간 진하게 표시. `apps/web/src/styles.css`에서 공통 하단 메뉴 기본 색상 `#748078→#53665c`, 굵기 `600` 적용. 선택 메뉴 강조는 기존 유지. 사용자가 지정한 홈·한자·영어 메뉴에 적용.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). `git diff --check` 통과(LF→CRLF 안내 경고). CSS 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포·실제 기기 확인 대기.
+
+## 홈 하단 저장 안내 줄바꿈 보정 (2026-10-24)
+
+- 문제/변경: 하단 저장 안내의 마지막 ‘요.’만 다음 줄에 표시됨. `apps/web/src/styles.css`의 홈 footer에 `word-break:keep-all`을 적용하여 단어 단위로 줄바꿈. 긴 단일 문자열의 넘침 방지를 위해 `overflow-wrap:anywhere` 병행, 글자 크기 유지.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). `git diff --check` 통과(LF→CRLF 안내 경고). CSS 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포·실제 기기 확인 대기.
+
+## 홈 시작 안내 간격·하단 안내 글자 조정 (2026-10-24)
+
+- 요청/변경: `apps/web/src/styles.css`에서 ‘이렇게 시작해요’ 단계 간격 `12px→6px`, 목록 상하 여백 `16px→10px`. 안내 문단 `12px→13px`, 홈 footer `12px`, 두 문단 줄 높이 `1.55` 적용.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). `git diff --check` 통과(LF→CRLF 안내 경고). CSS 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포·실제 기기 확인 대기. 학습 화면 변경 없음.
+
+## 홈 헤더 소개 문구 줄바꿈 수정 (2026-10-24)
+
+- 문제/변경: 글자 확대 후 ‘한자와 영어, 이어지는 배움’의 마지막 글자가 줄바꿈됨. 모바일 `.brand span`의 `max-width:155px` 제한을 홈 전용 선택자에서 해제하고 `white-space:nowrap` 적용(`apps/web/src/styles.css`). 요청한 글자 크기 유지.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). `git diff --check` 통과(LF→CRLF 안내 경고). CSS 표시 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포 및 실제 iPhone 확인 대기.
+
+## 홈 학습 카드 보조 글자 확대 (2026-10-24)
+
+- 요청/변경: 홈의 두 학습 카드에서 제목 크기는 유지하고 분류 문구 `11px→13px`, 설명 모바일 `13px→15px`·기본 `14px→15px`, 항목 수/시작하기 `13px→15px`로 확대(`apps/web/src/styles.css`). 홈 카드 양쪽에 적용하며 학습 화면 변경 없음.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). `git diff --check` 통과(LF→CRLF 안내 경고). CSS 글자 크기 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정. 배포·실제 iPhone 확인 대기.
+
+## 홈 소개 본문 글자 크기 확대 (2026-10-24)
+
+- 요청/변경: 홈의 ‘한자도 영어도, 한 글자씩 이어 보세요.’ 및 다음 문장의 크기 확대. `apps/web/src/styles.css`에서 홈 소개 본문만 기본 `14px→15px`, 540px 이하 모바일 `12px→13px`로 조정.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). `git diff --check` 통과(LF→CRLF 안내 경고). CSS 크기 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포 및 실제 기기 확인 대기.
+
+## 홈 헤더 소개 문구 글자 크기 확대 (2026-10-24)
+
+- 요청/변경: ‘한자와 영어, 이어지는 배움’ 크기를 홈 전용 `.home-page .brand span`에서 확대. 기본 `12px→13px`, 540px 이하 모바일 `10px→12px`. 학습 화면 헤더는 유지.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). `git diff --check` 통과(LF→CRLF 안내 경고). CSS 글자 크기 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포 및 실제 기기 확인 대기.
+
+## 홈 소개 소제목 글자 크기 확대 (2026-10-24)
+
+- 요청/변경: ‘한 글자에서 시작하는 발견’ 글자 크기를 `11px`에서 `12px`로 확대. `apps/web/src/styles.css`에서 홈 소개 소제목만 지정.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). `git diff --check` 통과(LF→CRLF 안내 경고). CSS 글자 크기 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정. 배포 및 실제 기기 확인 대기.
+
+## 모바일 홈 소개와 카드 사이 여백 축소 (2026-10-24)
+
+- 요청/변경: 첨부 화면의 소개 문구와 첫 학습 카드 사이 여백 축소. `apps/web/src/styles.css`의 540px 이하 `.intro.home-intro` 하단 패딩을 `20px`에서 `10px`로 변경.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). `git diff --check` 통과(LF→CRLF 안내 경고). CSS 여백 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정, 배포 및 실제 iPhone 확인 대기. 학습 화면·다른 플랫폼 변경 없음.
+
+## 모바일 홈 상단 여백 추가 축소 (2026-10-24)
+
+- 요청/변경: 모바일 홈 헤더 아래 소개 영역의 상단 패딩을 `22px`에서 `12px`로 축소(`apps/web/src/styles.css`, 540px 이하).
+- 사용자 확인 정정: 앞선 화면은 사용자가 iPhone 홈 화면 바로가기로 실행했다고 확인함. 아래 이전 기록의 Safari 주소창 판단은 잘못된 해석이며 설치형 실행 모드는 에이전트가 직접 검사하지 않음.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고). `git diff --check` 통과(LF→CRLF 안내 경고). CSS 여백만 변경하여 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정. 배포 및 실제 iPhone에서 변경 간격 확인 대기.
+
+## 모바일 홈 화면 간격 축소 (2026-10-24)
+
+- 요청/문제: 사용자 제공 iPhone 15 Pro Max 화면에서 전체적인 간격이 넓음. 첨부 화면에는 Safari 주소창이 있으며 설치형 PWA 단독 실행 여부는 확인하지 않음.
+- 변경: `apps/web/src/App.tsx`에 홈 전용 클래스 추가. `styles.css`의 540px 이하 홈에서 헤더 높이·소개 여백·제목 크기·카드 패딩·아이콘·시작 버튼 간격 축소, 헤더 보조 문구 생략. 홈의 두 학습 진입 카드에 적용하며 학습 화면은 변경하지 않음.
+- 검증: `pnpm.cmd --filter @idioms/web build` 통과(TypeScript 포함, 기존 영어 청크 크기 경고 유지). `node scripts/check-browser.mjs` 최초 CDP 9223 연결 거부로 실패, 전용 headless Chrome 실행 권한 승인 후 재실행하여 26개 통과. `tmp/browser-checks/home-mobile.png` 390×844 시각 확인: 두 카드의 시작 버튼까지 표시. `git diff --check` 통과(LF→CRLF 안내 경고). lint 명령 미등록, 업무 규칙 변경 없어 단위 테스트 재실행하지 않음.
+- 적용/남은 작업: 로컬 수정만 완료. 커밋·푸시·배포 미실행. 수정본 배포 후 iPhone Safari·홈 화면 설치 PWA의 Safe Area·간격 확인 대기. Toss·Android·iOS 네이티브 변경/검증 없음.
+
+## Vercel 출력 경로 수정·사용자 배포 성공 확인 (2026-10-24)
+
+- 요청/사용자 확인: `vercel.json`의 `outputDirectory`를 `dist`로 수정하여 Vercel 배포 성공했다고 사용자 보고.
+- 변경: 사용자 수정 설정 `dist` 유지. `docs/deploy-vercel.md`의 Output Directory를 현재 설정과 일치시키고 배포 상태 갱신. 아래 준비 기록의 `apps/web/dist` 설정·실제 배포 대기는 이번 사용자 보고 이전 상태다.
+- 검증: Node JSON 파싱·assert로 `vercel.json` 구문과 `outputDirectory: dist` 확인 통과. `git diff --check` 통과(문서 LF→CRLF 변환 안내 경고). 앱 코드 변경이 없어 타입·테스트·빌드는 재실행하지 않음.
+- 적용/남은 작업: 배포는 사용자가 수행. 배포 주소·커밋·deployment 식별자 미제공. 실제 Vercel Root Directory·빌드 로그·HTTP 헤더·공개 접속·PWA 설치/오프라인/갱신·기기 검증은 별도 확인 대기. Toss·Android·iOS 변경 없음.
+
 ## Vercel 배포 설정·Git 인수인계 준비 (2026-10-24)
 
 - 요청/승인 범위: Vercel 배포 가능 상태까지 준비. Git 커밋·푸시는 사용자 담당. 실제 업로드·프로젝트 생성·배포는 수행하지 않음.

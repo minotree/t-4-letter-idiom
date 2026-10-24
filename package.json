@@ -8,6 +8,7 @@
     "test": "node --test packages/shared/test/*.test.mjs",
     "dev": "pnpm --filter @idioms/web dev",
     "build": "pnpm --filter @idioms/web build",
+    "build:vercel": "pnpm --filter @idioms/web build --mode vercel",
     "typecheck": "pnpm -r --if-present typecheck",
     "preview": "pnpm --filter @idioms/web preview"
   }

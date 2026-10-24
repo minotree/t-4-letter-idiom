@@ -1,6 +1,6 @@
 # Vercel 배포 인수인계
 
-2026-10-24 기준. 설정·로컬 검사까지 준비했으며 Git 커밋/푸시·Vercel 프로젝트 생성·업로드·배포는 사용자가 진행한다. 서비스 표시 이름은 ‘모두의 이음’(잠정)이다.
+2026-10-24 기준. 사용자가 `vercel.json`의 `outputDirectory`를 `dist`로 변경한 뒤 Vercel 배포 성공을 보고했다. Git 커밋/푸시·Vercel 프로젝트 생성·업로드·배포는 사용자가 진행한다. 서비스 표시 이름은 ‘모두의 이음’(잠정)이다.
 
 ## 1. Git 반영 전
 
@@ -10,6 +10,7 @@
 pnpm.cmd typecheck
 pnpm.cmd test
 pnpm.cmd build
+pnpm.cmd build:vercel
 git diff --check
 git status --short
 ```
@@ -30,15 +31,15 @@ git status --short
 | Framework Preset | Vite |
 | Node.js Version | 24.x (`package.json`에도 고정) |
 | Install Command | `pnpm install --frozen-lockfile` |
-| Build Command | `pnpm run build` |
-| Output Directory | `apps/web/dist` |
+| Build Command | `pnpm run build:vercel` |
+| Output Directory | `dist` (사용자 배포 성공 설정) |
 | Environment Variables | `ENABLE_EXPERIMENTAL_COREPACK` = `1` (Production·Preview) |
 
 명령·출력 경로는 루트 `vercel.json`에 들어 있다. Corepack 환경 변수는 Vercel 화면에서 추가해야 하며, 루트 `packageManager: pnpm@10.34.7`을 사용하게 한다. Install Command만 덮어쓰고 Corepack을 활성화하지 않으면 예상과 다른 pnpm 버전이 선택될 수 있다.
 
 앱 실행에 API 키나 서버 환경 변수는 필요 없다. 이미지 제작용 `OPENAI_API_KEY`를 Vercel에 등록하지 않는다. `NODE_ENV=production`을 설치 전에 별도 지정하여 Vite·TypeScript 등 devDependencies를 빠뜨리지 않는다.
 
-설정 확인 후 사용자가 Deploy를 누른다. 빌드 로그에서 Node24.x·pnpm10.34.7·한자915개 데이터 생성·`apps/web/dist` 출력을 확인한다. 기존 영어 청크 약1.04MB 경고는 빌드 실패가 아니며 별도 최적화 대상이다.
+설정 확인 후 사용자가 Deploy를 누른다. 빌드 로그에서 Node24.x·pnpm10.34.7·한자915개 데이터 생성·저장소 루트 `dist` 출력을 확인한다. `build:vercel`은 Vite의 `vercel` 모드로 실행하여 `apps/web` 기준 `../../dist`에 출력한다. `outputDirectory: dist`와 실제 산출물 경로가 일치한다. 일반 `pnpm.cmd build`는 기존 `apps/web/dist`에 출력하여 브라우저 검사에 사용한다. 배포 전용 빌드는 루트 `dist`의 이전 산출물을 정리하므로 해당 폴더에 수동 파일을 두지 않는다. 기존 영어 청크 약1.04MB 경고는 빌드 실패가 아니며 별도 최적화 대상이다.
 
 Git 연결 후에는 설정한 Production Branch의 push가 배포를 유발할 수 있다. 해당 브랜치와 Preview/Production 구분을 사용자가 확인한다.
 
@@ -53,7 +54,7 @@ Git 연결 후에는 설정한 Production Branch의 push가 배포를 유발할 
 
 Vercel에서 이전 배포로 되돌려도 이미 설치된 PWA 캐시가 즉시 되돌아간다고 가정하지 않는다. 온라인 재접속·업데이트 안내·사용자 적용 후 화면을 다시 확인한다.
 
-배포 성공 후 사용자 확인 날짜·주소·커밋·Vercel deployment 식별자 및 실제 기기 검사 범위를 `progress.md`에 기록한다. 현재는 실제 Vercel 빌드·헤더·설치·공개 접속을 검증한 상태가 아니다.
+2026-10-24 사용자 보고로 이전 배포 성공을 확인했다. 이후 배포 준비에서 `build:vercel`을 추가하여 저장소 루트의 `dist`를 실제로 생성하도록 일치시켰다. Vercel의 Root Directory는 저장소 루트 `.`, Build Command는 `pnpm run build:vercel`, Output Directory는 `dist`로 사용한다. 기존 Vercel 프로젝트의 실제 Root Directory는 직접 확인하지 못했으므로 사용자가 배포 전에 확인한다. 현재 수정본은 미배포이며 실제 iPhone 키보드·설치·갱신 검증은 대기다. 배포 주소는 사용자 화면의 `https://web-one-black-41.vercel.app`, 커밋·deployment 식별자는 미제공이다. 후속 확인 결과를 `progress.md`에 기록한다.
 
 ## 공식 설정 근거
 

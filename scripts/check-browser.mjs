@@ -89,6 +89,11 @@ try {
   await selectCandidate('家給人足');
   await until(`!!document.querySelector('.floating-answer')`);
   checks.push('한자 후보 플로팅 입력·비겹침·목록 스크롤 닫기·같은 후보 재열기');
+  await cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 430, deviceScaleFactor: 1, mobile: true });
+  await until(`(() => { const row = document.querySelector('.hanja-candidates .selected-candidate').getBoundingClientRect(); const form = document.querySelector('.floating-answer').getBoundingClientRect(); const viewport = visualViewport; return form.top >= viewport.offsetTop && form.bottom <= row.top && row.bottom <= viewport.offsetTop + viewport.height - 40; })()`);
+  assert.equal(await evaluate(`document.activeElement.id`), 'answer');
+  await cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
+  checks.push('한자 키보드 높이 축소 모사: 후보가 가시 영역 안·입력창이 후보 위·포커스 유지');
   await evaluate(`document.querySelector('.bottom-nav a[href="#home"]').click()`);
   await until(`!document.querySelector('.home-screen').hidden`);
   await evaluate(`document.querySelector('.home-course[href="#main"]').click()`);

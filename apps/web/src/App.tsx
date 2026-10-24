@@ -114,7 +114,7 @@ export default function App() {
   useEffect(() => {
     if (selectedId && floating && page === 'quiz') input.current?.focus({ preventScroll: true });
     else if (chain.length && page === 'quiz') title.current?.focus({ preventScroll: true });
-  }, [selectedId, chain.length, floating, page]);
+  }, [selectedId, chain.length, Boolean(floating), page]);
   useLayoutEffect(() => {
     if (!chain.length) return;
     const frame = requestAnimationFrame(() => currentCard.current?.scrollIntoView({ block: 'start', behavior: 'instant' }));
@@ -124,18 +124,33 @@ export default function App() {
   function fitFloating() {
     const form = input.current?.closest('form');
     if (!form || !anchor.current || !form.classList.contains('floating-answer')) return;
-    const row = anchor.current.getBoundingClientRect();
+    const candidate = anchor.current;
     const viewport = window.visualViewport;
     const topEdge = (viewport?.offsetTop ?? 0) + 12;
-    const bottomEdge = (viewport ? viewport.offsetTop + viewport.height : window.innerHeight) - 12;
+    // Leave room for the iOS input accessory bar above the software keyboard.
+    const bottomEdge = (viewport ? viewport.offsetTop + viewport.height : window.innerHeight) - 56;
     const height = form.scrollHeight + 2;
-    const below = row.bottom + 8;
-    // Never clamp the input onto the selected candidate.
-    const belowSpace = Math.max(0, bottomEdge - below);
-    const aboveSpace = Math.max(0, row.top - 8 - topEdge);
-    const useBelow = belowSpace >= height || belowSpace >= aboveSpace;
-    const maxHeight = Math.max(1, useBelow ? belowSpace : aboveSpace);
-    const top = useBelow ? below : row.top - 8 - Math.min(height, maxHeight);
+    const list = candidate.closest('ol');
+    opening.current = true;
+    cancelAnimationFrame(openingFrame.current);
+    if (list) {
+      const row = candidate.getBoundingClientRect();
+      const bounds = list.getBoundingClientRect();
+      if (row.bottom > bounds.bottom) list.scrollTop += row.bottom - bounds.bottom;
+      else if (row.top < bounds.top) list.scrollTop += row.top - bounds.top;
+    }
+    let row = candidate.getBoundingClientRect();
+    const available = Math.max(1, bottomEdge - topEdge);
+    const candidateHeight = Math.min(row.height, Math.max(44, available - 120));
+    const maxHeight = Math.max(1, available - candidateHeight - 8);
+    const formHeight = Math.min(height, maxHeight);
+    const targetTop = bottomEdge - candidateHeight;
+    window.scrollBy({ top: row.top - targetTop, behavior: 'instant' });
+    row = candidate.getBoundingClientRect();
+    const top = Math.max(topEdge, Math.min(row.top - 8 - formHeight, bottomEdge - formHeight));
+    openingFrame.current = requestAnimationFrame(() => {
+      openingFrame.current = requestAnimationFrame(() => { opening.current = false; });
+    });
     setFloating(value => value && (value.top !== top || value.maxHeight !== maxHeight) ? { ...value, top, maxHeight } : value);
   }
   useLayoutEffect(() => { if (floating) fitFloating(); }, [floating, selectedId, attempts]);
@@ -145,7 +160,8 @@ export default function App() {
     window.addEventListener('hashchange', close);
     window.addEventListener('resize', fit);
     window.visualViewport?.addEventListener('resize', fit);
-    return () => { cancelAnimationFrame(openingFrame.current); window.removeEventListener('hashchange', close); window.removeEventListener('resize', fit); window.visualViewport?.removeEventListener('resize', fit); };
+    window.visualViewport?.addEventListener('scroll', fit);
+    return () => { cancelAnimationFrame(openingFrame.current); window.removeEventListener('hashchange', close); window.removeEventListener('resize', fit); window.visualViewport?.removeEventListener('resize', fit); window.visualViewport?.removeEventListener('scroll', fit); };
   }, []);
 
   function closeFloating() { opening.current = false; cancelAnimationFrame(openingFrame.current); setFloating(null); if (document.activeElement === input.current) input.current?.blur(); }
@@ -234,7 +250,7 @@ export default function App() {
   }
 
   return (
-    <main className="app">
+    <main className={`app${page === 'home' ? ' home-page' : ''}`}>
       <header className="page-header">
         <a className="brand" href="#home">모두의 이음 <span>{page === 'home' ? '한자와 영어, 이어지는 배움' : page === 'english' ? '영어 학습' : '한자 학습'}</span></a>
         <span className="edition">하루 한 번, 즐거운 배움</span>
