@@ -88,7 +88,8 @@ test('사전 검수에서 확인한 독음과 핵심 뜻을 회귀 검사한다'
   assert.match(idioms.find(item => item.reading === '홍로점설').meaning, /의혹/);
   assert.match(idioms.find(item => item.reading === '망양보뢰').meaning, /본래/);
 });
-test('최대 20번 연결하는 동안 같은 성어를 다시 사용하지 않는다', () => {
+test('최대 10번 연결하는 동안 같은 성어를 다시 사용하지 않는다', () => {
+  assert.equal(SESSION_LIMIT, 10);
   let current = idioms.find(item => item.hanja === '家家戶戶');
   const used = new Set([current.id]);
   let count = 0;

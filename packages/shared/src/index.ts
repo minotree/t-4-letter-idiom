@@ -6,7 +6,7 @@ export interface Idiom {
   meaning: string;
 }
 
-export const SESSION_LIMIT = 20;
+export const SESSION_LIMIT = 10;
 export { englishForms, englishLetters, englishCandidates, matchesEnglish, englishLength, englishHint, type EnglishWord } from './english.ts';
 
 /** Search only: preserve the displayed Hanja, Korean reading and stable row ID. */

@@ -55,46 +55,79 @@ export default function EnglishLearning() {
   const anchor = useRef<HTMLLIElement | null>(null);
   const opening = useRef(false);
   const openingFrame = useRef(0);
+  const keyboardTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const current = chain.at(-1)?.item ?? start;
   const used = new Set([start.id, ...chain.map(link => link.item.id)]);
   const history = new Set(records.history);
   const candidates = englishCandidates(words, letter, used, history);
   const selected = candidates.find(item => item.id === targetId);
   const finished = chain.length >= SESSION_LIMIT || !englishLetters(current).some(ch => englishCandidates(words, ch, used, history).length);
-  useEffect(() => { if (targetId && !book && floating) input.current?.focus({ preventScroll: true }); }, [targetId, book, floating]);
+  useEffect(() => { if (targetId && !book && floating) input.current?.focus({ preventScroll: true }); }, [targetId, book, Boolean(floating)]);
   useLayoutEffect(() => {
     if (!chain.length) return;
     const frame = requestAnimationFrame(() => currentCard.current?.scrollIntoView({ block: 'start', behavior: 'instant' }));
     return () => cancelAnimationFrame(frame);
   }, [chain.length]);
-  function fitFloating() {
+  function fitFloating(alignCandidate = false) {
     const form = input.current?.closest('form');
     if (!form || !anchor.current || !form.classList.contains('floating-answer')) return;
-    const row = anchor.current.getBoundingClientRect();
+    const candidate = anchor.current;
     const viewport = window.visualViewport;
     const topEdge = (viewport?.offsetTop ?? 0) + 12;
-    const bottomEdge = (viewport ? viewport.offsetTop + viewport.height : window.innerHeight) - 12;
+    // Leave room for the iOS input accessory bar above the software keyboard.
+    const bottomEdge = (viewport ? viewport.offsetTop + viewport.height : window.innerHeight) - 56;
     const height = form.scrollHeight + 2;
-    const below = row.bottom + 8;
-    // Never clamp the input onto the selected candidate.
-    const belowSpace = Math.max(0, bottomEdge - below);
-    const aboveSpace = Math.max(0, row.top - 8 - topEdge);
-    const useBelow = belowSpace >= height || belowSpace >= aboveSpace;
-    const maxHeight = Math.max(1, useBelow ? belowSpace : aboveSpace);
-    const top = useBelow ? below : row.top - 8 - Math.min(height, maxHeight);
+    const list = candidate.closest('ol');
+    if (alignCandidate) {
+      opening.current = true;
+      cancelAnimationFrame(openingFrame.current);
+    }
+    if (alignCandidate && list) {
+      const row = candidate.getBoundingClientRect();
+      const bounds = list.getBoundingClientRect();
+      if (row.bottom > bounds.bottom) list.scrollTop += row.bottom - bounds.bottom;
+      else if (row.top < bounds.top) list.scrollTop += row.top - bounds.top;
+    }
+    let row = candidate.getBoundingClientRect();
+    const available = Math.max(1, bottomEdge - topEdge);
+    const candidateHeight = Math.min(row.height, Math.max(44, available - 120));
+    const maxHeight = Math.max(1, available - candidateHeight - 8);
+    const formHeight = Math.min(height, maxHeight);
+    const targetTop = bottomEdge - candidateHeight;
+    if (alignCandidate && Math.abs(row.top - targetTop) > 2) {
+      window.scrollBy({ top: row.top - targetTop, behavior: 'instant' });
+    }
+    row = candidate.getBoundingClientRect();
+    const top = Math.max(topEdge, Math.min(row.top - 8 - formHeight, bottomEdge - formHeight));
+    if (alignCandidate) {
+      openingFrame.current = requestAnimationFrame(() => {
+        openingFrame.current = requestAnimationFrame(() => { opening.current = false; });
+      });
+    }
     setFloating(value => value && (value.top !== top || value.maxHeight !== maxHeight) ? { ...value, top, maxHeight } : value);
   }
-  useLayoutEffect(() => { if (floating) fitFloating(); }, [floating, targetId, attempts]);
+  useLayoutEffect(() => { if (floating) fitFloating(true); }, [Boolean(floating), targetId]);
+  useLayoutEffect(() => { if (floating) fitFloating(); }, [attempts]);
   useEffect(() => {
     const close = () => { setFloating(null); input.current?.blur(); };
     const fit = () => fitFloating();
+    let lastHeight = window.visualViewport?.height ?? window.innerHeight;
+    const resize = () => {
+      fitFloating();
+      const height = window.visualViewport?.height ?? window.innerHeight;
+      if (Math.abs(height - lastHeight) < 2) return;
+      lastHeight = height;
+      if (keyboardTimer.current) clearTimeout(keyboardTimer.current);
+      keyboardTimer.current = setTimeout(() => fitFloating(true), 180);
+    };
     window.addEventListener('hashchange', close);
-    window.addEventListener('resize', fit);
-    window.visualViewport?.addEventListener('resize', fit);
-    return () => { cancelAnimationFrame(openingFrame.current); window.removeEventListener('hashchange', close); window.removeEventListener('resize', fit); window.visualViewport?.removeEventListener('resize', fit); };
+    window.addEventListener('resize', resize);
+    window.visualViewport?.addEventListener('resize', resize);
+    window.visualViewport?.addEventListener('scroll', fit);
+    return () => { cancelAnimationFrame(openingFrame.current); if (keyboardTimer.current) clearTimeout(keyboardTimer.current); window.removeEventListener('hashchange', close); window.removeEventListener('resize', resize); window.visualViewport?.removeEventListener('resize', resize); window.visualViewport?.removeEventListener('scroll', fit); };
   }, []);
 
-  function closeFloating() { opening.current = false; cancelAnimationFrame(openingFrame.current); setFloating(null); if (document.activeElement === input.current) input.current?.blur(); }
+  function closeFloating() { opening.current = false; cancelAnimationFrame(openingFrame.current); if (keyboardTimer.current) clearTimeout(keyboardTimer.current); setFloating(null); if (document.activeElement === input.current) input.current?.blur(); }
   function selectCandidate(item: EnglishWord, element: HTMLInputElement) {
     opening.current = true;
     cancelAnimationFrame(openingFrame.current);
@@ -150,7 +183,7 @@ export default function EnglishLearning() {
   const listed = words.filter(item => (filter === 'all' || records[filter].includes(item.id)) && `${item.word} ${item.meaning} ${item.partOfSpeech}`.toLowerCase().includes(query.trim().toLowerCase()));
   return <section className="english-learning learning-shell panel" aria-label="영어 단어 이음 학습">
     <div className="book-heading english-rank-heading"><h1>영어 글자잇기</h1><SessionStars count={sessionCount} /></div>
-    <p className="english-word-total">{words.length}개 단어 · 20문제를 모두 이으면 작은 별 하나</p>
+    <p className="english-word-total">{words.length}개 단어 · 10문제를 모두 이으면 작은 별 하나</p>
     <div className="learning-tabs"><button aria-pressed={!book} onClick={() => { closeFloating(); setBook(false); setLimit(40); }}>퀴즈 풀기</button><button aria-pressed={book} onClick={() => { closeFloating(); setBook(true); setLimit(40); }}>나의 단어장</button></div>
     <div hidden={book}>
       <p className="book-description">알파벳 선택 → 후보 선택 → 영어 단어 입력</p>
@@ -165,7 +198,7 @@ export default function EnglishLearning() {
           return <li key={item.id} data-step={index} className={index === SESSION_LIMIT ? 'chain-complete' : undefined} style={{ gridRow: row + 1, gridColumn: column, borderColor: index > 0 ? STEP_COLORS[index - 1] : undefined }}>
             {index > 0 && <span className={`english-chain-bridge ${vertical ? 'bridge-down' : column === 2 ? 'bridge-right' : 'bridge-left'}`} aria-label={`${chain[index - 1].letter}로 이어짐`}><span>{chain[index - 1].letter}</span><span aria-hidden="true">{vertical ? '↓' : column === 2 ? '→' : '←'}</span></span>}
             <span className={`chain-word-step${index > 0 ? ' chain-step-badge' : ''}`} style={index > 0 ? { backgroundColor: STEP_COLORS[index - 1], color: index <= 2 || index === SESSION_LIMIT ? '#243a36' : '#fff' } : undefined}>{index === 0 ? '시작' : `${index} / ${SESSION_LIMIT}`}</span>
-            {index === SESSION_LIMIT && <span className="chain-complete-label">20개 이음 완성</span>}
+            {index === SESSION_LIMIT && <span className="chain-complete-label">10개 이음 완성</span>}
             <strong>{item.word}</strong><p>{item.meaning}</p>
           </li>;
         })}</ol>
@@ -174,7 +207,7 @@ export default function EnglishLearning() {
         {current.synonym.trim() && <div className="word-example word-synonyms" aria-label="동의어"><span>동의어</span><p>{current.synonym}</p></div>}
         {(current.example || current.exampleMeaning) && <div className="word-example" aria-label="예문"><div className="example-heading"><span>예문</span>{current.exampleMeaning && <button type="button" className="meaning-toggle" aria-expanded={translationOpen} aria-controls="english-example-translation" onClick={() => setTranslationOpen(value => !value)}>{translationOpen ? '해석 접기' : '해석 보기'} <span aria-hidden="true">ⓘ</span></button>}</div>{current.example && <p lang="en">{current.example}</p>}{current.exampleMeaning && <p id="english-example-translation" hidden={!translationOpen}>{current.exampleMeaning}</p>}</div>}
       </div>
-      {finished ? <div className="summary"><h2>{chain.length === SESSION_LIMIT ? '20개 단어를 이었어요!' : '이어갈 후보가 더 없어요.'}</h2><button className="primary" onClick={restart}>새 세션 시작</button></div> : <>
+      {finished ? <div className="summary"><h2>{chain.length === SESSION_LIMIT ? '10개 단어를 이었어요!' : '이어갈 후보가 더 없어요.'}</h2><button className="primary" onClick={restart}>새 세션 시작</button></div> : <>
         <h3 className="english-step">01 알파벳을 골라 주세요</h3>
         <div className="characters">{englishLetters(current).map((ch, index) => <button key={`${index}-${ch}`} aria-pressed={letter === ch} disabled={!englishCandidates(words, ch, used, history).length} onClick={() => choose(ch)}><strong>{ch}</strong></button>)}</div>
         <h3 className="english-step">02 풀 후보를 선택하세요 {letter && `· ${candidates.length}개`}</h3>

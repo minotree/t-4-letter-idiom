@@ -295,7 +295,7 @@ export default function App() {
         <section className="home-guide" aria-labelledby="home-guide-title">
           <h2 id="home-guide-title">이렇게 시작해요</h2>
           <ol><li><strong>01</strong> 이어갈 글자 고르기</li><li><strong>02</strong> 뜻을 보고 후보 선택하기</li><li><strong>03</strong> 정답을 입력하고 이어가기</li></ol>
-          <p>한 번에 최대 20문제. 각 학습의 ‘나의 단어장’에서 즐겨찾기와 오답을 다시 살펴볼 수 있어요.</p>
+          <p>한 번에 최대 10문제. 각 학습의 ‘나의 단어장’에서 즐겨찾기와 오답을 다시 살펴볼 수 있어요.</p>
         </section>
       </section>
       <section className="intro learning-intro" hidden={page === 'home'} aria-label="학습 소개">
@@ -305,7 +305,7 @@ export default function App() {
       </section>
       <section className="learning-shell panel" hidden={page !== 'quiz' && page !== 'book'} aria-label="한자 학습">
       <div className="book-heading english-rank-heading"><h1>한자 글자잇기</h1><SessionStars count={sessionCount} /></div>
-      <p className="english-word-total">{idioms.length}개 한자어 · 20문제를 모두 이으면 작은 별 하나</p>
+      <p className="english-word-total">{idioms.length}개 한자어 · 10문제를 모두 이으면 작은 별 하나</p>
       <nav className="learning-tabs" aria-label="한자 학습 메뉴">
         <a href="#main" aria-current={page === 'quiz' ? 'page' : undefined}>퀴즈 풀기</a>
         <a href="#idioms" aria-current={page === 'book' ? 'page' : undefined}>나의 단어장</a>
@@ -325,7 +325,7 @@ export default function App() {
               return <li key={item.id} data-step={index} className={index === SESSION_LIMIT ? 'chain-complete' : undefined} style={{ gridRow: row + 1, gridColumn: column, borderColor: index > 0 ? STEP_COLORS[index - 1] : undefined }}>
                 {index > 0 && <span className={`english-chain-bridge ${vertical ? 'bridge-down' : column === 2 ? 'bridge-right' : 'bridge-left'}`} aria-label={`${connections[index - 1]}로 이어짐`}><span>{connections[index - 1]}</span><span aria-hidden="true">{vertical ? '↓' : column === 2 ? '→' : '←'}</span></span>}
                 <span className={`chain-word-step${index > 0 ? ' chain-step-badge' : ''}`} style={index > 0 ? { backgroundColor: STEP_COLORS[index - 1], color: index <= 2 || index === SESSION_LIMIT ? '#243a36' : '#fff' } : undefined}>{index === 0 ? '시작' : `${index} / ${SESSION_LIMIT}`}</span>
-                {index === SESSION_LIMIT && <span className="chain-complete-label">20개 이음 완성</span>}
+                {index === SESSION_LIMIT && <span className="chain-complete-label">10개 이음 완성</span>}
                 <strong lang="zh">{item.hanja}</strong><span className="hanja-chain-reading">{item.reading}</span><p>{item.meaning}</p><ContentSource item={item} />
               </li>;
             })}</ol>
@@ -339,7 +339,7 @@ export default function App() {
           </div>
           {finished ? <div className="summary">
             <span className="eyebrow">나만의 배움 한 줄</span>
-            <h2>{chain.length >= SESSION_LIMIT ? '20개의 한자성어를 이었어요!' : '이번 이음은 여기까지예요.'}</h2>
+            <h2>{chain.length >= SESSION_LIMIT ? '10개의 한자성어를 이었어요!' : '이번 이음은 여기까지예요.'}</h2>
             <p>{chain.length >= SESSION_LIMIT ? '오늘 알게 된 말들이 다음 도전에 힘이 될 거예요.' : '같은 한자성어를 반복하지 않고 이어갈 후보가 더 없어요.'}</p>
             <button className="primary" onClick={restart}>새 세션 시작하기 <span aria-hidden="true">↗</span></button>
           </div> : <>
@@ -361,7 +361,7 @@ export default function App() {
               </>}
             </section>
             <form onSubmit={submit} className={`answer-form${floating ? ' floating-answer' : ''}`} style={floating ? { top: floating.top, left: floating.left, width: floating.width, maxHeight: floating.maxHeight } : undefined} onKeyDown={event => { if (event.key === 'Escape') closeFloating(); }}>
-              <div className="floating-answer-heading"><label htmlFor="answer">03 <span>{selected ? `선택한 후보: ${selected.hanja} · 한글 독음 입력` : '후보를 먼저 선택해 주세요'}</span></label>{floating && <button type="button" className="floating-close" onClick={closeFloating} aria-label="입력창 닫기">×</button>}</div>
+              <div className="floating-answer-heading"><label htmlFor="answer">03 <span>{selected ? <>선택한 후보: {selected.hanja} · <span className="answer-label-phrase">한글 독음 입력</span></> : '후보를 먼저 선택해 주세요'}</span></label>{floating && <button type="button" className="floating-close" onClick={closeFloating} aria-label="입력창 닫기">×</button>}</div>
               <div className="input-row"><input id="answer" ref={input} value={answer} onChange={event => setAnswer(event.target.value)}
                 disabled={!selected} autoComplete="off" spellCheck={false} placeholder="선택한 후보의 한글 독음" aria-describedby={floating ? 'hanja-floating-feedback' : 'feedback'}
                 onKeyDown={event => { if (event.key === 'Enter' && event.nativeEvent.isComposing) event.preventDefault(); }} />
@@ -372,7 +372,7 @@ export default function App() {
           <p id="feedback" className="feedback" role="status">{finished ? `${chain.length}개의 한자성어를 정답으로 이었어요.` : message}</p>
         </section>
         <aside className="sidebar">
-          <section className="guide"><span className="eyebrow">이렇게 이어가요</span><p>선택한 한글 글자가 독음에 들어간 후보를 고르고<br />전체 독음을 입력하면 정답!</p><ul><li>한자는 달라도 같은 한글이면 이어져요.</li><li>한 세션은 최대 20문제예요.</li><li>같은 세션의 한자성어는 다시 나오지 않아요.</li><li>처음 만나는 한자성어를 먼저 보여드려요.</li><li>오답이면 독음 힌트가 하나씩 열려요.</li></ul></section>
+          <section className="guide"><span className="eyebrow">이렇게 이어가요</span><p>선택한 한글 글자가 독음에 들어간 후보를 고르고<br />전체 독음을 입력하면 정답!</p><ul><li>한자는 달라도 같은 한글이면 이어져요.</li><li>한 세션은 최대 10문제예요.</li><li>같은 세션의 한자성어는 다시 나오지 않아요.</li><li>처음 만나는 한자성어를 먼저 보여드려요.</li><li>오답이면 독음 힌트가 하나씩 열려요.</li></ul></section>
           <div className="session-actions">{confirmRestart ? <div className="restart-confirm"><p>지금 이음을 마치고 새로 시작할까요?</p><button onClick={restart}>새로 시작</button><button onClick={() => setConfirmRestart(false)}>계속 풀기</button></div> : <button className="text-button" onClick={() => setConfirmRestart(true)}>새 세션으로 시작하기 ↻</button>}</div>
         </aside>
       </div>

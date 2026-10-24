@@ -1,5 +1,30 @@
 # 사자성어 학습 구현 진행표
 
+## 영어 정답 입력창에 한자 키보드 대응 적용 (2026-10-24)
+
+- 요청/승인: 한자 정답 입력창의 방식을 영어에도 동일 적용.
+- 변경: `apps/web/src/EnglishLearning.tsx`에서 후보 위 입력창 배치·키보드 높이 안정 후 180ms 재정렬·viewport scroll 시 좌표만 갱신·위치 갱신마다 재포커스 방지·타이머 해제를 한자와 동일 적용. `styles.css`에서 영어 입력 포커스 중에도 하단 메뉴 숨김/해제 시 복구. 제목 단어 단위 줄바꿈은 기존 공통 스타일 적용.
+- 검증: `pnpm.cmd build`, `pnpm.cmd build:vercel` 통과(TypeScript 포함, 기존 영어 청크 경고). `node scripts/check-browser.mjs` 30개 통과: 영어 390×430 높이 축소에서 후보 위 입력창·후보 가시성·연속 viewport scroll 시 페이지 재스크롤 없음·하단 메뉴 숨김/복구 검사 추가. `git diff --check` 통과(LF→CRLF 안내 경고). 업무 규칙 변경 없어 단위 테스트 재실행하지 않음, lint 명령 미등록.
+- 적용/남은 작업: 로컬 및 루트 dist 배포본 갱신. Git·실제 배포 미실행. iPhone 설치 PWA 영어 키보드·후보 전환·회전 확인 대기.
+
+## 한 이음 최대 10문제로 축소 (2026-10-24)
+
+- 요청/변경: 세션 최대 정답 수 20→10. `packages/shared/src/index.ts`의 SESSION_LIMIT 변경, 한자·영어 종료/진행도/완주 별 적립 기준 동시 적용. `App.tsx`·`EnglishLearning.tsx`·`LearningMilestones.tsx` 안내·완성 문구 및 단계별 색 10개(마지막 금색) 정리. 기존 완주 횟수·별 namespace와 값 보존. 요구사항·AGENTS·웹 README 갱신.
+- 검증: `pnpm.cmd test` 17개, `pnpm.cmd build`, `pnpm.cmd build:vercel`, `node scripts/check-browser.mjs` 29개 통과. 9문제까지 별 미적립·10문제 종료/별 적립·양쪽 11개 카드(시작 포함)·10단계 색·오프라인/갱신 확인. `git diff --check` 통과(LF→CRLF 안내 경고). 테스트에 SESSION_LIMIT=10 명시 확인 추가 후 단위 검사 17개 재통과. 기존 영어 청크 크기 경고 유지, lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정 및 루트 dist 배포본 갱신. Git·실제 배포 미실행. iPhone 설치 PWA 확인 대기. 과거 진행 기록의 20문제는 변경 전 기준.
+
+## 한자 정답 입력 제목 줄바꿈 보정 (2026-10-24)
+
+- 요청/변경: 입력창 제목의 ‘한글 독음 입력’이 ‘입/력’으로 끊어지는 현상 확인. `apps/web/src/App.tsx`에서 문구를 별도 span으로 묶고 `styles.css`에서 한 덩어리로 줄바꿈하도록 지정. 제목은 단어 단위 줄바꿈, 닫기 버튼 축소 방지 적용.
+- 검증: `pnpm.cmd build:vercel` 통과(TypeScript 포함, 기존 영어 청크 경고), `git diff --check` 통과(LF→CRLF 안내 경고). 작은 문구 표시 변경으로 단위 테스트·브라우저 검사 재실행하지 않음. lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정 및 루트 dist 배포본 갱신 완료. 실제 배포·iPhone 확인 대기. 영어 문구 변경 없음.
+
+## 한자 정답 입력 중 하단 메뉴 가림 방지 (2026-10-24)
+
+- 문제/변경: 사용자 iPhone PWA에서 키보드와 함께 하단 고정 메뉴가 올라와 후보를 가림. `apps/web/src/styles.css`에서 한자 플로팅 입력의 포커스 중 하단 메뉴를 숨기고 포커스 해제 시 복구. 메뉴 높이·Safe Area·입력창 배치 유지. 영어 변경 없음.
+- 검증: `pnpm.cmd build`, `pnpm.cmd build:vercel` 통과(TypeScript 포함, 기존 영어 청크 경고). `scripts/check-browser.mjs`에 입력 포커스 중 메뉴 숨김·닫기 후 복구 검사 추가. 최초 검사는 비활성 CDP 탭에서 CSS :focus가 성립하지 않아 실패, Page.bringToFront 및 포커스 반영 대기 후 최종 `node scripts/check-browser.mjs` 29개 통과. 숨김 조건은 플로팅 여부와 무관하게 한자 정답 입력 포커스에 적용. `git diff --check` 통과(LF→CRLF 안내 경고). 단위 테스트 재실행하지 않음, lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정 및 루트 dist 배포본 갱신 완료. 실제 iPhone PWA 키보드 확인 대기. Git·실제 배포는 사용자 담당.
+
 ## iPhone PWA 정답 입력창 반복 이동 보정 (2026-10-24)
 
 - 문제: 사용자 보고로 웹에서는 후보 위에 입력창이 표시되지만 PWA에서는 입력창이 위아래로 심하게 움직임. 앞선 한자 키보드 보정의 visualViewport scroll 처리에서 페이지 scrollBy를 다시 실행하는 순환 경로 확인. 실제 기기 이벤트 로그는 미수집.

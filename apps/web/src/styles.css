@@ -140,6 +140,9 @@
 .candidate-synonym { min-width: 0; overflow-wrap: anywhere; font-weight: 500; }
 .floating-answer.answer-form { position: fixed; z-index: 30; margin: 0; padding: 14px; border: 1px solid #739481; border-radius: 12px; background: #fff; box-shadow: 0 8px 30px #163b3040; max-height: calc(100dvh - 24px); overflow: auto; }
 .floating-answer-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.floating-answer-heading label { min-width: 0; word-break: keep-all; overflow-wrap: anywhere; }
+.answer-label-phrase { display: inline-block; white-space: nowrap; }
+.floating-answer-heading .floating-close { flex-shrink: 0; }
 .floating-close { border: 0; background: transparent; color: #426b52; width: 32px; min-height: 32px; font-size: 24px; cursor: pointer; }
 .floating-answer p { margin-top: 8px; font-size: 12px; color: #426b52; }
 .floating-answer .input-row { margin-top: 8px; }
@@ -169,6 +172,7 @@
 .bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: min(100%, 760px); display: flex; background: #fff; border: 1px solid #dce6dc; border-radius: 18px 18px 0 0; padding: 7px 12px calc(7px + env(safe-area-inset-bottom)); z-index: 10; box-shadow: 0 -4px 24px #1d3b2510; }
 .bottom-nav a { flex: 1; display: grid; justify-items: center; padding: 5px; border-radius: 10px; color: #53665c; font-size: 12px; font-weight: 600; }
 .bottom-nav a > span { font-size: 22px; line-height: 1.2; }
+.app:has(#answer:focus, #english-answer:focus) .bottom-nav { visibility: hidden; pointer-events: none; }
 .bottom-nav a[aria-current="page"] { background: #eef4ed; color: #2d6050; font-weight: 800; }
 @media (max-width: 480px) {
   .idiom-book { padding: 20px 16px; margin: 20px auto; }

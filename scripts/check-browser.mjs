@@ -49,6 +49,7 @@ async function selectCandidate(hanja) {
 const checks = [];
 try {
   await cdp('Page.enable');
+  await cdp('Page.bringToFront');
   await cdp('Runtime.enable');
   await cdp('Network.enable');
   await cdp('Storage.clearDataForOrigin', { origin: 'http://127.0.0.1:4173', storageTypes: 'all' });
@@ -97,6 +98,12 @@ try {
   await evaluate(`new Promise(resolve => setTimeout(resolve, 300))`);
   assert.equal(await evaluate(`(() => { const original = window.scrollBy; let calls = 0; window.scrollBy = () => { calls++; }; try { for (let i = 0; i < 20; i++) visualViewport.dispatchEvent(new Event('scroll')); return calls; } finally { window.scrollBy = original; } })()`), 0);
   checks.push('한자 visualViewport scroll 연속 발생 시 페이지 재스크롤 없음');
+  await selectCandidate('家給人足');
+  await until(`document.activeElement.id === 'answer' && getComputedStyle(document.querySelector('.bottom-nav')).visibility === 'hidden'`);
+  await evaluate(`document.querySelector('.floating-close').click()`);
+  await until(`getComputedStyle(document.querySelector('.bottom-nav')).visibility === 'visible'`);
+  await selectCandidate('家給人足');
+  checks.push('한자 정답 입력 포커스 중 하단 메뉴 숨김·입력창 닫으면 복구');
   await evaluate(`document.querySelector('.bottom-nav a[href="#home"]').click()`);
   await until(`!document.querySelector('.home-screen').hidden`);
   await evaluate(`document.querySelector('.home-course[href="#main"]').click()`);
@@ -127,7 +134,7 @@ try {
   assert.deepEqual(await evaluate(`Array.from(document.querySelectorAll('.hanja-chain > li > strong')).map(el => el.textContent)`), ['家家戶戶', '家給人足']);
   assert.equal(await evaluate(`document.querySelector('.hanja-chain .english-chain-bridge > span').textContent`), '가');
 
-  for (let count = 1; count < 20; count++) {
+  for (let count = 1; count < 10; count++) {
     const used = await evaluate(`Array.from(document.querySelectorAll('.hanja-chain > li > strong')).map(el => el.textContent)`);
     const current = dataset.find(item => item.hanja === used.at(-1));
     const history = new Set(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:history:v1')`)));
@@ -143,27 +150,27 @@ try {
       await evaluate(`Array.from(document.querySelectorAll('.ambiguity button')).find(button => button.querySelector('strong').textContent === ${JSON.stringify(next.item.hanja)}).click()`);
       await until(`document.querySelectorAll('.hanja-chain > li').length === ${count + 2}`);
     }
-    if (count < 19) {
+    if (count < 9) {
       await until(`Math.abs(document.querySelector('#main .idiom-card').getBoundingClientRect().top) <= 1`);
       assert.equal(await evaluate(`localStorage.getItem('idioms:web:hanja:completed-sessions:v1')`), '9');
     }
   }
   await until(`!!document.querySelector('.summary')`);
   const journey = await evaluate(`Array.from(document.querySelectorAll('.hanja-chain > li > strong')).map(el => el.textContent)`);
-  assert.equal(new Set(journey).size, 21);
-  assert.equal(await evaluate(`document.querySelector('progress').value`), 20);
+  assert.equal(new Set(journey).size, 11);
+  assert.equal(await evaluate(`document.querySelector('progress').value`), 10);
   assert.equal(await evaluate(`document.querySelector('form')`), null);
-  assert.equal(await evaluate(`document.querySelectorAll('.hanja-chain > li').length`), 21);
+  assert.equal(await evaluate(`document.querySelectorAll('.hanja-chain > li').length`), 11);
   assert.equal(await evaluate(`localStorage.getItem('idioms:web:hanja:completed-sessions:v1')`), '10');
   assert.equal(await evaluate(`document.querySelector('.learning-shell[aria-label="한자 학습"] .star-medium').getAttribute('aria-label')`), '중간 별 1개');
   assert.deepEqual(await evaluate(`Array.from(document.querySelectorAll('.hanja-chain li')).slice(0, 6).map(el => [el.style.gridRow, el.style.gridColumn])`), [['1','1'], ['1','2'], ['2','2'], ['2','1'], ['3','1'], ['3','2']]);
-  assert.equal(new Set(await evaluate(`Array.from(document.querySelectorAll('.hanja-chain li')).slice(1).map(el => getComputedStyle(el).borderTopColor)`)).size, 20);
-  assert.equal(await evaluate(`document.querySelector('.hanja-chain .chain-complete-label').textContent`), '20개 이음 완성');
-  checks.push('한자 지그재그·20단계 색·완성 강조·20문제만 별 적립·정답 카드 상단 이동');
+  assert.equal(new Set(await evaluate(`Array.from(document.querySelectorAll('.hanja-chain li')).slice(1).map(el => getComputedStyle(el).borderTopColor)`)).size, 10);
+  assert.equal(await evaluate(`document.querySelector('.hanja-chain .chain-complete-label').textContent`), '10개 이음 완성');
+  checks.push('한자 지그재그·10단계 색·완성 강조·10문제만 별 적립·정답 카드 상단 이동');
   await evaluate(`document.querySelector('.hanja-chain').scrollIntoView({ block: 'start' })`);
   await writeFile(new URL('../tmp/browser-checks/hanja-journey-mobile.png', import.meta.url), Buffer.from((await cdp('Page.captureScreenshot')).data, 'base64'));
-  checks.push('이전 문제·정답·선택 글자가 20개 사슬로 유지');
-  checks.push('20問 연결 완료·중복 없음·추가 제출 차단'.replace('20問', '20문제'));
+  checks.push('이전 문제·정답·선택 글자가 10개 사슬로 유지');
+  checks.push('10問 연결 완료·중복 없음·추가 제출 차단'.replace('10問', '10문제'));
 
   await cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
   await evaluate(`document.querySelector('.summary button').click()`);
@@ -340,16 +347,16 @@ try {
   assert.equal(await evaluate(`document.querySelector('.word-synonyms p').textContent`), displayedSynonym);
   checks.push('영어 현재 카드의 기존 동의어 표시');
   const englishWords = JSON.parse(await readFile(new URL('../data/english/words.json', import.meta.url), 'utf8'));
-  assert.equal(await evaluate(`document.querySelector('.english-learning .session-rank-count').textContent`), '20문제 완주 0회');
+  assert.equal(await evaluate(`document.querySelector('.english-learning .session-rank-count').textContent`), '10문제 완주 0회');
   assert.equal(await evaluate(`localStorage.getItem('idioms:web:hanja:completed-sessions:v1')`), '10');
   await evaluate(`localStorage.setItem('idioms:web:english:completed-sessions:v1', '9')`);
   await cdp('Page.reload');
-  await until(`document.querySelector('.english-learning .session-rank-count')?.textContent === '20문제 완주 9회'`);
+  await until(`document.querySelector('.english-learning .session-rank-count')?.textContent === '10문제 완주 9회'`);
   async function englishAnswer(value) {
     await evaluate(`(() => { const el = document.querySelector('#english-answer'); Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set.call(el, ${JSON.stringify(value)}); el.dispatchEvent(new Event('input', { bubbles: true })); })()`);
     await evaluate(`document.querySelector('.english-learning form').requestSubmit()`);
   }
-  for (let count = 0; count < 20; count++) {
+  for (let count = 0; count < 10; count++) {
     await evaluate(`document.querySelector('.english-learning .characters button:not(:disabled)').click()`);
     await until(`!!document.querySelector('.english-candidates input')`);
     const targetId = await evaluate(`document.querySelector('.english-candidates input').value`);
@@ -363,6 +370,18 @@ try {
       assert.equal(await evaluate(`(() => { const row = document.querySelector('.english-candidates .selected-candidate').getBoundingClientRect(); const form = document.querySelector('.floating-answer').getBoundingClientRect(); return form.bottom <= row.top || form.top >= row.bottom; })()`), true);
       await writeFile(new URL('../tmp/browser-checks/english-floating.png', import.meta.url), Buffer.from((await cdp('Page.captureScreenshot')).data, 'base64'));
       assert.equal(await evaluate(`document.activeElement.id`), 'english-answer');
+      await cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 430, deviceScaleFactor: 1, mobile: true });
+      await until(`(() => { const row = document.querySelector('.english-candidates .selected-candidate').getBoundingClientRect(); const form = document.querySelector('.english-learning .floating-answer').getBoundingClientRect(); return form.top >= visualViewport.offsetTop && form.bottom <= row.top && row.bottom <= visualViewport.offsetTop + visualViewport.height - 40; })()`);
+      await until(`getComputedStyle(document.querySelector('.bottom-nav')).visibility === 'hidden'`);
+      await evaluate(`new Promise(resolve => setTimeout(resolve, 300))`);
+      assert.equal(await evaluate(`(() => { const original = window.scrollBy; let calls = 0; window.scrollBy = () => { calls++; }; try { for (let i = 0; i < 20; i++) visualViewport.dispatchEvent(new Event('scroll')); return calls; } finally { window.scrollBy = original; } })()`), 0);
+      await evaluate(`document.querySelector('.english-learning .floating-close').click()`);
+      await until(`getComputedStyle(document.querySelector('.bottom-nav')).visibility === 'visible'`);
+      await cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
+      await evaluate(`new Promise(resolve => setTimeout(resolve, 300))`);
+      await evaluate(`document.querySelector('.english-candidates input').click()`);
+      await until(`!!document.querySelector('.english-learning .floating-answer')`);
+      checks.push('영어 키보드 높이 축소·후보 위 입력창·반복 스크롤 방지·하단 메뉴 숨김/복구');
       await evaluate(`document.querySelector('.english-candidates').dispatchEvent(new WheelEvent('wheel', { deltaY: 100, bubbles: true }))`);
       await until(`!document.querySelector('.floating-answer')`);
       await evaluate(`document.querySelector('.english-candidates input').click()`);
@@ -392,23 +411,23 @@ try {
     }
     await englishAnswer(targetWord.word.split('/')[0]);
     await until(`document.querySelectorAll('.english-learning .english-chain li').length === ${count + 2}`);
-    if (count < 19) await until(`Math.abs(document.querySelector('.english-learning .idiom-card').getBoundingClientRect().top) <= 1`);
-    if (count < 19) assert.equal(await evaluate(`localStorage.getItem('idioms:web:english:completed-sessions:v1')`), '9');
+    if (count < 9) await until(`Math.abs(document.querySelector('.english-learning .idiom-card').getBoundingClientRect().top) <= 1`);
+    if (count < 9) assert.equal(await evaluate(`localStorage.getItem('idioms:web:english:completed-sessions:v1')`), '9');
   }
   assert.equal(await evaluate(`localStorage.getItem('idioms:web:english:completed-sessions:v1')`), '10');
   assert.equal(await evaluate(`document.querySelector('.english-learning .star-medium').getAttribute('aria-label')`), '중간 별 1개');
   assert.equal(await evaluate(`document.querySelector('.english-learning .star-small')`), null);
-  assert.equal(await evaluate(`document.querySelector('.english-learning progress').value`), 20);
+  assert.equal(await evaluate(`document.querySelector('.english-learning progress').value`), 10);
   assert.equal(await evaluate(`document.querySelector('.english-learning form')`), null);
-  assert.equal(new Set(await evaluate(`Array.from(document.querySelectorAll('.english-learning .english-chain strong')).map(el => el.textContent)`)).size, 21);
+  assert.equal(new Set(await evaluate(`Array.from(document.querySelectorAll('.english-learning .english-chain strong')).map(el => el.textContent)`)).size, 11);
   assert.deepEqual(await evaluate(`Array.from(document.querySelectorAll('.english-learning .english-chain li')).slice(0, 6).map(el => [el.style.gridRow, el.style.gridColumn])`), [['1','1'], ['1','2'], ['2','2'], ['2','1'], ['3','1'], ['3','2']]);
-  assert.equal(await evaluate(`document.querySelectorAll('.english-learning .english-chain-bridge').length`), 20);
+  assert.equal(await evaluate(`document.querySelectorAll('.english-learning .english-chain-bridge').length`), 10);
   const stepBorders = await evaluate(`Array.from(document.querySelectorAll('.english-learning .english-chain li')).slice(1).map(el => getComputedStyle(el).borderTopColor)`);
-  assert.equal(new Set(stepBorders).size, 20);
-  assert.equal(await evaluate(`document.querySelector('.english-learning .english-chain li:last-child').dataset.step`), '20');
-  assert.equal(await evaluate(`document.querySelectorAll('.english-learning .chain-step-badge').length`), 20);
-  assert.equal(await evaluate(`document.querySelector('.english-learning .chain-complete-label').textContent`), '20개 이음 완성');
-  assert.equal(await evaluate(`document.querySelector('.english-learning .english-journey-heading > span').textContent`), '이번 이음 20 / 20');
+  assert.equal(new Set(stepBorders).size, 10);
+  assert.equal(await evaluate(`document.querySelector('.english-learning .english-chain li:last-child').dataset.step`), '10');
+  assert.equal(await evaluate(`document.querySelectorAll('.english-learning .chain-step-badge').length`), 10);
+  assert.equal(await evaluate(`document.querySelector('.english-learning .chain-complete-label').textContent`), '10개 이음 완성');
+  assert.equal(await evaluate(`document.querySelector('.english-learning .english-journey-heading > span').textContent`), '이번 이음 10 / 10');
   await evaluate(`Array.from(document.querySelectorAll('.english-learning > .learning-tabs button')).find(el => el.textContent === '나의 단어장').click()`);
   await until(`!!document.querySelector('.english-learning .book-list > li')`);
   await evaluate(`document.querySelector('.english-learning .favorite-button').click()`);
@@ -418,16 +437,16 @@ try {
   await cdp('Network.emulateNetworkConditions', { offline: true, latency: 0, downloadThroughput: 0, uploadThroughput: 0 });
   await cdp('Page.reload');
   await until(`!!document.querySelector('.english-learning .characters')`);
-  assert.equal(await evaluate(`document.querySelector('.english-learning .session-rank-count').textContent`), '20문제 완주 10회');
-  assert.ok(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:english:v1')`)).completed.length >= 20);
+  assert.equal(await evaluate(`document.querySelector('.english-learning .session-rank-count').textContent`), '10문제 완주 10회');
+  assert.ok(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:english:v1')`)).completed.length >= 10);
   await cdp('Network.emulateNetworkConditions', { offline: false, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
   assert.deepEqual(pageErrors, []);
-  checks.push('영어 후보 정답 숨김·선택 후보 오답/힌트·20개 무중복 사슬·단어장 저장·390px·오프라인 복구');
+  checks.push('영어 후보 정답 숨김·선택 후보 오답/힌트·10개 무중복 사슬·단어장 저장·390px·오프라인 복구');
   checks.push('영어 후보 선택 시 플로팅 입력·포커스·목록 스크롤 시 닫힘·재선택 및 후보 전환');
   for (const total of [1, 9, 99, 100, 123, 1000]) {
     await evaluate(`localStorage.setItem('idioms:web:english:completed-sessions:v1', '${total}')`);
     await cdp('Page.reload');
-    await until(`document.querySelector('.english-learning .session-rank-count')?.textContent === '20문제 완주 ${total}회'`);
+    await until(`document.querySelector('.english-learning .session-rank-count')?.textContent === '10문제 완주 ${total}회'`);
     for (const [size, label, expected] of [['large', '큰 별', Math.floor(total / 100)], ['medium', '중간 별', Math.floor(total / 10) % 10], ['small', '작은 별', total % 10]]) {
       assert.equal(await evaluate(`document.querySelector('.english-learning .star-${size}')?.getAttribute('aria-label') ?? null`), expected ? `${label} ${expected}개` : null);
     }
@@ -435,9 +454,9 @@ try {
   }
   await evaluate(`localStorage.setItem('idioms:web:english:completed-sessions:v1', '-1')`);
   await cdp('Page.reload');
-  await until(`document.querySelector('.english-learning .session-rank-count')?.textContent === '20문제 완주 0회'`);
+  await until(`document.querySelector('.english-learning .session-rank-count')?.textContent === '10문제 완주 0회'`);
   assert.ok(await evaluate(`document.querySelector('.english-learning [role="alert"]').textContent.includes('완주 횟수')`));
-  checks.push('영어 20문제 완주만 별 적립·9→10 승급·재접속 유지·100/123회 별 분해·큰 기록 반응형·손상 기록 안내');
+  checks.push('영어 10문제 완주만 별 적립·9→10 승급·재접속 유지·100/123회 별 분해·큰 기록 반응형·손상 기록 안내');
   for (const check of checks) console.log(`PASS ${check}`);
   await writeFile(new URL('../tmp/browser-checks/results.json', import.meta.url), JSON.stringify({ checks }, null, 2));
 } finally {
