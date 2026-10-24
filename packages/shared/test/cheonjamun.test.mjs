@@ -11,7 +11,12 @@ const additions = loadIdioms(csv);
 
 test('검토본은 해시·종류·교정·출제 보류를 지킨다', () => {
   assert.equal(createHash('sha256').update(csv).digest('hex'), review.reviewed_csv_sha256);
-  assert.equal(additions.length, 244);
+  assert.equal(additions.length, 250);
+  assert.deepEqual(review.items.filter(item => item.action === 'hold').map(item => item.id), []);
+  assert.equal(additions.find(item => item.hanja === '易輶攸畏')?.reading, '역유유외');
+  for (const [hanja, reading] of [['夙興溫淸', '숙흥온정'], ['說感武丁', '열감무정'], ['雁門紫塞', '안문자새'], ['具膳飡飯', '구선손반'], ['璇璣懸斡', '선기현알']]) {
+    assert.equal(additions.find(item => item.hanja === hanja)?.reading, reading);
+  }
   assert.ok(additions.every(item => item.category === 'cheonjamun' && [...item.hanja].length === 4));
   assert.equal(additions.find(item => item.hanja === '恬筆倫紙').reading, '염필륜지');
   for (const item of review.items.filter(item => item.action === 'hold')) {
@@ -22,7 +27,7 @@ test('검토본은 해시·종류·교정·출제 보류를 지킨다', () => {
 test('통합 JSON은 기존 ID·분류를 보존하고 중복 없이 다른 종류로 연결한다', () => {
   const merged = JSON.parse(read('apps/web/src/data/idioms.json'));
   const original = loadIdioms(read('sajaseongeo_image_working.csv'));
-  assert.equal(merged.length, 909);
+  assert.equal(merged.length, 915);
   assert.equal(new Set(merged.map(item => normalizeHanjaForSearch(item.hanja))).size, merged.length);
   assert.deepEqual(merged.slice(0, original.length), original);
   assert.equal(merged.filter(item => item.hanja === '夫唱婦隨').length, 1);

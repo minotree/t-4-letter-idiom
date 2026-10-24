@@ -6,6 +6,34 @@
   font-weight:400;
   line-height:1.65;
   font-size:15px}
+[hidden] { display: none !important; }
+.card-reading { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; }
+.meaning-toggle { min-height: 28px; padding: 2px 4px; border: 0; border-radius: 4px; color: #fff; background: transparent; font: inherit; font-size: 11px; cursor: pointer; }
+.meaning-toggle:hover { text-decoration: underline; }
+.meaning-toggle:focus-visible { outline: 2px solid #ffdc8b; outline-offset: 3px; }
+.home-screen { max-width: 760px; margin: 0 auto; }
+.intro.home-intro { padding: 42px 0 30px; }
+.home-courses { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.home-course { display: block; padding: 28px; color: inherit; border-radius: 20px; }
+.home-course:hover { border-color: #6d967e; }
+.home-course:focus-visible { outline: 3px solid #2d6050; outline-offset: 4px; }
+.home-symbol { display: grid; place-items: center; width: 58px; height: 58px; margin-bottom: 24px; border-radius: 16px; background: #eaf2e7; color: #2d6050; font-size: 30px; font-weight: 700; }
+.home-course-english .home-symbol { background: #f5eedc; color: #846329; }
+.home-course h2 { margin: 8px 0 10px; font-size: 25px; }
+.home-course p { color: #61736a; font-size: 14px; }
+.home-course-action { display: flex; justify-content: space-between; gap: 8px; margin-top: 28px; padding-top: 18px; border-top: 1px solid #e7ece4; color: #2d6050; font-weight: 700; font-size: 13px; }
+.home-guide { margin: 30px 0; padding: 0 4px; }
+.home-guide h2 { font-size: 18px; }
+.home-guide ol { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 0; list-style: none; font-size: 13px; margin: 16px 0; }
+.home-guide strong { color: #568667; margin-right: 6px; }
+.home-guide p { color: #61736a; font-size: 12px; }
+@media (max-width: 540px) {
+  .home-courses { grid-template-columns: 1fr; gap: 14px; }
+  .home-course { padding: 22px; }
+  .home-symbol { float: right; margin: 0 0 12px 12px; }
+  .home-guide ol { display: grid; }
+  .brand span { max-width: 155px; }
+}
 .learning-shell { max-width: 760px; margin: 32px auto; padding: 28px; }
 .intro.learning-intro { max-width: 760px; margin: 0 auto; padding: 32px 0 4px; }
 .learning-shell .workspace { display: block; }
@@ -21,15 +49,59 @@
 .english-step { margin: 22px 0 12px; }
 .word-example { margin-top: 18px; padding-top: 14px; border-top: 1px solid #ffffff40; text-align: left; overflow-wrap: anywhere; }
 .word-example > span { font-size: 11px; opacity: .8; }
+.example-heading { display: flex; align-items: center; gap: 8px; }
+.example-heading > span { font-size: 11px; opacity: .8; }
 .word-example p { margin: 5px 0 0; }
 .english-count { margin-top: 18px; font-weight: 700; }
-.english-chain { list-style: none; padding: 0; display: grid; gap: 10px; margin: 20px 0; }
-.english-chain li { background: #f8faf6; border-left: 4px solid #568667; padding: 12px; overflow-wrap: anywhere; }
-.english-chain p { font-size: 12px; color: #66786b; }
+.english-journey { margin: 24px 0; }
+.english-rank-heading { flex-wrap: wrap; align-items: center; }
+.session-rank { min-width: 0; max-width: 100%; text-align: right; margin-left: auto; }
+.session-stars { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 4px 10px; }
+.session-star-group { display: inline-flex; align-items: center; flex-wrap: wrap; color: #936b12; line-height: 1.4; overflow-wrap: anywhere; }
+.star-small { font-size: 13px; }
+.star-medium { font-size: 20px; }
+.star-large { font-size: 28px; }
+.star-multiplier { font-size: 12px; margin-left: 3px; }
+.session-rank-count, .session-rank-empty, .english-word-total { font-size: 11px; color: #61736a; }
+.session-rank-count { display: block; }
+.session-rank-empty { display: block; color: #795711; }
+.english-word-total { margin: 8px 0 0; }
+.english-journey h3 { font-size: 14px; margin-bottom: 16px; }
+.english-chain { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px 44px; margin: 0; }
+.english-chain li { position: relative; min-width: 0; background: #f8faf6; border: 3px solid #c9dacb; border-radius: 12px; padding: 12px; overflow-wrap: anywhere; }
+.english-chain strong { display: block; font-size: 15px; }
+.english-chain p { font-size: 12px; color: #66786b; margin-top: 6px; }
+.chain-word-step { display: block; font-size: 10px; color: #61736a; margin-bottom: 5px; }
+.english-journey-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; margin-bottom: 16px; }
+.english-journey-heading h3 { margin-bottom: 0; }
+.english-journey-heading > span { font-size: 12px; font-weight: 700; color: #426b52; }
+.chain-step-badge { display: inline-block; padding: 3px 9px; border-radius: 20px; font-size: 11px; font-weight: 800; margin-bottom: 9px; }
+.english-chain li.chain-complete { background: linear-gradient(135deg, #fff9e8, #fff0bd); box-shadow: 0 3px 16px #bd8b2220; }
+.chain-complete-label { display: block; margin-bottom: 8px; color: #795711; font-size: 12px; font-weight: 800; }
+.english-chain-bridge { position: absolute; display: flex; align-items: center; justify-content: center; gap: 2px; color: #2d6050; font-size: 12px; font-weight: 700; }
+.english-chain-bridge > span:last-child { font-size: 23px; line-height: 1; }
+.bridge-right { width: 44px; right: 100%; top: 50%; transform: translateY(-50%); flex-direction: column; }
+.bridge-left { width: 44px; left: 100%; top: 50%; transform: translateY(-50%); flex-direction: column; }
+.bridge-down { height: 48px; bottom: 100%; left: 50%; transform: translateX(-50%); }
 .english-learning .book-item-heading h2 { font-family: inherit; font-size: 23px; }
 .content-source { display: inline-block; margin-top: 8px; padding: 2px 7px; border: 1px solid currentColor; border-radius: 5px; font-size: 11px; font-weight: 400; }
 .candidate-choice { display: flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; font-size: 13px; color: #2d6050; font-weight: 700; }
 .candidate-choice input { width: 20px; height: 20px; accent-color: #2d6050; }
+.hanja-candidate-choice { justify-content: flex-start; }
+.hanja-candidate-choice input { flex: 0 0 20px; margin: 0; }
+.english-candidate-choice { justify-content: flex-start; }
+.english-candidates { overflow-anchor: none; }
+.hanja-candidates { overflow-anchor: none; }
+.hanja-chain-reading { display: block; font-size: 12px; margin-top: 4px; }
+.hanja-chain > li > strong { font-family: "Batang", serif; font-size: 20px; }
+.english-candidate-choice input { flex: 0 0 20px; margin: 0; }
+.candidate-length { flex-shrink: 0; font-size: 12px; }
+.candidate-synonym { min-width: 0; overflow-wrap: anywhere; font-weight: 500; }
+.floating-answer.answer-form { position: fixed; z-index: 30; margin: 0; padding: 14px; border: 1px solid #739481; border-radius: 12px; background: #fff; box-shadow: 0 8px 30px #163b3040; max-height: calc(100dvh - 24px); overflow: auto; }
+.floating-answer-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.floating-close { border: 0; background: transparent; color: #426b52; width: 32px; min-height: 32px; font-size: 24px; cursor: pointer; }
+.floating-answer p { margin-top: 8px; font-size: 12px; color: #426b52; }
+.floating-answer .input-row { margin-top: 8px; }
 .candidate-list > li.selected-candidate { border: 2px solid #2d6050; background: #eef4ed; }
 .app { padding-bottom: calc(90px + env(safe-area-inset-bottom)) !important; }
 .idiom-book { max-width: 760px; margin: 32px auto; padding: 28px; }
@@ -118,10 +190,13 @@
                             border-bottom:1px solid #dce3d9;
                             gap:16px}
                             .brand{
+                              display:inline-flex;
+                              align-items:center;
                               font-size:23px;
                               font-weight:850;
                               letter-spacing:-1px}
                               .brand span{
+                                line-height:1.65;
                                 font-size:12px;
                                 letter-spacing:0;
                                 font-weight:500;

@@ -1,0 +1,395 @@
+{
+  "input_sha256": "f9f25006421f28385bf9f4b52fc89dd93709ae47817054f5949095fd649017d6",
+  "items": [
+    {
+      "id": "cheonjamun-066",
+      "coverage": "partial",
+      "evidence": [
+        {
+          "source_id": "src-seokbong-1691",
+          "url": "https://ko.wikisource.org/wiki/%EC%84%9D%EB%B4%89_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:CNTS-00047980571 千字文.pdf/24",
+          "access_level": "full_text",
+          "supports": [
+            "hanja",
+            "reading"
+          ],
+          "excerpt": "夙(이ᄅᆞᆯ 슉) 興(닐 흥) 溫(ᄃᆞᄉᆞᆯ 온) 淸°(시글 졍)",
+          "comparison_note": "위키문헌 석봉천자문 전사본(1691년 숙종 어제서문 수록본) 원문 [夙興溫淸]. 글자는 淸(삼수변)이나 훈은 '시글'(식힐/서늘하게 할), 독음은 거성 방점과 함께 '졍'(정)으로 명기되어 전통 한문 훈독에서 '숙흥온정'으로 읽었음을 직접 증명함.",
+          "rights_note": "Public Domain (조선 왕실 목판본 영인 전사본)"
+        },
+        {
+          "source_id": "src-gwangju-1575",
+          "url": "https://ko.wikisource.org/wiki/%EA%B4%91%EC%A3%BC_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:광주천자문.pdf/12",
+          "access_level": "full_text",
+          "supports": [
+            "hanja"
+          ],
+          "excerpt": "夙(녜 슈) 興(닐 흥) 溫(ᄃᆞᄉᆞᆯ 온) 淸(ᄎᆞᆯ 쳥)",
+          "comparison_note": "광주판천자문(1575년) 원문 [夙興溫淸]. 글자는 삼수변 淸이며 훈은 'ᄎᆞᆯ', 독음은 '쳥'으로 주음되어 광주본 계열의 '숙흥온청' 독음 근거를 보여줌.",
+          "rights_note": "Public Domain (1575년 선조 8년 간행 목판본 영인 전사본)"
+        },
+        {
+          "source_id": "src-korean-std-dict",
+          "url": "https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EC%98%A8%EC%A0%95%EC%A0%95%EC%84%B1",
+          "locator": "표준국어대사전 및 한국 어문 규범 한자음 '凊'",
+          "access_level": "search_excerpt",
+          "supports": [
+            "reading",
+            "meaning"
+          ],
+          "excerpt": "동온하정(冬溫夏凊)·온정정성(溫凊定省): '겨울에는 따뜻하게 하고 여름에는 서늘하게 함'. 凊의 규범 한자음 '정'.",
+          "comparison_note": "《예기》 곡례상의 '冬溫而夏凊'에서 유래한 한국 대표 효행 성어(동온하정·온정정성)에서 凊은 일관되게 '정'으로 읽히며, 夙興溫凊의 문맥 독음이 '온정'임을 뒷받침함.",
+          "rights_note": "공공누리 제1유형(출처표시)"
+        },
+        {
+          "source_id": "src-wikisource-translation",
+          "url": "https://ko.wikisource.org/wiki/%EB%B2%88%EC%97%AD:%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "대조표 제33행 후구(하반절)",
+          "access_level": "full_text",
+          "supports": [
+            "reading",
+            "meaning"
+          ],
+          "excerpt": "원문: 夙興溫凊 | 독음: 숙흥온정",
+          "comparison_note": "위키문헌 현대 대조표에서 정자 夙興溫凊에 대해 한글 독음 '숙흥온정' 수록 확인.",
+          "rights_note": "CC-BY-SA 4.0 (현대 번역 전문 복제 금지, 대조표 표제 행 최소 발췌)"
+        }
+      ],
+      "unresolved": [
+        "독음 복수 인정 여부: 기준 전사본 훈음('시글 졍') 및 전통 성어 관습음에 근거한 '숙흥온정'을 기본값으로 하되, 원음 및 광주본 계열 '숙흥온청'을 퀴즈 복수 정답으로 허용할지 운영 결정 필요."
+      ]
+    },
+    {
+      "id": "cheonjamun-140",
+      "coverage": "supported",
+      "evidence": [
+        {
+          "source_id": "src-aks-encykorea",
+          "url": "https://encykorea.aks.ac.kr/Article/E0028096",
+          "locator": "한국민족문화대백과사전 '서전인물유취(書傳人物類聚)' 및 '왕유(王柔)' 표제어",
+          "access_level": "search_excerpt",
+          "supports": [
+            "reading",
+            "meaning"
+          ],
+          "excerpt": "은나라 고종(무정) 때의 어진 재상 傅說을 '부열'로 표기.",
+          "comparison_note": "한국 권위 학술 사전에서 傅說의 說을 일관되게 '열'로 표기하여, 인명에서 說이 '열'로 발음됨을 입증하는 한국어 직접 근거임.",
+          "rights_note": "한국학중앙연구원 한국민족문화대백과사전 (공공 인용)"
+        },
+        {
+          "source_id": "src-itkc-db",
+          "url": "https://db.itkc.or.kr",
+          "locator": "한국고전종합DB 《서경(書經)》 상서(商書) 〈열명(說命)〉 국역본",
+          "access_level": "search_excerpt",
+          "supports": [
+            "reading",
+            "meaning"
+          ],
+          "excerpt": "《서경》 상서 편명 〈열명(說命)〉, 은나라 재상 傅說을 '부열'로 공식 국역.",
+          "comparison_note": "국가 고전 국역 표준인 한국고전번역원에서 傅說 관련 편명을 〈열명〉, 인명을 '부열'로 확정 표기하여 한국어 독음 '열'을 직접 입증함.",
+          "rights_note": "한국고전번역원 고전종합DB 인용"
+        },
+        {
+          "source_id": "src-seokbong-1691",
+          "url": "https://ko.wikisource.org/wiki/%EC%84%9D%EB%B4%89_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:CNTS-00047980571 千字文.pdf/42",
+          "access_level": "full_text",
+          "supports": [
+            "hanja"
+          ],
+          "excerpt": "說(니ᄅᆞᆯ 셜) °感(늗길 감) °武(ᄆᆡ올 무) 丁(장뎡)",
+          "comparison_note": "위키문헌 석봉천자문 전사본 원문 [說感武丁] 확인. 단자 훈음은 대표음 '니ᄅᆞᆯ 셜'로 주음되어 기초 학습서의 편제 특성을 보여줌.",
+          "rights_note": "Public Domain"
+        },
+        {
+          "source_id": "src-gwangju-1575",
+          "url": "https://ko.wikisource.org/wiki/%EA%B4%91%EC%A3%BC_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:광주천자문.pdf/25",
+          "access_level": "full_text",
+          "supports": [
+            "hanja"
+          ],
+          "excerpt": "說(니를 셜) 感(깃글 감) 武(ᄆᆡ올 무) 丁(ᄉᆞᆫ 뎡)",
+          "comparison_note": "광주판천자문 원문 [說感武丁] 확인. 석봉본과 동일하게 대표 자음 '니를 셜'로 수록됨.",
+          "rights_note": "Public Domain"
+        },
+        {
+          "source_id": "src-shiji-eun",
+          "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98/%E5%8D%B7003",
+          "locator": "사기 권3 은본기 무정 조",
+          "access_level": "full_text",
+          "supports": [
+            "meaning"
+          ],
+          "excerpt": "武丁與語，果聖人，擧以爲相，殷國大治。故遂以傅險姓之，號曰傅說。",
+          "comparison_note": "은나라 무정 임금이 꿈에서 본 현인 부열을 찾아 재상으로 삼은 역사 고사의 한자 원문 출전 대조. (한국어 독음 근거로는 사용하지 않음)",
+          "rights_note": "Public Domain"
+        },
+        {
+          "source_id": "src-wikisource-translation",
+          "url": "https://ko.wikisource.org/wiki/%EB%B2%88%EC%97%AD:%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "대조표 제70행 후구(하반절)",
+          "access_level": "full_text",
+          "supports": [
+            "meaning"
+          ],
+          "excerpt": "원문: 說感武丁 | 독음: 설감무정 | 번역 요지: 부열이 무정을 감동시키듯",
+          "comparison_note": "위키문헌 대조표에서 인물 부열 고사를 해설함. 대조표의 독음 '설감무정'은 단자 직독 표기임.",
+          "rights_note": "CC-BY-SA 4.0"
+        }
+      ],
+      "unresolved": [
+        "독음 채택 방침: 인명 정음인 '열감무정'을 유지하되, 목판본 단자 훈음 및 대중적 직독인 '설감무정'을 퀴즈 복수 정답으로 허용할지 결정 필요."
+      ]
+    },
+    {
+      "id": "cheonjamun-157",
+      "coverage": "supported",
+      "evidence": [
+        {
+          "source_id": "src-seokbong-1691",
+          "url": "https://ko.wikisource.org/wiki/%EC%84%9D%EB%B4%89_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:CNTS-00047980571 千字文.pdf/47",
+          "access_level": "full_text",
+          "supports": [
+            "hanja",
+            "reading"
+          ],
+          "excerpt": "雁°(그려기 안) 門(오래 문) °紫(블글 ᄌᆞ) 塞(마글 ᄉᆡᆨ)",
+          "comparison_note": "기준 전사본 원문 [雁門紫塞] (새 추 隹 부수의 雁) 확인. 塞은 대표 자음 '마글 ᄉᆡᆨ'이나 지명 요새 문맥에서 거성 '새'로 독음함.",
+          "rights_note": "Public Domain"
+        },
+        {
+          "source_id": "src-gwangju-1575",
+          "url": "https://ko.wikisource.org/wiki/%EA%B4%91%EC%A3%BC_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:광주천자문.pdf/28",
+          "access_level": "full_text",
+          "supports": [
+            "hanja"
+          ],
+          "excerpt": "鴈(그러기 안) 門(오래 모ᇿ) 紫(블글 ᄌᆞ) 塞(ᄀᆞᆺ ᄉᆡᆨ)",
+          "comparison_note": "광주판천자문 원문 [鴈門紫塞] (새 조 鳥 부수의 鴈). 기준 전사본(雁)과의 이체자 차이를 확인 및 기록함.",
+          "rights_note": "Public Domain"
+        },
+        {
+          "source_id": "src-cui-gujinzhu",
+          "url": "https://zh.wikisource.org/wiki/%E5%8F%A4%E4%BB%8A%E6%B3%A8/%E5%8D%B7%E4%B8%8A",
+          "locator": "서진(西晉) 최표(崔豹) 《고금주(古今注)》 권상 도읍(都邑)",
+          "access_level": "full_text",
+          "supports": [
+            "meaning"
+          ],
+          "excerpt": "秦築長城，土色皆紫，漢塞亦然，故稱紫塞焉。",
+          "comparison_note": "자새(紫塞)의 정확한 어원 출전. 진나라가 만리장성을 축조할 때 흙빛이 붉은 자주색을 띠어 자새라 칭하였음을 밝혀 '붉은 흙빛을 띤 장성 요새'라는 정확한 풀이 근거를 제공함.",
+          "rights_note": "Public Domain (고문헌)"
+        },
+        {
+          "source_id": "src-korean-std-dict",
+          "url": "https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EC%9A%94%EC%83%88",
+          "locator": "표준국어대사전 표제어 '요새(要塞)' [명사]",
+          "access_level": "search_excerpt",
+          "supports": [
+            "reading"
+          ],
+          "excerpt": "요새(要塞): 군사적으로 중요한 위치에 설치한 방어 시설. 塞=새.",
+          "comparison_note": "국방 요새 문맥에서 塞의 표준 한자음이 '새'임을 직접 증명하여 '안문자새' 독음을 확정함.",
+          "rights_note": "공공누리 제1유형"
+        },
+        {
+          "source_id": "src-wikisource-translation",
+          "url": "https://ko.wikisource.org/wiki/%EB%B2%88%EC%97%AD:%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "대조표 제79행 전구(상반절)",
+          "access_level": "full_text",
+          "supports": [
+            "reading",
+            "meaning"
+          ],
+          "excerpt": "원문: 雁門紫塞 | 독음: 안문자새 | 번역 요지: 안문관과 만리장성",
+          "comparison_note": "위키문헌 대조표에서 독음 '안문자새' 및 안문관/만리장성 대조 확인.",
+          "rights_note": "CC-BY-SA 4.0"
+        }
+      ],
+      "unresolved": [
+        "판본 차이 보존: 기준 전사본 雁門 유지, 광주본 鴈門은 이체자 기록으로 관리."
+      ]
+    },
+    {
+      "id": "cheonjamun-199",
+      "coverage": "partial",
+      "evidence": [
+        {
+          "source_id": "src-seokbong-1691",
+          "url": "https://ko.wikisource.org/wiki/%EC%84%9D%EB%B4%89_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:CNTS-00047980571 千字文.pdf/57",
+          "access_level": "full_text",
+          "supports": [
+            "hanja"
+          ],
+          "excerpt": "易(밧골 역) 輶(가ᄇᆡ야올 유) 攸(바 유) 畏°(저흘 외)",
+          "comparison_note": "기준 전사본 원문 [易輶攸畏] 확인. 석봉본 훈음은 易의 대표 자음인 '밧골 역'으로 수록되었으나, 輶(가ᄇᆡ야올 유)와 대구 屬耳垣墻(담장에도 귀가 있다)을 통해 문맥상 경솔함을 경계하는 내용임을 확인.",
+          "rights_note": "Public Domain"
+        },
+        {
+          "source_id": "src-gwangju-1575",
+          "url": "https://ko.wikisource.org/wiki/%EA%B4%91%EC%A3%BC_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:광주천자문.pdf/35",
+          "access_level": "full_text",
+          "supports": [
+            "hanja"
+          ],
+          "excerpt": "易(밧ᄭᅩᆯ ᅀᅧᆨ) 輶(술위 유) 攸(배 유) 畏(저흘 외)",
+          "comparison_note": "광주판천자문 원문 [易輶攸畏] 및 16세기 훈음 대조 확인.",
+          "rights_note": "Public Domain"
+        },
+        {
+          "source_id": "src-korean-std-dict",
+          "url": "https://stdict.korean.go.kr",
+          "locator": "표준국어대사전 易 자음 체계 (輕易·容易의 '이' vs 變易의 '역')",
+          "access_level": "search_excerpt",
+          "supports": [
+            "reading",
+            "meaning"
+          ],
+          "excerpt": "易: 1. 바꿀 역(변역). 2. 쉬울/가벼이 여길/소홀히 할 이(경이, 용이, 간이, 평이).",
+          "comparison_note": "易이 '가볍게 여기다, 소홀히 하다, 쉽다'의 뜻일 때 정음은 '이(以豉切)'임을 입증. 易輶(쉽고 가벼움, 경솔함)의 어학적 정음이 '이유유외'임을 뒷받침함.",
+          "rights_note": "공공누리 제1유형"
+        },
+        {
+          "source_id": "src-wikisource-translation",
+          "url": "https://ko.wikisource.org/wiki/%EB%B2%88%EC%97%AD:%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "대조표 제100행 전구(상반절)",
+          "access_level": "full_text",
+          "supports": [
+            "meaning"
+          ],
+          "excerpt": "원문: 易輶攸畏 | 독음: 역유유외 | 번역 요지: 가벼이 경솔하게 구는 것을 두려워함",
+          "comparison_note": "위키문헌 대조표에서 '역유유외' 독음 전사 및 경솔함을 두려워한다는 문맥 풀이 확인.",
+          "rights_note": "CC-BY-SA 4.0"
+        }
+      ],
+      "unresolved": [
+        "독음 채택 방침: 문맥상 어학적 정음인 '이유유외'로 변경할지, 석봉본 대표 자음 기반 전사본인 '역유유외'를 유지하고 '이유유외'를 복수 정답으로 인정할지 운영 결정 필요."
+      ]
+    },
+    {
+      "id": "cheonjamun-201",
+      "coverage": "partial",
+      "evidence": [
+        {
+          "source_id": "src-seokbong-1691",
+          "url": "https://ko.wikisource.org/wiki/%EC%84%9D%EB%B4%89_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:CNTS-00047980571 千字文.pdf/57",
+          "access_level": "full_text",
+          "supports": [
+            "hanja",
+            "reading"
+          ],
+          "excerpt": "具(ᄀᆞ촐 구) 膳°(차반 션) 飡(밥 손) 飯°(밥 반)",
+          "comparison_note": "기준 전사본(석봉본)에서 飡의 훈음을 직접 [飡(밥 손)]으로 주음함. 16세기 조선 왕실 목판본 편찬자가 飡을 飧(저녁밥 손)의 통용자로 파악하여 '손'으로 읽었음을 증명하는 가장 확실한 직접 근거임.",
+          "rights_note": "Public Domain"
+        },
+        {
+          "source_id": "src-gwangju-1575",
+          "url": "https://ko.wikisource.org/wiki/%EA%B4%91%EC%A3%BC_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:광주천자문.pdf/35",
+          "access_level": "full_text",
+          "supports": [
+            "hanja"
+          ],
+          "excerpt": "具(ᄀᆞᄌᆞᆫ 구) 膳(션믈 션) 飡(반찬 찬) 飯(법 반)",
+          "comparison_note": "광주판천자문 원문 [具膳飡飯]. 飡을 餐(밥 찬)의 통용자로 보아 '반찬 찬'으로 주음하여 '구선찬반' 독음의 역사적 근거를 보여줌.",
+          "rights_note": "Public Domain"
+        },
+        {
+          "source_id": "src-daum-handic",
+          "url": "https://dic.daum.net/word/view.do?wordid=hhw000007802",
+          "locator": "표제어 具膳飡飯(구선손반)",
+          "access_level": "unavailable",
+          "supports": [],
+          "excerpt": null,
+          "comparison_note": "기존 근거에 기재된 다음 사전 URL은 직접 HTTP 호출 시 403 Forbidden을 반환하여 외부 자동화 및 웹 도구에서 열람 불가함. 지침에 따라 확인 불가(unavailable)로 기록하며 근거로 채택하지 않음.",
+          "rights_note": "접근 불가"
+        },
+        {
+          "source_id": "src-wikisource-translation",
+          "url": "https://ko.wikisource.org/wiki/%EB%B2%88%EC%97%AD:%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "대조표 제101행 전구(상반절)",
+          "access_level": "full_text",
+          "supports": [
+            "reading",
+            "meaning"
+          ],
+          "excerpt": "원문: 具膳飡飯 | 독음: 구선손반 | 번역 요지: 반찬과 밥을 먹음",
+          "comparison_note": "위키문헌 현대 대조표에서 독음 '구선손반' 수록 확인.",
+          "rights_note": "CC-BY-SA 4.0"
+        }
+      ],
+      "unresolved": [
+        "Daum 사전 링크 열람 불가: HTTP 403 차단으로 확인 불가 처리. 석봉본 직접 훈음('밥 손')으로 대체 검증 완료.",
+        "독음 복수 인정: 석봉본 전통 관습음 '구선손반'(飡=飧)을 기본값으로 유지하되, 광주본 및 일반 자음에 따른 '구선찬반'(飡=餐)을 복수 정답으로 인정할지 결정 필요."
+      ]
+    },
+    {
+      "id": "cheonjamun-239",
+      "coverage": "supported",
+      "evidence": [
+        {
+          "source_id": "src-seokbong-1691",
+          "url": "https://ko.wikisource.org/wiki/%EC%84%9D%EB%B4%89_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:CNTS-00047980571 千字文.pdf/67",
+          "access_level": "full_text",
+          "supports": [
+            "hanja",
+            "reading"
+          ],
+          "excerpt": "璇(구슬 션) 璣(구슬 긔) 懸(ᄃᆞᆯ 현) 斡(돌 알)",
+          "comparison_note": "기준 전사본(석봉본) 원문 [璇璣懸斡] (斡: 말 두 斗 부수) 확인. 斡의 훈음이 [斡(돌 알)]로 명기되어 '선기현알' 독음을 직접 증명함.",
+          "rights_note": "Public Domain"
+        },
+        {
+          "source_id": "src-gwangju-1575",
+          "url": "https://ko.wikisource.org/wiki/%EA%B4%91%EC%A3%BC_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "페이지:광주천자문.pdf/41",
+          "access_level": "full_text",
+          "supports": [
+            "hanja"
+          ],
+          "excerpt": "璇(구슬 션) 璣(구슬 긔) 懸(ᄃᆞᆯ 현) 幹(읏듬 간)",
+          "comparison_note": "광주판천자문 원문 [璇璣懸幹] (幹: 방패 간 干 부수). 기준 전사본(斡)과의 판본 차이를 확인 및 기록함.",
+          "rights_note": "Public Domain"
+        },
+        {
+          "source_id": "src-korean-std-dict",
+          "url": "https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EC%84%A0%EA%B8%B0",
+          "locator": "표준국어대사전 표제어 '선기(璇璣)' [명사]",
+          "access_level": "search_excerpt",
+          "supports": [
+            "reading",
+            "meaning"
+          ],
+          "excerpt": "선기(璇璣): 북두칠성의 둘째 별과 셋째 별 또는 천체를 관측하는 기구 혼천의.",
+          "comparison_note": "표준국어대사전 표제어 '선기'를 통해 북두칠성과 혼천의 천체 관측기구라는 두 문맥적 의미를 증명함. 斡(돌 알)과 결합하여 허공에 매달려 도는 천체 운행의 풀이를 뒷받침함.",
+          "rights_note": "공공누리 제1유형"
+        },
+        {
+          "source_id": "src-wikisource-translation",
+          "url": "https://ko.wikisource.org/wiki/%EB%B2%88%EC%97%AD:%EC%B2%9C%EC%9E%90%EB%AC%B8",
+          "locator": "대조표 제120행 전구(상반절)",
+          "access_level": "full_text",
+          "supports": [
+            "reading",
+            "meaning"
+          ],
+          "excerpt": "원문: 璇璣懸斡 | 독음: 선기현알 | 번역 요지: 천문을 보는 기계 매달려 돌듯",
+          "comparison_note": "위키문헌 대조표에서 독음 '선기현알' 및 혼천의 회전 비유 대조 확인.",
+          "rights_note": "CC-BY-SA 4.0"
+        }
+      ],
+      "unresolved": [
+        "판본 차이 보존: 기준 전사본 斡(돌 알) 유지 확정, 광주본 幹(간) 이체자 주기 보존."
+      ]
+    }
+  ]
+}

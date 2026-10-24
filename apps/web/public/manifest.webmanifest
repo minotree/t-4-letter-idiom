@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "글자잇기 · 한자성어",
-  "short_name": "글자잇기",
-  "description": "한 글자로 이어가는 즐거운 한자성어 학습",
+  "name": "모두의 이음",
+  "short_name": "모두의 이음",
+  "description": "한자와 영어를 한 글자씩 이어가는 즐거운 학습 퀴즈",
   "lang": "ko",
   "start_url": "/",
   "scope": "/",

@@ -8,13 +8,13 @@
 
 | 항목 | 대상 프로젝트에서 작성 |
 | --- | --- |
-| 프로젝트 이름 / 패키지 scope | `four-letter-idiom` / `@idioms` (서비스 표시 이름 미정) |
+| 프로젝트 이름 / 패키지 scope | `four-letter-idiom` / `@idioms` (서비스 표시 이름: `모두의 이음`, 잠정) |
 | 서비스 목표·핵심 사용자 흐름 | 남녀노소 재미있게 한자성어 학습. 성어 제시 → 한 글자 선택 → 해당 한자가 포함된 성어 퀴즈 → 정답 성어에서 다음 글자 선택. 세션 최대 20문제. 상세 규칙은 `docs/requirements.md` 참고 |
 | 보고 언어 | 한국어 |
 | 지원 플랫폼·개발 순서 | PWA → Toss → Android → iOS |
-| 현재 구현·배포 상태 | Web/PWA: 한자성어·천자문 통합 909개 및 영어 3339개 연결 학습·로컬 이력·오프라인·갱신 구현 및 로컬 브라우저 검사. 천자문 6개 출제 보류. 실제 설치·기기 검증 대기. Toss·Mobile: 준비 README만 존재. 공개 배포 없음 |
-| 백엔드·인증·호스팅 | 미정. 로그인·동기화는 보류하며 요구 기능에 필요해지면 다시 사용자에게 알린다 |
-| Node / pnpm | engines: Node >=22.18.0, pnpm >=10 <11. packageManager: pnpm@10.34.7. Node의 기본 TypeScript 직접 실행 사용. 로컬 확인(2026-10-23): Node v24.22.0 / pnpm 10.34.7 |
+| 현재 구현·배포 상태 | Web/PWA: 한자성어·천자문 통합 915개 및 영어 3339개 연결 학습·로컬 이력·오프라인·갱신 구현 및 로컬 브라우저 검사. 천자문 출제 보류 없음. 실제 설치·기기 검증 대기. Toss·Mobile: 준비 README만 존재. 공개 배포 없음 |
+| 백엔드·인증·호스팅 | Web/PWA는 Vercel 배포 설정 준비, 실제 배포·도메인 연결 대기. 백엔드·로그인·동기화는 보류하며 필요해지면 사용자에게 알린다 |
+| Node / pnpm | engines: Node24.x, pnpm >=10 <11. packageManager: pnpm@10.34.7. Vercel·로컬의 Node 주 버전 통일. Node의 기본 TypeScript 직접 실행 사용. 로컬 확인(2026-10-24): Node v24.22.0 / pnpm10.34.7 |
 | 업로드·검토 요청·출시 담당 | 사용자가 승인 및 출시 작업 수행. 에이전트는 구현·설정·검사·인수인계까지 준비하고 사용자 실행 시점과 절차를 안내. 별도 명시적 위임 전 업로드·배포·검토 요청·출시를 대신 실행하지 않는다 |
 | 요구사항 / 진행 기록 | `docs/requirements.md` / `progress.md` |
 
@@ -22,7 +22,9 @@
 
 ### 서비스별 개발 기준
 
-- 자료 종류는 `idiom`(한자성어), `cheonjamun`(천자문), `english`(영어)로 구분한다. 기존 종류 열 없는 한자성어 CSV는 로딩 시 idiom으로 식별하고 검수 원본/해시는 보존한다. 파일 역할/종류는 `data/content-catalog.json`에서 관리한다. 천자문만 `출처: 천자문` 표시하며 4자 구절 단위다. 앱에는 `data/cheonjamun/reviewed/cheonjamun.csv` 244개만 통합하며, 기존 부창부수 중복 1개는 기존 항목을 유지한다. 보류 6개·실제 검토 범위는 같은 디렉터리 README/review.json 참조. 영어는 별도 계약·후보/판정 규칙·저장 namespace로 운영하고 단어장 데이터의 출처는 `data/english/source.json`에 기록한다.
+- 한자 화면의 변경을 영어에도 확대 적용하려면 먼저 사용자에게 확인받는다. 현재 카드의 뜻 보기/접기는 양쪽 적용 승인 완료(2026-10-24).
+
+- 자료 종류는 `idiom`(한자성어), `cheonjamun`(천자문), `english`(영어)로 구분한다. 기존 종류 열 없는 한자성어 CSV는 로딩 시 idiom으로 식별하고 검수 원본/해시는 보존한다. 파일 역할/종류는 `data/content-catalog.json`에서 관리한다. 천자문만 `출처: 천자문` 표시하며 4자 구절 단위다. 앱에는 `data/cheonjamun/reviewed/cheonjamun.csv` 250개만 통합하며, 기존 부창부수 중복 1개는 기존 항목을 유지한다. 현재 보류 없음·실제 검토 범위는 같은 디렉터리 README/review.json 참조. 영어는 별도 계약·후보/판정 규칙·저장 namespace로 운영하고 단어장 데이터의 출처는 `data/english/source.json`에 기록한다.
 
 - 첫 공개는 텍스트 학습으로 진행한다. 이미지 제작은 현재 보류하며 데이터 정제 후 완성·추가한다. 이미지 완성·파일 매핑 검증을 첫 공개의 필수 조건으로 삼지 않고, 별도 요청 없이 이미지 생성·수정·유료 API 호출을 재개하지 않는다.
 - 글자 수 제한이 없는 한자성어·한자어 연결 학습이다. 4자 낱말 퀴즈로 한정하지 않으며, 2·3·5자 이상이라는 이유로 데이터를 제외하거나 입력 길이를 4자로 제한하지 않는다.
@@ -256,7 +258,7 @@ git diff --check
 | 학습 콘텐츠 검수 | `docs/content-audit.md`, `docs/content-audit-supplementary.md`, `data/content-audit/` (666개 대표 뜻 대조, 직접 사전 정의 미확보 38개도 교차 검수 완료: 34개 유지·4개 뜻 보완. 전체 역사적 용례의 전문가 감수와 구분) |
 | 구조·의존성 | `README.md`, `package.json`, `pnpm-workspace.yaml` (별도 구조 문서 미작성) |
 | 진행·검증 기록 | `progress.md` (필수) |
-| Web/PWA 운영 | `apps/web/README.md` (로컬 실행·캐시·검증, 공개 호스팅 미정) |
+| Web/PWA 운영 | `apps/web/README.md` (로컬 실행·캐시·검증), `docs/deploy-vercel.md` (Vercel 설정·배포 인수인계, 실제 배포 대기) |
 | Android/iOS 설정·서명·검증 | `apps/mobile/README.md` (준비 안내만 존재) |
 | Toss 등록·SDK·광고·출시 | `apps/toss/README.md` (준비 안내), `toss-miniapp-deployment-lessons.md` (참고 자료, 본 앱 적용 여부 별도 확인) |
 | 서버·DB·인증·운영 변경 | 미작성·선택 보류 |

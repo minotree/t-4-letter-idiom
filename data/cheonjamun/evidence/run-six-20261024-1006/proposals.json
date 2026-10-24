@@ -1,0 +1,174 @@
+[
+  {
+    "id": "cheonjamun-066",
+    "original_value": {
+      "hanja": "夙興溫淸",
+      "reading": "숙흥온정",
+      "meaning": "아침 일찍 일어나 부모님 안부를 살피고 겨울에는 따뜻하게 여름에는 시원하게 해 드립니다."
+    },
+    "proposed_value": {
+      "hanja": "夙興溫淸",
+      "reading": "숙흥온정",
+      "meaning": "아침 일찍 일어나 부모님 안부를 살피고 겨울에는 따뜻하게 여름에는 시원하게 해 드립니다."
+    },
+    "decision": "keep",
+    "reason": "기준 전사본(석봉본 24쪽)의 자형은 溫淸(삼수변 淸)이나 훈음이 [淸°(시글 졍)]으로 명기되어 전통 한문 훈독에서 '정'으로 읽었음을 직접 증명함. 한국 한자성어 규범(동온하정, 온정정성)에서도 '정'이 확립된 관습음이자 정통음임. 따라서 자형 夙興溫淸과 독음 숙흥온정 유지를 제안하되, 원음 및 광주본(ᄎᆞᆯ 쳥)에 따른 '숙흥온청'도 복수 정답으로 고려 가능함.",
+    "source_ids": [
+      "src-seokbong-1691",
+      "src-gwangju-1575",
+      "src-korean-std-dict",
+      "src-wikisource-translation"
+    ],
+    "url": "https://ko.wikisource.org/wiki/%EC%84%9D%EB%B4%89_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+    "direct_url": "https://ko.wikisource.org/wiki/%EC%84%9D%EB%B4%89_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+    "locator": "페이지:CNTS-00047980571 千字文.pdf/24",
+    "checked_scope": "석봉본(1691 어제서문본) 24쪽 훈음 대조, 광주본 12쪽 훈음 대조, 표준국어대사전 凊 자음 및 동온하정·온정정성 성어 규범 대조",
+    "unresolved": [
+      "독음 복수 인정 여부: 기준 전사본 훈음('시글 졍') 및 전통 성어 관습음에 근거한 '숙흥온정'을 기본값으로 하되, 원음 및 광주본 계열 '숙흥온청'을 퀴즈 복수 정답으로 허용할지 운영 결정 필요"
+    ]
+  },
+  {
+    "id": "cheonjamun-140",
+    "original_value": {
+      "hanja": "說感武丁",
+      "reading": "열감무정",
+      "meaning": "담벼락을 쌓던 어진 현인 부열은 은나라 임금 무정의 꿈에 나타나 감동을 주었습니다."
+    },
+    "proposed_value": {
+      "hanja": "說感武丁",
+      "reading": "열감무정",
+      "meaning": "담벼락을 쌓던 어진 현인 부열은 은나라 임금 무정의 꿈에 나타나 감동을 주었습니다."
+    },
+    "decision": "keep",
+    "reason": "상나라 무정이 등용한 현인 부열(傅說)의 인명 고사로, 한국민족문화대백과사전(서전인물유취, 왕유 항목) 및 한국고전번역원(서경 열명 편)에서 說을 일관되게 '열'로 공식 표기·번역함. 단, 목판본 전사본(석봉본 42쪽, 광주본 25쪽)은 단자 학습을 위해 대표음 '니ᄅᆞᆯ 셜'로 주음하였고 위키문헌 대조표 역시 '설감무정'으로 표기하였으므로, 인명 정음인 '열감무정'을 유지하되 단자 직독인 '설감무정'의 복수 정답 허용 여부를 검토해야 함.",
+    "source_ids": [
+      "src-aks-encykorea",
+      "src-itkc-db",
+      "src-seokbong-1691",
+      "src-gwangju-1575",
+      "src-shiji-eun",
+      "src-wikisource-translation"
+    ],
+    "url": "https://encykorea.aks.ac.kr/Article/E0028096",
+    "direct_url": "https://encykorea.aks.ac.kr/Article/E0028096",
+    "locator": "한국민족문화대백과사전 '서전인물유취(書傳人物類聚)' 항목 및 석봉본 42쪽",
+    "checked_scope": "한국민족문화대백과사전 부열 인명 표기, 한국고전번역원 서경 열명 편, 사기 권3 은본기 무정 조 한자 고사, 석봉본 42쪽, 광주본 25쪽",
+    "unresolved": [
+      "독음 채택 방침: 인명 정음인 '열감무정'을 유지하되, 목판본 단자 훈음 및 대중적 직독인 '설감무정'을 퀴즈 복수 정답으로 허용할지 결정 필요"
+    ]
+  },
+  {
+    "id": "cheonjamun-157",
+    "original_value": {
+      "hanja": "雁門紫塞",
+      "reading": "안문자새",
+      "meaning": "기러기가 날아 넘는 험준한 안문관 요새와 붉은 흙탕으로 쌓은 만리장성 자새입니다."
+    },
+    "proposed_value": {
+      "hanja": "雁門紫塞",
+      "reading": "안문자새",
+      "meaning": "기러기만 날아 넘는 험준한 안문관과 붉은 흙빛을 띤 만리장성 요새인 자새입니다."
+    },
+    "decision": "change",
+    "reason": "기준 전사본(석봉본 47쪽) 원문 雁(새 추 隹 부수)을 유지함(광주본 鴈은 이체자 차이로 기록). 안문(雁門)은 산세가 험준하여 기러기만 넘는다는 북방 요충지 안문관(雁門關)이며, 자새(紫塞)는 서진 최표의 《고금주》('진나라가 장성을 쌓을 때 흙빛이 모두 붉은 자줏빛을 띠었다')에 근거한 만리장성의 시칭임. 塞는 요새이므로 독음은 '새'가 맞음. 초안 뜻풀이의 부자연스러운 '붉은 흙탕으로 쌓은' 표현을 《고금주》 문헌 고사에 맞게 '붉은 흙빛을 띤 만리장성 요새'로 정비함.",
+    "source_ids": [
+      "src-seokbong-1691",
+      "src-gwangju-1575",
+      "src-cui-gujinzhu",
+      "src-korean-std-dict",
+      "src-wikisource-translation"
+    ],
+    "url": "https://zh.wikisource.org/wiki/%E5%8F%A4%E4%BB%8A%E6%B3%A8/%E5%8D%B7%E4%B8%8A",
+    "direct_url": "https://zh.wikisource.org/wiki/%E5%8F%A4%E4%BB%8A%E6%B3%A8/%E5%8D%B7%E4%B8%8A",
+    "locator": "서진 최표 《고금주》 권상 도읍 편 및 석봉본 47쪽",
+    "checked_scope": "서진 최표 《고금주》 자새 유래 원문, 석봉본 47쪽(雁門, 마글 ᄉᆡᆨ), 광주본 28쪽(鴈門, ᄀᆞᆺ ᄉᆡᆨ), 표준국어대사전 요새 표제어",
+    "unresolved": [
+      "판본 차이 보존: 기준 전사본 雁門 유지, 광주본 鴈門은 이체자 기록으로 관리"
+    ]
+  },
+  {
+    "id": "cheonjamun-199",
+    "original_value": {
+      "hanja": "易輶攸畏",
+      "reading": "역유유외",
+      "meaning": "행동을 경솔하게 하거나 말을 가볍게 하는 것을 가장 두려워하고 삼가야 합니다."
+    },
+    "proposed_value": {
+      "hanja": "易輶攸畏",
+      "reading": "이유유외",
+      "meaning": "행동을 경솔하게 하거나 말을 가볍게 하는 것을 가장 두려워하고 삼가야 합니다."
+    },
+    "decision": "change",
+    "reason": "易은 '바꿀 역(羊益切)'과 '쉬울/소홀히 할/가벼이 여길 이(以豉切)'의 두 독음이 있음. 대구인 屬耳垣墻(담장에도 귀가 있다)과 결합하여 '경솔하고 가벼운 언행을 두려워해야 한다'는 뜻이므로, 易은 '쉬울/가벼이 여길 이'로 읽는 정음인 '이유유외'로 변경하는 것이 어학적으로 정확함. 다만 석봉본·광주본이 易의 대표 자음인 '밧골 역'으로 훈음하여 전사표에 '역유유외'로 굳어졌으므로, '이유유외'로 교정하거나 '역유유외'와의 복수 정답 인정을 권고함.",
+    "source_ids": [
+      "src-seokbong-1691",
+      "src-gwangju-1575",
+      "src-korean-std-dict",
+      "src-wikisource-translation"
+    ],
+    "url": "https://stdict.korean.go.kr",
+    "direct_url": "https://stdict.korean.go.kr",
+    "locator": "표준국어대사전 易 자음 체계 및 석봉본 57쪽",
+    "checked_scope": "표준국어대사전 易 독음 체계(경이·용이의 '이' vs 변역의 '역'), 석봉본 57쪽, 광주본 35쪽, 시경 대아 증민 편 문맥 대조",
+    "unresolved": [
+      "독음 채택 방침: 문맥상 정음인 '이유유외'로 변경할지, 석봉본 대표 자음 기반 전사본인 '역유유외'를 유지하고 '이유유외'를 복수 정답으로 둘지 운영 결정 필요"
+    ]
+  },
+  {
+    "id": "cheonjamun-201",
+    "original_value": {
+      "hanja": "具膳飡飯",
+      "reading": "구선손반",
+      "meaning": "정갈하게 반찬을 갖추고 때에 맞추어 따뜻한 밥을 먹습니다."
+    },
+    "proposed_value": {
+      "hanja": "具膳飡飯",
+      "reading": "구선손반",
+      "meaning": "정갈하게 반찬을 갖추고 때에 맞추어 따뜻한 밥을 먹습니다."
+    },
+    "decision": "keep",
+    "reason": "기존 Daum 사전 URL은 HTTP 403 Forbidden 응답으로 확인 불가(unavailable) 처리함. 그러나 기준 전사본(석봉본 57쪽) 원문에서 직접 [飡(밥 손)]으로 훈음하여 飡을 飧(저녁밥 손)의 통용자로 파악하고 '손'으로 읽은 확고한 문헌 근거가 확인됨. 전통 서당 천자문 및 위키문헌 전사표의 '구선손반' 독음 유지가 타당함. 단, 광주본(35쪽)에서 [飡(반찬 찬)]으로 주음한 바 있고 현대 자전에 따라 '구선찬반'으로도 널리 통용되므로 복수 정답 인정을 권고함.",
+    "source_ids": [
+      "src-seokbong-1691",
+      "src-gwangju-1575",
+      "src-wikisource-translation",
+      "src-daum-handic"
+    ],
+    "url": "https://ko.wikisource.org/wiki/%EC%84%9D%EB%B4%89_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+    "direct_url": "https://ko.wikisource.org/wiki/%EC%84%9D%EB%B4%89_%EC%B2%9C%EC%9E%90%EB%AC%B8",
+    "locator": "페이지:CNTS-00047980571 千字文.pdf/57",
+    "checked_scope": "석봉본 57쪽 훈음('밥 손'), 광주본 35쪽 훈음('반찬 찬'), Daum 사전 URL 직접 HTTP 호출 검증(403 반환 확인), 위키문헌 101행 대조",
+    "unresolved": [
+      "Daum 사전 링크 열람 불가: HTTP 403 차단으로 확인 불가 처리. 석봉본 직접 훈음('밥 손')으로 대체 검증 완료",
+      "독음 복수 인정: 석봉본 전통 관습음 '구선손반'(飡=飧)을 기본값으로 유지하되, 광주본 및 일반 자음에 따른 '구선찬반'(飡=餐)을 복수 정답으로 인정할지 결정 필요"
+    ]
+  },
+  {
+    "id": "cheonjamun-239",
+    "original_value": {
+      "hanja": "璇璣懸斡",
+      "reading": "선기현알",
+      "meaning": "하늘의 북두칠성과 혼천의 천체는 허공에 매달린 채 쉼 없이 빙빙 돌아갑니다."
+    },
+    "proposed_value": {
+      "hanja": "璇璣懸斡",
+      "reading": "선기현알",
+      "meaning": "하늘의 북두칠성과 혼천의 천체는 허공에 매달린 채 쉼 없이 빙빙 돌아갑니다."
+    },
+    "decision": "keep",
+    "reason": "기준 전사본(석봉본 67쪽)의 자형 '璇璣懸斡'을 유지함(광주본의 璇璣懸幹은 방패 간 干 부수의 판본 오각/이체 차이로 기록). 斡은 '돌다(회전하다)'의 뜻일 때 한국어 정음이 '알'이며, 석봉본 훈음 역시 [斡(돌 알)]로 명기되어 '선기현알' 독음이 완전하게 증명됨. 《서경》 순전의 '선기옥형'에 바탕을 둔 璇璣는 북두칠성(천선성·천기성) 및 천체 관측 의기인 혼천의를 모두 아우르며, 초안 풀이가 두 의미를 균형 있게 담고 있으므로 한자/독음/뜻 모두 유지가 타당함.",
+    "source_ids": [
+      "src-seokbong-1691",
+      "src-gwangju-1575",
+      "src-korean-std-dict",
+      "src-wikisource-translation"
+    ],
+    "url": "https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EC%84%A0%EA%B8%B0",
+    "direct_url": "https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EC%84%A0%EA%B8%B0",
+    "locator": "표준국어대사전 표제어 '선기' 및 석봉본 67쪽",
+    "checked_scope": "석봉본 67쪽(璇璣懸斡, 돌 알), 광주본 41쪽(璇璣懸幹, 읏듬 간), 국립국어원 표준국어대사전 '선기' 표제어 대조 확인",
+    "unresolved": [
+      "판본 차이 보존: 기준 전사본 斡(돌 알) 유지 확정, 광주본 幹(간) 이체자 주기 보존"
+    ]
+  }
+]

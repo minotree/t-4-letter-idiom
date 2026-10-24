@@ -42,6 +42,7 @@ async function answer(reading) {
   await evaluate(`document.querySelector('form').requestSubmit()`);
 }
 async function selectCandidate(hanja) {
+  await evaluate(`Array.from(document.querySelectorAll('.candidate-choice input')).find(el => el.value === ${JSON.stringify(hanja)}).scrollIntoView({ block: 'center' }); new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))`);
   await evaluate(`Array.from(document.querySelectorAll('.candidate-choice input')).find(el => el.value === ${JSON.stringify(hanja)}).click()`);
   await until(`!document.querySelector('#answer').disabled`);
 }
@@ -53,40 +54,73 @@ try {
   await cdp('Storage.clearDataForOrigin', { origin: 'http://127.0.0.1:4173', storageTypes: 'all' });
   await cdp('Page.addScriptToEvaluateOnNewDocument', { source: 'Math.random = () => 0;' });
   await cdp('Page.navigate', { url: 'http://127.0.0.1:4173/' });
+  await until(`!!document.querySelector('.home-screen') && !document.querySelector('.home-screen').hidden`);
+  assert.equal(await evaluate(`document.querySelector('.bottom-nav a[aria-current="page"]').textContent.trim()`), '⌂홈');
+  assert.equal(await evaluate(`document.querySelectorAll('.home-course').length`), 2);
+  await cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
+  assert.equal(await evaluate(`document.documentElement.scrollWidth <= innerWidth`), true);
+  await cdp('Page.captureScreenshot', { format: 'png' }).then(async result => {
+    await mkdir('tmp/browser-checks', { recursive: true });
+    await writeFile('tmp/browser-checks/home-mobile.png', Buffer.from(result.data, 'base64'));
+  });
+  await evaluate(`document.querySelector('.home-course[href="#main"]').click()`);
+  await until(`location.hash === '#main' && document.querySelector('.home-screen').hidden`);
+  checks.push('홈 기본 진입·학습 카드·하단 홈 메뉴·390px 넘침 없음');
   await until(`!!document.querySelector('.characters')`);
-  await evaluate(`localStorage.clear()`);
+  await evaluate(`localStorage.clear(); localStorage.setItem('idioms:web:hanja:completed-sessions:v1', '9')`);
   await cdp('Page.reload');
   await until(`!!document.querySelector('.characters')`);
   assert.equal(await evaluate(`document.querySelector('.idiom-card h2').textContent`), '家家戶戶');
+  assert.equal(await evaluate(`document.querySelector('#hanja-meaning').hidden`), true);
+  await evaluate(`document.querySelector('.meaning-toggle').click()`);
+  assert.equal(await evaluate(`document.querySelector('#hanja-meaning').hidden`), false);
+  await evaluate(`document.querySelector('.meaning-toggle').click()`);
+  assert.equal(await evaluate(`document.querySelector('#hanja-meaning').hidden`), true);
+  await evaluate(`document.querySelector('.meaning-toggle').click()`);
   await evaluate(`document.querySelector('.characters button:not(:disabled)').click()`);
   assert.equal(await evaluate(`document.querySelector('#answer').disabled`), true);
   await selectCandidate('家給人足');
   await until(`!document.querySelector('#answer').disabled`);
   assert.equal(await evaluate(`document.activeElement.id`), 'answer');
+  assert.equal(await evaluate(`!!document.querySelector('.floating-answer')`), true);
+  assert.equal(await evaluate(`(() => { const row = document.querySelector('.hanja-candidates .selected-candidate').getBoundingClientRect(); const form = document.querySelector('.floating-answer').getBoundingClientRect(); return form.bottom <= row.top || form.top >= row.bottom; })()`), true);
+  await evaluate(`document.querySelector('.hanja-candidates').dispatchEvent(new WheelEvent('wheel', { deltaY: 100, bubbles: true }))`);
+  await until(`!document.querySelector('.floating-answer')`);
+  await selectCandidate('家給人足');
+  await until(`!!document.querySelector('.floating-answer')`);
+  checks.push('한자 후보 플로팅 입력·비겹침·목록 스크롤 닫기·같은 후보 재열기');
+  await evaluate(`document.querySelector('.bottom-nav a[href="#home"]').click()`);
+  await until(`!document.querySelector('.home-screen').hidden`);
+  await evaluate(`document.querySelector('.home-course[href="#main"]').click()`);
+  await until(`document.querySelector('.home-screen').hidden`);
+  assert.equal(await evaluate(`document.querySelector('.candidate-choice input:checked').value`), '家給人足');
+  checks.push('홈 왕복 후 선택 후보와 퀴즈 유지');
   const candidates = await evaluate(`Array.from(document.querySelectorAll('.candidate-list strong')).map(el => el.textContent)`);
   assert.ok(!candidates.includes('家家戶戶'));
   await answer('틀린답');
   await until(`!!document.querySelector('.reading-hint')`);
-  assert.equal(await evaluate(`document.querySelectorAll('.chain-links > li').length`), 0);
+  assert.equal(await evaluate(`document.querySelectorAll('.hanja-chain > li').length`), 0);
   assert.equal(await evaluate(`document.querySelector('.journey')`), null);
   assert.ok((await evaluate(`document.querySelector('.reading-hint').textContent`)).includes('○'));
   assert.equal(await evaluate(`document.querySelectorAll('.reading-hint').length`), 1);
   assert.equal(await evaluate(`document.querySelector('.reading-hint').closest('li').querySelector('input').value`), '家給人足');
   await answer('가가대소');
-  assert.equal(await evaluate(`document.querySelectorAll('.chain-links > li').length`), 0);
+  assert.equal(await evaluate(`document.querySelectorAll('.hanja-chain > li').length`), 0);
   assert.deepEqual(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:mistakes:v2')`)), ['家給人足']);
   checks.push('오답 추가 힌트·글자 선택 후 입력 포커스·시작 성어 제외');
   await answer('가 급 인 족');
-  await until(`document.querySelectorAll('.chain-links > li').length === 1`);
+  await until(`document.querySelectorAll('.hanja-chain > li').length === 2`);
   assert.equal(await evaluate(`document.querySelector('.idiom-card h2').textContent`), '家給人足');
+  assert.equal(await evaluate(`document.querySelector('#hanja-meaning').hidden`), true);
+  checks.push('한자 뜻 기본 숨김·보기/접기·정답 연결 시 접힘');
   assert.ok(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:history:v1')`)).includes('家給人足'));
   checks.push('한글 정답·띄어쓰기·다음 성어 연결·이력 저장');
-  assert.equal(await evaluate(`document.querySelectorAll('.chain-links > li').length`), 1);
-  assert.deepEqual(await evaluate(`Array.from(document.querySelectorAll('.chain-links .link-idiom > strong')).map(el => el.textContent)`), ['家家戶戶', '家給人足']);
-  assert.equal(await evaluate(`document.querySelector('.link-bridge > span').textContent`), '家');
+  assert.equal(await evaluate(`document.querySelectorAll('.hanja-chain > li').length`), 2);
+  assert.deepEqual(await evaluate(`Array.from(document.querySelectorAll('.hanja-chain > li > strong')).map(el => el.textContent)`), ['家家戶戶', '家給人足']);
+  assert.equal(await evaluate(`document.querySelector('.hanja-chain .english-chain-bridge > span').textContent`), '가');
 
   for (let count = 1; count < 20; count++) {
-    const used = await evaluate(`[document.querySelector('.chain-links .link-idiom > strong').textContent, ...Array.from(document.querySelectorAll('.chain-links .link-idiom:last-child > strong')).map(el => el.textContent)]`);
+    const used = await evaluate(`Array.from(document.querySelectorAll('.hanja-chain > li > strong')).map(el => el.textContent)`);
     const current = dataset.find(item => item.hanja === used.at(-1));
     const history = new Set(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:history:v1')`)));
     const choices = [...current.reading].flatMap(ch => candidatesFor(dataset, ch, new Set(used), history).map(item => ({ ch, item })));
@@ -96,25 +130,37 @@ try {
     await selectCandidate(next.item.hanja);
     await until(`!document.querySelector('#answer').disabled`);
     await answer(next.item.reading);
-    await until(`document.querySelectorAll('.chain-links > li').length === ${count + 1} || !!document.querySelector('.ambiguity')`);
+    await until(`document.querySelectorAll('.hanja-chain > li').length === ${count + 2} || !!document.querySelector('.ambiguity')`);
     if (await evaluate(`!!document.querySelector('.ambiguity')`)) {
       await evaluate(`Array.from(document.querySelectorAll('.ambiguity button')).find(button => button.querySelector('strong').textContent === ${JSON.stringify(next.item.hanja)}).click()`);
-      await until(`document.querySelectorAll('.chain-links > li').length === ${count + 1}`);
+      await until(`document.querySelectorAll('.hanja-chain > li').length === ${count + 2}`);
+    }
+    if (count < 19) {
+      await until(`Math.abs(document.querySelector('#main .idiom-card').getBoundingClientRect().top) <= 1`);
+      assert.equal(await evaluate(`localStorage.getItem('idioms:web:hanja:completed-sessions:v1')`), '9');
     }
   }
   await until(`!!document.querySelector('.summary')`);
-  const journey = await evaluate(`[document.querySelector('.chain-links .link-idiom > strong').textContent, ...Array.from(document.querySelectorAll('.chain-links .link-idiom:last-child > strong')).map(el => el.textContent)]`);
+  const journey = await evaluate(`Array.from(document.querySelectorAll('.hanja-chain > li > strong')).map(el => el.textContent)`);
   assert.equal(new Set(journey).size, 21);
   assert.equal(await evaluate(`document.querySelector('progress').value`), 20);
   assert.equal(await evaluate(`document.querySelector('form')`), null);
-  assert.equal(await evaluate(`document.querySelectorAll('.chain-links > li').length`), 20);
+  assert.equal(await evaluate(`document.querySelectorAll('.hanja-chain > li').length`), 21);
+  assert.equal(await evaluate(`localStorage.getItem('idioms:web:hanja:completed-sessions:v1')`), '10');
+  assert.equal(await evaluate(`document.querySelector('.learning-shell[aria-label="한자 학습"] .star-medium').getAttribute('aria-label')`), '중간 별 1개');
+  assert.deepEqual(await evaluate(`Array.from(document.querySelectorAll('.hanja-chain li')).slice(0, 6).map(el => [el.style.gridRow, el.style.gridColumn])`), [['1','1'], ['1','2'], ['2','2'], ['2','1'], ['3','1'], ['3','2']]);
+  assert.equal(new Set(await evaluate(`Array.from(document.querySelectorAll('.hanja-chain li')).slice(1).map(el => getComputedStyle(el).borderTopColor)`)).size, 20);
+  assert.equal(await evaluate(`document.querySelector('.hanja-chain .chain-complete-label').textContent`), '20개 이음 완성');
+  checks.push('한자 지그재그·20단계 색·완성 강조·20문제만 별 적립·정답 카드 상단 이동');
+  await evaluate(`document.querySelector('.hanja-chain').scrollIntoView({ block: 'start' })`);
+  await writeFile(new URL('../tmp/browser-checks/hanja-journey-mobile.png', import.meta.url), Buffer.from((await cdp('Page.captureScreenshot')).data, 'base64'));
   checks.push('이전 문제·정답·선택 글자가 20개 사슬로 유지');
   checks.push('20問 연결 완료·중복 없음·추가 제출 차단'.replace('20問', '20문제'));
 
   await cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
   await evaluate(`document.querySelector('.summary button').click()`);
   await until(`!!document.querySelector('.characters')`);
-  assert.equal(await evaluate(`document.querySelectorAll('.chain-links > li').length`), 0);
+  assert.equal(await evaluate(`document.querySelectorAll('.hanja-chain > li').length`), 0);
   assert.ok(await evaluate(`document.documentElement.scrollWidth <= innerWidth`));
   await mkdir(new URL('../tmp/browser-checks/', import.meta.url), { recursive: true });
   await writeFile(new URL('../tmp/browser-checks/mobile.png', import.meta.url), Buffer.from((await cdp('Page.captureScreenshot', { captureBeyondViewport: true })).data, 'base64'));
@@ -169,7 +215,7 @@ try {
   await selectCandidate('家給人足');
   await until(`!document.querySelector('#answer').disabled`);
   await answer('가급인족');
-  await until(`document.querySelectorAll('.chain-links > li').length === 1`);
+  await until(`document.querySelectorAll('.hanja-chain > li').length === 2`);
   const migrated = JSON.parse(await evaluate(`localStorage.getItem('idioms:web:history:v1')`));
   for (const corrected of Object.keys(legacy)) assert.ok(migrated.includes(corrected));
   checks.push('교정 전 한자 ID의 브라우저 이력 유지·저장');
@@ -177,13 +223,14 @@ try {
   await evaluate(`localStorage.setItem('idioms:web:history:v1', ${JSON.stringify(JSON.stringify(seededIds))})`);
   await cdp('Page.reload');
   await until(`document.querySelector('.idiom-card h2')?.textContent === '甘言利說'`);
-  await evaluate(`Array.from(document.querySelectorAll('.characters button')).find(button => button.querySelector('strong').textContent === '利').click()`);
-  const normalizedChoices = candidatesFor(dataset, '利', new Set(['甘言利說']), new Set(seededIds));
+  await evaluate(`Array.from(document.querySelectorAll('.characters button')).find(button => button.querySelector('strong').textContent === '언').click()`);
+  const normalizedChoices = candidatesFor(dataset, '언', new Set(['甘言利說']), new Set(seededIds));
   await until(`document.querySelectorAll('.candidate-list li').length === ${normalizedChoices.length}`);
-  assert.ok(await evaluate(`Array.from(document.querySelectorAll('.candidate-list strong')).some(el => el.textContent === '見利忘義')`));
+  const wordToReview = normalizedChoices[0];
+  assert.ok(wordToReview);
   await evaluate(`localStorage.removeItem('idioms:web:history:v1')`);
-  checks.push('화면에서 利 선택 시 利 성어 연결·현재 성어 제외');
-  await selectCandidate('見利忘義');
+  checks.push('화면에서 한글 독음 후보 연결·현재 성어 제외');
+  await selectCandidate(wordToReview.hanja);
   await answer('틀린답');
   await until(`!!document.querySelector('.reading-hint')`);
   await evaluate(`document.querySelector('.learning-tabs a[href="#idioms"]').click()`);
@@ -197,7 +244,7 @@ try {
   await evaluate(`Array.from(document.querySelectorAll('.book-tabs button')).find(el => el.textContent === '학습완료').click()`);
   assert.ok(await evaluate(`Array.from(document.querySelectorAll('.book-reading')).some(el => el.textContent === '가급인족')`));
   await evaluate(`Array.from(document.querySelectorAll('.book-tabs button')).find(el => el.textContent === '오답노트').click()`);
-  await until(`Array.from(document.querySelectorAll('.book-reading')).some(el => el.textContent === '견리망의')`);
+  await until(`Array.from(document.querySelectorAll('.book-reading')).some(el => el.textContent === ${JSON.stringify(wordToReview.reading)})`);
   assert.ok(await evaluate(`!Array.from(document.querySelectorAll('.book-reading')).some(el => el.textContent === '감언이설')`));
   await evaluate(`Array.from(document.querySelectorAll('.book-tabs button')).find(el => el.textContent === '전체').click()`);
   await evaluate(`(() => { const el = document.querySelector('#book-search'); Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set.call(el, '利'); el.dispatchEvent(new Event('input', { bubbles: true })); })()`);
@@ -225,7 +272,7 @@ try {
   await evaluate(`localStorage.setItem('idioms:web:history:v1', ${JSON.stringify(JSON.stringify(withoutStart))}); localStorage.setItem('idioms:web:mistakes:v1', '["大言壯語"]'); location.hash = '#main'`);
   await cdp('Page.reload');
   await until(`document.querySelector('.idiom-card h2')?.textContent === '大言壯語'`);
-  await evaluate(`Array.from(document.querySelectorAll('.characters button')).find(el => el.querySelector('strong').textContent === '大').click()`);
+  await evaluate(`Array.from(document.querySelectorAll('.characters button')).find(el => el.querySelector('strong').textContent === '대').click()`);
   await selectCandidate('大器晩成');
   await answer('틀린답');
   await until(`document.querySelectorAll('.reading-hint').length === 1`);
@@ -257,7 +304,7 @@ try {
   const cheonAnswer = candidatesFor(dataset, connection, new Set([cheonStart.id]), new Set(seenExceptCheon)).find(item => item.category === 'cheonjamun');
   await selectCandidate(cheonAnswer.hanja);
   await answer(cheonAnswer.reading);
-  await until(`document.querySelectorAll('.chain-links .content-source').length === 2`);
+  await until(`document.querySelectorAll('.hanja-chain .content-source').length === 2`);
   await evaluate(`document.querySelector('.learning-tabs a[href="#idioms"]').click()`);
   await until(`document.querySelector('#idioms').hidden === false`);
   await evaluate(`(() => { const input = document.querySelector('#book-search'); Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set.call(input, ${JSON.stringify(cheonStart.reading)}); input.dispatchEvent(new Event('input', { bubbles: true })); })()`);
@@ -265,7 +312,31 @@ try {
   checks.push('천자문 현재 카드·후보·사슬 양쪽·단어장 출처 표시 및 정답 연결');
   await evaluate(`document.querySelector('.bottom-nav a[href="#english"]').click()`);
   await until(`!!document.querySelector('.english-learning .characters button')`);
+  assert.equal(await evaluate(`document.querySelector('#english-meaning').hidden`), true);
+  await evaluate(`document.querySelector('.english-learning .meaning-toggle').click()`);
+  assert.equal(await evaluate(`document.querySelector('#english-meaning').hidden`), false);
+  await evaluate(`document.querySelector('.english-learning .meaning-toggle').click()`);
+  assert.equal(await evaluate(`document.querySelector('#english-meaning').hidden`), true);
+  checks.push('영어 뜻 기본 숨김·보기/접기');
+  await until(`!!document.querySelector('#english-example-translation')`);
+  assert.equal(await evaluate(`document.querySelector('#english-example-translation').hidden`), true);
+  await evaluate(`document.querySelector('.example-heading button').click()`);
+  assert.equal(await evaluate(`document.querySelector('#english-example-translation').hidden`), false);
+  await evaluate(`document.querySelector('.example-heading button').click()`);
+  assert.equal(await evaluate(`document.querySelector('#english-example-translation').hidden`), true);
+  checks.push('영어 예문 해석 기본 숨김·보기/접기');
+  const displayedWord = await evaluate(`document.querySelector('.english-learning .idiom-card h2').textContent`);
+  const synonymWords = JSON.parse(await readFile(new URL('../data/english/words.json', import.meta.url), 'utf8'));
+  const displayedSynonym = synonymWords.find(item => item.word === displayedWord).synonym;
+  assert.ok(displayedSynonym.trim());
+  assert.equal(await evaluate(`document.querySelector('.word-synonyms p').textContent`), displayedSynonym);
+  checks.push('영어 현재 카드의 기존 동의어 표시');
   const englishWords = JSON.parse(await readFile(new URL('../data/english/words.json', import.meta.url), 'utf8'));
+  assert.equal(await evaluate(`document.querySelector('.english-learning .session-rank-count').textContent`), '20문제 완주 0회');
+  assert.equal(await evaluate(`localStorage.getItem('idioms:web:hanja:completed-sessions:v1')`), '10');
+  await evaluate(`localStorage.setItem('idioms:web:english:completed-sessions:v1', '9')`);
+  await cdp('Page.reload');
+  await until(`document.querySelector('.english-learning .session-rank-count')?.textContent === '20문제 완주 9회'`);
   async function englishAnswer(value) {
     await evaluate(`(() => { const el = document.querySelector('#english-answer'); Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set.call(el, ${JSON.stringify(value)}); el.dispatchEvent(new Event('input', { bubbles: true })); })()`);
     await evaluate(`document.querySelector('.english-learning form').requestSubmit()`);
@@ -276,20 +347,60 @@ try {
     const targetId = await evaluate(`document.querySelector('.english-candidates input').value`);
     const targetWord = englishWords.find(item => item.id === targetId);
     assert.ok(targetWord);
+    await evaluate(`document.querySelector('.english-candidates input').scrollIntoView({ block: 'center' }); new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))`);
     await evaluate(`document.querySelector('.english-candidates input').click()`);
     await until(`!document.querySelector('#english-answer').disabled`);
     if (count === 0) {
+      assert.equal(await evaluate(`!!document.querySelector('.floating-answer')`), true);
+      assert.equal(await evaluate(`(() => { const row = document.querySelector('.english-candidates .selected-candidate').getBoundingClientRect(); const form = document.querySelector('.floating-answer').getBoundingClientRect(); return form.bottom <= row.top || form.top >= row.bottom; })()`), true);
+      await writeFile(new URL('../tmp/browser-checks/english-floating.png', import.meta.url), Buffer.from((await cdp('Page.captureScreenshot')).data, 'base64'));
+      assert.equal(await evaluate(`document.activeElement.id`), 'english-answer');
+      await evaluate(`document.querySelector('.english-candidates').dispatchEvent(new WheelEvent('wheel', { deltaY: 100, bubbles: true }))`);
+      await until(`!document.querySelector('.floating-answer')`);
+      await evaluate(`document.querySelector('.english-candidates input').click()`);
+      await until(`!!document.querySelector('.floating-answer')`);
+      await evaluate(`document.querySelectorAll('.english-candidates input')[1].click()`);
+      await until(`document.querySelector('.floating-answer label').textContent.includes('후보 2')`);
+      assert.equal(await evaluate(`(() => { const row = document.querySelector('.english-candidates .selected-candidate').getBoundingClientRect(); const form = document.querySelector('.floating-answer').getBoundingClientRect(); return form.bottom <= row.top || form.top >= row.bottom; })()`), true);
+      await evaluate(`document.querySelector('.english-candidates input').click()`);
+      await until(`document.querySelector('.floating-answer label').textContent.includes('후보 1')`);
+      await evaluate(`document.querySelector('.english-candidates').dispatchEvent(new WheelEvent('wheel', { deltaY: 180, bubbles: true })); document.querySelector('.english-candidates').scrollTop = 180; new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))`);
+      await until(`!document.querySelector('.floating-answer')`);
+      await evaluate(`Array.from(document.querySelectorAll('.english-candidates li')).find(row => { const r = row.getBoundingClientRect(); const list = row.parentElement.getBoundingClientRect(); return r.top >= list.top && r.bottom <= list.bottom; }).querySelector('p').click()`);
+      await until(`!!document.querySelector('.floating-answer')`);
+      assert.equal(await evaluate(`(() => { const row = document.querySelector('.english-candidates .selected-candidate').getBoundingClientRect(); const form = document.querySelector('.floating-answer').getBoundingClientRect(); return form.bottom <= row.top || form.top >= row.bottom; })()`), true);
+      await evaluate(`document.querySelector('.english-candidates').dispatchEvent(new WheelEvent('wheel', { deltaY: -180, bubbles: true })); document.querySelector('.english-candidates').scrollTop = 0; new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))`);
+      await evaluate(`document.querySelector('.english-candidates input').click()`);
+      await until(`!!document.querySelector('.floating-answer')`);
+      await evaluate(`document.querySelector('.english-candidates input').click(); document.querySelector('.english-candidates').dispatchEvent(new Event('scroll')); new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))`);
+      assert.equal(await evaluate(`!!document.querySelector('.floating-answer')`), true);
+      assert.equal(await evaluate(`document.querySelector('.english-candidates .candidate-length').textContent`), `${(await import('../packages/shared/src/english.ts')).englishLength(targetWord)}글자`);
+      assert.equal(await evaluate(`document.querySelector('.english-candidates li .candidate-synonym')?.textContent ?? ''`), targetWord.synonym.trim() ? `동의어: ${targetWord.synonym}` : '');
+      assert.equal(await evaluate(`document.querySelector('.english-candidates li > p').textContent`), targetWord.meaning);
       assert.ok(!await evaluate(`document.querySelector('.english-candidates').innerText.includes(${JSON.stringify(targetWord.word)})`));
       await englishAnswer('zzzzwrong');
       await until(`document.querySelectorAll('.english-learning .reading-hint').length === 1`);
       assert.ok(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:english:v1')`)).mistakes.includes(targetId));
     }
     await englishAnswer(targetWord.word.split('/')[0]);
-    await until(`document.querySelectorAll('.english-chain li').length === ${count + 1}`);
+    await until(`document.querySelectorAll('.english-learning .english-chain li').length === ${count + 2}`);
+    if (count < 19) await until(`Math.abs(document.querySelector('.english-learning .idiom-card').getBoundingClientRect().top) <= 1`);
+    if (count < 19) assert.equal(await evaluate(`localStorage.getItem('idioms:web:english:completed-sessions:v1')`), '9');
   }
+  assert.equal(await evaluate(`localStorage.getItem('idioms:web:english:completed-sessions:v1')`), '10');
+  assert.equal(await evaluate(`document.querySelector('.english-learning .star-medium').getAttribute('aria-label')`), '중간 별 1개');
+  assert.equal(await evaluate(`document.querySelector('.english-learning .star-small')`), null);
   assert.equal(await evaluate(`document.querySelector('.english-learning progress').value`), 20);
   assert.equal(await evaluate(`document.querySelector('.english-learning form')`), null);
-  assert.equal(new Set(await evaluate(`Array.from(document.querySelectorAll('.english-chain strong')).map(el => el.textContent)`)).size, 20);
+  assert.equal(new Set(await evaluate(`Array.from(document.querySelectorAll('.english-learning .english-chain strong')).map(el => el.textContent)`)).size, 21);
+  assert.deepEqual(await evaluate(`Array.from(document.querySelectorAll('.english-learning .english-chain li')).slice(0, 6).map(el => [el.style.gridRow, el.style.gridColumn])`), [['1','1'], ['1','2'], ['2','2'], ['2','1'], ['3','1'], ['3','2']]);
+  assert.equal(await evaluate(`document.querySelectorAll('.english-learning .english-chain-bridge').length`), 20);
+  const stepBorders = await evaluate(`Array.from(document.querySelectorAll('.english-learning .english-chain li')).slice(1).map(el => getComputedStyle(el).borderTopColor)`);
+  assert.equal(new Set(stepBorders).size, 20);
+  assert.equal(await evaluate(`document.querySelector('.english-learning .english-chain li:last-child').dataset.step`), '20');
+  assert.equal(await evaluate(`document.querySelectorAll('.english-learning .chain-step-badge').length`), 20);
+  assert.equal(await evaluate(`document.querySelector('.english-learning .chain-complete-label').textContent`), '20개 이음 완성');
+  assert.equal(await evaluate(`document.querySelector('.english-learning .english-journey-heading > span').textContent`), '이번 이음 20 / 20');
   await evaluate(`Array.from(document.querySelectorAll('.english-learning > .learning-tabs button')).find(el => el.textContent === '나의 단어장').click()`);
   await until(`!!document.querySelector('.english-learning .book-list > li')`);
   await evaluate(`document.querySelector('.english-learning .favorite-button').click()`);
@@ -299,10 +410,26 @@ try {
   await cdp('Network.emulateNetworkConditions', { offline: true, latency: 0, downloadThroughput: 0, uploadThroughput: 0 });
   await cdp('Page.reload');
   await until(`!!document.querySelector('.english-learning .characters')`);
+  assert.equal(await evaluate(`document.querySelector('.english-learning .session-rank-count').textContent`), '20문제 완주 10회');
   assert.ok(JSON.parse(await evaluate(`localStorage.getItem('idioms:web:english:v1')`)).completed.length >= 20);
   await cdp('Network.emulateNetworkConditions', { offline: false, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
   assert.deepEqual(pageErrors, []);
   checks.push('영어 후보 정답 숨김·선택 후보 오답/힌트·20개 무중복 사슬·단어장 저장·390px·오프라인 복구');
+  checks.push('영어 후보 선택 시 플로팅 입력·포커스·목록 스크롤 시 닫힘·재선택 및 후보 전환');
+  for (const total of [1, 9, 99, 100, 123, 1000]) {
+    await evaluate(`localStorage.setItem('idioms:web:english:completed-sessions:v1', '${total}')`);
+    await cdp('Page.reload');
+    await until(`document.querySelector('.english-learning .session-rank-count')?.textContent === '20문제 완주 ${total}회'`);
+    for (const [size, label, expected] of [['large', '큰 별', Math.floor(total / 100)], ['medium', '중간 별', Math.floor(total / 10) % 10], ['small', '작은 별', total % 10]]) {
+      assert.equal(await evaluate(`document.querySelector('.english-learning .star-${size}')?.getAttribute('aria-label') ?? null`), expected ? `${label} ${expected}개` : null);
+    }
+    assert.ok(await evaluate(`document.documentElement.scrollWidth <= innerWidth`));
+  }
+  await evaluate(`localStorage.setItem('idioms:web:english:completed-sessions:v1', '-1')`);
+  await cdp('Page.reload');
+  await until(`document.querySelector('.english-learning .session-rank-count')?.textContent === '20문제 완주 0회'`);
+  assert.ok(await evaluate(`document.querySelector('.english-learning [role="alert"]').textContent.includes('완주 횟수')`));
+  checks.push('영어 20문제 완주만 별 적립·9→10 승급·재접속 유지·100/123회 별 분해·큰 기록 반응형·손상 기록 안내');
   for (const check of checks) console.log(`PASS ${check}`);
   await writeFile(new URL('../tmp/browser-checks/results.json', import.meta.url), JSON.stringify({ checks }, null, 2));
 } finally {

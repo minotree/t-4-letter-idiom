@@ -24,12 +24,23 @@ changes = {
     225: {'meaning': '나귀와 노새, 송아지와 수소를 가리킵니다.'},
     231: {'reading': '염필륜지', 'meaning': '몽염의 붓과 채륜의 종이 만드는 솜씨를 일컫습니다.'},
 }
+followup_path = BASE / 'reviewed/six-followup-review.json'
+followup = json.loads(followup_path.read_text(encoding='utf-8'))
+assert followup['input_sha256'] == DRAFT_HASH
+for filename, expected_hash in followup['artifact_sha256'].items():
+    assert sha(BASE / followup['run'] / filename) == expected_hash
+followup_items = {item['sequence']: item for item in followup['items']}
+assert set(followup_items) == pending
+for n, item in followup_items.items():
+    if item['action'] == 'approve':
+        pending.remove(n)
+        changes[n] = item['changes']
 ledger = []
 approved = []
 for row in rows:
     n = int(row['sequence'])
     result = results[row['id']]
-    reviewed = result['decision'] != 'keep' or n in samples
+    reviewed = result['decision'] != 'keep' or n in samples or n in followup_items
     action = 'hold' if n in pending else 'correct' if n in changes else 'retain'
     note = ('독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.' if action == 'hold' else
             '倫은 인명 채륜의 륜. 발명 단정 대신 구절의 인물·솜씨로 풀이.' if n == 231 else
@@ -37,6 +48,8 @@ for row in rows:
             '8자 대구 전체를 4자 풀이로 대체하지 않고 기준 전사본의 이체자를 보존. 자동 제안은 채택하지 않음.' if result['decision'] == 'change' else
             '유지 표본: 제공 근거와 구절 범위 대조.' if n in samples else
             'Qwen 유지 판정, Codex 개별 의미 재검토 생략. 기계 검사 범위만 확인.')
+    if n in followup_items:
+        note = followup_items[n]['reason']
     ledger.append({'id': row['id'], 'qwen_decision': result['decision'], 'action': action,
                    'codex_individually_reviewed': reviewed, 'reason': note,
                    'original': {k: row[k] for k in ('hanja', 'reading', 'meaning')},
@@ -59,10 +72,11 @@ with (out / 'cheonjamun.csv').open('w', encoding='utf-8', newline='') as f:
     w.writeheader()
     w.writerows(approved)
 report = {'input_sha256': DRAFT_HASH, 'evidence_sha256': EVIDENCE_HASH,
+          'six_followup_review_sha256': sha(followup_path), 'six_followup_review': followup,
           'qwen_result_sha256': sha(qwen_path), 'reviewed_csv_sha256': sha(out / 'cheonjamun.csv'),
-          'review_scope': '85 flagged rows + 10 keep samples; remaining keeps have structural checks only',
+          'review_scope': '85 flagged rows + 10 keep samples; six held rows rechecked on 2026-10-24; remaining keeps have structural checks only',
           'counts': {'qwen_keep': 165, 'qwen_change': 79, 'qwen_uncertain': 6,
-                     'accepted_qwen_changes': 1, 'codex_additional_meaning_corrections': 2,
+                     'accepted_qwen_changes': 1, 'codex_additional_meaning_corrections': 8,
                      'eligible_rows': len(approved), 'held_rows': len(pending)},
           'edition_note': '기준은 위키문헌 석봉 천자문 전사본. 1691 어제서문 확인. 해당 전사본을 1583 간행본이라고 확정한 기존 조사 메타데이터는 채택하지 않음.',
           'source_urls': ['https://ko.wikisource.org/wiki/석봉_천자문',

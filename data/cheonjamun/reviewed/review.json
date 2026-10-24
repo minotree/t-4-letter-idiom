@@ -1,17 +1,142 @@
 {
   "input_sha256": "f9f25006421f28385bf9f4b52fc89dd93709ae47817054f5949095fd649017d6",
   "evidence_sha256": "b144f88cc36b71945e06bbcc46184582da36a06b57bccf1f9f0658c2499b1164",
+  "six_followup_review_sha256": "00600683442751c0022506b124c4199c81979890ee5f7ba061b7df56d205b5f5",
+  "six_followup_review": {
+    "date": "2026-10-24",
+    "input_sha256": "f9f25006421f28385bf9f4b52fc89dd93709ae47817054f5949095fd649017d6",
+    "run": "evidence/run-six-20261024-1006",
+    "artifact_sha256": {
+      "evidence.json": "dc648d8ca9605b5188722d82c6a82f4af167707c95bb0fb62d86399dbffd415a",
+      "proposals.json": "072de9f6f609ad0273a01bba1d5730d6aa65ad7e8b60dff99d5eb5a9f7f1e98f",
+      "handoff.md": "fa5448c884dbf895d74d39f8841b38c0f83159202534c2999b9635e9c0ac53e9"
+    },
+    "limitations": [
+      "Antigravity의 전체 확인 주장을 채택하지 않고 Codex가 실제 읽은 범위만 근거로 삼음.",
+      "E0028096은 서전인물유취가 아닌 서원리. 실제 서전인물유취는 E0028161.",
+      "국립국어원·고전종합DB의 홈페이지 및 검색 URL은 직접 표제어 확인 근거로 채택하지 않음.",
+      "옛 훈음은 전사본에서 확인했으며 원본 스캔의 판각·연대·통용자 성립 원인까지 확인한 것은 아님.",
+      "다음 사전의 403은 Antigravity 보고이며 Codex가 이번에 재현한 결과는 아님.",
+      "현대 번역 전문을 복사하지 않고 구절 뜻과 인물·지명 대응을 대조하여 간결한 풀이를 새로 작성. 복수 독음 판정은 추가하지 않음."
+    ],
+    "items": [
+      {
+        "sequence": 66,
+        "action": "approve",
+        "changes": {
+          "meaning": "일찍 일어나 부모님을 살피고 따뜻하거나 시원하게 해 드립니다."
+        },
+        "reason": "기준 전사본 淸의 훈음 시글 졍 확인. 숙흥온정 유지. 淸/凊의 역사적 성립 원인 단정은 채택하지 않음.",
+        "sources": [
+          {
+            "url": "https://ko.wikisource.org/wiki/석봉_천자문",
+            "locator": "夙興溫淸 훈음 행"
+          }
+        ]
+      },
+      {
+        "sequence": 140,
+        "action": "approve",
+        "changes": {
+          "meaning": "어진 인물 부열이 은나라 임금 무정을 감동시킨 고사를 가리킵니다."
+        },
+        "reason": "정정한 한국민족문화대백과 서전인물유취 본문에서 부열(傅說) 직접 확인. 구절의 인물 대응은 천자문 대조표와 비교. 열감무정 유지.",
+        "sources": [
+          {
+            "url": "https://encykorea.aks.ac.kr/Article/E0028161",
+            "locator": "내용: 부열(傅說) 열거"
+          },
+          {
+            "url": "https://ko.wikisource.org/wiki/번역:천자문",
+            "locator": "綺迴漢惠 說感武丁 행"
+          }
+        ]
+      },
+      {
+        "sequence": 157,
+        "action": "approve",
+        "changes": {
+          "meaning": "안문관과 자새라 불리는 만리장성의 요새를 일컫습니다."
+        },
+        "reason": "기준 전사본 雁 유지. 대조표의 안문자새 독음·안문관/만리장성 대응 확인. 붉은 흙 어원·기러기만 넘는다는 부가 설명은 미채택.",
+        "sources": [
+          {
+            "url": "https://ko.wikisource.org/wiki/석봉_천자문",
+            "locator": "雁門紫塞 행"
+          },
+          {
+            "url": "https://ko.wikisource.org/wiki/번역:천자문",
+            "locator": "雁門紫塞 雞田赤城 행"
+          }
+        ]
+      },
+      {
+        "sequence": 199,
+        "action": "approve",
+        "changes": {
+          "meaning": "말과 행동을 가볍고 경솔하게 하는 것을 경계해야 합니다."
+        },
+        "reason": "사용자 재검토 요청 후 기존 근거로 재판단. 석봉 전사본 易의 역 훈음과 현대 대조표 역유유외·경솔함 경계 풀이를 기준으로 초안 독음 유지. 이유유외 변경 근거 부족은 기존 독음 출제 보류의 사유가 아니므로 보류 해제. 복수 독음은 추가하지 않음.",
+        "sources": [
+          {
+            "url": "https://ko.wikisource.org/wiki/석봉_천자문",
+            "locator": "易輶攸畏 행"
+          },
+          {
+            "url": "https://ko.wikisource.org/wiki/번역:천자문",
+            "locator": "易輶攸畏 屬耳垣墻 행"
+          }
+        ]
+      },
+      {
+        "sequence": 201,
+        "action": "approve",
+        "changes": {
+          "meaning": "반찬을 갖추어 밥을 먹습니다."
+        },
+        "reason": "기준 전사본 飡 밥 손 및 현대 대조표 구선손반 확인. 따뜻함·때에 맞춤 등 원문 밖 수식 제거. 통용자 관계의 역사적 원인이나 사전 URL 열람 완료는 주장하지 않음.",
+        "sources": [
+          {
+            "url": "https://ko.wikisource.org/wiki/석봉_천자문",
+            "locator": "具膳飡飯 훈음 행"
+          },
+          {
+            "url": "https://ko.wikisource.org/wiki/번역:천자문",
+            "locator": "具膳飡飯 適口充腸 행"
+          }
+        ]
+      },
+      {
+        "sequence": 239,
+        "action": "approve",
+        "changes": {
+          "meaning": "천체를 관측하는 기구인 선기가 매달려 도는 모습을 나타냅니다."
+        },
+        "reason": "기준 전사본 斡 돌 알과 현대 대조표 선기현알 확인. 기구와 천체를 혼합한 초안 표현을 제거. 광주본 幹을 오각이라고 단정하지 않음.",
+        "sources": [
+          {
+            "url": "https://ko.wikisource.org/wiki/석봉_천자문",
+            "locator": "璇璣懸斡 훈음 행"
+          },
+          {
+            "url": "https://ko.wikisource.org/wiki/번역:천자문",
+            "locator": "璇璣懸斡 晦魄環照 행"
+          }
+        ]
+      }
+    ]
+  },
   "qwen_result_sha256": "d4d236c613e61e45226f8d01e3d500a41a0e8dc731945c161f733481d2d7d2cd",
-  "reviewed_csv_sha256": "5ef1aebc575f053872b4be37527e296bb195065dfad8bcb73943160da35f62d9",
-  "review_scope": "85 flagged rows + 10 keep samples; remaining keeps have structural checks only",
+  "reviewed_csv_sha256": "aecbee3ece58ac6e30307b1de5e167c4ab7de525e1afa1783b8f4c9c3022e491",
+  "review_scope": "85 flagged rows + 10 keep samples; six held rows rechecked on 2026-10-24; remaining keeps have structural checks only",
   "counts": {
     "qwen_keep": 165,
     "qwen_change": 79,
     "qwen_uncertain": 6,
     "accepted_qwen_changes": 1,
-    "codex_additional_meaning_corrections": 2,
-    "eligible_rows": 244,
-    "held_rows": 6
+    "codex_additional_meaning_corrections": 8,
+    "eligible_rows": 250,
+    "held_rows": 0
   },
   "edition_note": "기준은 위키문헌 석봉 천자문 전사본. 1691 어제서문 확인. 해당 전사본을 1583 간행본이라고 확정한 기존 조사 메타데이터는 채택하지 않음.",
   "source_urls": [
@@ -1002,15 +1127,17 @@
     {
       "id": "cheonjamun-066",
       "qwen_decision": "uncertain",
-      "action": "hold",
+      "action": "correct",
       "codex_individually_reviewed": true,
-      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "reason": "기준 전사본 淸의 훈음 시글 졍 확인. 숙흥온정 유지. 淸/凊의 역사적 성립 원인 단정은 채택하지 않음.",
       "original": {
         "hanja": "夙興溫淸",
         "reading": "숙흥온정",
         "meaning": "아침 일찍 일어나 부모님 안부를 살피고 겨울에는 따뜻하게 여름에는 시원하게 해 드립니다."
       },
-      "changes": {},
+      "changes": {
+        "meaning": "일찍 일어나 부모님을 살피고 따뜻하거나 시원하게 해 드립니다."
+      },
       "evidence_item": "cheonjamun-066",
       "correction_evidence": null
     },
@@ -2112,15 +2239,17 @@
     {
       "id": "cheonjamun-140",
       "qwen_decision": "uncertain",
-      "action": "hold",
+      "action": "correct",
       "codex_individually_reviewed": true,
-      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "reason": "정정한 한국민족문화대백과 서전인물유취 본문에서 부열(傅說) 직접 확인. 구절의 인물 대응은 천자문 대조표와 비교. 열감무정 유지.",
       "original": {
         "hanja": "說感武丁",
         "reading": "열감무정",
         "meaning": "담벼락을 쌓던 어진 현인 부열은 은나라 임금 무정의 꿈에 나타나 감동을 주었습니다."
       },
-      "changes": {},
+      "changes": {
+        "meaning": "어진 인물 부열이 은나라 임금 무정을 감동시킨 고사를 가리킵니다."
+      },
       "evidence_item": "cheonjamun-140",
       "correction_evidence": null
     },
@@ -2367,15 +2496,17 @@
     {
       "id": "cheonjamun-157",
       "qwen_decision": "uncertain",
-      "action": "hold",
+      "action": "correct",
       "codex_individually_reviewed": true,
-      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "reason": "기준 전사본 雁 유지. 대조표의 안문자새 독음·안문관/만리장성 대응 확인. 붉은 흙 어원·기러기만 넘는다는 부가 설명은 미채택.",
       "original": {
         "hanja": "雁門紫塞",
         "reading": "안문자새",
         "meaning": "기러기가 날아 넘는 험준한 안문관 요새와 붉은 흙탕으로 쌓은 만리장성 자새입니다."
       },
-      "changes": {},
+      "changes": {
+        "meaning": "안문관과 자새라 불리는 만리장성의 요새를 일컫습니다."
+      },
       "evidence_item": "cheonjamun-157",
       "correction_evidence": null
     },
@@ -2997,15 +3128,17 @@
     {
       "id": "cheonjamun-199",
       "qwen_decision": "uncertain",
-      "action": "hold",
+      "action": "correct",
       "codex_individually_reviewed": true,
-      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "reason": "사용자 재검토 요청 후 기존 근거로 재판단. 석봉 전사본 易의 역 훈음과 현대 대조표 역유유외·경솔함 경계 풀이를 기준으로 초안 독음 유지. 이유유외 변경 근거 부족은 기존 독음 출제 보류의 사유가 아니므로 보류 해제. 복수 독음은 추가하지 않음.",
       "original": {
         "hanja": "易輶攸畏",
         "reading": "역유유외",
         "meaning": "행동을 경솔하게 하거나 말을 가볍게 하는 것을 가장 두려워하고 삼가야 합니다."
       },
-      "changes": {},
+      "changes": {
+        "meaning": "말과 행동을 가볍고 경솔하게 하는 것을 경계해야 합니다."
+      },
       "evidence_item": "cheonjamun-199",
       "correction_evidence": null
     },
@@ -3027,15 +3160,17 @@
     {
       "id": "cheonjamun-201",
       "qwen_decision": "uncertain",
-      "action": "hold",
+      "action": "correct",
       "codex_individually_reviewed": true,
-      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "reason": "기준 전사본 飡 밥 손 및 현대 대조표 구선손반 확인. 따뜻함·때에 맞춤 등 원문 밖 수식 제거. 통용자 관계의 역사적 원인이나 사전 URL 열람 완료는 주장하지 않음.",
       "original": {
         "hanja": "具膳飡飯",
         "reading": "구선손반",
         "meaning": "정갈하게 반찬을 갖추고 때에 맞추어 따뜻한 밥을 먹습니다."
       },
-      "changes": {},
+      "changes": {
+        "meaning": "반찬을 갖추어 밥을 먹습니다."
+      },
       "evidence_item": "cheonjamun-201",
       "correction_evidence": null
     },
@@ -3610,15 +3745,17 @@
     {
       "id": "cheonjamun-239",
       "qwen_decision": "uncertain",
-      "action": "hold",
+      "action": "correct",
       "codex_individually_reviewed": true,
-      "reason": "독음·문맥 또는 판본 이견의 직접 근거 보완 전 출제 보류.",
+      "reason": "기준 전사본 斡 돌 알과 현대 대조표 선기현알 확인. 기구와 천체를 혼합한 초안 표현을 제거. 광주본 幹을 오각이라고 단정하지 않음.",
       "original": {
         "hanja": "璇璣懸斡",
         "reading": "선기현알",
         "meaning": "하늘의 북두칠성과 혼천의 천체는 허공에 매달린 채 쉼 없이 빙빙 돌아갑니다."
       },
-      "changes": {},
+      "changes": {
+        "meaning": "천체를 관측하는 기구인 선기가 매달려 도는 모습을 나타냅니다."
+      },
       "evidence_item": "cheonjamun-239",
       "correction_evidence": null
     },

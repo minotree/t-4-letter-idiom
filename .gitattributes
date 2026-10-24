@@ -1,0 +1,3 @@
+# Reviewed/source content is hash checked as bytes. Preserve authored line endings.
+/sajaseongeo_image_working.csv -text whitespace=cr-at-eol
+/data/cheonjamun/** -text whitespace=cr-at-eol

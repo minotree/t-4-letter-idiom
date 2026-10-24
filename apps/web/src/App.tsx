@@ -1,4 +1,5 @@
-import { lazy, Suspense, useEffect, useRef, useState } from 'react';
+import { lazy, Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { readSessions, SessionStars, STEP_COLORS } from './LearningMilestones';
 import { candidatesFor, matchingAnswers, readingHint, migrateIdiomHistory, SESSION_LIMIT, type Idiom } from '@idioms/shared';
 import data from './data/idioms.json';
 import englishSource from '../../../data/english/source.json';
@@ -15,6 +16,10 @@ const idioms: Idiom[] = data.map(item => {
   return { ...item, category };
 });
 const HISTORY_KEY = 'idioms:web:history:v1';
+const SESSIONS_KEY = 'idioms:web:hanja:completed-sessions:v1';
+function currentPage() {
+  return location.hash === '#english' ? 'english' : location.hash === '#idioms' ? 'book' : location.hash === '#main' ? 'quiz' : 'home';
+}
 
 function readHistory(key = HISTORY_KEY): { ids: string[]; warning: string } {
   try {
@@ -36,6 +41,9 @@ function pickStart(history: Set<string>): Idiom {
 }
 
 export default function App() {
+  const [savedSessions] = useState(() => readSessions(SESSIONS_KEY));
+  const [sessionCount, setSessionCount] = useState(savedSessions.count);
+  const [sessionWarning, setSessionWarning] = useState(savedSessions.warning);
   const [saved] = useState(() => readHistory());
   const [savedFavorites] = useState(() => readHistory('idioms:web:favorites:v1'));
   const [savedCompleted] = useState(() => readHistory('idioms:web:completed:v1'));
@@ -44,7 +52,7 @@ export default function App() {
   const [favorites, setFavorites] = useState(() => new Set(savedFavorites.ids));
   const [completed, setCompleted] = useState(() => new Set(savedCompleted.ids));
   const [mistakes, setMistakes] = useState(() => new Set(savedMistakes.ids));
-  const [page, setPage] = useState(() => location.hash === '#english' ? 'english' : location.hash === '#idioms' ? 'book' : 'quiz');
+  const [page, setPage] = useState(currentPage);
   const [englishOpened, setEnglishOpened] = useState(() => location.hash === '#english');
   const [hanjaPage, setHanjaPage] = useState(() => location.hash === '#idioms' ? 'book' : 'quiz');
   const [history, setHistory] = useState(() => new Set(saved.ids));
@@ -54,6 +62,7 @@ export default function App() {
   const [connections, setConnections] = useState<string[]>([]);
   const [character, setCharacter] = useState('');
   const [answer, setAnswer] = useState('');
+  const [meaningOpen, setMeaningOpen] = useState(false);
   const [attempts, setAttempts] = useState<Record<string, number>>({});
   const [message, setMessage] = useState('마음에 드는 한 글자를 골라 시작해 보세요.');
   const [selectedId, setSelectedId] = useState('');
@@ -61,6 +70,11 @@ export default function App() {
   const [update, setUpdate] = useState<ServiceWorker | null>(null);
   const [offline, setOffline] = useState(!navigator.onLine);
   const input = useRef<HTMLInputElement>(null);
+  const currentCard = useRef<HTMLDivElement>(null);
+  const [floating, setFloating] = useState<{ top: number; left: number; width: number; maxHeight?: number } | null>(null);
+  const anchor = useRef<HTMLLIElement | null>(null);
+  const opening = useRef(false);
+  const openingFrame = useRef(0);
   const title = useRef<HTMLHeadingElement>(null);
   const locked = useRef(false);
 
@@ -73,9 +87,9 @@ export default function App() {
 
   useEffect(() => {
     const navigate = () => {
-      setPage(location.hash === '#english' ? 'english' : location.hash === '#idioms' ? 'book' : 'quiz');
+      setPage(currentPage());
       if (location.hash === '#english') setEnglishOpened(true);
-      else setHanjaPage(location.hash === '#idioms' ? 'book' : 'quiz');
+      else if (location.hash === '#idioms' || location.hash === '#main') setHanjaPage(location.hash === '#idioms' ? 'book' : 'quiz');
     };
     window.addEventListener('hashchange', navigate);
     return () => window.removeEventListener('hashchange', navigate);
@@ -98,9 +112,57 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (selectedId) input.current?.focus();
-    else if (chain.length) title.current?.focus();
-  }, [selectedId, chain.length]);
+    if (selectedId && floating && page === 'quiz') input.current?.focus({ preventScroll: true });
+    else if (chain.length && page === 'quiz') title.current?.focus({ preventScroll: true });
+  }, [selectedId, chain.length, floating, page]);
+  useLayoutEffect(() => {
+    if (!chain.length) return;
+    const frame = requestAnimationFrame(() => currentCard.current?.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    return () => cancelAnimationFrame(frame);
+  }, [chain.length]);
+
+  function fitFloating() {
+    const form = input.current?.closest('form');
+    if (!form || !anchor.current || !form.classList.contains('floating-answer')) return;
+    const row = anchor.current.getBoundingClientRect();
+    const viewport = window.visualViewport;
+    const topEdge = (viewport?.offsetTop ?? 0) + 12;
+    const bottomEdge = (viewport ? viewport.offsetTop + viewport.height : window.innerHeight) - 12;
+    const height = form.scrollHeight + 2;
+    const below = row.bottom + 8;
+    // Never clamp the input onto the selected candidate.
+    const belowSpace = Math.max(0, bottomEdge - below);
+    const aboveSpace = Math.max(0, row.top - 8 - topEdge);
+    const useBelow = belowSpace >= height || belowSpace >= aboveSpace;
+    const maxHeight = Math.max(1, useBelow ? belowSpace : aboveSpace);
+    const top = useBelow ? below : row.top - 8 - Math.min(height, maxHeight);
+    setFloating(value => value && (value.top !== top || value.maxHeight !== maxHeight) ? { ...value, top, maxHeight } : value);
+  }
+  useLayoutEffect(() => { if (floating) fitFloating(); }, [floating, selectedId, attempts]);
+  useEffect(() => {
+    const close = () => { setFloating(null); input.current?.blur(); };
+    const fit = () => fitFloating();
+    window.addEventListener('hashchange', close);
+    window.addEventListener('resize', fit);
+    window.visualViewport?.addEventListener('resize', fit);
+    return () => { cancelAnimationFrame(openingFrame.current); window.removeEventListener('hashchange', close); window.removeEventListener('resize', fit); window.visualViewport?.removeEventListener('resize', fit); };
+  }, []);
+
+  function closeFloating() { opening.current = false; cancelAnimationFrame(openingFrame.current); setFloating(null); if (document.activeElement === input.current) input.current?.blur(); }
+  function selectCandidate(item: Idiom, element: HTMLInputElement) {
+    opening.current = true;
+    cancelAnimationFrame(openingFrame.current);
+    openingFrame.current = requestAnimationFrame(() => {
+      openingFrame.current = requestAnimationFrame(() => { opening.current = false; });
+    });
+    anchor.current = element.closest('li');
+    const row = element.closest('li')!.getBoundingClientRect();
+    const list = element.closest('ol')!.getBoundingClientRect();
+    const width = Math.min(list.width, window.innerWidth - 24);
+    setSelectedId(item.id); setAnswer('');
+    setMessage('선택한 후보의 한글 독음를 입력해 주세요.');
+    setFloating({ top: Math.max(12, Math.min(row.bottom + 6, window.innerHeight - 220)), left: Math.max(12, Math.min(list.left, window.innerWidth - width - 12)), width });
+  }
 
   function remember(ids: string[]) {
     const next = new Set([...history, ...ids]);
@@ -121,6 +183,7 @@ export default function App() {
   }
 
   function choose(ch: string) {
+    closeFloating();
     locked.current = false;
     setCharacter(ch); setAnswer(''); setAttempts({}); setSelectedId('');
     setMessage(`‘${ch}’가 들어가는 후보 중 풀고 싶은 한자성어를 선택해 주세요.`);
@@ -129,13 +192,21 @@ export default function App() {
   function accept(item: Idiom) {
     if (locked.current || finished || selected?.id !== item.id) return;
     locked.current = true;
+    closeFloating();
     remember([start.id, item.id]);
     const learned = new Set([...completed, item.id]);
     setCompleted(learned); saveCollection('completed', learned);
+    if (chain.length + 1 === SESSION_LIMIT) {
+      const count = Math.min(Number.MAX_SAFE_INTEGER, sessionCount + 1);
+      setSessionCount(count);
+      try { localStorage.setItem(SESSIONS_KEY, JSON.stringify(count)); setSessionWarning(''); }
+      catch { setSessionWarning('완주 횟수를 저장하지 못했어요. 현재 별은 다음 접속에 남지 않을 수 있어요.'); }
+    }
     setConnections([...connections, character]);
+    setMeaningOpen(false);
     setChain([...chain, item]); setCharacter(''); setAnswer(''); setAttempts({}); setSelectedId('');
-    setMessage(`${item.reading}, 정답이에요! 다음 연결 글자를 골라 주세요.`);
-    title.current?.focus();
+    setMessage(`${item.reading}, 정답이에요! 다음에 이어갈 글자를 골라 주세요.`);
+    title.current?.focus({ preventScroll: true });
   }
 
   function submit(event: React.FormEvent) {
@@ -152,27 +223,56 @@ export default function App() {
   }
 
   function restart() {
+    closeFloating();
+    setMeaningOpen(false);
     locked.current = false;
     setStart(pickStart(history)); setChain([]); setCharacter(''); setAnswer('');
     setConnections([]);
     setAttempts({}); setSelectedId(''); setConfirmRestart(false);
-    setMessage('새로운 연결을 시작해 볼까요? 한 글자를 골라 주세요.');
+    setMessage('새로운 이음을 시작해 볼까요? 한 글자를 골라 주세요.');
     title.current?.focus();
   }
 
   return (
     <main className="app">
       <header className="page-header">
-        <a className="brand" href="#main">글자잇기 <span>{page === 'english' ? '영어 학습' : '한자 학습'}</span></a>
+        <a className="brand" href="#home">모두의 이음 <span>{page === 'home' ? '한자와 영어, 이어지는 배움' : page === 'english' ? '영어 학습' : '한자 학습'}</span></a>
         <span className="edition">하루 한 번, 즐거운 배움</span>
       </header>
-      <section className="intro learning-intro" aria-label="학습 소개">
+      <section className="home-screen" hidden={page !== 'home'} aria-label="홈">
+        <div className="intro home-intro">
+          <span className="eyebrow">한 글자에서 시작하는 발견</span>
+          <h1>아는 말이 이어지면,<br />배움이 되는 순간.</h1>
+          <p>한자도 영어도, 한 글자씩 이어 보세요.<br />오늘의 작은 발견이 다음 배움으로 이어집니다.</p>
+        </div>
+        <div className="home-courses">
+          <a className="home-course panel" href="#main">
+            <span className="home-symbol" aria-hidden="true">字</span>
+            <span className="eyebrow">한자성어 · 천자문</span>
+            <h2>한자 학습</h2><p>글자를 고르고 뜻을 읽으며<br />한자성어를 이어 보세요.</p>
+            <span className="home-course-action">{idioms.length}개 한자어 · 시작하기 <span aria-hidden="true">↗</span></span>
+          </a>
+          <a className="home-course home-course-english panel" href="#english">
+            <span className="home-symbol" aria-hidden="true">Aa</span>
+            <span className="eyebrow">알파벳으로 잇는 단어</span>
+            <h2>영어 학습</h2><p>알파벳을 고르고 뜻을 읽으며<br />영어 단어를 이어 보세요.</p>
+            <span className="home-course-action">{englishSource.rows}개 단어 · 시작하기 <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+        <section className="home-guide" aria-labelledby="home-guide-title">
+          <h2 id="home-guide-title">이렇게 시작해요</h2>
+          <ol><li><strong>01</strong> 이어갈 글자 고르기</li><li><strong>02</strong> 뜻을 보고 후보 선택하기</li><li><strong>03</strong> 정답을 입력하고 이어가기</li></ol>
+          <p>한 번에 최대 20문제. 각 학습의 ‘나의 단어장’에서 즐겨찾기와 오답을 다시 살펴볼 수 있어요.</p>
+        </section>
+      </section>
+      <section className="intro learning-intro" hidden={page === 'home'} aria-label="학습 소개">
         <span className="eyebrow">{page === 'english' ? '한 알파벳에서 시작하는 발견' : '한 글자에서 시작하는 발견'}</span>
         <h1>{page === 'english' ? '아는 단어가 이어지면,' : '아는 말이 이어지면,'}<br />배움이 되는 순간.</h1>
         <p>{page === 'english' ? '알파벳을 고르고, 뜻을 읽고, 아는 영어 단어를 적어 보세요.' : '글자를 고르고, 뜻을 읽고, 아는 한자성어를 적어 보세요.'}<br />정답이 다음 배움의 시작이 됩니다.</p>
       </section>
-      <section className="learning-shell panel" hidden={page === 'english'} aria-label="한자 학습">
-      <div className="book-heading"><h1>한자 글자잇기</h1><span>{idioms.length}개 한자어</span></div>
+      <section className="learning-shell panel" hidden={page !== 'quiz' && page !== 'book'} aria-label="한자 학습">
+      <div className="book-heading english-rank-heading"><h1>한자 글자잇기</h1><SessionStars count={sessionCount} /></div>
+      <p className="english-word-total">{idioms.length}개 한자어 · 20문제를 모두 이으면 작은 별 하나</p>
       <nav className="learning-tabs" aria-label="한자 학습 메뉴">
         <a href="#main" aria-current={page === 'quiz' ? 'page' : undefined}>퀴즈 풀기</a>
         <a href="#idioms" aria-current={page === 'book' ? 'page' : undefined}>나의 단어장</a>
@@ -180,32 +280,33 @@ export default function App() {
       <div hidden={page !== 'quiz'}>
       <p className="book-description">한글 글자 선택 → 후보 선택 → 한글 독음 입력</p>
       <div className="workspace">
-        <section className="game" id="main" aria-label="한자성어 연결 퀴즈">
+        <section className="game" id="main" aria-label="한자성어 이음 퀴즈">
           <p className="learning-count">{chain.length} / {SESSION_LIMIT} 문제</p>
           <progress value={chain.length} max={SESSION_LIMIT} aria-label="맞힌 문제 수" />
           {chain.length > 0 && <section className="completed-chain" aria-label="이어 온 문제 사슬">
-            <h3>지금까지 이어 온 한자성어</h3>
-            <ol className="chain-links">{chain.map((item, index) => {
-              const previous = index === 0 ? start : chain[index - 1];
-              return <li key={item.id}>
-                <span className="link-step">{index + 1}번째 연결</span>
-                <div className="link-pair">
-                  <div className="link-idiom"><strong lang="zh">{previous.hanja}</strong><span>{previous.reading}</span><p>{previous.meaning}</p><ContentSource item={previous} /></div>
-                  <div className="link-bridge"><span>{connections[index]}</span><span aria-hidden="true">→</span><small>연결 글자</small></div>
-                  <div className="link-idiom"><strong lang="zh">{item.hanja}</strong><span>{item.reading}</span><p>{item.meaning}</p><ContentSource item={item} /></div>
-                </div>
+            <div className="english-journey-heading"><h3>지금까지 이어 온 한자성어</h3><span>이번 이음 {chain.length} / {SESSION_LIMIT}</span></div>
+            <ol className="hanja-chain english-chain">{[start, ...chain].map((item, index) => {
+              const row = Math.floor(index / 2);
+              const column = row % 2 === 0 ? index % 2 + 1 : 2 - index % 2;
+              const vertical = index > 0 && index % 2 === 0;
+              return <li key={item.id} data-step={index} className={index === SESSION_LIMIT ? 'chain-complete' : undefined} style={{ gridRow: row + 1, gridColumn: column, borderColor: index > 0 ? STEP_COLORS[index - 1] : undefined }}>
+                {index > 0 && <span className={`english-chain-bridge ${vertical ? 'bridge-down' : column === 2 ? 'bridge-right' : 'bridge-left'}`} aria-label={`${connections[index - 1]}로 이어짐`}><span>{connections[index - 1]}</span><span aria-hidden="true">{vertical ? '↓' : column === 2 ? '→' : '←'}</span></span>}
+                <span className={`chain-word-step${index > 0 ? ' chain-step-badge' : ''}`} style={index > 0 ? { backgroundColor: STEP_COLORS[index - 1], color: index <= 2 || index === SESSION_LIMIT ? '#243a36' : '#fff' } : undefined}>{index === 0 ? '시작' : `${index} / ${SESSION_LIMIT}`}</span>
+                {index === SESSION_LIMIT && <span className="chain-complete-label">20개 이음 완성</span>}
+                <strong lang="zh">{item.hanja}</strong><span className="hanja-chain-reading">{item.reading}</span><p>{item.meaning}</p><ContentSource item={item} />
               </li>;
             })}</ol>
           </section>}
-          <div className="idiom-card">
-            <span className="card-caption">{chain.length ? '방금 맞힌 한자성어' : '연결의 시작'}</span>
+          <div className="idiom-card" ref={currentCard}>
+            <span className="card-caption">{chain.length ? '방금 맞힌 한자성어' : '이음의 시작'}</span>
             <h2 ref={title} tabIndex={-1} lang="zh">{current.hanja}</h2>
-            <strong>{current.reading}</strong><p>{current.meaning}</p>
+            <div className="card-reading"><strong>{current.reading}</strong><button type="button" className="meaning-toggle" aria-expanded={meaningOpen} aria-controls="hanja-meaning" onClick={() => setMeaningOpen(value => !value)}>{meaningOpen ? '뜻 접기' : '뜻 보기'} <span aria-hidden="true">ⓘ</span></button></div>
+            <p id="hanja-meaning" hidden={!meaningOpen}>{current.meaning}</p>
             <ContentSource item={current} />
           </div>
           {finished ? <div className="summary">
             <span className="eyebrow">나만의 배움 한 줄</span>
-            <h2>{chain.length >= SESSION_LIMIT ? '20개의 한자성어를 이었어요!' : '이번 연결은 여기까지예요.'}</h2>
+            <h2>{chain.length >= SESSION_LIMIT ? '20개의 한자성어를 이었어요!' : '이번 이음은 여기까지예요.'}</h2>
             <p>{chain.length >= SESSION_LIMIT ? '오늘 알게 된 말들이 다음 도전에 힘이 될 거예요.' : '같은 한자성어를 반복하지 않고 이어갈 후보가 더 없어요.'}</p>
             <button className="primary" onClick={restart}>새 세션 시작하기 <span aria-hidden="true">↗</span></button>
           </div> : <>
@@ -219,27 +320,27 @@ export default function App() {
               <div className="hint-heading"><h3>02 <span>풀고 싶은 한자성어를 선택해 주세요</span></h3>{character && <span className="pill">{candidates.length}개 후보</span>}</div>
               {!character ? <p className="empty">위에서 한 글자를 고르면<br />그 글자가 들어간 한자성어의 힌트가 나타나요.</p> : <>
                 <p className="hint-description">‘<b>{character}</b>’가 들어가는 후보를 하나 선택한 뒤, 그 후보의 한글 독음을 입력하세요.</p>
-                <ol className="candidate-list">{candidates.map((item, index) => <li key={item.id} className={selectedId === item.id ? 'selected-candidate' : ''}>
-                  <label className="candidate-choice"><input type="radio" name="candidate" value={item.id} checked={selectedId === item.id} onChange={() => { setSelectedId(item.id); setAnswer(''); setMessage('선택한 후보의 한글 독음을 입력해 주세요.'); }} /><span>후보 {index + 1} 선택</span></label>
-                  <div><span className="candidate-number">{String(index + 1).padStart(2, '0')}</span><strong lang="zh">{item.hanja}</strong></div>
+                <ol className="candidate-list hanja-candidates" onWheel={closeFloating} onTouchMove={closeFloating} onScroll={() => { if (!opening.current) closeFloating(); }}>{candidates.map((item, index) => <li key={item.id} className={selectedId === item.id ? 'selected-candidate' : ''} onClick={event => { if ((event.target as HTMLElement).tagName === 'LABEL') return; selectCandidate(item, event.currentTarget.querySelector('input')!); }}>
+                  <label className="candidate-choice hanja-candidate-choice"><input type="radio" name="candidate" value={item.id} aria-label={`후보 ${index + 1}, ${item.hanja} 선택`} checked={selectedId === item.id} onChange={() => {}} /><span className="candidate-number">{String(index + 1).padStart(2, '0')}</span><strong lang="zh">{item.hanja}</strong></label>
                   <p>{item.meaning}</p>{selectedId === item.id && (attempts[item.id] ?? 0) > 0 && <span className="reading-hint">독음 힌트 · {readingHint(item.reading, attempts[item.id])}</span>}
                   <ContentSource item={item} />
                 </li>)}</ol>
               </>}
             </section>
-            <form onSubmit={submit} className="answer-form">
-              <label htmlFor="answer">03 <span>{selected ? `선택한 후보: ${selected.hanja} · 한글 독음 입력` : '후보를 먼저 선택해 주세요'}</span></label>
+            <form onSubmit={submit} className={`answer-form${floating ? ' floating-answer' : ''}`} style={floating ? { top: floating.top, left: floating.left, width: floating.width, maxHeight: floating.maxHeight } : undefined} onKeyDown={event => { if (event.key === 'Escape') closeFloating(); }}>
+              <div className="floating-answer-heading"><label htmlFor="answer">03 <span>{selected ? `선택한 후보: ${selected.hanja} · 한글 독음 입력` : '후보를 먼저 선택해 주세요'}</span></label>{floating && <button type="button" className="floating-close" onClick={closeFloating} aria-label="입력창 닫기">×</button>}</div>
               <div className="input-row"><input id="answer" ref={input} value={answer} onChange={event => setAnswer(event.target.value)}
-                disabled={!selected} autoComplete="off" spellCheck={false} placeholder="선택한 후보의 한글 독음" aria-describedby="feedback"
+                disabled={!selected} autoComplete="off" spellCheck={false} placeholder="선택한 후보의 한글 독음" aria-describedby={floating ? 'hanja-floating-feedback' : 'feedback'}
                 onKeyDown={event => { if (event.key === 'Enter' && event.nativeEvent.isComposing) event.preventDefault(); }} />
                 <button type="submit" className="primary" disabled={!selected}>확인 <span aria-hidden="true">↗</span></button></div>
+              {floating && <p id="hanja-floating-feedback" role="status">{selected && attempts[selected.id] ? `독음 힌트 · ${readingHint(selected.reading, attempts[selected.id])}` : '후보 목록을 스크롤하면 입력창이 닫혀요.'}</p>}
             </form>
           </>}
-          <p id="feedback" className="feedback" role="status">{finished ? `${chain.length}개의 한자성어를 정답으로 연결했어요.` : message}</p>
+          <p id="feedback" className="feedback" role="status">{finished ? `${chain.length}개의 한자성어를 정답으로 이었어요.` : message}</p>
         </section>
         <aside className="sidebar">
           <section className="guide"><span className="eyebrow">이렇게 이어가요</span><p>선택한 한글 글자가 독음에 들어간 후보를 고르고<br />전체 독음을 입력하면 정답!</p><ul><li>한자는 달라도 같은 한글이면 이어져요.</li><li>한 세션은 최대 20문제예요.</li><li>같은 세션의 한자성어는 다시 나오지 않아요.</li><li>처음 만나는 한자성어를 먼저 보여드려요.</li><li>오답이면 독음 힌트가 하나씩 열려요.</li></ul></section>
-          <div className="session-actions">{confirmRestart ? <div className="restart-confirm"><p>지금 연결을 마치고 새로 시작할까요?</p><button onClick={restart}>새로 시작</button><button onClick={() => setConfirmRestart(false)}>계속 풀기</button></div> : <button className="text-button" onClick={() => setConfirmRestart(true)}>새 세션으로 시작하기 ↻</button>}</div>
+          <div className="session-actions">{confirmRestart ? <div className="restart-confirm"><p>지금 이음을 마치고 새로 시작할까요?</p><button onClick={restart}>새로 시작</button><button onClick={() => setConfirmRestart(false)}>계속 풀기</button></div> : <button className="text-button" onClick={() => setConfirmRestart(true)}>새 세션으로 시작하기 ↻</button>}</div>
         </aside>
       </div>
       </div>
@@ -249,10 +350,11 @@ export default function App() {
       </section>
       <div hidden={page !== 'english'} id="english">{englishOpened && <Suspense fallback={<p role="status">영어 학습을 준비하고 있어요.</p>}><EnglishLearning /></Suspense>}</div>
       {warning && <p className="notice" role="alert">{warning}</p>}
+      {sessionWarning && <p className="notice" role="alert">{sessionWarning}</p>}
       {offline && <p className="notice" role="status">오프라인이에요. 저장된 학습 자료로 계속할 수 있어요.</p>}
       {update && <div className="notice">새 버전이 준비됐어요. 적용하면 현재 세션이 종료됩니다. <button onClick={() => applyUpdate(update)}>지금 업데이트</button></div>}
-      <footer><span>{page === 'english' ? `글자잇기 · 영어 학습 ${englishSource.rows}개` : `글자잇기 · 한자 학습 ${idioms.length}개`}</span><span>이전 학습 이력은 이 브라우저에 저장돼요. 진행 중인 연결은 새로고침하면 초기화돼요.</span></footer>
-      <nav className="bottom-nav" aria-label="학습 선택"><a href={hanjaPage === 'book' ? '#idioms' : '#main'} aria-current={page !== 'english' ? 'page' : undefined}><span aria-hidden="true">字</span>한자 학습</a><a href="#english" aria-current={page === 'english' ? 'page' : undefined}><span aria-hidden="true">Aa</span>영어 학습</a></nav>
+      <footer><span>{page === 'home' ? '모두의 이음 · 한자와 영어 학습' : page === 'english' ? `모두의 이음 · 영어 학습 ${englishSource.rows}개` : `모두의 이음 · 한자 학습 ${idioms.length}개`}</span><span>이전 학습 이력은 이 브라우저에 저장돼요. 진행 중인 이음은 새로고침하면 초기화돼요.</span></footer>
+      <nav className="bottom-nav" aria-label="학습 선택"><a href="#home" aria-current={page === 'home' ? 'page' : undefined}><span aria-hidden="true">⌂</span>홈</a><a href={hanjaPage === 'book' ? '#idioms' : '#main'} aria-current={page === 'quiz' || page === 'book' ? 'page' : undefined}><span aria-hidden="true">字</span>한자 학습</a><a href="#english" aria-current={page === 'english' ? 'page' : undefined}><span aria-hidden="true">Aa</span>영어 학습</a></nav>
     </main>
   );
 }
