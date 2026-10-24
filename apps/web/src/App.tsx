@@ -75,6 +75,7 @@ export default function App() {
   const anchor = useRef<HTMLLIElement | null>(null);
   const opening = useRef(false);
   const openingFrame = useRef(0);
+  const keyboardTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const title = useRef<HTMLHeadingElement>(null);
   const locked = useRef(false);
 
@@ -121,7 +122,7 @@ export default function App() {
     return () => cancelAnimationFrame(frame);
   }, [chain.length]);
 
-  function fitFloating() {
+  function fitFloating(alignCandidate = false) {
     const form = input.current?.closest('form');
     if (!form || !anchor.current || !form.classList.contains('floating-answer')) return;
     const candidate = anchor.current;
@@ -131,9 +132,11 @@ export default function App() {
     const bottomEdge = (viewport ? viewport.offsetTop + viewport.height : window.innerHeight) - 56;
     const height = form.scrollHeight + 2;
     const list = candidate.closest('ol');
-    opening.current = true;
-    cancelAnimationFrame(openingFrame.current);
-    if (list) {
+    if (alignCandidate) {
+      opening.current = true;
+      cancelAnimationFrame(openingFrame.current);
+    }
+    if (alignCandidate && list) {
       const row = candidate.getBoundingClientRect();
       const bounds = list.getBoundingClientRect();
       if (row.bottom > bounds.bottom) list.scrollTop += row.bottom - bounds.bottom;
@@ -145,26 +148,40 @@ export default function App() {
     const maxHeight = Math.max(1, available - candidateHeight - 8);
     const formHeight = Math.min(height, maxHeight);
     const targetTop = bottomEdge - candidateHeight;
-    window.scrollBy({ top: row.top - targetTop, behavior: 'instant' });
+    if (alignCandidate && Math.abs(row.top - targetTop) > 2) {
+      window.scrollBy({ top: row.top - targetTop, behavior: 'instant' });
+    }
     row = candidate.getBoundingClientRect();
     const top = Math.max(topEdge, Math.min(row.top - 8 - formHeight, bottomEdge - formHeight));
-    openingFrame.current = requestAnimationFrame(() => {
-      openingFrame.current = requestAnimationFrame(() => { opening.current = false; });
-    });
+    if (alignCandidate) {
+      openingFrame.current = requestAnimationFrame(() => {
+        openingFrame.current = requestAnimationFrame(() => { opening.current = false; });
+      });
+    }
     setFloating(value => value && (value.top !== top || value.maxHeight !== maxHeight) ? { ...value, top, maxHeight } : value);
   }
-  useLayoutEffect(() => { if (floating) fitFloating(); }, [floating, selectedId, attempts]);
+  useLayoutEffect(() => { if (floating) fitFloating(true); }, [Boolean(floating), selectedId]);
+  useLayoutEffect(() => { if (floating) fitFloating(); }, [attempts]);
   useEffect(() => {
     const close = () => { setFloating(null); input.current?.blur(); };
     const fit = () => fitFloating();
+    let lastHeight = window.visualViewport?.height ?? window.innerHeight;
+    const resize = () => {
+      fitFloating();
+      const height = window.visualViewport?.height ?? window.innerHeight;
+      if (Math.abs(height - lastHeight) < 2) return;
+      lastHeight = height;
+      if (keyboardTimer.current) clearTimeout(keyboardTimer.current);
+      keyboardTimer.current = setTimeout(() => fitFloating(true), 180);
+    };
     window.addEventListener('hashchange', close);
-    window.addEventListener('resize', fit);
-    window.visualViewport?.addEventListener('resize', fit);
+    window.addEventListener('resize', resize);
+    window.visualViewport?.addEventListener('resize', resize);
     window.visualViewport?.addEventListener('scroll', fit);
-    return () => { cancelAnimationFrame(openingFrame.current); window.removeEventListener('hashchange', close); window.removeEventListener('resize', fit); window.visualViewport?.removeEventListener('resize', fit); window.visualViewport?.removeEventListener('scroll', fit); };
+    return () => { cancelAnimationFrame(openingFrame.current); if (keyboardTimer.current) clearTimeout(keyboardTimer.current); window.removeEventListener('hashchange', close); window.removeEventListener('resize', resize); window.visualViewport?.removeEventListener('resize', resize); window.visualViewport?.removeEventListener('scroll', fit); };
   }, []);
 
-  function closeFloating() { opening.current = false; cancelAnimationFrame(openingFrame.current); setFloating(null); if (document.activeElement === input.current) input.current?.blur(); }
+  function closeFloating() { opening.current = false; cancelAnimationFrame(openingFrame.current); if (keyboardTimer.current) clearTimeout(keyboardTimer.current); setFloating(null); if (document.activeElement === input.current) input.current?.blur(); }
   function selectCandidate(item: Idiom, element: HTMLInputElement) {
     opening.current = true;
     cancelAnimationFrame(openingFrame.current);

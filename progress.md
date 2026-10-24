@@ -1,5 +1,12 @@
 # 사자성어 학습 구현 진행표
 
+## iPhone PWA 정답 입력창 반복 이동 보정 (2026-10-24)
+
+- 문제: 사용자 보고로 웹에서는 후보 위에 입력창이 표시되지만 PWA에서는 입력창이 위아래로 심하게 움직임. 앞선 한자 키보드 보정의 visualViewport scroll 처리에서 페이지 scrollBy를 다시 실행하는 순환 경로 확인. 실제 기기 이벤트 로그는 미수집.
+- 변경: `apps/web/src/App.tsx`에서 위치 계산과 후보 스크롤을 분리. 후보 선택 시 정렬하고, viewport 높이 변화가 180ms 멈춘 뒤 한 번 재정렬. visualViewport scroll은 입력창 좌표만 갱신하며 페이지를 움직이지 않음. floating 좌표 갱신이 다시 정렬 effect를 실행하지 않도록 의존성 수정, 닫기·해제 시 타이머 취소. 후보 위 입력창 배치 유지, 영어 변경 없음.
+- 검증: `pnpm.cmd build`, `pnpm.cmd build:vercel` 통과(TypeScript 포함, 기존 영어 청크 경고). 기존 브라우저 27개 통과 후 연속 visualViewport scroll 20회에 scrollBy가 호출되지 않는 회귀 검사 추가, `node scripts/check-browser.mjs` 최종 28개 통과. `git diff --check` 통과(LF→CRLF 안내 경고). 업무 규칙 변경 없어 단위 테스트 재실행하지 않음, lint 명령 미등록.
+- 적용/남은 작업: 로컬 수정 및 루트 `dist/` 배포본 갱신. Git·업로드·배포 미실행. 실제 iPhone 설치 PWA에서 키보드 애니메이션·흔들림·후보 변경·회전 재확인 대기.
+
 ## Vercel 배포본 루트 dist 생성·인수인계 (2026-10-24)
 
 - 요청/승인 범위: 최신 수정본의 Vercel 배포 준비. Git 작업·실제 배포는 사용자 담당이며 에이전트가 수행하지 않음.

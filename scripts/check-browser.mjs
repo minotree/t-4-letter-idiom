@@ -94,6 +94,9 @@ try {
   assert.equal(await evaluate(`document.activeElement.id`), 'answer');
   await cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
   checks.push('한자 키보드 높이 축소 모사: 후보가 가시 영역 안·입력창이 후보 위·포커스 유지');
+  await evaluate(`new Promise(resolve => setTimeout(resolve, 300))`);
+  assert.equal(await evaluate(`(() => { const original = window.scrollBy; let calls = 0; window.scrollBy = () => { calls++; }; try { for (let i = 0; i < 20; i++) visualViewport.dispatchEvent(new Event('scroll')); return calls; } finally { window.scrollBy = original; } })()`), 0);
+  checks.push('한자 visualViewport scroll 연속 발생 시 페이지 재스크롤 없음');
   await evaluate(`document.querySelector('.bottom-nav a[href="#home"]').click()`);
   await until(`!document.querySelector('.home-screen').hidden`);
   await evaluate(`document.querySelector('.home-course[href="#main"]').click()`);
