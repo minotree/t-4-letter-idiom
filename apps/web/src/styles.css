@@ -71,6 +71,15 @@
 .learning-shell .learning-tabs a,
 .learning-shell .learning-tabs button { font-size: 15px; }
 .learning-shell .book-tabs button { font-size: 13px; }
+.learning-shell :is(.book-description, .book-note, .book-result, .book-empty,
+  .english-word-total, .session-rank-count, .hint-description, .feedback,
+  .instruction > span, .characters button > span, .candidate-number,
+  .english-chain p, .chain-word-step, .book-heading > span) {
+  color: #465e50;
+  font-weight: 500;
+}
+.intro.learning-intro p, .app:not(.home-page) footer { color: #53665a; font-weight: 500; }
+.learning-shell .hints .empty { color: #66552e !important; font-weight: 500; }
 .learning-shell .workspace { display: block; }
 .learning-shell .game { padding: 0; }
 .learning-shell .idiom-book { margin: 0; padding: 0; border: 0; box-shadow: none; }
