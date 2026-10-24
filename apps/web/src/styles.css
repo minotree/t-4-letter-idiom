@@ -7,7 +7,8 @@
   line-height:1.65;
   font-size:15px}
 [hidden] { display: none !important; }
-.card-reading { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; }
+.card-reading { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 2px 8px; line-height: 1.3; }
+.idiom-card { line-height: 1.3; }
 .meaning-toggle { min-height: 28px; padding: 2px 4px; border: 0; border-radius: 4px; color: #fff; background: transparent; font: inherit; font-size: 11px; cursor: pointer; }
 .meaning-toggle:hover { text-decoration: underline; }
 .meaning-toggle:focus-visible { outline: 2px solid #ffdc8b; outline-offset: 3px; }
@@ -92,11 +93,11 @@
 }
 .english-learning .idiom-card h2 { overflow-wrap: anywhere; }
 .english-step { margin: 22px 0 12px; }
-.word-example { margin-top: 18px; padding-top: 14px; border-top: 1px solid #ffffff40; text-align: left; overflow-wrap: anywhere; }
+.word-example { margin-top: 7px; padding-top: 6px; border-top: 1px solid #ffffff40; text-align: left; overflow-wrap: anywhere; }
 .word-example > span { font-size: 11px; opacity: .8; }
 .example-heading { display: flex; align-items: center; gap: 8px; }
 .example-heading > span { font-size: 11px; opacity: .8; }
-.word-example p { margin: 5px 0 0; }
+.idiom-card .word-example p { margin: 3px 0 0; line-height: 1.3; }
 .english-count { margin-top: 18px; font-weight: 700; }
 .english-journey { margin: 24px 0; }
 .english-rank-heading { flex-wrap: wrap; align-items: center; }
@@ -144,7 +145,7 @@
 .candidate-synonym { min-width: 0; overflow-wrap: anywhere; font-weight: 500; }
 .floating-answer.answer-form { position: fixed; z-index: 30; margin: 0; padding: 14px; border: 1px solid #739481; border-radius: 12px; background: #fff; box-shadow: 0 8px 30px #163b3040; max-height: calc(100dvh - 24px); overflow: auto; }
 .floating-answer-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-.floating-answer-heading label { min-width: 0; word-break: keep-all; overflow-wrap: anywhere; }
+.floating-answer-heading label { min-width: 0; word-break: keep-all; overflow-wrap: anywhere; font-weight: 700; }
 .answer-label-phrase { display: inline-block; white-space: nowrap; }
 .floating-answer-heading .floating-close { flex-shrink: 0; }
 .floating-close { border: 0; background: transparent; color: #426b52; width: 32px; min-height: 32px; font-size: 24px; cursor: pointer; }
@@ -342,15 +343,15 @@
                                                                             font-size:44px;
                                                                             letter-spacing:8px;
                                                                             color:#e6c880;
-                                                                            line-height:1.5;
-                                                                            margin:7px 0 2px;
+                                                                            line-height:1.15;
+                                                                            margin:2px 0;
                                                                             overflow-wrap:anywhere}
                                                                             .idiom-card>strong{
                                                                               font-size:18px;
                                                                               letter-spacing:3px}
                                                                               .idiom-card p{
                                                                                 font-size:14px;
-                                                                                margin:9px auto 0;
+                                                                                margin:4px auto 0;
                                                                                 color:#d0ddcf;
                                                                                 max-width:440px}
                                                                                 .instruction{
