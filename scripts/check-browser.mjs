@@ -474,6 +474,26 @@ try {
   await until(`document.querySelector('.english-learning .session-rank-count')?.textContent === '10문제 완주 0회'`);
   assert.ok(await evaluate(`document.querySelector('.english-learning [role="alert"]').textContent.includes('완주 횟수')`));
   checks.push('영어 10문제 완주만 별 적립·9→10 승급·재접속 유지·100/123회 별 분해·큰 기록 반응형·손상 기록 안내');
+  await evaluate(`Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: { getVoices: () => [], speak(u) { window.testUtterance = u; u.onstart?.(); }, cancel() { window.testUtterance?.onerror?.({ error: 'canceled' }); } } }); true`);
+  await evaluate(`Array.from(document.querySelectorAll('.english-learning > .learning-tabs button')).find(el => el.textContent === '나의 단어장').click()`);
+  await until(`!!document.querySelector('.english-book .example-speech')`);
+  await evaluate(`document.querySelector('.english-book .example-speech button').click()`);
+  await until(`!!document.querySelector('.example-speech [role="status"]')`);
+  assert.equal(await evaluate(`window.testUtterance.lang`), 'en-US');
+  assert.equal(await evaluate(`window.testUtterance.rate`), 1);
+  assert.ok(await evaluate(`!!window.testUtterance.text.trim()`));
+  await evaluate(`document.querySelectorAll('.example-speech button')[1].click()`);
+  await until(`window.testUtterance.rate === 0.75`);
+  assert.equal(await evaluate(`!!document.querySelector('.speech-error')`), false);
+  await evaluate(`Array.from(document.querySelectorAll('.example-speech button')).find(el => el.textContent === '정지').click()`);
+  await until(`!document.querySelector('.example-speech [role="status"]')`);
+  await evaluate(`document.querySelector('.example-speech button').click(); window.testUtterance.onerror({error:'voice-unavailable'})`);
+  await until(`document.querySelector('.speech-error')?.textContent.includes('읽지 못했어요')`);
+  await evaluate(`document.querySelector('.example-speech button').click()`);
+  await until(`!!document.querySelector('.example-speech [role="status"]')`);
+  await evaluate(`location.hash = '#home'`);
+  await until(`!document.querySelector('.example-speech [role="status"]')`);
+  checks.push('영어 예문 TTS 모사: 영어 언어·보통/느린 속도·정지·취소 무오류·재생 오류·화면 이동 중단 (실제 음성 미검증)');
   for (const check of checks) console.log(`PASS ${check}`);
   await writeFile(new URL('../tmp/browser-checks/results.json', import.meta.url), JSON.stringify({ checks }, null, 2));
 } finally {

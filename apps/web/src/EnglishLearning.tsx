@@ -1,5 +1,6 @@
 import { readSessions, SessionStars, STEP_COLORS } from './LearningMilestones';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useExampleSpeech } from './useExampleSpeech';
 import { englishLetters, englishCandidates, matchesEnglish, englishLength, englishHint, SESSION_LIMIT, type EnglishWord } from '@idioms/shared';
 import raw from '../../../data/english/words.json';
 
@@ -49,6 +50,8 @@ export default function EnglishLearning() {
   const [confirmRestart, setConfirmRestart] = useState(false);
   const [filter, setFilter] = useState<keyof Records | 'all'>('all');
   const [query, setQuery] = useState('');
+  const speech = useExampleSpeech();
+  useEffect(() => { speech.stop(); }, [book, filter, query, speech.stop]);
   const [limit, setLimit] = useState(40);
   const [floating, setFloating] = useState<{ top: number; left: number; width: number; maxHeight?: number } | null>(null);
   const input = useRef<HTMLInputElement>(null);
@@ -237,11 +240,13 @@ export default function EnglishLearning() {
     <section className="english-book" hidden={!book} aria-labelledby="english-book-title">
       <div className="book-heading"><div><span className="eyebrow">한 글자씩 쌓이는 배움</span><h1 id="english-book-title">나의 영어 단어장</h1></div><span>전체 {words.length}개</span></div>
       <p className="book-description">영어 단어와 뜻을 살펴보고, 다시 보고 싶은 단어를 모아 보세요.</p>
+      <p className="book-note">예문을 듣거나 느리게 들어 보세요. 기기의 영어 음성을 사용하며, 음성에 따라 인터넷 연결이 필요할 수 있어요.</p>
+      {speech.error && <p className="notice speech-error" role="alert">{speech.error}</p>}
       <div className="book-tabs" role="group" aria-label="영어 단어장 분류">{([['all', '전체'], ['favorites', '즐겨찾기'], ['completed', '학습완료'], ['mistakes', '오답노트']] as const).map(([value, label]) => <button key={value} aria-pressed={filter === value} onClick={() => { setFilter(value); setLimit(40); }}>{label}</button>)}</div>
       <label className="book-search" htmlFor="english-search">영어 단어 검색</label><input className="book-search-input" id="english-search" type="search" placeholder="영어 단어 또는 뜻 검색" value={query} onChange={event => { setQuery(event.target.value); setLimit(40); }} />
       {filter === 'completed' && <p className="book-note">퀴즈에서 직접 정답을 맞힌 영어 단어예요.</p>}
       {filter === 'mistakes' && <p className="book-note">선택한 후보의 철자를 틀렸던 영어 단어예요. 정답을 맞힌 뒤에도 복습할 수 있도록 남겨 두어요.</p>}
-      <p className="book-result">{listed.length}개 단어</p><ul className="book-list">{listed.slice(0, limit).map(item => <li key={item.id}><div className="book-item-heading"><h2>{item.word}</h2><button className="favorite-button" aria-label={`${item.word} 즐겨찾기`} aria-pressed={records.favorites.includes(item.id)} onClick={() => save({ ...records, favorites: records.favorites.includes(item.id) ? records.favorites.filter(id => id !== item.id) : [...records.favorites, item.id] })}>{records.favorites.includes(item.id) ? '★' : '☆'}</button></div><strong className="book-reading">{item.partOfSpeech}</strong><p>{item.meaning}</p>{item.synonym.trim() && <p className="book-synonyms">동의어 · {item.synonym}</p>}<p className="book-note">{item.example}<br />{item.exampleMeaning}</p>{records.completed.includes(item.id) && <span className="book-badge">학습완료</span>}{records.mistakes.includes(item.id) && <span className="book-badge">오답 복습</span>}</li>)}</ul>
+      <p className="book-result">{listed.length}개 단어</p><ul className="book-list">{listed.slice(0, limit).map(item => <li key={item.id}><div className="book-item-heading"><h2>{item.word}</h2><button className="favorite-button" aria-label={`${item.word} 즐겨찾기`} aria-pressed={records.favorites.includes(item.id)} onClick={() => save({ ...records, favorites: records.favorites.includes(item.id) ? records.favorites.filter(id => id !== item.id) : [...records.favorites, item.id] })}>{records.favorites.includes(item.id) ? '★' : '☆'}</button></div><strong className="book-reading">{item.partOfSpeech}</strong><p>{item.meaning}</p>{item.synonym.trim() && <p className="book-synonyms">동의어 · {item.synonym}</p>}<p className="book-note">{item.example}<br />{item.exampleMeaning}</p>{item.example.trim() && <div className="example-speech" role="group" aria-label={`${item.word} 예문 읽기`}><button type="button" onClick={() => speech.speak(item.id, item.example)} aria-label={`${item.word} 예문 듣기`}>듣기</button><button type="button" onClick={() => speech.speak(item.id, item.example, true)} aria-label={`${item.word} 예문 느리게 듣기`}>느리게</button>{speech.activeId === item.id && <><button type="button" onClick={speech.stop}>정지</button><span role="status">예문 읽는 중…</span></>}</div>}{records.completed.includes(item.id) && <span className="book-badge">학습완료</span>}{records.mistakes.includes(item.id) && <span className="book-badge">오답 복습</span>}</li>)}</ul>
       {!listed.length && <p className="book-empty">{query ? '검색 결과가 없어요. 다른 단어나 뜻으로 찾아보세요.' : filter === 'favorites' ? '별표를 눌러 다시 보고 싶은 영어 단어를 담아 보세요.' : filter === 'completed' ? '퀴즈에서 정답을 맞히면 여기에 쌓여요.' : '아직 기록된 오답이 없어요.'}</p>}{listed.length > limit && <button className="book-more" onClick={() => setLimit(value => value + 40)}>40개 더 보기 ({Math.min(limit, listed.length)} / {listed.length})</button>}
     </section>
     {warning && <p className="notice" role="alert">{warning}</p>}

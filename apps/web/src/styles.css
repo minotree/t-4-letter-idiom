@@ -68,6 +68,10 @@
 .english-book .book-note,
 .english-book .book-list p,
 .english-book .book-empty { word-break: keep-all; overflow-wrap: anywhere; }
+.example-speech { display: inline-flex; vertical-align: middle; align-items: center; flex-wrap: wrap; gap: 6px; margin: 12px 6px 0 0; }
+.example-speech button { min-height: 0; padding: 2px 8px; border: 0; border-radius: 6px; background: #eef4ed; color: #426b52; font-size: 11px; font-weight: 400; line-height: 1.65; }
+.example-speech > span { color: #465e50; font-size: 11px; }
+.english-book .book-badge { vertical-align: middle; }
 .learning-shell .learning-tabs a,
 .learning-shell .learning-tabs button { font-size: 15px; }
 .learning-shell .book-tabs button { font-size: 13px; }
