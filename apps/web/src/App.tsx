@@ -352,7 +352,7 @@ export default function App() {
             <section className="hints" aria-label="정답 후보 힌트">
               <div className="hint-heading"><h3>02 <span>풀고 싶은 한자성어를 선택해 주세요</span></h3>{character && <span className="pill">{candidates.length}개 후보</span>}</div>
               {!character ? <p className="empty">위에서 한 글자를 고르면<br />그 글자가 들어간 한자성어의 힌트가 나타나요.</p> : <>
-                <p className="hint-description">‘<b>{character}</b>’가 들어가는 후보를 하나 선택한 뒤, 그 후보의 한글 독음을 입력하세요.</p>
+                <p className="hint-description">‘<b>{character}</b>’와 이어지는 후보를 선택하세요. 두음법칙을 적용해 녹/록·유/류·이/리도 함께 찾아요. 정답은 선택한 후보의 원래 한글 독음으로 입력해 주세요.</p>
                 <ol className="candidate-list hanja-candidates" onWheel={closeFloating} onTouchMove={closeFloating} onScroll={() => { if (!opening.current) closeFloating(); }}>{candidates.map((item, index) => <li key={item.id} className={selectedId === item.id ? 'selected-candidate' : ''} onClick={event => { if ((event.target as HTMLElement).tagName === 'LABEL') return; selectCandidate(item, event.currentTarget.querySelector('input')!); }}>
                   <label className="candidate-choice hanja-candidate-choice"><input type="radio" name="candidate" value={item.id} aria-label={`후보 ${index + 1}, ${item.hanja} 선택`} checked={selectedId === item.id} onChange={() => {}} /><span className="candidate-number">{String(index + 1).padStart(2, '0')}</span><strong lang="zh">{item.hanja}</strong></label>
                   <p>{item.meaning}</p>{selectedId === item.id && (attempts[item.id] ?? 0) > 0 && <span className="reading-hint">독음 힌트 · {readingHint(item.reading, attempts[item.id])}</span>}

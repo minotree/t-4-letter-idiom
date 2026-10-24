@@ -7,6 +7,21 @@ export interface Idiom {
 }
 
 export const SESSION_LIMIT = 10;
+/** Reading search only: fold initial-sound variants at every partial-match position. */
+export function normalizeReadingForSearch(value: string): string {
+  return [...value.normalize('NFKC').replace(/\s/g, '').toLowerCase()].map(character => {
+    const syllable = character.codePointAt(0)! - 0xac00;
+    if (syllable < 0 || syllable >= 11172) return character;
+    const initial = Math.floor(syllable / 588);
+    const vowel = Math.floor((syllable % 588) / 28);
+    let folded = initial;
+    if (initial === 5) {
+      if ([2, 6, 7, 12, 17, 20].includes(vowel)) folded = 11;
+      else if ([0, 1, 8, 11, 13, 18].includes(vowel)) folded = 2;
+    } else if (initial === 2 && [6, 12, 17, 20].includes(vowel)) folded = 11;
+    return String.fromCodePoint(0xac00 + folded * 588 + syllable % 588);
+  }).join('');
+}
 export { englishForms, englishLetters, englishCandidates, matchesEnglish, englishLength, englishHint, type EnglishWord } from './english.ts';
 
 /** Search only: preserve the displayed Hanja, Korean reading and stable row ID. */
@@ -74,9 +89,9 @@ export function candidatesFor(
   idioms: readonly Idiom[], character: string, sessionIds: ReadonlySet<string>, historyIds: ReadonlySet<string>,
 ): Idiom[] {
   if (!character) return [];
-  const key = normalizeAnswer(character);
-  if (!/^[가-힣]$/u.test(key)) return [];
-  const eligible = idioms.filter(item => normalizeAnswer(item.reading).includes(key) && !sessionIds.has(item.id));
+  if (!/^[가-힣]$/u.test(normalizeAnswer(character))) return [];
+  const key = normalizeReadingForSearch(character);
+  const eligible = idioms.filter(item => normalizeReadingForSearch(item.reading).includes(key) && !sessionIds.has(item.id));
   const unseen = eligible.filter(item => !historyIds.has(item.id));
   return unseen.length ? unseen : eligible;
 }

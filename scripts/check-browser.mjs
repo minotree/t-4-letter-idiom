@@ -1,7 +1,7 @@
 // Run the production preview on 4173 and a local headless Chromium CDP on 9223 first.
 import assert from 'node:assert/strict';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
-import { candidatesFor } from '../packages/shared/src/index.ts';
+import { candidatesFor, normalizeReadingForSearch } from '../packages/shared/src/index.ts';
 
 const dataset = JSON.parse(await readFile(new URL('../apps/web/src/data/idioms.json', import.meta.url), 'utf8'));
 const target = await (await fetch('http://127.0.0.1:9223/json/new?about:blank', { method: 'PUT' })).json();
@@ -263,8 +263,16 @@ try {
   assert.ok(await evaluate(`!Array.from(document.querySelectorAll('.book-reading')).some(el => el.textContent === '감언이설')`));
   await evaluate(`Array.from(document.querySelectorAll('.book-tabs button')).find(el => el.textContent === '전체').click()`);
   await evaluate(`(() => { const el = document.querySelector('#book-search'); Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set.call(el, '利'); el.dispatchEvent(new Event('input', { bubbles: true })); })()`);
-  const matchingBookCount = dataset.filter(item => item.hanja.normalize('NFKC').includes('利') || item.meaning.includes('利') || item.reading.includes('利')).length;
+  const matchingBookCount = 0;
   await until(`document.querySelectorAll('.book-list > li').length === ${matchingBookCount}`);
+  await evaluate(`(() => { const el = document.querySelector('#book-search'); Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set.call(el, '녹'); el.dispatchEvent(new Event('input', { bubbles: true })); })()`);
+  const readingMatches = dataset.filter(item => normalizeReadingForSearch(item.reading).includes(normalizeReadingForSearch('녹')));
+  await until(`document.querySelectorAll('.book-list > li').length === ${readingMatches.length}`);
+  assert.deepEqual(await evaluate(`Array.from(document.querySelectorAll('.book-list .book-reading')).map(el => el.textContent)`), readingMatches.map(item => item.reading));
+  await evaluate(`(() => { const el = document.querySelector('#book-search'); Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set.call(el, '록'); el.dispatchEvent(new Event('input', { bubbles: true })); })()`);
+  await until(`document.querySelector('#book-search').value === '록'`);
+  assert.deepEqual(await evaluate(`Array.from(document.querySelectorAll('.book-list .book-reading')).map(el => el.textContent)`), readingMatches.map(item => item.reading));
+  checks.push('한자 단어장 독음만 검색: 한자 입력 미일치·뜻의 녹다 제외');
   assert.ok(await evaluate(`document.documentElement.scrollWidth <= innerWidth`));
   await cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
   assert.ok(await evaluate(`document.documentElement.scrollWidth <= innerWidth`));
