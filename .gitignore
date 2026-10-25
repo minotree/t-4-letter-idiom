@@ -41,3 +41,6 @@ tools/image-generator/output/
 .vscode/
 .DS_Store
 Thumbs.db
+.aider.chat.history.md
+.aider.input.history
+.aider.tags.cache.v4/
