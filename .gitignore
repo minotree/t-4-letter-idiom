@@ -6,6 +6,8 @@ dist/
 *.tsbuildinfo
 coverage/
 apps/web/src/data/idioms.json
+apps/toss/src/data/idioms.json
+*.ait
 
 # Secrets (only the empty example is tracked)
 .env

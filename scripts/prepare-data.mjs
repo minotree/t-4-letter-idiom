@@ -26,7 +26,9 @@ for (const item of cheonjamun) {
   }
 }
 if (!idioms.length) throw new Error('학습 데이터가 비어 있습니다.');
-await mkdir(new URL('apps/web/src/data/', root), { recursive: true });
-await writeFile(new URL('apps/web/src/data/idioms.json', root), JSON.stringify(idioms));
+const target = process.argv[2] ?? 'web';
+if (!['web', 'toss'].includes(target)) throw new Error('지원하지 않는 데이터 생성 대상입니다.');
+await mkdir(new URL(`apps/${target}/src/data/`, root), { recursive: true });
+await writeFile(new URL(`apps/${target}/src/data/idioms.json`, root), JSON.stringify(idioms));
 console.log(`천자문 ${cheonjamun.length}개 중 중복 ${overlaps.length}개: ${overlaps.map(item => item.hanja).join(', ')}`);
 console.log(`학습 데이터 ${idioms.length}개 준비 완료 (ID·자료 종류·한자·독음·뜻)`);

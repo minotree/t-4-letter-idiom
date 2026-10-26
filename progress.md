@@ -1,5 +1,44 @@
 # 사자성어 학습 구현 진행표
 
+## 영어 특급500개 통합·검증 완료 (2026-10-26)
+
+- 요청/승인: 특급 추가 가능 여부 확인 후 사용자 ‘진행해’로 실제 추가 승인. 원본 프로젝트는 읽기 전용으로 유지.
+- 변경: `scripts/import-english.mjs`에 특급→special 매핑과 알 수 없는 난이도 거절 추가. `node scripts/import-english.mjs D:\DEV\t-crossword-app`로 CSV/JSON3839개 전체 학습 필드 대조 후 `data/english/words.json` 및 `source.json` 갱신. 이전3339개 객체·순서·ID가 정확히 동일하고 신규500개만 special로 추가됐음을 반영 전 스냅샷과 deepEqual로 확인. 동의어 빈187개 유지. 현재 PWA/토스 영어 총3839개, 저장 키·후보 규칙 유지. 원본 해시·이전 이관 해시는 `docs/english-special-import-check.md`에 보존.
+- 주요 파일: 영어 데이터/출처, importer, `packages/shared/test/english.test.mjs`, 양쪽 브라우저 검사, README·플랫폼 README·요구사항·AGENTS 현황·진행 기록. 앱 UI·의존성은 이번 작업에서 변경하지 않음.
+- 자동 검사: `pnpm.cmd typecheck` 통과(양 앱), `pnpm.cmd test` 20개 통과, `pnpm.cmd --filter @idioms/web build` 및 `pnpm.cmd --filter @idioms/toss build` 통과. PWA 영어 청크1274.27KB(gzip353.89KB), 토스 청크2683.59KB(gzip806.17KB)로 기존 대형 청크 경고 유지. `git diff --check` 통과(LF/CRLF 안내).
+- 브라우저: `node scripts/check-browser.mjs`34개 통과(기존33개+특급500개/3839표시/기존ID기록/특급ABSTRACTION 시작→ACCRUE 정답/오프라인 특급검색/완주기록 유지). 신규 검사 첫 실행은 같은 클래스의 숨겨진 한자 개수를 읽어 실패하여 영어 영역으로 선택자를 제한한 후 통과. `node scripts/check-toss-browser.mjs` 통과(기존 학습/UI 검사+동일 특급 시작/후보/정답/검색 및 기존 즐겨찾기·완료·오답·완주 기록 보존). 전용 브라우저 저장소만 사용.
+- 적용/미검증: 로컬 데이터·빌드만 갱신, 커밋·푸시·배포·업로드 미실행. 검사에 임시 실행한 PWA preview4173은 종료, 기존 토스 dev5174는 유지. 실제 설치된 PWA 새 데이터 업데이트·기기 저장·토스 실기기 검증 대기. 특급 뜻/예문 외부 근거 검수는 이번 범위 아님. Android/iOS 하이브리드 미구현 유지. 이전 사전 확인의 ‘데이터 미변경’ 기록은 이번 반영 전 상태다.
+
+## 영어 특급500개 추가 가능 여부 확인 (2026-10-26)
+
+- 요청: 외부 프로젝트 words_completed.csv의 특급을 현재 영어 형식에 맞춰 추가할 수 있는지 사전 확인. 실제 추가는 수행하지 않음.
+- 검사: `node tmp/audit-expert-english.mjs` 통과. CSV3839행 중 특급500개. 특급 내부/기존3339개/슬래시 철자별 중복0, 필수 단어·뜻·품사 누락0, 예문·번역 누락0, 동의어 빈187개는 기존 계약상 허용. 원본의 기존3339개 학습 필드는 현재 데이터와 모두 일치. 원본 vocab.json 특급500개의 모든 학습 필드가 special 매핑 시 일치. 모든 특급에 연결 후보 존재. 결정적 코드 비교 작업으로 외부 LLM 분담·의미 전수 재검수는 수행하지 않음.
+- 산출물: `docs/english-special-import-check.md`에 입력 해시·필드 대응·검사 범위·실제 추가 시 필요한 작업 기록. 임시 상세 결과는 tmp/english-expert-audit.json.
+- 결론:500개 추가 가능, 합계3839개. 기존 importer는 특급 매핑이 없어 그대로는 실패하므로 특급→special 매핑·개수 테스트·출처 해시 갱신이 필요. 원본 및 현재 words.json/source.json·앱 코드는 변경하지 않음. 타입/빌드/브라우저 검사는 데이터 미변경으로 이번에 미실행. 뜻·예문·번역 사실 검수는 별도 범위.
+
+## 토스 UI를 PWA 구성에 맞춤 (2026-10-26)
+
+- 요청: 토스 미니앱 UI 구성을 PWA에 맞춤. 한자·영어 모두 적용하는 요청으로 해석하여 두 학습에 반영. 데이터 조사 작업이 아니므로 외부 LLM 분담 없이 직접 구현.
+- 변경: `apps/toss/src/App.tsx`·`styles.css`에서 PWA와 같은 홈 소개/학습 카드, 고정 하단 홈·한자·영어 메뉴, 학습 패널/탭, 초록 문제 카드/뜻 접기, 번호 있는 후보, 단어장 분류·검색·별표·완료/오답 배지 구현. 2열 지그재그 사슬·연결 글자/화살표·단계별 색·완성 강조·완주 크기별 별, 후보 옆 플로팅 입력(가시영역 보정/공간 부족 시 인라인/재선택/스크롤·Escape·메뉴 닫기), 정답 후 현재 카드 이동. 영어 동의어/예문/해석 접기·단어장 예문 표시. PWA 소스 import 없이 토스 소유 코드로 구현, TDS 버튼 유지. `main.tsx`·`apps-in-toss.config.ts`의 브랜드 초록색 통일. README·요구사항·브라우저 검사 갱신.
+- 검증: `pnpm.cmd --filter @idioms/toss build` 통과(타입 포함, 기존 대형 청크 경고 2.45MB/gzip739KB). `node scripts/check-toss-browser.mjs` 통과: 홈·한자 선택/오답/정답·플로팅 위치/후보와 겹침 없음/재선택/스크롤 닫기·입력 포커스 시 하단 메뉴 숨김·메뉴 상태 유지·사슬/화살표·단어장/즐겨찾기·영어10문제 완주/11개 사슬/완성강조/1회 적립·320/390/844가로/1280px 가로 넘침 없음·런타임 예외 없음. 전용 Chrome 스크린샷에서 홈/학습 화면을 직접 확인하고 TDS 기본 파란색/크기 차이를 조정. 초기 포커스 CSS 검사는 headless 페이지 비활성으로 실패하여 Page.bringToFront 추가, 플로팅 검사는 프로그램 스크롤 이벤트 완료를 기다리도록 보정한 뒤 통과. `git diff --check` 통과(LF/CRLF 안내).
+- 범위: PWA 코드·도메인·데이터·의존성 변경 없음. 기존 공통 단위 테스트와 PWA 빌드는 이번 UI 변경에서 재실행하지 않음. lint 명령 미등록. 브라우저 검사는 전용 개발 Origin을 초기화하며 사용자 PWA 기록은 건드리지 않음.
+- 적용/미완료: 로컬 토스 서버 http://127.0.0.1:5174/ 실행 중. 커밋·푸시·업로드·배포 미실행. 실제 토스 상단바/뒤로가기·기기 키보드/회전·저장 유지 및 .ait 번들/출시 검증은 대기. 영어 예문 TTS는 미구현 유지. 초기 구현 기록의 사슬/플로팅/별 미구현 문구는 이번 반영 전 상태임.
+
+## 토스 미니앱 초기 구현 (2026-10-26)
+
+- 요청: PWA 다음 단계인 토스 미니앱 개발. 대량 조사·콘텐츠 검수가 아닌 구현 작업으로 Codex가 직접 수행했고 외부 LLM 분담 없음.
+- 변경: `apps/toss`에 React18·SDK3.9.0·TDS2.5.1·공식 Devtools 구성, 토스 전용 홈·한자/영어 연결 퀴즈·단어장·즐겨찾기·학습완료·오답·10문제 완주 집계. 앱별 저장 namespace 분리·손상/저장 실패 안내. `scripts/prepare-data.mjs toss`로 같은 검수 원본에서 독립 JSON 생성. PWA UI import 없음. SDK 3.x의 설정/CLI 변경은 공식 자료와 설치 타입으로 확인.
+- 검증: `pnpm.cmd typecheck` 통과(양 앱), `pnpm.cmd test` 19개 통과, `pnpm.cmd --filter @idioms/toss build` 및 `pnpm.cmd --filter @idioms/web build` 통과. `node scripts/check-toss-browser.mjs` 통과: 전용 Chrome에서 홈·390px 폭·한자 후보/오답 힌트/정답·메뉴 복귀 상태·단어장·즐겨찾기·저장 격리·영어10문제 완주/1회 적립·런타임 예외 없음. 첫 반복 검사에서 기존 테스트 저장값 때문에 즐겨찾기 개수 가정이 실패하여 전용 Origin 초기화 추가 후 통과. `git diff --check` 통과(LF/CRLF 안내).
+- 의존성: TDS React18 peer 충족, PWA React19 유지. lockfile의 PWA importer 변경은 새 CLI의 jiti가 Vite 선택 peer에 연결된 결과이며 기존 PWA 실제 빌드도 통과. 최초 npm 조회는 샌드박스 EACCES로 실패했고 권한 승인 후 조회·설치 성공. esbuild0.28.2/protobufjs 설치 스크립트 차단 경고가 남으나 웹 빌드/개발 실행 통과.
+- 현재 실행: `pnpm.cmd --filter @idioms/toss dev`, http://127.0.0.1:5174/ . Devtools는 SDK 모사이며 실제 토스 기기 검사와 구분. 이전 PWA 서버는 중지 상태.
+- 미검증/후속: 실제 콘솔 appName 미확정으로 `.ait` 생성 미실행. 콘솔 ID 확정→bundle→사용자 업로드→QR 실기기·테스트/공개 Origin 확인 필요. 배포·커밋·푸시·광고·로그인·서버 변경 없음. 토스 청크 2.44MB(gzip735KB) 경고, 데이터 지연 로딩 개선 가능. PWA의 사슬/플로팅/별/TTS 등 시각·보조 기능은 토스에 아직 동일 구현하지 않음. 토스 기기 저장·뒤로가기·상단바·키보드·회전 검증 대기. Android/iOS 하이브리드는 미구현 유지.
+
+## PWA 로컬 실행 (2026-10-26)
+
+- 요청/변경: PWA 실행 요청. 앱 코드 변경 없이 프로덕션 빌드 후 preview 서버 실행(http://127.0.0.1:4173/).
+- 검증: pnpm.cmd build 통과(타입 검사 포함, 기존 영어 청크 크기 경고). pnpm.cmd --filter @idioms/web preview --host 127.0.0.1 --port 4173 --strictPort 실행, HTTP 접속 확인. 설치·오프라인·기기 검사는 미실행.
+- 적용/남은 작업: 로컬 실행만 수행, 배포 미실행. 브라우저에서 접속해 확인.
+
 ## 작업 마무리·인수인계 (2026-10-24)
 
 - 완료: 한자·영어 한 이음 10문제, UI·글꼴·간격·가독성 조정, 입력창 키보드 대응, 독음 전용/두음 변이 검색·후보 선정, 흰 배경 확대 고리 아이콘, 영어 단어장 예문 듣기/느리게/정지.
@@ -740,7 +779,8 @@
 ### Phase 3. Toss
 
 - [x] PWA 다음 개발 대상으로 확정
-- [ ] Toss 전용 UI·SDK 구현 및 자동 검사
+- [x] Toss 전용 기본 UI·SDK·Devtools 구현 및 타입/웹 빌드/브라우저 자동 검사
+- [ ] 콘솔 appName 확정·.ait 번들 생성 및 PWA 보조 기능 적용 범위 검토
 - [ ] 토스앱 기기 검증
 - [ ] 사용자 업로드·검토 요청·공개 출시 및 출시 후 검증
 

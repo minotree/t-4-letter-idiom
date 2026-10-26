@@ -3,11 +3,26 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { englishCandidates, matchesEnglish, englishHint, englishLength, englishLetters } from '../src/index.ts';
 const words = JSON.parse(readFileSync(new URL('../../../data/english/words.json', import.meta.url), 'utf8'));
-test('영어 이관 데이터 3339개와 안정 ID·필수 값 검증', () => {
-  assert.equal(words.length, 3339);
+test('영어 이관 데이터 3839개와 안정 ID·필수 값 검증', () => {
+  assert.equal(words.length, 3839);
   assert.equal(new Set(words.map(item => item.id)).size, words.length);
   assert.ok(words.every(item => item.category === 'english' && item.word && item.meaning && item.partOfSpeech));
   assert.ok(words.every(item => !('isBookmarked' in item) && !('isQuizUsed' in item)));
+});
+
+test('특급 500개는 필수 학습 필드와 출처 개수를 지키고 후보·정답으로 사용할 수 있다', () => {
+  const source = JSON.parse(readFileSync(new URL('../../../data/english/source.json', import.meta.url), 'utf8'));
+  assert.equal(source.rows, words.length);
+  assert.deepEqual(Object.fromEntries(['beginner', 'intermediate', 'advanced', 'special'].map(level => [level, words.filter(item => item.level === level).length])), {
+    beginner: 775, intermediate: 1199, advanced: 1365, special: 500,
+  });
+  const special = words.filter(item => item.level === 'special');
+  assert.ok(special.every(item => item.example && item.exampleMeaning && typeof item.synonym === 'string'));
+  const abstraction = special.find(item => item.id === 'english:abstraction');
+  assert.ok(abstraction);
+  assert.ok(englishCandidates(words, 'A', new Set(), new Set()).some(item => item.id === abstraction.id));
+  assert.equal(matchesEnglish(abstraction, 'abstraction', 'A'), true);
+  assert.ok(englishCandidates(words, 'A', new Set([abstraction.id]), new Set()).every(item => item.id !== abstraction.id));
 });
 test('영어 후보는 선택 글자 포함·세션 제외·미출제 우선 및 소진 복귀', () => {
   const all = englishCandidates(words, 'Y', new Set(), new Set());

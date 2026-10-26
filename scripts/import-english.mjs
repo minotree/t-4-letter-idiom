@@ -13,7 +13,7 @@ const source = JSON.parse(json.toString('utf8'));
 if (!Array.isArray(source) || source.length !== rows.length) throw new Error('CSV와 JSON의 항목 수가 다릅니다.');
 const fields = { word: '영단어', meaning: '뜻', partOfSpeech: '품사', synonym: '동의어', example: '예문', exampleMeaning: '예문해석' };
 if (Object.values(fields).some(field => !header.includes(field)) || !header.includes('난이도')) throw new Error('원본 CSV 필수 열 누락');
-const levels = { 초급: 'beginner', 중급: 'intermediate', 고급: 'advanced' };
+const levels = { 초급: 'beginner', 중급: 'intermediate', 고급: 'advanced', 특급: 'special' };
 const ids = new Set();
 const words = source.map((item, index) => {
   if (rows[index].length !== header.length) throw new Error('CSV 열 수 불일치');
@@ -22,7 +22,8 @@ const words = source.map((item, index) => {
     if (key === 'word') expected = expected.toUpperCase();
     if ((item[key] ?? '') !== expected) throw new Error(`CSV/JSON 불일치: ${index + 2}행 ${key}`);
   }
-  if (item.level !== levels[rows[index][header.indexOf('난이도')].trim()]) throw new Error('난이도 불일치');
+  const level = rows[index][header.indexOf('난이도')].trim();
+  if (!Object.hasOwn(levels, level) || item.level !== levels[level]) throw new Error(`난이도 불일치: ${index + 2}행 ${level}`);
   const id = 'english:' + item.word.toLowerCase();
   if (!item.word || !item.meaning || !item.partOfSpeech || ids.has(id)) throw new Error('누락 또는 중복 단어');
   ids.add(id);

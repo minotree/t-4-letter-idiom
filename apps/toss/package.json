@@ -1,0 +1,33 @@
+{
+  "name": "@idioms/toss",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node ../../scripts/prepare-data.mjs toss",
+    "dev": "vite --host 127.0.0.1 --port 5174 --strictPort",
+    "prebuild": "node ../../scripts/prepare-data.mjs toss",
+    "build": "tsc --noEmit && vite build",
+    "pretypecheck": "node ../../scripts/prepare-data.mjs toss",
+    "typecheck": "tsc --noEmit",
+    "bundle": "pnpm build && ait build"
+  },
+  "dependencies": {
+    "@apps-in-toss/web-framework": "3.9.0",
+    "@emotion/react": "^11.14.0",
+    "@idioms/shared": "workspace:*",
+    "@toss/tds-mobile": "2.5.1",
+    "@toss/tds-mobile-ait": "2.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@apps-in-toss/devtools": "3.9.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.0.0"
+  }
+}
