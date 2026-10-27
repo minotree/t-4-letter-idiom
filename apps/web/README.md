@@ -1,5 +1,9 @@
 # Web / PWA 실행·검증
 
+## 앱 아이콘 (2026-10-28)
+
+사용자 제공 원본 `assets/app-icon.PNG`를 사용한다. Windows에서 `powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/prepare-app-icons.ps1`로 브라우저32·Apple180·PWA192/512·여백을 둔 maskable512 PNG를 재생성한다. 원본 디자인과 비율을 보존하며 흰 배경으로 출력한다. manifest·HTML·service worker가 새 PNG를 참조한다. 기존 `icon.svg`는 참조하지 않는다. 설치된 앱 아이콘 반영은 OS에 따라 재설치가 필요할 수 있다.
+
 ## 실행
 
 프로젝트 루트에서 Node24.x, pnpm 10.34.7로 실행한다.

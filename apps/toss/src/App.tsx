@@ -3,6 +3,7 @@ import { Button as TDSButton, type ButtonProps } from '@toss/tds-mobile';
 import { candidatesFor, matchingAnswers, readingHint, normalizeReadingForSearch, englishCandidates, englishLetters, englishLength, englishHint, matchesEnglish, SESSION_LIMIT, type Idiom, type EnglishWord } from '@idioms/shared';
 import idiomData from './data/idioms.json';
 import englishData from '../../../data/english/words.json';
+import { useExampleSpeech } from './useExampleSpeech';
 
 type Mode = 'hanja' | 'english';
 function Button({ size = 'medium', variant = 'weak', ...props }: ButtonProps) {
@@ -68,12 +69,19 @@ function Learning({ mode, active }: { mode: Mode; active: boolean }) {
   const [filter, setFilter] = useState<'all' | 'favorites' | 'completed' | 'mistakes'>('all');
   const [search, setSearch] = useState('');
   const [limit, setLimit] = useState(40);
+  const [candidateLimit, setCandidateLimit] = useState(40);
+  const speech = useExampleSpeech();
+  useEffect(() => { speech.stop(); }, [active, page, filter, search, speech.stop]);
+  useEffect(() => { setCandidateLimit(40); }, [letter, start.id, chain.length]);
   const [restart, setRestart] = useState(false);
   const input = useRef<HTMLInputElement>(null);
   const currentCard = useRef<HTMLElement>(null);
   const formRef = useRef<HTMLFormElement>(null);
-  const candidateAnchor = useRef<HTMLElement | null>(null);
+
   const focusFrame = useRef(0);
+
+
+  const keyboardTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [floating, setFloating] = useState<{ top: number; left: number; width: number; maxHeight: number } | null>(null);
   const lock = useRef(false);
   const history = new Set(saved.history);
@@ -85,44 +93,44 @@ function Learning({ mode, active }: { mode: Mode; active: boolean }) {
   const name = mode === 'hanja' ? '한자성어' : '영어 단어';
   const hint = selected && attempts[selected.id] ? ('hanja' in selected ? readingHint(selected.reading, attempts[selected.id]) : englishHint(selected, letter, attempts[selected.id])) : '';
   useEffect(() => {
-    if (!active || page !== 'quiz') { setFloating(null); cancelAnimationFrame(focusFrame.current); }
+    if (!active || page !== 'quiz') { closeFloating(); cancelAnimationFrame(focusFrame.current); }
   }, [active, page]);
   useEffect(() => () => cancelAnimationFrame(focusFrame.current), []);
-  useLayoutEffect(() => {
-    if (!floating) return;
-    const position = () => {
-      const anchor = candidateAnchor.current;
-      const form = formRef.current;
-      if (!anchor || !form) return;
-      const viewport = window.visualViewport;
-      const top = (viewport?.offsetTop ?? 0) + 12;
-      const bottom = (viewport?.offsetTop ?? 0) + (viewport?.height ?? innerHeight) - 12;
-      const bounds = anchor.getBoundingClientRect();
-      if (bounds.top >= bottom || bounds.bottom <= top) { setFloating(null); return; }
-      const below = bottom - bounds.bottom - 8;
-      const above = bounds.top - top - 8;
-      const placeBelow = below >= form.scrollHeight || below >= above;
-      const maxHeight = Math.max(0, placeBelow ? below : above);
-      if (maxHeight < 100) { setFloating(null); return; }
-      const width = Math.max(0, Math.min(520, (viewport?.width ?? innerWidth) - 24));
-      const left = Math.max((viewport?.offsetLeft ?? 0) + 12, Math.min(bounds.left, (viewport?.offsetLeft ?? 0) + (viewport?.width ?? innerWidth) - width - 12));
-      setFloating(prev => prev ? { top: placeBelow ? bounds.bottom + 8 : bounds.top - Math.min(form.scrollHeight, maxHeight) - 8, left, width, maxHeight } : null);
+  function fitFloating() {
+    const form = formRef.current;
+    if (!form?.classList.contains('floating-answer')) return;
+    const viewport = window.visualViewport;
+    const topEdge = (viewport?.offsetTop ?? 0) + 12;
+    // Keep clear of the iOS keyboard accessory bar.
+    const bottomEdge = (viewport ? viewport.offsetTop + viewport.height : innerHeight) - 56;
+    const maxHeight = Math.max(1, bottomEdge - topEdge);
+    const width = Math.max(1, Math.min(520, (viewport?.width ?? innerWidth) - 24));
+    const left = (viewport?.offsetLeft ?? 0) + ((viewport?.width ?? innerWidth) - width) / 2;
+    const top = Math.max(topEdge, bottomEdge - Math.min(form.scrollHeight + 2, maxHeight));
+    setFloating(value => value && (Math.abs(value.top - top) >= 1 || value.maxHeight !== maxHeight || value.left !== left || value.width !== width) ? { top, maxHeight, left, width } : value);
+  }
+  useLayoutEffect(() => { if (floating) fitFloating(); }, [Boolean(floating), selectedId, attempts]);
+  useEffect(() => {
+    const fit = () => {
+      if (keyboardTimer.current) clearTimeout(keyboardTimer.current);
+      keyboardTimer.current = setTimeout(() => { keyboardTimer.current = null; fitFloating(); }, 16);
     };
-    position();
-    const close = (event: Event) => { if (event.target instanceof Node && formRef.current?.contains(event.target)) return; setFloating(null); };
-    window.addEventListener('scroll', close, true);
-    window.addEventListener('resize', position);
-    window.visualViewport?.addEventListener('resize', position);
-    window.visualViewport?.addEventListener('scroll', position);
+    window.addEventListener('hashchange', closeFloating);
+    window.addEventListener('resize', fit);
+    window.visualViewport?.addEventListener('resize', fit);
+    window.visualViewport?.addEventListener('scroll', fit);
     return () => {
-      window.removeEventListener('scroll', close, true);
-      window.removeEventListener('resize', position);
-      window.visualViewport?.removeEventListener('resize', position);
-      window.visualViewport?.removeEventListener('scroll', position);
+      if (keyboardTimer.current) clearTimeout(keyboardTimer.current);
+      window.removeEventListener('hashchange', closeFloating);
+      window.removeEventListener('resize', fit);
+      window.visualViewport?.removeEventListener('resize', fit);
+      window.visualViewport?.removeEventListener('scroll', fit);
     };
-  }, [!!floating, selectedId, hint]);
-  function selectCandidate(item: Entry, anchor: HTMLElement) {
-    lock.current = false; candidateAnchor.current = anchor; setSelectedId(item.id); setAnswer('');
+  }, []);
+  function closeFloating() { if (keyboardTimer.current) clearTimeout(keyboardTimer.current); setFloating(null); if (document.activeElement === input.current) input.current?.blur(); }
+  function selectCandidate(item: Entry) {
+    lock.current = false; setSelectedId(item.id); setAnswer('');
+    setMessage(`선택한 후보의 ${mode === 'hanja' ? '한글 독음' : '영어 단어'}를 입력해 주세요.`);
     setFloating({ top: 12, left: 12, width: Math.min(520, innerWidth - 24), maxHeight: innerHeight - 24 });
     cancelAnimationFrame(focusFrame.current);
     focusFrame.current = requestAnimationFrame(() => input.current?.focus({ preventScroll: true }));
@@ -155,13 +163,14 @@ function Learning({ mode, active }: { mode: Mode; active: boolean }) {
   }
   const normalizeSearch = (value: string) => mode === 'hanja' ? normalizeReadingForSearch(value) : value.normalize('NFKC').replace(/\s/g, '').toLowerCase();
   const query = normalizeSearch(search);
-  const book = entries(mode).filter(item => (filter === 'all' || saved[filter].includes(item.id)) && normalizeSearch('hanja' in item ? item.reading : `${item.word} ${item.meaning}`).includes(query));
+  const book = entries(mode).filter(item => (filter === 'all' || saved[filter].includes(item.id)) && normalizeSearch('hanja' in item ? item.reading : `${item.word} ${item.meaning} ${item.partOfSpeech}`).includes(query));
   return <section className="learning-shell panel" aria-label={mode === 'hanja' ? '한자 학습' : '영어 학습'}>
     <div className="section-heading"><h1>{mode === 'hanja' ? '한자' : '영어'} 글자잇기</h1><SessionStars count={saved.sessions} /></div>
     <p className="word-total">{entries(mode).length}개 {mode === 'hanja' ? '한자어' : '단어'} · 10문제를 모두 이으면 작은 별 하나</p>
     <nav className="learning-tabs" aria-label="학습 메뉴"><Button variant={page === 'quiz' ? 'fill' : 'weak'} aria-pressed={page === 'quiz'} onClick={() => setPage('quiz')}>퀴즈 풀기</Button><Button variant={page === 'book' ? 'fill' : 'weak'} aria-pressed={page === 'book'} onClick={() => setPage('book')}>나의 단어장</Button></nav>
     {warning && <p role="alert">{warning}</p>}
-    {page === 'book' ? <section className="book">
+    {page === 'book' ? <section className={`book${mode === 'english' ? ' english-book' : ''}`}>
+      {speech.error && <p role="alert">{speech.error}</p>}
       <div className="section-heading"><div><span className="eyebrow">한 글자씩 쌓이는 배움</span><h2>나의 {mode === 'hanja' ? '한자성어장' : '영어 단어장'}</h2></div><span>전체 {entries(mode).length}개</span></div>
       <p className="description">뜻을 살펴보고, 다시 보고 싶은 {name}를 모아 보세요.</p>
       <div className="book-tabs" role="group" aria-label="단어장 분류">{([['all', '전체'], ['favorites', '즐겨찾기'], ['completed', '학습완료'], ['mistakes', '오답노트']] as const).map(([value, text]) => <Button key={value} aria-pressed={filter === value} onClick={() => { setFilter(value); setLimit(40); }}>{text}</Button>)}</div>
@@ -171,10 +180,11 @@ function Learning({ mode, active }: { mode: Mode; active: boolean }) {
       <p className="description">{book.length}개 {mode === 'hanja' ? '한자어' : '단어'}</p>
       <ul className="book-list">{book.slice(0, limit).map(item => <li key={item.id}>
         <div className="book-item-heading"><h3>{label(item)}</h3><Button className="favorite-button" aria-label={`${label(item)} 즐겨찾기`} aria-pressed={saved.favorites.includes(item.id)} onClick={() => persist({ ...saved, favorites: saved.favorites.includes(item.id) ? saved.favorites.filter(id => id !== item.id) : [...saved.favorites, item.id] })}>{saved.favorites.includes(item.id) ? '★' : '☆'}</Button></div>
-        {'hanja' in item ? <strong className="book-reading">{item.reading}</strong> : <p className="description">{item.partOfSpeech}{item.level && ` · ${item.level}`}</p>}
+        <strong className="book-reading">{'hanja' in item ? item.reading : item.partOfSpeech}</strong>
         <p>{item.meaning}</p><Source item={item} />
         {'synonym' in item && item.synonym && <p className="description">동의어 · {item.synonym}</p>}
         {'example' in item && item.example && <div className="book-example"><p>{item.example}</p>{item.exampleMeaning && <p>{item.exampleMeaning}</p>}</div>}
+        {'example' in item && item.example.trim() && <div className="example-speech" role="group" aria-label={`${label(item)} 예문 읽기`}><button type="button" aria-label={`${label(item)} 예문 듣기`} onClick={() => speech.speak(item.id, item.example)}>듣기</button><button type="button" aria-label={`${label(item)} 예문 느리게 듣기`} onClick={() => speech.speak(item.id, item.example, true)}>느리게</button>{speech.activeId === item.id && <><button type="button" onClick={speech.stop}>정지</button><span role="status">예문 읽는 중…</span></>}</div>}
         {saved.completed.includes(item.id) && <span className="book-badge">학습완료</span>}{saved.mistakes.includes(item.id) && <span className="book-badge">오답 복습</span>}
       </li>)}</ul>
       {!book.length && <p className="empty">해당하는 낱말이 없어요.</p>}{book.length > limit && <Button className="book-more" onClick={() => setLimit(limit + 40)}>더 보기</Button>}
@@ -194,30 +204,32 @@ function Learning({ mode, active }: { mode: Mode; active: boolean }) {
           </li>;
         })}</ol>
       </section>}
-      <article className="current" ref={currentCard}>
+      <article className={`current current-${mode}`} ref={currentCard}>
         <span className="card-caption">{chain.length ? `방금 맞힌 ${name}` : '이음의 시작'}</span><h2>{label(current)}</h2>
         <div className="card-reading"><strong>{'hanja' in current ? current.reading : current.partOfSpeech}</strong><button className="meaning-toggle" aria-expanded={meaning} onClick={() => setMeaning(!meaning)}>{meaning ? '뜻 접기' : '뜻 보기'} ⓘ</button></div>
         {meaning && <p>{current.meaning}</p>}<Source item={current} />
-        {'synonym' in current && current.synonym && <p className="current-synonym">동의어 · {current.synonym}</p>}
+        {'synonym' in current && current.synonym.trim() && <div className="word-example word-synonyms" aria-label="동의어"><span>동의어</span><p>{current.synonym}</p></div>}
         {'example' in current && current.example && <div className="word-example"><div className="example-heading"><span>예문</span>{current.exampleMeaning && <button className="meaning-toggle" aria-expanded={translation} onClick={() => setTranslation(!translation)}>{translation ? '해석 접기' : '해석 보기'}</button>}</div><p>{current.example}</p>{translation && <p>{current.exampleMeaning}</p>}</div>}
       </article>
       {finished ? <div className="summary" role="status"><span className="eyebrow">나만의 배움 한 줄</span><h2>{chain.length === SESSION_LIMIT ? `10개의 ${name}를 이었어요!` : '이번 이음은 여기까지예요.'}</h2><p>{chain.length === SESSION_LIMIT ? '오늘 알게 된 말들이 다음 도전에 힘이 될 거예요.' : '같은 낱말을 반복하지 않고 이어갈 후보가 더 없어요.'}</p><Button onClick={reset}>새 이음 시작하기 ↗</Button></div> : <>
         <div className="instruction"><h3>01 <span>이어갈 {mode === 'hanja' ? '한 글자' : '알파벳'}를 골라 주세요</span></h3><p>후보가 없는 글자는 쉬어 가요</p></div>
-        <div className="letters">{letters(current).map((ch, index) => {
+        <div className={`letters single-line-letters${mode === 'hanja' ? ' hanja-letters' : ''}`}>{letters(current).map((ch, index) => {
           const count = candidates(mode, ch, used, history).length;
           return <Button key={index} variant={letter === ch ? 'fill' : 'weak'} aria-label={`${ch}, 후보 ${count}개`} aria-pressed={letter === ch} disabled={!count} onClick={() => { lock.current = false; setLetter(ch); setSelectedId(''); setAnswer(''); setFloating(null); }}><span className="letter-content"><strong>{ch}</strong>{mode === 'hanja' && <span>{count ? `후보 ${count}개` : '후보 없음'}</span>}</span></Button>;
         })}</div>
         <section className="hints"><div className="hint-heading"><h3>02 <span>풀고 싶은 {name}를 선택해 주세요</span></h3>{letter && <span className="pill">{options.length}개 후보</span>}</div>
           {!letter ? <p className="empty">위에서 한 글자를 고르면<br />그 글자가 들어간 낱말의 힌트가 나타나요.</p> : <>
             <p className="hint-description">‘<b>{letter}</b>’와 이어지는 후보를 선택하세요.{mode === 'hanja' && ' 두음법칙을 적용해 녹/록·유/류·이/리도 함께 찾아요.'}</p>
-            <ol className="cards">{options.map((item, index) => <li key={item.id} data-id={item.id} className={selectedId === item.id ? 'selected-candidate' : ''}>
-              <label className="candidate"><input type="radio" name={`${mode}-candidate`} checked={selectedId === item.id} onClick={e => selectCandidate(item, e.currentTarget.closest('li')!)} onChange={() => {}} /><span className="candidate-number">{String(index + 1).padStart(2, '0')}</span><span className="candidate-title">{'hanja' in item ? item.hanja : `${englishLength(item)}글자${item.synonym ? ` · ${item.synonym}` : ''}`}</span></label>
+            <ol className={`cards ${mode === 'english' ? 'english-candidates' : 'hanja-candidates'}`} onWheel={closeFloating} onTouchMove={closeFloating} onScroll={closeFloating}>{(mode === 'english' ? options.slice(0, candidateLimit) : options).map((item, index) => <li key={item.id} data-id={item.id} className={selectedId === item.id ? 'selected-candidate' : ''}>
+              <label className="candidate"><input type="radio" name={`${mode}-candidate`} checked={selectedId === item.id} onClick={() => selectCandidate(item)} onChange={() => {}} /><span className="candidate-number">{String(index + 1).padStart(2, '0')}</span>{'hanja' in item ? <span className="candidate-title">{item.hanja}</span> : <><span className="candidate-length">{englishLength(item)}글자</span>{item.synonym.trim() && <span className="candidate-synonym">동의어: {item.synonym}</span>}</>}</label>
               <p>{item.meaning}</p><Source item={item} />{selectedId === item.id && attempts[item.id] > 0 && <p className="reading-hint">힌트: {'hanja' in item ? readingHint(item.reading, attempts[item.id]) : englishHint(item, letter, attempts[item.id])}</p>}
             </li>)}</ol>
+            {mode === 'english' && options.length > candidateLimit && <Button className="candidate-more book-more" onClick={() => { setFloating(null); setCandidateLimit(value => value + 40); }}>후보 40개 더 보기</Button>}
           </>}
         </section>
-        <form ref={formRef} className={`answer-form${floating ? ' floating-answer' : ''}`} style={floating ?? undefined} onKeyDown={e => { if (e.key === 'Escape') setFloating(null); }} onSubmit={e => { e.preventDefault(); submit(); }}>
-          <div className="answer-heading"><label htmlFor={`${mode}-answer`}>03 <span>{selected ? `선택한 후보 · ${mode === 'hanja' ? label(selected) + ' · 한글 독음 입력' : '영어 단어 입력'}` : '후보를 먼저 선택해 주세요'}</span></label>{floating && <button type="button" className="floating-close" aria-label="입력창 닫기" onClick={() => setFloating(null)}>×</button>}</div>
+        <form ref={formRef} className={`answer-form${floating ? ' floating-answer' : ''}`} style={floating ?? undefined} onKeyDown={e => { if (e.key === 'Escape') closeFloating(); }} onSubmit={e => { e.preventDefault(); submit(); }}>
+          {floating && selected && <div className={`answer-candidate${mode === 'hanja' ? ' answer-candidate-hanja' : ''}`} aria-label="선택한 후보"><strong>{'hanja' in selected ? selected.hanja : `${englishLength(selected)}글자${selected.synonym.trim() ? ` · 동의어: ${selected.synonym}` : ''}`}</strong><p>{selected.meaning}</p></div>}
+          <div className="answer-heading"><label htmlFor={`${mode}-answer`}>03 <span>{selected ? `선택한 후보 · ${mode === 'hanja' ? label(selected) + ' · 한글 독음 입력' : '영어 단어 입력'}` : '후보를 먼저 선택해 주세요'}</span></label>{floating && <button type="button" className="floating-close" aria-label="입력창 닫기" onClick={closeFloating}>×</button>}</div>
           <div className="input-row"><input id={`${mode}-answer`} ref={input} value={answer} disabled={!selected} onChange={e => setAnswer(e.target.value)} autoComplete="off" autoCapitalize="off" spellCheck={false} placeholder={mode === 'hanja' ? '선택한 후보의 한글 독음' : '영어 단어 입력'} onKeyDown={e => { if (e.key === 'Enter' && e.nativeEvent.isComposing) e.preventDefault(); }} /><Button type="submit" disabled={!selected || !answer.trim()}>확인 ↗</Button></div>
           {floating && <p role="status">{hint ? `힌트: ${hint}` : '후보 목록을 스크롤하면 입력창이 닫혀요.'}</p>}
         </form>

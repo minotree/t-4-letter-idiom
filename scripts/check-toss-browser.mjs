@@ -37,6 +37,35 @@ async function until(expression) {
   throw new Error(`Condition not met: ${expression}`);
 }
 const clickText = text => evaluate(`Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === ${JSON.stringify(text)} && b.getClientRects().length)?.click()`);
+async function checkKeyboardPlacement() {
+  await cdp('Emulation.setDeviceMetricsOverride', {width:390,height:460,deviceScaleFactor:1,mobile:true});
+  await until(`new Promise(resolve=>setTimeout(()=>{
+    const f=document.querySelector('.floating-answer')?.getBoundingClientRect();
+    const preview=document.querySelector('.floating-answer .answer-candidate');
+    resolve(!!f && !!preview && f.top>=0 && f.bottom<=visualViewport.offsetTop+visualViewport.height-56 && f.bottom>=visualViewport.offsetTop+visualViewport.height-60);
+  },220))`);
+  assert.equal(await evaluate(`(async()=>{
+    const positions=[];
+    const originalScrollBy=window.scrollBy;
+    let scrollCalls=0;
+    window.scrollBy=function(...args){scrollCalls++;return originalScrollBy.apply(this,args);};
+    try {
+      for(let i=0;i<8;i++) {
+        visualViewport.dispatchEvent(new Event('resize'));
+        visualViewport.dispatchEvent(new Event('scroll'));
+        await new Promise(resolve=>setTimeout(resolve,25));
+      }
+      await new Promise(resolve=>setTimeout(resolve,240));
+      for(let i=0;i<5;i++) {
+        positions.push(document.querySelector('.floating-answer').getBoundingClientRect().top);
+        await new Promise(resolve=>setTimeout(resolve,60));
+      }
+      return scrollCalls===0 && Math.max(...positions)-Math.min(...positions)<1;
+    } finally { window.scrollBy=originalScrollBy; }
+  })()`),true,'viewport event burst settles without repeated page scrolling');
+  await cdp('Emulation.setDeviceMetricsOverride', {width:390,height:844,deviceScaleFactor:1,mobile:true});
+  await evaluate(`new Promise(resolve=>setTimeout(resolve,230))`);
+}
 try {
   await cdp('Page.enable'); await cdp('Runtime.enable');
   await cdp('Page.bringToFront');
@@ -44,6 +73,8 @@ try {
   await cdp('Page.addScriptToEvaluateOnNewDocument', { source: 'Math.random = () => 0;' });
   await cdp('Page.navigate', {url:'http://127.0.0.1:5174/'});
   await until(`document.body.textContent.includes('아는 말이 이어지면,')`);
+  assert.equal(await evaluate(`getComputedStyle(document.body).backgroundColor`),'rgb(245, 247, 242)');
+  assert.equal(await evaluate(`getComputedStyle(document.getElementById('root')).backgroundColor`),'rgb(245, 247, 242)');
   await cdp('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
   assert.equal(await evaluate('document.documentElement.scrollWidth <= innerWidth'),true);
   await mkdir('tmp/browser-checks', { recursive: true });
@@ -59,13 +90,15 @@ try {
   await evaluate(`document.querySelector('.candidate input').click()`);
   await until(`!document.querySelector('form input').disabled`);
   await until(`!!document.querySelector('.floating-answer')`);
-  assert.equal(await evaluate(`(()=>{const f=document.querySelector('.floating-answer').getBoundingClientRect(),a=document.querySelector('.selected-candidate').getBoundingClientRect();return f.width <= innerWidth && f.top>=0 && f.bottom<=innerHeight && f.left>=0 && f.right<=innerWidth && (f.top>=a.bottom || f.bottom<=a.top);})()`),true);
+  await checkKeyboardPlacement();
+  assert.equal(await evaluate(`(()=>{const f=document.querySelector('.floating-answer').getBoundingClientRect();return f.width <= innerWidth && f.top>=0 && f.bottom<=innerHeight && f.left>=0 && f.right<=innerWidth && !!document.querySelector('.answer-candidate');})()`),true);
   assert.equal(await evaluate(`document.activeElement.id`),'hanja-answer');
   await until(`getComputedStyle(document.querySelector('.bottom-nav')).visibility === 'hidden'`);
   await evaluate(`document.querySelector('.floating-close').click()`);
   await until(`!document.querySelector('.floating-answer')`);
   await evaluate(`document.querySelector('.candidate input').click()`);
   await until(`!!document.querySelector('.floating-answer')`);
+  await evaluate(`new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(()=>requestAnimationFrame(resolve))))`);
   await evaluate(`document.querySelector('.cards').dispatchEvent(new Event('scroll'))`);
   await until(`!document.querySelector('.floating-answer')`);
   async function enter(value) {
@@ -87,6 +120,25 @@ try {
   assert.equal(await evaluate(`JSON.parse(localStorage.getItem('idioms:toss:hanja:v1')).favorites.length`),1);
   assert.equal(await evaluate(`Object.keys(localStorage).some(k=>k.startsWith('idioms:web:'))`),false);
   await evaluate(`document.querySelector('.bottom-nav button').click()`); await clickText('영어 이음 시작 ↗');
+  await until(`!!document.querySelector('[aria-label="영어 학습"] .letters button')`);
+  for (const width of [320, 390, 493]) {
+    await cdp('Emulation.setDeviceMetricsOverride', {width, height:844, deviceScaleFactor:1, mobile:true});
+    assert.equal(await evaluate(`(()=>{
+      const row=document.querySelector('[aria-label="영어 학습"] .letters');
+      const originals=[...row.children];
+      try {
+        row.replaceChildren(...Array.from({length:12},()=>originals[0].cloneNode(true)));
+        const buttons=[...row.children];
+        const tops=buttons.map(b=>b.getBoundingClientRect().top);
+        row.scrollLeft=row.scrollWidth;
+        return tops.every(top=>Math.abs(top-tops[0])<1)
+          && buttons.every(b=>b.getBoundingClientRect().width>=52)
+          && buttons.at(-1).getBoundingClientRect().right<=row.getBoundingClientRect().right+1
+          && document.documentElement.scrollWidth<=innerWidth;
+      } finally { row.replaceChildren(...originals); row.scrollLeft=0; }
+    })()`),true,`12-letter single row at ${width}px`);
+  }
+  await cdp('Emulation.setDeviceMetricsOverride', {width:390,height:844,deviceScaleFactor:1,mobile:true});
   await until(`document.querySelector('[aria-label="영어 학습"] .letters button') !== null`);
   const englishWords = JSON.parse(await readFile(new URL('../data/english/words.json', import.meta.url), 'utf8'));
   for (let step = 1; step <= 10; step++) {
@@ -98,6 +150,7 @@ try {
     const selectedLetter = await evaluate(`document.querySelector('[aria-label="영어 학습"] .letters button[aria-pressed="true"] strong').textContent`);
     await evaluate(`document.querySelector('[aria-label="영어 학습"] .candidate input').scrollIntoView({block:'center'});new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))`);
     await evaluate(`document.querySelector('[aria-label="영어 학습"] .candidate input').click()`);
+    if (step === 1) await checkKeyboardPlacement();
     const form = chosen.word.split('/').map(s=>s.trim()).find(s=>s.toUpperCase().includes(selectedLetter));
     await evaluate(`(()=>{const e=document.querySelector('[aria-label="영어 학습"] form input');Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(e,${JSON.stringify(form)});e.dispatchEvent(new Event('input',{bubbles:true}));})()`);
     await evaluate(`document.querySelector('[aria-label="영어 학습"] form').requestSubmit()`);
@@ -121,6 +174,12 @@ try {
   await until(`document.querySelector('[aria-label="영어 학습"] .current h2')?.textContent === 'ABSTRACTION'`);
   assert.deepEqual(JSON.parse(await evaluate(`localStorage.getItem('idioms:toss:english:v1')`)),existingRecords);
   await evaluate(`Array.from(document.querySelectorAll('[aria-label="영어 학습"] .letters button')).find(b=>b.querySelector('strong').textContent==='C').click()`);
+  await until(`document.querySelectorAll('[aria-label="영어 학습"] .cards li').length === 40`);
+  await clickText('후보 40개 더 보기');
+  await until(`document.querySelectorAll('[aria-label="영어 학습"] .cards li').length === 80`);
+  for (let page = 0; page < 100 && !await evaluate(`!!document.querySelector('li[data-id="english:accrue"] input')`); page++) {
+    await clickText('후보 40개 더 보기');
+  }
   await until(`!!document.querySelector('li[data-id="english:accrue"] input')`);
   await evaluate(`document.querySelector('li[data-id="english:accrue"] input').scrollIntoView({block:'center'});new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))`);
   await evaluate(`document.querySelector('li[data-id="english:accrue"] input').click()`);
@@ -136,6 +195,23 @@ try {
   await until(`!!document.querySelector('[aria-label="영어 학습"] input[type=search]')`);
   await evaluate(`(()=>{const e=document.querySelector('[aria-label="영어 학습"] input[type=search]');Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(e,'abstraction');e.dispatchEvent(new Event('input',{bubbles:true}));})()`);
   await until(`document.querySelector('[aria-label="영어 학습"] .book-list h3')?.textContent==='ABSTRACTION'`);
+  assert.equal(await evaluate(`Array.from(document.querySelectorAll('.english-book .example-speech button')).every(button=>button.getBoundingClientRect().height<=28 && button.getBoundingClientRect().width<=65)`),true,'compact speech buttons');
+  await evaluate(`window.__speechCalls=[]; window.__speechCancels=0; speechSynthesis.speak=u=>window.__speechCalls.push({text:u.text,rate:u.rate,lang:u.lang}); speechSynthesis.cancel=()=>window.__speechCancels++`);
+  await clickText('듣기');
+  await until(`!!Array.from(document.querySelectorAll('button')).find(b=>b.textContent.trim()==='정지')`);
+  assert.equal(await evaluate(`window.__speechCalls.at(-1).rate`),1);
+  await clickText('느리게');
+  assert.equal(await evaluate(`window.__speechCalls.at(-1).rate`),0.75);
+  await clickText('정지');
+  assert.ok(await evaluate(`window.__speechCancels >= 2`));
+  await clickText('듣기');
+  await evaluate(`document.querySelector('.bottom-nav button').click()`);
+  await until(`!Array.from(document.querySelectorAll('button')).find(b=>b.textContent.trim()==='정지')`);
+  assert.ok(await evaluate(`window.__speechCancels >= 3`));
+  await evaluate(`document.querySelector('.bottom-nav button:last-child').click()`);
+  await evaluate(`(()=>{const e=document.querySelector('[aria-label="영어 학습"] input[type=search]');Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(e,'명사');e.dispatchEvent(new Event('input',{bubbles:true}));})()`);
+  await until(`document.querySelector('[aria-label="영어 학습"] .book-list h3')?.textContent!=='ABSTRACTION'`);
+  assert.ok(await evaluate(`Array.from(document.querySelectorAll('[aria-label="영어 학습"] .book-list li')).some(li=>li.querySelector('.book-reading')?.textContent.includes('명사'))`));
   assert.equal(pageErrors.length,0,JSON.stringify(pageErrors));
   console.log('PASS: home, mobile width, floating input, chain, book, storage separation, English 10-answer completion, special word start/candidate/answer/search, existing records retained, no runtime exceptions');
 } finally { await cdp('Page.close'); socket.close(); }

@@ -7,7 +7,7 @@ export function offlineApp(): Plugin {
     name: 'idioms-offline',
     apply: 'build',
     generateBundle(_, bundle) {
-      const publicFiles = ['manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png'];
+      const publicFiles = ['manifest.webmanifest', 'favicon.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png'];
       const files = [...Object.keys(bundle), ...publicFiles];
       const hash = createHash('sha256').update(JSON.stringify(bundle));
       for (const file of publicFiles) hash.update(readFileSync(new URL(`public/${file}`, import.meta.url)));
