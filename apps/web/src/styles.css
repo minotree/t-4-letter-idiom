@@ -155,7 +155,7 @@
 .hanja-chain > li > strong { font-family: "Batang", serif; font-size: 20px; }
 .english-candidate-choice input { flex: 0 0 20px; margin: 0; }
 .candidate-length { flex-shrink: 0; font-size: 12px; }
-.candidate-synonym { min-width: 0; overflow-wrap: anywhere; font-weight: 500; }
+.candidate-synonym { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; overflow-wrap: normal; scrollbar-width: thin; font-weight: 500; }
 .floating-answer.answer-form { position: fixed; z-index: 30; margin: 0; padding: 14px; border: 1px solid #739481; border-radius: 12px; background: #fff; box-shadow: 0 8px 30px #163b3040; max-height: calc(100dvh - 24px); overflow: auto; }
 .floating-answer-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .floating-answer-heading label { min-width: 0; word-break: keep-all; overflow-wrap: anywhere; font-weight: 700; }
@@ -744,3 +744,7 @@
                                                                                                                                                                                                                                                                               button{
                                                                                                                                                                                                                                                                                 transition:none}
                                                                                                                                                                                                                                                                               }
+
+/* Match candidate text to the 20px journey card titles. */
+.hanja-candidate-choice > strong, .floating-answer-heading .answer-hanja { font-family: "Batang", serif; font-size: 20px; overflow-wrap: anywhere; }
+.english-candidate-choice .candidate-length, .english-candidate-choice .candidate-synonym, .english-learning #english-answer { font-size: 20px; }

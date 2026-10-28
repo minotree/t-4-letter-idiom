@@ -361,7 +361,7 @@ export default function App() {
               </>}
             </section>
             <form onSubmit={submit} className={`answer-form${floating ? ' floating-answer' : ''}`} style={floating ? { top: floating.top, left: floating.left, width: floating.width, maxHeight: floating.maxHeight } : undefined} onKeyDown={event => { if (event.key === 'Escape') closeFloating(); }}>
-              <div className="floating-answer-heading"><label htmlFor="answer">03 <span>{selected ? <>선택한 후보: {selected.hanja} · <span className="answer-label-phrase">한글 독음 입력</span></> : '후보를 먼저 선택해 주세요'}</span></label>{floating && <button type="button" className="floating-close" onClick={closeFloating} aria-label="입력창 닫기">×</button>}</div>
+              <div className="floating-answer-heading"><label htmlFor="answer">03 <span>{selected ? <>선택한 후보: <strong className="answer-hanja">{selected.hanja}</strong> · <span className="answer-label-phrase">한글 독음 입력</span></> : '후보를 먼저 선택해 주세요'}</span></label>{floating && <button type="button" className="floating-close" onClick={closeFloating} aria-label="입력창 닫기">×</button>}</div>
               <div className="input-row"><input id="answer" ref={input} value={answer} onChange={event => setAnswer(event.target.value)}
                 disabled={!selected} autoComplete="off" spellCheck={false} placeholder="선택한 후보의 한글 독음" aria-describedby={floating ? 'hanja-floating-feedback' : 'feedback'}
                 onKeyDown={event => { if (event.key === 'Enter' && event.nativeEvent.isComposing) event.preventDefault(); }} />

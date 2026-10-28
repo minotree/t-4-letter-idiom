@@ -4,6 +4,21 @@
 
 React 18·Vite·Apps in Toss SDK 3.9.0·TDS 2.5.1 기반 독립 앱이다. PWA 소스·화면·Hook은 가져오지 않고 `@idioms/shared`의 학습 규칙과 검수 원본 데이터만 재사용한다. TDS 이용 범위는 토스 앱 개발로 한정한다.
 
+## 광고 설정 (2026-10-28)
+
+- 사용자 제공 광고 그룹 ID: `ait.v2.live.e2aee41b54214449`.
+- 홈·한자·영어 화면의 하단 메뉴 바로 위에 `TossAds.initialize` → `attachBanner`로 배너를 연결한다. `expanded` 원본 크기를 유지하며 하단 영역 실측 높이만큼 본문 여백을 확보한다. 답안·검색 입력 포커스 중에는 배너와 하단 메뉴를 숨긴다.
+- 광고 없음·미지원·초기화/렌더링 실패 시 광고 영역을 접고, 컴포넌트 해제 시 배너를 제거한다. 운영 ID의 콘솔 광고 유형 일치·실제 송출·클릭 후 복귀는 토스 실기기 검증 대기다. 자동 검사는 모의 SDK를 사용하며 실제 광고 요청·노출 검증과 구분한다.
+- 근거: [공식 TossAds API](https://developers-apps-in-toss.toss.im/documentation/sdk/domains-api/ads/tossads), 설치 SDK 3.9.0 타입·구현 확인(2026-10-28).
+
+배너 회귀 검사에는 프로덕션 빌드와 별도 preview(5175), 전용 Chromium CDP(9223)가 필요하다. 개발 서버의 AIT Devtools가 SDK를 덮어쓰므로 아래 검사는 preview에서 모의 SDK를 주입한다.
+
+```powershell
+pnpm.cmd --filter @idioms/toss exec vite preview --host 127.0.0.1 --port 5175 --strictPort
+# 별도 터미널
+node scripts/check-toss-banner.mjs
+```
+
 ## 로컬 실행
 
 프로젝트 루트에서 Node 24·pnpm 10으로 실행한다.
@@ -15,6 +30,8 @@ pnpm.cmd --filter @idioms/toss dev
 접속: http://127.0.0.1:5174/ (중지: Ctrl+C). SDK 3.x는 별도 샌드박스 앱 대신 브라우저 오른쪽 아래 AIT Devtools로 개발한다. Devtools 모사는 토스 실기기 검증을 대신하지 않는다. PWA 서버 5173과 구분하며 service worker·설치·오프라인 캐시는 제공하지 않는다.
 
 ## 구현 범위
+
+- 한자·영어 10문제 완주 순간 `t-crossword-app/apps/toss`의 색종이 효과를 이식한72개 조각이 하단 세 지점에서 솟았다 내려오는 효과를 한 번 재생하고4.5초 후 정리한다. React/CSS만 사용하며 원본 프로젝트를 import하지 않는다. 광고·하단 메뉴 위쪽으로 영역을 제한하고 클릭을 가로막지 않는다. 화면/탭 이동·새 이음 시 중단하고 동작 줄이기 설정에서는 숨긴다. 전용 CDP 9223과 프로덕션 preview 5175를 준비한 뒤 `node scripts/check-toss-celebration.mjs`로 회귀 검사한다(테스트 Origin 저장소 초기화). 실제 토스 기기의 애니메이션 성능은 확인 대기다.
 
 - 홈·한자 915개·영어 3,839개 학습. 글자 → 후보 선택 → 선택 후보 답 입력 → 최대 10개 정답 연결. 세션 중복 제외·미출제 우선·선택 후보 오답 힌트.
 - 한글 독음/영어 단어장 검색·즐겨찾기·학습완료·오답 복습, 40개씩 표시. 한자 검색은 두음 변이를 허용한다.
