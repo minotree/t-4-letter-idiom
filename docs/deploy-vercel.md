@@ -1,5 +1,19 @@
 # Vercel 배포 인수인계
 
+## 변경 파일에 따른 자동 빌드 조건 (2026-10-29)
+
+루트 `vercel.json`의 `ignoreCommand`가 `node scripts/ignore-vercel-build.mjs`를 실행한다. Vercel에서는 종료 코드 0이 빌드 건너뛰기, 1이 빌드 진행이다. 저장소 루트 `.` 설정을 유지한다.
+
+- 빌드 진행: `apps/web/`, `packages/`, `data/`의 문서 외 파일, 루트 학습 CSV, `scripts/prepare-data.mjs`, 이 판정 스크립트, 루트 package/lock/workspace/TypeScript/Vercel/Node/pnpm/Git 줄바꿈 설정 변경. 공유 lockfile 변경은 토스 의존성만 바뀌었더라도 보수적으로 빌드한다.
+- 건너뛰기: 토스 전용 파일·토스 검사 스크립트·진행 기록·Markdown 문서 등 PWA 빌드 입력 외 파일만 변경한 경우.
+- 비교 범위: `VERCEL_GIT_PREVIOUS_SHA`(해당 프로젝트/브랜치의 마지막 성공 배포)부터 `VERCEL_GIT_COMMIT_SHA`까지. 직전 커밋 하나만 비교하지 않으므로 여러 커밋 push·실패 후 재시도에도 누적 변경을 반영한다. 삭제·이동 전 경로도 확인한다.
+- 예외: 첫 배포·시스템 환경변수 없음·이전 커밋이 shallow clone에 없음·Git 오류 시 건너뛰지 않고 빌드한다. Vercel의 Automatically expose System Environment Variables가 활성화되어야 한다. 설정 도입 커밋은 `vercel.json` 변경 때문에 빌드 대상이다.
+- 환경변수만 바꿔 수동 재배포할 때는 Vercel 재배포 화면의 Ignored Build Step 건너뛰기 옵션을 사용한다. 이 조건은 로컬 `pnpm.cmd build:vercel` 실행에는 영향을 주지 않는다.
+
+로컬 검사: `node --test scripts/ignore-vercel-build.test.mjs`. 종료 코드 분기·토스/문서 제외·PWA/공유/데이터/설정 포함·이동·비교 실패를 검사한다. Vercel의 실제 실행 로그는 사용자 push 후 확인 대기다.
+
+공식 근거(2026-10-29 확인): [ignoreCommand](https://vercel.com/docs/project-configuration/vercel-json#ignorecommand), [Ignored Build Step](https://vercel.com/kb/guide/how-do-i-use-the-ignored-build-step-field-on-vercel), [시스템 환경변수](https://vercel.com/docs/environment-variables/system-environment-variables).
+
 2026-10-24 기준. 사용자가 `vercel.json`의 `outputDirectory`를 `dist`로 변경한 뒤 Vercel 배포 성공을 보고했다. Git 커밋/푸시·Vercel 프로젝트 생성·업로드·배포는 사용자가 진행한다. 서비스 표시 이름은 ‘모두의 이음’(잠정)이다.
 
 ## 1. Git 반영 전

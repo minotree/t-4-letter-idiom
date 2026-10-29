@@ -68,12 +68,26 @@ try {
   }
   await evaluate(`document.querySelectorAll('.bottom-nav button')[1].click()`);
   await until(`!!document.querySelector('.learning-tabs')`);
+  assert.equal(await evaluate(`document.querySelector('.bottom-banner') === null`), true);
   await evaluate(`document.querySelectorAll('.learning-tabs button')[1].click()`);
   await until(`!!document.querySelector('input[type=search]')`);
+  await until(`document.querySelector('.bottom-banner') && getComputedStyle(document.querySelector('.bottom-banner')).visibility === 'visible'`);
   await evaluate(`document.querySelector('input[type=search]').focus()`);
   assert.equal(await evaluate(`getComputedStyle(document.querySelector('.bottom-banner')).visibility`), 'hidden');
   await evaluate(`document.activeElement.blur()`);
   assert.equal(await evaluate(`getComputedStyle(document.querySelector('.bottom-banner')).visibility`), 'visible');
+  await evaluate(`document.querySelectorAll('.bottom-nav button')[2].click()`);
+  await until(`document.querySelector('[aria-label="영어 학습"]') !== null`);
+  assert.equal(await evaluate(`document.querySelector('.bottom-banner') === null`), true);
+  await evaluate(`document.querySelector('[aria-label="영어 학습"] .learning-tabs button:nth-child(2)').click()`);
+  await until(`document.querySelector('.bottom-banner') && getComputedStyle(document.querySelector('.bottom-banner')).visibility === 'visible'`);
+  await evaluate(`document.querySelectorAll('.bottom-nav button')[1].click()`);
+  await until(`document.querySelector('[aria-label="한자 학습"] .learning-tabs button:nth-child(2)').getAttribute('aria-pressed') === 'true'`);
+  assert.equal(await evaluate(`!!document.querySelector('.bottom-banner')`), true);
+  await evaluate(`document.querySelector('[aria-label="한자 학습"] .learning-tabs button:first-child').click()`);
+  await until(`document.querySelector('.bottom-banner') === null`);
+  await evaluate(`document.querySelectorAll('.bottom-nav button')[0].click()`);
+  await until(`document.querySelector('.bottom-banner') && getComputedStyle(document.querySelector('.bottom-banner')).visibility === 'visible'`);
   for (const callback of ['onNoFill', 'onAdFailedToRender']) {
     await evaluate(`window.__bannerCallbacks.${callback}({})`);
     await until(`document.querySelector('.bottom-banner').hidden`);
@@ -86,7 +100,7 @@ try {
     await until(`document.querySelector('.bottom-banner')?.hidden`);
     assert.equal(await evaluate(`window.__bannerCalls.length`), 0);
   }
-  console.log('PASS: banner layout, production ID, input hiding, no-fill, render/init failure, unsupported environment (mock SDK).');
+  console.log('PASS: home and hanja/english wordbook banners, quiz exclusion, tab preservation, input hiding, layout, production ID, no-fill and failure handling (mock SDK).');
 } finally {
   await cdp('Page.close');
   socket.close();

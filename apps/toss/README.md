@@ -4,10 +4,13 @@
 
 React 18·Vite·Apps in Toss SDK 3.9.0·TDS 2.5.1 기반 독립 앱이다. PWA 소스·화면·Hook은 가져오지 않고 `@idioms/shared`의 학습 규칙과 검수 원본 데이터만 재사용한다. TDS 이용 범위는 토스 앱 개발로 한정한다.
 
-## 광고 설정 (2026-10-28)
+## 광고 설정 (2026-10-29)
 
 - 사용자 제공 광고 그룹 ID: `ait.v2.live.e2aee41b54214449`.
-- 홈·한자·영어 화면의 하단 메뉴 바로 위에 `TossAds.initialize` → `attachBanner`로 배너를 연결한다. `expanded` 원본 크기를 유지하며 하단 영역 실측 높이만큼 본문 여백을 확보한다. 답안·검색 입력 포커스 중에는 배너와 하단 메뉴를 숨긴다.
+- 홈과 한자·영어의 ‘나의 단어장’ 화면 하단 메뉴 바로 위에 `TossAds.initialize` → `attachBanner`로 배너를 연결한다. `expanded` 원본 크기를 유지하며 하단 영역 실측 높이만큼 본문 여백을 확보한다. 퀴즈 탭에는 배너를 부착하지 않는다. 검색 입력 포커스 중에는 배너와 하단 메뉴를 숨긴다. 학습 간 이동 후에도 각 학습의 선택 탭을 유지한다.
+- 전면형 그룹 ID: `ait.v2.live.d71009b2ef5a4d21`. 한자·영어 퀴즈 활성 시 `loadFullScreenAd`로 준비하고, 완주/후보 소진 후 ‘새 이음 시작하기’ 또는 진행 중 재시작 확인창의 ‘새로 시작’에서 `showFullScreenAd`를 호출한다. 닫기(`dismissed`) 후 새 학습을 시작하며 클릭/노출/보상 이벤트로 초기화하지 않는다. 홈의 학습 진입에는 전면 광고가 없다.
+- 미지원·미준비·광고 없음·로드/표시 실패에는 바로 새 학습을 시작한다. 로드 및 표시 시작 응답은 8초까지만 기다리고, 실제 표시(`show`/`impression`) 후에는 닫기/오류를 기다린다. 중복 클릭을 막고 화면/탭 이동 시 구독을 해제해 늦은 콜백으로 학습이 초기화되지 않게 한다. 광고 종료/건너뛰기 후 다음 광고를 준비한다.
+- 전면형 API는 설치 SDK 3.9.0의 타입·브리지 구현을 확인했다(2026-10-29). 공식 전면형 API 문서는 웹 도구 접근 실패로 이번에 직접 대조하지 못했다. 콘솔 전면형 유형 일치·실제 송출·닫기/복귀·배너와 전환은 토스 실기기 확인 대기다.
 - 광고 없음·미지원·초기화/렌더링 실패 시 광고 영역을 접고, 컴포넌트 해제 시 배너를 제거한다. 운영 ID의 콘솔 광고 유형 일치·실제 송출·클릭 후 복귀는 토스 실기기 검증 대기다. 자동 검사는 모의 SDK를 사용하며 실제 광고 요청·노출 검증과 구분한다.
 - 근거: [공식 TossAds API](https://developers-apps-in-toss.toss.im/documentation/sdk/domains-api/ads/tossads), 설치 SDK 3.9.0 타입·구현 확인(2026-10-28).
 
@@ -17,6 +20,7 @@ React 18·Vite·Apps in Toss SDK 3.9.0·TDS 2.5.1 기반 독립 앱이다. PWA �
 pnpm.cmd --filter @idioms/toss exec vite preview --host 127.0.0.1 --port 5175 --strictPort
 # 별도 터미널
 node scripts/check-toss-banner.mjs
+node --test scripts/check-toss-interstitial.mjs
 ```
 
 ## 로컬 실행
@@ -53,16 +57,16 @@ node scripts/check-toss-browser.mjs
 
 브라우저 검사는 5174 개발 서버와 **전용 임시 프로필**의 Chromium CDP 9223이 필요하다. 테스트 Origin의 저장소를 지우므로 개인 브라우저에 연결하지 않는다. 홈·320/390px·가로844px·데스크톱1280px 넘침·한자 오답/정답·후보 플로팅 위치/재선택/스크롤 닫기·입력 포커스 중 하단 메뉴 숨김·상태 유지·사슬/화살표·단어장·즐겨찾기·영어 10문제 완주/사슬/별 적립·런타임 오류를 검사한다. 스크린샷은 `tmp/browser-checks/toss-home.png`, `toss-quiz.png`, `toss-chain.png` 및 `tmp/toss-mobile.png`.
 
-`.ait` 생성에는 앱인토스 콘솔에서 등록한 실제 `appName`을 제공해야 한다. 임의 앱 ID는 운영 설정으로 사용하지 않는다.
+사용자가 확인한 콘솔 `appName`은 `modu-ieum`이다(2026-10-29). 번들 생성 시 환경변수로 제공한다.
 
 ```powershell
-$env:TOSS_APP_NAME = '<콘솔에 등록한 실제 appName>'
+$env:TOSS_APP_NAME = 'modu-ieum'
 pnpm.cmd --filter @idioms/toss bundle
 ```
 
-`build`는 웹 빌드이며 `bundle`이 웹 빌드 후 `ait build`를 실행한다. 콘솔 ID가 미확정인 현재 `.ait` 생성은 미검증이다. 아이콘·표시 이름은 SDK 3.x 기준 콘솔에서 관리한다. 업로드·검토·출시는 사용자가 별도로 수행한다. 토큰을 소스·문서에 넣지 않는다.
+`build`는 웹 빌드이며 `bundle`이 웹 빌드 후 `ait build`를 실행한다. 2026-10-29 `modu-ieum.ait` 생성 통과(833,523바이트, deploymentId `01a18738-b67c-7070-89f7-e3927bc93864`). 파일은 `apps/toss/modu-ieum.ait`에 생성된다. 아이콘·표시 이름은 SDK 3.x 기준 콘솔에서 관리한다. 업로드·검토·출시는 사용자가 별도로 수행한다. 토큰을 소스·문서에 넣지 않는다.
 
-SDK 3.9.0 테스트 Origin은 `https://<appName>.private-apps.tossmini.com`, 공개 Origin은 `https://<appName>.apps.tossmini.com`. 실제 appName 확정 후 각각 실기기에서 확인한다. 현재 서버·인증·광고·CORS 변경은 없다.
+SDK 3.9.0 테스트 Origin은 `https://modu-ieum.private-apps.tossmini.com`, 공개 Origin은 `https://modu-ieum.apps.tossmini.com`. 각각 실제 토스 기기 확인은 대기다. 서버·인증·CORS 변경은 없으며 광고는 위 설정을 따른다.
 
 ## 확인 근거 (2026-10-26)
 

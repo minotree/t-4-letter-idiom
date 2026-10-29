@@ -5,9 +5,12 @@ import idiomData from './data/idioms.json';
 import englishData from '../../../data/english/words.json';
 import { useExampleSpeech } from './useExampleSpeech';
 import { BottomBanner } from './BottomBanner';
+import { useInterstitial } from './useInterstitial';
 import { CompletionCelebration } from './CompletionCelebration';
+import { EnglishWordHeading } from './EnglishWordHeading';
 
 type Mode = 'hanja' | 'english';
+type LearningPage = 'quiz' | 'book';
 function Button({ size = 'medium', variant = 'weak', ...props }: ButtonProps) {
   return <TDSButton size={size} variant={variant} {...props} />;
 }
@@ -53,7 +56,7 @@ function SessionStars({ count }: { count: number }) {
     <span>10문제 완주 {count}회</span>
   </div>;
 }
-function Learning({ mode, active }: { mode: Mode; active: boolean }) {
+function Learning({ mode, active, page, setPage }: { mode: Mode; active: boolean; page: LearningPage; setPage: (page: LearningPage) => void }) {
   const [initial] = useState(() => readSaved(mode));
   const [saved, setSaved] = useState(initial.value);
   const [warning, setWarning] = useState(initial.warning);
@@ -67,7 +70,6 @@ function Learning({ mode, active }: { mode: Mode; active: boolean }) {
   const [message, setMessage] = useState('이어갈 글자를 골라 주세요.');
   const [meaning, setMeaning] = useState(false);
   const [translation, setTranslation] = useState(false);
-  const [page, setPage] = useState<'quiz' | 'book'>('quiz');
   const [filter, setFilter] = useState<'all' | 'favorites' | 'completed' | 'mistakes'>('all');
   const [search, setSearch] = useState('');
   const [limit, setLimit] = useState(40);
@@ -76,6 +78,7 @@ function Learning({ mode, active }: { mode: Mode; active: boolean }) {
   useEffect(() => { speech.stop(); }, [active, page, filter, search, speech.stop]);
   useEffect(() => { setCandidateLimit(40); }, [letter, start.id, chain.length]);
   const [restart, setRestart] = useState(false);
+  const interstitial = useInterstitial(active && page === 'quiz');
   const [celebrating, setCelebrating] = useState(false);
   useEffect(() => {
     if (!celebrating) return;
@@ -217,39 +220,41 @@ function Learning({ mode, active }: { mode: Mode; active: boolean }) {
         })}</ol>
       </section>}
       <article className={`current current-${mode}`} ref={currentCard}>
-        <span className="card-caption">{chain.length ? `방금 맞힌 ${name}` : '이음의 시작'}</span><h2>{label(current)}</h2>
+        <span className="card-caption">{chain.length ? `방금 맞힌 ${name}` : '이음의 시작'}</span>{'hanja' in current ? <h2>{label(current)}</h2> : <EnglishWordHeading word={current.word} />}
         <div className="card-reading"><strong>{'hanja' in current ? current.reading : current.partOfSpeech}</strong><button className="meaning-toggle" aria-expanded={meaning} onClick={() => setMeaning(!meaning)}>{meaning ? '뜻 접기' : '뜻 보기'} ⓘ</button></div>
         {meaning && <p>{current.meaning}</p>}<Source item={current} />
         {'synonym' in current && current.synonym.trim() && <div className="word-example word-synonyms" aria-label="동의어"><span>동의어</span><p>{current.synonym}</p></div>}
         {'example' in current && current.example && <div className="word-example"><div className="example-heading"><span>예문</span>{current.exampleMeaning && <button className="meaning-toggle" aria-expanded={translation} onClick={() => setTranslation(!translation)}>{translation ? '해석 접기' : '해석 보기'}</button>}</div><p>{current.example}</p>{translation && <p>{current.exampleMeaning}</p>}</div>}
       </article>
-      {finished ? <div className="summary" role="status"><span className="eyebrow">나만의 배움 한 줄</span><h2>{chain.length === SESSION_LIMIT ? `10개의 ${name}를 이었어요!` : '이번 이음은 여기까지예요.'}</h2><p>{chain.length === SESSION_LIMIT ? '오늘 알게 된 말들이 다음 도전에 힘이 될 거예요.' : '같은 낱말을 반복하지 않고 이어갈 후보가 더 없어요.'}</p><Button onClick={reset}>새 이음 시작하기 ↗</Button></div> : <>
+      {finished ? <div className="summary" role="status"><span className="eyebrow">나만의 배움 한 줄</span><h2>{chain.length === SESSION_LIMIT ? `10개의 ${name}를 이었어요!` : '이번 이음은 여기까지예요.'}</h2><p>{chain.length === SESSION_LIMIT ? '오늘 알게 된 말들이 다음 도전에 힘이 될 거예요.' : '같은 낱말을 반복하지 않고 이어갈 후보가 더 없어요.'}</p><Button disabled={interstitial.busy} onClick={() => interstitial.start(reset)}>새 이음 시작하기 ↗</Button></div> : <>
         <div className="instruction"><h3>01 <span>이어갈 {mode === 'hanja' ? '한 글자를' : '알파벳을'} 골라 주세요</span></h3><p>후보가 없는 글자는 쉬어 가요</p></div>
         <div className={`letters single-line-letters${mode === 'hanja' ? ' hanja-letters' : ''}`}>{letters(current).map((ch, index) => {
           const count = candidates(mode, ch, used, history).length;
           return <Button key={index} variant={letter === ch ? 'fill' : 'weak'} aria-label={`${ch}, 후보 ${count}개`} aria-pressed={letter === ch} disabled={!count} onClick={() => { lock.current = false; setLetter(ch); setSelectedId(''); setAnswer(''); setFloating(null); }}><span className="letter-content"><strong>{ch}</strong>{mode === 'hanja' && <span>{count ? `후보 ${count}개` : '후보 없음'}</span>}</span></Button>;
         })}</div>
-        <section className="hints"><div className="hint-heading"><h3>02 <span>풀고 싶은 {name}를 선택해 주세요</span></h3>{letter && <span className="pill">{options.length}개 후보</span>}</div>
+        <div className="hint-heading"><h3 id={`${mode}-candidate-heading`}>02 <span>풀고 싶은 {name}를 선택해 주세요</span></h3>{letter && <span className="pill">{options.length}개 후보</span>}</div>
+        <section className="hints" aria-labelledby={`${mode}-candidate-heading`}>
           {!letter ? <p className="empty">위에서 한 글자를 고르면<br />그 글자가 들어간 낱말의 힌트가 나타나요.</p> : <>
             <p className="hint-description">‘<b>{letter}</b>’와 이어지는 후보를 선택하세요.{mode === 'hanja' && ' 두음법칙을 적용해 녹/록·유/류·이/리도 함께 찾아요.'}</p>
-            <ol className={`cards ${mode === 'english' ? 'english-candidates' : 'hanja-candidates'}`} onWheel={closeFloating} onTouchMove={closeFloating} onScroll={closeFloating}>{(mode === 'english' ? options.slice(0, candidateLimit) : options).map((item, index) => <li key={item.id} data-id={item.id} className={selectedId === item.id ? 'selected-candidate' : ''}>
-              <label className="candidate"><input type="radio" name={`${mode}-candidate`} checked={selectedId === item.id} onClick={() => selectCandidate(item)} onChange={() => {}} /><span className="candidate-number">{String(index + 1).padStart(2, '0')}</span>{'hanja' in item ? <span className="candidate-title">{item.hanja}</span> : <><span className="candidate-length">{englishLength(item)}글자</span>{item.synonym.trim() && <span className="candidate-synonym">동의어: {item.synonym}</span>}</>}</label>
+            <ol className={`cards ${mode === 'english' ? 'english-candidates' : 'hanja-candidates'}`} onWheel={closeFloating} onTouchMove={closeFloating} onScroll={closeFloating}>{(mode === 'english' ? options.slice(0, candidateLimit) : options).map(item => <li key={item.id} data-id={item.id} className={selectedId === item.id ? 'selected-candidate' : ''}>
+              <label className="candidate"><input type="radio" name={`${mode}-candidate`} checked={selectedId === item.id} onClick={() => selectCandidate(item)} onChange={() => {}} />{'hanja' in item ? <span className="candidate-title">{item.hanja}</span> : <><span className="candidate-length">{englishLength(item)}글자</span>{item.synonym.trim() && <span className="candidate-synonym">동의어: {item.synonym}</span>}</>}</label>
               <p>{item.meaning}</p><Source item={item} />{selectedId === item.id && attempts[item.id] > 0 && <p className="reading-hint">힌트: {'hanja' in item ? readingHint(item.reading, attempts[item.id]) : englishHint(item, letter, attempts[item.id])}</p>}
             </li>)}</ol>
             {mode === 'english' && options.length > candidateLimit && <Button className="candidate-more book-more" onClick={() => { setFloating(null); setCandidateLimit(value => value + 40); }}>후보 40개 더 보기</Button>}
           </>}
         </section>
         <form ref={formRef} className={`answer-form${floating ? ' floating-answer' : ''}`} style={floating ?? undefined} onKeyDown={e => { if (e.key === 'Escape') closeFloating(); }} onSubmit={e => { e.preventDefault(); submit(); }}>
+          {!selected && <div className="answer-heading"><label htmlFor={`${mode}-answer`}>03 후보를 먼저 선택해 주세요</label></div>}
           {floating && selected && <div className={`answer-candidate${mode === 'hanja' ? ' answer-candidate-hanja' : ''}`} aria-label="선택한 후보"><strong>{'hanja' in selected ? selected.hanja : `${englishLength(selected)}글자${selected.synonym.trim() ? ` · 동의어: ${selected.synonym}` : ''}`}</strong><p>{selected.meaning}</p></div>}
-          <div className="answer-heading"><label htmlFor={`${mode}-answer`}>03 <span>{selected ? `선택한 후보 · ${mode === 'hanja' ? label(selected) + ' · 한글 독음 입력' : '영어 단어 입력'}` : '후보를 먼저 선택해 주세요'}</span></label>{floating && <button type="button" className="floating-close" aria-label="입력창 닫기" onClick={closeFloating}>×</button>}</div>
-          <div className="input-row"><input id={`${mode}-answer`} ref={input} value={answer} disabled={!selected} onChange={e => setAnswer(e.target.value)} autoComplete="off" autoCapitalize="off" spellCheck={false} placeholder={mode === 'hanja' ? '선택한 후보의 한글 독음' : '영어 단어 입력'} onKeyDown={e => { if (e.key === 'Enter' && e.nativeEvent.isComposing) e.preventDefault(); }} /><Button type="submit" disabled={!selected || !answer.trim()}>확인 ↗</Button></div>
+          {floating && <button type="button" className="floating-close" aria-label="입력창 닫기" onClick={closeFloating}>×</button>}
+          <div className="input-row"><input id={`${mode}-answer`} ref={input} aria-label={mode === 'hanja' ? '선택한 후보의 한글 독음' : '선택한 후보의 영어 단어'} value={answer} disabled={!selected} onChange={e => setAnswer(e.target.value)} autoComplete="off" autoCapitalize="off" spellCheck={false} placeholder={mode === 'hanja' ? '선택한 후보의 한글 독음' : '영어 단어 입력'} onKeyDown={e => { if (e.key === 'Enter' && e.nativeEvent.isComposing) e.preventDefault(); }} /><Button type="submit" disabled={!selected || !answer.trim()}>확인 ↗</Button></div>
           {floating && <p role="status">{hint ? `힌트: ${hint}` : '후보 목록을 스크롤하면 입력창이 닫혀요.'}</p>}
         </form>
       </>}
       <p className="feedback" role="status">{finished ? `${chain.length}개의 ${name}를 정답으로 이었어요.` : message}</p>
       <aside className="guide"><span className="eyebrow">이렇게 이어가요</span><p>선택한 {mode === 'hanja' ? '한글 글자가 독음에' : '알파벳이'} 들어간 후보를 고르고<br />전체 {mode === 'hanja' ? '독음을' : '영어 단어를'} 입력하면 정답!</p><ul><li>한 이음은 최대 10문제예요.</li><li>같은 이음의 낱말은 다시 나오지 않아요.</li><li>처음 만나는 낱말을 먼저 보여드려요.</li><li>오답이면 힌트가 하나씩 열려요.</li></ul></aside>
       {!finished && <div className="session-actions"><Button onClick={() => { setFloating(null); setRestart(true); }}>새 이음 시작하기 ↻</Button></div>}
-      {restart && <div role="alert"><p>진행 중인 이음을 마치고 새로 시작할까요?</p><Button onClick={reset}>새로 시작</Button><Button onClick={() => setRestart(false)}>계속 학습</Button></div>}
+      {restart && <div role="alert"><p>진행 중인 이음을 마치고 새로 시작할까요?</p><Button disabled={interstitial.busy} onClick={() => interstitial.start(reset)}>새로 시작</Button><Button onClick={() => setRestart(false)}>계속 학습</Button></div>}
     </div>}
   </section>;
 }
@@ -266,6 +271,7 @@ export default function App() {
     return () => observer.disconnect();
   }, []);
   const [page, setPage] = useState<'home' | Mode>('home');
+  const [learningPages, setLearningPages] = useState<Record<Mode, LearningPage>>({ hanja: 'quiz', english: 'quiz' });
   const [opened, setOpened] = useState<Mode[]>([]);
   function open(mode: Mode) { setOpened(prev => prev.includes(mode) ? prev : [...prev, mode]); setPage(mode); window.scrollTo(0, 0); }
   function home() { setPage('home'); window.scrollTo(0, 0); }
@@ -278,10 +284,10 @@ export default function App() {
       </article>)}</div>
       <section className="home-guide"><h2>이렇게 시작해요</h2><ol><li><strong>01</strong> 이어갈 글자 고르기</li><li><strong>02</strong> 뜻을 보고 후보 선택하기</li><li><strong>03</strong> 정답을 입력하고 이어가기</li></ol><p>한 번에 최대 10문제. 각 학습의 ‘나의 단어장’에서 즐겨찾기와 오답을 다시 살펴볼 수 있어요.</p></section>
     </section> : <section className="intro learning-intro"><span className="eyebrow">{page === 'hanja' ? '한 글자' : '한 알파벳'}에서 시작하는 발견</span><h1>아는 {page === 'hanja' ? '말이' : '단어가'} 이어지면,<br />배움이 되는 순간.</h1><p>{page === 'hanja' ? '글자를 고르고, 뜻을 읽고, 아는 한자성어를 적어 보세요.' : '알파벳을 고르고, 뜻을 읽고, 아는 영어 단어를 적어 보세요.'}<br />정답이 다음 배움의 시작이 됩니다.</p></section>}
-    {opened.map(mode => <div key={mode} hidden={page !== mode}><Learning mode={mode} active={page === mode} /></div>)}
+    {opened.map(mode => <div key={mode} hidden={page !== mode}><Learning mode={mode} active={page === mode} page={learningPages[mode]} setPage={next => setLearningPages(previous => ({ ...previous, [mode]: next }))} /></div>)}
     <footer><span>모두의 이음 · {page === 'home' ? '한자와 영어 학습' : page === 'hanja' ? `한자 학습 ${idioms.length}개` : `영어 학습 ${words.length}개`}</span><span>이전 학습 이력은 이 기기에 저장돼요. 진행 중인 이음은 새로고침하면 초기화돼요.</span></footer>
     <div className="bottom-dock" ref={dockRef}>
-      <BottomBanner />
+      {(page === 'home' || learningPages[page] === 'book') && <BottomBanner />}
       <nav className="bottom-nav" aria-label="학습 선택"><button aria-current={page === 'home' ? 'page' : undefined} onClick={home}><span aria-hidden="true">⌂</span>홈</button><button aria-current={page === 'hanja' ? 'page' : undefined} onClick={() => open('hanja')}><span aria-hidden="true">字</span>한자 학습</button><button aria-current={page === 'english' ? 'page' : undefined} onClick={() => open('english')}><span aria-hidden="true">Aa</span>영어 학습</button></nav>
     </div>
   </main>;
