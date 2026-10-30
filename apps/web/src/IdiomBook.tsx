@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { normalizeReadingForSearch, type Idiom } from '@idioms/shared';
 import ContentSource from './ContentSource';
+import DictionaryDetails from './DictionaryDetails';
 
 type Props = {
   idioms: Idiom[];
@@ -36,6 +37,7 @@ export default function IdiomBook({ idioms, favorites, completed, mistakes, lega
       <strong className="book-reading">{item.reading}</strong>
       <p>{item.meaning}</p>
       <ContentSource item={item} />
+      <DictionaryDetails id={item.id} />
       {completed.has(item.id) && <span className="book-badge">학습완료</span>}
       {mistakes.has(item.id) && <span className="book-badge">오답 복습</span>}
     </li>)}</ul>

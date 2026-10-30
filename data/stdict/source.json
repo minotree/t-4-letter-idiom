@@ -1,0 +1,367 @@
+{
+  "title": "표준국어대사전",
+  "author": "국립국어원",
+  "exportDate": "2026-10-12",
+  "url": "https://stdict.korean.go.kr/",
+  "policyUrl": "https://stdict.korean.go.kr/join/copyrightPolicy.do",
+  "license": "CC BY-SA 2.0 KR",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/kr/",
+  "modifications": "학습 항목과 독음·한자가 정확히 일치하는 항목을 추출하고 필드를 선별하여 JSON으로 변환. 표제어 구분 기호 제거. 용례·멀티미디어 제외. 기존 학습 뜻은 유지.",
+  "matchedCount": 488,
+  "learningCount": 915,
+  "entriesSha256": "00d000eab4b1f873f530e5b36d4d2aec3d2a6787e9d453e0d0754f3a14229308",
+  "sourceFiles": [
+    {
+      "name": "1610292_10000.xml",
+      "sha256": "8c7051efc4e8ecd9dda7c4ef181d9af5febb9e216cc2e34361241902dd55695e"
+    },
+    {
+      "name": "1610292_100000.xml",
+      "sha256": "22ed46de0c0f919242fd0b517287f4e769c6f7ab2d6d05aed6e0cd49a06bcd6c"
+    },
+    {
+      "name": "1610292_105000.xml",
+      "sha256": "fbf4bdda281090b9a315579693eeaf6237114bf9780395f152dab0e7e9ade22d"
+    },
+    {
+      "name": "1610292_110000.xml",
+      "sha256": "8b8aa79539c2c49af37966b705e3f620dfd220843ec538832f856e0d251c86bd"
+    },
+    {
+      "name": "1610292_115000.xml",
+      "sha256": "b97fde8f90aab2f5b5acd76a80619de3387ff5bd2c6b07fd98af7fbf75b075c2"
+    },
+    {
+      "name": "1610292_120000.xml",
+      "sha256": "865e986ab15a56f591f715a9070e6aa3b3fd48c1911ef263815174f3a8d89405"
+    },
+    {
+      "name": "1610292_125000.xml",
+      "sha256": "38b76ed47aba597e1715972277b36cb5653c15957e0ce96a269ef8b081d3a969"
+    },
+    {
+      "name": "1610292_130000.xml",
+      "sha256": "f0fd56c97f20ebff6282e393d801b1ee247084d50656209fb1e09eecdd7e60be"
+    },
+    {
+      "name": "1610292_135000.xml",
+      "sha256": "a2f6d68406dd9996583970869732429b282d4122b6d772857ff23d8b1ec85c51"
+    },
+    {
+      "name": "1610292_140000.xml",
+      "sha256": "8fbb4d994f977bab5d46c23d4eec968e2907daa89fdadf087521cafe6a5f764d"
+    },
+    {
+      "name": "1610292_145000.xml",
+      "sha256": "9bf7ec3b83415ddb16d19aa3eb64cf39b98f728cea708a285475707b2e5fb51e"
+    },
+    {
+      "name": "1610292_15000.xml",
+      "sha256": "06e98b4da616e7618ebc302a272503f9e74e6aff12c53c5ce08a75e38f32a5f4"
+    },
+    {
+      "name": "1610292_150000.xml",
+      "sha256": "29a9196a190744105c55dd54505173d28933019243de88db3a15a20900a15a14"
+    },
+    {
+      "name": "1610292_155000.xml",
+      "sha256": "9163d990a2806a3c68cef8ec32e919c2048397921b355ae0cc8789fe1ea33699"
+    },
+    {
+      "name": "1610292_160000.xml",
+      "sha256": "9f123b2baf5076ba330a542c517943df13115d12fce4a0864c694f0218a58530"
+    },
+    {
+      "name": "1610292_165000.xml",
+      "sha256": "867caed01c7870ab19fa2703120a94e9906f897aba73306cb533e9dfd371f2af"
+    },
+    {
+      "name": "1610292_170000.xml",
+      "sha256": "b9f024aca7e97b13efb64ecfdfe0e28fda7dedbfda8b27c56f0eac01afe86867"
+    },
+    {
+      "name": "1610292_175000.xml",
+      "sha256": "f19efb01f469e27fe3312e96b2ec46595e98164b6d74ef7bdd0e69fb8fffaf22"
+    },
+    {
+      "name": "1610292_180000.xml",
+      "sha256": "df9cb805d44e6fc8bbe3b54e993a1d10eb025f225a854ef66118f981dc2d935c"
+    },
+    {
+      "name": "1610292_185000.xml",
+      "sha256": "c15165d72ba5d448133542ca7f94f12146b40cc104956c4c06b0e3fd50bc6fc3"
+    },
+    {
+      "name": "1610292_190000.xml",
+      "sha256": "04917bfd9af66e11ba8937399ea910a39ac5da21467d2205b540741346bd198e"
+    },
+    {
+      "name": "1610292_195000.xml",
+      "sha256": "dbf00442e007b3621040f98eaf9bddb61afb922c1353fc1aeee476397668fd18"
+    },
+    {
+      "name": "1610292_20000.xml",
+      "sha256": "b8e8382b740c7ac974f510da93c811e017d82e2baeb3164a9fdf07173752bacd"
+    },
+    {
+      "name": "1610292_200000.xml",
+      "sha256": "0f8b2f5e764c7f05d2ecb9d5ee744b937d74ed67092efef597b6292707f9cb91"
+    },
+    {
+      "name": "1610292_205000.xml",
+      "sha256": "9f256e80fb85db34ed963fa09119ee215d806c34a171fa9fecefe47ab7c3d3d9"
+    },
+    {
+      "name": "1610292_210000.xml",
+      "sha256": "5d3e5e25cf63a1f6c122821eeeff276690ba283a9caefb73a01c46eecec2577a"
+    },
+    {
+      "name": "1610292_215000.xml",
+      "sha256": "e4a26773351315390be2c45e8a0330caa6c10ac7771deff2ea77e7738af796aa"
+    },
+    {
+      "name": "1610292_220000.xml",
+      "sha256": "b4afe21dc61394ca0317fb0bd65bd0281905d1e9c99c677fd070eb9bc76dbe7f"
+    },
+    {
+      "name": "1610292_225000.xml",
+      "sha256": "eaccac6c976d0d693e5bcab95dfe32c8a90c34a52fadbeffdf8dee79af0136f8"
+    },
+    {
+      "name": "1610292_230000.xml",
+      "sha256": "1ce91bf5f5512ccff5a60bdb7a26b0da38451bdd809979ee6e37f4c7437ab64c"
+    },
+    {
+      "name": "1610292_235000.xml",
+      "sha256": "e3b4c9b141fd59d442dbf2dfd502fa629425fe03035e0013cac565f758396793"
+    },
+    {
+      "name": "1610292_240000.xml",
+      "sha256": "87e116860771d195d978574bdbb84540c9cdd1e36322ffbabeec6156499fc106"
+    },
+    {
+      "name": "1610292_245000.xml",
+      "sha256": "0061554b525fdd5687698bcd2602d451e2d8c0f3c69318becee15c229a6393fb"
+    },
+    {
+      "name": "1610292_25000.xml",
+      "sha256": "7e45a51cb787d1a16bfa150c15fb24d4bf480ea5bdff43f901a1f3c528c63dbb"
+    },
+    {
+      "name": "1610292_250000.xml",
+      "sha256": "734d4766fadd0555cdb86967c7249e6cf386e2c94f29b8ff17a5f92927793315"
+    },
+    {
+      "name": "1610292_255000.xml",
+      "sha256": "69b3aadc3ef982ae498e7bb3d804d1e1e747881b2f7cb3749b1133c0a8d8ceed"
+    },
+    {
+      "name": "1610292_260000.xml",
+      "sha256": "ba57ff7c996c7a833433d8c21af9096035fb482bb1b476b3301f12f4e75aa86b"
+    },
+    {
+      "name": "1610292_265000.xml",
+      "sha256": "e2fc961dc8ef6e1cad71baf54008cbc1b53cb91bcf60e3b9248cda167e0259ea"
+    },
+    {
+      "name": "1610292_270000.xml",
+      "sha256": "72b546cc99482bd32bbaa2564366f179d308b3b4693612b98b0190899a87ce5b"
+    },
+    {
+      "name": "1610292_275000.xml",
+      "sha256": "a83d965fd05ae41a1d90d0bcc9c7a7cf9407c6307c476740f2bdcf98e9e017e7"
+    },
+    {
+      "name": "1610292_280000.xml",
+      "sha256": "73c2fb5b2fd3d0b70663262b02bb9b0321c53779772f60444f903d7e16c4ceeb"
+    },
+    {
+      "name": "1610292_285000.xml",
+      "sha256": "8f6ef58a4d476dfad3b102cf346d4412a7255f029ef83a9537e0bf4b2e8be83b"
+    },
+    {
+      "name": "1610292_290000.xml",
+      "sha256": "169bcd1e19885bdfee3dfc2bfb00590c9b0d70cb59cc630769465a57fb9cca08"
+    },
+    {
+      "name": "1610292_295000.xml",
+      "sha256": "3c180327c3688521c3d1e751f3a8f2a605c287c93afa0ed820c38567fb99bf23"
+    },
+    {
+      "name": "1610292_30000.xml",
+      "sha256": "b5200fec3271e5d48363cc15e2cd297801d72a12f8bc156e87c3b1b1d6ee79ad"
+    },
+    {
+      "name": "1610292_300000.xml",
+      "sha256": "31505a006a7806e973679a8e3c53d9f325d88c0a0f0a7976634eafe30aa6efaa"
+    },
+    {
+      "name": "1610292_305000.xml",
+      "sha256": "3e1cbda3a7e1533073776f0591d77bf1a64c1435cda42a2b2cd23158ced6e13a"
+    },
+    {
+      "name": "1610292_310000.xml",
+      "sha256": "32ec2f7e59bfdb1b467992c64ba65749a83b2e09545fbbb99c099e91910302ce"
+    },
+    {
+      "name": "1610292_315000.xml",
+      "sha256": "b8a7b32c6177145d0a6ae678045951ac93e8375f843ed7dd1eee28c6dad49a7c"
+    },
+    {
+      "name": "1610292_320000.xml",
+      "sha256": "5762235492af38a14766dced713aa84f9c2566e012344a7516dfd292c54d420c"
+    },
+    {
+      "name": "1610292_325000.xml",
+      "sha256": "c9d9d92999309b17d8745751cfffbf1a5594dd1e1367eb795e8f7b4b39c19390"
+    },
+    {
+      "name": "1610292_330000.xml",
+      "sha256": "5288699726d42e9900cf41331e5f1b4739bba6166800d00504fd7b1f5ffffd65"
+    },
+    {
+      "name": "1610292_335000.xml",
+      "sha256": "a3cd78c34c5bcfd9ef7c64dc42c481273ff2edd4577dfa6d87bf25b6d99547b9"
+    },
+    {
+      "name": "1610292_340000.xml",
+      "sha256": "b302e1822015b7c006966affaa4083153c29f874e07082004c8c21ec957a1041"
+    },
+    {
+      "name": "1610292_345000.xml",
+      "sha256": "68305fe20623c1e142cc44e89111f127a26a6157468c43b9abcf65d2327dff29"
+    },
+    {
+      "name": "1610292_35000.xml",
+      "sha256": "9629d7a3386532ebd1686edae6c37a4c2a117ce81be6e25f4848931e73e5584b"
+    },
+    {
+      "name": "1610292_350000.xml",
+      "sha256": "189606c82a3f077555e946bf6fed8f47369de1fb59d03271eee53a6d627ecb55"
+    },
+    {
+      "name": "1610292_355000.xml",
+      "sha256": "df28007add4312f31a08b5d8ee6919ebbc4e91fbb7a0848cf405efcb7884ac6d"
+    },
+    {
+      "name": "1610292_360000.xml",
+      "sha256": "c82ca95eaead0914677432a0d767f9c64c2d9e825b9a5be3a7cb1b89ed8fb00c"
+    },
+    {
+      "name": "1610292_365000.xml",
+      "sha256": "f0256f981769d3a8c4d85046a9067d5a6dbce36eb94c533334fad7b8a742c2e1"
+    },
+    {
+      "name": "1610292_370000.xml",
+      "sha256": "3f89a535e17801d9cbeacadbace0e347cbfe8ee96c2a1e77f69a75ab5575c135"
+    },
+    {
+      "name": "1610292_375000.xml",
+      "sha256": "a05bde077bfa4542394bfa9dcdb3673ad541dc2b1e947a9dc88a8644a9927b50"
+    },
+    {
+      "name": "1610292_380000.xml",
+      "sha256": "f9951afc2fd97fab8fb7ebcc8fe39862275985579d8b878de01607b73f1963cb"
+    },
+    {
+      "name": "1610292_385000.xml",
+      "sha256": "8c2e6834d33604e6f13a4bee7ac70b8f1cc582c9d9574a3f15a8db6c23f09a73"
+    },
+    {
+      "name": "1610292_390000.xml",
+      "sha256": "8a0703829f5ef99601b9a06a408a1be2d9a6e99b51509a831d9df182488fd041"
+    },
+    {
+      "name": "1610292_395000.xml",
+      "sha256": "b5ca4c64810a079ee9797a6329a0dc4da20e994fac10c67a6d44eb8233ccfaec"
+    },
+    {
+      "name": "1610292_40000.xml",
+      "sha256": "ee188eb05956c2107451561b4642f9a2ea833d6337de7afd3c578090d4e51f0b"
+    },
+    {
+      "name": "1610292_400000.xml",
+      "sha256": "82474b3a122e815f448df2cea8259b337b08b5f9ff53f3c6b1d11f5790c3c100"
+    },
+    {
+      "name": "1610292_405000.xml",
+      "sha256": "7db5de8c40495b1d976909994f803a9e7b090f5e5a4848135f5908de2f4d2e92"
+    },
+    {
+      "name": "1610292_410000.xml",
+      "sha256": "bf15f47d0b3b948a732483ad441b1102d5c4d5a0fe091c8877592c50ff21c763"
+    },
+    {
+      "name": "1610292_415000.xml",
+      "sha256": "73e3072f1844f2d5da3d9a467e9459613846a0f9cbb07e16c6d0d3a8fb98d6f2"
+    },
+    {
+      "name": "1610292_420000.xml",
+      "sha256": "8946aa7f0835c6eba62f324a15e5aafee7fed25073094d7090a95814f545840c"
+    },
+    {
+      "name": "1610292_425000.xml",
+      "sha256": "9fdbd06c2357a08b546526b6b66c624af5a65e7d5c459113469261dbe7a33da8"
+    },
+    {
+      "name": "1610292_430000.xml",
+      "sha256": "ac22e1259ea81d56d708942328e831f1a85351a20a83101ea124c87c5ee1c7f8"
+    },
+    {
+      "name": "1610292_435000.xml",
+      "sha256": "7cb1284f68f4bd7f845b9b607e42e03499b55c911c294e7e499ca60f54efbc5c"
+    },
+    {
+      "name": "1610292_436587.xml",
+      "sha256": "d1361b09c721bbe398f2400426369e9833a25e4e8b224faa75933f08afb24782"
+    },
+    {
+      "name": "1610292_45000.xml",
+      "sha256": "7912a1ed1eec54c9349cc69a3f4cc3fef070a38d73deffbab2c7cabc3ab34810"
+    },
+    {
+      "name": "1610292_5000.xml",
+      "sha256": "bb9aafd8775116c478efcc69ef31acf514db7e87facefbbebc9dabc7ea831a5e"
+    },
+    {
+      "name": "1610292_50000.xml",
+      "sha256": "1367e4663f09428ee08508b00230430e763233bd9609c07cfd833f4a7ffcce7d"
+    },
+    {
+      "name": "1610292_55000.xml",
+      "sha256": "fad4ca0c3a7692027e5d2e87a961a925809dc0d9ed9642e6d16eda2b4f9e9fc5"
+    },
+    {
+      "name": "1610292_60000.xml",
+      "sha256": "96eac06b7bb6f77e9827aef45bd772e1f4f4936a9f6ee41c83412e056d3fd20e"
+    },
+    {
+      "name": "1610292_65000.xml",
+      "sha256": "c0328badec21037e7b782ece1af9c951ff1733b15eae00ba3333a27f43c03246"
+    },
+    {
+      "name": "1610292_70000.xml",
+      "sha256": "47832c0edbf739052d9ace9809918ad7afd3374ccb9b300c1ea83c004f35f0ed"
+    },
+    {
+      "name": "1610292_75000.xml",
+      "sha256": "76a3297b904ff8a23d6f23e19d0e4b57625f8b9a21f2c4a3e4f0bdb2e65e1eff"
+    },
+    {
+      "name": "1610292_80000.xml",
+      "sha256": "c27358298190e6ea05022162451344a97893c2b08ecf9abc5b3ec56ed442b88e"
+    },
+    {
+      "name": "1610292_85000.xml",
+      "sha256": "b1cb8ea1d4e83050ed516bc721c6238dd018a8c871520f0e6986a2606c4c92b6"
+    },
+    {
+      "name": "1610292_90000.xml",
+      "sha256": "344b67cd12e96b6712a81d15682d373f52131148d336ea8084d975348a739b97"
+    },
+    {
+      "name": "1610292_95000.xml",
+      "sha256": "aed7520cdb235a3dec6639e7eb1f243984fe493d20913c22e36fd6937f3679f7"
+    }
+  ]
+}

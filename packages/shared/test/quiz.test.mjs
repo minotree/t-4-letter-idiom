@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { loadIdioms, candidatesFor, matchingAnswers, readingHint, normalizeHanjaForSearch, migrateIdiomHistory, SESSION_LIMIT } from '../src/index.ts';
+import { loadIdioms, candidatesFor, matchingAnswers, readingHint, normalizeHanjaForSearch, migrateIdiomHistory, HANJA_SESSION_LIMIT, SESSION_LIMIT } from '../src/index.ts';
 
 const idioms = loadIdioms(readFileSync(new URL('../../../sajaseongeo_image_working.csv', import.meta.url), 'utf8'));
 
@@ -88,18 +88,19 @@ test('사전 검수에서 확인한 독음과 핵심 뜻을 회귀 검사한다'
   assert.match(idioms.find(item => item.reading === '홍로점설').meaning, /의혹/);
   assert.match(idioms.find(item => item.reading === '망양보뢰').meaning, /본래/);
 });
-test('최대 10번 연결하는 동안 같은 성어를 다시 사용하지 않는다', () => {
-  assert.equal(SESSION_LIMIT, 10);
+test('최대 7번 연결하는 동안 같은 성어를 다시 사용하지 않는다', () => {
+  assert.equal(SESSION_LIMIT, 7); // 영어도 7문제
+  assert.equal(HANJA_SESSION_LIMIT, 7);
   let current = idioms.find(item => item.hanja === '家家戶戶');
   const used = new Set([current.id]);
   let count = 0;
-  while (count < SESSION_LIMIT) {
+  while (count < HANJA_SESSION_LIMIT) {
     const next = [...current.reading].flatMap(ch => candidatesFor(idioms, ch, used, new Set()))[0];
     if (!next) break;
     assert.ok(!used.has(next.id));
     used.add(next.id); current = next; count++;
   }
-  assert.equal(count, SESSION_LIMIT);
-  assert.equal(used.size, SESSION_LIMIT + 1);
+  assert.equal(count, HANJA_SESSION_LIMIT);
+  assert.equal(used.size, HANJA_SESSION_LIMIT + 1);
   assert.equal(readingHint('가급인족', 2), '가급○○');
 });

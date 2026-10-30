@@ -190,7 +190,7 @@ export default function EnglishLearning() {
   const listed = words.filter(item => (filter === 'all' || records[filter].includes(item.id)) && `${item.word} ${item.meaning} ${item.partOfSpeech}`.toLowerCase().includes(query.trim().toLowerCase()));
   return <section className="english-learning learning-shell panel" aria-label="영어 단어 이음 학습">
     <div className="book-heading english-rank-heading"><h1>영어 글자잇기</h1><SessionStars count={sessionCount} /></div>
-    <p className="english-word-total">{words.length}개 단어 · 10문제를 모두 이으면 작은 별 하나</p>
+    <p className="english-word-total">{words.length}개 단어 · {SESSION_LIMIT}문제를 모두 이으면 작은 별 하나</p>
     <div className="learning-tabs"><button aria-pressed={!book} onClick={() => { closeFloating(); setBook(false); setLimit(40); }}>퀴즈 풀기</button><button aria-pressed={book} onClick={() => { closeFloating(); setBook(true); setLimit(40); }}>나의 단어장</button></div>
     <div hidden={book}>
       <p className="book-description">알파벳 선택 → 후보 선택 → 영어 단어 입력</p>
@@ -202,10 +202,10 @@ export default function EnglishLearning() {
           const row = Math.floor(index / 2);
           const column = row % 2 === 0 ? index % 2 + 1 : 2 - index % 2;
           const vertical = index > 0 && index % 2 === 0;
-          return <li key={item.id} data-step={index} className={index === SESSION_LIMIT ? 'chain-complete' : undefined} style={{ gridRow: row + 1, gridColumn: column, borderColor: index > 0 ? STEP_COLORS[index - 1] : undefined }}>
+          return <li key={item.id} data-step={index} className={index === SESSION_LIMIT ? 'chain-complete' : undefined} style={{ gridRow: row + 1, gridColumn: column, borderColor: index > 0 ? STEP_COLORS[index === SESSION_LIMIT ? STEP_COLORS.length - 1 : index - 1] : undefined }}>
             {index > 0 && <span className={`english-chain-bridge ${vertical ? 'bridge-down' : column === 2 ? 'bridge-right' : 'bridge-left'}`} aria-label={`${chain[index - 1].letter}로 이어짐`}><span>{chain[index - 1].letter}</span><span aria-hidden="true">{vertical ? '↓' : column === 2 ? '→' : '←'}</span></span>}
-            <span className={`chain-word-step${index > 0 ? ' chain-step-badge' : ''}`} style={index > 0 ? { backgroundColor: STEP_COLORS[index - 1], color: index <= 2 || index === SESSION_LIMIT ? '#243a36' : '#fff' } : undefined}>{index === 0 ? '시작' : `${index} / ${SESSION_LIMIT}`}</span>
-            {index === SESSION_LIMIT && <span className="chain-complete-label">10개 이음 완성</span>}
+            <span className={`chain-word-step${index > 0 ? ' chain-step-badge' : ''}`} style={index > 0 ? { backgroundColor: STEP_COLORS[index === SESSION_LIMIT ? STEP_COLORS.length - 1 : index - 1], color: index <= 2 || index === SESSION_LIMIT ? '#243a36' : '#fff' } : undefined}>{index === 0 ? '시작' : `${index} / ${SESSION_LIMIT}`}</span>
+            {index === SESSION_LIMIT && <span className="chain-complete-label">{SESSION_LIMIT}개 이음 완성</span>}
             <strong lang="en">{item.word}</strong><p>{item.meaning}</p>
           </li>;
         })}</ol>
@@ -215,7 +215,7 @@ export default function EnglishLearning() {
         {current.synonym.trim() && <div className="word-example word-synonyms" aria-label="동의어"><span>동의어</span><p>{current.synonym}</p></div>}
         {(current.example || current.exampleMeaning) && <div className="word-example" aria-label="예문"><div className="example-heading"><span>예문</span>{current.exampleMeaning && <button type="button" className="meaning-toggle" aria-expanded={translationOpen} aria-controls="english-example-translation" onClick={() => setTranslationOpen(value => !value)}>{translationOpen ? '해석 접기' : '해석 보기'} <span aria-hidden="true">ⓘ</span></button>}{current.example.trim() && <div className="card-speech" role="group" aria-label="단어와 예문 읽기"><button type="button" className="meaning-toggle" aria-label="단어와 예문 듣기" onClick={() => speech.speak(current.id, `${current.word}. ${current.example}`)}><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 14v-3a9 9 0 0 1 18 0v3" /><rect x="3" y="12" width="4" height="9" rx="2" /><rect x="17" y="12" width="4" height="9" rx="2" /></svg> 듣기</button><button type="button" className="meaning-toggle" aria-label="단어와 예문 느리게 듣기" onClick={() => speech.speak(current.id, `${current.word}. ${current.example}`, true)}>느리게</button>{speech.activeId === current.id && <><button type="button" className="meaning-toggle" onClick={speech.stop}>정지</button><span role="status">읽는 중…</span></>}</div>}</div>{current.example && <p lang="en">{current.example}</p>}{current.exampleMeaning && <p id="english-example-translation" hidden={!translationOpen}>{current.exampleMeaning}</p>}</div>}
       </div>
-      {finished ? <div className="summary"><span className="eyebrow">나만의 배움 한 줄</span><h2>{chain.length === SESSION_LIMIT ? '10개 단어를 이었어요!' : '이번 이음은 여기까지예요.'}</h2><p>{chain.length === SESSION_LIMIT ? '오늘 알게 된 단어들이 다음 배움의 시작이 될 거예요.' : '같은 단어를 반복하지 않고 이어갈 후보가 더 없어요.'}</p><button className="primary" onClick={restart}>새 이음 시작하기 <span aria-hidden="true">↗</span></button></div> : <>
+      {finished ? <div className="summary"><span className="eyebrow">나만의 배움 한 줄</span><h2>{chain.length === SESSION_LIMIT ? `${SESSION_LIMIT}개 단어를 이었어요!` : '이번 이음은 여기까지예요.'}</h2><p>{chain.length === SESSION_LIMIT ? '오늘 알게 된 단어들이 다음 배움의 시작이 될 거예요.' : '같은 단어를 반복하지 않고 이어갈 후보가 더 없어요.'}</p><button className="primary" onClick={restart}>새 이음 시작하기 <span aria-hidden="true">↗</span></button></div> : <>
         <div className="instruction"><h3>01 <span>이어갈 알파벳을 골라 주세요</span></h3><span>후보가 없는 글자는 쉬어 가요</span></div>
         <div className="characters">{englishLetters(current).map((ch, index) => {
           const count = englishCandidates(words, ch, used, history).length;

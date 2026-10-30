@@ -1,11 +1,14 @@
 import { lazy, Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { readSessions, SessionStars, STEP_COLORS } from './LearningMilestones';
-import { candidatesFor, matchingAnswers, readingHint, migrateIdiomHistory, SESSION_LIMIT, type Idiom } from '@idioms/shared';
+import HanjaCardHeading from './HanjaCardHeading';
+import { candidatesFor, matchingAnswers, readingHint, migrateIdiomHistory, HANJA_SESSION_LIMIT, type Idiom } from '@idioms/shared';
 import data from './data/idioms.json';
 import englishSource from '../../../data/english/source.json';
 import { applyUpdate } from './register-pwa';
 import IdiomBook from './IdiomBook';
 import ContentSource from './ContentSource';
+import DictionaryDetails from './DictionaryDetails';
+import DictionaryLicense from './DictionaryLicense';
 import './styles.css';
 
 const EnglishLearning = lazy(() => import('./EnglishLearning'));
@@ -84,7 +87,7 @@ export default function App() {
   const candidates = candidatesFor(idioms, character, used, history);
   const selected = candidates.find(item => item.id === selectedId);
   const hasNext = [...current.reading].some(ch => candidatesFor(idioms, ch, used, history).length > 0);
-  const finished = chain.length >= SESSION_LIMIT || !hasNext;
+  const finished = chain.length >= HANJA_SESSION_LIMIT || !hasNext;
 
   useEffect(() => {
     const navigate = () => {
@@ -229,7 +232,7 @@ export default function App() {
     remember([start.id, item.id]);
     const learned = new Set([...completed, item.id]);
     setCompleted(learned); saveCollection('completed', learned);
-    if (chain.length + 1 === SESSION_LIMIT) {
+    if (chain.length + 1 === HANJA_SESSION_LIMIT) {
       const count = Math.min(Number.MAX_SAFE_INTEGER, sessionCount + 1);
       setSessionCount(count);
       try { localStorage.setItem(SESSIONS_KEY, JSON.stringify(count)); setSessionWarning(''); }
@@ -295,7 +298,7 @@ export default function App() {
         <section className="home-guide" aria-labelledby="home-guide-title">
           <h2 id="home-guide-title">이렇게 시작해요</h2>
           <ol><li><strong>01</strong> 이어갈 글자 고르기</li><li><strong>02</strong> 뜻을 보고 후보 선택하기</li><li><strong>03</strong> 정답을 입력하고 이어가기</li></ol>
-          <p>한 번에 최대 10문제. 각 학습의 ‘나의 단어장’에서 즐겨찾기와 오답을 다시 살펴볼 수 있어요.</p>
+          <p>한자·영어 학습 모두 한 번에 최대 7문제. 각 학습의 ‘나의 단어장’에서 즐겨찾기와 오답을 다시 살펴볼 수 있어요.</p>
         </section>
       </section>
       <section className="intro learning-intro" hidden={page === 'home'} aria-label="학습 소개">
@@ -304,8 +307,8 @@ export default function App() {
         <p>{page === 'english' ? '알파벳을 고르고, 뜻을 읽고, 아는 영어 단어를 적어 보세요.' : '글자를 고르고, 뜻을 읽고, 아는 한자성어를 적어 보세요.'}<br />정답이 다음 배움의 시작이 됩니다.</p>
       </section>
       <section className="learning-shell panel" hidden={page !== 'quiz' && page !== 'book'} aria-label="한자 학습">
-      <div className="book-heading english-rank-heading"><h1>한자 글자잇기</h1><SessionStars count={sessionCount} /></div>
-      <p className="english-word-total">{idioms.length}개 한자어 · 10문제를 모두 이으면 작은 별 하나</p>
+      <div className="book-heading english-rank-heading"><h1>한자 글자잇기</h1><SessionStars limit={HANJA_SESSION_LIMIT} count={sessionCount} /></div>
+      <p className="english-word-total">{idioms.length}개 한자어 · {HANJA_SESSION_LIMIT}문제를 모두 이으면 작은 별 하나</p>
       <nav className="learning-tabs" aria-label="한자 학습 메뉴">
         <a href="#main" aria-current={page === 'quiz' ? 'page' : undefined}>퀴즈 풀기</a>
         <a href="#idioms" aria-current={page === 'book' ? 'page' : undefined}>나의 단어장</a>
@@ -314,33 +317,34 @@ export default function App() {
       <p className="book-description">한글 글자 선택 → 후보 선택 → 한글 독음 입력</p>
       <div className="workspace">
         <section className="game" id="main" aria-label="한자성어 이음 퀴즈">
-          <p className="learning-count">{chain.length} / {SESSION_LIMIT} 문제</p>
-          <progress value={chain.length} max={SESSION_LIMIT} aria-label="맞힌 문제 수" />
+          <p className="learning-count">{chain.length} / {HANJA_SESSION_LIMIT} 문제</p>
+          <progress value={chain.length} max={HANJA_SESSION_LIMIT} aria-label="맞힌 문제 수" />
           {chain.length > 0 && <section className="completed-chain" aria-label="이어 온 문제 사슬">
-            <div className="english-journey-heading"><h3>지금까지 이어 온 한자성어</h3><span>이번 이음 {chain.length} / {SESSION_LIMIT}</span></div>
+            <div className="english-journey-heading"><h3>지금까지 이어 온 한자성어</h3><span>이번 이음 {chain.length} / {HANJA_SESSION_LIMIT}</span></div>
             <ol className="hanja-chain english-chain">{[start, ...chain].map((item, index) => {
               const row = Math.floor(index / 2);
               const column = row % 2 === 0 ? index % 2 + 1 : 2 - index % 2;
               const vertical = index > 0 && index % 2 === 0;
-              return <li key={item.id} data-step={index} className={index === SESSION_LIMIT ? 'chain-complete' : undefined} style={{ gridRow: row + 1, gridColumn: column, borderColor: index > 0 ? STEP_COLORS[index - 1] : undefined }}>
+              return <li key={item.id} data-step={index} className={index === HANJA_SESSION_LIMIT ? 'chain-complete' : undefined} style={{ gridRow: row + 1, gridColumn: column, borderColor: index > 0 ? STEP_COLORS[index === HANJA_SESSION_LIMIT ? STEP_COLORS.length - 1 : index - 1] : undefined }}>
                 {index > 0 && <span className={`english-chain-bridge ${vertical ? 'bridge-down' : column === 2 ? 'bridge-right' : 'bridge-left'}`} aria-label={`${connections[index - 1]}로 이어짐`}><span>{connections[index - 1]}</span><span aria-hidden="true">{vertical ? '↓' : column === 2 ? '→' : '←'}</span></span>}
-                <span className={`chain-word-step${index > 0 ? ' chain-step-badge' : ''}`} style={index > 0 ? { backgroundColor: STEP_COLORS[index - 1], color: index <= 2 || index === SESSION_LIMIT ? '#243a36' : '#fff' } : undefined}>{index === 0 ? '시작' : `${index} / ${SESSION_LIMIT}`}</span>
-                {index === SESSION_LIMIT && <span className="chain-complete-label">10개 이음 완성</span>}
+                <span className={`chain-word-step${index > 0 ? ' chain-step-badge' : ''}`} style={index > 0 ? { backgroundColor: STEP_COLORS[index === HANJA_SESSION_LIMIT ? STEP_COLORS.length - 1 : index - 1], color: index <= 2 || index === HANJA_SESSION_LIMIT ? '#243a36' : '#fff' } : undefined}>{index === 0 ? '시작' : `${index} / ${HANJA_SESSION_LIMIT}`}</span>
+                {index === HANJA_SESSION_LIMIT && <span className="chain-complete-label">{HANJA_SESSION_LIMIT}개 이음 완성</span>}
                 <strong lang="zh">{item.hanja}</strong><span className="hanja-chain-reading">{item.reading}</span><p>{item.meaning}</p><ContentSource item={item} />
               </li>;
             })}</ol>
           </section>}
           <div className="idiom-card" ref={currentCard}>
             <span className="card-caption">{chain.length ? '방금 맞힌 한자성어' : '이음의 시작'}</span>
-            <h2 ref={title} tabIndex={-1} lang="zh">{current.hanja}</h2>
+            <HanjaCardHeading ref={title} word={current.hanja} active={page === 'quiz'} />
             <div className="card-reading"><strong>{current.reading}</strong><button type="button" className="meaning-toggle" aria-expanded={meaningOpen} aria-controls="hanja-meaning" onClick={() => setMeaningOpen(value => !value)}>{meaningOpen ? '뜻 접기' : '뜻 보기'} <span aria-hidden="true">ⓘ</span></button></div>
             <p id="hanja-meaning" hidden={!meaningOpen}>{current.meaning}</p>
             <ContentSource item={current} />
+            <DictionaryDetails id={current.id} />
           </div>
           {finished ? <div className="summary">
             <span className="eyebrow">나만의 배움 한 줄</span>
-            <h2>{chain.length >= SESSION_LIMIT ? '10개의 한자성어를 이었어요!' : '이번 이음은 여기까지예요.'}</h2>
-            <p>{chain.length >= SESSION_LIMIT ? '오늘 알게 된 말들이 다음 도전에 힘이 될 거예요.' : '같은 한자성어를 반복하지 않고 이어갈 후보가 더 없어요.'}</p>
+            <h2>{chain.length >= HANJA_SESSION_LIMIT ? `총 ${HANJA_SESSION_LIMIT}개의 한자성어를 이었어요!` : '이번 이음은 여기까지예요.'}</h2>
+            <p>{chain.length >= HANJA_SESSION_LIMIT ? '오늘 알게 된 말들이 다음 도전에 힘이 될 거예요.' : '같은 한자성어를 반복하지 않고 이어갈 후보가 더 없어요.'}</p>
             <button className="primary" onClick={restart}>새 이음 시작하기 <span aria-hidden="true">↗</span></button>
           </div> : <>
             <div className="instruction"><h3>01 <span>이어갈 한 글자를 골라 주세요</span></h3><span>후보가 없는 글자는 쉬어 가요</span></div>
@@ -372,7 +376,7 @@ export default function App() {
           <p id="feedback" className="feedback" role="status">{finished ? `${chain.length}개의 한자성어를 정답으로 이었어요.` : message}</p>
         </section>
         <aside className="sidebar">
-          <section className="guide"><span className="eyebrow">이렇게 이어가요</span><p>선택한 한글 글자가 독음에 들어간 후보를 고르고<br />전체 독음을 입력하면 정답!</p><ul><li>한자는 달라도 같은 한글이면 이어져요.</li><li>한 이음은 최대 10문제예요.</li><li>같은 이음의 한자성어는 다시 나오지 않아요.</li><li>처음 만나는 한자성어를 먼저 보여드려요.</li><li>오답이면 독음 힌트가 하나씩 열려요.</li></ul></section>
+          <section className="guide"><span className="eyebrow">이렇게 이어가요</span><p>선택한 한글 글자가 독음에 들어간 후보를 고르고<br />전체 독음을 입력하면 정답!</p><ul><li>한자는 달라도 같은 한글이면 이어져요.</li><li>한 이음은 최대 {HANJA_SESSION_LIMIT}문제예요.</li><li>같은 이음의 한자성어는 다시 나오지 않아요.</li><li>처음 만나는 한자성어를 먼저 보여드려요.</li><li>오답이면 독음 힌트가 하나씩 열려요.</li></ul></section>
           <div className="session-actions">{confirmRestart ? <div className="restart-confirm"><p>지금 이음을 마치고 새로 시작할까요?</p><button onClick={restart}>새로 시작</button><button onClick={() => setConfirmRestart(false)}>계속 풀기</button></div> : <button className="text-button" onClick={() => setConfirmRestart(true)}>새 이음 시작하기 ↻</button>}</div>
         </aside>
       </div>
@@ -388,6 +392,7 @@ export default function App() {
       {update && <div className="notice">새 버전이 준비됐어요. 적용하면 현재 이음이 종료됩니다. <button onClick={() => applyUpdate(update)}>지금 업데이트</button></div>}
       <footer><span>{page === 'home' ? '모두의 이음 · 한자와 영어 학습' : page === 'english' ? `모두의 이음 · 영어 학습 ${englishSource.rows}개` : `모두의 이음 · 한자 학습 ${idioms.length}개`}</span><span>이전 학습 이력은 이 브라우저에 저장돼요. 진행 중인 이음은 새로고침하면 초기화돼요.</span></footer>
       <nav className="bottom-nav" aria-label="학습 선택"><a href="#home" aria-current={page === 'home' ? 'page' : undefined}><span aria-hidden="true">⌂</span>홈</a><a href={hanjaPage === 'book' ? '#idioms' : '#main'} aria-current={page === 'quiz' || page === 'book' ? 'page' : undefined}><span aria-hidden="true">字</span>한자 학습</a><a href="#english" aria-current={page === 'english' ? 'page' : undefined}><span aria-hidden="true">Aa</span>영어 학습</a></nav>
+      {page === 'home' && <section className="app-info" aria-label="앱 정보"><details><summary>앱 정보</summary><details><summary>데이터 출처·라이선스</summary><DictionaryLicense /></details></details></section>}
     </main>
   );
 }

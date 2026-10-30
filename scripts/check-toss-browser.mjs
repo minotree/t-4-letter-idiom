@@ -108,12 +108,12 @@ try {
   await enter('틀린답');
   await until(`document.body.textContent.includes('힌트:')`);
   await enter(solution);
-  await until(`document.body.textContent.includes('이번 이음 1/10')`);
+  await until(`document.body.textContent.includes('이번 이음 1/7')`);
   assert.equal(await evaluate(`document.querySelectorAll('.chain > li').length`),2);
   assert.equal(await evaluate(`document.querySelectorAll('.chain-bridge').length`),1);
   await cdp('Page.captureScreenshot',{format:'png'}).then(r=>writeFile('tmp/browser-checks/toss-chain.png',Buffer.from(r.data,'base64')));
   await evaluate(`document.querySelector('.bottom-nav button').click()`); await evaluate(`document.querySelectorAll('.bottom-nav button')[1].click()`);
-  assert.equal(await evaluate(`document.body.textContent.includes('이번 이음 1/10')`),true);
+  assert.equal(await evaluate(`document.body.textContent.includes('이번 이음 1/7')`),true);
   await clickText('나의 단어장');
   await until(`document.body.textContent.includes('915개')`);
   await evaluate(`document.querySelector('.favorite-button').click()`);
@@ -141,7 +141,7 @@ try {
   await cdp('Emulation.setDeviceMetricsOverride', {width:390,height:844,deviceScaleFactor:1,mobile:true});
   await until(`document.querySelector('[aria-label="영어 학습"] .letters button') !== null`);
   const englishWords = JSON.parse(await readFile(new URL('../data/english/words.json', import.meta.url), 'utf8'));
-  for (let step = 1; step <= 10; step++) {
+  for (let step = 1; step <= 7; step++) {
     await evaluate(`document.querySelector('[aria-label="영어 학습"] .letters button:not(:disabled)').click()`);
     await until(`!!document.querySelector('[aria-label="영어 학습"] .candidate input')`);
     const candidateId = await evaluate(`document.querySelector('[aria-label="영어 학습"] .cards li').dataset.id`);
@@ -154,10 +154,10 @@ try {
     const form = chosen.word.split('/').map(s=>s.trim()).find(s=>s.toUpperCase().includes(selectedLetter));
     await evaluate(`(()=>{const e=document.querySelector('[aria-label="영어 학습"] form input');Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(e,${JSON.stringify(form)});e.dispatchEvent(new Event('input',{bubbles:true}));})()`);
     await evaluate(`document.querySelector('[aria-label="영어 학습"] form').requestSubmit()`);
-    await until(`document.querySelector('[aria-label="영어 학습"]').textContent.includes('이번 이음 ${step}/10')`);
+    await until(`document.querySelector('[aria-label="영어 학습"]').textContent.includes('이번 이음 ${step}/7')`);
   }
   assert.equal(await evaluate(`JSON.parse(localStorage.getItem('idioms:toss:english:v1')).sessions`),1);
-  assert.equal(await evaluate(`document.querySelector('[aria-label="영어 학습"] .chain').children.length`),11);
+  assert.equal(await evaluate(`document.querySelector('[aria-label="영어 학습"] .chain').children.length`),8);
   assert.equal(await evaluate(`document.querySelectorAll('[aria-label="영어 학습"] .chain-complete').length`),1);
   assert.equal(await evaluate('document.documentElement.scrollWidth <= innerWidth'),true);
   for (const [width,height] of [[320,700],[844,390],[1280,900]]) {

@@ -1,0 +1,42 @@
+{
+  "model": "qwen2.5-coder:14b",
+  "inputSha256": "54ea7cd7d3929480d5a9479bc1939dc5f9068e04934488b8747488279547d018",
+  "scope": "Six supplied evidence snippets only; no web/source-file access",
+  "exitCode": 0,
+  "rawOutput": "```json\n{\n  \"results\": [\n    {\n      \"id\": \"6603\",\n      \"verdict\": \"unsupported\",\n      \"reason\": \"The evidence shows that '기울 측' means 'sunlight' or 'morning sun', not just a variant relationship.\"\n    },\n    {\n      \"id\": \"8662\",\n      \"verdict\": \"unsupported\",\n      \"reason\": \"The evidence shows that '나라 이름 괵' means 'country name', not just a variant relationship.\"\n    },\n    {\n      \"id\": \"8F36\",\n      \"verdict\": \"unsupported\",\n      \"reason\": \"The evidence shows that '가벼울 유' means 'lightweight', not just a variant relationship.\"\n    },\n    {\n      \"id\": \"98BB\",\n      \"verdict\": \"unsupported\",\n      \"reason\": \"The evidence shows that '나부낄 요' means 'stiffness' or 'rigidity', not just a variant relationship.\"\n    },\n    {\n      \"id\": \"70BA\",\n      \"verdict\": \"supported\",\n      \"reason\": \"The evidence confirms that U+70BA is a semantic variant of U+7232.\"\n    },\n    {\n      \"id\": \"9ED9\",\n      \"verdict\": \"supported\",\n      \"reason\": \"The evidence confirms that U+9ED9 is a semantic variant of U+9ED8.\"\n    }\n  ]\n}\n```\n\n",
+  "parsed": {
+    "results": [
+      {
+        "id": "6603",
+        "verdict": "unsupported",
+        "reason": "The evidence shows that '기울 측' means 'sunlight' or 'morning sun', not just a variant relationship."
+      },
+      {
+        "id": "8662",
+        "verdict": "unsupported",
+        "reason": "The evidence shows that '나라 이름 괵' means 'country name', not just a variant relationship."
+      },
+      {
+        "id": "8F36",
+        "verdict": "unsupported",
+        "reason": "The evidence shows that '가벼울 유' means 'lightweight', not just a variant relationship."
+      },
+      {
+        "id": "98BB",
+        "verdict": "unsupported",
+        "reason": "The evidence shows that '나부낄 요' means 'stiffness' or 'rigidity', not just a variant relationship."
+      },
+      {
+        "id": "70BA",
+        "verdict": "supported",
+        "reason": "The evidence confirms that U+70BA is a semantic variant of U+7232."
+      },
+      {
+        "id": "9ED9",
+        "verdict": "supported",
+        "reason": "The evidence confirms that U+9ED9 is a semantic variant of U+9ED8."
+      }
+    ]
+  },
+  "formatValid": true
+}

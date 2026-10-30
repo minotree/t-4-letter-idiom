@@ -1,0 +1,510 @@
+{
+  "reviewedAt": "2026-10-30",
+  "inputSourceSha256": "b1004034589f1357daaea3534a6136f6b5ef825afa8779886b20f0b7908bbe3b",
+  "unicodeDatabaseVersion": "14.0.0",
+  "unihanVariantsSha256": "3f23cd71872633f3350875d25bd388e83b60fa71807634c9a600ec26f38a68ab",
+  "scope": "44 explicit supplements only. Never normalize learning words or infer aliases at runtime.",
+  "entries": [
+    {
+      "character": "車",
+      "kind": "canonical-alias",
+      "target": "車",
+      "decomposition": "8ECA",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#車"
+      ]
+    },
+    {
+      "character": "金",
+      "kind": "canonical-alias",
+      "target": "金",
+      "decomposition": "91D1",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#金"
+      ]
+    },
+    {
+      "character": "樂",
+      "kind": "canonical-alias",
+      "target": "樂",
+      "decomposition": "6A02",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#樂"
+      ]
+    },
+    {
+      "character": "落",
+      "kind": "canonical-alias",
+      "target": "落",
+      "decomposition": "843D",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#落"
+      ]
+    },
+    {
+      "character": "爛",
+      "kind": "canonical-alias",
+      "target": "爛",
+      "decomposition": "721B",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#爛"
+      ]
+    },
+    {
+      "character": "盧",
+      "kind": "canonical-alias",
+      "target": "盧",
+      "decomposition": "76E7",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#盧"
+      ]
+    },
+    {
+      "character": "露",
+      "kind": "canonical-alias",
+      "target": "露",
+      "decomposition": "9732",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#露"
+      ]
+    },
+    {
+      "character": "綠",
+      "kind": "canonical-alias",
+      "target": "綠",
+      "decomposition": "7DA0",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#綠"
+      ]
+    },
+    {
+      "character": "論",
+      "kind": "canonical-alias",
+      "target": "論",
+      "decomposition": "8AD6",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#論"
+      ]
+    },
+    {
+      "character": "弄",
+      "kind": "canonical-alias",
+      "target": "弄",
+      "decomposition": "5F04",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#弄"
+      ]
+    },
+    {
+      "character": "籠",
+      "kind": "canonical-alias",
+      "target": "籠",
+      "decomposition": "7C60",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#籠"
+      ]
+    },
+    {
+      "character": "雷",
+      "kind": "canonical-alias",
+      "target": "雷",
+      "decomposition": "96F7",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#雷"
+      ]
+    },
+    {
+      "character": "樓",
+      "kind": "canonical-alias",
+      "target": "樓",
+      "decomposition": "6A13",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#樓"
+      ]
+    },
+    {
+      "character": "累",
+      "kind": "canonical-alias",
+      "target": "累",
+      "decomposition": "7D2F",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#累"
+      ]
+    },
+    {
+      "character": "樂",
+      "kind": "canonical-alias",
+      "target": "樂",
+      "decomposition": "6A02",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#樂"
+      ]
+    },
+    {
+      "character": "復",
+      "kind": "canonical-alias",
+      "target": "復",
+      "decomposition": "5FA9",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#復"
+      ]
+    },
+    {
+      "character": "不",
+      "kind": "canonical-alias",
+      "target": "不",
+      "decomposition": "4E0D",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#不"
+      ]
+    },
+    {
+      "character": "塞",
+      "kind": "canonical-alias",
+      "target": "塞",
+      "decomposition": "585E",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#塞"
+      ]
+    },
+    {
+      "character": "兩",
+      "kind": "canonical-alias",
+      "target": "兩",
+      "decomposition": "5169",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#兩"
+      ]
+    },
+    {
+      "character": "良",
+      "kind": "canonical-alias",
+      "target": "良",
+      "decomposition": "826F",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#良"
+      ]
+    },
+    {
+      "character": "女",
+      "kind": "canonical-alias",
+      "target": "女",
+      "decomposition": "5973",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#女"
+      ]
+    },
+    {
+      "character": "戀",
+      "kind": "canonical-alias",
+      "target": "戀",
+      "decomposition": "6200",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#戀"
+      ]
+    },
+    {
+      "character": "連",
+      "kind": "canonical-alias",
+      "target": "連",
+      "decomposition": "9023",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#連"
+      ]
+    },
+    {
+      "character": "裂",
+      "kind": "canonical-alias",
+      "target": "裂",
+      "decomposition": "88C2",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#裂"
+      ]
+    },
+    {
+      "character": "令",
+      "kind": "canonical-alias",
+      "target": "令",
+      "decomposition": "4EE4",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#令"
+      ]
+    },
+    {
+      "character": "樂",
+      "kind": "canonical-alias",
+      "target": "樂",
+      "decomposition": "6A02",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#樂"
+      ]
+    },
+    {
+      "character": "龍",
+      "kind": "canonical-alias",
+      "target": "龍",
+      "decomposition": "9F8D",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#龍"
+      ]
+    },
+    {
+      "character": "流",
+      "kind": "canonical-alias",
+      "target": "流",
+      "decomposition": "6D41",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#流"
+      ]
+    },
+    {
+      "character": "留",
+      "kind": "canonical-alias",
+      "target": "留",
+      "decomposition": "7559",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#留"
+      ]
+    },
+    {
+      "character": "類",
+      "kind": "canonical-alias",
+      "target": "類",
+      "decomposition": "985E",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#類"
+      ]
+    },
+    {
+      "character": "六",
+      "kind": "canonical-alias",
+      "target": "六",
+      "decomposition": "516D",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#六"
+      ]
+    },
+    {
+      "character": "律",
+      "kind": "canonical-alias",
+      "target": "律",
+      "decomposition": "5F8B",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#律"
+      ]
+    },
+    {
+      "character": "利",
+      "kind": "canonical-alias",
+      "target": "利",
+      "decomposition": "5229",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#利"
+      ]
+    },
+    {
+      "character": "易",
+      "kind": "canonical-alias",
+      "target": "易",
+      "decomposition": "6613",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#易"
+      ]
+    },
+    {
+      "character": "李",
+      "kind": "canonical-alias",
+      "target": "李",
+      "decomposition": "674E",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#李"
+      ]
+    },
+    {
+      "character": "梨",
+      "kind": "canonical-alias",
+      "target": "梨",
+      "decomposition": "68A8",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#梨"
+      ]
+    },
+    {
+      "character": "臨",
+      "kind": "canonical-alias",
+      "target": "臨",
+      "decomposition": "81E8",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#臨"
+      ]
+    },
+    {
+      "character": "暴",
+      "kind": "canonical-alias",
+      "target": "暴",
+      "decomposition": "66B4",
+      "reason": "Unicode canonical decomposition; original learning codepoint is preserved",
+      "sources": [
+        "https://www.unicode.org/reports/tr15/",
+        "libhangul-hanja.txt#暴"
+      ]
+    },
+    {
+      "character": "昃",
+      "kind": "fact",
+      "readings": [
+        {
+          "hun": "기울",
+          "eum": "측"
+        }
+      ],
+      "sources": [
+        "https://db.cyberseodang.or.kr/front/sabuList/BookMain.do?bnCode=jti_5a0901&titleId=C6"
+      ],
+      "evidence": "신습한자: 昃:기울 측/햇살 기울 측",
+      "reason": "Single lexical fact checked in the published teaching table; no explanations or examples copied"
+    },
+    {
+      "character": "虢",
+      "kind": "fact",
+      "readings": [
+        {
+          "hun": "나라 이름",
+          "eum": "괵"
+        }
+      ],
+      "sources": [
+        "https://db.cyberseodang.or.kr/front/sabuList/BookMain.do?bnCode=jti_5a0901&titleId=C77"
+      ],
+      "evidence": "신습한자: 虢:나라 이름 괵",
+      "reason": "Single lexical fact checked in the published teaching table; no explanations or examples copied"
+    },
+    {
+      "character": "輶",
+      "kind": "fact",
+      "readings": [
+        {
+          "hun": "가벼울",
+          "eum": "유"
+        }
+      ],
+      "sources": [
+        "https://db.cyberseodang.or.kr/front/sabuList/BookMain.do?bnCode=jti_5a0901&titleId=C104"
+      ],
+      "evidence": "신습한자: 輶:가벼울 유",
+      "reason": "Single lexical fact checked in the published teaching table; no explanations or examples copied"
+    },
+    {
+      "character": "颻",
+      "kind": "fact",
+      "readings": [
+        {
+          "hun": "나부낄",
+          "eum": "요"
+        }
+      ],
+      "sources": [
+        "https://db.cyberseodang.or.kr/front/sabuList/BookMain.do?bnCode=jti_5a0901&titleId=C101"
+      ],
+      "evidence": "신습한자: 颻:나부낄 요",
+      "reason": "Single lexical fact checked in the published teaching table; no explanations or examples copied"
+    },
+    {
+      "character": "為",
+      "kind": "semantic-alias",
+      "target": "爲",
+      "sources": [
+        "https://www.unicode.org/Public/17.0.0/ucd/Unihan.zip",
+        "libhangul-hanja.txt#爲"
+      ],
+      "evidence": "U+70BA kSemanticVariant U+7232<kHKGlyph",
+      "reason": "Explicitly reviewed variant, not a general semantic-variant fallback"
+    },
+    {
+      "character": "黙",
+      "kind": "semantic-alias",
+      "target": "默",
+      "sources": [
+        "https://www.unicode.org/Public/17.0.0/ucd/Unihan.zip",
+        "https://dict.variants.moe.edu.tw/dictView.jsp?ID=53187",
+        "libhangul-hanja.txt#默"
+      ],
+      "evidence": "U+9ED9 kSemanticVariant U+9ED8; Ministry of Education variant entry A04773-001",
+      "reason": "Explicitly reviewed variant; reuse source Korean readings rather than Chinese pronunciation"
+    }
+  ]
+}

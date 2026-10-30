@@ -1,0 +1,166 @@
+{
+  "datasetSha256": "750b07e087418acf0900b19b2a69bf9b7f2b2c0081d68ec7e446f9a5969780cc",
+  "sourceSha256": "b1004034589f1357daaea3534a6136f6b5ef825afa8779886b20f0b7908bbe3b",
+  "sourceCommit": "23d2cd9d10d516d523d60c562dbcc7ea08139a09",
+  "total": 1566,
+  "available": 1566,
+  "pending": [],
+  "policy": "Original learning codepoints retained. Only the 44 reviewed supplements may supply missing readings; no runtime normalization. Not a full semantic dictionary audit.",
+  "supplementsSha256": "54ea7cd7d3929480d5a9479bc1939dc5f9068e04934488b8747488279547d018",
+  "supplemented": [
+    "昃",
+    "為",
+    "虢",
+    "輶",
+    "颻",
+    "黙",
+    "車",
+    "金",
+    "樂",
+    "落",
+    "爛",
+    "盧",
+    "露",
+    "綠",
+    "論",
+    "弄",
+    "籠",
+    "雷",
+    "樓",
+    "累",
+    "樂",
+    "復",
+    "不",
+    "塞",
+    "兩",
+    "良",
+    "女",
+    "戀",
+    "連",
+    "裂",
+    "令",
+    "樂",
+    "龍",
+    "流",
+    "留",
+    "類",
+    "六",
+    "律",
+    "利",
+    "易",
+    "李",
+    "梨",
+    "臨",
+    "暴"
+  ],
+  "overrides": [
+    {
+      "character": "竹",
+      "original": "대",
+      "display": "대나무",
+      "basis": "user request 2026-10-30"
+    }
+  ],
+  "unparsed": [
+    {
+      "character": "邯",
+      "original": "조나라 서울",
+      "reason": "unparsed"
+    },
+    {
+      "character": "劒",
+      "original": "劎의 譌字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "擊",
+      "original": "撃과 同字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "螂",
+      "original": "蜋과 同字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "凉",
+      "original": "涼의 俗字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "隷",
+      "original": "隸와 同字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "床",
+      "original": "牀의 俗字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "飡",
+      "original": "飱과 同字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "讐",
+      "original": "讎와 同字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "雁",
+      "original": "鴈과 同字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "烟",
+      "original": "煙과 同字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "墻",
+      "original": "牆과 同字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "絶",
+      "original": "絕과 同字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "晉",
+      "original": "進과 同字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "燭",
+      "original": "爥의 俗字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "兎",
+      "original": "兔의 俗字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "覇",
+      "original": "霸의 俗字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "畵",
+      "original": "畫의 俗字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "毁",
+      "original": "毀의 俗字",
+      "reason": "unparsed"
+    },
+    {
+      "character": "戱",
+      "original": "戲의 俗字",
+      "reason": "unparsed"
+    }
+  ]
+}

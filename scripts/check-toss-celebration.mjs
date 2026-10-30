@@ -43,12 +43,13 @@ try {
   await until(`!!document.querySelector('.home-courses')`);
   const datasets = [JSON.parse(await readFile('apps/toss/src/data/idioms.json','utf8')), JSON.parse(await readFile('data/english/words.json','utf8'))];
   for (const [index,mode] of ['hanja','english'].entries()) {
+    const limit = 7;
     const root = `[aria-label="${mode==='hanja'?'\uD55C\uC790':'\uC601\uC5B4'} \uD559\uC2B5"]`;
     const q = selector => JSON.stringify(root+' '+selector);
     await evaluate(`document.querySelectorAll('.bottom-nav button')[${index+1}].click()`);
     await until(`!!document.querySelector(${q('.letters button')})`);
     assert.equal(await evaluate(`!!document.querySelector('.completion-celebration')`),false);
-    for (let step=1;step<=10;step++) {
+    for (let step=1;step<=limit;step++) {
       await evaluate(`document.querySelector(${q('.letters button:not(:disabled)')}).click()`);
       await until(`!!document.querySelector(${q('.cards li')})`);
       const id = await evaluate(`document.querySelector(${q('.cards li')}).dataset.id`);
@@ -57,7 +58,7 @@ try {
       const answer = mode==='hanja'?item.reading:item.word.split('/').map(s=>s.trim()).find(s=>s.toUpperCase().includes(letter));
       await evaluate(`document.querySelector(${q('.candidate input')}).click()`);
       await evaluate(`(()=>{const e=document.querySelector(${q('form input')});Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(e,${JSON.stringify(answer)});e.dispatchEvent(new Event('input',{bubbles:true}));})()`);
-      if (step===10) {
+      if (step===limit) {
         await evaluate(`(()=>{const e=document.querySelector(${q('form input')});Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(e,'wrong-answer');e.dispatchEvent(new Event('input',{bubbles:true}));})()`);
         await evaluate(`document.querySelector(${q('form')}).requestSubmit()`);
         assert.equal(await evaluate(`!!document.querySelector('.completion-celebration')`),false,'wrong answer must not celebrate');
@@ -65,7 +66,7 @@ try {
       }
       await evaluate(`document.querySelector(${q('form')}).requestSubmit()`);
       await until(`document.querySelector(${q('progress')}).value===${step}`);
-      assert.equal(await evaluate(`!!document.querySelector('.completion-celebration')`),step===10);
+      assert.equal(await evaluate(`!!document.querySelector('.completion-celebration')`),step===limit);
     }
     assert.equal(await evaluate(`document.querySelectorAll('.completion-confetti-piece').length`),72);
     assert.deepEqual(await evaluate(`Array.from(new Set(Array.from(document.querySelectorAll('.completion-confetti-piece'),e=>e.style.getPropertyValue('--confetti-start'))))`),['15%','50%','85%']);
@@ -102,5 +103,5 @@ try {
     await until(`document.querySelector(${q('progress')}).value===0`);
     assert.equal(await evaluate(`!!document.querySelector('.completion-celebration')`),false);
   }
-  console.log('PASS: Hanja/English 10-answer celebration, no premature/wrong-answer celebration, 72 confetti pieces from three launch points, pointer passthrough, dock exclusion, reduced motion, timeout, navigation cancellation/no replay, restart.');
+  console.log('PASS: Hanja/English 7-answer celebration, no premature/wrong-answer celebration, 72 confetti pieces from three launch points, pointer passthrough, dock exclusion, reduced motion, timeout, navigation cancellation/no replay, restart.');
 } finally { await cdp('Page.close'); socket.close(); }

@@ -6,7 +6,9 @@ export interface Idiom {
   meaning: string;
 }
 
-export const SESSION_LIMIT = 10;
+export const SESSION_LIMIT = 7;
+export const HANJA_SESSION_LIMIT = 7;
+export { hanjaReadings, type HanjaReading } from './hanja.ts';
 /** Reading search only: fold initial-sound variants at every partial-match position. */
 export function normalizeReadingForSearch(value: string): string {
   return [...value.normalize('NFKC').replace(/\s/g, '').toLowerCase()].map(character => {

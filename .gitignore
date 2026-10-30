@@ -7,6 +7,10 @@ dist/
 coverage/
 apps/web/src/data/idioms.json
 apps/toss/src/data/idioms.json
+apps/web/src/data/hanja-readings.json
+apps/toss/src/data/hanja-readings.json
+apps/web/public/hanja-license.txt
+apps/toss/public/hanja-license.txt
 *.ait
 
 # Secrets (only the empty example is tracked)

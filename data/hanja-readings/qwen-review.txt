@@ -1,0 +1,29 @@
+```plaintext
+data/hanja-readings/qwen-review.txt
+
+글자  원본  제안  유지/수정/불확실  이유  근거 위치  확인 범위  미확인 사항
+竹  대나무  유지  사용자 승인  data/hanja-research/pilot/source-analysis/libhangul-hanja.txt  전체 자료  -
+邯  조나라 서울  수정  원본 불일치  readings.json  전체 자료  -
+劒  劎의 譌字  수정  원본 불일치  readings.json  전체 자료  -
+擊  撃과 同字  수정  원본 불일치  readings.json  전체 자료  -
+螂  蚁과 同字  수정  원본 불일치  readings.json  전체 자료  -
+凉  涼의 俗字  수정  원본 불일치  readings.json  전체 자료  -
+隷  隸와 同字  수정  원본 불일치  readings.json  전체 자료  -
+床  牀의 俗字  수정  원본 불일치  readings.json  전체 자료  -
+飡  餡과 同字  수정  원본 불일치  readings.json  전체 자료  -
+讐  认의 同字  수정  원본 불일치  readings.json  전체 자료  -
+雁  鴨과 同字  수정  원본 불일치  readings.json  전체 자료  -
+烟  煙과 同字  수정  원본 불일치  readings.json  전체 자료  -
+墻  墙과 同字  수정  원본 불일치  readings.json  전체 자료  -
+絶  絶과 同字  수정  원본 불일치  readings.json  전체 자료  -
+晉  進과 同字  수정  원본 불일치  readings.json  전체 자료  -
+燭  燥의 俗字  수정  원본 불일치  readings.json  전체 자료  -
+兎  兔의 俗字  수정  원본 불일치  readings.json  전체 자료  -
+覇  霸의 俗字  수정  원본 불일치  readings.json  전체 자료  -
+畵  畫의 俗字  修改  원본 불일치  readings.json  전체 자료  -
+毁  毁의 俗字  수정  원본 불일치  readings.json  전체 자료  -
+戱  戲의 俗字  수정  원본 불일치  readings.json  전체 자료  -
+```
+
+**주의 사항**: 본 검토는 제공된 원본만을 기준으로 하였으며, 추가적인 사전 사실 검수는 수행하지 않았습니다. 따라서 일부 사항에 대해 출처 접근을 하지 않았다고 표시했습니다.
+

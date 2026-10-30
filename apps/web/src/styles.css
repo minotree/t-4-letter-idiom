@@ -754,3 +754,30 @@
 .card-speech { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 4px; }
 .card-speech .meaning-toggle { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; cursor: pointer; }
 .card-speech > span { font-size: 11px; }
+
+.hanja-reading-root { position: relative; }
+.hanja-reading-heading { display: flex; flex-wrap: wrap; justify-content: center; gap: 0; }
+.hanja-reading-heading button { border: 0; border-radius: 6px; padding: 0; min-width: 40px; min-height: 44px; background: transparent; color: inherit; font: inherit; letter-spacing: inherit; cursor: pointer; }
+.hanja-reading-heading button:hover,.hanja-reading-heading button[aria-expanded=true] { background: #ffffff20; }
+.hanja-reading-heading button:focus-visible { outline: 2px solid #ffdc8b; outline-offset: 2px; }
+.hanja-reading-popup { position: absolute; z-index: 20; top: 100%; left: 50%; transform: translateX(-50%); box-sizing: border-box; width: min(320px,100%); max-height: 240px; overflow-y: auto; padding: 14px 16px; border: 1px solid #d8dfd8; border-radius: 12px; background: #fffdf6; color: #243a36; text-align: left; box-shadow: 0 6px 24px #0003; font-family: sans-serif; line-height: 1.6; }
+.hanja-reading-top { display: flex; align-items: center; justify-content: space-between; }
+.hanja-reading-top strong { font-size: 26px; }
+.hanja-reading-top button { min-height: 36px; padding: 4px 8px; border: 0; background: transparent; color: #243a36; cursor: pointer; }
+.hanja-reading-popup p { margin: 6px 0; font-size: 15px; }
+.hanja-reading-source { font-size: 11px; color: #52675c; }
+/* Supplementary dictionary information, independent of quiz hints. */
+.dictionary-details { margin: 12px 0; text-align: left; font-size: 13px; line-height: 1.6; color: #243a36; background: #f4f7ef; border: 1px solid #d8dfd8; border-radius: 10px; overflow-wrap: anywhere; }
+.dictionary-details summary { min-height: 44px; box-sizing: border-box; padding: 10px 12px; cursor: pointer; }
+.dictionary-details summary:focus-visible { outline: 2px solid #52675c; outline-offset: 2px; }
+.dictionary-content { padding: 0 12px 12px; }
+.dictionary-content ol { padding-left: 22px; }
+.dictionary-content li { margin: 8px 0; }
+.dictionary-content p { margin: 6px 0; color: #243a36; font-size: 13px; }
+.dictionary-pos { font-size: 12px; color: #52675c; }
+.app-info { margin-top: 12px; color: #52675c; font-size: 13px; overflow-wrap: anywhere; }
+.app-info summary { display: list-item; min-height: 44px; box-sizing: border-box; padding: 12px 0; cursor: pointer; }
+.app-info summary:focus-visible { outline: 2px solid #52675c; outline-offset: 2px; }
+.app-info details details { padding-left: 12px; }
+.dictionary-license { overflow-wrap: anywhere; line-height: 1.6; }
+.dictionary-license h2 { font-size: 15px; }

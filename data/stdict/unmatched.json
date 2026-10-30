@@ -1,0 +1,2564 @@
+[
+  {
+    "id": "家無擔石",
+    "hanja": "家無擔石",
+    "reading": "가무담석",
+    "category": "idiom"
+  },
+  {
+    "id": "刻鵠類鶩",
+    "hanja": "刻鵠類鶩",
+    "reading": "각곡유목",
+    "category": "idiom"
+  },
+  {
+    "id": "刻舟求劒",
+    "hanja": "刻舟求劒",
+    "reading": "각주구검",
+    "category": "idiom"
+  },
+  {
+    "id": "渴而穿井",
+    "hanja": "渴而穿井",
+    "reading": "갈이천정",
+    "category": "idiom"
+  },
+  {
+    "id": "敢不生心",
+    "hanja": "敢不生心",
+    "reading": "감불생심",
+    "category": "idiom"
+  },
+  {
+    "id": "甘言利說",
+    "hanja": "甘言利說",
+    "reading": "감언이설",
+    "category": "idiom"
+  },
+  {
+    "id": "强近之親",
+    "hanja": "强近之親",
+    "reading": "강근지친",
+    "category": "idiom"
+  },
+  {
+    "id": "改善匡正",
+    "hanja": "改善匡正",
+    "reading": "개선광정",
+    "category": "idiom"
+  },
+  {
+    "id": "居安思危",
+    "hanja": "居安思危",
+    "reading": "거안사위",
+    "category": "idiom"
+  },
+  {
+    "id": "車載斗量",
+    "hanja": "車載斗量",
+    "reading": "거재두량",
+    "category": "idiom"
+  },
+  {
+    "id": "隔靴搔痒",
+    "hanja": "隔靴搔痒",
+    "reading": "격화소양",
+    "category": "idiom"
+  },
+  {
+    "id": "牽强附會",
+    "hanja": "牽强附會",
+    "reading": "견강부회",
+    "category": "idiom"
+  },
+  {
+    "id": "堅如金石",
+    "hanja": "堅如金石",
+    "reading": "견여금석",
+    "category": "idiom"
+  },
+  {
+    "id": "見危授命",
+    "hanja": "見危授命",
+    "reading": "견위수명",
+    "category": "idiom"
+  },
+  {
+    "id": "堅忍不拔",
+    "hanja": "堅忍不拔",
+    "reading": "견인불발",
+    "category": "idiom"
+  },
+  {
+    "id": "犬兎之爭",
+    "hanja": "犬兎之爭",
+    "reading": "견토지쟁",
+    "category": "idiom"
+  },
+  {
+    "id": "耕者有田",
+    "hanja": "耕者有田",
+    "reading": "경자유전",
+    "category": "idiom"
+  },
+  {
+    "id": "孤城落日",
+    "hanja": "孤城落日",
+    "reading": "고성낙일",
+    "category": "idiom"
+  },
+  {
+    "id": "孤臣寃淚",
+    "hanja": "孤臣寃淚",
+    "reading": "고신원루",
+    "category": "idiom"
+  },
+  {
+    "id": "過如不及",
+    "hanja": "過如不及",
+    "reading": "과여불급",
+    "category": "idiom"
+  },
+  {
+    "id": "過猶不及",
+    "hanja": "過猶不及",
+    "reading": "과유불급",
+    "category": "idiom"
+  },
+  {
+    "id": "巧言令色",
+    "hanja": "巧言令色",
+    "reading": "교언영색",
+    "category": "idiom"
+  },
+  {
+    "id": "狡兎死走狗烹",
+    "hanja": "狡兎死走狗烹",
+    "reading": "교토사주구팽",
+    "category": "idiom"
+  },
+  {
+    "id": "敎學相長",
+    "hanja": "敎學相長",
+    "reading": "교학상장",
+    "category": "idiom"
+  },
+  {
+    "id": "屈而不信",
+    "hanja": "屈而不信",
+    "reading": "굴이불신",
+    "category": "idiom"
+  },
+  {
+    "id": "橘化為枳",
+    "hanja": "橘化為枳",
+    "reading": "귤화위지",
+    "category": "idiom"
+  },
+  {
+    "id": "今古一般",
+    "hanja": "今古一般",
+    "reading": "금고일반",
+    "category": "idiom"
+  },
+  {
+    "id": "金烏玉兎",
+    "hanja": "金烏玉兎",
+    "reading": "금오옥토",
+    "category": "idiom"
+  },
+  {
+    "id": "其利斷金",
+    "hanja": "其利斷金",
+    "reading": "기리단금",
+    "category": "idiom"
+  },
+  {
+    "id": "其臭如蘭",
+    "hanja": "其臭如蘭",
+    "reading": "기취여란",
+    "category": "idiom"
+  },
+  {
+    "id": "落膽喪魂",
+    "hanja": "落膽喪魂",
+    "reading": "낙담상혼",
+    "category": "idiom"
+  },
+  {
+    "id": "落穽下石",
+    "hanja": "落穽下石",
+    "reading": "낙정하석",
+    "category": "idiom"
+  },
+  {
+    "id": "落花流水",
+    "hanja": "落花流水",
+    "reading": "낙화유수",
+    "category": "idiom"
+  },
+  {
+    "id": "爛商公論",
+    "hanja": "爛商公論",
+    "reading": "난상공론",
+    "category": "idiom"
+  },
+  {
+    "id": "爛商討議",
+    "hanja": "爛商討議",
+    "reading": "난상토의",
+    "category": "idiom"
+  },
+  {
+    "id": "男負女戴",
+    "hanja": "男負女戴",
+    "reading": "남부여대",
+    "category": "idiom"
+  },
+  {
+    "id": "盧生之夢",
+    "hanja": "盧生之夢",
+    "reading": "노생지몽",
+    "category": "idiom"
+  },
+  {
+    "id": "綠衣紅裳",
+    "hanja": "綠衣紅裳",
+    "reading": "녹의홍상",
+    "category": "idiom"
+  },
+  {
+    "id": "論功行賞",
+    "hanja": "論功行賞",
+    "reading": "논공행상",
+    "category": "idiom"
+  },
+  {
+    "id": "論點逸脫",
+    "hanja": "論點逸脫",
+    "reading": "논점일탈",
+    "category": "idiom"
+  },
+  {
+    "id": "弄瓦之慶",
+    "hanja": "弄瓦之慶",
+    "reading": "농와지경",
+    "category": "idiom"
+  },
+  {
+    "id": "弄璋之慶",
+    "hanja": "弄璋之慶",
+    "reading": "농장지경",
+    "category": "idiom"
+  },
+  {
+    "id": "籠鳥戀雲",
+    "hanja": "籠鳥戀雲",
+    "reading": "농조연운",
+    "category": "idiom"
+  },
+  {
+    "id": "累卵之危",
+    "hanja": "累卵之危",
+    "reading": "누란지위",
+    "category": "idiom"
+  },
+  {
+    "id": "斷金之交",
+    "hanja": "斷金之交",
+    "reading": "단금지교",
+    "category": "idiom"
+  },
+  {
+    "id": "斷機之敎",
+    "hanja": "斷機之敎",
+    "reading": "단기지교",
+    "category": "idiom"
+  },
+  {
+    "id": "同苦同樂",
+    "hanja": "同苦同樂",
+    "reading": "동고동락",
+    "category": "idiom"
+  },
+  {
+    "id": "棟樑之材",
+    "hanja": "棟樑之材",
+    "reading": "동량지재",
+    "category": "idiom"
+  },
+  {
+    "id": "同床異夢",
+    "hanja": "同床異夢",
+    "reading": "동상이몽",
+    "category": "idiom"
+  },
+  {
+    "id": "同心之言",
+    "hanja": "同心之言",
+    "reading": "동심지언",
+    "category": "idiom"
+  },
+  {
+    "id": "杜門不出",
+    "hanja": "杜門不出",
+    "reading": "두문불출",
+    "category": "idiom"
+  },
+  {
+    "id": "燈下不明",
+    "hanja": "燈下不明",
+    "reading": "등하불명",
+    "category": "idiom"
+  },
+  {
+    "id": "磨斧爲針",
+    "hanja": "磨斧爲針",
+    "reading": "마부위침",
+    "category": "idiom"
+  },
+  {
+    "id": "晩時之嘆",
+    "hanja": "晩時之嘆",
+    "reading": "만시지탄",
+    "category": "idiom"
+  },
+  {
+    "id": "亡羊之歎",
+    "hanja": "亡羊之歎",
+    "reading": "망양지탄",
+    "category": "idiom"
+  },
+  {
+    "id": "麥秀之嘆",
+    "hanja": "麥秀之嘆",
+    "reading": "맥수지탄",
+    "category": "idiom"
+  },
+  {
+    "id": "矛盾",
+    "hanja": "矛盾",
+    "reading": "모순",
+    "category": "idiom"
+  },
+  {
+    "id": "目不識丁",
+    "hanja": "目不識丁",
+    "reading": "목불식정",
+    "category": "idiom"
+  },
+  {
+    "id": "目不忍見",
+    "hanja": "目不忍見",
+    "reading": "목불인견",
+    "category": "idiom"
+  },
+  {
+    "id": "無不干涉",
+    "hanja": "無不干涉",
+    "reading": "무불간섭",
+    "category": "idiom"
+  },
+  {
+    "id": "無不通知",
+    "hanja": "無不通知",
+    "reading": "무불통지",
+    "category": "idiom"
+  },
+  {
+    "id": "無所不知",
+    "hanja": "無所不知",
+    "reading": "무소부지",
+    "category": "idiom"
+  },
+  {
+    "id": "無所不爲",
+    "hanja": "無所不爲",
+    "reading": "무소불위",
+    "category": "idiom"
+  },
+  {
+    "id": "無依無托",
+    "hanja": "無依無托",
+    "reading": "무의무탁",
+    "category": "idiom"
+  },
+  {
+    "id": "墨守",
+    "hanja": "墨守",
+    "reading": "묵수",
+    "category": "idiom"
+  },
+  {
+    "id": "物外閒人",
+    "hanja": "物外閒人",
+    "reading": "물외한인",
+    "category": "idiom"
+  },
+  {
+    "id": "美風良俗",
+    "hanja": "美風良俗",
+    "reading": "미풍양속",
+    "category": "idiom"
+  },
+  {
+    "id": "斑衣之戱",
+    "hanja": "斑衣之戱",
+    "reading": "반의지희",
+    "category": "idiom"
+  },
+  {
+    "id": "拔本塞源",
+    "hanja": "拔本塞源",
+    "reading": "발본색원",
+    "category": "idiom"
+  },
+  {
+    "id": "拔萃抄錄",
+    "hanja": "拔萃抄錄",
+    "reading": "발췌초록",
+    "category": "idiom"
+  },
+  {
+    "id": "伯樂一顧",
+    "hanja": "伯樂一顧",
+    "reading": "백낙일고",
+    "category": "idiom"
+  },
+  {
+    "id": "百聞不如一見",
+    "hanja": "百聞不如一見",
+    "reading": "백문불여일견",
+    "category": "idiom"
+  },
+  {
+    "id": "白眉",
+    "hanja": "白眉",
+    "reading": "백미",
+    "category": "idiom"
+  },
+  {
+    "id": "百折不屈",
+    "hanja": "百折不屈",
+    "reading": "백절불굴",
+    "category": "idiom"
+  },
+  {
+    "id": "百折不撓",
+    "hanja": "百折不撓",
+    "reading": "백절불요",
+    "category": "idiom"
+  },
+  {
+    "id": "百八煩惱",
+    "hanja": "百八煩惱",
+    "reading": "백팔번뇌",
+    "category": "idiom"
+  },
+  {
+    "id": "百花爛漫",
+    "hanja": "百花爛漫",
+    "reading": "백화난만",
+    "category": "idiom"
+  },
+  {
+    "id": "病從口入禍從口出",
+    "hanja": "病從口入禍從口出",
+    "reading": "병종구입화종구출",
+    "category": "idiom"
+  },
+  {
+    "id": "本末顚倒",
+    "hanja": "本末顚倒",
+    "reading": "본말전도",
+    "category": "idiom"
+  },
+  {
+    "id": "附和雷同",
+    "hanja": "附和雷同",
+    "reading": "부화뇌동",
+    "category": "idiom"
+  },
+  {
+    "id": "不共戴天之讐",
+    "hanja": "不共戴天之讐",
+    "reading": "불공대천지수",
+    "category": "idiom"
+  },
+  {
+    "id": "不立文字",
+    "hanja": "不立文字",
+    "reading": "불립문자",
+    "category": "idiom"
+  },
+  {
+    "id": "不眠不休",
+    "hanja": "不眠不休",
+    "reading": "불면불휴",
+    "category": "idiom"
+  },
+  {
+    "id": "不問可知",
+    "hanja": "不問可知",
+    "reading": "불문가지",
+    "category": "idiom"
+  },
+  {
+    "id": "不問曲直",
+    "hanja": "不問曲直",
+    "reading": "불문곡직",
+    "category": "idiom"
+  },
+  {
+    "id": "不伐不德",
+    "hanja": "不伐不德",
+    "reading": "불벌부덕",
+    "category": "idiom"
+  },
+  {
+    "id": "不撓不屈",
+    "hanja": "不撓不屈",
+    "reading": "불요불굴",
+    "category": "idiom"
+  },
+  {
+    "id": "不撤晝夜",
+    "hanja": "不撤晝夜",
+    "reading": "불철주야",
+    "category": "idiom"
+  },
+  {
+    "id": "不肖之父",
+    "hanja": "不肖之父",
+    "reading": "불초지부",
+    "category": "idiom"
+  },
+  {
+    "id": "不恥下問",
+    "hanja": "不恥下問",
+    "reading": "불치하문",
+    "category": "idiom"
+  },
+  {
+    "id": "鼻祖",
+    "hanja": "鼻祖",
+    "reading": "비조",
+    "category": "idiom"
+  },
+  {
+    "id": "氷炭不相容",
+    "hanja": "氷炭不相容",
+    "reading": "빙탄불상용",
+    "category": "idiom"
+  },
+  {
+    "id": "氷炭之間",
+    "hanja": "氷炭之間",
+    "reading": "빙탄지간",
+    "category": "idiom"
+  },
+  {
+    "id": "四分五裂",
+    "hanja": "四分五裂",
+    "reading": "사분오열",
+    "category": "idiom"
+  },
+  {
+    "id": "砂上樓閣",
+    "hanja": "砂上樓閣",
+    "reading": "사상누각",
+    "category": "idiom"
+  },
+  {
+    "id": "蛇足",
+    "hanja": "蛇足",
+    "reading": "사족",
+    "category": "idiom"
+  },
+  {
+    "id": "生口不網",
+    "hanja": "生口不網",
+    "reading": "생구불망",
+    "category": "idiom"
+  },
+  {
+    "id": "先憂後樂",
+    "hanja": "先憂後樂",
+    "reading": "선우후락",
+    "category": "idiom"
+  },
+  {
+    "id": "舌芒於劍",
+    "hanja": "舌芒於劍",
+    "reading": "설망어검",
+    "category": "idiom"
+  },
+  {
+    "id": "首邱初心",
+    "hanja": "首邱初心",
+    "reading": "수구초심",
+    "category": "idiom"
+  },
+  {
+    "id": "水深可知人心難知",
+    "hanja": "水深可知人心難知",
+    "reading": "수심가지인심난지",
+    "category": "idiom"
+  },
+  {
+    "id": "水滴石穿",
+    "hanja": "水滴石穿",
+    "reading": "수적석천",
+    "category": "idiom"
+  },
+  {
+    "id": "守株待兎",
+    "hanja": "守株待兎",
+    "reading": "수주대토",
+    "category": "idiom"
+  },
+  {
+    "id": "食不二味",
+    "hanja": "食不二味",
+    "reading": "식불이미",
+    "category": "idiom"
+  },
+  {
+    "id": "實利追求",
+    "hanja": "實利追求",
+    "reading": "실리추구",
+    "category": "idiom"
+  },
+  {
+    "id": "安貧樂道",
+    "hanja": "安貧樂道",
+    "reading": "안빈낙도",
+    "category": "idiom"
+  },
+  {
+    "id": "哀而不悲",
+    "hanja": "哀而不悲",
+    "reading": "애이불비",
+    "category": "idiom"
+  },
+  {
+    "id": "藥房甘草",
+    "hanja": "藥房甘草",
+    "reading": "약방감초",
+    "category": "idiom"
+  },
+  {
+    "id": "弱肉强食",
+    "hanja": "弱肉强食",
+    "reading": "약육강식",
+    "category": "idiom"
+  },
+  {
+    "id": "兩手兼將",
+    "hanja": "兩手兼將",
+    "reading": "양수겸장",
+    "category": "idiom"
+  },
+  {
+    "id": "漁父之利",
+    "hanja": "漁父之利",
+    "reading": "어부지리",
+    "category": "idiom"
+  },
+  {
+    "id": "語不成說",
+    "hanja": "語不成說",
+    "reading": "어불성설",
+    "category": "idiom"
+  },
+  {
+    "id": "戀慕之情",
+    "hanja": "戀慕之情",
+    "reading": "연모지정",
+    "category": "idiom"
+  },
+  {
+    "id": "連戰連勝",
+    "hanja": "連戰連勝",
+    "reading": "연전연승",
+    "category": "idiom"
+  },
+  {
+    "id": "炎凉世態",
+    "hanja": "炎凉世態",
+    "reading": "염량세태",
+    "category": "idiom"
+  },
+  {
+    "id": "寤寐不忘",
+    "hanja": "寤寐不忘",
+    "reading": "오매불망",
+    "category": "idiom"
+  },
+  {
+    "id": "吾不關焉",
+    "hanja": "吾不關焉",
+    "reading": "오불관언",
+    "category": "idiom"
+  },
+  {
+    "id": "烏飛梨落",
+    "hanja": "烏飛梨落",
+    "reading": "오비이락",
+    "category": "idiom"
+  },
+  {
+    "id": "五臟六腑",
+    "hanja": "五臟六腑",
+    "reading": "오장육부",
+    "category": "idiom"
+  },
+  {
+    "id": "溫故而知新",
+    "hanja": "溫故而知新",
+    "reading": "온고이지신",
+    "category": "idiom"
+  },
+  {
+    "id": "樂山樂水",
+    "hanja": "樂山樂水",
+    "reading": "요산요수",
+    "category": "idiom"
+  },
+  {
+    "id": "龍蛇飛騰",
+    "hanja": "龍蛇飛騰",
+    "reading": "용사비등",
+    "category": "idiom"
+  },
+  {
+    "id": "韋編三絶",
+    "hanja": "韋編三絶",
+    "reading": "위편삼절",
+    "category": "idiom"
+  },
+  {
+    "id": "類類相從",
+    "hanja": "類類相從",
+    "reading": "유유상종",
+    "category": "idiom"
+  },
+  {
+    "id": "飮水思源",
+    "hanja": "飮水思源",
+    "reading": "음수사원",
+    "category": "idiom"
+  },
+  {
+    "id": "陰地轉陽地變",
+    "hanja": "陰地轉陽地變",
+    "reading": "음지전양지변",
+    "category": "idiom"
+  },
+  {
+    "id": "吟風弄月",
+    "hanja": "吟風弄月",
+    "reading": "음풍농월",
+    "category": "idiom"
+  },
+  {
+    "id": "以管窺天",
+    "hanja": "以管窺天",
+    "reading": "이관규천",
+    "category": "idiom"
+  },
+  {
+    "id": "易如反掌",
+    "hanja": "易如反掌",
+    "reading": "이여반장",
+    "category": "idiom"
+  },
+  {
+    "id": "二律背反",
+    "hanja": "二律背反",
+    "reading": "이율배반",
+    "category": "idiom"
+  },
+  {
+    "id": "二人同心",
+    "hanja": "二人同心",
+    "reading": "이인동심",
+    "category": "idiom"
+  },
+  {
+    "id": "李下不整冠",
+    "hanja": "李下不整冠",
+    "reading": "이하부정관",
+    "category": "idiom"
+  },
+  {
+    "id": "一擧兩得",
+    "hanja": "一擧兩得",
+    "reading": "일거양득",
+    "category": "idiom"
+  },
+  {
+    "id": "一刀兩斷",
+    "hanja": "一刀兩斷",
+    "reading": "일도양단",
+    "category": "idiom"
+  },
+  {
+    "id": "一步不讓",
+    "hanja": "一步不讓",
+    "reading": "일보불양",
+    "category": "idiom"
+  },
+  {
+    "id": "日新又日新",
+    "hanja": "日新又日新",
+    "reading": "일신우일신",
+    "category": "idiom"
+  },
+  {
+    "id": "一攫千金",
+    "hanja": "一攫千金",
+    "reading": "일확천금",
+    "category": "idiom"
+  },
+  {
+    "id": "臨機應變",
+    "hanja": "臨機應變",
+    "reading": "임기응변",
+    "category": "idiom"
+  },
+  {
+    "id": "臨時方便",
+    "hanja": "臨時方便",
+    "reading": "임시방편",
+    "category": "idiom"
+  },
+  {
+    "id": "臨戰無退",
+    "hanja": "臨戰無退",
+    "reading": "임전무퇴",
+    "category": "idiom"
+  },
+  {
+    "id": "自强不息",
+    "hanja": "自强不息",
+    "reading": "자강불식",
+    "category": "idiom"
+  },
+  {
+    "id": "自我省察",
+    "hanja": "自我省察",
+    "reading": "자아성찰",
+    "category": "idiom"
+  },
+  {
+    "id": "自暴自棄",
+    "hanja": "自暴自棄",
+    "reading": "자포자기",
+    "category": "idiom"
+  },
+  {
+    "id": "自畵自讚",
+    "hanja": "自畵自讚",
+    "reading": "자화자찬",
+    "category": "idiom"
+  },
+  {
+    "id": "田園將蕪",
+    "hanja": "田園將蕪",
+    "reading": "전원장무",
+    "category": "idiom"
+  },
+  {
+    "id": "前程萬里",
+    "hanja": "前程萬里",
+    "reading": "전정만리",
+    "category": "idiom"
+  },
+  {
+    "id": "井底之蛙",
+    "hanja": "井底之蛙",
+    "reading": "정저지와",
+    "category": "idiom"
+  },
+  {
+    "id": "坐不安席",
+    "hanja": "坐不安席",
+    "reading": "좌불안석",
+    "category": "idiom"
+  },
+  {
+    "id": "衆寡不敵",
+    "hanja": "衆寡不敵",
+    "reading": "중과부적",
+    "category": "idiom"
+  },
+  {
+    "id": "重言復言",
+    "hanja": "重言復言",
+    "reading": "중언부언",
+    "category": "idiom"
+  },
+  {
+    "id": "中庸",
+    "hanja": "中庸",
+    "reading": "중용",
+    "category": "idiom"
+  },
+  {
+    "id": "之東之西",
+    "hanja": "之東之西",
+    "reading": "지동지서",
+    "category": "idiom"
+  },
+  {
+    "id": "至誠感天",
+    "hanja": "至誠感天",
+    "reading": "지성감천",
+    "category": "idiom"
+  },
+  {
+    "id": "知足不辱",
+    "hanja": "知足不辱",
+    "reading": "지족불욕",
+    "category": "idiom"
+  },
+  {
+    "id": "知足知富",
+    "hanja": "知足知富",
+    "reading": "지족지부",
+    "category": "idiom"
+  },
+  {
+    "id": "盡人事待天命",
+    "hanja": "盡人事待天命",
+    "reading": "진인사대천명",
+    "category": "idiom"
+  },
+  {
+    "id": "塵積爲山",
+    "hanja": "塵積爲山",
+    "reading": "진적위산",
+    "category": "idiom"
+  },
+  {
+    "id": "進退兩難",
+    "hanja": "進退兩難",
+    "reading": "진퇴양난",
+    "category": "idiom"
+  },
+  {
+    "id": "嫉逐排斥",
+    "hanja": "嫉逐排斥",
+    "reading": "질축배척",
+    "category": "idiom"
+  },
+  {
+    "id": "創業易守成難",
+    "hanja": "創業易守成難",
+    "reading": "창업이수성난",
+    "category": "idiom"
+  },
+  {
+    "id": "徹天之寃",
+    "hanja": "徹天之寃",
+    "reading": "철천지원",
+    "category": "idiom"
+  },
+  {
+    "id": "草綠同色",
+    "hanja": "草綠同色",
+    "reading": "초록동색",
+    "category": "idiom"
+  },
+  {
+    "id": "太平烟月",
+    "hanja": "太平烟月",
+    "reading": "태평연월",
+    "category": "idiom"
+  },
+  {
+    "id": "兎死狐悲",
+    "hanja": "兎死狐悲",
+    "reading": "토사호비",
+    "category": "idiom"
+  },
+  {
+    "id": "兎營三窟",
+    "hanja": "兎營三窟",
+    "reading": "토영삼굴",
+    "category": "idiom"
+  },
+  {
+    "id": "覇道",
+    "hanja": "覇道",
+    "reading": "패도",
+    "category": "idiom"
+  },
+  {
+    "id": "弊風惡習",
+    "hanja": "弊風惡習",
+    "reading": "폐풍악습",
+    "category": "idiom"
+  },
+  {
+    "id": "抱腹絶倒",
+    "hanja": "抱腹絶倒",
+    "reading": "포복절도",
+    "category": "idiom"
+  },
+  {
+    "id": "風樹之嘆",
+    "hanja": "風樹之嘆",
+    "reading": "풍수지탄",
+    "category": "idiom"
+  },
+  {
+    "id": "風餐露宿",
+    "hanja": "風餐露宿",
+    "reading": "풍찬노숙",
+    "category": "idiom"
+  },
+  {
+    "id": "學如不及",
+    "hanja": "學如不及",
+    "reading": "학여불급",
+    "category": "idiom"
+  },
+  {
+    "id": "偕老同穴",
+    "hanja": "偕老同穴",
+    "reading": "해로동혈",
+    "category": "idiom"
+  },
+  {
+    "id": "賢母良妻",
+    "hanja": "賢母良妻",
+    "reading": "현모양처",
+    "category": "idiom"
+  },
+  {
+    "id": "虎死留皮",
+    "hanja": "虎死留皮",
+    "reading": "호사유피",
+    "category": "idiom"
+  },
+  {
+    "id": "畵龍點睛",
+    "hanja": "畵龍點睛",
+    "reading": "화룡점정",
+    "category": "idiom"
+  },
+  {
+    "id": "畵蛇添足",
+    "hanja": "畵蛇添足",
+    "reading": "화사첨족",
+    "category": "idiom"
+  },
+  {
+    "id": "畵中之餠",
+    "hanja": "畵中之餠",
+    "reading": "화중지병",
+    "category": "idiom"
+  },
+  {
+    "id": "膾炙人口",
+    "hanja": "膾炙人口",
+    "reading": "회자인구",
+    "category": "idiom"
+  },
+  {
+    "id": "嚆矢",
+    "hanja": "嚆矢",
+    "reading": "효시",
+    "category": "idiom"
+  },
+  {
+    "id": "天地玄黃",
+    "hanja": "天地玄黃",
+    "reading": "천지현황",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "宇宙洪荒",
+    "hanja": "宇宙洪荒",
+    "reading": "우주홍황",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "日月盈昃",
+    "hanja": "日月盈昃",
+    "reading": "일월영측",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "辰宿列張",
+    "hanja": "辰宿列張",
+    "reading": "진수열장",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "寒來暑往",
+    "hanja": "寒來暑往",
+    "reading": "한래서왕",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "秋收冬藏",
+    "hanja": "秋收冬藏",
+    "reading": "추수동장",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "閏餘成歲",
+    "hanja": "閏餘成歲",
+    "reading": "윤여성세",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "律呂調陽",
+    "hanja": "律呂調陽",
+    "reading": "율려조양",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "雲騰致雨",
+    "hanja": "雲騰致雨",
+    "reading": "운등치우",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "露結爲霜",
+    "hanja": "露結爲霜",
+    "reading": "노결위상",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "金生麗水",
+    "hanja": "金生麗水",
+    "reading": "금생여수",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "玉出崑岡",
+    "hanja": "玉出崑岡",
+    "reading": "옥출곤강",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "劒號巨闕",
+    "hanja": "劒號巨闕",
+    "reading": "검호거궐",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "珠稱夜光",
+    "hanja": "珠稱夜光",
+    "reading": "주칭야광",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "果珍李奈",
+    "hanja": "果珍李奈",
+    "reading": "과진이내",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "菜重芥薑",
+    "hanja": "菜重芥薑",
+    "reading": "채중개강",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "海鹹河淡",
+    "hanja": "海鹹河淡",
+    "reading": "해함하담",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "鱗潛羽翔",
+    "hanja": "鱗潛羽翔",
+    "reading": "인잠우상",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "龍師火帝",
+    "hanja": "龍師火帝",
+    "reading": "용사화제",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "鳥官人皇",
+    "hanja": "鳥官人皇",
+    "reading": "조관인황",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "始制文字",
+    "hanja": "始制文字",
+    "reading": "시제문자",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "乃服衣裳",
+    "hanja": "乃服衣裳",
+    "reading": "내복의상",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "推位讓國",
+    "hanja": "推位讓國",
+    "reading": "추위양국",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "有虞陶唐",
+    "hanja": "有虞陶唐",
+    "reading": "유우도당",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "弔民伐罪",
+    "hanja": "弔民伐罪",
+    "reading": "조민벌죄",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "周發殷湯",
+    "hanja": "周發殷湯",
+    "reading": "주발은탕",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "坐朝問道",
+    "hanja": "坐朝問道",
+    "reading": "좌조문도",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "垂拱平章",
+    "hanja": "垂拱平章",
+    "reading": "수공평장",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "愛育黎首",
+    "hanja": "愛育黎首",
+    "reading": "애육여수",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "臣伏戎羌",
+    "hanja": "臣伏戎羌",
+    "reading": "신복융강",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "遐邇壹體",
+    "hanja": "遐邇壹體",
+    "reading": "하이일체",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "率賓歸王",
+    "hanja": "率賓歸王",
+    "reading": "솔빈귀왕",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "鳴鳳在樹",
+    "hanja": "鳴鳳在樹",
+    "reading": "명봉재수",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "白駒食場",
+    "hanja": "白駒食場",
+    "reading": "백구식장",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "化被草木",
+    "hanja": "化被草木",
+    "reading": "화피초목",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "賴及萬方",
+    "hanja": "賴及萬方",
+    "reading": "뇌급만방",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "蓋此身髮",
+    "hanja": "蓋此身髮",
+    "reading": "개차신발",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "四大五常",
+    "hanja": "四大五常",
+    "reading": "사대오상",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "恭惟鞠養",
+    "hanja": "恭惟鞠養",
+    "reading": "공유국양",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "豈敢毁傷",
+    "hanja": "豈敢毁傷",
+    "reading": "기감훼상",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "女慕貞烈",
+    "hanja": "女慕貞烈",
+    "reading": "여모정렬",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "男效才良",
+    "hanja": "男效才良",
+    "reading": "남효재량",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "知過必改",
+    "hanja": "知過必改",
+    "reading": "지과필개",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "得能莫忘",
+    "hanja": "得能莫忘",
+    "reading": "득능막망",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "罔談彼短",
+    "hanja": "罔談彼短",
+    "reading": "망담피단",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "靡恃己長",
+    "hanja": "靡恃己長",
+    "reading": "미시기장",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "信使可覆",
+    "hanja": "信使可覆",
+    "reading": "신사가복",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "器欲難量",
+    "hanja": "器欲難量",
+    "reading": "기욕난량",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "墨悲絲染",
+    "hanja": "墨悲絲染",
+    "reading": "묵비사염",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "詩讚羔羊",
+    "hanja": "詩讚羔羊",
+    "reading": "시찬고양",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "景行維賢",
+    "hanja": "景行維賢",
+    "reading": "경행유현",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "剋念作聖",
+    "hanja": "剋念作聖",
+    "reading": "극념작성",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "德建名立",
+    "hanja": "德建名立",
+    "reading": "덕건명립",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "形端表正",
+    "hanja": "形端表正",
+    "reading": "형단표정",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "空谷傳聲",
+    "hanja": "空谷傳聲",
+    "reading": "공곡전성",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "虛堂習聽",
+    "hanja": "虛堂習聽",
+    "reading": "허당습청",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "禍因惡積",
+    "hanja": "禍因惡積",
+    "reading": "화인악적",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "福緣善慶",
+    "hanja": "福緣善慶",
+    "reading": "복연선경",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "尺璧非寶",
+    "hanja": "尺璧非寶",
+    "reading": "척벽비보",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "寸陰是競",
+    "hanja": "寸陰是競",
+    "reading": "촌음시경",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "資父事君",
+    "hanja": "資父事君",
+    "reading": "자부사군",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "曰嚴與敬",
+    "hanja": "曰嚴與敬",
+    "reading": "왈엄여경",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "孝當竭力",
+    "hanja": "孝當竭力",
+    "reading": "효당갈력",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "忠則盡命",
+    "hanja": "忠則盡命",
+    "reading": "충즉진명",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "臨深履薄",
+    "hanja": "臨深履薄",
+    "reading": "임심리박",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "夙興溫淸",
+    "hanja": "夙興溫淸",
+    "reading": "숙흥온정",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "似蘭斯馨",
+    "hanja": "似蘭斯馨",
+    "reading": "사란사형",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "如松之盛",
+    "hanja": "如松之盛",
+    "reading": "여송지성",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "川流不息",
+    "hanja": "川流不息",
+    "reading": "천류불식",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "淵澄取映",
+    "hanja": "淵澄取映",
+    "reading": "연징취영",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "容止若思",
+    "hanja": "容止若思",
+    "reading": "용지약사",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "言辭安定",
+    "hanja": "言辭安定",
+    "reading": "언사안정",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "篤初誠美",
+    "hanja": "篤初誠美",
+    "reading": "독초성미",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "愼終宜令",
+    "hanja": "愼終宜令",
+    "reading": "신종의령",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "榮業所基",
+    "hanja": "榮業所基",
+    "reading": "영업소기",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "籍甚無竟",
+    "hanja": "籍甚無竟",
+    "reading": "적심무경",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "學優登仕",
+    "hanja": "學優登仕",
+    "reading": "학우등사",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "攝職從政",
+    "hanja": "攝職從政",
+    "reading": "섭직종정",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "存以甘棠",
+    "hanja": "存以甘棠",
+    "reading": "존이감당",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "去而益詠",
+    "hanja": "去而益詠",
+    "reading": "거이익영",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "樂殊貴賤",
+    "hanja": "樂殊貴賤",
+    "reading": "악수귀천",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "禮別尊卑",
+    "hanja": "禮別尊卑",
+    "reading": "예별존비",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "上和下睦",
+    "hanja": "上和下睦",
+    "reading": "상화하목",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "外受傅訓",
+    "hanja": "外受傅訓",
+    "reading": "외수부훈",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "入奉母儀",
+    "hanja": "入奉母儀",
+    "reading": "입봉모의",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "諸姑伯叔",
+    "hanja": "諸姑伯叔",
+    "reading": "제고백숙",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "猶子比兒",
+    "hanja": "猶子比兒",
+    "reading": "유자비아",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "孔懷兄弟",
+    "hanja": "孔懷兄弟",
+    "reading": "공회형제",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "同氣連枝",
+    "hanja": "同氣連枝",
+    "reading": "동기연지",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "交友投分",
+    "hanja": "交友投分",
+    "reading": "교우투분",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "切磨箴規",
+    "hanja": "切磨箴規",
+    "reading": "절마잠규",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "仁慈隱惻",
+    "hanja": "仁慈隱惻",
+    "reading": "인자은측",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "造次弗離",
+    "hanja": "造次弗離",
+    "reading": "조차불리",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "節義廉退",
+    "hanja": "節義廉退",
+    "reading": "절의염퇴",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "顚沛匪虧",
+    "hanja": "顚沛匪虧",
+    "reading": "전패비휴",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "性靜情逸",
+    "hanja": "性靜情逸",
+    "reading": "성정정일",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "心動神疲",
+    "hanja": "心動神疲",
+    "reading": "심동신피",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "守眞志滿",
+    "hanja": "守眞志滿",
+    "reading": "수진지만",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "逐物意移",
+    "hanja": "逐物意移",
+    "reading": "축물의이",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "堅持雅操",
+    "hanja": "堅持雅操",
+    "reading": "견지아조",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "好爵自縻",
+    "hanja": "好爵自縻",
+    "reading": "호작자미",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "都邑華夏",
+    "hanja": "都邑華夏",
+    "reading": "도읍화하",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "東西二京",
+    "hanja": "東西二京",
+    "reading": "동서이경",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "背邙面洛",
+    "hanja": "背邙面洛",
+    "reading": "배망면락",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "浮渭據涇",
+    "hanja": "浮渭據涇",
+    "reading": "부위거경",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "宮殿盤鬱",
+    "hanja": "宮殿盤鬱",
+    "reading": "궁전반울",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "樓觀飛驚",
+    "hanja": "樓觀飛驚",
+    "reading": "누관비경",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "圖寫禽獸",
+    "hanja": "圖寫禽獸",
+    "reading": "도사금수",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "畵綵仙靈",
+    "hanja": "畵綵仙靈",
+    "reading": "화채선령",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "丙舍傍啓",
+    "hanja": "丙舍傍啓",
+    "reading": "병사방계",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "甲帳對楹",
+    "hanja": "甲帳對楹",
+    "reading": "갑장대영",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "肆筵設席",
+    "hanja": "肆筵設席",
+    "reading": "사연설석",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "鼓瑟吹笙",
+    "hanja": "鼓瑟吹笙",
+    "reading": "고슬취생",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "陞階納陛",
+    "hanja": "陞階納陛",
+    "reading": "승계납폐",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "弁轉疑星",
+    "hanja": "弁轉疑星",
+    "reading": "변전의성",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "右通廣內",
+    "hanja": "右通廣內",
+    "reading": "우통광내",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "左達丞明",
+    "hanja": "左達丞明",
+    "reading": "좌달승명",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "旣集墳典",
+    "hanja": "旣集墳典",
+    "reading": "기집분전",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "亦聚群英",
+    "hanja": "亦聚群英",
+    "reading": "역취군영",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "杜藁鍾隷",
+    "hanja": "杜藁鍾隷",
+    "reading": "두고종례",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "漆書壁經",
+    "hanja": "漆書壁經",
+    "reading": "칠서벽경",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "府羅將相",
+    "hanja": "府羅將相",
+    "reading": "부라장상",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "路俠槐卿",
+    "hanja": "路俠槐卿",
+    "reading": "노협괴경",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "戶封八縣",
+    "hanja": "戶封八縣",
+    "reading": "호봉팔현",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "家給千兵",
+    "hanja": "家給千兵",
+    "reading": "가급천병",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "高冠陪輦",
+    "hanja": "高冠陪輦",
+    "reading": "고관배련",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "驅轂振纓",
+    "hanja": "驅轂振纓",
+    "reading": "구곡진영",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "世祿侈富",
+    "hanja": "世祿侈富",
+    "reading": "세록치부",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "車駕肥輕",
+    "hanja": "車駕肥輕",
+    "reading": "거가비경",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "策功茂實",
+    "hanja": "策功茂實",
+    "reading": "책공무실",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "勒碑刻銘",
+    "hanja": "勒碑刻銘",
+    "reading": "늑비각명",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "磻溪伊尹",
+    "hanja": "磻溪伊尹",
+    "reading": "반계이윤",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "佐時阿衡",
+    "hanja": "佐時阿衡",
+    "reading": "좌시아형",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "奄宅曲阜",
+    "hanja": "奄宅曲阜",
+    "reading": "엄택곡부",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "微旦孰營",
+    "hanja": "微旦孰營",
+    "reading": "미단숙영",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "桓公匡合",
+    "hanja": "桓公匡合",
+    "reading": "환공광합",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "濟弱扶傾",
+    "hanja": "濟弱扶傾",
+    "reading": "제약부경",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "綺廻漢惠",
+    "hanja": "綺廻漢惠",
+    "reading": "기회한혜",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "說感武丁",
+    "hanja": "說感武丁",
+    "reading": "열감무정",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "俊乂密勿",
+    "hanja": "俊乂密勿",
+    "reading": "준예밀물",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "多士寔寧",
+    "hanja": "多士寔寧",
+    "reading": "다사식녕",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "晉楚更覇",
+    "hanja": "晉楚更覇",
+    "reading": "진초갱패",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "趙魏困橫",
+    "hanja": "趙魏困橫",
+    "reading": "조위곤횡",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "假途滅虢",
+    "hanja": "假途滅虢",
+    "reading": "가도멸괵",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "踐土會盟",
+    "hanja": "踐土會盟",
+    "reading": "천토회맹",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "何遵約法",
+    "hanja": "何遵約法",
+    "reading": "하준약법",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "韓弊煩刑",
+    "hanja": "韓弊煩刑",
+    "reading": "한폐번형",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "起翦頗牧",
+    "hanja": "起翦頗牧",
+    "reading": "기전파목",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "用軍最精",
+    "hanja": "用軍最精",
+    "reading": "용군최정",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "宣威沙漠",
+    "hanja": "宣威沙漠",
+    "reading": "선위사막",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "馳譽丹靑",
+    "hanja": "馳譽丹靑",
+    "reading": "치예단청",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "九州禹跡",
+    "hanja": "九州禹跡",
+    "reading": "구주우적",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "百郡秦幷",
+    "hanja": "百郡秦幷",
+    "reading": "백군진병",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "嶽宗恒岱",
+    "hanja": "嶽宗恒岱",
+    "reading": "악종항대",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "禪主云亭",
+    "hanja": "禪主云亭",
+    "reading": "선주운정",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "雁門紫塞",
+    "hanja": "雁門紫塞",
+    "reading": "안문자새",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "鷄田赤城",
+    "hanja": "鷄田赤城",
+    "reading": "계전적성",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "昆池碣石",
+    "hanja": "昆池碣石",
+    "reading": "곤지갈석",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "鉅野洞庭",
+    "hanja": "鉅野洞庭",
+    "reading": "거야동정",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "曠遠綿邈",
+    "hanja": "曠遠綿邈",
+    "reading": "광원면막",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "巖岫杳冥",
+    "hanja": "巖岫杳冥",
+    "reading": "암수묘명",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "治本於農",
+    "hanja": "治本於農",
+    "reading": "치본어농",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "務玆稼穡",
+    "hanja": "務玆稼穡",
+    "reading": "무자가색",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "俶載南畝",
+    "hanja": "俶載南畝",
+    "reading": "숙재남묘",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "我藝黍稷",
+    "hanja": "我藝黍稷",
+    "reading": "아예서직",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "稅熟貢新",
+    "hanja": "稅熟貢新",
+    "reading": "세숙공신",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "勸賞黜陟",
+    "hanja": "勸賞黜陟",
+    "reading": "권상출척",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "孟軻敦素",
+    "hanja": "孟軻敦素",
+    "reading": "맹가돈소",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "史魚秉直",
+    "hanja": "史魚秉直",
+    "reading": "사어병직",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "庶幾中庸",
+    "hanja": "庶幾中庸",
+    "reading": "서기중용",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "勞謙謹勅",
+    "hanja": "勞謙謹勅",
+    "reading": "노겸근칙",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "聆音察理",
+    "hanja": "聆音察理",
+    "reading": "영음찰리",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "鑑貌辨色",
+    "hanja": "鑑貌辨色",
+    "reading": "감모변색",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "貽厥嘉猷",
+    "hanja": "貽厥嘉猷",
+    "reading": "이궐가유",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "勉其祗植",
+    "hanja": "勉其祗植",
+    "reading": "면기지식",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "省躬譏誡",
+    "hanja": "省躬譏誡",
+    "reading": "성궁기계",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "寵增抗極",
+    "hanja": "寵增抗極",
+    "reading": "총증항극",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "殆辱近恥",
+    "hanja": "殆辱近恥",
+    "reading": "태욕근치",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "林睾幸卽",
+    "hanja": "林睾幸卽",
+    "reading": "임고행즉",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "兩疎見機",
+    "hanja": "兩疎見機",
+    "reading": "양소견기",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "解組誰逼",
+    "hanja": "解組誰逼",
+    "reading": "해조수핍",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "索居閑處",
+    "hanja": "索居閑處",
+    "reading": "색거한처",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "沈黙寂寥",
+    "hanja": "沈黙寂寥",
+    "reading": "침묵적요",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "求古尋論",
+    "hanja": "求古尋論",
+    "reading": "구고심론",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "散慮逍遙",
+    "hanja": "散慮逍遙",
+    "reading": "산려소요",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "欣奏累遣",
+    "hanja": "欣奏累遣",
+    "reading": "흔주루견",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "戚謝歡招",
+    "hanja": "戚謝歡招",
+    "reading": "척사환초",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "渠荷的歷",
+    "hanja": "渠荷的歷",
+    "reading": "거하적력",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "園莽抽條",
+    "hanja": "園莽抽條",
+    "reading": "원망추조",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "枇杷晩翠",
+    "hanja": "枇杷晩翠",
+    "reading": "비파만취",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "梧桐早彫",
+    "hanja": "梧桐早彫",
+    "reading": "오동조조",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "陳根委翳",
+    "hanja": "陳根委翳",
+    "reading": "진근위예",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "落葉飄颻",
+    "hanja": "落葉飄颻",
+    "reading": "낙엽표요",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "遊鵾獨運",
+    "hanja": "遊鵾獨運",
+    "reading": "유곤독운",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "凌摩絳霄",
+    "hanja": "凌摩絳霄",
+    "reading": "능마강소",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "耽讀翫市",
+    "hanja": "耽讀翫市",
+    "reading": "탐독완시",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "寓目囊箱",
+    "hanja": "寓目囊箱",
+    "reading": "우목낭상",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "易輶攸畏",
+    "hanja": "易輶攸畏",
+    "reading": "역유유외",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "屬耳垣墻",
+    "hanja": "屬耳垣墻",
+    "reading": "속이원장",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "具膳飡飯",
+    "hanja": "具膳飡飯",
+    "reading": "구선손반",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "適口充腸",
+    "hanja": "適口充腸",
+    "reading": "적구충장",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "飽飫烹宰",
+    "hanja": "飽飫烹宰",
+    "reading": "포어팽재",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "飢厭糟糠",
+    "hanja": "飢厭糟糠",
+    "reading": "기염조강",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "親戚故舊",
+    "hanja": "親戚故舊",
+    "reading": "친척고구",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "老少異糧",
+    "hanja": "老少異糧",
+    "reading": "노소이량",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "妾御績紡",
+    "hanja": "妾御績紡",
+    "reading": "첩어적방",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "侍巾帷房",
+    "hanja": "侍巾帷房",
+    "reading": "시건유방",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "紈扇圓潔",
+    "hanja": "紈扇圓潔",
+    "reading": "환선원결",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "銀燭煒煌",
+    "hanja": "銀燭煒煌",
+    "reading": "은촉위황",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "晝眠夕寐",
+    "hanja": "晝眠夕寐",
+    "reading": "주면석매",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "藍筍象床",
+    "hanja": "藍筍象床",
+    "reading": "남순상상",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "絃歌酒讌",
+    "hanja": "絃歌酒讌",
+    "reading": "현가주연",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "接杯擧觴",
+    "hanja": "接杯擧觴",
+    "reading": "접배거상",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "矯手頓足",
+    "hanja": "矯手頓足",
+    "reading": "교수돈족",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "悅豫且康",
+    "hanja": "悅豫且康",
+    "reading": "열예차강",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "嫡後嗣續",
+    "hanja": "嫡後嗣續",
+    "reading": "적후사속",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "祭祀蒸嘗",
+    "hanja": "祭祀蒸嘗",
+    "reading": "제사증상",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "悚懼恐惶",
+    "hanja": "悚懼恐惶",
+    "reading": "송구공황",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "牋牒簡要",
+    "hanja": "牋牒簡要",
+    "reading": "전첩간요",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "顧答審詳",
+    "hanja": "顧答審詳",
+    "reading": "고답심상",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "骸垢想浴",
+    "hanja": "骸垢想浴",
+    "reading": "해구상욕",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "執熱願凉",
+    "hanja": "執熱願凉",
+    "reading": "집열원량",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "驢騾犢特",
+    "hanja": "驢騾犢特",
+    "reading": "여라독특",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "駭躍超驤",
+    "hanja": "駭躍超驤",
+    "reading": "해약초양",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "誅斬賊盜",
+    "hanja": "誅斬賊盜",
+    "reading": "주참적도",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "捕獲叛亡",
+    "hanja": "捕獲叛亡",
+    "reading": "포획반망",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "布射遼丸",
+    "hanja": "布射遼丸",
+    "reading": "포사료환",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "嵇琴阮嘯",
+    "hanja": "嵇琴阮嘯",
+    "reading": "혜금완소",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "恬筆倫紙",
+    "hanja": "恬筆倫紙",
+    "reading": "염필륜지",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "鈞巧任釣",
+    "hanja": "鈞巧任釣",
+    "reading": "균교임조",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "釋紛利俗",
+    "hanja": "釋紛利俗",
+    "reading": "석분리속",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "竝皆佳妙",
+    "hanja": "竝皆佳妙",
+    "reading": "병개가묘",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "毛施淑姿",
+    "hanja": "毛施淑姿",
+    "reading": "모시숙자",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "工嚬姸笑",
+    "hanja": "工嚬姸笑",
+    "reading": "공빈연소",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "年矢每催",
+    "hanja": "年矢每催",
+    "reading": "연시매최",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "羲暉朗曜",
+    "hanja": "羲暉朗曜",
+    "reading": "희휘낭요",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "璇璣懸斡",
+    "hanja": "璇璣懸斡",
+    "reading": "선기현알",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "晦魄環照",
+    "hanja": "晦魄環照",
+    "reading": "회백환조",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "指薪脩祐",
+    "hanja": "指薪脩祐",
+    "reading": "지신수우",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "永綏吉邵",
+    "hanja": "永綏吉邵",
+    "reading": "영수길소",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "矩步引領",
+    "hanja": "矩步引領",
+    "reading": "구보인령",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "俯仰廊廟",
+    "hanja": "俯仰廊廟",
+    "reading": "부앙낭묘",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "束帶矜莊",
+    "hanja": "束帶矜莊",
+    "reading": "속대긍장",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "徘徊瞻眺",
+    "hanja": "徘徊瞻眺",
+    "reading": "배회첨조",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "孤陋寡聞",
+    "hanja": "孤陋寡聞",
+    "reading": "고루과문",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "愚蒙等誚",
+    "hanja": "愚蒙等誚",
+    "reading": "우몽등초",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "謂語助者",
+    "hanja": "謂語助者",
+    "reading": "위어조자",
+    "category": "cheonjamun"
+  },
+  {
+    "id": "焉哉乎也",
+    "hanja": "焉哉乎也",
+    "reading": "언재호야",
+    "category": "cheonjamun"
+  }
+]
