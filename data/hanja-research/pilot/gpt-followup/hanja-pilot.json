@@ -1,0 +1,692 @@
+[
+  {
+    "character": "義",
+    "codePoint": "U+7FA9",
+    "hunEum": [
+      {
+        "hun": "옳을",
+        "eum": "의",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "hun": "뜻",
+        "eum": "의",
+        "sourceIds": [
+          "S2"
+        ]
+      }
+    ],
+    "radical": {
+      "character": "羊",
+      "name": null,
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    "totalStrokes": {
+      "value": 13,
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    "strokeAnimation": {
+      "availability": "unverified",
+      "provider": null,
+      "dataUrl": null,
+      "standardRegion": null,
+      "sourceIds": [
+        "S11",
+        "S12",
+        "S17"
+      ],
+      "validation": {
+        "filePage": "not_found_in_svgsKo",
+        "rawSvgObtained": "not_executed_access_blocked",
+        "svgXmlValid": "not_executed",
+        "perStrokePaths": "not_executed",
+        "strokeOrderParsed": "not_executed",
+        "animationPlayback": "not_executed",
+        "offlinePlayback": "not_executed",
+        "koreanLearningStandardCompared": "not_executed"
+      },
+      "regionalAlternatives": [
+        {
+          "region": "ZhHant",
+          "url": "https://github.com/parsimonhi/animCJK/blob/master/svgsZhHant/32681.svg",
+          "filePage": "file_page_confirmed",
+          "koreanStandardEquivalent": "unverified",
+          "svgXmlValid": "not_executed",
+          "animationPlayback": "not_executed"
+        }
+      ]
+    },
+    "status": "partial",
+    "issues": [
+      "한국어기초사전은 추가로 다수의 의(義) 뜻을 열거: 모든 뜻 채택 여부 검수 필요",
+      "AnimCJK svgsKo 개별 파일 접근에서 404; 다른 지역 폴더·다른 공급자의 해당 문자 데이터는 미확인",
+      "획순 원본 SVG 바이트 획득·파싱·실제 재생·한국 교육 획순 대조 미실행. 파일 페이지 존재와 구별할 것."
+    ],
+    "textEvidence": {
+      "url": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=71870",
+      "pageOpened": "confirmed_2026-10-30",
+      "fieldsOpened": [
+        "hunEum",
+        "radical.character",
+        "totalStrokes"
+      ],
+      "licensing": "CC-BY-SA-2.0-KR"
+    }
+  },
+  {
+    "character": "暉",
+    "codePoint": "U+6689",
+    "hunEum": [
+      {
+        "hun": "햇빛",
+        "eum": "휘",
+        "sourceIds": [
+          "S3"
+        ]
+      },
+      {
+        "hun": "빛날",
+        "eum": "휘",
+        "sourceIds": [
+          "S3"
+        ]
+      }
+    ],
+    "radical": {
+      "character": "日",
+      "name": null,
+      "sourceIds": [
+        "S3"
+      ]
+    },
+    "totalStrokes": {
+      "value": 13,
+      "sourceIds": [
+        "S3"
+      ]
+    },
+    "strokeAnimation": {
+      "availability": "unverified",
+      "provider": null,
+      "dataUrl": null,
+      "standardRegion": null,
+      "sourceIds": [
+        "S11",
+        "S12",
+        "S17"
+      ],
+      "validation": {
+        "filePage": "not_found_in_svgsKo",
+        "rawSvgObtained": "not_executed_access_blocked",
+        "svgXmlValid": "not_executed",
+        "perStrokePaths": "not_executed",
+        "strokeOrderParsed": "not_executed",
+        "animationPlayback": "not_executed",
+        "offlinePlayback": "not_executed",
+        "koreanLearningStandardCompared": "not_executed"
+      },
+      "regionalAlternatives": [
+        {
+          "region": "ZhHant",
+          "url": "https://github.com/parsimonhi/animCJK/blob/master/svgsZhHant/26249.svg",
+          "filePage": "404",
+          "koreanStandardEquivalent": "unverified",
+          "svgXmlValid": "not_executed",
+          "animationPlayback": "not_executed"
+        }
+      ]
+    },
+    "status": "partial",
+    "issues": [
+      "글자 정체성 유지: 暉을 輝로 대체 금지",
+      "AnimCJK svgsKo 개별 파일 접근에서 404; 다른 지역 폴더·다른 공급자의 해당 문자 데이터는 미확인",
+      "NAMEChart 직접 열람하였으나 상업 앱 재사용·번들 권리 미확인; 輝로 치환 금지.",
+      "획순 원본 SVG 바이트 획득·파싱·실제 재생·한국 교육 획순 대조 미실행. 파일 페이지 존재와 구별할 것."
+    ],
+    "textEvidence": {
+      "url": "https://www.namechart.kr/name/%EC%B6%98%ED%9C%98",
+      "pageOpened": "confirmed_2026-10-30",
+      "fieldsOpened": [
+        "hunEum",
+        "radical.character",
+        "totalStrokes"
+      ],
+      "licensing": "commercial_reuse_unconfirmed"
+    }
+  },
+  {
+    "character": "朗",
+    "codePoint": "U+6717",
+    "hunEum": [
+      {
+        "hun": "밝을",
+        "eum": "랑",
+        "sourceIds": [
+          "S4"
+        ]
+      }
+    ],
+    "radical": {
+      "character": "月",
+      "name": "달 월",
+      "sourceIds": [
+        "S4"
+      ]
+    },
+    "totalStrokes": {
+      "value": null,
+      "sourceIds": []
+    },
+    "strokeAnimation": {
+      "availability": "unverified",
+      "provider": "AnimCJK",
+      "dataUrl": "https://github.com/parsimonhi/animCJK/blob/master/svgsKo/26391.svg",
+      "standardRegion": "KR (AnimCJK svgsKo; 교육 표준 일치 미검증)",
+      "sourceIds": [
+        "S11",
+        "S12"
+      ],
+      "validation": {
+        "filePage": "confirmed",
+        "rawSvgObtained": "not_executed_access_blocked",
+        "svgXmlValid": "not_executed",
+        "perStrokePaths": "not_executed",
+        "strokeOrderParsed": "not_executed",
+        "animationPlayback": "not_executed",
+        "offlinePlayback": "not_executed",
+        "koreanLearningStandardCompared": "not_executed"
+      },
+      "regionalAlternatives": []
+    },
+    "status": "partial",
+    "issues": [
+      "모야랜드는 11획, 별도 인명용 한자 사이트는 10획: 학습 기준의 총획 확정 보류",
+      "원획 11 표기와 일반 필획 10 표기의 기준 차이 확인 필요",
+      "AnimCJK svgsKo 파일의 GitHub 항목 존재만 확인; SVG 원문 파싱·경로 수·한국 교육 표준 대조 미실행",
+      "원문 모야랜드 총 11획; 다른 민간 검색 요약 10획. 산정 기준/독립 검증 부재. null 유지.",
+      "획순 원본 SVG 바이트 획득·파싱·실제 재생·한국 교육 획순 대조 미실행. 파일 페이지 존재와 구별할 것."
+    ],
+    "textEvidence": {
+      "url": "https://www.moyaland.com/_new/hanja/item_01.php?it_id=1331446636",
+      "pageOpened": "confirmed_2026-10-30",
+      "fieldsOpened": [
+        "hunEum",
+        "radical.character",
+        "radical.name",
+        "totalStrokes:11_conflict_with_10"
+      ],
+      "licensing": "commercial_reuse_unconfirmed"
+    }
+  },
+  {
+    "character": "曜",
+    "codePoint": "U+66DC",
+    "hunEum": [
+      {
+        "hun": "빛날",
+        "eum": "요",
+        "sourceIds": [
+          "S5"
+        ]
+      }
+    ],
+    "radical": {
+      "character": "日",
+      "name": null,
+      "sourceIds": [
+        "S5"
+      ]
+    },
+    "totalStrokes": {
+      "value": 18,
+      "sourceIds": [
+        "S5"
+      ]
+    },
+    "strokeAnimation": {
+      "availability": "unverified",
+      "provider": "AnimCJK",
+      "dataUrl": "https://github.com/parsimonhi/animCJK/blob/master/svgsKo/26332.svg",
+      "standardRegion": "KR (AnimCJK svgsKo; 교육 표준 일치 미검증)",
+      "sourceIds": [
+        "S11",
+        "S12"
+      ],
+      "validation": {
+        "filePage": "confirmed",
+        "rawSvgObtained": "not_executed_access_blocked",
+        "svgXmlValid": "not_executed",
+        "perStrokePaths": "not_executed",
+        "strokeOrderParsed": "not_executed",
+        "animationPlayback": "not_executed",
+        "offlinePlayback": "not_executed",
+        "koreanLearningStandardCompared": "not_executed"
+      },
+      "regionalAlternatives": []
+    },
+    "status": "partial",
+    "issues": [
+      "AnimCJK svgsKo 파일의 GitHub 항목 존재만 확인; SVG 원문 파싱·경로 수·한국 교육 표준 대조 미실행",
+      "획순 원본 SVG 바이트 획득·파싱·실제 재생·한국 교육 획순 대조 미실행. 파일 페이지 존재와 구별할 것."
+    ],
+    "textEvidence": {
+      "url": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=67865",
+      "pageOpened": "confirmed_2026-10-30",
+      "fieldsOpened": [
+        "hunEum",
+        "radical.character",
+        "totalStrokes"
+      ],
+      "licensing": "CC-BY-SA-2.0-KR"
+    }
+  },
+  {
+    "character": "天",
+    "codePoint": "U+5929",
+    "hunEum": [
+      {
+        "hun": "하늘",
+        "eum": "천",
+        "sourceIds": [
+          "S6"
+        ]
+      }
+    ],
+    "radical": {
+      "character": "大",
+      "name": null,
+      "sourceIds": [
+        "S6"
+      ]
+    },
+    "totalStrokes": {
+      "value": 4,
+      "sourceIds": [
+        "S6"
+      ]
+    },
+    "strokeAnimation": {
+      "availability": "unverified",
+      "provider": "AnimCJK",
+      "dataUrl": "https://github.com/parsimonhi/animCJK/blob/master/svgsKo/22825.svg",
+      "standardRegion": "KR (AnimCJK svgsKo; 교육 표준 일치 미검증)",
+      "sourceIds": [
+        "S11",
+        "S12"
+      ],
+      "validation": {
+        "filePage": "confirmed",
+        "rawSvgObtained": "not_executed_access_blocked",
+        "svgXmlValid": "not_executed",
+        "perStrokePaths": "not_executed",
+        "strokeOrderParsed": "not_executed",
+        "animationPlayback": "not_executed",
+        "offlinePlayback": "not_executed",
+        "koreanLearningStandardCompared": "not_executed"
+      },
+      "regionalAlternatives": []
+    },
+    "status": "partial",
+    "issues": [
+      "AnimCJK svgsKo 파일의 GitHub 항목 존재만 확인; SVG 원문 파싱·경로 수·한국 교육 표준 대조 미실행",
+      "획순 원본 SVG 바이트 획득·파싱·실제 재생·한국 교육 획순 대조 미실행. 파일 페이지 존재와 구별할 것."
+    ],
+    "textEvidence": {
+      "url": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=77549",
+      "pageOpened": "confirmed_2026-10-30",
+      "fieldsOpened": [
+        "hunEum",
+        "radical.character",
+        "totalStrokes"
+      ],
+      "licensing": "CC-BY-SA-2.0-KR"
+    }
+  },
+  {
+    "character": "地",
+    "codePoint": "U+5730",
+    "hunEum": [
+      {
+        "hun": "땅",
+        "eum": "지",
+        "sourceIds": [
+          "S7"
+        ]
+      }
+    ],
+    "radical": {
+      "character": "土",
+      "name": null,
+      "sourceIds": [
+        "S7"
+      ]
+    },
+    "totalStrokes": {
+      "value": 6,
+      "sourceIds": [
+        "S7"
+      ]
+    },
+    "strokeAnimation": {
+      "availability": "unverified",
+      "provider": "AnimCJK",
+      "dataUrl": "https://github.com/parsimonhi/animCJK/blob/master/svgsKo/22320.svg",
+      "standardRegion": "KR (AnimCJK svgsKo; 교육 표준 일치 미검증)",
+      "sourceIds": [
+        "S11",
+        "S12"
+      ],
+      "validation": {
+        "filePage": "confirmed",
+        "rawSvgObtained": "not_executed_access_blocked",
+        "svgXmlValid": "not_executed",
+        "perStrokePaths": "not_executed",
+        "strokeOrderParsed": "not_executed",
+        "animationPlayback": "not_executed",
+        "offlinePlayback": "not_executed",
+        "koreanLearningStandardCompared": "not_executed"
+      },
+      "regionalAlternatives": []
+    },
+    "status": "partial",
+    "issues": [
+      "AnimCJK svgsKo 파일의 GitHub 항목 존재만 확인; SVG 원문 파싱·경로 수·한국 교육 표준 대조 미실행",
+      "획순 원본 SVG 바이트 획득·파싱·실제 재생·한국 교육 획순 대조 미실행. 파일 페이지 존재와 구별할 것."
+    ],
+    "textEvidence": {
+      "url": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=57319",
+      "pageOpened": "confirmed_2026-10-30",
+      "fieldsOpened": [
+        "hunEum",
+        "radical.character",
+        "totalStrokes"
+      ],
+      "licensing": "CC-BY-SA-2.0-KR"
+    }
+  },
+  {
+    "character": "玄",
+    "codePoint": "U+7384",
+    "hunEum": [
+      {
+        "hun": "검을",
+        "eum": "현",
+        "sourceIds": [
+          "S8"
+        ]
+      }
+    ],
+    "radical": {
+      "character": "玄",
+      "name": "검을 현",
+      "sourceIds": [
+        "S8"
+      ]
+    },
+    "totalStrokes": {
+      "value": 5,
+      "sourceIds": [
+        "S8"
+      ]
+    },
+    "strokeAnimation": {
+      "availability": "unverified",
+      "provider": null,
+      "dataUrl": null,
+      "standardRegion": null,
+      "sourceIds": [
+        "S11",
+        "S12",
+        "S17"
+      ],
+      "validation": {
+        "filePage": "not_found_in_svgsKo",
+        "rawSvgObtained": "not_executed_access_blocked",
+        "svgXmlValid": "not_executed",
+        "perStrokePaths": "not_executed",
+        "strokeOrderParsed": "not_executed",
+        "animationPlayback": "not_executed",
+        "offlinePlayback": "not_executed",
+        "koreanLearningStandardCompared": "not_executed"
+      },
+      "regionalAlternatives": [
+        {
+          "region": "Ja",
+          "url": "https://github.com/parsimonhi/animCJK/blob/master/svgsJa/29572.svg",
+          "filePage": "file_page_confirmed",
+          "koreanStandardEquivalent": "unverified",
+          "svgXmlValid": "not_executed",
+          "animationPlayback": "not_executed"
+        }
+      ]
+    },
+    "status": "partial",
+    "issues": [
+      "AnimCJK svgsKo 개별 파일 접근에서 404; 다른 지역 폴더·다른 공급자의 해당 문자 데이터는 미확인",
+      "획순 원본 SVG 바이트 획득·파싱·실제 재생·한국 교육 획순 대조 미실행. 파일 페이지 존재와 구별할 것."
+    ],
+    "textEvidence": {
+      "url": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=87160",
+      "pageOpened": "confirmed_2026-10-30",
+      "fieldsOpened": [
+        "hunEum",
+        "radical.character",
+        "totalStrokes"
+      ],
+      "licensing": "CC-BY-SA-2.0-KR"
+    }
+  },
+  {
+    "character": "黃",
+    "codePoint": "U+9EC3",
+    "hunEum": [
+      {
+        "hun": "누를",
+        "eum": "황",
+        "sourceIds": [
+          "S9"
+        ]
+      }
+    ],
+    "radical": {
+      "character": "黃",
+      "name": "누를 황",
+      "sourceIds": [
+        "S9"
+      ]
+    },
+    "totalStrokes": {
+      "value": 12,
+      "sourceIds": [
+        "S9"
+      ]
+    },
+    "strokeAnimation": {
+      "availability": "unverified",
+      "provider": "AnimCJK",
+      "dataUrl": "https://github.com/parsimonhi/animCJK/blob/master/svgsKo/40643.svg",
+      "standardRegion": "KR (AnimCJK svgsKo; 교육 표준 일치 미검증)",
+      "sourceIds": [
+        "S11",
+        "S12"
+      ],
+      "validation": {
+        "filePage": "confirmed",
+        "rawSvgObtained": "not_executed_access_blocked",
+        "svgXmlValid": "not_executed",
+        "perStrokePaths": "not_executed",
+        "strokeOrderParsed": "not_executed",
+        "animationPlayback": "not_executed",
+        "offlinePlayback": "not_executed",
+        "koreanLearningStandardCompared": "not_executed"
+      },
+      "regionalAlternatives": []
+    },
+    "status": "partial",
+    "issues": [
+      "글자 정체성 유지: 黃을 黄로 대체 금지",
+      "AnimCJK svgsKo 파일의 GitHub 항목 존재만 확인; SVG 원문 파싱·경로 수·한국 교육 표준 대조 미실행",
+      "획순 원본 SVG 바이트 획득·파싱·실제 재생·한국 교육 획순 대조 미실행. 파일 페이지 존재와 구별할 것."
+    ],
+    "textEvidence": {
+      "url": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=69796",
+      "pageOpened": "confirmed_2026-10-30",
+      "fieldsOpened": [
+        "hunEum",
+        "radical.character",
+        "totalStrokes"
+      ],
+      "licensing": "CC-BY-SA-2.0-KR"
+    }
+  },
+  {
+    "character": "宇",
+    "codePoint": "U+5B87",
+    "hunEum": [
+      {
+        "hun": "집",
+        "eum": "우",
+        "sourceIds": [
+          "S10"
+        ]
+      }
+    ],
+    "radical": {
+      "character": "宀",
+      "name": null,
+      "sourceIds": [
+        "S10"
+      ]
+    },
+    "totalStrokes": {
+      "value": 6,
+      "sourceIds": [
+        "S10"
+      ]
+    },
+    "strokeAnimation": {
+      "availability": "unverified",
+      "provider": null,
+      "dataUrl": null,
+      "standardRegion": null,
+      "sourceIds": [
+        "S11",
+        "S12",
+        "S17"
+      ],
+      "validation": {
+        "filePage": "not_found_in_svgsKo",
+        "rawSvgObtained": "not_executed_access_blocked",
+        "svgXmlValid": "not_executed",
+        "perStrokePaths": "not_executed",
+        "strokeOrderParsed": "not_executed",
+        "animationPlayback": "not_executed",
+        "offlinePlayback": "not_executed",
+        "koreanLearningStandardCompared": "not_executed"
+      },
+      "regionalAlternatives": [
+        {
+          "region": "Ja",
+          "url": "https://github.com/parsimonhi/animCJK/blob/master/svgsJa/23431.svg",
+          "filePage": "file_page_confirmed",
+          "koreanStandardEquivalent": "unverified",
+          "svgXmlValid": "not_executed",
+          "animationPlayback": "not_executed"
+        }
+      ]
+    },
+    "status": "partial",
+    "issues": [
+      "AnimCJK svgsKo 개별 파일 접근에서 404; 다른 지역 폴더·다른 공급자의 해당 문자 데이터는 미확인",
+      "획순 원본 SVG 바이트 획득·파싱·실제 재생·한국 교육 획순 대조 미실행. 파일 페이지 존재와 구별할 것."
+    ],
+    "textEvidence": {
+      "url": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=69382",
+      "pageOpened": "confirmed_2026-10-30",
+      "fieldsOpened": [
+        "hunEum",
+        "radical.character",
+        "totalStrokes"
+      ],
+      "licensing": "CC-BY-SA-2.0-KR"
+    }
+  },
+  {
+    "character": "宙",
+    "codePoint": "U+5B99",
+    "hunEum": [
+      {
+        "hun": "집",
+        "eum": "주",
+        "sourceIds": [
+          "S10"
+        ]
+      }
+    ],
+    "radical": {
+      "character": "宀",
+      "name": null,
+      "sourceIds": [
+        "S10"
+      ]
+    },
+    "totalStrokes": {
+      "value": 8,
+      "sourceIds": [
+        "S10"
+      ]
+    },
+    "strokeAnimation": {
+      "availability": "unverified",
+      "provider": null,
+      "dataUrl": null,
+      "standardRegion": null,
+      "sourceIds": [
+        "S11",
+        "S12",
+        "S17"
+      ],
+      "validation": {
+        "filePage": "not_found_in_svgsKo",
+        "rawSvgObtained": "not_executed_access_blocked",
+        "svgXmlValid": "not_executed",
+        "perStrokePaths": "not_executed",
+        "strokeOrderParsed": "not_executed",
+        "animationPlayback": "not_executed",
+        "offlinePlayback": "not_executed",
+        "koreanLearningStandardCompared": "not_executed"
+      },
+      "regionalAlternatives": [
+        {
+          "region": "Ja",
+          "url": "https://github.com/parsimonhi/animCJK/blob/master/svgsJa/23449.svg",
+          "filePage": "file_page_confirmed",
+          "koreanStandardEquivalent": "unverified",
+          "svgXmlValid": "not_executed",
+          "animationPlayback": "not_executed"
+        }
+      ]
+    },
+    "status": "partial",
+    "issues": [
+      "AnimCJK svgsKo 개별 파일 접근에서 404; 다른 지역 폴더·다른 공급자의 해당 문자 데이터는 미확인",
+      "획순 원본 SVG 바이트 획득·파싱·실제 재생·한국 교육 획순 대조 미실행. 파일 페이지 존재와 구별할 것."
+    ],
+    "textEvidence": {
+      "url": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=69382",
+      "pageOpened": "confirmed_2026-10-30",
+      "fieldsOpened": [
+        "hunEum",
+        "radical.character",
+        "totalStrokes"
+      ],
+      "licensing": "CC-BY-SA-2.0-KR"
+    }
+  }
+]

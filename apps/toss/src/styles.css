@@ -88,6 +88,9 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8p
 .floating-answer .answer-candidate { padding-right: 40px; }
 .floating-answer .input-row { margin-top: 24px; }
 .answer-heading label { font-size: 15px; font-weight: 700; }
+.step-answer-heading label { color: #243a36; }
+.answer-step-number { color: #568667; }
+.step-answer-heading .answer-step-text { margin-left: 6px; }
 .hint-heading { margin-bottom: 12px; }
 .app { padding-bottom: calc(var(--bottom-dock-height, 100px) + 24px); }
 .bottom-dock { position: fixed; z-index: 10; bottom: 0; left: 50%; transform: translateX(-50%); width: min(100%, 760px); background: #fff; }
@@ -125,3 +128,9 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8p
   .completion-celebration { display: none; }
   .completion-confetti-piece { animation: none; }
 }
+
+/* Current English card example playback controls. */
+.example-heading { flex-wrap: wrap; }
+.card-speech { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+.card-speech .meaning-toggle { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; cursor: pointer; }
+.card-speech > span { font-size: 11px; }

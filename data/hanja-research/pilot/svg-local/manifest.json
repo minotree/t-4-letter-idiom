@@ -1,0 +1,49 @@
+﻿{
+    "repository":  "https://github.com/parsimonhi/animCJK",
+    "commit":  "36d0007b05a22377392738f0fa2d0a067d03d788",
+    "retrievedAt":  "2026-10-30T02:15:42.0846586Z",
+    "files":  [
+                  {
+                      "path":  "svgsKo/22825.svg",
+                      "url":  "https://raw.githubusercontent.com/parsimonhi/animCJK/36d0007b05a22377392738f0fa2d0a067d03d788/svgsKo/22825.svg",
+                      "status":  "downloaded",
+                      "sha256":  "49738D18FDE6878AA7EFAF8B416E323BF02DCD7AECA23A1DD4C83013FFA11471"
+                  },
+                  {
+                      "path":  "svgsKo/22320.svg",
+                      "url":  "https://raw.githubusercontent.com/parsimonhi/animCJK/36d0007b05a22377392738f0fa2d0a067d03d788/svgsKo/22320.svg",
+                      "status":  "downloaded",
+                      "sha256":  "BF7FC5C059D89E647F5FB54A49F5AC02E0AAD79689EBC1E92615C782EBB122B1"
+                  },
+                  {
+                      "path":  "svgsKo/26391.svg",
+                      "url":  "https://raw.githubusercontent.com/parsimonhi/animCJK/36d0007b05a22377392738f0fa2d0a067d03d788/svgsKo/26391.svg",
+                      "status":  "downloaded",
+                      "sha256":  "AC64438EDC7C41FF06C94139745951703CD5C4C204C47D1DF54904A25DDE36BE"
+                  },
+                  {
+                      "path":  "svgsKo/26332.svg",
+                      "url":  "https://raw.githubusercontent.com/parsimonhi/animCJK/36d0007b05a22377392738f0fa2d0a067d03d788/svgsKo/26332.svg",
+                      "status":  "downloaded",
+                      "sha256":  "9D90F50FDEFA820F9F07031D0493877E05D692B8B975E61C329AA88DE16A0AD9"
+                  },
+                  {
+                      "path":  "svgsKo/40643.svg",
+                      "url":  "https://raw.githubusercontent.com/parsimonhi/animCJK/36d0007b05a22377392738f0fa2d0a067d03d788/svgsKo/40643.svg",
+                      "status":  "downloaded",
+                      "sha256":  "C3363C3C5B7F918236D6A0746553FE0D365437608046090F354EC235F3A41774"
+                  },
+                  {
+                      "path":  "licenses/COPYING.txt",
+                      "url":  "https://raw.githubusercontent.com/parsimonhi/animCJK/36d0007b05a22377392738f0fa2d0a067d03d788/licenses/COPYING.txt",
+                      "status":  "downloaded",
+                      "sha256":  "19BAA5148C9709776A95D78BF451A909086D7EB424B548C044C70FC1BF8330F2"
+                  },
+                  {
+                      "path":  "licenses/APL/english/ARPHICPL.TXT",
+                      "url":  "https://raw.githubusercontent.com/parsimonhi/animCJK/36d0007b05a22377392738f0fa2d0a067d03d788/licenses/APL/english/ARPHICPL.TXT",
+                      "status":  "downloaded",
+                      "sha256":  "3A5E90C0957524A89E48203FEBCD4492CA4393678ABAA7E5B4D70F3FF32B386D"
+                  }
+              ]
+}

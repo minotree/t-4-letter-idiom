@@ -1,0 +1,171 @@
+{
+  "commit": "36d0007b05a22377392738f0fa2d0a067d03d788",
+  "results": [
+    {
+      "character": "天",
+      "file": "22825.svg",
+      "outlineCount": 4,
+      "animatedPathCount": 4,
+      "delaysSeconds": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "checks": {
+        "sha256MatchesManifest": true,
+        "svgRoot": true,
+        "characterId": true,
+        "uniqueIds": true,
+        "nonEmptyPaths": true,
+        "sequentialStrokeIds": true,
+        "matchingStrokeCounts": true,
+        "increasingDelays": true,
+        "clipReferencesResolve": true,
+        "noScriptsOrForeignObjects": true,
+        "noExternalReferences": true
+      },
+      "passed": true,
+      "koreanLearningStandardCompared": false
+    },
+    {
+      "character": "地",
+      "file": "22320.svg",
+      "outlineCount": 6,
+      "animatedPathCount": 6,
+      "delaysSeconds": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0
+      ],
+      "checks": {
+        "sha256MatchesManifest": true,
+        "svgRoot": true,
+        "characterId": true,
+        "uniqueIds": true,
+        "nonEmptyPaths": true,
+        "sequentialStrokeIds": true,
+        "matchingStrokeCounts": true,
+        "increasingDelays": true,
+        "clipReferencesResolve": true,
+        "noScriptsOrForeignObjects": true,
+        "noExternalReferences": true
+      },
+      "passed": true,
+      "koreanLearningStandardCompared": false
+    },
+    {
+      "character": "朗",
+      "file": "26391.svg",
+      "outlineCount": 11,
+      "animatedPathCount": 11,
+      "delaysSeconds": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0
+      ],
+      "checks": {
+        "sha256MatchesManifest": true,
+        "svgRoot": true,
+        "characterId": true,
+        "uniqueIds": true,
+        "nonEmptyPaths": true,
+        "sequentialStrokeIds": true,
+        "matchingStrokeCounts": true,
+        "increasingDelays": true,
+        "clipReferencesResolve": true,
+        "noScriptsOrForeignObjects": true,
+        "noExternalReferences": true
+      },
+      "passed": true,
+      "koreanLearningStandardCompared": false
+    },
+    {
+      "character": "曜",
+      "file": "26332.svg",
+      "outlineCount": 18,
+      "animatedPathCount": 18,
+      "delaysSeconds": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0
+      ],
+      "checks": {
+        "sha256MatchesManifest": true,
+        "svgRoot": true,
+        "characterId": true,
+        "uniqueIds": true,
+        "nonEmptyPaths": true,
+        "sequentialStrokeIds": true,
+        "matchingStrokeCounts": true,
+        "increasingDelays": true,
+        "clipReferencesResolve": true,
+        "noScriptsOrForeignObjects": true,
+        "noExternalReferences": true
+      },
+      "passed": true,
+      "koreanLearningStandardCompared": false
+    },
+    {
+      "character": "黃",
+      "file": "40643.svg",
+      "outlineCount": 12,
+      "animatedPathCount": 12,
+      "delaysSeconds": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0
+      ],
+      "checks": {
+        "sha256MatchesManifest": true,
+        "svgRoot": true,
+        "characterId": true,
+        "uniqueIds": true,
+        "nonEmptyPaths": true,
+        "sequentialStrokeIds": true,
+        "matchingStrokeCounts": true,
+        "increasingDelays": true,
+        "clipReferencesResolve": true,
+        "noScriptsOrForeignObjects": true,
+        "noExternalReferences": true
+      },
+      "passed": true,
+      "koreanLearningStandardCompared": false
+    }
+  ]
+}

@@ -748,3 +748,9 @@
 /* Match candidate text to the 20px journey card titles. */
 .hanja-candidate-choice > strong, .floating-answer-heading .answer-hanja { font-family: "Batang", serif; font-size: 20px; overflow-wrap: anywhere; }
 .english-candidate-choice .candidate-length, .english-candidate-choice .candidate-synonym, .english-learning #english-answer { font-size: 20px; }
+
+/* Current English card example playback controls. */
+.example-heading { flex-wrap: wrap; }
+.card-speech { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+.card-speech .meaning-toggle { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; cursor: pointer; }
+.card-speech > span { font-size: 11px; }

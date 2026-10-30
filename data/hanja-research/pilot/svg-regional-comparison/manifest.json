@@ -1,0 +1,23 @@
+﻿{
+    "commit":  "36d0007b05a22377392738f0fa2d0a067d03d788",
+    "files":  [
+                  {
+                      "file":  "svgsJa-26249.svg",
+                      "url":  "https://raw.githubusercontent.com/parsimonhi/animCJK/36d0007b05a22377392738f0fa2d0a067d03d788/svgsJa/26249.svg",
+                      "sha256":  "D0D5D0D1E24BA583567395C4267C51F04D5C25235A798459B336A947DC2AD0DC",
+                      "status":  "downloaded"
+                  },
+                  {
+                      "file":  "svgsJa-32690.svg",
+                      "url":  "https://raw.githubusercontent.com/parsimonhi/animCJK/36d0007b05a22377392738f0fa2d0a067d03d788/svgsJa/32690.svg",
+                      "sha256":  "FE1B45E27826A32035A18A62F91C8B2B832CFC144E496F407AE5719053A7014D",
+                      "status":  "downloaded"
+                  },
+                  {
+                      "file":  "svgsZhHans-32690.svg",
+                      "url":  "https://raw.githubusercontent.com/parsimonhi/animCJK/36d0007b05a22377392738f0fa2d0a067d03d788/svgsZhHans/32690.svg",
+                      "sha256":  "64F1D913A95CE9EA0F139E0B40273D733178350272C84D9CAC6B00BCE3488502",
+                      "status":  "downloaded"
+                  }
+              ]
+}

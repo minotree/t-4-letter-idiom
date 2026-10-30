@@ -1,0 +1,2223 @@
+{
+  "summary": {
+    "datasetSha256": "750b07e087418acf0900b19b2a69bf9b7f2b2c0081d68ec7e446f9a5969780cc",
+    "characterCount": 1566,
+    "missingReadingCandidates": 44,
+    "missingWithHint": 38,
+    "missingWithHintCandidate": 38,
+    "radicalCharactersMapped": 1566,
+    "radicalCharactersWithNameCandidates": 1562,
+    "pilotComparable": 10,
+    "pilotEqual": 9,
+    "pilotConflict": 1,
+    "pilotIncomparable": 0
+  },
+  "characters": [
+    {
+      "character": "昃",
+      "codePoint": "U+6603",
+      "contexts": [
+        {
+          "id": "日月盈昃",
+          "hanja": "日月盈昃",
+          "reading": "일월영측"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": null,
+      "hintCandidates": [],
+      "radicalCandidates": [
+        {
+          "raw": "72.4",
+          "number": "72",
+          "remainingStrokes": "4",
+          "unicodeMapping": {
+            "symbol": "⽇",
+            "ideograph": "日"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "일",
+              "description": "날 일"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "8",
+      "status": "unreviewed"
+    },
+    {
+      "character": "為",
+      "codePoint": "U+70BA",
+      "contexts": [
+        {
+          "id": "橘化為枳",
+          "hanja": "橘化為枳",
+          "reading": "귤화위지"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": null,
+      "hintCandidates": [],
+      "radicalCandidates": [
+        {
+          "raw": "86.5",
+          "number": "86",
+          "remainingStrokes": "5",
+          "unicodeMapping": {
+            "symbol": "⽕",
+            "ideograph": "火"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "화",
+              "description": "불 화"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "9",
+      "status": "unreviewed"
+    },
+    {
+      "character": "虢",
+      "codePoint": "U+8662",
+      "contexts": [
+        {
+          "id": "假途滅虢",
+          "hanja": "假途滅虢",
+          "reading": "가도멸괵"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": null,
+      "hintCandidates": [],
+      "radicalCandidates": [
+        {
+          "raw": "141.9",
+          "number": "141",
+          "remainingStrokes": "9",
+          "unicodeMapping": {
+            "symbol": "⾌",
+            "ideograph": "虍"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "호",
+              "description": "범"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "15",
+      "status": "unreviewed"
+    },
+    {
+      "character": "輶",
+      "codePoint": "U+8F36",
+      "contexts": [
+        {
+          "id": "易輶攸畏",
+          "hanja": "易輶攸畏",
+          "reading": "역유유외"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": null,
+      "hintCandidates": [],
+      "radicalCandidates": [
+        {
+          "raw": "159.9",
+          "number": "159",
+          "remainingStrokes": "9",
+          "unicodeMapping": {
+            "symbol": "⾞",
+            "ideograph": "車"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "거",
+              "description": "수레 거, 그물 거, 잇몸 거"
+            },
+            {
+              "reading": "차",
+              "description": "수레 차"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "16",
+      "status": "unreviewed"
+    },
+    {
+      "character": "颻",
+      "codePoint": "U+98BB",
+      "contexts": [
+        {
+          "id": "落葉飄颻",
+          "hanja": "落葉飄颻",
+          "reading": "낙엽표요"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": null,
+      "hintCandidates": [],
+      "radicalCandidates": [
+        {
+          "raw": "182.10",
+          "number": "182",
+          "remainingStrokes": "10",
+          "unicodeMapping": {
+            "symbol": "⾵",
+            "ideograph": "風"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "풍",
+              "description": "바람 풍, 흘레할 풍, 울릴 풍, 풍속 풍, 경치 풍, 위엄 풍, 병풍 풍, 모양 풍"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "19",
+      "status": "unreviewed"
+    },
+    {
+      "character": "黙",
+      "codePoint": "U+9ED9",
+      "contexts": [
+        {
+          "id": "沈黙寂寥",
+          "hanja": "沈黙寂寥",
+          "reading": "침묵적요"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": null,
+      "hintCandidates": [],
+      "radicalCandidates": [
+        {
+          "raw": "86.11",
+          "number": "86",
+          "remainingStrokes": "11",
+          "unicodeMapping": {
+            "symbol": "⽕",
+            "ideograph": "火"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "화",
+              "description": "불 화"
+            }
+          ],
+          "status": "unreviewed"
+        },
+        {
+          "raw": "203.4",
+          "number": "203",
+          "remainingStrokes": "4",
+          "unicodeMapping": {
+            "symbol": "⿊",
+            "ideograph": "黑"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "흑",
+              "description": "검을 흑"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "15",
+      "status": "unreviewed"
+    },
+    {
+      "character": "車",
+      "codePoint": "U+F902",
+      "contexts": [
+        {
+          "id": "車載斗量",
+          "hanja": "車載斗量",
+          "reading": "거재두량"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "車",
+      "hintCandidates": [
+        {
+          "reading": "거",
+          "description": "수레 거, 그물 거, 잇몸 거"
+        },
+        {
+          "reading": "차",
+          "description": "수레 차"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "159.0",
+          "number": "159",
+          "remainingStrokes": "0",
+          "unicodeMapping": {
+            "symbol": "⾞",
+            "ideograph": "車"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "거",
+              "description": "수레 거, 그물 거, 잇몸 거"
+            },
+            {
+              "reading": "차",
+              "description": "수레 차"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "7",
+      "status": "unreviewed"
+    },
+    {
+      "character": "金",
+      "codePoint": "U+F90A",
+      "contexts": [
+        {
+          "id": "堅如金石",
+          "hanja": "堅如金石",
+          "reading": "견여금석"
+        },
+        {
+          "id": "金烏玉兎",
+          "hanja": "金烏玉兎",
+          "reading": "금오옥토"
+        },
+        {
+          "id": "其利斷金",
+          "hanja": "其利斷金",
+          "reading": "기리단금"
+        },
+        {
+          "id": "斷金之交",
+          "hanja": "斷金之交",
+          "reading": "단금지교"
+        },
+        {
+          "id": "一攫千金",
+          "hanja": "一攫千金",
+          "reading": "일확천금"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "金",
+      "hintCandidates": [
+        {
+          "reading": "금",
+          "description": "성 금, 쇠 금"
+        },
+        {
+          "reading": "김",
+          "description": "사람의 성 김, 쇠 김"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "167.0",
+          "number": "167",
+          "remainingStrokes": "0",
+          "unicodeMapping": {
+            "symbol": "⾦",
+            "ideograph": "金"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "금",
+              "description": "성 금, 쇠 금"
+            },
+            {
+              "reading": "김",
+              "description": "사람의 성 김, 쇠 김"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "8",
+      "status": "unreviewed"
+    },
+    {
+      "character": "樂",
+      "codePoint": "U+F914",
+      "contexts": [
+        {
+          "id": "安貧樂道",
+          "hanja": "安貧樂道",
+          "reading": "안빈낙도"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "樂",
+      "hintCandidates": [
+        {
+          "reading": "낙",
+          "description": "즐길 낙"
+        },
+        {
+          "reading": "락",
+          "description": "즐거울 락, 즐길 락"
+        },
+        {
+          "reading": "악",
+          "description": "풍류 악, 즐길 악"
+        },
+        {
+          "reading": "요",
+          "description": "좋아할 요, 즐길 요"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "75.11",
+          "number": "75",
+          "remainingStrokes": "11",
+          "unicodeMapping": {
+            "symbol": "⽊",
+            "ideograph": "木"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "목",
+              "description": "나무 목"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "15",
+      "status": "unreviewed"
+    },
+    {
+      "character": "落",
+      "codePoint": "U+F918",
+      "contexts": [
+        {
+          "id": "孤城落日",
+          "hanja": "孤城落日",
+          "reading": "고성낙일"
+        },
+        {
+          "id": "落膽喪魂",
+          "hanja": "落膽喪魂",
+          "reading": "낙담상혼"
+        },
+        {
+          "id": "落穽下石",
+          "hanja": "落穽下石",
+          "reading": "낙정하석"
+        },
+        {
+          "id": "落花流水",
+          "hanja": "落花流水",
+          "reading": "낙화유수"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "落",
+      "hintCandidates": [
+        {
+          "reading": "낙",
+          "description": "떨어질 낙"
+        },
+        {
+          "reading": "락",
+          "description": "떨어질 락"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "140.9",
+          "number": "140",
+          "remainingStrokes": "9",
+          "unicodeMapping": {
+            "symbol": "⾋",
+            "ideograph": "艸"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "초",
+              "description": "풀 초"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "12",
+      "status": "unreviewed"
+    },
+    {
+      "character": "爛",
+      "codePoint": "U+F91E",
+      "contexts": [
+        {
+          "id": "爛商公論",
+          "hanja": "爛商公論",
+          "reading": "난상공론"
+        },
+        {
+          "id": "爛商討議",
+          "hanja": "爛商討議",
+          "reading": "난상토의"
+        },
+        {
+          "id": "百花爛漫",
+          "hanja": "百花爛漫",
+          "reading": "백화난만"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "爛",
+      "hintCandidates": [
+        {
+          "reading": "난",
+          "description": "문드러질 난"
+        },
+        {
+          "reading": "란",
+          "description": "문드러질 란"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "86.17",
+          "number": "86",
+          "remainingStrokes": "17",
+          "unicodeMapping": {
+            "symbol": "⽕",
+            "ideograph": "火"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "화",
+              "description": "불 화"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "21",
+      "status": "unreviewed"
+    },
+    {
+      "character": "盧",
+      "codePoint": "U+F933",
+      "contexts": [
+        {
+          "id": "盧生之夢",
+          "hanja": "盧生之夢",
+          "reading": "노생지몽"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "盧",
+      "hintCandidates": [
+        {
+          "reading": "노",
+          "description": "밥그릇 노"
+        },
+        {
+          "reading": "로",
+          "description": "밥그릇 로"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "108.11",
+          "number": "108",
+          "remainingStrokes": "11",
+          "unicodeMapping": {
+            "symbol": "⽫",
+            "ideograph": "皿"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "명",
+              "description": "그릇 명"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "16",
+      "status": "unreviewed"
+    },
+    {
+      "character": "露",
+      "codePoint": "U+F938",
+      "contexts": [
+        {
+          "id": "風餐露宿",
+          "hanja": "風餐露宿",
+          "reading": "풍찬노숙"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "露",
+      "hintCandidates": [
+        {
+          "reading": "노",
+          "description": "이슬 노"
+        },
+        {
+          "reading": "로",
+          "description": "이슬 로"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "173.12",
+          "number": "173",
+          "remainingStrokes": "12",
+          "unicodeMapping": {
+            "symbol": "⾬",
+            "ideograph": "雨"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "우",
+              "description": "비 우"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "21",
+      "status": "unreviewed"
+    },
+    {
+      "character": "綠",
+      "codePoint": "U+F93D",
+      "contexts": [
+        {
+          "id": "綠衣紅裳",
+          "hanja": "綠衣紅裳",
+          "reading": "녹의홍상"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "綠",
+      "hintCandidates": [
+        {
+          "reading": "녹",
+          "description": "초록빛 녹"
+        },
+        {
+          "reading": "록",
+          "description": "초록빛 록"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "120.8",
+          "number": "120",
+          "remainingStrokes": "8",
+          "unicodeMapping": {
+            "symbol": "⽷",
+            "ideograph": "糸"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "멱",
+              "description": "실"
+            },
+            {
+              "reading": "사",
+              "description": "가는 실 사"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "14",
+      "status": "unreviewed"
+    },
+    {
+      "character": "論",
+      "codePoint": "U+F941",
+      "contexts": [
+        {
+          "id": "論功行賞",
+          "hanja": "論功行賞",
+          "reading": "논공행상"
+        },
+        {
+          "id": "論點逸脫",
+          "hanja": "論點逸脫",
+          "reading": "논점일탈"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "論",
+      "hintCandidates": [
+        {
+          "reading": "논",
+          "description": "말할 논"
+        },
+        {
+          "reading": "론",
+          "description": "말할 론"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "149.8",
+          "number": "149",
+          "remainingStrokes": "8",
+          "unicodeMapping": {
+            "symbol": "⾔",
+            "ideograph": "言"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "언",
+              "description": "말씀 언, 자기 언, 우뚝할 언"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "15",
+      "status": "unreviewed"
+    },
+    {
+      "character": "弄",
+      "codePoint": "U+F943",
+      "contexts": [
+        {
+          "id": "弄瓦之慶",
+          "hanja": "弄瓦之慶",
+          "reading": "농와지경"
+        },
+        {
+          "id": "弄璋之慶",
+          "hanja": "弄璋之慶",
+          "reading": "농장지경"
+        },
+        {
+          "id": "吟風弄月",
+          "hanja": "吟風弄月",
+          "reading": "음풍농월"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "弄",
+      "hintCandidates": [
+        {
+          "reading": "농",
+          "description": "희롱할 농"
+        },
+        {
+          "reading": "롱",
+          "description": "희롱할 롱"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "55.4",
+          "number": "55",
+          "remainingStrokes": "4",
+          "unicodeMapping": {
+            "symbol": "⼶",
+            "ideograph": "廾"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "공",
+              "description": "들다"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "7",
+      "status": "unreviewed"
+    },
+    {
+      "character": "籠",
+      "codePoint": "U+F944",
+      "contexts": [
+        {
+          "id": "籠鳥戀雲",
+          "hanja": "籠鳥戀雲",
+          "reading": "농조연운"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "籠",
+      "hintCandidates": [
+        {
+          "reading": "농",
+          "description": "대그릇 농"
+        },
+        {
+          "reading": "롱",
+          "description": "대그릇 롱"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "118.16",
+          "number": "118",
+          "remainingStrokes": "16",
+          "unicodeMapping": {
+            "symbol": "⽵",
+            "ideograph": "竹"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "죽",
+              "description": "대 죽"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "22",
+      "status": "unreviewed"
+    },
+    {
+      "character": "雷",
+      "codePoint": "U+F949",
+      "contexts": [
+        {
+          "id": "附和雷同",
+          "hanja": "附和雷同",
+          "reading": "부화뇌동"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "雷",
+      "hintCandidates": [
+        {
+          "reading": "뇌",
+          "description": "우뢰 뇌, 우리 뇌"
+        },
+        {
+          "reading": "뢰",
+          "description": "우뢰 뢰, 우리 뢰"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "173.5",
+          "number": "173",
+          "remainingStrokes": "5",
+          "unicodeMapping": {
+            "symbol": "⾬",
+            "ideograph": "雨"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "우",
+              "description": "비 우"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "13",
+      "status": "unreviewed"
+    },
+    {
+      "character": "樓",
+      "codePoint": "U+F94C",
+      "contexts": [
+        {
+          "id": "砂上樓閣",
+          "hanja": "砂上樓閣",
+          "reading": "사상누각"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "樓",
+      "hintCandidates": [
+        {
+          "reading": "누",
+          "description": "다락 누"
+        },
+        {
+          "reading": "루",
+          "description": "다락 루"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "75.11",
+          "number": "75",
+          "remainingStrokes": "11",
+          "unicodeMapping": {
+            "symbol": "⽊",
+            "ideograph": "木"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "목",
+              "description": "나무 목"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "15",
+      "status": "unreviewed"
+    },
+    {
+      "character": "累",
+      "codePoint": "U+F94F",
+      "contexts": [
+        {
+          "id": "累卵之危",
+          "hanja": "累卵之危",
+          "reading": "누란지위"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "累",
+      "hintCandidates": [
+        {
+          "reading": "누",
+          "description": "포갤 누, 묶을 누"
+        },
+        {
+          "reading": "루",
+          "description": "묶을 루"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "120.5",
+          "number": "120",
+          "remainingStrokes": "5",
+          "unicodeMapping": {
+            "symbol": "⽷",
+            "ideograph": "糸"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "멱",
+              "description": "실"
+            },
+            {
+              "reading": "사",
+              "description": "가는 실 사"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "11",
+      "status": "unreviewed"
+    },
+    {
+      "character": "樂",
+      "codePoint": "U+F95C",
+      "contexts": [
+        {
+          "id": "同苦同樂",
+          "hanja": "同苦同樂",
+          "reading": "동고동락"
+        },
+        {
+          "id": "伯樂一顧",
+          "hanja": "伯樂一顧",
+          "reading": "백낙일고"
+        },
+        {
+          "id": "先憂後樂",
+          "hanja": "先憂後樂",
+          "reading": "선우후락"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "樂",
+      "hintCandidates": [
+        {
+          "reading": "낙",
+          "description": "즐길 낙"
+        },
+        {
+          "reading": "락",
+          "description": "즐거울 락, 즐길 락"
+        },
+        {
+          "reading": "악",
+          "description": "풍류 악, 즐길 악"
+        },
+        {
+          "reading": "요",
+          "description": "좋아할 요, 즐길 요"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "75.11",
+          "number": "75",
+          "remainingStrokes": "11",
+          "unicodeMapping": {
+            "symbol": "⽊",
+            "ideograph": "木"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "목",
+              "description": "나무 목"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "15",
+      "status": "unreviewed"
+    },
+    {
+      "character": "復",
+      "codePoint": "U+F966",
+      "contexts": [
+        {
+          "id": "重言復言",
+          "hanja": "重言復言",
+          "reading": "중언부언"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "復",
+      "hintCandidates": [
+        {
+          "reading": "복",
+          "description": "돌아올 복"
+        },
+        {
+          "reading": "부",
+          "description": "다시 부, 돌아올 부"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "60.9",
+          "number": "60",
+          "remainingStrokes": "9",
+          "unicodeMapping": {
+            "symbol": "⼻",
+            "ideograph": "彳"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "척",
+              "description": "자축거리다"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "12",
+      "status": "unreviewed"
+    },
+    {
+      "character": "不",
+      "codePoint": "U+F967",
+      "contexts": [
+        {
+          "id": "敢不生心",
+          "hanja": "敢不生心",
+          "reading": "감불생심"
+        },
+        {
+          "id": "堅忍不拔",
+          "hanja": "堅忍不拔",
+          "reading": "견인불발"
+        },
+        {
+          "id": "過如不及",
+          "hanja": "過如不及",
+          "reading": "과여불급"
+        },
+        {
+          "id": "過猶不及",
+          "hanja": "過猶不及",
+          "reading": "과유불급"
+        },
+        {
+          "id": "屈而不信",
+          "hanja": "屈而不信",
+          "reading": "굴이불신"
+        },
+        {
+          "id": "杜門不出",
+          "hanja": "杜門不出",
+          "reading": "두문불출"
+        },
+        {
+          "id": "燈下不明",
+          "hanja": "燈下不明",
+          "reading": "등하불명"
+        },
+        {
+          "id": "目不識丁",
+          "hanja": "目不識丁",
+          "reading": "목불식정"
+        },
+        {
+          "id": "目不忍見",
+          "hanja": "目不忍見",
+          "reading": "목불인견"
+        },
+        {
+          "id": "無不干涉",
+          "hanja": "無不干涉",
+          "reading": "무불간섭"
+        },
+        {
+          "id": "無不通知",
+          "hanja": "無不通知",
+          "reading": "무불통지"
+        },
+        {
+          "id": "無所不爲",
+          "hanja": "無所不爲",
+          "reading": "무소불위"
+        },
+        {
+          "id": "百聞不如一見",
+          "hanja": "百聞不如一見",
+          "reading": "백문불여일견"
+        },
+        {
+          "id": "百折不屈",
+          "hanja": "百折不屈",
+          "reading": "백절불굴"
+        },
+        {
+          "id": "百折不撓",
+          "hanja": "百折不撓",
+          "reading": "백절불요"
+        },
+        {
+          "id": "不共戴天之讐",
+          "hanja": "不共戴天之讐",
+          "reading": "불공대천지수"
+        },
+        {
+          "id": "不立文字",
+          "hanja": "不立文字",
+          "reading": "불립문자"
+        },
+        {
+          "id": "不眠不休",
+          "hanja": "不眠不休",
+          "reading": "불면불휴"
+        },
+        {
+          "id": "不問可知",
+          "hanja": "不問可知",
+          "reading": "불문가지"
+        },
+        {
+          "id": "不問曲直",
+          "hanja": "不問曲直",
+          "reading": "불문곡직"
+        },
+        {
+          "id": "不伐不德",
+          "hanja": "不伐不德",
+          "reading": "불벌부덕"
+        },
+        {
+          "id": "不撓不屈",
+          "hanja": "不撓不屈",
+          "reading": "불요불굴"
+        },
+        {
+          "id": "不撤晝夜",
+          "hanja": "不撤晝夜",
+          "reading": "불철주야"
+        },
+        {
+          "id": "不肖之父",
+          "hanja": "不肖之父",
+          "reading": "불초지부"
+        },
+        {
+          "id": "不恥下問",
+          "hanja": "不恥下問",
+          "reading": "불치하문"
+        },
+        {
+          "id": "氷炭不相容",
+          "hanja": "氷炭不相容",
+          "reading": "빙탄불상용"
+        },
+        {
+          "id": "生口不網",
+          "hanja": "生口不網",
+          "reading": "생구불망"
+        },
+        {
+          "id": "食不二味",
+          "hanja": "食不二味",
+          "reading": "식불이미"
+        },
+        {
+          "id": "哀而不悲",
+          "hanja": "哀而不悲",
+          "reading": "애이불비"
+        },
+        {
+          "id": "語不成說",
+          "hanja": "語不成說",
+          "reading": "어불성설"
+        },
+        {
+          "id": "寤寐不忘",
+          "hanja": "寤寐不忘",
+          "reading": "오매불망"
+        },
+        {
+          "id": "吾不關焉",
+          "hanja": "吾不關焉",
+          "reading": "오불관언"
+        },
+        {
+          "id": "一步不讓",
+          "hanja": "一步不讓",
+          "reading": "일보불양"
+        },
+        {
+          "id": "自强不息",
+          "hanja": "自强不息",
+          "reading": "자강불식"
+        },
+        {
+          "id": "坐不安席",
+          "hanja": "坐不安席",
+          "reading": "좌불안석"
+        },
+        {
+          "id": "衆寡不敵",
+          "hanja": "衆寡不敵",
+          "reading": "중과부적"
+        },
+        {
+          "id": "知足不辱",
+          "hanja": "知足不辱",
+          "reading": "지족불욕"
+        },
+        {
+          "id": "學如不及",
+          "hanja": "學如不及",
+          "reading": "학여불급"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "不",
+      "hintCandidates": [
+        {
+          "reading": "부",
+          "description": "아닐 부"
+        },
+        {
+          "reading": "불",
+          "description": "아닐 불"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "1.3",
+          "number": "1",
+          "remainingStrokes": "3",
+          "unicodeMapping": {
+            "symbol": "⼀",
+            "ideograph": "一"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "일",
+              "description": "한 일"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "4",
+      "status": "unreviewed"
+    },
+    {
+      "character": "塞",
+      "codePoint": "U+F96C",
+      "contexts": [
+        {
+          "id": "拔本塞源",
+          "hanja": "拔本塞源",
+          "reading": "발본색원"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "塞",
+      "hintCandidates": [
+        {
+          "reading": "새",
+          "description": "변방 새, 변망 새"
+        },
+        {
+          "reading": "색",
+          "description": "막힐 색, 변망 색"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "32.10",
+          "number": "32",
+          "remainingStrokes": "10",
+          "unicodeMapping": {
+            "symbol": "⼟",
+            "ideograph": "土"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "토",
+              "description": "흙 토, 뿌리 토, 나라 토, 뭍 토"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "13",
+      "status": "unreviewed"
+    },
+    {
+      "character": "兩",
+      "codePoint": "U+F978",
+      "contexts": [
+        {
+          "id": "兩手兼將",
+          "hanja": "兩手兼將",
+          "reading": "양수겸장"
+        },
+        {
+          "id": "一擧兩得",
+          "hanja": "一擧兩得",
+          "reading": "일거양득"
+        },
+        {
+          "id": "一刀兩斷",
+          "hanja": "一刀兩斷",
+          "reading": "일도양단"
+        },
+        {
+          "id": "進退兩難",
+          "hanja": "進退兩難",
+          "reading": "진퇴양난"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "兩",
+      "hintCandidates": [
+        {
+          "reading": "량",
+          "description": "두 량, 둘 량"
+        },
+        {
+          "reading": "양",
+          "description": "두 량, 둘 양"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "11.6",
+          "number": "11",
+          "remainingStrokes": "6",
+          "unicodeMapping": {
+            "symbol": "⼊",
+            "ideograph": "入"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "입",
+              "description": "들 입"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "8",
+      "status": "unreviewed"
+    },
+    {
+      "character": "良",
+      "codePoint": "U+F97C",
+      "contexts": [
+        {
+          "id": "美風良俗",
+          "hanja": "美風良俗",
+          "reading": "미풍양속"
+        },
+        {
+          "id": "賢母良妻",
+          "hanja": "賢母良妻",
+          "reading": "현모양처"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "良",
+      "hintCandidates": [
+        {
+          "reading": "량",
+          "description": "좋을 량, 어질 량"
+        },
+        {
+          "reading": "양",
+          "description": "어질 량, 좋을 량, 남편 량"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "138.1",
+          "number": "138",
+          "remainingStrokes": "1",
+          "unicodeMapping": {
+            "symbol": "⾉",
+            "ideograph": "艮"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "간",
+              "description": "괘이름 간, 간방 간"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "7",
+      "status": "unreviewed"
+    },
+    {
+      "character": "女",
+      "codePoint": "U+F981",
+      "contexts": [
+        {
+          "id": "男負女戴",
+          "hanja": "男負女戴",
+          "reading": "남부여대"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "女",
+      "hintCandidates": [
+        {
+          "reading": "녀",
+          "description": "계집 녀"
+        },
+        {
+          "reading": "여",
+          "description": "계집 녀, 시집보낼 녀"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "38.0",
+          "number": "38",
+          "remainingStrokes": "0",
+          "unicodeMapping": {
+            "symbol": "⼥",
+            "ideograph": "女"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "녀",
+              "description": "계집 녀"
+            },
+            {
+              "reading": "여",
+              "description": "계집 녀, 시집보낼 녀"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "3",
+      "status": "unreviewed"
+    },
+    {
+      "character": "戀",
+      "codePoint": "U+F990",
+      "contexts": [
+        {
+          "id": "籠鳥戀雲",
+          "hanja": "籠鳥戀雲",
+          "reading": "농조연운"
+        },
+        {
+          "id": "戀慕之情",
+          "hanja": "戀慕之情",
+          "reading": "연모지정"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "戀",
+      "hintCandidates": [
+        {
+          "reading": "련",
+          "description": "사모할 련"
+        },
+        {
+          "reading": "연",
+          "description": "생각할 련, 사모할 련"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "61.19",
+          "number": "61",
+          "remainingStrokes": "19",
+          "unicodeMapping": {
+            "symbol": "⼼",
+            "ideograph": "心"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "심",
+              "description": "마음 심"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "23",
+      "status": "unreviewed"
+    },
+    {
+      "character": "連",
+      "codePoint": "U+F99A",
+      "contexts": [
+        {
+          "id": "連戰連勝",
+          "hanja": "連戰連勝",
+          "reading": "연전연승"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "連",
+      "hintCandidates": [
+        {
+          "reading": "련",
+          "description": "잇닿을 련, 연할 련"
+        },
+        {
+          "reading": "연",
+          "description": "이을 련, 끌릴 련, 연할 연"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "162.7",
+          "number": "162",
+          "remainingStrokes": "7",
+          "unicodeMapping": {
+            "symbol": "⾡",
+            "ideograph": "辵"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "착",
+              "description": "쉬엄쉬엄가다"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "10",
+      "status": "unreviewed"
+    },
+    {
+      "character": "裂",
+      "codePoint": "U+F9A0",
+      "contexts": [
+        {
+          "id": "四分五裂",
+          "hanja": "四分五裂",
+          "reading": "사분오열"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "裂",
+      "hintCandidates": [
+        {
+          "reading": "렬",
+          "description": "찢을 렬"
+        },
+        {
+          "reading": "열",
+          "description": "찢어질 렬, 비단 자투리 렬, 찢을 열"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "145.6",
+          "number": "145",
+          "remainingStrokes": "6",
+          "unicodeMapping": {
+            "symbol": "⾐",
+            "ideograph": "衣"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "의",
+              "description": "옷 의, 입을 의"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "12",
+      "status": "unreviewed"
+    },
+    {
+      "character": "令",
+      "codePoint": "U+F9A8",
+      "contexts": [
+        {
+          "id": "巧言令色",
+          "hanja": "巧言令色",
+          "reading": "교언영색"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "令",
+      "hintCandidates": [
+        {
+          "reading": "령",
+          "description": "명령 령, 시킬 령, 하여금 령"
+        },
+        {
+          "reading": "영",
+          "description": "하여금 령, 시킬 령, 가령 령, 개 목소리 령, 벼슬이름 령"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "9.3",
+          "number": "9",
+          "remainingStrokes": "3",
+          "unicodeMapping": {
+            "symbol": "⼈",
+            "ideograph": "人"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "인",
+              "description": "사람 인"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "5",
+      "status": "unreviewed"
+    },
+    {
+      "character": "樂",
+      "codePoint": "U+F9BF",
+      "contexts": [
+        {
+          "id": "樂山樂水",
+          "hanja": "樂山樂水",
+          "reading": "요산요수"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "樂",
+      "hintCandidates": [
+        {
+          "reading": "낙",
+          "description": "즐길 낙"
+        },
+        {
+          "reading": "락",
+          "description": "즐거울 락, 즐길 락"
+        },
+        {
+          "reading": "악",
+          "description": "풍류 악, 즐길 악"
+        },
+        {
+          "reading": "요",
+          "description": "좋아할 요, 즐길 요"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "75.11",
+          "number": "75",
+          "remainingStrokes": "11",
+          "unicodeMapping": {
+            "symbol": "⽊",
+            "ideograph": "木"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "목",
+              "description": "나무 목"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "15",
+      "status": "unreviewed"
+    },
+    {
+      "character": "龍",
+      "codePoint": "U+F9C4",
+      "contexts": [
+        {
+          "id": "龍蛇飛騰",
+          "hanja": "龍蛇飛騰",
+          "reading": "용사비등"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "龍",
+      "hintCandidates": [
+        {
+          "reading": "룡",
+          "description": "용 룡"
+        },
+        {
+          "reading": "용",
+          "description": "용 룡, 임금 룡"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "212.0",
+          "number": "212",
+          "remainingStrokes": "0",
+          "unicodeMapping": {
+            "symbol": "⿓",
+            "ideograph": "龍"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "룡",
+              "description": "용 룡"
+            },
+            {
+              "reading": "용",
+              "description": "용 룡, 임금 룡"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "16",
+      "status": "unreviewed"
+    },
+    {
+      "character": "流",
+      "codePoint": "U+F9CA",
+      "contexts": [
+        {
+          "id": "落花流水",
+          "hanja": "落花流水",
+          "reading": "낙화유수"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "流",
+      "hintCandidates": [
+        {
+          "reading": "류",
+          "description": "흐를 류"
+        },
+        {
+          "reading": "유",
+          "description": "흐를 류, 번져나갈 류, 구할 류, 내칠 류, 달아날 류, 무리 류, 귀양보낼 류"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "85.6",
+          "number": "85",
+          "remainingStrokes": "6",
+          "unicodeMapping": {
+            "symbol": "⽔",
+            "ideograph": "水"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "수",
+              "description": "물 수, 고를 수"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "9",
+      "status": "unreviewed"
+    },
+    {
+      "character": "留",
+      "codePoint": "U+F9CD",
+      "contexts": [
+        {
+          "id": "虎死留皮",
+          "hanja": "虎死留皮",
+          "reading": "호사유피"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "留",
+      "hintCandidates": [
+        {
+          "reading": "류",
+          "description": "머무를 류"
+        },
+        {
+          "reading": "유",
+          "description": "머무를 류, 그칠 류, 오랠 류, 횡사할 류"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "102.5",
+          "number": "102",
+          "remainingStrokes": "5",
+          "unicodeMapping": {
+            "symbol": "⽥",
+            "ideograph": "田"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "전",
+              "description": "밭 전, 사냥할 전, 논 전"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "10",
+      "status": "unreviewed"
+    },
+    {
+      "character": "類",
+      "codePoint": "U+F9D0",
+      "contexts": [
+        {
+          "id": "刻鵠類鶩",
+          "hanja": "刻鵠類鶩",
+          "reading": "각곡유목"
+        },
+        {
+          "id": "類類相從",
+          "hanja": "類類相從",
+          "reading": "유유상종"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "類",
+      "hintCandidates": [
+        {
+          "reading": "류",
+          "description": "무리 류"
+        },
+        {
+          "reading": "유",
+          "description": "같을 류, 나눌 류, 착할 류, 무리 류"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "181.10",
+          "number": "181",
+          "remainingStrokes": "10",
+          "unicodeMapping": {
+            "symbol": "⾴",
+            "ideograph": "頁"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "혈",
+              "description": "머리 혈, 마리 혈, 페이지(page) 혈"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "19",
+      "status": "unreviewed"
+    },
+    {
+      "character": "六",
+      "codePoint": "U+F9D1",
+      "contexts": [
+        {
+          "id": "五臟六腑",
+          "hanja": "五臟六腑",
+          "reading": "오장육부"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "六",
+      "hintCandidates": [
+        {
+          "reading": "륙",
+          "description": "여섯 륙"
+        },
+        {
+          "reading": "육",
+          "description": "여섯 륙, 나라이름 륙"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "12.2",
+          "number": "12",
+          "remainingStrokes": "2",
+          "unicodeMapping": {
+            "symbol": "⼋",
+            "ideograph": "八"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "팔",
+              "description": "여덟 팔"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "4",
+      "status": "unreviewed"
+    },
+    {
+      "character": "律",
+      "codePoint": "U+F9D8",
+      "contexts": [
+        {
+          "id": "二律背反",
+          "hanja": "二律背反",
+          "reading": "이율배반"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "律",
+      "hintCandidates": [
+        {
+          "reading": "률",
+          "description": "법 률"
+        },
+        {
+          "reading": "율",
+          "description": "법 률, 풍률 률, 지을 률, 저울질할 률"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "60.6",
+          "number": "60",
+          "remainingStrokes": "6",
+          "unicodeMapping": {
+            "symbol": "⼻",
+            "ideograph": "彳"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "척",
+              "description": "자축거리다"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "9",
+      "status": "unreviewed"
+    },
+    {
+      "character": "利",
+      "codePoint": "U+F9DD",
+      "contexts": [
+        {
+          "id": "甘言利說",
+          "hanja": "甘言利說",
+          "reading": "감언이설"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "利",
+      "hintCandidates": [
+        {
+          "reading": "리",
+          "description": "날카로울 리, 이로울 리"
+        },
+        {
+          "reading": "이",
+          "description": "날카로울 리, 이로울 리, 탐할 리, 편리할 리, 이자 리"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "18.5",
+          "number": "18",
+          "remainingStrokes": "5",
+          "unicodeMapping": {
+            "symbol": "⼑",
+            "ideograph": "刀"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "도",
+              "description": "칼 도"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "7",
+      "status": "unreviewed"
+    },
+    {
+      "character": "易",
+      "codePoint": "U+F9E0",
+      "contexts": [
+        {
+          "id": "易如反掌",
+          "hanja": "易如反掌",
+          "reading": "이여반장"
+        },
+        {
+          "id": "創業易守成難",
+          "hanja": "創業易守成難",
+          "reading": "창업이수성난"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "易",
+      "hintCandidates": [
+        {
+          "reading": "역",
+          "description": "바꿀 역"
+        },
+        {
+          "reading": "이",
+          "description": "쉬울 이, 다스릴 이, 게으를 이, 편할 이, 바꿀 이"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "72.4",
+          "number": "72",
+          "remainingStrokes": "4",
+          "unicodeMapping": {
+            "symbol": "⽇",
+            "ideograph": "日"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "일",
+              "description": "날 일"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "8",
+      "status": "unreviewed"
+    },
+    {
+      "character": "李",
+      "codePoint": "U+F9E1",
+      "contexts": [
+        {
+          "id": "李下不整冠",
+          "hanja": "李下不整冠",
+          "reading": "이하부정관"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "李",
+      "hintCandidates": [
+        {
+          "reading": "리",
+          "description": "오얏 리"
+        },
+        {
+          "reading": "이",
+          "description": "오얏 리, 선비 천거리할 리, 역말 리, 보따리 리"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "75.3",
+          "number": "75",
+          "remainingStrokes": "3",
+          "unicodeMapping": {
+            "symbol": "⽊",
+            "ideograph": "木"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "목",
+              "description": "나무 목"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "7",
+      "status": "unreviewed"
+    },
+    {
+      "character": "梨",
+      "codePoint": "U+F9E2",
+      "contexts": [
+        {
+          "id": "烏飛梨落",
+          "hanja": "烏飛梨落",
+          "reading": "오비이락"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "梨",
+      "hintCandidates": [
+        {
+          "reading": "리",
+          "description": "태나무 리, 배 리"
+        },
+        {
+          "reading": "이",
+          "description": "배 리, 벌레이름 리"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "75.7",
+          "number": "75",
+          "remainingStrokes": "7",
+          "unicodeMapping": {
+            "symbol": "⽊",
+            "ideograph": "木"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "목",
+              "description": "나무 목"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "11",
+      "status": "unreviewed"
+    },
+    {
+      "character": "臨",
+      "codePoint": "U+F9F6",
+      "contexts": [
+        {
+          "id": "臨機應變",
+          "hanja": "臨機應變",
+          "reading": "임기응변"
+        },
+        {
+          "id": "臨時方便",
+          "hanja": "臨時方便",
+          "reading": "임시방편"
+        },
+        {
+          "id": "臨戰無退",
+          "hanja": "臨戰無退",
+          "reading": "임전무퇴"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "臨",
+      "hintCandidates": [
+        {
+          "reading": "림",
+          "description": "임할 림"
+        },
+        {
+          "reading": "임",
+          "description": "임할 림, 군림할 림, 여럿이 울 림, 굽힐 림"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "131.11",
+          "number": "131",
+          "remainingStrokes": "11",
+          "unicodeMapping": {
+            "symbol": "⾂",
+            "ideograph": "臣"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "신",
+              "description": "신하 신, 두려울 신"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "17",
+      "status": "unreviewed"
+    },
+    {
+      "character": "暴",
+      "codePoint": "U+FA06",
+      "contexts": [
+        {
+          "id": "自暴自棄",
+          "hanja": "自暴自棄",
+          "reading": "자포자기"
+        }
+      ],
+      "libhangulCandidates": [],
+      "nfkcResearchHint": "暴",
+      "hintCandidates": [
+        {
+          "reading": "포",
+          "description": "사나울 포, 급할 포, 맨손으로 칠 포, 불끈 일어날 포, 마를 포, 상할 포"
+        },
+        {
+          "reading": "폭",
+          "description": "햇빛 쪼일 폭, 나타날 폭, 드러날 폭, 사나울 폭"
+        }
+      ],
+      "radicalCandidates": [
+        {
+          "raw": "72.11",
+          "number": "72",
+          "remainingStrokes": "11",
+          "unicodeMapping": {
+            "symbol": "⽇",
+            "ideograph": "日"
+          },
+          "radicalNameCandidates": [
+            {
+              "reading": "일",
+              "description": "날 일"
+            }
+          ],
+          "status": "unreviewed"
+        }
+      ],
+      "unihanTotalStrokes": "15",
+      "status": "unreviewed"
+    }
+  ]
+}

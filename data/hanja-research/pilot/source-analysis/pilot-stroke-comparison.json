@@ -1,0 +1,142 @@
+{
+  "summary": {
+    "datasetSha256": "750b07e087418acf0900b19b2a69bf9b7f2b2c0081d68ec7e446f9a5969780cc",
+    "characterCount": 1566,
+    "missingReadingCandidates": 44,
+    "missingWithHint": 38,
+    "missingWithHintCandidate": 38,
+    "radicalCharactersMapped": 1566,
+    "radicalCharactersWithNameCandidates": 1562,
+    "pilotComparable": 10,
+    "pilotEqual": 9,
+    "pilotConflict": 1,
+    "pilotIncomparable": 0
+  },
+  "conflicts": [
+    {
+      "character": "朗",
+      "codePoint": "U+6717",
+      "unihanTotalStrokes": "10",
+      "pilotSource": {
+        "value": 11,
+        "sourceIds": [
+          "S1"
+        ],
+        "sourceUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=41252",
+        "status": "reported_not_resolved"
+      },
+      "status": "unreviewed"
+    }
+  ],
+  "equal": [
+    {
+      "character": "地",
+      "codePoint": "U+5730",
+      "unihanTotalStrokes": "6",
+      "pilotSource": {
+        "value": 6,
+        "sourceIds": [
+          "S7"
+        ]
+      },
+      "status": "unreviewed"
+    },
+    {
+      "character": "天",
+      "codePoint": "U+5929",
+      "unihanTotalStrokes": "4",
+      "pilotSource": {
+        "value": 4,
+        "sourceIds": [
+          "S6"
+        ]
+      },
+      "status": "unreviewed"
+    },
+    {
+      "character": "宇",
+      "codePoint": "U+5B87",
+      "unihanTotalStrokes": "6",
+      "pilotSource": {
+        "value": 6,
+        "sourceIds": [
+          "S10"
+        ]
+      },
+      "status": "unreviewed"
+    },
+    {
+      "character": "宙",
+      "codePoint": "U+5B99",
+      "unihanTotalStrokes": "8",
+      "pilotSource": {
+        "value": 8,
+        "sourceIds": [
+          "S10"
+        ]
+      },
+      "status": "unreviewed"
+    },
+    {
+      "character": "暉",
+      "codePoint": "U+6689",
+      "unihanTotalStrokes": "13",
+      "pilotSource": {
+        "value": 13,
+        "sourceIds": [
+          "S3"
+        ]
+      },
+      "status": "unreviewed"
+    },
+    {
+      "character": "曜",
+      "codePoint": "U+66DC",
+      "unihanTotalStrokes": "18",
+      "pilotSource": {
+        "value": 18,
+        "sourceIds": [
+          "S5"
+        ]
+      },
+      "status": "unreviewed"
+    },
+    {
+      "character": "玄",
+      "codePoint": "U+7384",
+      "unihanTotalStrokes": "5",
+      "pilotSource": {
+        "value": 5,
+        "sourceIds": [
+          "S8"
+        ]
+      },
+      "status": "unreviewed"
+    },
+    {
+      "character": "義",
+      "codePoint": "U+7FA9",
+      "unihanTotalStrokes": "13",
+      "pilotSource": {
+        "value": 13,
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      "status": "unreviewed"
+    },
+    {
+      "character": "黃",
+      "codePoint": "U+9EC3",
+      "unihanTotalStrokes": "12",
+      "pilotSource": {
+        "value": 12,
+        "sourceIds": [
+          "S9"
+        ]
+      },
+      "status": "unreviewed"
+    }
+  ],
+  "incomparable": []
+}

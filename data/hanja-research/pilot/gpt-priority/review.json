@@ -1,0 +1,2399 @@
+{
+  "metadata": {
+    "reviewDate": "2026-10-30",
+    "inputFile": "priority-review.json",
+    "originalDatasetSha256": "750b07e087418acf0900b19b2a69bf9b7f2b2c0081d68ec7e446f9a5969780cc",
+    "originalArchiveSha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+    "scopeCount": 48,
+    "policy": "미검수 후보와 검증 완료된 제안값 분리; NFKC 비치환"
+  },
+  "characters": [
+    {
+      "character": "昃",
+      "codePoint": "U+6603",
+      "contexts": [
+        {
+          "id": "日月盈昃",
+          "hanja": "日月盈昃",
+          "reading": "일월영측"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kRSUnicode": "72.4",
+          "kTotalStrokes": "8",
+          "kHangul": "측:1N",
+          "kKorean": "CHI"
+        },
+        "nfkcResearchHint": null,
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "暉",
+      "codePoint": "U+6689",
+      "contexts": [
+        {
+          "id": "羲暉朗曜",
+          "hanja": "羲暉朗曜",
+          "reading": "희휘낭요"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [
+          {
+            "reading": "휘",
+            "description": "빛 휘, 햇빛 휘"
+          }
+        ],
+        "unihanProperties": {
+          "kRSUnicode": "72.9",
+          "kTotalStrokes": "13",
+          "kHangul": "휘:0N",
+          "kKorean": "HWI"
+        },
+        "nfkcResearchHint": null,
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "曜",
+      "codePoint": "U+66DC",
+      "contexts": [
+        {
+          "id": "羲暉朗曜",
+          "hanja": "羲暉朗曜",
+          "reading": "희휘낭요"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [
+          {
+            "reading": "요",
+            "description": "해 비칠 요, 요일 요"
+          }
+        ],
+        "unihanProperties": {
+          "kRSUnicode": "72.14",
+          "kTotalStrokes": "18",
+          "kHangul": "요:0N",
+          "kKorean": "YO"
+        },
+        "nfkcResearchHint": null,
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": [
+          {
+            "hun": "빛날",
+            "eum": "요"
+          }
+        ],
+        "radical": {
+          "character": "日",
+          "name": null
+        },
+        "totalStrokes": 18
+      },
+      "sourceIds": {
+        "hunEum": [
+          "S2"
+        ],
+        "radical": [
+          "S2"
+        ],
+        "totalStrokes": [
+          "S2"
+        ]
+      },
+      "decision": "수정",
+      "reason": "국립국어원 요일 원문에서 정확히 동일한 코드포인트 글자를 확인. 기존 해 비칠 요·요일 요 문구는 직접 확인되지 않아 제안하지 않음.",
+      "unverified": [
+        "부수 이름 원문 근거 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "朗",
+      "codePoint": "U+6717",
+      "contexts": [
+        {
+          "id": "羲暉朗曜",
+          "hanja": "羲暉朗曜",
+          "reading": "희휘낭요"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [
+          {
+            "reading": "낭",
+            "description": "밝을 낭"
+          },
+          {
+            "reading": "랑",
+            "description": "밝을 랑"
+          }
+        ],
+        "unihanProperties": {
+          "kRSUnicode": "74.7",
+          "kTotalStrokes": "10",
+          "kHangul": "낭:0 랑:0N",
+          "kKorean": "LANG"
+        },
+        "nfkcResearchHint": null,
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": [
+          {
+            "hun": "밝을",
+            "eum": "랑"
+          },
+          {
+            "hun": "밝을",
+            "eum": "낭"
+          }
+        ],
+        "radical": {
+          "character": "月",
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [
+          "S1"
+        ],
+        "radical": [
+          "S1"
+        ],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "국립국어원 원문 11획과 첨부 Unihan 10획이 충돌하므로 한국 학습 기준의 총획은 미확정. 부수 이름은 원문 미표시.",
+      "unverified": [
+        "Unihan 후보 총획 10 vs 국립국어원 총획 11; 기준별 필획 및 자형 분석 미실행",
+        "부수 이름 원문 근거 미확인",
+        "한국 교육용 총획 미확정"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "為",
+      "codePoint": "U+70BA",
+      "contexts": [
+        {
+          "id": "橘化為枳",
+          "hanja": "橘化為枳",
+          "reading": "귤화위지"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kRSUnicode": "86.5",
+          "kTotalStrokes": "9",
+          "kKorean": "WI"
+        },
+        "nfkcResearchHint": null,
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "爲와 為는 동일 코드포인트 아님. 爲의 국립국어원 페이지를 為의 직접 근거로 사용할 수 없음",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "羲",
+      "codePoint": "U+7FB2",
+      "contexts": [
+        {
+          "id": "羲暉朗曜",
+          "hanja": "羲暉朗曜",
+          "reading": "희휘낭요"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [
+          {
+            "reading": "희",
+            "description": "숨 희, 복희 희"
+          }
+        ],
+        "unihanProperties": {
+          "kRSUnicode": "123.10",
+          "kTotalStrokes": "16",
+          "kHangul": "희:0N",
+          "kKorean": "HUY"
+        },
+        "nfkcResearchHint": null,
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "虢",
+      "codePoint": "U+8662",
+      "contexts": [
+        {
+          "id": "假途滅虢",
+          "hanja": "假途滅虢",
+          "reading": "가도멸괵"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kRSUnicode": "141.9",
+          "kTotalStrokes": "15"
+        },
+        "nfkcResearchHint": null,
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "輶",
+      "codePoint": "U+8F36",
+      "contexts": [
+        {
+          "id": "易輶攸畏",
+          "hanja": "易輶攸畏",
+          "reading": "역유유외"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kRSUnicode": "159.9",
+          "kTotalStrokes": "16"
+        },
+        "nfkcResearchHint": null,
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "颻",
+      "codePoint": "U+98BB",
+      "contexts": [
+        {
+          "id": "落葉飄颻",
+          "hanja": "落葉飄颻",
+          "reading": "낙엽표요"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kRSUnicode": "182.10",
+          "kTotalStrokes": "19"
+        },
+        "nfkcResearchHint": null,
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "黙",
+      "codePoint": "U+9ED9",
+      "contexts": [
+        {
+          "id": "沈黙寂寥",
+          "hanja": "沈黙寂寥",
+          "reading": "침묵적요"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kRSUnicode": "86.11 203.4",
+          "kTotalStrokes": "15"
+        },
+        "nfkcResearchHint": null,
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "일본 자형과 한국 교육용 표준의 동등성 미확인",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "車",
+      "codePoint": "U+F902",
+      "contexts": [
+        {
+          "id": "車載斗量",
+          "hanja": "車載斗量",
+          "reading": "거재두량"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+8ECA",
+          "kRSUnicode": "159.0",
+          "kTotalStrokes": "7",
+          "kHangul": "거:0",
+          "kKorean": "KE"
+        },
+        "nfkcResearchHint": "車",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 車와 원문 車의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "金",
+      "codePoint": "U+F90A",
+      "contexts": [
+        {
+          "id": "堅如金石",
+          "hanja": "堅如金石",
+          "reading": "견여금석"
+        },
+        {
+          "id": "金烏玉兎",
+          "hanja": "金烏玉兎",
+          "reading": "금오옥토"
+        },
+        {
+          "id": "其利斷金",
+          "hanja": "其利斷金",
+          "reading": "기리단금"
+        },
+        {
+          "id": "斷金之交",
+          "hanja": "斷金之交",
+          "reading": "단금지교"
+        },
+        {
+          "id": "一攫千金",
+          "hanja": "一攫千金",
+          "reading": "일확천금"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+91D1",
+          "kRSUnicode": "167.0",
+          "kTotalStrokes": "8",
+          "kHangul": "금:0",
+          "kKorean": "KUM"
+        },
+        "nfkcResearchHint": "金",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 金와 원문 金의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "樂",
+      "codePoint": "U+F914",
+      "contexts": [
+        {
+          "id": "安貧樂道",
+          "hanja": "安貧樂道",
+          "reading": "안빈낙도"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+6A02",
+          "kRSUnicode": "75.11",
+          "kTotalStrokes": "15",
+          "kHangul": "낙:0",
+          "kKorean": "NAK"
+        },
+        "nfkcResearchHint": "樂",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 樂와 원문 樂의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "落",
+      "codePoint": "U+F918",
+      "contexts": [
+        {
+          "id": "孤城落日",
+          "hanja": "孤城落日",
+          "reading": "고성낙일"
+        },
+        {
+          "id": "落膽喪魂",
+          "hanja": "落膽喪魂",
+          "reading": "낙담상혼"
+        },
+        {
+          "id": "落穽下石",
+          "hanja": "落穽下石",
+          "reading": "낙정하석"
+        },
+        {
+          "id": "落花流水",
+          "hanja": "落花流水",
+          "reading": "낙화유수"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+843D",
+          "kRSUnicode": "140.9",
+          "kTotalStrokes": "12",
+          "kHangul": "낙:0",
+          "kKorean": "NAK"
+        },
+        "nfkcResearchHint": "落",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 落와 원문 落의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "爛",
+      "codePoint": "U+F91E",
+      "contexts": [
+        {
+          "id": "爛商公論",
+          "hanja": "爛商公論",
+          "reading": "난상공론"
+        },
+        {
+          "id": "爛商討議",
+          "hanja": "爛商討議",
+          "reading": "난상토의"
+        },
+        {
+          "id": "百花爛漫",
+          "hanja": "百花爛漫",
+          "reading": "백화난만"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+721B",
+          "kRSUnicode": "86.17",
+          "kTotalStrokes": "21",
+          "kHangul": "난:0",
+          "kKorean": "NAN"
+        },
+        "nfkcResearchHint": "爛",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 爛와 원문 爛의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "盧",
+      "codePoint": "U+F933",
+      "contexts": [
+        {
+          "id": "盧生之夢",
+          "hanja": "盧生之夢",
+          "reading": "노생지몽"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+76E7",
+          "kRSUnicode": "108.11",
+          "kTotalStrokes": "16",
+          "kHangul": "노:0",
+          "kKorean": "NO"
+        },
+        "nfkcResearchHint": "盧",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 盧와 원문 盧의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "露",
+      "codePoint": "U+F938",
+      "contexts": [
+        {
+          "id": "風餐露宿",
+          "hanja": "風餐露宿",
+          "reading": "풍찬노숙"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+9732",
+          "kRSUnicode": "173.12",
+          "kTotalStrokes": "21",
+          "kHangul": "노:0",
+          "kKorean": "NO"
+        },
+        "nfkcResearchHint": "露",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 露와 원문 露의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "綠",
+      "codePoint": "U+F93D",
+      "contexts": [
+        {
+          "id": "綠衣紅裳",
+          "hanja": "綠衣紅裳",
+          "reading": "녹의홍상"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+7DA0",
+          "kRSUnicode": "120.8",
+          "kTotalStrokes": "14",
+          "kHangul": "녹:0",
+          "kKorean": "NOK"
+        },
+        "nfkcResearchHint": "綠",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 綠와 원문 綠의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "論",
+      "codePoint": "U+F941",
+      "contexts": [
+        {
+          "id": "論功行賞",
+          "hanja": "論功行賞",
+          "reading": "논공행상"
+        },
+        {
+          "id": "論點逸脫",
+          "hanja": "論點逸脫",
+          "reading": "논점일탈"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+8AD6",
+          "kRSUnicode": "149.8",
+          "kTotalStrokes": "15",
+          "kHangul": "논:0",
+          "kKorean": "NON"
+        },
+        "nfkcResearchHint": "論",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 論와 원문 論의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "弄",
+      "codePoint": "U+F943",
+      "contexts": [
+        {
+          "id": "弄瓦之慶",
+          "hanja": "弄瓦之慶",
+          "reading": "농와지경"
+        },
+        {
+          "id": "弄璋之慶",
+          "hanja": "弄璋之慶",
+          "reading": "농장지경"
+        },
+        {
+          "id": "吟風弄月",
+          "hanja": "吟風弄月",
+          "reading": "음풍농월"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+5F04",
+          "kRSUnicode": "55.4",
+          "kTotalStrokes": "7",
+          "kHangul": "농:0",
+          "kKorean": "NONG"
+        },
+        "nfkcResearchHint": "弄",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 弄와 원문 弄의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "籠",
+      "codePoint": "U+F944",
+      "contexts": [
+        {
+          "id": "籠鳥戀雲",
+          "hanja": "籠鳥戀雲",
+          "reading": "농조연운"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+7C60",
+          "kRSUnicode": "118.16",
+          "kTotalStrokes": "22",
+          "kHangul": "농:0",
+          "kKorean": "NONG"
+        },
+        "nfkcResearchHint": "籠",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 籠와 원문 籠의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "雷",
+      "codePoint": "U+F949",
+      "contexts": [
+        {
+          "id": "附和雷同",
+          "hanja": "附和雷同",
+          "reading": "부화뇌동"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+96F7",
+          "kRSUnicode": "173.5",
+          "kTotalStrokes": "13",
+          "kHangul": "뇌:0",
+          "kKorean": "NOY"
+        },
+        "nfkcResearchHint": "雷",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 雷와 원문 雷의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "樓",
+      "codePoint": "U+F94C",
+      "contexts": [
+        {
+          "id": "砂上樓閣",
+          "hanja": "砂上樓閣",
+          "reading": "사상누각"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+6A13",
+          "kRSUnicode": "75.11",
+          "kTotalStrokes": "15",
+          "kHangul": "누:0",
+          "kKorean": "NWU"
+        },
+        "nfkcResearchHint": "樓",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 樓와 원문 樓의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "累",
+      "codePoint": "U+F94F",
+      "contexts": [
+        {
+          "id": "累卵之危",
+          "hanja": "累卵之危",
+          "reading": "누란지위"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+7D2F",
+          "kRSUnicode": "120.5",
+          "kTotalStrokes": "11",
+          "kHangul": "누:0",
+          "kKorean": "NWU"
+        },
+        "nfkcResearchHint": "累",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 累와 원문 累의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "樂",
+      "codePoint": "U+F95C",
+      "contexts": [
+        {
+          "id": "同苦同樂",
+          "hanja": "同苦同樂",
+          "reading": "동고동락"
+        },
+        {
+          "id": "伯樂一顧",
+          "hanja": "伯樂一顧",
+          "reading": "백낙일고"
+        },
+        {
+          "id": "先憂後樂",
+          "hanja": "先憂後樂",
+          "reading": "선우후락"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+6A02",
+          "kRSUnicode": "75.11",
+          "kTotalStrokes": "15",
+          "kHangul": "락:0",
+          "kKorean": "LAK"
+        },
+        "nfkcResearchHint": "樂",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 樂와 원문 樂의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "復",
+      "codePoint": "U+F966",
+      "contexts": [
+        {
+          "id": "重言復言",
+          "hanja": "重言復言",
+          "reading": "중언부언"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+5FA9",
+          "kRSUnicode": "60.9",
+          "kTotalStrokes": "12",
+          "kHangul": "부:0",
+          "kKorean": "PWU"
+        },
+        "nfkcResearchHint": "復",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 復와 원문 復의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "不",
+      "codePoint": "U+F967",
+      "contexts": [
+        {
+          "id": "敢不生心",
+          "hanja": "敢不生心",
+          "reading": "감불생심"
+        },
+        {
+          "id": "堅忍不拔",
+          "hanja": "堅忍不拔",
+          "reading": "견인불발"
+        },
+        {
+          "id": "過如不及",
+          "hanja": "過如不及",
+          "reading": "과여불급"
+        },
+        {
+          "id": "過猶不及",
+          "hanja": "過猶不及",
+          "reading": "과유불급"
+        },
+        {
+          "id": "屈而不信",
+          "hanja": "屈而不信",
+          "reading": "굴이불신"
+        },
+        {
+          "id": "杜門不出",
+          "hanja": "杜門不出",
+          "reading": "두문불출"
+        },
+        {
+          "id": "燈下不明",
+          "hanja": "燈下不明",
+          "reading": "등하불명"
+        },
+        {
+          "id": "目不識丁",
+          "hanja": "目不識丁",
+          "reading": "목불식정"
+        },
+        {
+          "id": "目不忍見",
+          "hanja": "目不忍見",
+          "reading": "목불인견"
+        },
+        {
+          "id": "無不干涉",
+          "hanja": "無不干涉",
+          "reading": "무불간섭"
+        },
+        {
+          "id": "無不通知",
+          "hanja": "無不通知",
+          "reading": "무불통지"
+        },
+        {
+          "id": "無所不爲",
+          "hanja": "無所不爲",
+          "reading": "무소불위"
+        },
+        {
+          "id": "百聞不如一見",
+          "hanja": "百聞不如一見",
+          "reading": "백문불여일견"
+        },
+        {
+          "id": "百折不屈",
+          "hanja": "百折不屈",
+          "reading": "백절불굴"
+        },
+        {
+          "id": "百折不撓",
+          "hanja": "百折不撓",
+          "reading": "백절불요"
+        },
+        {
+          "id": "不共戴天之讐",
+          "hanja": "不共戴天之讐",
+          "reading": "불공대천지수"
+        },
+        {
+          "id": "不立文字",
+          "hanja": "不立文字",
+          "reading": "불립문자"
+        },
+        {
+          "id": "不眠不休",
+          "hanja": "不眠不休",
+          "reading": "불면불휴"
+        },
+        {
+          "id": "不問可知",
+          "hanja": "不問可知",
+          "reading": "불문가지"
+        },
+        {
+          "id": "不問曲直",
+          "hanja": "不問曲直",
+          "reading": "불문곡직"
+        },
+        {
+          "id": "不伐不德",
+          "hanja": "不伐不德",
+          "reading": "불벌부덕"
+        },
+        {
+          "id": "不撓不屈",
+          "hanja": "不撓不屈",
+          "reading": "불요불굴"
+        },
+        {
+          "id": "不撤晝夜",
+          "hanja": "不撤晝夜",
+          "reading": "불철주야"
+        },
+        {
+          "id": "不肖之父",
+          "hanja": "不肖之父",
+          "reading": "불초지부"
+        },
+        {
+          "id": "不恥下問",
+          "hanja": "不恥下問",
+          "reading": "불치하문"
+        },
+        {
+          "id": "氷炭不相容",
+          "hanja": "氷炭不相容",
+          "reading": "빙탄불상용"
+        },
+        {
+          "id": "生口不網",
+          "hanja": "生口不網",
+          "reading": "생구불망"
+        },
+        {
+          "id": "食不二味",
+          "hanja": "食不二味",
+          "reading": "식불이미"
+        },
+        {
+          "id": "哀而不悲",
+          "hanja": "哀而不悲",
+          "reading": "애이불비"
+        },
+        {
+          "id": "語不成說",
+          "hanja": "語不成說",
+          "reading": "어불성설"
+        },
+        {
+          "id": "寤寐不忘",
+          "hanja": "寤寐不忘",
+          "reading": "오매불망"
+        },
+        {
+          "id": "吾不關焉",
+          "hanja": "吾不關焉",
+          "reading": "오불관언"
+        },
+        {
+          "id": "一步不讓",
+          "hanja": "一步不讓",
+          "reading": "일보불양"
+        },
+        {
+          "id": "自强不息",
+          "hanja": "自强不息",
+          "reading": "자강불식"
+        },
+        {
+          "id": "坐不安席",
+          "hanja": "坐不安席",
+          "reading": "좌불안석"
+        },
+        {
+          "id": "衆寡不敵",
+          "hanja": "衆寡不敵",
+          "reading": "중과부적"
+        },
+        {
+          "id": "知足不辱",
+          "hanja": "知足不辱",
+          "reading": "지족불욕"
+        },
+        {
+          "id": "學如不及",
+          "hanja": "學如不及",
+          "reading": "학여불급"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+4E0D",
+          "kRSUnicode": "1.3",
+          "kTotalStrokes": "4",
+          "kHangul": "불:0",
+          "kKorean": "PWUL"
+        },
+        "nfkcResearchHint": "不",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 不와 원문 不의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "塞",
+      "codePoint": "U+F96C",
+      "contexts": [
+        {
+          "id": "拔本塞源",
+          "hanja": "拔本塞源",
+          "reading": "발본색원"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+585E",
+          "kRSUnicode": "32.10",
+          "kTotalStrokes": "13",
+          "kHangul": "색:0",
+          "kKorean": "SAYK"
+        },
+        "nfkcResearchHint": "塞",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 塞와 원문 塞의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "兩",
+      "codePoint": "U+F978",
+      "contexts": [
+        {
+          "id": "兩手兼將",
+          "hanja": "兩手兼將",
+          "reading": "양수겸장"
+        },
+        {
+          "id": "一擧兩得",
+          "hanja": "一擧兩得",
+          "reading": "일거양득"
+        },
+        {
+          "id": "一刀兩斷",
+          "hanja": "一刀兩斷",
+          "reading": "일도양단"
+        },
+        {
+          "id": "進退兩難",
+          "hanja": "進退兩難",
+          "reading": "진퇴양난"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+5169",
+          "kRSUnicode": "11.6",
+          "kTotalStrokes": "8",
+          "kHangul": "양:0",
+          "kKorean": "YANG"
+        },
+        "nfkcResearchHint": "兩",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 兩와 원문 兩의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "良",
+      "codePoint": "U+F97C",
+      "contexts": [
+        {
+          "id": "美風良俗",
+          "hanja": "美風良俗",
+          "reading": "미풍양속"
+        },
+        {
+          "id": "賢母良妻",
+          "hanja": "賢母良妻",
+          "reading": "현모양처"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+826F",
+          "kRSUnicode": "138.1",
+          "kTotalStrokes": "7",
+          "kHangul": "양:0",
+          "kKorean": "YANG"
+        },
+        "nfkcResearchHint": "良",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 良와 원문 良의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "女",
+      "codePoint": "U+F981",
+      "contexts": [
+        {
+          "id": "男負女戴",
+          "hanja": "男負女戴",
+          "reading": "남부여대"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+5973",
+          "kRSUnicode": "38.0",
+          "kTotalStrokes": "3",
+          "kHangul": "여:0",
+          "kKorean": "YE"
+        },
+        "nfkcResearchHint": "女",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 女와 원문 女의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "戀",
+      "codePoint": "U+F990",
+      "contexts": [
+        {
+          "id": "籠鳥戀雲",
+          "hanja": "籠鳥戀雲",
+          "reading": "농조연운"
+        },
+        {
+          "id": "戀慕之情",
+          "hanja": "戀慕之情",
+          "reading": "연모지정"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+6200",
+          "kRSUnicode": "61.19",
+          "kTotalStrokes": "23",
+          "kHangul": "연:0",
+          "kKorean": "YEN"
+        },
+        "nfkcResearchHint": "戀",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 戀와 원문 戀의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "連",
+      "codePoint": "U+F99A",
+      "contexts": [
+        {
+          "id": "連戰連勝",
+          "hanja": "連戰連勝",
+          "reading": "연전연승"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+9023",
+          "kRSUnicode": "162.7",
+          "kTotalStrokes": "10",
+          "kHangul": "연:0",
+          "kKorean": "YEN"
+        },
+        "nfkcResearchHint": "連",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 連와 원문 連의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "裂",
+      "codePoint": "U+F9A0",
+      "contexts": [
+        {
+          "id": "四分五裂",
+          "hanja": "四分五裂",
+          "reading": "사분오열"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+88C2",
+          "kRSUnicode": "145.6",
+          "kTotalStrokes": "12",
+          "kHangul": "열:0",
+          "kKorean": "YEL"
+        },
+        "nfkcResearchHint": "裂",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 裂와 원문 裂의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "令",
+      "codePoint": "U+F9A8",
+      "contexts": [
+        {
+          "id": "巧言令色",
+          "hanja": "巧言令色",
+          "reading": "교언영색"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+4EE4",
+          "kRSUnicode": "9.3",
+          "kTotalStrokes": "5",
+          "kHangul": "영:0",
+          "kKorean": "YENG"
+        },
+        "nfkcResearchHint": "令",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 令와 원문 令의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "樂",
+      "codePoint": "U+F9BF",
+      "contexts": [
+        {
+          "id": "樂山樂水",
+          "hanja": "樂山樂水",
+          "reading": "요산요수"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+6A02",
+          "kRSUnicode": "75.11",
+          "kTotalStrokes": "15",
+          "kHangul": "요:0",
+          "kKorean": "YO"
+        },
+        "nfkcResearchHint": "樂",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 樂와 원문 樂의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "龍",
+      "codePoint": "U+F9C4",
+      "contexts": [
+        {
+          "id": "龍蛇飛騰",
+          "hanja": "龍蛇飛騰",
+          "reading": "용사비등"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+9F8D",
+          "kRSUnicode": "212.0",
+          "kTotalStrokes": "16",
+          "kHangul": "용:0",
+          "kKorean": "YONG"
+        },
+        "nfkcResearchHint": "龍",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 龍와 원문 龍의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "流",
+      "codePoint": "U+F9CA",
+      "contexts": [
+        {
+          "id": "落花流水",
+          "hanja": "落花流水",
+          "reading": "낙화유수"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+6D41",
+          "kRSUnicode": "85.6",
+          "kTotalStrokes": "9",
+          "kHangul": "유:0",
+          "kKorean": "YU"
+        },
+        "nfkcResearchHint": "流",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 流와 원문 流의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "留",
+      "codePoint": "U+F9CD",
+      "contexts": [
+        {
+          "id": "虎死留皮",
+          "hanja": "虎死留皮",
+          "reading": "호사유피"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+7559",
+          "kRSUnicode": "102.5",
+          "kTotalStrokes": "10",
+          "kHangul": "유:0",
+          "kKorean": "YU"
+        },
+        "nfkcResearchHint": "留",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 留와 원문 留의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "類",
+      "codePoint": "U+F9D0",
+      "contexts": [
+        {
+          "id": "刻鵠類鶩",
+          "hanja": "刻鵠類鶩",
+          "reading": "각곡유목"
+        },
+        {
+          "id": "類類相從",
+          "hanja": "類類相從",
+          "reading": "유유상종"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+985E",
+          "kRSUnicode": "181.10",
+          "kTotalStrokes": "19",
+          "kHangul": "유:0",
+          "kKorean": "YU"
+        },
+        "nfkcResearchHint": "類",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 類와 원문 類의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "六",
+      "codePoint": "U+F9D1",
+      "contexts": [
+        {
+          "id": "五臟六腑",
+          "hanja": "五臟六腑",
+          "reading": "오장육부"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+516D",
+          "kRSUnicode": "12.2",
+          "kTotalStrokes": "4",
+          "kHangul": "육:0",
+          "kKorean": "YUK"
+        },
+        "nfkcResearchHint": "六",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 六와 원문 六의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "律",
+      "codePoint": "U+F9D8",
+      "contexts": [
+        {
+          "id": "二律背反",
+          "hanja": "二律背反",
+          "reading": "이율배반"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+5F8B",
+          "kRSUnicode": "60.6",
+          "kTotalStrokes": "9",
+          "kHangul": "율:0",
+          "kKorean": "YUL"
+        },
+        "nfkcResearchHint": "律",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 律와 원문 律의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "利",
+      "codePoint": "U+F9DD",
+      "contexts": [
+        {
+          "id": "甘言利說",
+          "hanja": "甘言利說",
+          "reading": "감언이설"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+5229",
+          "kRSUnicode": "18.5",
+          "kTotalStrokes": "7",
+          "kHangul": "이:0",
+          "kKorean": "I"
+        },
+        "nfkcResearchHint": "利",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 利와 원문 利의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "易",
+      "codePoint": "U+F9E0",
+      "contexts": [
+        {
+          "id": "易如反掌",
+          "hanja": "易如反掌",
+          "reading": "이여반장"
+        },
+        {
+          "id": "創業易守成難",
+          "hanja": "創業易守成難",
+          "reading": "창업이수성난"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+6613",
+          "kRSUnicode": "72.4",
+          "kTotalStrokes": "8",
+          "kHangul": "이:0",
+          "kKorean": "I"
+        },
+        "nfkcResearchHint": "易",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 易와 원문 易의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "李",
+      "codePoint": "U+F9E1",
+      "contexts": [
+        {
+          "id": "李下不整冠",
+          "hanja": "李下不整冠",
+          "reading": "이하부정관"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+674E",
+          "kRSUnicode": "75.3",
+          "kTotalStrokes": "7",
+          "kHangul": "이:0",
+          "kKorean": "I"
+        },
+        "nfkcResearchHint": "李",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 李와 원문 李의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "梨",
+      "codePoint": "U+F9E2",
+      "contexts": [
+        {
+          "id": "烏飛梨落",
+          "hanja": "烏飛梨落",
+          "reading": "오비이락"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+68A8",
+          "kRSUnicode": "75.7",
+          "kTotalStrokes": "11",
+          "kHangul": "이:0",
+          "kKorean": "I"
+        },
+        "nfkcResearchHint": "梨",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 梨와 원문 梨의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "臨",
+      "codePoint": "U+F9F6",
+      "contexts": [
+        {
+          "id": "臨機應變",
+          "hanja": "臨機應變",
+          "reading": "임기응변"
+        },
+        {
+          "id": "臨時方便",
+          "hanja": "臨時方便",
+          "reading": "임시방편"
+        },
+        {
+          "id": "臨戰無退",
+          "hanja": "臨戰無退",
+          "reading": "임전무퇴"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+81E8",
+          "kRSUnicode": "131.11",
+          "kTotalStrokes": "17",
+          "kHangul": "임:0",
+          "kKorean": "IM"
+        },
+        "nfkcResearchHint": "臨",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 臨와 원문 臨의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    },
+    {
+      "character": "暴",
+      "codePoint": "U+FA06",
+      "contexts": [
+        {
+          "id": "自暴自棄",
+          "hanja": "自暴自棄",
+          "reading": "자포자기"
+        }
+      ],
+      "existingValues": {
+        "libhangulCandidates": [],
+        "unihanProperties": {
+          "kCompatibilityVariant": "U+66B4",
+          "kRSUnicode": "72.11",
+          "kTotalStrokes": "15",
+          "kHangul": "포:0",
+          "kKorean": "PHO"
+        },
+        "nfkcResearchHint": "暴",
+        "reviewStatus": "unreviewed"
+      },
+      "proposedValues": {
+        "hunEum": null,
+        "radical": {
+          "character": null,
+          "name": null
+        },
+        "totalStrokes": null
+      },
+      "sourceIds": {
+        "hunEum": [],
+        "radical": [],
+        "totalStrokes": []
+      },
+      "decision": "불확실",
+      "reason": "원문 글자에 대한 훈음·부수·한국 교육용 총획 개별 직접 열람 근거를 확보하지 못함. 첨부 데이터는 미검수 후보로만 유지.",
+      "unverified": [
+        "NFKC 호환 대응 문자 暴와 원문 暴의 정보 동등성 미검증; 병합 금지",
+        "훈음·부수 문자/이름·한국 총획 미확인"
+      ],
+      "candidateProvenance": "첨부 JSON; 원문 별도 재검증 아님"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-30T02:18:03.728Z",
+  "browser": "Chrome/156.0.8078.74",
+  "checks": [
+    "five SVG documents load",
+    "first stroke progresses while later strokes wait",
+    "pause holds progress",
+    "resume completes all strokes"
+  ],
+  "pathCounts": [
+    {
+      "file": "22825.svg",
+      "count": 4
+    },
+    {
+      "file": "22320.svg",
+      "count": 6
+    },
+    {
+      "file": "26391.svg",
+      "count": 11
+    },
+    {
+      "file": "26332.svg",
+      "count": 18
+    },
+    {
+      "file": "40643.svg",
+      "count": 12
+    }
+  ],
+  "koreanLearningStandardCompared": false,
+  "coldOfflineReloadTested": false
+}

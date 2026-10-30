@@ -75,7 +75,7 @@ function Learning({ mode, active, page, setPage }: { mode: Mode; active: boolean
   const [limit, setLimit] = useState(40);
   const [candidateLimit, setCandidateLimit] = useState(40);
   const speech = useExampleSpeech();
-  useEffect(() => { speech.stop(); }, [active, page, filter, search, speech.stop]);
+  useEffect(() => { speech.stop(); }, [active, page, filter, search, start.id, chain.length, speech.stop]);
   useEffect(() => { setCandidateLimit(40); }, [letter, start.id, chain.length]);
   const [restart, setRestart] = useState(false);
   const interstitial = useInterstitial(active && page === 'quiz');
@@ -199,7 +199,7 @@ function Learning({ mode, active, page, setPage }: { mode: Mode; active: boolean
         <p>{item.meaning}</p><Source item={item} />
         {'synonym' in item && item.synonym && <p className="description">동의어 · {item.synonym}</p>}
         {'example' in item && item.example && <div className="book-example"><p>{item.example}</p>{item.exampleMeaning && <p>{item.exampleMeaning}</p>}</div>}
-        {'example' in item && item.example.trim() && <div className="example-speech" role="group" aria-label={`${label(item)} 예문 읽기`}><button type="button" aria-label={`${label(item)} 예문 듣기`} onClick={() => speech.speak(item.id, item.example)}>듣기</button><button type="button" aria-label={`${label(item)} 예문 느리게 듣기`} onClick={() => speech.speak(item.id, item.example, true)}>느리게</button>{speech.activeId === item.id && <><button type="button" onClick={speech.stop}>정지</button><span role="status">예문 읽는 중…</span></>}</div>}
+        {'example' in item && item.example.trim() && <div className="example-speech" role="group" aria-label={`${label(item)} 단어와 예문 읽기`}><button type="button" aria-label={`${label(item)} 단어와 예문 듣기`} onClick={() => speech.speak(item.id, `${label(item)}. ${item.example}`)}>듣기</button><button type="button" aria-label={`${label(item)} 단어와 예문 느리게 듣기`} onClick={() => speech.speak(item.id, `${label(item)}. ${item.example}`, true)}>느리게</button>{speech.activeId === item.id && <><button type="button" onClick={speech.stop}>정지</button><span role="status">단어와 예문 읽는 중…</span></>}</div>}
         {saved.completed.includes(item.id) && <span className="book-badge">학습완료</span>}{saved.mistakes.includes(item.id) && <span className="book-badge">오답 복습</span>}
       </li>)}</ul>
       {!book.length && <p className="empty">해당하는 낱말이 없어요.</p>}{book.length > limit && <Button className="book-more" onClick={() => setLimit(limit + 40)}>더 보기</Button>}
@@ -224,7 +224,7 @@ function Learning({ mode, active, page, setPage }: { mode: Mode; active: boolean
         <div className="card-reading"><strong>{'hanja' in current ? current.reading : current.partOfSpeech}</strong><button className="meaning-toggle" aria-expanded={meaning} onClick={() => setMeaning(!meaning)}>{meaning ? '뜻 접기' : '뜻 보기'} ⓘ</button></div>
         {meaning && <p>{current.meaning}</p>}<Source item={current} />
         {'synonym' in current && current.synonym.trim() && <div className="word-example word-synonyms" aria-label="동의어"><span>동의어</span><p>{current.synonym}</p></div>}
-        {'example' in current && current.example && <div className="word-example"><div className="example-heading"><span>예문</span>{current.exampleMeaning && <button className="meaning-toggle" aria-expanded={translation} onClick={() => setTranslation(!translation)}>{translation ? '해석 접기' : '해석 보기'}</button>}</div><p>{current.example}</p>{translation && <p>{current.exampleMeaning}</p>}</div>}
+        {'example' in current && current.example && <div className="word-example"><div className="example-heading"><span>예문</span>{current.exampleMeaning && <button className="meaning-toggle" aria-expanded={translation} onClick={() => setTranslation(!translation)}>{translation ? '해석 접기' : '해석 보기'}</button>}{current.example.trim() && <div className="card-speech" role="group" aria-label="단어와 예문 읽기"><button type="button" className="meaning-toggle" aria-label="단어와 예문 듣기" onClick={() => speech.speak(current.id, `${label(current)}. ${current.example}`)}><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 14v-3a9 9 0 0 1 18 0v3" /><rect x="3" y="12" width="4" height="9" rx="2" /><rect x="17" y="12" width="4" height="9" rx="2" /></svg> 듣기</button><button type="button" className="meaning-toggle" aria-label="단어와 예문 느리게 듣기" onClick={() => speech.speak(current.id, `${label(current)}. ${current.example}`, true)}>느리게</button>{speech.activeId === current.id && <><button type="button" className="meaning-toggle" onClick={speech.stop}>정지</button><span role="status">읽는 중…</span></>}</div>}</div><p>{current.example}</p>{translation && <p>{current.exampleMeaning}</p>}</div>}
       </article>
       {finished ? <div className="summary" role="status"><span className="eyebrow">나만의 배움 한 줄</span><h2>{chain.length === SESSION_LIMIT ? `10개의 ${name}를 이었어요!` : '이번 이음은 여기까지예요.'}</h2><p>{chain.length === SESSION_LIMIT ? '오늘 알게 된 말들이 다음 도전에 힘이 될 거예요.' : '같은 낱말을 반복하지 않고 이어갈 후보가 더 없어요.'}</p><Button disabled={interstitial.busy} onClick={() => interstitial.start(reset)}>새 이음 시작하기 ↗</Button></div> : <>
         <div className="instruction"><h3>01 <span>이어갈 {mode === 'hanja' ? '한 글자를' : '알파벳을'} 골라 주세요</span></h3><p>후보가 없는 글자는 쉬어 가요</p></div>
@@ -244,7 +244,7 @@ function Learning({ mode, active, page, setPage }: { mode: Mode; active: boolean
           </>}
         </section>
         <form ref={formRef} className={`answer-form${floating ? ' floating-answer' : ''}`} style={floating ?? undefined} onKeyDown={e => { if (e.key === 'Escape') closeFloating(); }} onSubmit={e => { e.preventDefault(); submit(); }}>
-          {!selected && <div className="answer-heading"><label htmlFor={`${mode}-answer`}>03 후보를 먼저 선택해 주세요</label></div>}
+          {!selected && <div className="answer-heading step-answer-heading"><label htmlFor={`${mode}-answer`}><span className="answer-step-number">03</span>{' '}<span className="answer-step-text">후보를 먼저 선택해 주세요</span></label></div>}
           {floating && selected && <div className={`answer-candidate${mode === 'hanja' ? ' answer-candidate-hanja' : ''}`} aria-label="선택한 후보"><strong>{'hanja' in selected ? selected.hanja : `${englishLength(selected)}글자${selected.synonym.trim() ? ` · 동의어: ${selected.synonym}` : ''}`}</strong><p>{selected.meaning}</p></div>}
           {floating && <button type="button" className="floating-close" aria-label="입력창 닫기" onClick={closeFloating}>×</button>}
           <div className="input-row"><input id={`${mode}-answer`} ref={input} aria-label={mode === 'hanja' ? '선택한 후보의 한글 독음' : '선택한 후보의 영어 단어'} value={answer} disabled={!selected} onChange={e => setAnswer(e.target.value)} autoComplete="off" autoCapitalize="off" spellCheck={false} placeholder={mode === 'hanja' ? '선택한 후보의 한글 독음' : '영어 단어 입력'} onKeyDown={e => { if (e.key === 'Enter' && e.nativeEvent.isComposing) e.preventDefault(); }} /><Button type="submit" disabled={!selected || !answer.trim()}>확인 ↗</Button></div>

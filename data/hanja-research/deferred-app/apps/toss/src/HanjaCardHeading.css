@@ -1,0 +1,17 @@
+.hanja-card-title { display: flex; flex-wrap: wrap; justify-content: center; }
+.hanja-card-title > button { font: inherit; color: inherit; letter-spacing: inherit; min-width: 44px; min-height: 44px; padding: 0; background: transparent; border: 0; cursor: pointer; }
+.hanja-card-title > button:focus-visible { outline: 2px solid #ffdc8b; outline-offset: 2px; }
+.hanja-dialog { width: min(92vw, 420px); max-height: min(90dvh, 750px); margin: auto; padding: 22px; border: 0; border-radius: 16px; background: #fff; color: #183c30; text-align: left; overflow: auto; }
+.hanja-dialog::backdrop { background: #0009; }
+.hanja-dialog-heading { display: flex; align-items: flex-start; justify-content: space-between; }
+.current .hanja-dialog-heading h2 { margin: 0; font: 48px Batang, serif; color: #183c30; }
+.hanja-dialog-close, .hanja-stroke-controls button { min-height: 44px; border: 0; border-radius: 8px; background: #e6eee8; color: #183c30; padding: 8px 12px; cursor: pointer; }
+.hanja-dialog button:focus-visible, .hanja-dialog a:focus-visible { outline: 3px solid #a85f00; outline-offset: 2px; }
+.hanja-dialog dl { display: grid; grid-template-columns: 72px 1fr; gap: 10px; line-height: 1.5; }
+.hanja-dialog dt { color: #60766b; }.hanja-dialog dd { margin: 0; }
+.hanja-stroke { border-top: 1px solid #d8e1db; padding-top: 12px; }.hanja-stroke h3 { font-size: 16px; margin: 0; }
+.current .hanja-dialog p { color: #4b665a; line-height: 1.5; }
+.hanja-stroke object { display: block; width: 160px; height: 160px; max-width: 100%; margin: 0 auto; }
+.hanja-stroke-image { width: 160px; height: 160px; max-width: 100%; margin: 0 auto; }.hanja-stroke-image svg { display: block; width: 100%; height: 100%; }
+.hanja-stroke-controls { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.hanja-source { font-size: 12px; overflow-wrap: anywhere; }.hanja-dialog a { color: #315d48; }

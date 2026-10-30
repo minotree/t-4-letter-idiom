@@ -1,0 +1,35 @@
+[
+  {
+    "file": "svgsJa-26249.svg",
+    "hashMatches": true,
+    "codepoint": 26249,
+    "outlineCount": 13,
+    "animationPathCount": 13,
+    "ascendingDelay": true,
+    "glyphId": "z26249",
+    "sourceRegion": "svgsJa",
+    "koreanOrderVerified": false
+  },
+  {
+    "file": "svgsJa-32690.svg",
+    "hashMatches": true,
+    "codepoint": 32690,
+    "outlineCount": 16,
+    "animationPathCount": 16,
+    "ascendingDelay": true,
+    "glyphId": "z32690",
+    "sourceRegion": "svgsJa",
+    "koreanOrderVerified": false
+  },
+  {
+    "file": "svgsZhHans-32690.svg",
+    "hashMatches": true,
+    "codepoint": 32690,
+    "outlineCount": 16,
+    "animationPathCount": 16,
+    "ascendingDelay": true,
+    "glyphId": "z32690",
+    "sourceRegion": "svgsZhHans",
+    "koreanOrderVerified": false
+  }
+]
